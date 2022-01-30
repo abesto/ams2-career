@@ -1,7 +1,8 @@
-import { selectCareer } from 'app/slice/selectors';
 import * as React from 'react';
 import { useSelector } from 'react-redux';
+import { Helmet } from 'react-helmet-async';
 
+import { selectCareer } from 'app/slice/selectors';
 import { DISCIPLINES } from 'app/data/disciplines';
 import { Discipline } from 'types/Discipline';
 import { useCareerSlice } from 'app/slice';
@@ -69,31 +70,36 @@ export function MainPage(props: Props) {
 
   // TODO move these out into components; here for fast prototyping
   return (
-    <Grid container spacing={2}>
-      <Grid item xs={4}>
-        <GridItem>
-          <Typography variant="h4" sx={{ mb: 2 }}>
-            Career Progress
-          </Typography>
-          {DISCIPLINES.map(discipline => (
-            <Xp
-              key={discipline.name}
-              discipline={discipline}
-              progress={career.progress.get(discipline)!}
-            />
-          ))}
-        </GridItem>
-      </Grid>
+    <>
+      <Helmet>
+        <title>Home</title>
+      </Helmet>
+      <Grid container spacing={2}>
+        <Grid item xs={4}>
+          <GridItem>
+            <Typography variant="h4" sx={{ mb: 2 }}>
+              Career Progress
+            </Typography>
+            {DISCIPLINES.map(discipline => (
+              <Xp
+                key={discipline.name}
+                discipline={discipline}
+                progress={career.progress.get(discipline)!}
+              />
+            ))}
+          </GridItem>
+        </Grid>
 
-      <Grid item xs={8}>
-        <GridItem>
-          <Typography variant="h4" sx={{ mb: 2 }}>
-            Pick a Race
-          </Typography>
-          <RaceOptions races={races} />
-        </GridItem>
+        <Grid item xs={8}>
+          <GridItem>
+            <Typography variant="h4" sx={{ mb: 2 }}>
+              Pick a Race
+            </Typography>
+            <RaceOptions races={races} />
+          </GridItem>
+        </Grid>
       </Grid>
-    </Grid>
+    </>
   );
 }
 
