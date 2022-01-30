@@ -15,17 +15,20 @@
     "isolatedModules": true,
     "noEmit": true,
     "noFallthroughCasesInSwitch": true,
-    "jsx": "react-jsx",
+    "jsx": "react",
     "baseUrl": "./src"
   },
-  "include": ["src", "internals/startingTemplate/**/*"],
+  "include": ["src"],
   "ts-node": {
     "compilerOptions": {
       "esModuleInterop": true,
       "module": "commonjs",
       "moduleResolution": "node",
       "noEmit": true,
-      "allowSyntheticDefaultImports": true
+      "allowSyntheticDefaultImports": true,
+      "paths": {
+        "@mui/styled-engine": ["./node_modules/@mui/styled-engine-sc"]
+      }
     }
   }
 }

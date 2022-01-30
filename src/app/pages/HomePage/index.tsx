@@ -1,25 +1,66 @@
+import { Cars } from 'app/components/Cars';
+import { Tracks } from 'app/components/Tracks';
+import { CARS } from 'app/data/cars';
+import { TRACKS } from 'app/data/tracks';
 import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
-import { NavBar } from 'app/components/NavBar';
-import { Masthead } from './Masthead';
-import { Features } from './Features';
-import { PageWrapper } from 'app/components/PageWrapper';
+import { useDispatch, useSelector } from 'react-redux';
+import { CarSpec } from 'types/CarSpec';
+import { canRaceOn, TrackSpec } from 'types/TrackSpec';
+import { useHomePageSliceSlice } from './slice';
+import { selectHomePageSlice } from './slice/selectors';
+
+import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box';
 
 export function HomePage() {
+  const { actions } = useHomePageSliceSlice();
+  const dispatch = useDispatch();
+
+  const slice = useSelector(selectHomePageSlice);
+  const hoveredCar = slice.hoveredCar;
+  const hoveredTrack = slice.hoveredTrack;
+
+  const tracks = hoveredCar
+    ? TRACKS.filter(track => canRaceOn(hoveredCar.class, track))
+    : TRACKS;
+
+  const cars = hoveredTrack
+    ? CARS.filter(car => canRaceOn(car.class, hoveredTrack))
+    : CARS;
+
   return (
     <>
       <Helmet>
-        <title>Home Page</title>
-        <meta
-          name="description"
-          content="A React Boilerplate application homepage"
-        />
+        <title>Debug</title>
+        <meta name="description" content="" />
       </Helmet>
-      <NavBar />
-      <PageWrapper>
-        <Masthead />
-        <Features />
-      </PageWrapper>
+
+      <Box sx={{ flexGrow: 1 }}>
+        <h1>Data debugger</h1>
+        <Grid container spacing={3}>
+          <Grid item xs={8}>
+            <Cars
+              cars={cars}
+              onMouseEnter={(car: CarSpec) => dispatch(actions.carEnter(car))}
+              onMouseLeave={(car: CarSpec) => dispatch(actions.carLeave(car))}
+              highlightCar={hoveredCar}
+            />
+          </Grid>
+          <Grid item xs={4}>
+            <Tracks
+              tracks={tracks}
+              onMouseEnter={(track: TrackSpec) =>
+                dispatch(actions.trackEnter(track))
+              }
+              onMouseLeave={(track: TrackSpec) =>
+                dispatch(actions.trackLeave(track))
+              }
+              highlightTrack={hoveredTrack}
+            />
+          </Grid>
+        </Grid>
+      </Box>
     </>
   );
 }

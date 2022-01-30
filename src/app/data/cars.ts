@@ -1,0 +1,50 @@
+import raw from 'raw.macro';
+import Papa from 'papaparse';
+
+import { CarClass } from 'types/CarClass';
+import { CarSpec } from 'types/CarSpec';
+import { classExists, getCarClass } from './car_classes';
+import { tracksFor } from './tracks';
+
+// Dumped from the official car list
+const data = Papa.parse(
+  raw('./AMS2 v.1.3.2.1 - Extended Car Info v1.0.30.csv'),
+  { header: true },
+).data;
+
+function recordToCar(record: { [key: string]: string }): CarSpec | null {
+  if (!classExists(record.class)) {
+    return null;
+  }
+  return {
+    name: record.name,
+    class: getCarClass(record.class),
+  };
+}
+
+function compareFields(a: CarSpec): any[] {
+  return [a.class.level, a.class.name, a.name];
+}
+
+const zip = (a: any[], b: any[]) => a.map((k, i) => [k, b[i]]);
+
+function compareCars(a: CarSpec, b: CarSpec): number {
+  for (const [ax, bx] of zip(compareFields(a), compareFields(b))) {
+    if (ax < bx) {
+      return -1;
+    }
+    if (ax > bx) {
+      return 1;
+    }
+  }
+  return 0;
+}
+
+export const CARS: CarSpec[] = data
+  .map(recordToCar)
+  .filter((car: CarSpec) => car && tracksFor(car.class).length > 0);
+CARS.sort(compareCars);
+
+export function carsIn(carClass: CarClass): CarSpec[] {
+  return CARS.filter(c => c.class === carClass);
+}

@@ -10,11 +10,12 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 
-import { GlobalStyle } from '../styles/global-styles';
-
 import { HomePage } from './pages/HomePage/Loadable';
-import { NotFoundPage } from './pages/NotFoundPage/Loadable';
+import { NotFoundPage } from './components/NotFoundPage/Loadable';
 import { useTranslation } from 'react-i18next';
+
+import Container from '@mui/material/Container';
+import CssBaseline from '@mui/material/CssBaseline';
 
 export function App() {
   const { i18n } = useTranslation();
@@ -25,14 +26,25 @@ export function App() {
         defaultTitle="React Boilerplate"
         htmlAttributes={{ lang: i18n.language }}
       >
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+        />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
         <meta name="description" content="A React Boilerplate application" />
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Helmet>
+      <CssBaseline />
 
-      <Switch>
-        <Route exact path={process.env.PUBLIC_URL + '/'} component={HomePage} />
-        <Route component={NotFoundPage} />
-      </Switch>
-      <GlobalStyle />
+      <Container maxWidth={false}>
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route component={NotFoundPage} />
+        </Switch>
+      </Container>
     </BrowserRouter>
   );
 }

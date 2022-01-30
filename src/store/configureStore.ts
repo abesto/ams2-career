@@ -1,3 +1,7 @@
+/**
+ * Create the store with dynamic reducers
+ */
+
 import {
   configureStore,
   getDefaultMiddleware,
@@ -26,10 +30,7 @@ export function configureAppStore() {
   const store = configureStore({
     reducer: createReducer(),
     middleware: [...getDefaultMiddleware(), ...middlewares],
-    devTools:
-      /* istanbul ignore next line */
-      process.env.NODE_ENV !== 'production' ||
-      process.env.PUBLIC_URL.length > 0,
+    devTools: process.env.NODE_ENV !== 'production',
     enhancers,
   });
 
