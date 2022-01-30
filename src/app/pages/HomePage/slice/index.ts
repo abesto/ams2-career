@@ -17,13 +17,13 @@ const slice = createSlice({
     carEnter(state, action: PayloadAction<CarSpec>) {
       state.hoveredCar = action.payload;
     },
-    carLeave(state, action: PayloadAction<CarSpec>) {
+    carLeave(state, _action: PayloadAction<CarSpec>) {
       state.hoveredCar = null;
     },
     trackEnter(state, action: PayloadAction<TrackSpec>) {
       state.hoveredTrack = action.payload;
     },
-    trackLeave(state, action: PayloadAction<TrackSpec>) {
+    trackLeave(state, _action: PayloadAction<TrackSpec>) {
       state.hoveredTrack = null;
     },
   },
@@ -35,15 +35,3 @@ export const useHomePageSliceSlice = () => {
   useInjectReducer({ key: slice.name, reducer: slice.reducer });
   return { actions: slice.actions };
 };
-
-/**
- * Example Usage:
- *
- * export function MyComponentNeedingThisSlice() {
- *  const { actions } = useHomePageSliceSlice();
- *
- *  const onButtonClick = (evt) => {
- *    dispatch(actions.someAction());
- *   };
- * }
- */

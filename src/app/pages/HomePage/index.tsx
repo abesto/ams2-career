@@ -32,12 +32,11 @@ export function HomePage() {
   return (
     <>
       <Helmet>
-        <title>Debug</title>
-        <meta name="description" content="" />
+        <title>Data Debugger</title>
       </Helmet>
 
       <Box sx={{ flexGrow: 1 }}>
-        <h1>Data debugger</h1>
+        <h1>Data Debugger</h1>
         <Grid container spacing={3}>
           <Grid item xs={8}>
             <Cars

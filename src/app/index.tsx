@@ -22,8 +22,7 @@ export function App() {
   return (
     <BrowserRouter>
       <Helmet
-        titleTemplate="%s - React Boilerplate"
-        defaultTitle="React Boilerplate"
+        titleTemplate="%s - AMS2 Career"
         htmlAttributes={{ lang: i18n.language }}
       >
         <link
@@ -34,7 +33,6 @@ export function App() {
           rel="stylesheet"
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
         />
-        <meta name="description" content="A React Boilerplate application" />
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Helmet>
       <CssBaseline />
