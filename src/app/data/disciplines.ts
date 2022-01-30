@@ -1,6 +1,6 @@
 import { Discipline } from 'types/Discipline';
 
-const names = ['Endurance', 'GT'];
+const names = ['Endurance', 'GT', 'Open Wheel'];
 const headlights = ['Endurance'];
 
 export const DISCIPLINES: Discipline[] = names.map(name => ({

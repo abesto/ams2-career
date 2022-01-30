@@ -1,3 +1,4 @@
+import { classEquals } from 'app/data/car_classes';
 import { CarClass } from './CarClass';
 
 export interface TrackSpec {
@@ -8,7 +9,7 @@ export interface TrackSpec {
 }
 
 export function canRaceOn(carClass: CarClass, track: TrackSpec): boolean {
-  return track.classes.includes(carClass);
+  return track.classes.some(c => classEquals(c, carClass));
 }
 
 export function trackKey(track: TrackSpec): string {

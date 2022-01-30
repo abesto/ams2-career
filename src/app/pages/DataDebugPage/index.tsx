@@ -7,17 +7,17 @@ import { Helmet } from 'react-helmet-async';
 import { useDispatch, useSelector } from 'react-redux';
 import { CarSpec } from 'types/CarSpec';
 import { canRaceOn, TrackSpec } from 'types/TrackSpec';
-import { useHomePageSliceSlice } from './slice';
-import { selectHomePageSlice } from './slice/selectors';
+import { useDataDebugPageSliceSlice } from './slice';
+import { selectDataDebugPageSlice } from './slice/selectors';
 
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 
-export function HomePage() {
-  const { actions } = useHomePageSliceSlice();
+export function DataDebugPage() {
+  const { actions } = useDataDebugPageSliceSlice();
   const dispatch = useDispatch();
 
-  const slice = useSelector(selectHomePageSlice);
+  const slice = useSelector(selectDataDebugPageSlice);
   const hoveredCar = slice.hoveredCar;
   const hoveredTrack = slice.hoveredTrack;
 

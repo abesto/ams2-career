@@ -3,7 +3,7 @@ import Papa from 'papaparse';
 
 import { CarClass } from 'types/CarClass';
 import { CarSpec } from 'types/CarSpec';
-import { classExists, getCarClass } from './car_classes';
+import { classEquals, getCarClasses } from './car_classes';
 import { tracksFor } from './tracks';
 
 // Dumped from the official car list
@@ -12,18 +12,15 @@ const data = Papa.parse(
   { header: true },
 ).data;
 
-function recordToCar(record: { [key: string]: string }): CarSpec | null {
-  if (!classExists(record.class)) {
-    return null;
-  }
-  return {
+function recordToCars(record: { [key: string]: string }): CarSpec[] {
+  return getCarClasses(record.class).map(carClass => ({
     name: record.name,
-    class: getCarClass(record.class),
-  };
+    class: carClass,
+  }));
 }
 
 function compareFields(a: CarSpec): any[] {
-  return [a.class.level, a.class.name, a.name];
+  return [a.class.discipline.name, a.class.level, a.class.name, a.name];
 }
 
 const zip = (a: any[], b: any[]) => a.map((k, i) => [k, b[i]]);
@@ -41,10 +38,10 @@ function compareCars(a: CarSpec, b: CarSpec): number {
 }
 
 export const CARS: CarSpec[] = data
-  .map(recordToCar)
+  .flatMap(recordToCars)
   .filter((car: CarSpec) => car && tracksFor(car.class).length > 0);
 CARS.sort(compareCars);
 
 export function carsIn(carClass: CarClass): CarSpec[] {
-  return CARS.filter(c => c.class === carClass);
+  return CARS.filter(c => classEquals(c.class, carClass));
 }

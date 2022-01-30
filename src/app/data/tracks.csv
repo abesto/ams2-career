@@ -1,4 +1,7 @@
-Name,Configuration,Ginetta G40 Cup,GT5,GT4,GT3
-Brands Hatch,Indy,x,x,,
-Brands Hatch,GP,,,x,x
-Bathurst,2020,,,x,x
+Name,Configuration,Ginetta G40 Cup,GT5,GT4,GT3,Karting 125CC
+Brands Hatch,Indy,x,x,,,
+Brands Hatch,GP,,,x,x,
+Bathurst,2020,,,x,x,
+Interlagos Kart,One,,,,,x
+Interlagos Kart,Two,,,,,x
+Interlagos Kart,Three,,,,,x

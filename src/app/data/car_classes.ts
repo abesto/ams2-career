@@ -8,6 +8,16 @@ const classes = {
     1: ['GT4'],
     2: ['GT3'],
   },
+  Endurance: {
+    0: ['Gain XP in GT'],
+    1: ['GT4'],
+    2: ['GT3'],
+  },
+  'Open Wheel': {
+    0: ['Karting 125CC'],
+    1: ['Formula Trainer'],
+    2: ['F3'],
+  },
 };
 
 export const CAR_CLASSES: CarClass[] = Object.entries(classes).flatMap(
@@ -21,12 +31,8 @@ export const CAR_CLASSES: CarClass[] = Object.entries(classes).flatMap(
     ),
 );
 
-export function getCarClass(name: string): CarClass {
-  const carClass = CAR_CLASSES.find(c => c.name === name);
-  if (!carClass) {
-    throw new Error(`Unknown car class: ${name}`);
-  }
-  return carClass;
+export function getCarClasses(name: string): CarClass[] {
+  return CAR_CLASSES.filter(c => c.name === name);
 }
 
 export function classesIn(discipline: Discipline): CarClass[] {
@@ -39,4 +45,12 @@ export function classesAt(discipline: Discipline, level: number): CarClass[] {
 
 export function classExists(name: string): boolean {
   return CAR_CLASSES.some(c => c.name === name);
+}
+
+export function classKey(carClass: CarClass): string {
+  return `${carClass.discipline.name}-${carClass.name}`;
+}
+
+export function classEquals(a: CarClass, b: CarClass): boolean {
+  return classKey(a) === classKey(b);
 }

@@ -3,15 +3,15 @@ import { CarSpec } from 'types/CarSpec';
 import { TrackSpec } from 'types/TrackSpec';
 import { createSlice } from 'utils/@reduxjs/toolkit';
 import { useInjectReducer } from 'utils/redux-injectors';
-import { HomePageSliceState } from './types';
+import { DataDebugPageSliceState } from './types';
 
-export const initialState: HomePageSliceState = {
+export const initialState: DataDebugPageSliceState = {
   hoveredCar: null,
   hoveredTrack: null,
 };
 
 const slice = createSlice({
-  name: 'homePageSlice',
+  name: 'dataDebugPageSlice',
   initialState,
   reducers: {
     carEnter(state, action: PayloadAction<CarSpec>) {
@@ -31,7 +31,7 @@ const slice = createSlice({
 
 export const { actions: homePageSliceActions } = slice;
 
-export const useHomePageSliceSlice = () => {
+export const useDataDebugPageSliceSlice = () => {
   useInjectReducer({ key: slice.name, reducer: slice.reducer });
   return { actions: slice.actions };
 };

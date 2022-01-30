@@ -6,7 +6,7 @@ export interface CarSpec {
 }
 
 export function carKey(car: CarSpec): string {
-  return `${car.class.name}-${car.name}`;
+  return `${car.class.discipline.name}-${car.class.name}-${car.name}`;
 }
 
 export function carEquals(a: CarSpec | null, b: CarSpec | null): boolean {

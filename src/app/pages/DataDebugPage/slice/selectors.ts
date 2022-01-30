@@ -3,9 +3,10 @@ import { createSelector } from '@reduxjs/toolkit';
 import { RootState } from 'types';
 import { initialState } from '.';
 
-const selectSlice = (state: RootState) => state.homePageSlice || initialState;
+const selectSlice = (state: RootState) =>
+  state.dataDebugPageSlice || initialState;
 
-export const selectHomePageSlice = createSelector(
+export const selectDataDebugPageSlice = createSelector(
   [selectSlice],
   state => state,
 );
