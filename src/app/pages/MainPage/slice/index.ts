@@ -1,5 +1,4 @@
 import { DISCIPLINES } from 'app/data/disciplines';
-import { Progress } from 'app/slice/types';
 import { createSlice } from 'utils/@reduxjs/toolkit';
 import { useInjectReducer } from 'utils/redux-injectors';
 

@@ -1,4 +1,3 @@
-import { RaceOptions } from 'app/components/RaceOptions';
 import { classesAt, classesIn } from 'app/data/car_classes';
 import { DISCIPLINES } from 'app/data/disciplines';
 import { useCareerSlice } from 'app/slice';
@@ -20,6 +19,7 @@ import StepLabel from '@mui/material/StepLabel';
 import Stepper from '@mui/material/Stepper';
 import Typography from '@mui/material/Typography';
 
+import { RaceOptions } from './components/RaceOptions';
 import { useMainPageSlice } from './slice';
 import { selectMainPage } from './slice/selectors';
 

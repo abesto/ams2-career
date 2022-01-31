@@ -1,26 +1,21 @@
-import { Cars } from 'app/components/Cars';
-import { Tracks } from 'app/components/Tracks';
 import { CARS } from 'app/data/cars';
 import { TRACKS } from 'app/data/tracks';
 import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
-import { useDispatch, useSelector } from 'react-redux';
 import { CarSpec } from 'types/CarSpec';
 import { canRaceOn, TrackSpec } from 'types/TrackSpec';
 
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 
-import { useDataDebugPageSliceSlice } from './slice';
-import { selectDataDebugPageSlice } from './slice/selectors';
+import { Cars } from './components/Cars';
+import { Tracks } from './components/Tracks';
 
 export function DataDebugPage() {
-  const { actions } = useDataDebugPageSliceSlice();
-  const dispatch = useDispatch();
-
-  const slice = useSelector(selectDataDebugPageSlice);
-  const hoveredCar = slice.hoveredCar;
-  const hoveredTrack = slice.hoveredTrack;
+  const [hoveredCar, setHoveredCar] = React.useState<CarSpec | null>(null);
+  const [hoveredTrack, setHoveredTrack] = React.useState<TrackSpec | null>(
+    null,
+  );
 
   const tracks = hoveredCar
     ? TRACKS.filter(track => canRaceOn(hoveredCar.class, track))
@@ -40,24 +35,10 @@ export function DataDebugPage() {
         <h1>Data Debugger</h1>
         <Grid container spacing={3}>
           <Grid item xs={8}>
-            <Cars
-              cars={cars}
-              onMouseEnter={(car: CarSpec) => dispatch(actions.carEnter(car))}
-              onMouseLeave={(car: CarSpec) => dispatch(actions.carLeave(car))}
-              highlightCar={hoveredCar}
-            />
+            <Cars cars={cars} onHover={setHoveredCar} />
           </Grid>
           <Grid item xs={4}>
-            <Tracks
-              tracks={tracks}
-              onMouseEnter={(track: TrackSpec) =>
-                dispatch(actions.trackEnter(track))
-              }
-              onMouseLeave={(track: TrackSpec) =>
-                dispatch(actions.trackLeave(track))
-              }
-              highlightTrack={hoveredTrack}
-            />
+            <Tracks tracks={tracks} onHover={setHoveredTrack} />
           </Grid>
         </Grid>
       </Box>

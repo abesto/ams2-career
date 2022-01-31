@@ -1,5 +1,4 @@
 import { CareerState } from 'app//slice/types';
-import { DataDebugPageSliceState } from 'app/pages/DataDebugPage/slice/types';
 import { MainPageState } from 'app/pages/MainPage/slice/types';
 
 // [IMPORT NEW CONTAINERSTATE ABOVE] < Needed for generating containers seamlessly
@@ -9,7 +8,6 @@ import { MainPageState } from 'app/pages/MainPage/slice/types';
   You have to declare them here manually
 */
 export interface RootState {
-  dataDebugPageSlice?: DataDebugPageSliceState;
   career?: CareerState;
   mainPage?: MainPageState;
   // [INSERT NEW REDUCER KEY ABOVE] < Needed for generating containers seamlessly

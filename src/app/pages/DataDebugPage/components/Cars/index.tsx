@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { carEquals, carKey, CarSpec } from 'types/CarSpec';
+import { carKey, CarSpec } from 'types/CarSpec';
 
 import Paper from '@mui/material/Paper';
 import Table from '@mui/material/Table';
@@ -11,12 +11,12 @@ import TableRow from '@mui/material/TableRow';
 
 interface Props {
   cars: CarSpec[];
-  onMouseEnter: (car: CarSpec) => void;
-  onMouseLeave: (car: CarSpec) => void;
-  highlightCar: CarSpec | null;
+  onHover: (car: CarSpec | null) => void;
 }
 
 export function Cars(props: Props) {
+  const { cars, onHover } = props;
+
   return (
     <div>
       <h2>Cars</h2>
@@ -31,12 +31,12 @@ export function Cars(props: Props) {
             </TableRow>
           </TableHead>
           <TableBody>
-            {props.cars.map((car: CarSpec) => (
+            {cars.map((car: CarSpec) => (
               <TableRow
                 key={carKey(car)}
-                onMouseEnter={() => props.onMouseEnter(car)}
-                onMouseLeave={() => props.onMouseLeave(car)}
-                hover={carEquals(car, props.highlightCar)}
+                onMouseEnter={() => onHover(car)}
+                onMouseLeave={() => onHover(null)}
+                hover={true}
               >
                 <TableCell>{car.name}</TableCell>
                 <TableCell>{car.class.discipline.name}</TableCell>
