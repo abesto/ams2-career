@@ -1,4 +1,5 @@
 import { classEquals } from 'app/data/car_classes';
+
 import { CarClass } from './CarClass';
 
 export interface TrackSpec {

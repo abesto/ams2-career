@@ -1,5 +1,5 @@
-import { carsIn } from 'app/data/cars';
 import { classesAt } from 'app/data/car_classes';
+import { carsIn } from 'app/data/cars';
 import { tracksFor } from 'app/data/tracks';
 import { CarClass } from 'types/CarClass';
 import { Discipline } from 'types/Discipline';

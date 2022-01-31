@@ -1,6 +1,6 @@
-import { PayloadAction } from '@reduxjs/toolkit';
 import { createSlice } from 'utils/@reduxjs/toolkit';
 import { useInjectReducer } from 'utils/redux-injectors';
+
 import { CareerState } from './types';
 
 export const initialState: CareerState = {
@@ -10,9 +10,7 @@ export const initialState: CareerState = {
 const slice = createSlice({
   name: 'career',
   initialState,
-  reducers: {
-    someAction(state, action: PayloadAction<any>) {},
-  },
+  reducers: {},
 });
 
 export const { actions: careerActions } = slice;

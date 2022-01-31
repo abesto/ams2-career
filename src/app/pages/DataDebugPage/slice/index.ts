@@ -1,8 +1,10 @@
-import { PayloadAction } from '@reduxjs/toolkit';
 import { CarSpec } from 'types/CarSpec';
 import { TrackSpec } from 'types/TrackSpec';
 import { createSlice } from 'utils/@reduxjs/toolkit';
 import { useInjectReducer } from 'utils/redux-injectors';
+
+import { PayloadAction } from '@reduxjs/toolkit';
+
 import { DataDebugPageSliceState } from './types';
 
 export const initialState: DataDebugPageSliceState = {

@@ -1,30 +1,31 @@
-import * as React from 'react';
-import { useSelector } from 'react-redux';
-import { Helmet } from 'react-helmet-async';
-
-import { selectCareer } from 'app/slice/selectors';
+import { RaceOptions } from 'app/components/RaceOptions';
+import { classesAt, classesIn } from 'app/data/car_classes';
 import { DISCIPLINES } from 'app/data/disciplines';
-import { Discipline } from 'types/Discipline';
 import { useCareerSlice } from 'app/slice';
-import { maxLevel, xpNeededForLevelUpTo, XpProgress } from 'app/xp';
+import { selectCareer } from 'app/slice/selectors';
+import { DisciplineProgress, maxLevel, xpNeededForLevelUpTo } from 'app/xp';
+import * as React from 'react';
+import { Helmet } from 'react-helmet-async';
+import { useDispatch, useSelector } from 'react-redux';
+import { Discipline } from 'types/Discipline';
 
+import { styled } from '@mui/material';
 import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Grid from '@mui/material/Grid';
 import LinearProgress from '@mui/material/LinearProgress';
 import Paper from '@mui/material/Paper';
-import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Grid';
-import Stepper from '@mui/material/Stepper';
 import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
-import { styled } from '@mui/material';
-import { classesAt, classesIn } from 'app/data/car_classes';
-import { racegen } from './racegen';
-import { Race } from 'types/Race';
-import { RaceOptions } from 'app/components/RaceOptions';
+import Stepper from '@mui/material/Stepper';
+import Typography from '@mui/material/Typography';
+
+import { useMainPageSlice } from './slice';
+import { selectMainPage } from './slice/selectors';
 
 interface Props {}
 
-function Xp(props: { discipline: Discipline; progress: XpProgress }) {
+function Xp(props: { discipline: Discipline; progress: DisciplineProgress }) {
   const { discipline, progress } = props;
   if (maxLevel(discipline) === 0) {
     return null;
@@ -61,12 +62,11 @@ function Xp(props: { discipline: Discipline; progress: XpProgress }) {
 }
 
 export function MainPage(props: Props) {
-  const { actions } = useCareerSlice();
+  useCareerSlice();
+  const { actions } = useMainPageSlice();
+  const dispatch = useDispatch();
   const career = useSelector(selectCareer);
-
-  const races: Race[] = DISCIPLINES.flatMap(discipline =>
-    racegen(discipline, career.progress.get(discipline)!.level),
-  );
+  const slice = useSelector(selectMainPage);
 
   // TODO move these out into components; here for fast prototyping
   return (
@@ -95,7 +95,18 @@ export function MainPage(props: Props) {
             <Typography variant="h4" sx={{ mb: 2 }}>
               Pick a Race
             </Typography>
-            <RaceOptions races={races} />
+            <RaceOptions races={slice.raceOptions} />
+            <Button
+              onClick={() => {
+                const levels: { [key: string]: number } = {};
+                for (const [discipline, xp] of career.progress) {
+                  levels[discipline.name] = xp.level;
+                }
+                dispatch(actions.generateRaces({ levels }));
+              }}
+            >
+              Regenerate Race Options
+            </Button>
           </GridItem>
         </Grid>
       </Grid>

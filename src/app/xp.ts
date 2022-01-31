@@ -1,5 +1,6 @@
 import { Discipline } from 'types/Discipline';
 import { RaceResult } from 'types/Race';
+
 import { classesIn } from './data/car_classes';
 
 // Simple placeholders for now
@@ -12,7 +13,7 @@ export function xpNeededForLevelUpTo(level: number): number {
   return 100 * level;
 }
 
-export interface XpProgress {
+export interface DisciplineProgress {
   readonly totalXp: number;
   readonly xpInLevel: number;
   readonly level: number;
@@ -27,7 +28,7 @@ export function maxLevel(discipline: Discipline): number {
 export function totalXpToProgress(
   discipline: Discipline,
   totalXp: number,
-): XpProgress {
+): DisciplineProgress {
   let level = 1;
   let xpInLevel = totalXp;
   while (

@@ -1,8 +1,8 @@
-import raw from 'raw.macro';
 import Papa from 'papaparse';
-
+import raw from 'raw.macro';
 import { CarClass } from 'types/CarClass';
 import { canRaceOn, TrackSpec } from 'types/TrackSpec';
+
 import { CAR_CLASSES } from './car_classes';
 
 // Manually curated

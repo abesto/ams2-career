@@ -1,5 +1,6 @@
 import { CarClass } from 'types/CarClass';
 import { Discipline } from 'types/Discipline';
+
 import { getDiscipline } from './disciplines';
 
 const classes = {

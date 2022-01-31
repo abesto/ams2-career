@@ -1,5 +1,5 @@
 import { DISCIPLINES } from 'app/data/disciplines';
-import { xpGain, XpProgress, totalXpToProgress } from 'app/xp';
+import { DisciplineProgress, totalXpToProgress, xpGain } from 'app/xp';
 import { Discipline } from 'types/Discipline';
 import { RaceResult } from 'types/Race';
 
@@ -8,8 +8,10 @@ export interface CareerState {
   raceResults: RaceResult[];
 }
 
+export type Progress = Map<Discipline, DisciplineProgress>;
+
 export interface EnrichedCareerData extends CareerState {
-  progress: Map<Discipline, XpProgress>;
+  progress: Progress;
 }
 
 export function enrich(state: CareerState): EnrichedCareerData {

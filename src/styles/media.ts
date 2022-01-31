@@ -4,12 +4,12 @@
 
 import {
   css,
-  DefaultTheme,
   CSSObject,
+  DefaultTheme,
+  FlattenInterpolation,
+  Interpolation,
   InterpolationFunction,
   ThemedStyledProps,
-  Interpolation,
-  FlattenInterpolation,
 } from 'styled-components/macro';
 
 /*

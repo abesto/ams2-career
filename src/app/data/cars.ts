@@ -1,8 +1,8 @@
-import raw from 'raw.macro';
 import Papa from 'papaparse';
-
+import raw from 'raw.macro';
 import { CarClass } from 'types/CarClass';
 import { CarSpec } from 'types/CarSpec';
+
 import { classEquals, getCarClasses } from './car_classes';
 import { tracksFor } from './tracks';
 

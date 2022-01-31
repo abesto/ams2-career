@@ -8,24 +8,24 @@
 
 import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { useTranslation } from 'react-i18next';
 import {
-  Switch,
-  Route,
   BrowserRouter,
   Link as RouterLink,
+  Route,
+  Switch,
 } from 'react-router-dom';
-
-import { MainPage } from './pages/MainPage';
-import { DataDebugPage } from './pages/DataDebugPage';
-import { NotFoundPage } from './components/NotFoundPage';
-import { useTranslation } from 'react-i18next';
 
 import AppBar from '@mui/material/AppBar';
 import Button from '@mui/material/Button';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import CssBaseline from '@mui/material/CssBaseline';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+
+import { NotFoundPage } from './components/NotFoundPage';
+import { DataDebugPage } from './pages/DataDebugPage';
+import { MainPage } from './pages/MainPage';
 
 export function App() {
   const { i18n } = useTranslation();
