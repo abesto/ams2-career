@@ -88,7 +88,7 @@ export function MainPage(props: Props) {
       racedAt: new Date().getTime(),
     };
     dispatch(careerActions.recordRaceResult({ raceResult }));
-    generateRaces();
+    dispatch(mainPageActions.reset());
   }
 
   // TODO move these out into components; here for fast prototyping
@@ -132,7 +132,7 @@ export function MainPage(props: Props) {
               onSelect={index => dispatch(mainPageActions.selectRace(index))}
               selectedRaceIndex={slice.selectedRaceIndex}
             />
-            <Button onClick={generateRaces}>Regenerate Race Options</Button>
+            <Button onClick={generateRaces}>Generate Race Options</Button>
             {selectedRace !== null && (
               <>
                 <Typography variant="h4" sx={{ mt: 3 }}>
