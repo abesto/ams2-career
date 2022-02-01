@@ -22,7 +22,7 @@ export function configureAppStore() {
   // Create the store with saga middleware
   const middlewares = [
     sagaMiddleware,
-    save({ ignoreStates: ['DebugPageSlice'], debounce: 1000 }),
+    save({ ignoreStates: ['DebugPageSlice'] }),
   ];
 
   const preloadedState = load();

@@ -17,6 +17,7 @@ import {
 } from 'react-router-dom';
 
 import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -25,6 +26,7 @@ import Typography from '@mui/material/Typography';
 
 import { NotFoundPage } from './components/NotFoundPage';
 import { DataDebugPage } from './pages/DataDebugPage';
+import { LogbookPage } from './pages/LogbookPage';
 import { MainPage } from './pages/MainPage';
 
 export function App() {
@@ -50,7 +52,7 @@ export function App() {
       <Container maxWidth={false}>
         <AppBar position="static">
           <Toolbar>
-            <Typography variant="h6" sx={{ flexGrow: 1 }}>
+            <Typography variant="h6">
               <Button
                 color="inherit"
                 size="large"
@@ -60,6 +62,18 @@ export function App() {
                 Home
               </Button>
             </Typography>
+
+            <Button
+              color="inherit"
+              size="small"
+              component={RouterLink}
+              to="/logbook"
+            >
+              Logbook
+            </Button>
+
+            <Box sx={{ flexGrow: 1 }} />
+
             <Button
               color="inherit"
               size="small"
@@ -74,6 +88,7 @@ export function App() {
         <Switch>
           <Route exact path="/" component={MainPage} />
           <Route exact path="/debug" component={DataDebugPage} />
+          <Route exact path="/logbook" component={LogbookPage} />
           <Route component={NotFoundPage} />
         </Switch>
       </Container>

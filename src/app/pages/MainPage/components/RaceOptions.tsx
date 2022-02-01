@@ -11,6 +11,8 @@ import TableRow from '@mui/material/TableRow';
 
 interface Props {
   races: Race[];
+  onSelect: (raceIndex: number) => void;
+  selectedRaceIndex: null | number;
 }
 
 export function RaceOptions(props: Props) {
@@ -27,8 +29,14 @@ export function RaceOptions(props: Props) {
           </TableRow>
         </TableHead>
         <TableBody>
-          {props.races.map(race => (
-            <TableRow key={classKey(race.car.class)}>
+          {props.races.map((race, index) => (
+            <TableRow
+              key={classKey(race.car.class)}
+              hover={true}
+              selected={index === props.selectedRaceIndex}
+              onClick={() => props.onSelect(index)}
+              sx={{ cursor: 'pointer' }}
+            >
               <TableCell>{race.car.class.discipline.name}</TableCell>
               <TableCell>{race.car.class.name}</TableCell>
               <TableCell>{race.car.name}</TableCell>

@@ -7,6 +7,7 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useDispatch, useSelector } from 'react-redux';
 import { Discipline } from 'types/Discipline';
+import { RaceResult } from 'types/Race';
 
 import { styled } from '@mui/material';
 import Box from '@mui/material/Box';
@@ -19,9 +20,10 @@ import StepLabel from '@mui/material/StepLabel';
 import Stepper from '@mui/material/Stepper';
 import Typography from '@mui/material/Typography';
 
+import { GoRacing } from './components/GoRacing';
 import { RaceOptions } from './components/RaceOptions';
 import { useMainPageSlice } from './slice';
-import { selectMainPage } from './slice/selectors';
+import { selectMainPage, selectSelectedRace } from './slice/selectors';
 
 interface Props {}
 
@@ -40,7 +42,7 @@ function Xp(props: { discipline: Discipline; progress: DisciplineProgress }) {
   return (
     <Box sx={{ my: 4 }}>
       <Typography variant="h6">{discipline.name}</Typography>
-      <Stepper sx={{ m: 1 }}>
+      <Stepper sx={{ m: 1 }} activeStep={progress.level - 1}>
         {levels.map(level => (
           <Step key={level}>
             <StepLabel>
@@ -53,7 +55,7 @@ function Xp(props: { discipline: Discipline; progress: DisciplineProgress }) {
       </Stepper>
       <LinearProgress
         variant="determinate"
-        value={progress.xpInLevel / xpToNextLevel}
+        value={(progress.xpInLevel / xpToNextLevel) * 100}
         sx={{ mt: 2 }}
       />
       <Typography variant="body2">{`${progress.xpInLevel} / ${xpToNextLevel} XP to next category`}</Typography>
@@ -63,10 +65,31 @@ function Xp(props: { discipline: Discipline; progress: DisciplineProgress }) {
 
 export function MainPage(props: Props) {
   useCareerSlice();
-  const { actions } = useMainPageSlice();
+  const { actions: mainPageActions } = useMainPageSlice();
+  const { actions: careerActions } = useCareerSlice();
+
   const dispatch = useDispatch();
   const career = useSelector(selectCareer);
   const slice = useSelector(selectMainPage);
+  const selectedRace = useSelector(selectSelectedRace);
+
+  function generateRaces() {
+    const levels: { [key: string]: number } = {};
+    for (const [discipline, xp] of career.progress) {
+      levels[discipline.name] = xp.level;
+    }
+    dispatch(mainPageActions.generateRaces({ levels }));
+  }
+
+  function recordResult(position: number) {
+    const raceResult: RaceResult = {
+      ...selectedRace!,
+      position,
+      racedAt: new Date().getTime(),
+    };
+    dispatch(careerActions.recordRaceResult({ raceResult }));
+    generateRaces();
+  }
 
   // TODO move these out into components; here for fast prototyping
   return (
@@ -75,7 +98,7 @@ export function MainPage(props: Props) {
         <title>Home</title>
       </Helmet>
       <Grid container spacing={2}>
-        <Grid item xs={4}>
+        <Grid item xs={12} lg={4}>
           <GridItem>
             <Typography variant="h4" sx={{ mb: 2 }}>
               Career Progress
@@ -87,26 +110,37 @@ export function MainPage(props: Props) {
                 progress={career.progress.get(discipline)!}
               />
             ))}
+            <Button
+              color="error"
+              onClick={() => {
+                dispatch(careerActions.resetCareer());
+                dispatch(mainPageActions.reset());
+              }}
+            >
+              Reset Career
+            </Button>
           </GridItem>
         </Grid>
 
-        <Grid item xs={8}>
+        <Grid item xs={12} lg={8}>
           <GridItem>
             <Typography variant="h4" sx={{ mb: 2 }}>
               Pick a Race
             </Typography>
-            <RaceOptions races={slice.raceOptions} />
-            <Button
-              onClick={() => {
-                const levels: { [key: string]: number } = {};
-                for (const [discipline, xp] of career.progress) {
-                  levels[discipline.name] = xp.level;
-                }
-                dispatch(actions.generateRaces({ levels }));
-              }}
-            >
-              Regenerate Race Options
-            </Button>
+            <RaceOptions
+              races={slice.raceOptions}
+              onSelect={index => dispatch(mainPageActions.selectRace(index))}
+              selectedRaceIndex={slice.selectedRaceIndex}
+            />
+            <Button onClick={generateRaces}>Regenerate Race Options</Button>
+            {selectedRace !== null && (
+              <>
+                <Typography variant="h4" sx={{ mt: 3 }}>
+                  Go Racing!
+                </Typography>
+                <GoRacing race={selectedRace!} onRecord={recordResult} />
+              </>
+            )}
           </GridItem>
         </Grid>
       </Grid>

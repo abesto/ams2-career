@@ -1,4 +1,4 @@
-import { DISCIPLINES } from 'app/data/disciplines';
+import { DISCIPLINES, getDiscipline } from 'app/data/disciplines';
 import { DisciplineProgress, totalXpToProgress, xpGain } from 'app/xp';
 import { Discipline } from 'types/Discipline';
 import { RaceResult } from 'types/Race';
@@ -20,18 +20,19 @@ export function enrich(state: CareerState): EnrichedCareerData {
     progress: new Map(),
   };
 
-  const xp: Map<Discipline, number> = new Map();
+  const xp: { [key: string]: number } = {};
 
   for (const discipline of DISCIPLINES) {
-    xp.set(discipline, 0);
+    xp[discipline.name] = 0;
   }
 
   for (const raceResult of state.raceResults) {
     const { discipline } = raceResult.car.class;
-    xp.set(discipline, xp.get(discipline) || 0 + xpGain(raceResult));
+    xp[discipline.name] += xpGain(raceResult);
   }
 
-  xp.forEach((totalXp, discipline) => {
+  Object.entries(xp).forEach(([disciplineName, totalXp]) => {
+    const discipline = getDiscipline(disciplineName);
     data.progress.set(discipline, totalXpToProgress(discipline, totalXp));
   });
 

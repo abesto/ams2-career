@@ -9,6 +9,7 @@ import { MainPageState } from './types';
 
 export const initialState: MainPageState = {
   raceOptions: [],
+  selectedRaceIndex: null,
 };
 
 const slice = createSlice({
@@ -21,6 +22,14 @@ const slice = createSlice({
     ) {
       const { levels } = action.payload;
       state.raceOptions = DISCIPLINES.flatMap(d => racegen(d, levels[d.name]));
+      state.selectedRaceIndex = null;
+    },
+    selectRace(state, action: PayloadAction<number>) {
+      state.selectedRaceIndex = action.payload;
+    },
+    reset(state, action: PayloadAction<void>) {
+      state.raceOptions = [];
+      state.selectedRaceIndex = null;
     },
   },
 });
