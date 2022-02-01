@@ -19,14 +19,53 @@ import { Provider } from 'react-redux';
 import reportWebVitals from 'reportWebVitals';
 import { configureAppStore } from 'store/configureStore';
 
+import Button from '@mui/material/Button';
+
 const store = configureAppStore();
 const MOUNT_NODE = document.getElementById('root') as HTMLElement;
+
+class DropLocalStorageOnErrorBoundary extends React.Component<
+  {},
+  { hasError: boolean }
+> {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false };
+  }
+
+  static getDerivedStateFromError(error) {
+    console.error(error);
+    return { hasError: true };
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return (
+        <>
+          <h1>Something went wrong.</h1>
+          <p>
+            It's very likely that your saved state is incompatible with the
+            current version of the application. Click the button below to clear
+            application state, then reload the page.
+          </p>
+          <Button color="error" onClick={() => window.localStorage.clear()}>
+            Clear state
+          </Button>
+        </>
+      );
+    }
+
+    return this.props.children;
+  }
+}
 
 ReactDOM.render(
   <Provider store={store}>
     <HelmetProvider>
       <React.StrictMode>
-        <App />
+        <DropLocalStorageOnErrorBoundary>
+          <App />
+        </DropLocalStorageOnErrorBoundary>
       </React.StrictMode>
     </HelmetProvider>
   </Provider>,
