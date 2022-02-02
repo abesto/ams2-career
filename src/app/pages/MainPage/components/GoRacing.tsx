@@ -1,3 +1,4 @@
+import dayjs from 'dayjs';
 import * as React from 'react';
 import { Race } from 'types/Race';
 
@@ -23,8 +24,8 @@ export function GoRacing(props: Props) {
         <dd>{race.track.configuration}</dd>
         <dt>Car</dt>
         <dd>{race.car.name}</dd>
-        <dt>Weather, length, et cetera!</dt>
-        <dd>TBD!</dd>
+        <dt>Sim Time</dt>
+        <dd>{dayjs(race.simtime).format('YYYY-MM-DD  HH:mm')}</dd>
       </dl>
       <Box>
         <TextField

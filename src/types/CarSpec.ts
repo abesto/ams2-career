@@ -3,6 +3,7 @@ import { CarClass } from './CarClass';
 export interface CarSpec {
   readonly name: string;
   readonly class: CarClass;
+  readonly year: number;
 }
 
 export function carKey(car: CarSpec): string {

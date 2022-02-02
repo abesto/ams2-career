@@ -3,6 +3,7 @@ import { TrackSpec } from './TrackSpec';
 
 export interface Race {
   readonly generatedAt: number; // JS timestamp
+  readonly simtime: number;
   readonly car: CarSpec;
   readonly track: TrackSpec;
 }

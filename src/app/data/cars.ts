@@ -16,6 +16,9 @@ function recordToCars(record: { [key: string]: string }): CarSpec[] {
   return getCarClasses(record.class).map(carClass => ({
     name: record.name,
     class: carClass,
+    year:
+      parseInt(record.year.trim().replace('*', '').split('-')[0]) ||
+      new Date().getFullYear() - 5,
   }));
 }
 
@@ -41,6 +44,8 @@ export const CARS: CarSpec[] = data
   .flatMap(recordToCars)
   .filter((car: CarSpec) => car && tracksFor(car.class).length > 0);
 CARS.sort(compareCars);
+
+console.log(CARS);
 
 export function carsIn(carClass: CarClass): CarSpec[] {
   return CARS.filter(c => classEquals(c.class, carClass));
