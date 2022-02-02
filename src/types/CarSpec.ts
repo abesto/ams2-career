@@ -4,6 +4,7 @@ export interface CarSpec {
   readonly name: string;
   readonly class: CarClass;
   readonly year: number;
+  readonly headlights: boolean;
 }
 
 export function carKey(car: CarSpec): string {

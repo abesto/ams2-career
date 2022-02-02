@@ -1,5 +1,5 @@
 import { classesAt } from 'app/data/car_classes';
-import { carsIn } from 'app/data/cars';
+import { canRaceAtNight, carsIn } from 'app/data/cars';
 import { tracksFor } from 'app/data/tracks';
 import dayjs from 'dayjs';
 import minMax from 'dayjs/plugin/minMax';
@@ -32,7 +32,14 @@ function genRaceDate(car: CarSpec): Date {
   const end = dayjs.min(start.add(10, 'year'), dayjs());
   const diffMs = start.diff(end);
   const diffRandom = Math.random() * diffMs;
-  return start.add(diffRandom, 'millisecond').toDate();
+
+  var date = start.add(diffRandom, 'millisecond');
+
+  if (!canRaceAtNight(car)) {
+    date = date.set('hour', 10 + Math.floor(Math.random() * 7));
+  }
+
+  return date.toDate();
 }
 
 export function racegen(discipline: Discipline, playerLevel: number): Race[] {
