@@ -2,22 +2,24 @@ import { classesAt, classesIn } from 'app/data/car_classes';
 import { DISCIPLINES } from 'app/data/disciplines';
 import { useCareerSlice } from 'app/slice';
 import { selectCareer } from 'app/slice/selectors';
-import { DisciplineProgress, maxLevel, xpNeededForLevelUpTo } from 'app/xp';
+import { aiLevel, EnrichedCareerData } from 'app/slice/types';
+import { maxLevel, xpNeededForLevelUpTo } from 'app/xp';
 import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useDispatch, useSelector } from 'react-redux';
 import { Discipline } from 'types/Discipline';
 import { RaceResult } from 'types/Race';
 
-import { styled } from '@mui/material';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
+import Chip from '@mui/material/Chip';
 import Grid from '@mui/material/Grid';
 import LinearProgress from '@mui/material/LinearProgress';
 import Paper from '@mui/material/Paper';
 import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
 import Stepper from '@mui/material/Stepper';
+import { styled } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 
 import { GoRacing } from './components/GoRacing';
@@ -27,8 +29,47 @@ import { selectMainPage, selectSelectedRace } from './slice/selectors';
 
 interface Props {}
 
-function Xp(props: { discipline: Discipline; progress: DisciplineProgress }) {
-  const { discipline, progress } = props;
+const ChipArrayListItem = styled('li')(({ theme }) => ({
+  margin: theme.spacing(0.5),
+}));
+
+function ChipArray(props: { strings: string[] }) {
+  return (
+    <Box
+      sx={{
+        display: 'flex',
+        justifyContent: 'left',
+        flexWrap: 'wrap',
+        listStyle: 'none',
+        p: 0.5,
+        m: 0,
+      }}
+      component="ul"
+    >
+      {props.strings.map((s, i) => (
+        <ChipArrayListItem key={i}>
+          <Chip label={s} />
+        </ChipArrayListItem>
+      ))}
+    </Box>
+  );
+}
+
+function plural(n: number, s: string) {
+  const s1 = n === 1 ? s : s + 's';
+  return `${n} ${s1}`;
+}
+
+function DisciplineProgressDisplay(props: {
+  discipline: Discipline;
+  career: EnrichedCareerData;
+}) {
+  const { discipline, career } = props;
+  const progress = career.progress[discipline.name];
+  const races = career.raceResults.filter(
+    r => r.car.class.discipline.name === discipline.name,
+  );
+
   if (maxLevel(discipline) === 0) {
     return null;
   }
@@ -40,8 +81,25 @@ function Xp(props: { discipline: Discipline; progress: DisciplineProgress }) {
     .filter((v, i, a) => a.indexOf(v) === i);
 
   return (
-    <Box sx={{ my: 4 }}>
+    <Paper sx={{ my: 2, p: 2 }}>
       <Typography variant="h6">{discipline.name}</Typography>
+
+      <ChipArray
+        strings={[
+          `${races.length} starts`,
+          plural(races.filter(r => r.position === 1).length, 'win'),
+          plural(races.filter(r => r.position <= 3).length, 'podium'),
+          `Average position: ${
+            Math.round(
+              (races.map(r => r.position).reduce((a, b) => a + b, 0) /
+                races.length) *
+                10,
+            ) / 10 || 'N/A'
+          }`,
+          `AI Strength: ${aiLevel(career, discipline)}`,
+        ]}
+      />
+
       <Stepper sx={{ m: 1 }} activeStep={progress.level - 1}>
         {levels.map(level => (
           <Step key={level}>
@@ -59,7 +117,7 @@ function Xp(props: { discipline: Discipline; progress: DisciplineProgress }) {
         sx={{ mt: 2 }}
       />
       <Typography variant="body2">{`${progress.xpInLevel} / ${xpToNextLevel} XP to next category`}</Typography>
-    </Box>
+    </Paper>
   );
 }
 
@@ -75,10 +133,10 @@ export function MainPage(props: Props) {
 
   function generateRaces() {
     const levels: { [key: string]: number } = {};
-    for (const [discipline, xp] of career.progress) {
-      levels[discipline.name] = xp.level;
+    for (const [disciplineName, xp] of Object.entries(career.progress)) {
+      levels[disciplineName] = xp.level;
     }
-    dispatch(mainPageActions.generateRaces({ levels }));
+    dispatch(mainPageActions.generateRaces({ career }));
   }
 
   function recordResult(position: number) {
@@ -104,10 +162,10 @@ export function MainPage(props: Props) {
               Career Progress
             </Typography>
             {DISCIPLINES.map(discipline => (
-              <Xp
+              <DisciplineProgressDisplay
                 key={discipline.name}
                 discipline={discipline}
-                progress={career.progress.get(discipline)!}
+                career={career}
               />
             ))}
             <Button

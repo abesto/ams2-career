@@ -13,7 +13,7 @@ interface Props {
 
 export function GoRacing(props: Props) {
   const { race } = props;
-  const [position, setPosition] = React.useState(1);
+  const [position, setPosition] = React.useState(5);
 
   return (
     <>
@@ -26,6 +26,8 @@ export function GoRacing(props: Props) {
         <dd>{race.car.name}</dd>
         <dt>Sim Time</dt>
         <dd>{dayjs(race.simtime).format('YYYY-MM-DD  HH:mm')}</dd>
+        <dt>AI Strength</dt>
+        <dd>{race.aiLevel}</dd>
       </dl>
       <Box>
         <TextField

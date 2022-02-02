@@ -1,4 +1,5 @@
 import { DISCIPLINES } from 'app/data/disciplines';
+import { EnrichedCareerData } from 'app/slice/types';
 import { createSlice } from 'utils/@reduxjs/toolkit';
 import { useInjectReducer } from 'utils/redux-injectors';
 
@@ -18,10 +19,11 @@ const slice = createSlice({
   reducers: {
     generateRaces(
       state,
-      action: PayloadAction<{ levels: { [key: string]: number } }>,
+      action: PayloadAction<{ career: EnrichedCareerData }>,
     ) {
-      const { levels } = action.payload;
-      state.raceOptions = DISCIPLINES.flatMap(d => racegen(d, levels[d.name]));
+      state.raceOptions = DISCIPLINES.flatMap(d =>
+        racegen(d, action.payload.career),
+      );
       state.selectedRaceIndex = null;
     },
     selectRace(state, action: PayloadAction<number>) {

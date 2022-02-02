@@ -7,6 +7,7 @@ export interface Race {
   readonly car: CarSpec;
   readonly track: TrackSpec;
   readonly playerLevel: number;
+  readonly aiLevel: number;
 }
 
 export interface RaceResult extends Race {

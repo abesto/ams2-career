@@ -1,6 +1,7 @@
 import { classesAt } from 'app/data/car_classes';
 import { canRaceAtNight, carsIn } from 'app/data/cars';
 import { tracksFor } from 'app/data/tracks';
+import { aiLevel, EnrichedCareerData } from 'app/slice/types';
 import dayjs from 'dayjs';
 import minMax from 'dayjs/plugin/minMax';
 import { CarClass } from 'types/CarClass';
@@ -42,8 +43,12 @@ function genRaceDate(car: CarSpec): Date {
   return date.toDate();
 }
 
-export function racegen(discipline: Discipline, playerLevel: number): Race[] {
+export function racegen(
+  discipline: Discipline,
+  career: EnrichedCareerData,
+): Race[] {
   const generatedAt = new Date().getTime();
+  const playerLevel = career.progress[discipline.name].level;
   return highestUnlockedClasses(discipline, playerLevel)
     .map(carClass => {
       const car = choice(carsIn(carClass));
@@ -53,6 +58,7 @@ export function racegen(discipline: Discipline, playerLevel: number): Race[] {
         car: car,
         track: choice(tracksFor(carClass)),
         playerLevel,
+        aiLevel: aiLevel(career, discipline),
       };
     })
     .filter(race => race.car && race.track);
