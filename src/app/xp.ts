@@ -6,11 +6,13 @@ import { classesIn } from './data/car_classes';
 // Simple placeholders for now
 
 export function xpGain(result: RaceResult): number {
-  return 25;
+  return Math.floor(
+    (1 - 0.03 * (result.position - 1)) * result.playerLevel * 15,
+  );
 }
 
 export function xpNeededForLevelUpTo(level: number): number {
-  return 100 * (level - 1);
+  return Math.floor(2 ** (level - 2) * 100);
 }
 
 export interface DisciplineProgress {

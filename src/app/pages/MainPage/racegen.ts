@@ -45,6 +45,7 @@ export function racegen(discipline: Discipline, playerLevel: number): Race[] {
         simtime: car && genRaceDate(car).getTime(),
         car: car,
         track: choice(tracksFor(carClass)),
+        playerLevel,
       };
     })
     .filter(race => race.car && race.track);
