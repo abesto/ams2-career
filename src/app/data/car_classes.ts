@@ -8,11 +8,13 @@ const classes = {
     0: ['Ginetta G40 Cup', 'GT5'],
     1: ['GT4'],
     2: ['GT3'],
+    3: ['GTE'],
   },
   Endurance: {
     0: ['Gain XP in GT'],
     1: ['GT4'],
     2: ['GT3'],
+    3: ['GTE'],
   },
   'Open Wheel': {
     0: ['Karting 125CC'],

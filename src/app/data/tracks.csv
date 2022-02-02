@@ -1,7 +1,19 @@
-Name,Configuration,Ginetta G40 Cup,GT5,GT4,GT3,Karting 125CC
-Brands Hatch,Indy,x,x,,,
-Brands Hatch,GP,,,x,x,
-Bathurst,2020,,,x,x,
-Interlagos Kart,One,,,,,x
-Interlagos Kart,Two,,,,,x
-Interlagos Kart,Three,,,,,x
+Name,Configuration,Ginetta G40 Cup,GT5,GT4,GT3,GTE,Karting 125CC
+Adelaide,,,,x,x,x,
+Adelaide,Historic 1988,,,,,,
+Azure Circuit,,,,x,x,x,
+Bathurst,2020,,,x,x,x,
+Brands Hatch,Indy,x,x,,,,
+Brands Hatch,GP,x,x,x,x,x,
+Donington,GP,x,x,x,x,x,
+Donington,National,,,,,,
+Interlagos Kart,One,,,,,,x
+Interlagos Kart,Two,,,,,,x
+Interlagos Kart,Three,,,,,,x
+Oulton Park,Island,x,x,,,,
+Oulton Park,International,,,x,x,x,
+Silverstone,,,,x,x,x,
+Silverstone,National,x,x,,,,
+Snetterton,100,,,,,,
+Snetterton,200,,,,,,
+Snetterton,300,x,x,x,x,x,
