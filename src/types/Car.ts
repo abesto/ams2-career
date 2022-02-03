@@ -7,10 +7,10 @@ export interface Car {
   readonly headlights: boolean;
 }
 
-export type CarId = string;
+export type CarId = string & { __brand: 'CarId' };
 
 export function getCarId(car: Car): CarId {
-  return `${car.carClassId}-${car.name}`;
+  return `${car.carClassId}-${car.name}` as CarId;
 }
 
 export function carEquals(a: Car | null, b: Car | null): boolean {

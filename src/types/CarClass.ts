@@ -6,10 +6,10 @@ export interface CarClass {
   readonly disciplineId: DisciplineId;
 }
 
-export type CarClassId = string;
+export type CarClassId = string & { __brand: 'CarClassId' };
 
 export function getCarClassId(carClass: CarClass): CarClassId {
-  return `${carClass.disciplineId}-${carClass.name}`;
+  return `${carClass.disciplineId}-${carClass.name}` as CarClassId;
 }
 
 export function classEquals(a: CarClass, b: CarClass): boolean {

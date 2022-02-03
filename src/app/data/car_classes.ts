@@ -1,5 +1,5 @@
 import { CarClass, CarClassId, getCarClassId } from 'types/CarClass';
-import { Discipline, getDisciplineId } from 'types/Discipline';
+import { Discipline, DisciplineId, getDisciplineId } from 'types/Discipline';
 
 import { getDiscipline } from './disciplines';
 
@@ -27,9 +27,9 @@ export const CAR_CLASSES: { [key: CarClassId]: CarClass } = Object.fromEntries(
   Object.entries(classes).flatMap(([disciplineId, classes]) =>
     Object.entries(classes).flatMap(([level, names]) =>
       names.map(name => {
-        getDiscipline(disciplineId); // For the side-effect of exploding if there's an invalid disciplineId in `classes`
+        getDiscipline(disciplineId as DisciplineId); // For the side-effect of exploding if there's an invalid disciplineId in `classes`
         const carClass = {
-          disciplineId,
+          disciplineId: disciplineId as DisciplineId,
           level: parseInt(level),
           name,
         };

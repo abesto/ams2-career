@@ -25,20 +25,21 @@ export function enrich(state: CareerState): EnrichedCareerData {
     progress: {},
   };
 
-  const xp: { [key: DisciplineId]: number } = {};
+  const xp: Map<DisciplineId, number> = new Map();
 
   for (const discipline of getAllDisciplines()) {
-    xp[discipline.name] = 0;
+    xp.set(getDisciplineId(discipline), 0);
   }
 
   for (const raceResult of state.raceResults) {
     const discipline = getDisciplineOfRace(raceResult);
-    xp[getDisciplineId(discipline)] += xpGain(raceResult);
+    const disciplineId = getDisciplineId(discipline);
+    xp.set(disciplineId, xp.get(disciplineId) || 0 + xpGain(raceResult));
   }
 
-  Object.entries(xp).forEach(([disciplineName, totalXp]) => {
-    const discipline = getDiscipline(disciplineName);
-    data.progress[disciplineName] = totalXpToProgress(discipline, totalXp);
+  xp.forEach((totalXp, disciplineId) => {
+    const discipline = getDiscipline(disciplineId);
+    data.progress[disciplineId] = totalXpToProgress(discipline, totalXp);
   });
 
   return data;

@@ -8,10 +8,10 @@ export interface Track {
   // readonly multiclass: boolean;
 }
 
-export type TrackId = string;
+export type TrackId = string & { __brand: 'TrackId' };
 
 export function getTrackId(track: Track): TrackId {
-  return `${track.name}-${track.configuration}`;
+  return `${track.name}-${track.configuration}` as TrackId;
 }
 
 export function canRaceOn(
