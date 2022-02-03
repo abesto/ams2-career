@@ -1,7 +1,7 @@
 import { Discipline } from 'types/Discipline';
 import { RaceResult } from 'types/Race';
 
-import { classesIn } from './data/car_classes';
+import { getCarClassesIn } from './data/car_classes';
 
 // Simple placeholders for now
 
@@ -22,7 +22,7 @@ export interface DisciplineProgress {
 }
 
 export function maxLevel(discipline: Discipline): number {
-  return classesIn(discipline)
+  return getCarClassesIn(discipline)
     .map(cls => cls.level)
     .reduce((max, level) => Math.max(max, level), 0);
 }

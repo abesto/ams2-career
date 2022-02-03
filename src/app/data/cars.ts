@@ -1,10 +1,12 @@
 import Papa from 'papaparse';
 import raw from 'raw.macro';
-import { CarClass } from 'types/CarClass';
-import { CarSpec } from 'types/CarSpec';
+import { Car, CarId, getCarId } from 'types/Car';
+import { CarClass, getCarClassId } from 'types/CarClass';
+import { Discipline } from 'types/Discipline';
 
-import { classEquals, getCarClasses } from './car_classes';
-import { tracksFor } from './tracks';
+import { getCarClass, getCarClassesByName } from './car_classes';
+import { getDiscipline } from './disciplines';
+import { getTrackIdsFor } from './tracks';
 
 // Dumped from the official car list
 const data = Papa.parse(
@@ -12,10 +14,10 @@ const data = Papa.parse(
   { header: true },
 ).data;
 
-function recordToCars(record: { [key: string]: string }): CarSpec[] {
-  return getCarClasses(record.class).map(carClass => ({
+function recordToCars(record: { [key: string]: string }): Car[] {
+  return getCarClassesByName(record.class).map(carClass => ({
     name: record.name,
-    class: carClass,
+    carClassId: getCarClassId(carClass),
     headlights: record.headlights.trim() === 'Y',
     year:
       parseInt(record.year.trim().replace('*', '').split('-')[0]) ||
@@ -23,33 +25,40 @@ function recordToCars(record: { [key: string]: string }): CarSpec[] {
   }));
 }
 
-function compareFields(a: CarSpec): any[] {
-  return [a.class.discipline.name, a.class.level, a.class.name, a.name];
+const CARS: { [key: CarId]: Car } = Object.fromEntries(
+  data
+    .flatMap(recordToCars)
+    .filter(
+      (car: Car) => car && getTrackIdsFor(getCarClassOfCar(car)).length > 0,
+    )
+    .map((car: Car) => [getCarId(car), car]),
+);
+
+export function carsIn(carClass: CarClass): Car[] {
+  return Object.values(CARS).filter(
+    c => c.carClassId === getCarClassId(carClass),
+  );
 }
 
-const zip = (a: any[], b: any[]) => a.map((k, i) => [k, b[i]]);
+export function canRaceAtNight(car: Car): boolean {
+  return carsIn(getCarClassOfCar(car)).every(c => c.headlights);
+}
 
-function compareCars(a: CarSpec, b: CarSpec): number {
-  for (const [ax, bx] of zip(compareFields(a), compareFields(b))) {
-    if (ax < bx) {
-      return -1;
-    }
-    if (ax > bx) {
-      return 1;
-    }
+export function getCarClassOfCar(car: Car): CarClass {
+  return getCarClass(car.carClassId);
+}
+
+export function getDisciplineOfCar(car: Car): Discipline {
+  return getDiscipline(getCarClassOfCar(car).disciplineId);
+}
+
+export function getCar(carId: CarId): Car {
+  if (!CARS[carId]) {
+    throw new Error(`Unknown car: ${carId}`);
   }
-  return 0;
+  return CARS[carId];
 }
 
-export const CARS: CarSpec[] = data
-  .flatMap(recordToCars)
-  .filter((car: CarSpec) => car && tracksFor(car.class).length > 0);
-CARS.sort(compareCars);
-
-export function carsIn(carClass: CarClass): CarSpec[] {
-  return CARS.filter(c => classEquals(c.class, carClass));
-}
-
-export function canRaceAtNight(car: CarSpec): boolean {
-  return carsIn(car.class).every(c => c.headlights);
+export function getAllCars(): Car[] {
+  return Object.values(CARS);
 }

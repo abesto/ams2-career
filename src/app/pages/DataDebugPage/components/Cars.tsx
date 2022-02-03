@@ -1,5 +1,7 @@
+import { getCarClass } from 'app/data/car_classes';
+import { getDiscipline } from 'app/data/disciplines';
 import * as React from 'react';
-import { carKey, CarSpec } from 'types/CarSpec';
+import { Car, CarId, getCarId } from 'types/Car';
 
 import Paper from '@mui/material/Paper';
 import Table from '@mui/material/Table';
@@ -10,8 +12,8 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 
 interface Props {
-  cars: CarSpec[];
-  onHover: (car: CarSpec | null) => void;
+  cars: Car[];
+  onHover: (car: CarId | null) => void;
 }
 
 export function Cars(props: Props) {
@@ -31,19 +33,24 @@ export function Cars(props: Props) {
             </TableRow>
           </TableHead>
           <TableBody>
-            {cars.map((car: CarSpec) => (
-              <TableRow
-                key={carKey(car)}
-                onMouseEnter={() => onHover(car)}
-                onMouseLeave={() => onHover(null)}
-                hover={true}
-              >
-                <TableCell>{car.name}</TableCell>
-                <TableCell>{car.class.discipline.name}</TableCell>
-                <TableCell>{car.class.name}</TableCell>
-                <TableCell>{car.class.level}</TableCell>
-              </TableRow>
-            ))}
+            {cars.map((car: Car) => {
+              const carClass = getCarClass(car.carClassId);
+              const discipline = getDiscipline(carClass.disciplineId);
+              const carId = getCarId(car);
+              return (
+                <TableRow
+                  key={carId}
+                  onMouseEnter={() => onHover(carId)}
+                  onMouseLeave={() => onHover(null)}
+                  hover={true}
+                >
+                  <TableCell>{car.name}</TableCell>
+                  <TableCell>{discipline.name}</TableCell>
+                  <TableCell>{carClass.name}</TableCell>
+                  <TableCell>{carClass.level}</TableCell>
+                </TableRow>
+              );
+            })}
           </TableBody>
         </Table>
       </TableContainer>

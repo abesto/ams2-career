@@ -1,3 +1,5 @@
+import { getCar } from 'app/data/cars';
+import { getTrack } from 'app/data/tracks';
 import dayjs from 'dayjs';
 import * as React from 'react';
 import { Race } from 'types/Race';
@@ -15,17 +17,20 @@ export function GoRacing(props: Props) {
   const { race } = props;
   const [position, setPosition] = React.useState(5);
 
+  const track = getTrack(race.trackId);
+  const car = getCar(race.carId);
+
   return (
     <>
       <dl>
         <dt>Track</dt>
-        <dd>{race.track.name}</dd>
+        <dd>{track.name}</dd>
         <dt>Configuration</dt>
-        <dd>{race.track.configuration}</dd>
+        <dd>{track.configuration}</dd>
         <dt>Car</dt>
-        <dd>{race.car.name}</dd>
+        <dd>{car.name}</dd>
         <dt>Sim Time</dt>
-        <dd>{dayjs(race.simtime).format('YYYY-MM-DD  HH:mm')}</dd>
+        <dd>{dayjs(race.simTime).format('YYYY-MM-DD HH:mm')}</dd>
         <dt>AI Strength</dt>
         <dd>{race.aiLevel}</dd>
       </dl>

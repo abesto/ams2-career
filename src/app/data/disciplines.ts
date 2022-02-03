@@ -1,15 +1,19 @@
-import { Discipline } from 'types/Discipline';
+import { Discipline, DisciplineId } from 'types/Discipline';
 
 const names = ['Endurance', 'GT', 'Open Wheel'];
 
-export const DISCIPLINES: Discipline[] = names.map(name => ({
+const DISCIPLINES: Discipline[] = names.map(name => ({
   name,
 }));
 
-export function getDiscipline(name: string): Discipline {
+export function getDiscipline(name: DisciplineId): Discipline {
   const discipline = DISCIPLINES.find(d => d.name === name);
   if (!discipline) {
     throw new Error(`Unknown discipline: ${name}`);
   }
   return discipline;
+}
+
+export function getAllDisciplines(): Discipline[] {
+  return Object.values(DISCIPLINES);
 }

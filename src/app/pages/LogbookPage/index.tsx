@@ -1,3 +1,7 @@
+import { getCarClass } from 'app/data/car_classes';
+import { getCar } from 'app/data/cars';
+import { getDiscipline } from 'app/data/disciplines';
+import { getTrack } from 'app/data/tracks';
 import { selectCareer } from 'app/slice/selectors';
 import dayjs from 'dayjs';
 import * as React from 'react';
@@ -37,23 +41,29 @@ export function LogbookPage(props: Props) {
             </TableRow>
           </TableHead>
           <TableBody>
-            {career.raceResults.map((result, index) => (
-              <TableRow key={index}>
-                <TableCell>
-                  {dayjs(result.racedAt).format('YYYY-MM-DD HH:mm')}
-                </TableCell>
-                <TableCell>
-                  {dayjs(result.simtime).format('YYYY-MM-DD HH:mm')}
-                </TableCell>
-                <TableCell>{result.position}</TableCell>
-                <TableCell>{result.aiLevel}</TableCell>
-                <TableCell>{result.car.class.discipline.name}</TableCell>
-                <TableCell>{result.car.class.name}</TableCell>
-                <TableCell>{result.car.name}</TableCell>
-                <TableCell>{result.track.name}</TableCell>
-                <TableCell>{result.track.configuration}</TableCell>
-              </TableRow>
-            ))}
+            {career.raceResults.map((result, index) => {
+              const track = getTrack(result.trackId);
+              const car = getCar(result.carId);
+              const carClass = getCarClass(car.carClassId);
+              const discipline = getDiscipline(carClass.disciplineId);
+              return (
+                <TableRow key={index}>
+                  <TableCell>
+                    {dayjs(result.racedAt).format('YYYY-MM-DD HH:mm')}
+                  </TableCell>
+                  <TableCell>
+                    {dayjs(result.simTime).format('YYYY-MM-DD HH:mm')}
+                  </TableCell>
+                  <TableCell>{result.position}</TableCell>
+                  <TableCell>{result.aiLevel}</TableCell>
+                  <TableCell>{discipline.name}</TableCell>
+                  <TableCell>{carClass.name}</TableCell>
+                  <TableCell>{car.name}</TableCell>
+                  <TableCell>{track.name}</TableCell>
+                  <TableCell>{track.configuration}</TableCell>
+                </TableRow>
+              );
+            })}
           </TableBody>
         </Table>
       </TableContainer>

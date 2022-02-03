@@ -1,7 +1,12 @@
-import { DISCIPLINES, getDiscipline } from 'app/data/disciplines';
+import { getAllDisciplines, getDiscipline } from 'app/data/disciplines';
 import { DisciplineProgress, totalXpToProgress, xpGain } from 'app/xp';
-import { Discipline } from 'types/Discipline';
-import { RaceResult } from 'types/Race';
+import {
+  Discipline,
+  disciplineEquals,
+  DisciplineId,
+  getDisciplineId,
+} from 'types/Discipline';
+import { getDisciplineOfRace, RaceResult } from 'types/Race';
 
 /* --- STATE --- */
 export interface CareerState {
@@ -20,15 +25,15 @@ export function enrich(state: CareerState): EnrichedCareerData {
     progress: {},
   };
 
-  const xp: { [key: string]: number } = {};
+  const xp: { [key: DisciplineId]: number } = {};
 
-  for (const discipline of DISCIPLINES) {
+  for (const discipline of getAllDisciplines()) {
     xp[discipline.name] = 0;
   }
 
   for (const raceResult of state.raceResults) {
-    const { discipline } = raceResult.car.class;
-    xp[discipline.name] += xpGain(raceResult);
+    const discipline = getDisciplineOfRace(raceResult);
+    xp[getDisciplineId(discipline)] += xpGain(raceResult);
   }
 
   Object.entries(xp).forEach(([disciplineName, totalXp]) => {
@@ -43,8 +48,8 @@ export function aiLevel(
   career: EnrichedCareerData,
   discipline: Discipline,
 ): number {
-  const races = career.raceResults.filter(
-    r => r.car.class.discipline.name === discipline.name,
+  const races = career.raceResults.filter(r =>
+    disciplineEquals(getDisciplineOfRace(r), discipline),
   );
   function adjustment(position: number): number {
     if (position < 3) {

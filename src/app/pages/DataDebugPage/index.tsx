@@ -1,9 +1,14 @@
-import { CARS } from 'app/data/cars';
-import { TRACKS } from 'app/data/tracks';
+import {
+  getAllCars,
+  getCar,
+  getCarClassOfCar,
+  getDisciplineOfCar,
+} from 'app/data/cars';
+import { getAllTracks, getTracksFor } from 'app/data/tracks';
 import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
-import { CarSpec } from 'types/CarSpec';
-import { canRaceOn, TrackSpec } from 'types/TrackSpec';
+import { Car, CarId } from 'types/Car';
+import { canRaceOn, getTrackId, Track, TrackId } from 'types/Track';
 
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
@@ -11,19 +16,46 @@ import Grid from '@mui/material/Grid';
 import { Cars } from './components/Cars';
 import { Tracks } from './components/Tracks';
 
+function compareFields(a: Car): any[] {
+  const carClass = getCarClassOfCar(a);
+  return [getDisciplineOfCar(a).name, carClass.level, carClass.name, a.name];
+}
+
+const zip = (a: any[], b: any[]) => a.map((k, i) => [k, b[i]]);
+
+function compareCars(a: Car, b: Car): number {
+  for (const [ax, bx] of zip(compareFields(a), compareFields(b))) {
+    if (ax < bx) {
+      return -1;
+    }
+    if (ax > bx) {
+      return 1;
+    }
+  }
+  return 0;
+}
+
+function compareTracks(a: Track, b: Track): number {
+  return getTrackId(a).localeCompare(getTrackId(b));
+}
+
 export function DataDebugPage() {
-  const [hoveredCar, setHoveredCar] = React.useState<CarSpec | null>(null);
-  const [hoveredTrack, setHoveredTrack] = React.useState<TrackSpec | null>(
+  const [hoveredCarId, setHoveredCarId] = React.useState<CarId | null>(null);
+  const [hoveredTrackId, setHoveredTrackId] = React.useState<TrackId | null>(
     null,
   );
 
-  const tracks = hoveredCar
-    ? TRACKS.filter(track => canRaceOn(hoveredCar.class, track))
-    : TRACKS;
+  const tracks = hoveredCarId
+    ? getTracksFor(getCar(hoveredCarId).carClassId)
+    : getAllTracks();
+  tracks.sort(compareTracks);
 
-  const cars = hoveredTrack
-    ? CARS.filter(car => canRaceOn(car.class, hoveredTrack))
-    : CARS;
+  const cars = hoveredTrackId
+    ? getAllCars().filter((car: Car) =>
+        canRaceOn(car.carClassId, hoveredTrackId),
+      )
+    : getAllCars();
+  cars.sort(compareCars);
 
   return (
     <>
@@ -35,10 +67,10 @@ export function DataDebugPage() {
         <h1>Data Debugger</h1>
         <Grid container spacing={3}>
           <Grid item xs={8}>
-            <Cars cars={cars} onHover={setHoveredCar} />
+            <Cars cars={cars} onHover={setHoveredCarId} />
           </Grid>
           <Grid item xs={4}>
-            <Tracks tracks={tracks} onHover={setHoveredTrack} />
+            <Tracks tracks={tracks} onHover={setHoveredTrackId} />
           </Grid>
         </Grid>
       </Box>

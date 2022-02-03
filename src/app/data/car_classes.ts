@@ -1,5 +1,5 @@
-import { CarClass } from 'types/CarClass';
-import { Discipline } from 'types/Discipline';
+import { CarClass, CarClassId, getCarClassId } from 'types/CarClass';
+import { Discipline, getDisciplineId } from 'types/Discipline';
 
 import { getDiscipline } from './disciplines';
 
@@ -23,37 +23,47 @@ const classes = {
   },
 };
 
-export const CAR_CLASSES: CarClass[] = Object.entries(classes).flatMap(
-  ([discipline, classes]) =>
+export const CAR_CLASSES: { [key: CarClassId]: CarClass } = Object.fromEntries(
+  Object.entries(classes).flatMap(([disciplineId, classes]) =>
     Object.entries(classes).flatMap(([level, names]) =>
-      names.map(name => ({
-        name,
-        level: Number(level),
-        discipline: getDiscipline(discipline),
-      })),
+      names.map(name => {
+        getDiscipline(disciplineId); // For the side-effect of exploding if there's an invalid disciplineId in `classes`
+        const carClass = {
+          disciplineId,
+          level: parseInt(level),
+          name,
+        };
+        return [getCarClassId(carClass), carClass];
+      }),
     ),
+  ),
 );
 
-export function getCarClasses(name: string): CarClass[] {
-  return CAR_CLASSES.filter(c => c.name === name);
+export function getCarClass(id: CarClassId): CarClass {
+  const carClass = CAR_CLASSES[id];
+  if (!carClass) {
+    throw new Error(`Unknown car class: ${id}`);
+  }
+  return carClass;
 }
 
-export function classesIn(discipline: Discipline): CarClass[] {
-  return CAR_CLASSES.filter(c => c.discipline === discipline);
+export function getCarClassesIn(discipline: Discipline): CarClass[] {
+  return Object.values(CAR_CLASSES).filter(
+    c => c.disciplineId === getDisciplineId(discipline),
+  );
 }
 
-export function classesAt(discipline: Discipline, level: number): CarClass[] {
-  return classesIn(discipline).filter(c => c.level === level);
+export function getCarClassesAt(
+  discipline: Discipline,
+  level: number,
+): CarClass[] {
+  return getCarClassesIn(discipline).filter(c => c.level === level);
 }
 
-export function classExists(name: string): boolean {
-  return CAR_CLASSES.some(c => c.name === name);
+export function carClassExists(name: string): boolean {
+  return Object.values(CAR_CLASSES).some(c => c.name === name);
 }
 
-export function classKey(carClass: CarClass): string {
-  return `${carClass.discipline.name}-${carClass.name}`;
-}
-
-export function classEquals(a: CarClass, b: CarClass): boolean {
-  return classKey(a) === classKey(b);
+export function getCarClassesByName(name: string): CarClass[] {
+  return Object.values(CAR_CLASSES).filter(c => c.name === name);
 }

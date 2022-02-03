@@ -1,5 +1,9 @@
-import { classKey } from 'app/data/car_classes';
+import { getCarClass } from 'app/data/car_classes';
+import { getCar } from 'app/data/cars';
+import { getDiscipline } from 'app/data/disciplines';
+import { getTrack } from 'app/data/tracks';
 import * as React from 'react';
+import { getCarClassId } from 'types/CarClass';
 import { Race } from 'types/Race';
 
 import Table from '@mui/material/Table';
@@ -29,21 +33,27 @@ export function RaceOptions(props: Props) {
           </TableRow>
         </TableHead>
         <TableBody>
-          {props.races.map((race, index) => (
-            <TableRow
-              key={classKey(race.car.class)}
-              hover={true}
-              selected={index === props.selectedRaceIndex}
-              onClick={() => props.onSelect(index)}
-              sx={{ cursor: 'pointer' }}
-            >
-              <TableCell>{race.car.class.discipline.name}</TableCell>
-              <TableCell>{race.car.class.name}</TableCell>
-              <TableCell>{race.car.name}</TableCell>
-              <TableCell>{race.track.name}</TableCell>
-              <TableCell>{race.track.configuration}</TableCell>
-            </TableRow>
-          ))}
+          {props.races.map((race, index) => {
+            const car = getCar(race.carId);
+            const carClass = getCarClass(car.carClassId);
+            const discipline = getDiscipline(carClass.disciplineId);
+            const track = getTrack(race.trackId);
+            return (
+              <TableRow
+                key={getCarClassId(carClass)}
+                hover={true}
+                selected={index === props.selectedRaceIndex}
+                onClick={() => props.onSelect(index)}
+                sx={{ cursor: 'pointer' }}
+              >
+                <TableCell>{discipline.name}</TableCell>
+                <TableCell>{carClass.name}</TableCell>
+                <TableCell>{car.name}</TableCell>
+                <TableCell>{track.name}</TableCell>
+                <TableCell>{track.configuration}</TableCell>
+              </TableRow>
+            );
+          })}
         </TableBody>
       </Table>
     </TableContainer>

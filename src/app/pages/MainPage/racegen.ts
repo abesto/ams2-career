@@ -1,13 +1,14 @@
-import { classesAt } from 'app/data/car_classes';
+import { getCarClassesAt } from 'app/data/car_classes';
 import { canRaceAtNight, carsIn } from 'app/data/cars';
-import { tracksFor } from 'app/data/tracks';
+import { getTrackIdsFor } from 'app/data/tracks';
 import { aiLevel, EnrichedCareerData } from 'app/slice/types';
 import dayjs from 'dayjs';
 import minMax from 'dayjs/plugin/minMax';
+import { Car, getCarId } from 'types/Car';
 import { CarClass } from 'types/CarClass';
-import { CarSpec } from 'types/CarSpec';
 import { Discipline } from 'types/Discipline';
 import { Race } from 'types/Race';
+import { TrackId } from 'types/Track';
 
 dayjs.extend(minMax);
 
@@ -16,7 +17,7 @@ function highestUnlockedClasses(
   level: number,
 ): CarClass[] {
   for (let thisLevel = level; thisLevel--; thisLevel > 0) {
-    const candidates = classesAt(discipline, thisLevel);
+    const candidates = getCarClassesAt(discipline, thisLevel);
     if (candidates.length) {
       return candidates;
     }
@@ -28,7 +29,7 @@ function choice<T>(items: T[]): T {
   return items[Math.floor(Math.random() * items.length)];
 }
 
-function genRaceDate(car: CarSpec): Date {
+function genRaceDate(car: Car): Date {
   const start = dayjs(new Date(car.year, 1, 1)).startOf('year');
   const end = dayjs.min(start.add(10, 'year'), dayjs());
   const diffMs = start.diff(end);
@@ -54,12 +55,12 @@ export function racegen(
       const car = choice(carsIn(carClass));
       return {
         generatedAt,
-        simtime: car && genRaceDate(car).getTime(),
-        car: car,
-        track: choice(tracksFor(carClass)),
+        simTime: car && genRaceDate(car).getTime(),
+        carId: car && getCarId(car),
+        trackId: choice(getTrackIdsFor(carClass)) as TrackId,
         playerLevel,
         aiLevel: aiLevel(career, discipline),
       };
     })
-    .filter(race => race.car && race.track);
+    .filter(race => race.carId && race.trackId);
 }

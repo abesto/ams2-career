@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { trackKey, TrackSpec } from 'types/TrackSpec';
+import { getTrackId, Track, TrackId } from 'types/Track';
 
 import Paper from '@mui/material/Paper';
 import Table from '@mui/material/Table';
@@ -10,8 +10,8 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 
 interface Props {
-  tracks: TrackSpec[];
-  onHover: (track: TrackSpec | null) => void;
+  tracks: Track[];
+  onHover: (track: TrackId | null) => void;
 }
 
 export function Tracks(props: Props) {
@@ -29,10 +29,10 @@ export function Tracks(props: Props) {
             </TableRow>
           </TableHead>
           <TableBody>
-            {tracks.map((track: TrackSpec) => (
+            {tracks.map((track: Track) => (
               <TableRow
-                key={trackKey(track)}
-                onMouseEnter={() => onHover(track)}
+                key={getTrackId(track)}
+                onMouseEnter={() => onHover(getTrackId(track))}
                 onMouseLeave={() => onHover(null)}
                 hover={true}
               >

@@ -1,5 +1,5 @@
-import { classesAt, classesIn } from 'app/data/car_classes';
-import { DISCIPLINES } from 'app/data/disciplines';
+import { getCarClassesAt, getCarClassesIn } from 'app/data/car_classes';
+import { getAllDisciplines } from 'app/data/disciplines';
 import { useCareerSlice } from 'app/slice';
 import { selectCareer } from 'app/slice/selectors';
 import { aiLevel, EnrichedCareerData } from 'app/slice/types';
@@ -7,8 +7,8 @@ import { maxLevel, xpNeededForLevelUpTo } from 'app/xp';
 import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useDispatch, useSelector } from 'react-redux';
-import { Discipline } from 'types/Discipline';
-import { RaceResult } from 'types/Race';
+import { Discipline, disciplineEquals } from 'types/Discipline';
+import { getDisciplineOfRace, RaceResult } from 'types/Race';
 
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -66,8 +66,8 @@ function DisciplineProgressDisplay(props: {
 }) {
   const { discipline, career } = props;
   const progress = career.progress[discipline.name];
-  const races = career.raceResults.filter(
-    r => r.car.class.discipline.name === discipline.name,
+  const races = career.raceResults.filter(r =>
+    disciplineEquals(getDisciplineOfRace(r), discipline),
   );
 
   if (maxLevel(discipline) === 0) {
@@ -76,7 +76,7 @@ function DisciplineProgressDisplay(props: {
 
   const xpToNextLevel = xpNeededForLevelUpTo(progress.level + 1);
 
-  const levels = classesIn(discipline)
+  const levels = getCarClassesIn(discipline)
     .map(carClass => carClass.level)
     .filter((v, i, a) => a.indexOf(v) === i);
 
@@ -104,7 +104,7 @@ function DisciplineProgressDisplay(props: {
         {levels.map(level => (
           <Step key={level}>
             <StepLabel>
-              {classesAt(discipline, level).map(carClass => (
+              {getCarClassesAt(discipline, level).map(carClass => (
                 <div key={carClass.name}>{carClass.name}</div>
               ))}
             </StepLabel>
@@ -161,7 +161,7 @@ export function MainPage(props: Props) {
             <Typography variant="h4" sx={{ mb: 2 }}>
               Career Progress
             </Typography>
-            {DISCIPLINES.map(discipline => (
+            {getAllDisciplines().map(discipline => (
               <DisciplineProgressDisplay
                 key={discipline.name}
                 discipline={discipline}
