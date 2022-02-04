@@ -7,8 +7,6 @@
 
 import 'react-app-polyfill/ie11';
 import 'react-app-polyfill/stable';
-// Initialize languages
-import './locales/i18n';
 
 // Import root app
 import { App } from 'app';
@@ -71,13 +69,6 @@ ReactDOM.render(
   </Provider>,
   MOUNT_NODE,
 );
-
-// Hot reloadable translation json files
-if (module.hot) {
-  module.hot.accept(['./locales/i18n'], () => {
-    // No need to render the App again because i18next works with the hooks
-  });
-}
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

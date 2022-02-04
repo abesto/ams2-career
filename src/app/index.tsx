@@ -8,7 +8,6 @@
 
 import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
-import { useTranslation } from 'react-i18next';
 import {
   BrowserRouter,
   Link as RouterLink,
@@ -30,13 +29,9 @@ import { LogbookPage } from './pages/LogbookPage';
 import { MainPage } from './pages/MainPage';
 
 export function App() {
-  const { i18n } = useTranslation();
   return (
     <BrowserRouter>
-      <Helmet
-        titleTemplate="%s - AMS2 Career"
-        htmlAttributes={{ lang: i18n.language }}
-      >
+      <Helmet titleTemplate="%s - AMS2 Career">
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
