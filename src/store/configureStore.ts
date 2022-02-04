@@ -3,7 +3,6 @@
  */
 
 import { createInjectorsEnhancer } from 'redux-injectors';
-import { load, save } from 'redux-localstorage-simple';
 import createSagaMiddleware from 'redux-saga';
 
 import {
@@ -13,6 +12,7 @@ import {
 } from '@reduxjs/toolkit';
 
 import { createReducerWithPlaceholders } from './reducers';
+import { load, saveMiddleware } from './saveload';
 
 export function configureAppStore() {
   const reduxSagaMonitorOptions = {};
@@ -20,10 +20,7 @@ export function configureAppStore() {
   const { run: runSaga } = sagaMiddleware;
 
   // Create the store with saga middleware
-  const middlewares = [
-    sagaMiddleware,
-    save({ ignoreStates: ['DebugPageSlice'] }),
-  ];
+  const middlewares = [sagaMiddleware, saveMiddleware()];
 
   const preloadedState = load();
 
