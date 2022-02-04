@@ -20,7 +20,7 @@ function recordToCars(record: { [key: string]: string }): Car[] {
     carClassId: getCarClassId(carClass),
     headlights: record.headlights.trim() === 'Y',
     year:
-      parseInt(record.year.trim().replace('*', '').split('-')[0]) ||
+      parseInt(record.year.trim().replace(/\*/g, '').split('-')[0]) ||
       new Date().getFullYear() - 5,
   }));
 }
