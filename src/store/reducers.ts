@@ -6,6 +6,8 @@ import { InjectedReducersType } from 'utils/types/injector-typings';
 
 import { combineReducers } from '@reduxjs/toolkit';
 
+import { makeLoadableReducer } from './saveload';
+
 /**
  * Merges the main reducer with the router state and dynamically injected reducers
  */
@@ -26,6 +28,6 @@ export function createReducerWithPlaceholders(placeholders: any) {
       ...placeholders,
       ...injectedReducers,
     };
-    return createReducer(reducers);
+    return makeLoadableReducer(createReducer(reducers));
   };
 }
