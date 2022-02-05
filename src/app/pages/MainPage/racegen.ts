@@ -1,11 +1,10 @@
 import { getCarClassesAt } from 'app/data/car_classes';
-import { canRaceAtNight, carsIn } from 'app/data/cars';
+import { canRaceAtNight, getCarsInClass } from 'app/data/cars';
 import { getTrackIdsFor } from 'app/data/tracks';
 import { aiLevel, EnrichedCareerData } from 'app/slice/types';
 import dayjs from 'dayjs';
 import minMax from 'dayjs/plugin/minMax';
-import { Car, getCarId } from 'types/Car';
-import { CarClass } from 'types/CarClass';
+import { CarClass, getCarClassId } from 'types/CarClass';
 import { Discipline } from 'types/Discipline';
 import { Race } from 'types/Race';
 import { TrackId } from 'types/Track';
@@ -29,15 +28,19 @@ function choice<T>(items: T[]): T {
   return items[Math.floor(Math.random() * items.length)];
 }
 
-function genRaceDate(car: Car): Date {
-  const start = dayjs(new Date(car.year, 1, 1)).startOf('year');
+function genRaceDate(carClass: CarClass): Date {
+  const cars = getCarsInClass(carClass);
+
+  const startYear = Math.min(...cars.map(c => c.year));
+  const start = dayjs(new Date(startYear, 1, 1)).startOf('year');
   const end = dayjs.min(start.add(10, 'year'), dayjs());
+
   const diffMs = start.diff(end);
   const diffRandom = Math.random() * diffMs;
 
   var date = start.add(diffRandom, 'millisecond');
 
-  if (!canRaceAtNight(car)) {
+  if (!canRaceAtNight(carClass)) {
     date = date.set('hour', 10 + Math.floor(Math.random() * 7));
   }
 
@@ -52,15 +55,14 @@ export function racegen(
   const playerLevel = career.progress[discipline.name].level;
   return highestUnlockedClasses(discipline, playerLevel)
     .map(carClass => {
-      const car = choice(carsIn(carClass));
       return {
         generatedAt,
-        simTime: car && genRaceDate(car).getTime(),
-        carId: car && getCarId(car),
+        simTime: genRaceDate(carClass).getTime(),
+        carClassId: getCarClassId(carClass),
         trackId: choice(getTrackIdsFor(carClass)) as TrackId,
         playerLevel,
         aiLevel: aiLevel(career, discipline),
       };
     })
-    .filter(race => race.carId && race.trackId);
+    .filter(race => race.trackId);
 }

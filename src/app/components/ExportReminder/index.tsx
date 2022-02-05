@@ -22,7 +22,6 @@ export function ExportReminder(props: Props) {
   const state = useSelector(selectExportReminder);
   const { actions } = useExportReminderSlice();
   const dispatch = useDispatch();
-  console.log(racesSinceLastExport);
 
   return (
     <Beforeunload
@@ -42,7 +41,7 @@ export function ExportReminder(props: Props) {
         <SnackbarContent
           message={
             <Box>
-              <Export color="inherit" />
+              <Export hideBadge color="inherit" />
               {pluralWithNumber(racesSinceLastExport, 'race')} recorded since
               the last time you exported your career.
             </Box>

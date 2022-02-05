@@ -1,5 +1,7 @@
 import { getAllDisciplines } from 'app/data/disciplines';
 import { EnrichedCareerData } from 'app/slice/types';
+import { CarId } from 'types/Car';
+import { CarClassId } from 'types/CarClass';
 import { createSlice } from 'utils/@reduxjs/toolkit';
 import { useInjectReducer } from 'utils/redux-injectors';
 
@@ -11,6 +13,7 @@ import { MainPageState } from './types';
 export const initialState: MainPageState = {
   raceOptions: [],
   selectedRaceIndex: null,
+  selectedCars: {},
 };
 
 const slice = createSlice({
@@ -28,6 +31,12 @@ const slice = createSlice({
     },
     selectRace(state, action: PayloadAction<number>) {
       state.selectedRaceIndex = action.payload;
+    },
+    selectCar(
+      state,
+      action: PayloadAction<{ carClassId: CarClassId; carId: CarId }>,
+    ) {
+      state.selectedCars[action.payload.carClassId] = action.payload.carId;
     },
     reset(state, action: PayloadAction<void>) {
       state.raceOptions = [];

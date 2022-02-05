@@ -16,7 +16,14 @@ function filename(): string {
   return dayjs().format('YYYY-MM-DD-HH-mm-ss') + '.ams2career';
 }
 
-export function Export(props: IconButtonProps) {
+interface Props {
+  hideBadge?: boolean;
+}
+
+export function Export({
+  hideBadge,
+  ...iconButtonProps
+}: IconButtonProps & Props) {
   const store = useStore();
   const { actions: exportReminderActions } = useExportReminderSlice();
   const racesSinceLastExport = useSelector(selectRacesSinceLastExport);
@@ -34,11 +41,15 @@ export function Export(props: IconButtonProps) {
             filename(),
           );
         }}
-        {...props}
+        {...iconButtonProps}
       >
-        <Badge badgeContent={racesSinceLastExport} max={10} color="info">
+        {hideBadge ? (
           <DownloadIcon />
-        </Badge>
+        ) : (
+          <Badge badgeContent={racesSinceLastExport} max={10} color="info">
+            <DownloadIcon />
+          </Badge>
+        )}
       </IconButton>
     </Tooltip>
   );

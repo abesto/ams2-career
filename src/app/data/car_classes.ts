@@ -39,8 +39,11 @@ export const CAR_CLASSES: { [key: CarClassId]: CarClass } = Object.fromEntries(
   ),
 );
 
-export function getCarClass(id: CarClassId): CarClass {
-  const carClass = CAR_CLASSES[id];
+export function getCarClass(id: CarClassId | CarClass): CarClass {
+  if (id.hasOwnProperty('disciplineId')) {
+    return id as CarClass;
+  }
+  const carClass = CAR_CLASSES[id as CarClassId];
   if (!carClass) {
     throw new Error(`Unknown car class: ${id}`);
   }
@@ -66,4 +69,10 @@ export function carClassExists(name: string): boolean {
 
 export function getCarClassesByName(name: string): CarClass[] {
   return Object.values(CAR_CLASSES).filter(c => c.name === name);
+}
+
+export function getDisciplineOfCarClass(
+  cls: CarClass | CarClassId,
+): Discipline {
+  return getDiscipline(getCarClass(cls).disciplineId);
 }

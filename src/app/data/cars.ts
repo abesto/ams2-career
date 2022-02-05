@@ -1,7 +1,7 @@
 import Papa from 'papaparse';
 import raw from 'raw.macro';
 import { Car, CarId, getCarId } from 'types/Car';
-import { CarClass, getCarClassId } from 'types/CarClass';
+import { CarClass, CarClassId, getCarClassId } from 'types/CarClass';
 import { Discipline } from 'types/Discipline';
 
 import { getCarClass, getCarClassesByName } from './car_classes';
@@ -34,14 +34,18 @@ const CARS: { [key: CarId]: Car } = Object.fromEntries(
     .map((car: Car) => [getCarId(car), car]),
 );
 
-export function carsIn(carClass: CarClass): Car[] {
+export function getCarsInClass(what: CarClass | CarClassId): Car[] {
+  const carClass = getCarClass(what);
   return Object.values(CARS).filter(
     c => c.carClassId === getCarClassId(carClass),
   );
 }
 
-export function canRaceAtNight(car: Car): boolean {
-  return carsIn(getCarClassOfCar(car)).every(c => c.headlights);
+export function canRaceAtNight(what: Car | CarClass): boolean {
+  let carClass = what.hasOwnProperty('carClassId')
+    ? getCarClassOfCar(what as Car)
+    : (what as CarClass);
+  return getCarsInClass(carClass).every(c => c.headlights);
 }
 
 export function getCarClassOfCar(car: Car): CarClass {

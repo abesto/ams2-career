@@ -8,6 +8,7 @@ import { maxLevel, xpNeededForLevelUpTo } from 'app/xp';
 import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useDispatch, useSelector } from 'react-redux';
+import { CarId } from 'types/Car';
 import { Discipline, disciplineEquals } from 'types/Discipline';
 import { getDisciplineOfRace, RaceResult } from 'types/Race';
 
@@ -27,7 +28,11 @@ import { GoRacing } from './components/GoRacing';
 import { RaceOptions } from './components/RaceOptions';
 import { ResetCareerDialog } from './components/ResetCareerDialog';
 import { useMainPageSlice } from './slice';
-import { selectMainPage, selectSelectedRace } from './slice/selectors';
+import {
+  selectCurrentCarId,
+  selectMainPage,
+  selectSelectedRace,
+} from './slice/selectors';
 
 interface Props {}
 
@@ -127,6 +132,7 @@ export function MainPage(props: Props) {
   const career = useSelector(selectCareer);
   const slice = useSelector(selectMainPage);
   const selectedRace = useSelector(selectSelectedRace);
+  const currentCarId = useSelector(selectCurrentCarId);
 
   const [resetDialogOpen, openResetDialog] = React.useState(false);
 
@@ -138,10 +144,11 @@ export function MainPage(props: Props) {
     dispatch(mainPageActions.generateRaces({ career }));
   }
 
-  function recordResult(position: number) {
+  function recordResult(carId: CarId, position: number) {
     const raceResult: RaceResult = {
       ...selectedRace!,
       position,
+      carId,
       racedAt: new Date().getTime(),
     };
     dispatch(careerActions.recordRaceResult({ raceResult }));
@@ -197,7 +204,19 @@ export function MainPage(props: Props) {
                 <Typography variant="h4" sx={{ mt: 3 }}>
                   Go Racing!
                 </Typography>
-                <GoRacing race={selectedRace!} onRecord={recordResult} />
+                <GoRacing
+                  race={selectedRace!}
+                  currentCarId={currentCarId!}
+                  onRecord={position => recordResult(currentCarId!, position)}
+                  onCarSelect={carId =>
+                    dispatch(
+                      mainPageActions.selectCar({
+                        carClassId: selectedRace!.carClassId,
+                        carId,
+                      }),
+                    )
+                  }
+                />
               </>
             )}
           </GridItem>

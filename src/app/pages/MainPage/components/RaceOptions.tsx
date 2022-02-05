@@ -1,5 +1,4 @@
 import { getCarClass } from 'app/data/car_classes';
-import { getCar } from 'app/data/cars';
 import { getDiscipline } from 'app/data/disciplines';
 import { getTrack } from 'app/data/tracks';
 import * as React from 'react';
@@ -27,15 +26,13 @@ export function RaceOptions(props: Props) {
           <TableRow>
             <TableCell>Discipline</TableCell>
             <TableCell>Class</TableCell>
-            <TableCell>Car</TableCell>
             <TableCell>Track</TableCell>
             <TableCell>Configuration</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {props.races.map((race, index) => {
-            const car = getCar(race.carId);
-            const carClass = getCarClass(car.carClassId);
+            const carClass = getCarClass(race.carClassId);
             const discipline = getDiscipline(carClass.disciplineId);
             const track = getTrack(race.trackId);
             return (
@@ -48,7 +45,6 @@ export function RaceOptions(props: Props) {
               >
                 <TableCell>{discipline.name}</TableCell>
                 <TableCell>{carClass.name}</TableCell>
-                <TableCell>{car.name}</TableCell>
                 <TableCell>{track.name}</TableCell>
                 <TableCell>{track.configuration}</TableCell>
               </TableRow>
