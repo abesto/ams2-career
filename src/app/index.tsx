@@ -23,9 +23,9 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 
-import { Load } from './components/Load';
+import { Export } from './components/Export';
+import { Import } from './components/Import';
 import { NotFoundPage } from './components/NotFoundPage';
-import { Save } from './components/Save';
 import { DataDebugPage } from './pages/DataDebugPage';
 import { LogbookPage } from './pages/LogbookPage';
 import { MainPage } from './pages/MainPage';
@@ -69,8 +69,8 @@ export function App() {
               Logbook
             </Button>
 
-            <Save color="inherit" size="small" sx={{ ml: 2 }} />
-            <Load color="inherit" size="small" />
+            <Export color="inherit" size="small" sx={{ ml: 2 }} />
+            <Import color="inherit" size="small" />
 
             <Box sx={{ flexGrow: 1 }} />
 
