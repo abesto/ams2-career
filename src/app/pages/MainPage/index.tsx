@@ -1,5 +1,6 @@
 import { getCarClassesAt, getCarClassesIn } from 'app/data/car_classes';
 import { getAllDisciplines } from 'app/data/disciplines';
+import { pluralWithNumber } from 'app/plural';
 import { useCareerSlice } from 'app/slice';
 import { selectCareer } from 'app/slice/selectors';
 import { aiLevel, EnrichedCareerData } from 'app/slice/types';
@@ -24,6 +25,7 @@ import Typography from '@mui/material/Typography';
 
 import { GoRacing } from './components/GoRacing';
 import { RaceOptions } from './components/RaceOptions';
+import { ResetCareerDialog } from './components/ResetCareerDialog';
 import { useMainPageSlice } from './slice';
 import { selectMainPage, selectSelectedRace } from './slice/selectors';
 
@@ -55,11 +57,6 @@ function ChipArray(props: { strings: string[] }) {
   );
 }
 
-function plural(n: number, s: string) {
-  const s1 = n === 1 ? s : s + 's';
-  return `${n} ${s1}`;
-}
-
 function DisciplineProgressDisplay(props: {
   discipline: Discipline;
   career: EnrichedCareerData;
@@ -87,8 +84,8 @@ function DisciplineProgressDisplay(props: {
       <ChipArray
         strings={[
           `${races.length} starts`,
-          plural(races.filter(r => r.position === 1).length, 'win'),
-          plural(races.filter(r => r.position <= 3).length, 'podium'),
+          pluralWithNumber(races.filter(r => r.position === 1).length, 'win'),
+          pluralWithNumber(races.filter(r => r.position <= 3).length, 'podium'),
           `Average position: ${
             Math.round(
               (races.map(r => r.position).reduce((a, b) => a + b, 0) /
@@ -131,6 +128,8 @@ export function MainPage(props: Props) {
   const slice = useSelector(selectMainPage);
   const selectedRace = useSelector(selectSelectedRace);
 
+  const [resetDialogOpen, openResetDialog] = React.useState(false);
+
   function generateRaces() {
     const levels: { [key: string]: number } = {};
     for (const [disciplineName, xp] of Object.entries(career.progress)) {
@@ -168,15 +167,17 @@ export function MainPage(props: Props) {
                 career={career}
               />
             ))}
-            <Button
-              color="error"
-              onClick={() => {
+            <Button color="error" onClick={() => openResetDialog(true)}>
+              Reset Career
+            </Button>
+            <ResetCareerDialog
+              open={resetDialogOpen}
+              onClose={() => openResetDialog(false)}
+              onReset={() => {
                 dispatch(careerActions.resetCareer());
                 dispatch(mainPageActions.reset());
               }}
-            >
-              Reset Career
-            </Button>
+            />
           </GridItem>
         </Grid>
 

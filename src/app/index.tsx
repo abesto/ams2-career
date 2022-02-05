@@ -24,6 +24,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 
 import { Export } from './components/Export';
+import { ExportReminder } from './components/ExportReminder';
 import { Import } from './components/Import';
 import { NotFoundPage } from './components/NotFoundPage';
 import { DataDebugPage } from './pages/DataDebugPage';
@@ -91,6 +92,8 @@ export function App() {
           <Route exact path="/logbook" component={LogbookPage} />
           <Route component={NotFoundPage} />
         </Switch>
+
+        <ExportReminder />
       </Container>
     </BrowserRouter>
   );
