@@ -2,22 +2,17 @@
  * Component Generator
  */
 
-import { Actions, PlopGeneratorConfig } from 'node-plop';
 import inquirer from 'inquirer';
+import { Actions, PlopGeneratorConfig } from 'node-plop';
 
-import { pathExists } from '../utils';
 import { baseGeneratorPath } from '../paths';
+import { pathExists } from '../utils';
 
 inquirer.registerPrompt('directory', require('inquirer-directory'));
 
 export enum ComponentProptNames {
   componentName = 'componentName',
   path = 'path',
-  wantMemo = 'wantMemo',
-  wantStyledComponents = 'wantStyledComponents',
-  wantTranslations = 'wantTranslations',
-  wantLoadable = 'wantLoadable',
-  wantTests = 'wantTests',
 }
 
 type Answers = { [P in ComponentProptNames]: string };
@@ -36,37 +31,6 @@ export const componentGenerator: PlopGeneratorConfig = {
       message: 'Where do you want it to be created?',
       basePath: `${baseGeneratorPath}`,
     } as any,
-    {
-      type: 'confirm',
-      name: ComponentProptNames.wantMemo,
-      default: false,
-      message: 'Do you want to wrap your component in React.memo?',
-    },
-    {
-      type: 'confirm',
-      name: ComponentProptNames.wantStyledComponents,
-      default: true,
-      message: 'Do you want to use styled-components?',
-    },
-    {
-      type: 'confirm',
-      name: ComponentProptNames.wantTranslations,
-      default: false,
-      message:
-        'Do you want i18n translations (i.e. will this component use text)?',
-    },
-    {
-      type: 'confirm',
-      name: ComponentProptNames.wantLoadable,
-      default: false,
-      message: 'Do you want to load the component asynchronously?',
-    },
-    {
-      type: 'confirm',
-      name: ComponentProptNames.wantTests,
-      default: false,
-      message: 'Do you want to have tests?',
-    },
   ],
   actions: data => {
     const answers = data as Answers;
@@ -85,33 +49,6 @@ export const componentGenerator: PlopGeneratorConfig = {
         abortOnFail: true,
       },
     ];
-
-    if (answers.wantLoadable) {
-      actions.push({
-        type: 'add',
-        path: `${componentPath}/Loadable.ts`,
-        templateFile: './component/loadable.ts.hbs',
-        abortOnFail: true,
-      });
-    }
-
-    if (answers.wantTests) {
-      actions.push({
-        type: 'add',
-        path: `${componentPath}/__tests__/index.test.tsx`,
-        templateFile: './component/index.test.tsx.hbs',
-        abortOnFail: true,
-      });
-    }
-
-    if (answers.wantTranslations) {
-      actions.push({
-        type: 'add',
-        path: `${componentPath}/messages.ts`,
-        templateFile: './component/messages.ts.hbs',
-        abortOnFail: true,
-      });
-    }
 
     actions.push({
       type: 'prettify',
