@@ -10,6 +10,7 @@ import 'react-app-polyfill/stable';
 
 // Import root app
 import { App } from 'app';
+import { Export } from 'app/components/Export';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { HelmetProvider } from 'react-helmet-async';
@@ -21,6 +22,29 @@ import Button from '@mui/material/Button';
 
 const store = configureAppStore();
 const MOUNT_NODE = document.getElementById('root') as HTMLElement;
+
+class ExportWithErrorBoundary extends React.Component<
+  {},
+  { hasError: boolean }
+> {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false };
+  }
+
+  static getDerivedStateFromError(error) {
+    console.error(error);
+    return { hasError: true };
+  }
+
+  public render() {
+    return this.state.hasError ? (
+      '(Failed to render export button)'
+    ) : (
+      <Export />
+    );
+  }
+}
 
 class DropLocalStorageOnErrorBoundary extends React.Component<
   {},
@@ -45,6 +69,12 @@ class DropLocalStorageOnErrorBoundary extends React.Component<
             It's very likely that your saved state is incompatible with the
             current version of the application. Click the button below to clear
             application state, then reload the page.
+          </p>
+          <p>You may try to download the current state here:</p>
+          <ExportWithErrorBoundary />
+          <p>
+            You may try to manually download the saved state from the local
+            storage of the browser (in the Storage tab of the developer tools).
           </p>
           <Button color="error" onClick={() => window.localStorage.clear()}>
             Clear state
