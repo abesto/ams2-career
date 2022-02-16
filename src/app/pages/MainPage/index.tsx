@@ -44,7 +44,7 @@ function ChipArray(props: { strings: string[] }) {
   return (
     <Box
       sx={{
-        display: 'flex',
+        display: 'inline-flex',
         justifyContent: 'left',
         flexWrap: 'wrap',
         listStyle: 'none',
@@ -83,8 +83,10 @@ function DisciplineProgressDisplay(props: {
     .filter((v, i, a) => a.indexOf(v) === i);
 
   return (
-    <Paper sx={{ my: 2, p: 2 }}>
-      <Typography variant="h6">{discipline.name}</Typography>
+    <>
+      <Typography variant="h6" component="span">
+        {discipline.name}
+      </Typography>
 
       <ChipArray
         strings={[
@@ -119,7 +121,7 @@ function DisciplineProgressDisplay(props: {
         sx={{ mt: 2 }}
       />
       <Typography variant="body2">{`${progress.xpInLevel} / ${xpToNextLevel} XP to next category`}</Typography>
-    </Paper>
+    </>
   );
 }
 
@@ -137,10 +139,6 @@ export function MainPage(props: Props) {
   const [resetDialogOpen, openResetDialog] = React.useState(false);
 
   function generateRaces() {
-    const levels: { [key: string]: number } = {};
-    for (const [disciplineName, xp] of Object.entries(career.progress)) {
-      levels[disciplineName] = xp.level;
-    }
     dispatch(mainPageActions.generateRaces({ career }));
   }
 
@@ -162,18 +160,23 @@ export function MainPage(props: Props) {
         <title>Home</title>
       </Helmet>
       <Grid container spacing={2}>
-        <Grid item xs={12} lg={4}>
+        <Grid item xs={12} lg={12}>
           <GridItem>
             <Typography variant="h4" sx={{ mb: 2 }}>
               Career Progress
             </Typography>
-            {getAllDisciplines().map(discipline => (
-              <DisciplineProgressDisplay
-                key={discipline.name}
-                discipline={discipline}
-                career={career}
-              />
-            ))}
+            <Grid item container spacing={1}>
+              {getAllDisciplines().map(discipline => (
+                <Grid item xs={12} lg={4} key={discipline.name}>
+                  <GridItem>
+                    <DisciplineProgressDisplay
+                      discipline={discipline}
+                      career={career}
+                    />
+                  </GridItem>
+                </Grid>
+              ))}
+            </Grid>
             <Button color="error" onClick={() => openResetDialog(true)}>
               Reset Career
             </Button>

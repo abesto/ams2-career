@@ -1,0 +1,119 @@
+/**
+ * This is a convenient way of defining what classes of cars can race on what
+ * tracks. Each top-level object contains
+ *  - a list of tracks (name -> [configurations])
+ *  - a list of representative cars
+ *
+ * representativeClasses are resolved to all the classes at the same level in
+ * the same discipline.
+ *
+ * Each top-level object represents a source of (ideally, real-world) data that
+ * says these cars can race on this track.
+ */
+[
+  // Karting tracks
+  {
+    tracks: {
+      'Interlagos Kart': ['One', 'Two', 'Three'],
+      'Buskerud Kart': ['Long', 'Short'],
+      'Granja Viana Kart': ['Copa São Paulo Kart Stage 2', '101', '102', '121'],
+      'Londrina Kart': ['One', 'Two'],
+      'Ortona Kart': ['One', 'Two', 'Three', 'Four'],
+      'Speedland Kart': ['1', '2', '3', '4'],
+    },
+    representativeClasses: [
+      'Karting 125CC',
+      'Karting GX390',
+      'Karting Rental',
+      'Karting Shifter',
+    ],
+  },
+
+  // F3 (https://www.fiaformula3.com)
+  {
+    representativeClasses: ['F3'],
+    tracks: {
+      //// 2022: https://www.fiaformula3.com/Calendar?seasonid=179
+      // Sakhir not in AMS 2
+      Imola: [''],
+      // Barcelona not in AMS 2
+      Silverstone: [''],
+      Spielberg: [''],
+      // Hungaroring not in AMS 2
+      'Spa-Francorchamps': ['2020'],
+      // Zandvoort not in AMS 2
+      Monza: [''],
+
+      //// 2021: https://www.fiaformula3.com/Calendar?seasonid=178
+      // // (only those not covered above)
+      // Le Castellet not in AMS 2
+      // Sochi not in AMS 2
+
+      //// 2020: https://www.fiaformula3.com/Calendar?seasonid=177
+      //// (only those not covered above)                          *
+      // Mugello not in AMS 2
+    },
+  },
+
+  // Built-in AMS 2 championship: F3 Brasil 2017
+  // https://racingcalendar.net/championship/formula-vee-brazil/2021 says
+  // Formula Vee ran at Velo Città, let's assume the rest of the tracks make
+  // sense as well
+  {
+    representativeClasses: ['F3', 'FormulaVee Brazil'],
+    tracks: {
+      Curitiba: [''],
+      Interlagos: ['GP'],
+      'Velo Città': [''],
+      'Sanda Cruz': ['do Sul'],
+      Londrina: ['Short'],
+      Goiânia: [''],
+    },
+  },
+
+  /////////////////////////////////////
+  // Formula Ford ~ Formula Trainers //
+  /////////////////////////////////////
+  // BRSCC - Avon Tyres National Formula Ford Championship
+  // Circuit list: https://brscc.co.uk/circuits/ (as of 2022-02-13) *
+  {
+    representativeClasses: ['FTS'],
+    tracks: {
+      // Anglesey not in AMS 2
+      'Brands Hatch': ['Indy'],
+      // Croft not in AMS 2
+      // Kirkistown not in AMS 2
+      'Oulton Park': ['International'],
+      Snetterton: ['300'],
+    },
+  },
+  // Formula Ford EuroCup 2012
+  // Dunlop MSA Formula Ford Championship of Great Britain
+  // https://www.thecheckeredflag.co.uk/2011/12/2012-formula-ford-gb-and-eurocup-calendars-unveiled/
+  {
+    representativeClasses: ['FTS'],
+    tracks: {
+      'Oulton Park': ['International'],
+      'Brands Hatch': ['', 'Indy'],
+      // Rockingham not in AMS 2
+      'Spa-Francorchamps': ['2020'],
+      // Zandvoort not in AMS 2
+      Nürburgring: ['GP 2020'],
+      Snetterton: ['300'],
+      Silverstone: [''],
+      Donington: ['GP'],
+    },
+  },
+  // 2021 U.S. F2000 National Championship
+  // https://en.wikipedia.org/wiki/2021_U.S._F2000_National_Championship
+  {
+    representativeClasses: ['FTS'],
+    tracks: {
+      'Road America': [''],
+      // Other tracks not in AMS 2
+    },
+  },
+  ////////////////////////////////////////////
+  // End of Formula Ford ~ Formula Trainers //
+  ////////////////////////////////////////////
+]

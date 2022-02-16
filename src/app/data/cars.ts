@@ -1,9 +1,9 @@
 import Papa from 'papaparse';
 import raw from 'raw.macro';
-import { Car, CarId, getCarId } from 'types/Car';
-import { CarClass, CarClassId, getCarClassId } from 'types/CarClass';
-import { Discipline } from 'types/Discipline';
 
+import { Car, CarId, getCarId } from '../../types/Car';
+import { CarClass, CarClassId, getCarClassId } from '../../types/CarClass';
+import { Discipline } from '../../types/Discipline';
 import { getCarClass, getCarClassesByName } from './car_classes';
 import { getDiscipline } from './disciplines';
 import { getTrackIdsFor } from './tracks';

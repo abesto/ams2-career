@@ -5,6 +5,7 @@
     "msjsdiag.debugger-for-chrome",
     "eg2.vscode-npm-script",
     "styled-components.vscode-styled-components",
-    "mike-co.import-sorter"
+    "mike-co.import-sorter",
+    "mrmlnc.vscode-json5"
   ]
 }

@@ -1,42 +1,36 @@
-import { CarClass, CarClassId, getCarClassId } from 'types/CarClass';
-import { Discipline, DisciplineId, getDisciplineId } from 'types/Discipline';
+import Papa from 'papaparse';
+import raw from 'raw.macro';
 
+import { CarClass, CarClassId, getCarClassId } from '../../types/CarClass';
+import {
+  Discipline,
+  DisciplineId,
+  getDisciplineId,
+} from '../../types/Discipline';
 import { getDiscipline } from './disciplines';
 
-const classes = {
-  GT: {
-    0: ['Ginetta G40 Cup', 'GT5'],
-    1: ['GT4'],
-    2: ['GT3'],
-    3: ['GTE'],
-  },
-  Endurance: {
-    0: ['Gain XP in GT'],
-    1: ['GT4'],
-    2: ['GT3'],
-    3: ['GTE'],
-  },
-  'Open Wheel': {
-    0: ['Karting 125CC'],
-    1: ['Formula Trainer'],
-    2: ['F3'],
-  },
+type Record = {
+  class: string;
+  discipline: DisciplineId;
+  grade: number;
 };
 
+const data: Record[] = Papa.parse(raw('./car_classes.csv'), {
+  header: true,
+  dynamicTyping: true,
+}).data;
+
 export const CAR_CLASSES: { [key: CarClassId]: CarClass } = Object.fromEntries(
-  Object.entries(classes).flatMap(([disciplineId, classes]) =>
-    Object.entries(classes).flatMap(([level, names]) =>
-      names.map(name => {
-        getDiscipline(disciplineId as DisciplineId); // For the side-effect of exploding if there's an invalid disciplineId in `classes`
-        const carClass = {
-          disciplineId: disciplineId as DisciplineId,
-          level: parseInt(level),
-          name,
-        };
-        return [getCarClassId(carClass), carClass];
-      }),
-    ),
-  ),
+  data
+    .map((record: Record) => {
+      const carClass = {
+        name: record.class as string,
+        disciplineId: getDisciplineId(getDiscipline(record.discipline)),
+        level: record.grade,
+      };
+      return [getCarClassId(carClass), carClass];
+    })
+    .filter(([a, b]) => a && b),
 );
 
 export function getCarClass(id: CarClassId | CarClass): CarClass {

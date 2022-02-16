@@ -34,7 +34,7 @@ export function enrich(state: CareerState): EnrichedCareerData {
   for (const raceResult of state.raceResults) {
     const discipline = getDisciplineOfRace(raceResult);
     const disciplineId = getDisciplineId(discipline);
-    xp.set(disciplineId, xp.get(disciplineId) || 0 + xpGain(raceResult));
+    xp.set(disciplineId, (xp.get(disciplineId) || 0) + xpGain(raceResult));
   }
 
   xp.forEach((totalXp, disciplineId) => {

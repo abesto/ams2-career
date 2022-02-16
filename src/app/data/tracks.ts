@@ -1,38 +1,55 @@
-import Papa from 'papaparse';
+import JSON5 from 'json5';
 import raw from 'raw.macro';
-import { CarClass, CarClassId, getCarClassId } from 'types/CarClass';
-import { getTrackId, Track, TrackId } from 'types/Track';
 
-import { getCarClassesByName } from './car_classes';
+import { CarClass, CarClassId, getCarClassId } from '../../types/CarClass';
+import { getTrackId, Track, TrackId } from '../../types/Track';
+import {
+  getCarClass,
+  getCarClassesAt,
+  getCarClassesByName,
+} from './car_classes';
+import { getDiscipline } from './disciplines';
 
-// Manually curated
-const data = Papa.parse(raw('./tracks.csv'), { header: true }).data;
-
-function recordToTrack(record: { [key: string]: string }): Track {
-  return {
-    name: record.Name,
-    configuration: record.Configuration,
-  };
+interface Record {
+  tracks: { [track: string]: string[] };
+  representativeClasses: CarClassId[];
 }
 
+// Manually curated
+const data: Record[] = JSON5.parse(raw('./tracks.json5'));
+
 export const TRACKS: { [key: TrackId]: Track } = Object.fromEntries(
-  data.map(recordToTrack).map((track: Track) => [getTrackId(track), track]),
+  data.flatMap(({ tracks, representativeClasses }) =>
+    Object.entries(tracks).flatMap(([name, configurations]) =>
+      configurations.map(configuration => {
+        const track = { name, configuration };
+        return [getTrackId(track), track];
+      }),
+    ),
+  ),
 );
 
 let CAR_CLASS_TO_TRACKS: { [key: CarClassId]: TrackId[] } = {};
 for (const record of data) {
-  const trackId = getTrackId(recordToTrack(record));
-  for (const [carClassName, val] of Object.entries(record)) {
-    if (carClassName === 'Name' || carClassName === 'Configuration') {
-      continue;
-    }
-    if (val !== 'x') {
-      continue;
-    }
-    for (const carClass of getCarClassesByName(carClassName)) {
-      const carClassId = getCarClassId(carClass);
-      CAR_CLASS_TO_TRACKS[carClassId] = CAR_CLASS_TO_TRACKS[carClassId] || [];
-      CAR_CLASS_TO_TRACKS[carClassId].push(trackId);
+  const carClassIds = record.representativeClasses
+    .flatMap(getCarClassesByName)
+    .flatMap((representativeCarClass: CarClass) =>
+      getCarClassesAt(
+        getDiscipline(representativeCarClass.disciplineId),
+        representativeCarClass.level,
+      ),
+    )
+    .map(getCarClassId)
+    .filter((v, i, a) => a.indexOf(v) === i);
+
+  for (const [trackName, configurations] of Object.entries(record.tracks)) {
+    for (const configuration of configurations) {
+      const track = { name: trackName, configuration };
+      const trackId = getTrackId(track);
+      for (const carClassId of carClassIds) {
+        CAR_CLASS_TO_TRACKS[carClassId] = CAR_CLASS_TO_TRACKS[carClassId] || [];
+        CAR_CLASS_TO_TRACKS[carClassId].push(trackId);
+      }
     }
   }
 }
