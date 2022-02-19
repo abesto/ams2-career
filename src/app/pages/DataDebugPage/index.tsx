@@ -1,3 +1,12 @@
+import * as React from 'react';
+import { Helmet } from 'react-helmet-async';
+
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
+
+import { Cars } from './components/Cars';
+import { Tracks } from './components/Tracks';
+
 import {
   getAllCars,
   getCar,
@@ -5,16 +14,8 @@ import {
   getDisciplineOfCar,
 } from 'app/data/cars';
 import { getAllTracks, getTracksFor } from 'app/data/tracks';
-import * as React from 'react';
-import { Helmet } from 'react-helmet-async';
 import { Car, CarId } from 'types/Car';
 import { canRaceOn, getTrackId, Track, TrackId } from 'types/Track';
-
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
-
-import { Cars } from './components/Cars';
-import { Tracks } from './components/Tracks';
 
 function compareFields(a: Car): any[] {
   const carClass = getCarClassOfCar(a);

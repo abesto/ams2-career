@@ -21,5 +21,25 @@
   "importSorter.importStringConfiguration.maximumNumberOfImportExpressionsPerLine.count": 80,
   "importSorter.importStringConfiguration.tabSize": 2,
   "importSorter.importStringConfiguration.quoteMark": "single",
-  "importSorter.importStringConfiguration.trailingComma": "multiLine"
+  "importSorter.importStringConfiguration.trailingComma": "multiLine",
+  "importSorter.sortConfiguration.customOrderingRules.rules": [
+    {
+      "regex": "^(app|components|types)",
+      "orderLevel": 50
+    },
+    {
+      "type": "importMember",
+      "regex": "^$",
+      "orderLevel": 10,
+      "disableSort": true
+    },
+    {
+      "regex": "^[@]",
+      "orderLevel": 30
+    },
+    {
+      "regex": "^[.]",
+      "orderLevel": 40
+    }
+  ]
 }

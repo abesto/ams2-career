@@ -1,10 +1,11 @@
-import { RaceResult } from 'types/Race';
 import { createSlice } from 'utils/@reduxjs/toolkit';
 import { useInjectReducer } from 'utils/redux-injectors';
 
 import { PayloadAction } from '@reduxjs/toolkit';
 
 import { CareerState } from './types';
+
+import { RaceResult } from 'types/Race';
 
 export const initialState: CareerState = {
   raceResults: [],

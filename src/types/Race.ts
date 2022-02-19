@@ -1,9 +1,9 @@
-import { getDisciplineOfCarClass } from 'app/data/car_classes';
-
 import { CarId } from './Car';
 import { CarClassId } from './CarClass';
 import { Discipline } from './Discipline';
 import { TrackId } from './Track';
+
+import { getDisciplineOfCarClass } from 'app/data/car_classes';
 
 export interface Race {
   readonly generatedAt: number; // JS timestamp

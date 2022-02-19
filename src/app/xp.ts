@@ -1,7 +1,7 @@
+import { getCarClassesIn } from './data/car_classes';
+
 import { Discipline } from 'types/Discipline';
 import { RaceResult } from 'types/Race';
-
-import { getCarClassesIn } from './data/car_classes';
 
 // Simple placeholders for now
 

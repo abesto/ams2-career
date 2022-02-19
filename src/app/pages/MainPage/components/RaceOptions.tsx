@@ -1,9 +1,4 @@
-import { getCarClass } from 'app/data/car_classes';
-import { getDiscipline } from 'app/data/disciplines';
-import { getTrack } from 'app/data/tracks';
 import * as React from 'react';
-import { getCarClassId } from 'types/CarClass';
-import { Race } from 'types/Race';
 
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -11,6 +6,12 @@ import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
+
+import { getCarClass } from 'app/data/car_classes';
+import { getDiscipline } from 'app/data/disciplines';
+import { getTrack } from 'app/data/tracks';
+import { getCarClassId } from 'types/CarClass';
+import { Race } from 'types/Race';
 
 interface Props {
   races: Race[];

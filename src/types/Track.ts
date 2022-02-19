@@ -1,6 +1,6 @@
-import { getTrackIdsFor } from 'app/data/tracks';
-
 import { CarClass, CarClassId } from './CarClass';
+
+import { getTrackIdsFor } from 'app/data/tracks';
 
 export interface Track {
   readonly name: string;

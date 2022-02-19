@@ -1,10 +1,10 @@
-import { getCarsInClass } from 'app/data/cars';
-import { RootState } from 'types';
-import { getCarId } from 'types/Car';
-
 import { createSelector } from '@reduxjs/toolkit';
 
 import { initialState } from './';
+
+import { getCarsInClass } from 'app/data/cars';
+import { RootState } from 'types';
+import { getCarId } from 'types/Car';
 
 const selectSlice = (state: RootState) => state.mainPage || initialState;
 

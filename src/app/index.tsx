@@ -27,8 +27,8 @@ import { Export } from './components/Export';
 import { ExportReminder } from './components/ExportReminder';
 import { Import } from './components/Import';
 import { NotFoundPage } from './components/NotFoundPage';
+import { CareerPage } from './pages/CareerPage';
 import { DataDebugPage } from './pages/DataDebugPage';
-import { LogbookPage } from './pages/LogbookPage';
 import { MainPage } from './pages/MainPage';
 
 export function App() {
@@ -57,7 +57,7 @@ export function App() {
                 component={RouterLink}
                 to="/"
               >
-                Home
+                Go Race!
               </Button>
             </Typography>
 
@@ -65,9 +65,9 @@ export function App() {
               color="inherit"
               size="small"
               component={RouterLink}
-              to="/logbook"
+              to="/career"
             >
-              Logbook
+              Career
             </Button>
 
             <Export color="inherit" size="small" sx={{ ml: 2 }} />
@@ -89,7 +89,7 @@ export function App() {
         <Switch>
           <Route exact path="/" component={MainPage} />
           <Route exact path="/debug" component={DataDebugPage} />
-          <Route exact path="/logbook" component={LogbookPage} />
+          <Route exact path="/career" component={CareerPage} />
           <Route component={NotFoundPage} />
         </Switch>
 

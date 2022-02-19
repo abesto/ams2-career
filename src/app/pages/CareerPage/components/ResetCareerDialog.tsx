@@ -1,6 +1,3 @@
-import { Export } from 'app/components/Export';
-import { selectRacesSinceLastExport } from 'app/components/ExportReminder/slice/selectors';
-import { pluralWithNumber } from 'app/plural';
 import * as React from 'react';
 import { useSelector } from 'react-redux';
 
@@ -12,6 +9,10 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import Divider from '@mui/material/Divider';
 import Input from '@mui/material/Input';
+
+import { Export } from 'app/components/Export';
+import { selectRacesSinceLastExport } from 'app/components/ExportReminder/slice/selectors';
+import { pluralWithNumber } from 'app/plural';
 
 interface Props {
   onClose: () => void;

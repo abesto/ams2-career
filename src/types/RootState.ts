@@ -1,7 +1,7 @@
 import { CareerState } from 'app//slice/types';
+import { ExportReminderState } from 'app/components/ExportReminder/slice/types';
 import { MainPageState } from 'app/pages/MainPage/slice/types';
 
-import { ExportReminderState } from 'app/components/ExportReminder/slice/types';
 // [IMPORT NEW CONTAINERSTATE ABOVE] < Needed for generating containers seamlessly
 
 /* 

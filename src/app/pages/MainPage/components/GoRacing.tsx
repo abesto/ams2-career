@@ -1,10 +1,5 @@
-import { getCarClass } from 'app/data/car_classes';
-import { getCarsInClass } from 'app/data/cars';
-import { getTrack } from 'app/data/tracks';
 import dayjs from 'dayjs';
 import * as React from 'react';
-import { CarId, getCarId } from 'types/Car';
-import { Race } from 'types/Race';
 
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -17,8 +12,17 @@ import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 
+import { DisciplineProgress } from 'app/components/DisciplineProgress';
+import { getCarClass } from 'app/data/car_classes';
+import { getCarsInClass } from 'app/data/cars';
+import { getTrack } from 'app/data/tracks';
+import { EnrichedCareerData } from 'app/slice/types';
+import { CarId, getCarId } from 'types/Car';
+import { getDisciplineOfRace, Race } from 'types/Race';
+
 interface Props {
   race: Race;
+  career: EnrichedCareerData;
   currentCarId: CarId | null;
   onCarSelect: (carId: CarId) => void;
   onRecord: (position: number) => void;
@@ -57,7 +61,7 @@ function Item({ label, children }) {
 }
 
 export function GoRacing(props: Props) {
-  const { race } = props;
+  const { race, career } = props;
   const [position, setPosition] = React.useState(1);
 
   const track = getTrack(race.trackId);
@@ -68,6 +72,11 @@ export function GoRacing(props: Props) {
 
   return (
     <>
+      <DisciplineProgress
+        discipline={getDisciplineOfRace(race)}
+        career={career}
+      />
+
       <Typography variant="h6" sx={{ my: 2 }}>
         Simulator Settings
       </Typography>

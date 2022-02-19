@@ -1,9 +1,10 @@
+import dayjs from 'dayjs';
+import minMax from 'dayjs/plugin/minMax';
+
 import { getCarClassesAt } from 'app/data/car_classes';
 import { canRaceAtNight, getCarsInClass } from 'app/data/cars';
 import { getTrackIdsFor } from 'app/data/tracks';
 import { aiLevel, EnrichedCareerData } from 'app/slice/types';
-import dayjs from 'dayjs';
-import minMax from 'dayjs/plugin/minMax';
 import { CarClass, getCarClassId } from 'types/CarClass';
 import { Discipline } from 'types/Discipline';
 import { Race } from 'types/Race';

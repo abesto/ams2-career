@@ -1,9 +1,9 @@
-import { selectCareer } from 'app/slice/selectors';
-import { RootState } from 'types';
-
 import { createSelector } from '@reduxjs/toolkit';
 
 import { initialState } from './';
+
+import { selectCareer } from 'app/slice/selectors';
+import { RootState } from 'types';
 
 const selectSlice = (state: RootState) => state.exportReminder || initialState;
 

@@ -1,7 +1,3 @@
-import { getAllDisciplines } from 'app/data/disciplines';
-import { EnrichedCareerData } from 'app/slice/types';
-import { CarId } from 'types/Car';
-import { CarClassId } from 'types/CarClass';
 import { createSlice } from 'utils/@reduxjs/toolkit';
 import { useInjectReducer } from 'utils/redux-injectors';
 
@@ -10,9 +6,14 @@ import { PayloadAction } from '@reduxjs/toolkit';
 import { racegen } from '../racegen';
 import { MainPageState } from './types';
 
+import { getAllDisciplines } from 'app/data/disciplines';
+import { EnrichedCareerData } from 'app/slice/types';
+import { CarId } from 'types/Car';
+import { CarClassId } from 'types/CarClass';
+
 export const initialState: MainPageState = {
   raceOptions: [],
-  selectedRaceIndex: null,
+  selectedRaceIndex: 0,
   selectedCars: {},
 };
 
@@ -27,7 +28,7 @@ const slice = createSlice({
       state.raceOptions = getAllDisciplines().flatMap(d =>
         racegen(d, action.payload.career),
       );
-      state.selectedRaceIndex = null;
+      state.selectedRaceIndex = 0;
     },
     selectRace(state, action: PayloadAction<number>) {
       state.selectedRaceIndex = action.payload;
@@ -40,7 +41,7 @@ const slice = createSlice({
     },
     reset(state, action: PayloadAction<void>) {
       state.raceOptions = [];
-      state.selectedRaceIndex = null;
+      state.selectedRaceIndex = 0;
     },
   },
 });

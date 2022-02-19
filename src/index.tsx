@@ -8,9 +8,6 @@
 import 'react-app-polyfill/ie11';
 import 'react-app-polyfill/stable';
 
-// Import root app
-import { App } from 'app';
-import { Export } from 'app/components/Export';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { HelmetProvider } from 'react-helmet-async';
@@ -19,6 +16,10 @@ import reportWebVitals from 'reportWebVitals';
 import { configureAppStore } from 'store/configureStore';
 
 import Button from '@mui/material/Button';
+
+// Import root app
+import { App } from 'app';
+import { Export } from 'app/components/Export';
 
 const store = configureAppStore();
 const MOUNT_NODE = document.getElementById('root') as HTMLElement;

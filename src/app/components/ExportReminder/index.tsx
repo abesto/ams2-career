@@ -1,4 +1,3 @@
-import { pluralWithNumber } from 'app/plural';
 import * as React from 'react';
 import { Beforeunload } from 'react-beforeunload';
 import { useDispatch, useSelector } from 'react-redux';
@@ -14,6 +13,8 @@ import {
   selectExportReminder,
   selectRacesSinceLastExport,
 } from './slice/selectors';
+
+import { pluralWithNumber } from 'app/plural';
 
 interface Props {}
 

@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { getTrackId, Track, TrackId } from 'types/Track';
 
 import Paper from '@mui/material/Paper';
 import Table from '@mui/material/Table';
@@ -8,6 +7,8 @@ import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
+
+import { getTrackId, Track, TrackId } from 'types/Track';
 
 interface Props {
   tracks: Track[];

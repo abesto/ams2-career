@@ -1,8 +1,9 @@
 import LZString from 'lz-string';
 import { AnyAction, Middleware } from 'redux';
-import { RootState } from 'types';
 
 import { createAction, Reducer } from '@reduxjs/toolkit';
+
+import { RootState } from 'types';
 
 const DEFAULT_KEY = 'app:v1';
 
