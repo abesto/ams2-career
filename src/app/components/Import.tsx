@@ -65,7 +65,7 @@ export function Import(props: IconButtonProps) {
             career first:
             <Export />
           </DialogContentText>
-          <input type="file" onChange={handleFileSelect} />
+          <input type="file" onChange={handleFileSelect} accept=".ams2career" />
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose}>Cancel</Button>
