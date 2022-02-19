@@ -3,11 +3,7 @@ import raw from 'raw.macro';
 
 import { CarClass, CarClassId, getCarClassId } from '../../types/CarClass';
 import { getTrackId, Track, TrackId } from '../../types/Track';
-import {
-  getCarClass,
-  getCarClassesAt,
-  getCarClassesByName,
-} from './car_classes';
+import { getCarClassesAt, getCarClassesByName } from './car_classes';
 import { getDiscipline } from './disciplines';
 
 interface Record {
