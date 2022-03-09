@@ -23,9 +23,9 @@ import { getCarClass } from 'app/data/car_classes';
 import { getCar } from 'app/data/cars';
 import { getAllDisciplines, getDiscipline } from 'app/data/disciplines';
 import { getTrack } from 'app/data/tracks';
-import { useCareerSlice } from 'app/slice';
-import { selectCareer } from 'app/slice/selectors';
-import { EnrichedCareerData } from 'app/slice/types';
+import { useCareerSlice } from 'app/slices/CareerSlice';
+import { selectCareer } from 'app/slices/CareerSlice/selectors';
+import { EnrichedCareerData } from 'app/slices/CareerSlice/types';
 
 interface Props {}
 

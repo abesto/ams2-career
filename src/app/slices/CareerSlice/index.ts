@@ -1,3 +1,4 @@
+import { backup } from 'store/saveload';
 import { createSlice } from 'utils/@reduxjs/toolkit';
 import { useInjectReducer } from 'utils/redux-injectors';
 
@@ -20,6 +21,7 @@ const slice = createSlice({
     },
     resetCareer(state, action: PayloadAction<void>) {
       state.raceResults = [];
+      backup('reset');
     },
   },
 });

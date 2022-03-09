@@ -20,9 +20,9 @@ export function configureAppStore() {
   const { run: runSaga } = sagaMiddleware;
 
   // Create the store with saga middleware
-  const middlewares = [sagaMiddleware, saveMiddleware()];
+  const middlewares = [sagaMiddleware, saveMiddleware];
 
-  const preloadedState = load();
+  const preloadedState = load(true) || {};
 
   // Create dummy reducers so that saved state for them is not dropped by redux
   const dummyReducers = {};

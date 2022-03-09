@@ -9,7 +9,7 @@ import Typography from '@mui/material/Typography';
 import { ChipArray } from 'app/components/ChipArray';
 import { getCarClassesAt, getCarClassesIn } from 'app/data/car_classes';
 import { pluralWithNumber } from 'app/plural';
-import { aiLevel, EnrichedCareerData } from 'app/slice/types';
+import { aiLevel, EnrichedCareerData } from 'app/slices/CareerSlice/types';
 import { maxLevel, xpNeededForLevelUpTo } from 'app/xp';
 import { Discipline, disciplineEquals } from 'types/Discipline';
 import { getDisciplineOfRace } from 'types/Race';

@@ -7,7 +7,7 @@ import { racegen } from '../racegen';
 import { MainPageState } from './types';
 
 import { getAllDisciplines } from 'app/data/disciplines';
-import { EnrichedCareerData } from 'app/slice/types';
+import { EnrichedCareerData } from 'app/slices/CareerSlice/types';
 import { CarId } from 'types/Car';
 import { CarClassId } from 'types/CarClass';
 

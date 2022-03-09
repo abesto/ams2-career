@@ -15,7 +15,6 @@ interface Record {
 const data: Record[] = Papa.parse(raw('./tracks.csv'), {
   header: true,
 }).data;
-console.log(data);
 
 export const TRACKS: { [key: TrackId]: Track } = Object.fromEntries(
   data.map(({ name, configuration, ..._ }) => {

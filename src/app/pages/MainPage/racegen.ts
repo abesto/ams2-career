@@ -4,7 +4,7 @@ import minMax from 'dayjs/plugin/minMax';
 import { getCarClassesAt } from 'app/data/car_classes';
 import { canRaceAtNight, getCarsInClass } from 'app/data/cars';
 import { getTrackIdsFor } from 'app/data/tracks';
-import { aiLevel, EnrichedCareerData } from 'app/slice/types';
+import { aiLevel, EnrichedCareerData } from 'app/slices/CareerSlice/types';
 import { CarClass, getCarClassId } from 'types/CarClass';
 import { Discipline } from 'types/Discipline';
 import { Race } from 'types/Race';

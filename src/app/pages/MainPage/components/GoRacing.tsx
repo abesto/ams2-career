@@ -16,7 +16,7 @@ import { DisciplineProgress } from 'app/components/DisciplineProgress';
 import { getCarClass } from 'app/data/car_classes';
 import { getCarsInClass } from 'app/data/cars';
 import { getTrack } from 'app/data/tracks';
-import { EnrichedCareerData } from 'app/slice/types';
+import { EnrichedCareerData } from 'app/slices/CareerSlice/types';
 import { CarId, getCarId } from 'types/Car';
 import { getDisciplineOfRace, Race } from 'types/Race';
 

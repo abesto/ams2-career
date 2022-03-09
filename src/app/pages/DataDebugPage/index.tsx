@@ -3,8 +3,11 @@ import { Helmet } from 'react-helmet-async';
 
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
+import Tab from '@mui/material/Tab';
+import Tabs from '@mui/material/Tabs';
 
 import { Cars } from './components/Cars';
+import { SaveData } from './components/SaveData';
 import { Tracks } from './components/Tracks';
 
 import {
@@ -45,6 +48,7 @@ export function DataDebugPage() {
   const [hoveredTrackId, setHoveredTrackId] = React.useState<TrackId | null>(
     null,
   );
+  const [tab, setTab] = React.useState(0);
 
   const tracks = hoveredCarId
     ? getTracksFor(getCar(hoveredCarId).carClassId)
@@ -66,14 +70,23 @@ export function DataDebugPage() {
 
       <Box sx={{ flexGrow: 1 }}>
         <h1>Data Debugger</h1>
-        <Grid container spacing={3}>
-          <Grid item xs={8}>
-            <Cars cars={cars} onHover={setHoveredCarId} />
+        <Tabs value={tab} onChange={(_, newTab) => setTab(newTab)}>
+          <Tab label="Save data" />
+          <Tab label="Cars / Tracks" />
+        </Tabs>
+
+        {tab === 0 && <SaveData />}
+
+        {tab === 1 && (
+          <Grid container spacing={3}>
+            <Grid item xs={8}>
+              <Cars cars={cars} onHover={setHoveredCarId} />
+            </Grid>
+            <Grid item xs={4}>
+              <Tracks tracks={tracks} onHover={setHoveredTrackId} />
+            </Grid>
           </Grid>
-          <Grid item xs={4}>
-            <Tracks tracks={tracks} onHover={setHoveredTrackId} />
-          </Grid>
-        </Grid>
+        )}
       </Box>
     </>
   );

@@ -1,6 +1,7 @@
-import { CareerState } from 'app//slice/types';
 import { ExportReminderState } from 'app/components/ExportReminder/slice/types';
 import { MainPageState } from 'app/pages/MainPage/slice/types';
+import { CareerState } from 'app/slices/CareerSlice/types';
+import { SaveMetaState } from 'app/slices/SaveMetaSlice/types';
 
 // [IMPORT NEW CONTAINERSTATE ABOVE] < Needed for generating containers seamlessly
 
@@ -12,5 +13,6 @@ export interface RootState {
   career?: CareerState;
   mainPage?: MainPageState;
   exportReminder?: ExportReminderState;
+  saveMeta?: SaveMetaState;
   // [INSERT NEW REDUCER KEY ABOVE] < Needed for generating containers seamlessly
 }

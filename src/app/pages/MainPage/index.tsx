@@ -16,8 +16,8 @@ import {
   selectSelectedRace,
 } from './slice/selectors';
 
-import { useCareerSlice } from 'app/slice';
-import { selectCareer } from 'app/slice/selectors';
+import { useCareerSlice } from 'app/slices/CareerSlice';
+import { selectCareer } from 'app/slices/CareerSlice/selectors';
 import { CarId } from 'types/Car';
 import { RaceResult } from 'types/Race';
 

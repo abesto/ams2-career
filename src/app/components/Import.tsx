@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useStore } from 'react-redux';
-import { deserialize } from 'store/saveload';
+import { backup, deserialize } from 'store/saveload';
 
 import UploadIcon from '@mui/icons-material/Upload';
 import Button from '@mui/material/Button';
@@ -30,6 +30,7 @@ export function Import(props: IconButtonProps) {
     }
     const reader = new FileReader();
     reader.onload = () => {
+      backup('import');
       const data = deserialize(reader.result as string);
       if (data === undefined) {
         alert('Invalid file');
