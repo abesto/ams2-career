@@ -41,5 +41,7 @@
       "regex": "^[.]",
       "orderLevel": 40
     }
-  ]
+  ],
+  "material-ui-snippets.importPaths": "second level",
+  "mui-snippets.importPaths": "second level"
 }

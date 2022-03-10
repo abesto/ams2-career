@@ -9,6 +9,7 @@ import Tabs from '@mui/material/Tabs';
 import { Cars } from './components/Cars';
 import { SaveData } from './components/SaveData';
 import { Tracks } from './components/Tracks';
+import { XpGain } from './components/XpGain';
 
 import {
   getAllCars,
@@ -72,12 +73,15 @@ export function DataDebugPage() {
         <h1>Data Debugger</h1>
         <Tabs value={tab} onChange={(_, newTab) => setTab(newTab)}>
           <Tab label="Save data" />
+          <Tab label="XP Gain" />
           <Tab label="Cars / Tracks" />
         </Tabs>
 
         {tab === 0 && <SaveData />}
 
-        {tab === 1 && (
+        {tab === 1 && <XpGain />}
+
+        {tab === 2 && (
           <Grid container spacing={3}>
             <Grid item xs={8}>
               <Cars cars={cars} onHover={setHoveredCarId} />

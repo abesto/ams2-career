@@ -1,13 +1,47 @@
-import { getCarClassesIn } from './data/car_classes';
+import { getCarClass, getCarClassesIn } from './data/car_classes';
+import * as xpData from './data/xp';
 
-import { Discipline } from 'types/Discipline';
+import { Discipline, DisciplineId } from 'types/Discipline';
 import { RaceResult } from 'types/Race';
 
-// Simple placeholders for now
+export function getAIMultiplier(result: RaceResult): number {
+  return result.aiLevel * 0.01;
+}
 
-export function xpGain(result: RaceResult): number {
-  return Math.floor(
-    (1 - 0.03 * (result.position - 1)) * result.playerLevel * 15,
+export function getPositionMultiplier(result: RaceResult): number {
+  return Math.max(0.9, 1.04 - 0.01 * result.position);
+}
+
+export function getBaseXpGain(): number {
+  return 10;
+}
+
+export function getGradeMultiplier(result: RaceResult): number {
+  const carClass = getCarClass(result.carClassId);
+  return xpData.getGradeMultiplier(carClass.disciplineId, carClass.level);
+}
+
+export function getCrossDisciplineMultiplier(
+  targetDisciplineId: DisciplineId,
+  result: RaceResult,
+): number {
+  const carClass = getCarClass(result.carClassId);
+  return xpData.getCrossDisciplineMultiplier(
+    carClass.disciplineId,
+    targetDisciplineId,
+  );
+}
+
+export function xpGain(
+  targetDisciplineId: DisciplineId,
+  result: RaceResult,
+): number {
+  return (
+    getBaseXpGain() *
+    getGradeMultiplier(result) *
+    getAIMultiplier(result) *
+    getPositionMultiplier(result) *
+    getCrossDisciplineMultiplier(targetDisciplineId, result)
   );
 }
 
