@@ -1,0 +1,150 @@
+car,class,discipline,grade,year
+Caterham 620R,Caterham,Club,1,2013
+Ginetta G40,Ginetta G40 Cup,Club,1,2010
+Ginetta G40,GT5,Club,1,2010
+Caterham Superlight (360R),Caterham,Club,2,2017
+Caterham Supersport (360R),Caterham,Club,2,2017
+Volkswagen Polo,TSI Cup,Club,2,2021
+Aussie Racing Camaro,ARC,Club,3,#N/A
+Caterham Academy (270R),Caterham,Club,3,#N/A
+Chevrolet Chevette,Copa Classic (Class: B),Club,4,#N/A
+Fiat Uno,Copa Classic (Class: B),Club,4,*1992-1997
+Puma GTE,Copa Classic (Class: B),Club,4,#N/A
+Volkswagen Gol,Copa Classic (Class: B),Club,4,*2011-2021
+Volkswagen Passat,Copa Classic (Class: B),Club,4,*2011-2021
+Puma GTB,Copa Classic (Class: FL),Club,4,#N/A
+Volkswagen Fusca,Copa Classic (Class: FL),Club,4,*2011-2021
+Volkswagen Gol,Copa Classic (Class: FL),Club,4,*1983-1987
+Volkswagen Passat,Copa Classic (Class: FL),Club,4,*1983-1987
+Volkswagen Fusca,Copa Fusca,Club,4,#N/A
+Fiat Uno,Copa Uno,Club,4,*1992-1997
+Volkswagen Gol,Hot Cars,Club,4,*1983-1987
+Volkswagen Passat,Hot Cars,Club,4,*1983-1987
+Porsche 962C,Group C,Endurance,1,1985
+Sauber C9,Group C,Endurance,1,1987
+McLaren F1 GTR,GT1,Endurance,2,1997
+Mercedes-Benz CLK LM,GT1,Endurance,2,1998
+Porsche 911 GT1-98,GT1,Endurance,2,1998
+BMW M8 GTE,GTE,Endurance,2,2017
+Chevrolet Corvette C8.R,GTE,Endurance,2,2020
+Porsche 911 RSR-19,GTE,Endurance,2,2019
+Ginetta G58,P1,Endurance,2,2018
+MetalMoro AJR,P1,Endurance,2,2017
+MetalMoro AJR,P1,Endurance,2,2017
+MetalMoro AJR,P1,Endurance,2,2017
+MetalMoro AJR,P1,Endurance,2,2017
+Cadillac DPi-V.R,DPi,Endurance,3,#N/A
+MetalMoro MRX,P2,Endurance,3,2018
+Sigma P1,P2,Endurance,3,2017
+MetalMoro MRX,P3,Endurance,3,2018
+MetalMoro MRX,P3,Endurance,3,2018
+MetalMoro MRX,P4,Endurance,3,2018
+Roco 001,P3,Endurance,4,2018
+MCR S2000,P4,Endurance,5,2013
+BMW M6 GT3,GT3,GT,1,2017
+McLaren 720S,GT3,GT,1,2019
+Mercedes-AMG GT3,GT3,GT,1,2015
+Porsche 911 GT3 R,GT3,GT,1,2018
+BMW M4 GT4,GT4,GT,2,2018
+Camaro GT4.R,GT4,GT,2,2017
+Ginetta G55 GT4,GT4,GT,2,2012
+McLaren 570S,GT4,GT,2,2016
+Porsche Cayman GT4 CS MR,GT4,GT,2,2016
+Porsche 911 GT3 Cup 3.8,Carrera Cup,GT,3,#N/A
+Porsche 911 GT3 Cup 4.0,Carrera Cup,GT,3,#N/A
+Ginetta G55,Ginetta G55 Supercup,GT,3,2011
+Chevrolet Montana,Copa Montana,GT,4,#N/A
+Puma P052,GT5,GT,4,2017
+Super Kart 250cc,Super Kart,Karting,1,-
+Kart 125cc 2STROKE,Karting 125CC,Karting,2,-
+Kart GX390 Race,Karting GX390,Karting,2,-
+Kart 125cc Shifter,Karting Shifter,Karting,2,-
+Kart GX390 Rental,Karting Rental,Karting,3,-
+Formula Ultimate 2019,Formula Ultimate,Open Wheel,1,#N/A
+Formula Reiza (Red Bull Racing RB7),Formula Reiza,Open Wheel,2,#N/A
+Formula V10 G1 (Dome F105),Formula V10 G1,Open Wheel,3,#N/A
+McLaren MP4/12,Formula V10 G1,Open Wheel,3,#N/A
+Formula V10 G2 (Williams FW22),Formula V10 G2,Open Wheel,3,#N/A
+Formula V12 (Ferrari 412 T2),Formula V12,Open Wheel,3,#N/A
+Formula Classic G1 M1 (Williams FW11B),Formula Classic G1,Open Wheel,4,#N/A
+Formula Classic G1 M2 (Arrows-BMW A9),Formula Classic G1,Open Wheel,4,#N/A
+Formula Classic G2 M1,Formula Classic G2,Open Wheel,4,#N/A
+Formula Classic G2 M2,Formula Classic G2,Open Wheel,4,#N/A
+Formula Classic G2 M3,Formula Classic G2,Open Wheel,4,#N/A
+Formula Classic G3 M1 (Ferrari 643),Formula Classic G3,Open Wheel,4,#N/A
+Formula Classic G3 M2 (Williams FW14),Formula Classic G3,Open Wheel,4,#N/A
+Formula Classic G3 M3 (Benetton B191),Formula Classic G3,Open Wheel,4,#N/A
+Lola T95/00 Ford-Cosworth,F-USA Gen.1,Open Wheel,4,#N/A
+Lola T95/00 Mercedes-Benz,F-USA Gen.1,Open Wheel,4,#N/A
+Reynard 95i Ford-Cosworth,F-USA Gen.1,Open Wheel,4,#N/A
+Reynard 95i Honda,F-USA Gen.1,Open Wheel,4,#N/A
+Reynard 95i Mercedes-Benz,F-USA Gen.1,Open Wheel,4,#N/A
+Lola T98,F-USA Gen.2,Open Wheel,4,#N/A
+Reynard 98i Ford,F-USA Gen.2,Open Wheel,4,#N/A
+Reynard 98i Honda,F-USA Gen.2,Open Wheel,4,#N/A
+Reynard 98i Mercedes,F-USA Gen.2,Open Wheel,4,#N/A
+Reynard 98i Toyota,F-USA Gen.2,Open Wheel,4,#N/A
+Swift 009c,F-USA Gen.2,Open Wheel,4,#N/A
+Lola B2K00 Ford-Cosworth,F-USA Gen.3,Open Wheel,4,#N/A
+Lola B2K00 Mercedez-Benz,F-USA Gen.3,Open Wheel,4,#N/A
+Lola B2K00 Toyota,F-USA Gen.3,Open Wheel,4,#N/A
+Reynard 2ki Ford-Cosworth,F-USA Gen.3,Open Wheel,4,#N/A
+Reynard 2ki Honda,F-USA Gen.3,Open Wheel,4,#N/A
+Reynard 2ki Mercedez-Benz,F-USA Gen.3,Open Wheel,4,#N/A
+F301,F3,Open Wheel,5,#N/A
+F309,F3,Open Wheel,5,#N/A
+Formula Trainer,FTS,Open Wheel,6,#N/A
+Formula Trainer Advanced,FTS,Open Wheel,6,#N/A
+Formula Vee,FormulaVee Brazil,Open Wheel,7,#N/A
+Formula Vee + Fin,FormulaVee Brazil,Open Wheel,7,#N/A
+McLaren F1 LM,Street Cars,Special,1,1995
+Ultima GTR (640),Street Cars,Special,2,2000
+Ultima GTR Race,Ultima,Special,2,2006
+Sprint Race,Sprint Race,Special,3,*2012-2019 (2016)
+Mitsubishi Lancer R,Lancer Cup,Special,4,#N/A
+Mitsubishi Lancer RS,Lancer Cup,Special,4,#N/A
+Chevrolet Camaro SS,Street Cars,Special,4,2019
+Chevrolet Cruz,Stock Car Brasil,Touring,1,2019
+Chevrolet Cruz,Stock Car Brasil,Touring,1,2019
+Chevrolet Cruz,Stock Car Brasil,Touring,1,2019
+Toyota Carolla,Stock Car Brasil,Touring,1,2020
+Toyota Carolla,Stock Car Brasil,Touring,1,2020
+Chevrolet Opala,Old Stock Race,Touring,2,1979
+Chevrolet Opala,Stock Car Brasil,Touring,2,1979
+Chevrolet Opala,Stock Car Brasil,Touring,2,1979
+Super V8 (Gen2 ZB),Super V8,Touring,2,2018
+BMW M1 Procar,M1 PROCAR,Touring,3,#N/A
+Chevrolet Omega,Stock Car Brasil,Touring,3,1999
+IVECO Stralis,Copa Truck,Touring,4,#N/A
+MAN TGX,Copa Truck,Touring,4,#N/A
+Mercedes-Benz Actros-2651,Copa Truck,Touring,4,#N/A
+Volkswagen Constellation,Copa Truck,Touring,4,#N/A
+BMW M3 Sport Evo GrA,Group A,Touring,4,#N/A
+Mercedes-Benz 190E EVO 2 DTM,Group A,Touring,4,#N/A
+Volkswagen Fusca HC1,Hot Cars,Touring,5,#N/A
+Volkswagen Fusca HC2,Hot Cars,Touring,5,#N/A
+MINI Cooper,JCW,Touring,6,#N/A
+Volkswagen Virtus,TSI Cup,Touring,6,2021
+Formula Retro Gen3 DFY,Formula Retro G3,Vintage,1,#N/A
+Formula Retro Gen3 Turbo,Formula Retro G3,Vintage,1,#N/A
+McLaren MP4-1C,Formula Retro G3,Vintage,1,#N/A
+Brabham BT44,Formula Retro G1,Vintage,2,#N/A
+Formula Retro V12,Formula Retro G1,Vintage,2,#N/A
+Formula Retro V8,Formula Retro G1,Vintage,2,#N/A
+Lotus Type 72E,Formula Retro G1,Vintage,2,#N/A
+McLaren M23,Formula Retro G1,Vintage,2,#N/A
+Brabham BT46B,Formula Retro G2,Vintage,2,#N/A
+Formula Retro Gen2,Formula Retro G2,Vintage,2,#N/A
+Lotus 79,Formula Retro G2,Vintage,2,#N/A
+Formula Vintage G1 M1 (Lotus 49),Formula Vintage G1,Vintage,3,#N/A
+Formula Vintage G1 M2 (AAR Eagle Mk1),Formula Vintage G1,Vintage,3,#N/A
+Brabham BT26A,Formula Vintage G2,Vintage,3,#N/A
+Formula Vintage G2 M1,Formula Vintage G2,Vintage,3,#N/A
+Formula Vintage G2 M2,Formula Vintage G2,Vintage,3,#N/A
+Lotus Type 49C,Formula Vintage G2,Vintage,3,#N/A
+Chevrolet Corvette C3.R,GT Classics,Vintage,4,#N/A
+Porsche 911 RSR,GT Classics,Vintage,4,#N/A
+BMW 2002 Turbo,Vintage Touring Cars T1,Vintage,5,#N/A
+Chevrolet Corvette C3,Vintage Touring Cars T1,Vintage,5,#N/A
+Lotus 23,Vintage Touring Cars T2,Vintage,6,#N/A
+Mini Cooper S,Vintage Touring Cars T2,Vintage,6,#N/A

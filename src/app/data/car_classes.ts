@@ -13,6 +13,7 @@ type Record = {
   class: string;
   discipline: DisciplineId;
   grade: number;
+  headlights: number;
 };
 
 const data: Record[] = Papa.parse(raw('./car_classes.csv'), {
@@ -26,7 +27,8 @@ export const CAR_CLASSES: { [key: CarClassId]: CarClass } = Object.fromEntries(
       const carClass = {
         name: record.class as string,
         disciplineId: getDisciplineId(getDiscipline(record.discipline)),
-        level: record.grade,
+        grade: record.grade,
+        headlights: record.headlights > 0,
       };
       return [getCarClassId(carClass), carClass];
     })
@@ -54,7 +56,7 @@ export function getCarClassesAt(
   discipline: Discipline,
   level: number,
 ): CarClass[] {
-  return getCarClassesIn(discipline).filter(c => c.level === level);
+  return getCarClassesIn(discipline).filter(c => c.grade === level);
 }
 
 export function carClassExists(name: string): boolean {

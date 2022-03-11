@@ -1,7 +1,7 @@
 import { getCarClass, getCarClassesIn } from './data/car_classes';
 import * as xpData from './data/xp';
 
-import { Discipline, DisciplineId } from 'types/Discipline';
+import { Discipline, DisciplineId, getDisciplineId } from 'types/Discipline';
 import { RaceResult } from 'types/Race';
 
 export function getAIMultiplier(result: RaceResult): number {
@@ -18,7 +18,7 @@ export function getBaseXpGain(): number {
 
 export function getGradeMultiplier(result: RaceResult): number {
   const carClass = getCarClass(result.carClassId);
-  return xpData.getGradeMultiplier(carClass.disciplineId, carClass.level);
+  return xpData.getGradeMultiplier(carClass.disciplineId, carClass.grade);
 }
 
 export function getCrossDisciplineMultiplier(
@@ -45,19 +45,15 @@ export function xpGain(
   );
 }
 
-export function xpNeededForLevelUpTo(level: number): number {
-  return Math.floor(2 ** (level - 2) * 100);
-}
-
 export interface DisciplineProgress {
   readonly totalXp: number;
   readonly xpInLevel: number;
   readonly level: number;
 }
 
-export function maxLevel(discipline: Discipline): number {
+export function lowestGrade(discipline: Discipline): number {
   return getCarClassesIn(discipline)
-    .map(cls => cls.level)
+    .map(cls => cls.grade)
     .reduce((max, level) => Math.max(max, level), 0);
 }
 
@@ -65,14 +61,15 @@ export function totalXpToProgress(
   discipline: Discipline,
   totalXp: number,
 ): DisciplineProgress {
-  let level = 1;
+  let level = lowestGrade(discipline);
   let xpInLevel = totalXp;
+  const disciplineId = getDisciplineId(discipline);
   while (
-    xpInLevel >= xpNeededForLevelUpTo(level + 1) &&
-    level < maxLevel(discipline)
+    level > 1 &&
+    xpInLevel >= xpData.xpNeededForLevelUpTo(disciplineId, level - 1)
   ) {
-    level += 1;
-    xpInLevel -= xpNeededForLevelUpTo(level);
+    level -= 1;
+    xpInLevel -= xpData.xpNeededForLevelUpTo(disciplineId, level);
   }
 
   return {
@@ -81,3 +78,5 @@ export function totalXpToProgress(
     level,
   };
 }
+
+export const xpNeededForLevelUpTo = xpData.xpNeededForLevelUpTo;

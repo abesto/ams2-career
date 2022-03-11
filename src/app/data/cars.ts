@@ -8,20 +8,23 @@ import { getCarClass, getCarClassesByName } from './car_classes';
 import { getDiscipline } from './disciplines';
 import { getTrackIdsFor } from './tracks';
 
-// Dumped from the official car list
-const data = Papa.parse(
-  raw('./AMS2 v.1.3.2.1 - Extended Car Info v1.0.30.csv'),
-  { header: true },
-).data;
+type Record = {
+  car: string;
+  class: string;
+  discipline: string;
+  grade: number;
+  year: string;
+};
 
-function recordToCars(record: { [key: string]: string }): Car[] {
+const data: Record[] = Papa.parse(raw('./cars.csv'), { header: true }).data;
+
+function recordToCars(record: Record): Car[] {
   return getCarClassesByName(record.class).map(carClass => ({
-    name: record.name,
+    name: record.car,
     carClassId: getCarClassId(carClass),
-    headlights: record.headlights.trim() === 'Y',
     year:
       parseInt(record.year.trim().replace(/\*/g, '').split('-')[0]) ||
-      new Date().getFullYear() - 5,
+      new Date().getFullYear() - 10,
   }));
 }
 
@@ -45,7 +48,7 @@ export function canRaceAtNight(what: Car | CarClass): boolean {
   let carClass = what.hasOwnProperty('carClassId')
     ? getCarClassOfCar(what as Car)
     : (what as CarClass);
-  return getCarsInClass(carClass).every(c => c.headlights);
+  return carClass.headlights;
 }
 
 export function getCarClassOfCar(car: Car): CarClass {

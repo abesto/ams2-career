@@ -48,7 +48,7 @@ export function Cars(props: Props) {
                   <TableCell>{car.name}</TableCell>
                   <TableCell>{discipline.name}</TableCell>
                   <TableCell>{carClass.name}</TableCell>
-                  <TableCell>{carClass.level}</TableCell>
+                  <TableCell>{carClass.grade}</TableCell>
                 </TableRow>
               );
             })}

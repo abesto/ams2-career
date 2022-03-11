@@ -10,8 +10,12 @@ import { ChipArray } from 'app/components/ChipArray';
 import { getCarClassesAt, getCarClassesIn } from 'app/data/car_classes';
 import { pluralWithNumber } from 'app/plural';
 import { aiLevel, EnrichedCareerData } from 'app/slices/CareerSlice/types';
-import { maxLevel, xpNeededForLevelUpTo } from 'app/xp';
-import { Discipline, disciplineEquals } from 'types/Discipline';
+import { lowestGrade, xpNeededForLevelUpTo } from 'app/xp';
+import {
+  Discipline,
+  disciplineEquals,
+  getDisciplineId,
+} from 'types/Discipline';
 import { getDisciplineOfRace } from 'types/Race';
 
 interface Props {
@@ -26,15 +30,20 @@ export function DisciplineProgress(props: Props) {
     disciplineEquals(getDisciplineOfRace(r), discipline),
   );
 
-  if (maxLevel(discipline) === 0) {
+  if (lowestGrade(discipline) === 0) {
     return null;
   }
 
-  const xpToNextLevel = xpNeededForLevelUpTo(progress.level + 1);
+  const xpToNextLevel = xpNeededForLevelUpTo(
+    getDisciplineId(discipline),
+    progress.level - 1,
+  );
 
   const levels = getCarClassesIn(discipline)
-    .map(carClass => carClass.level)
+    .map(carClass => carClass.grade)
     .filter((v, i, a) => a.indexOf(v) === i);
+  levels.sort();
+  levels.reverse();
 
   return (
     <>
@@ -58,10 +67,14 @@ export function DisciplineProgress(props: Props) {
         ]}
       />
 
-      <Stepper sx={{ m: 1 }} activeStep={progress.level - 1}>
+      <Stepper
+        sx={{ m: 1 }}
+        activeStep={levels.length - progress.level}
+        alternativeLabel
+      >
         {levels.map(level => (
           <Step key={level}>
-            <StepLabel>
+            <StepLabel icon={' ABCDEFGHIJKL'[level]}>
               {getCarClassesAt(discipline, level).map(carClass => (
                 <div key={carClass.name}>{carClass.name}</div>
               ))}

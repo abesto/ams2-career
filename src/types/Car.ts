@@ -4,7 +4,6 @@ export interface Car {
   readonly name: string;
   readonly carClassId: CarClassId;
   readonly year: number;
-  readonly headlights: boolean;
 }
 
 export type CarId = string & { __brand: 'CarId' };

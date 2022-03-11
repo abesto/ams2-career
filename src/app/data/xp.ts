@@ -8,9 +8,10 @@ const CROSS_DISCIPLINE_MULTIPLIERS: Map<
   DisciplineId,
   Map<DisciplineId, number>
 > = new Map();
+const LEVEL_UP: Map<DisciplineId, Map<number, number>> = new Map();
 
 // Load grade multipliers
-for (const row of Papa.parse(raw('./xp_grade.csv')).data) {
+for (const row of Papa.parse(raw('./xp_grade_multiplier.csv')).data) {
   const disciplineId = row[0] as DisciplineId;
   GRADE_MULTIPLIERS.set(disciplineId, new Map());
   for (let grade = 1; grade < row.length; grade++) {
@@ -19,14 +20,26 @@ for (const row of Papa.parse(raw('./xp_grade.csv')).data) {
 }
 
 // Load cross-discipline multipliers
-for (const row of Papa.parse(raw('./xp_cross_discipline.csv'), { header: true })
-  .data) {
+for (const row of Papa.parse(raw('./xp_cross_discipline_multiplier.csv'), {
+  header: true,
+}).data) {
   const fromId = row.source as DisciplineId;
   const map: Map<DisciplineId, number> = new Map();
   for (const [toId, multiplier] of Object.entries(row)) {
     map.set(toId as DisciplineId, parseFloat(multiplier as string));
   }
   CROSS_DISCIPLINE_MULTIPLIERS.set(fromId, map);
+}
+
+// Load class upgrade XP breakpoints
+for (const row of Papa.parse(raw('./xp_grade_breakpoints.csv'), {
+  header: true,
+}).data) {
+  const map: Map<number, number> = new Map();
+  for (let i = 1; i in row; i++) {
+    map.set(i, parseFloat(row[i]));
+  }
+  LEVEL_UP.set(row.discipline as DisciplineId, map);
 }
 
 export function getGradeMultiplier(
@@ -57,4 +70,19 @@ export function getCrossDisciplineMultiplier(
     throw new Error(`Unknown discipline: ${toId}`);
   }
   return multiplier;
+}
+
+export function xpNeededForLevelUpTo(
+  disciplineId: DisciplineId,
+  grade: number,
+): number {
+  const map = LEVEL_UP.get(disciplineId);
+  if (!map) {
+    throw new Error(`Unknown discipline: ${disciplineId}`);
+  }
+  const xp = map.get(grade);
+  if (!xp) {
+    throw new Error(`Unknown grade: ${grade}`);
+  }
+  return xp;
 }

@@ -82,7 +82,7 @@ export function XpGain(props: Props) {
                 value={getCarClassId(carClass)}
                 key={getCarClassId(carClass)}
               >
-                {carClass.name} [grade={carClass.level}]
+                {carClass.name} [grade={carClass.grade}]
               </MenuItem>
             ))}
           </Select>

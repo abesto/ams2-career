@@ -24,6 +24,10 @@ const MIGRATIONS = [
 
 const LATEST = 'latest';
 
+export function versionForNewSaves(): number {
+  return MIGRATIONS.length;
+}
+
 function getSaveVersion(state: RootState) {
   return state.saveMeta?.version || 0;
 }

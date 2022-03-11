@@ -1,3 +1,4 @@
+import { versionForNewSaves } from 'store/saveload';
 import { createSlice } from 'utils/@reduxjs/toolkit';
 import { useInjectReducer } from 'utils/redux-injectors';
 
@@ -6,8 +7,8 @@ import { PayloadAction } from '@reduxjs/toolkit';
 import { SaveMetaState } from './types';
 
 export const initialState: SaveMetaState = {
-  timestamp: 0,
-  version: 0,
+  timestamp: Date.now(),
+  version: versionForNewSaves(),
 };
 
 const slice = createSlice({

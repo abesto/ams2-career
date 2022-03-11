@@ -23,7 +23,7 @@ import { canRaceOn, getTrackId, Track, TrackId } from 'types/Track';
 
 function compareFields(a: Car): any[] {
   const carClass = getCarClassOfCar(a);
-  return [getDisciplineOfCar(a).name, carClass.level, carClass.name, a.name];
+  return [getDisciplineOfCar(a).name, carClass.grade, carClass.name, a.name];
 }
 
 const zip = (a: any[], b: any[]) => a.map((k, i) => [k, b[i]]);

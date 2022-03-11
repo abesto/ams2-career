@@ -2,8 +2,9 @@ import { DisciplineId } from './Discipline';
 
 export interface CarClass {
   readonly name: string;
-  readonly level: number;
+  readonly grade: number;
   readonly disciplineId: DisciplineId;
+  readonly headlights: boolean;
 }
 
 export type CarClassId = string & { __brand: 'CarClassId' };
