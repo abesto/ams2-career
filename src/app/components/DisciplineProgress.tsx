@@ -34,10 +34,10 @@ export function DisciplineProgress(props: Props) {
     return null;
   }
 
-  const xpToNextLevel = xpNeededForLevelUpTo(
-    getDisciplineId(discipline),
-    progress.level - 1,
-  );
+  const xpToNextLevel =
+    progress.level === 1
+      ? 0
+      : xpNeededForLevelUpTo(getDisciplineId(discipline), progress.level - 1);
 
   const levels = getCarClassesIn(discipline)
     .map(carClass => carClass.grade)
@@ -82,12 +82,16 @@ export function DisciplineProgress(props: Props) {
           </Step>
         ))}
       </Stepper>
-      <LinearProgress
-        variant="determinate"
-        value={(progress.xpInLevel / xpToNextLevel) * 100}
-        sx={{ mt: 2 }}
-      />
-      <Typography variant="body2">{`${progress.xpInLevel} / ${xpToNextLevel} XP to next category`}</Typography>
+      {progress.level > 1 && (
+        <>
+          <LinearProgress
+            variant="determinate"
+            value={(progress.xpInLevel / xpToNextLevel) * 100}
+            sx={{ mt: 2 }}
+          />
+          <Typography variant="body2">{`${progress.xpInLevel} / ${xpToNextLevel} XP to next category`}</Typography>
+        </>
+      )}
     </>
   );
 }
