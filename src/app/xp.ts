@@ -32,6 +32,15 @@ export function getCrossDisciplineMultiplier(
   );
 }
 
+function getPrestigeMultiplier(result: RaceResult): number {
+  const carClass = getCarClass(result.carClassId);
+  return xpData.getPrestigeMultiplier(carClass.disciplineId);
+}
+
+export function getVehicleMultiplier(result: RaceResult): number {
+  return getPrestigeMultiplier(result) * getGradeMultiplier(result);
+}
+
 export function xpGain(
   targetDisciplineId: DisciplineId,
   result: RaceResult,
@@ -41,7 +50,8 @@ export function xpGain(
     getGradeMultiplier(result) *
     getAIMultiplier(result) *
     getPositionMultiplier(result) *
-    getCrossDisciplineMultiplier(targetDisciplineId, result)
+    getCrossDisciplineMultiplier(targetDisciplineId, result) *
+    getVehicleMultiplier(result)
   );
 }
 

@@ -116,6 +116,7 @@ export function XpGain(props: Props) {
             <TableCell>AI Multiplier</TableCell>
             <TableCell>Position Multiplier</TableCell>
             <TableCell>Cross Discipline Multiplier</TableCell>
+            <TableCell>Vehicle Multiplier</TableCell>
             <TableCell>Final XP</TableCell>
           </TableRow>
         </TableHead>
@@ -133,6 +134,7 @@ export function XpGain(props: Props) {
                   result,
                 )}
               </TableCell>
+              <TableCell>{xp.getVehicleMultiplier(result)}</TableCell>
               <TableCell>
                 {xp.xpGain(getDisciplineId(thisDiscipline), result)}
               </TableCell>

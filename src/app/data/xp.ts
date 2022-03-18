@@ -8,6 +8,7 @@ const CROSS_DISCIPLINE_MULTIPLIERS: Map<
   DisciplineId,
   Map<DisciplineId, number>
 > = new Map();
+const PRESTIGE: Map<DisciplineId, number> = new Map();
 const LEVEL_UP: Map<DisciplineId, Map<number, number>> = new Map();
 
 // Load grade multipliers
@@ -29,6 +30,12 @@ for (const row of Papa.parse(raw('./xp_cross_discipline_multiplier.csv'), {
     map.set(toId as DisciplineId, parseFloat(multiplier as string));
   }
   CROSS_DISCIPLINE_MULTIPLIERS.set(fromId, map);
+}
+
+// Load discipline prestige multipliers
+for (const row of Papa.parse(raw('./xp_prestige.csv'), { header: true }).data) {
+  const disciplineId = row.discipline as DisciplineId;
+  PRESTIGE.set(disciplineId, parseFloat(row.prestige as string));
 }
 
 // Load class upgrade XP breakpoints
@@ -68,6 +75,14 @@ export function getCrossDisciplineMultiplier(
   const multiplier = map.get(toId);
   if (!multiplier) {
     throw new Error(`Unknown discipline: ${toId}`);
+  }
+  return multiplier;
+}
+
+export function getPrestigeMultiplier(id: DisciplineId): number {
+  const multiplier = PRESTIGE.get(id);
+  if (!multiplier) {
+    throw new Error(`Unknown discipline: ${id}`);
   }
   return multiplier;
 }
