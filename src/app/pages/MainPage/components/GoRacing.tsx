@@ -65,6 +65,7 @@ export function GoRacing(props: Props) {
   const [position, setPosition] = React.useState(1);
 
   const track = getTrack(race.trackId);
+  const carClass = getCarClass(race.carClassId);
 
   function handleCarSelectChange(e) {
     props.onCarSelect(e.target.value);
@@ -81,9 +82,12 @@ export function GoRacing(props: Props) {
         Simulator Settings
       </Typography>
       <Grid container spacing={2}>
-        <Item label="Class">{getCarClass(race.carClassId).name}</Item>
-        <Item label="Track">{track.name}</Item>
+        <Item label="Class">{carClass.name}</Item>
+        <Item label="Track">{track.name}</Item>"
         <Item label="Configuration">{track.configuration}</Item>
+        <Item label="Race Length">
+          {carClass.raceLength} {carClass.raceLengthUnit}
+        </Item>
         <Item label="Simulator Time">
           {dayjs(race.simTime).format('YYYY-MM-DD HH:mm')}
         </Item>

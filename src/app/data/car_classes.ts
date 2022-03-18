@@ -14,6 +14,8 @@ type Record = {
   discipline: DisciplineId;
   grade: number;
   headlights: number;
+  race_length: number;
+  race_length_unit: string;
 };
 
 const data: Record[] = Papa.parse(raw('./car_classes.csv'), {
@@ -29,6 +31,8 @@ export const CAR_CLASSES: { [key: CarClassId]: CarClass } = Object.fromEntries(
         disciplineId: getDisciplineId(getDiscipline(record.discipline)),
         grade: record.grade,
         headlights: record.headlights > 0,
+        raceLength: record.race_length,
+        raceLengthUnit: record.race_length_unit,
       };
       return [getCarClassId(carClass), carClass];
     })

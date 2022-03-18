@@ -5,6 +5,8 @@ export interface CarClass {
   readonly grade: number;
   readonly disciplineId: DisciplineId;
   readonly headlights: boolean;
+  readonly raceLength: number;
+  readonly raceLengthUnit: string;
 }
 
 export type CarClassId = string & { __brand: 'CarClassId' };
