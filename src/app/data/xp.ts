@@ -59,7 +59,7 @@ export function getGradeMultiplier(
   }
   const multiplier = disciplineMultipliers.get(grade);
   if (!multiplier) {
-    throw new Error(`Unknown grade: ${grade}`);
+    throw new Error(`Unknown grade: ${disciplineId} / ${grade}`);
   }
   return multiplier;
 }
@@ -97,7 +97,7 @@ export function xpNeededForLevelUpTo(
   }
   const xp = map.get(grade);
   if (!xp) {
-    throw new Error(`Unknown grade: ${grade}`);
+    throw new Error(`Unknown grade: ${disciplineId} ${grade}`);
   }
   return xp;
 }

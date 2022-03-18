@@ -16,14 +16,13 @@ const data: Record[] = Papa.parse(raw('./tracks.csv'), {
   header: true,
 }).data;
 
-export const TRACKS: { [key: TrackId]: Track } = Object.fromEntries(
-  data.map(({ name, configuration, ..._ }) => {
-    const track = { name, configuration };
-    return [getTrackId(track), track];
-  }),
-);
+export const TRACKS: Map<TrackId, Track> = new Map();
+for (const { name, configuration } of data) {
+  const track = { name, configuration };
+  TRACKS.set(getTrackId(track), track);
+}
 
-let CAR_CLASS_TO_TRACKS: { [key: CarClassId]: TrackId[] } = {};
+let CAR_CLASS_TO_TRACKS: Map<CarClassId, TrackId[]> = new Map();
 for (const { name, configuration, ...classes } of data) {
   const track = { name, configuration };
   const trackId = getTrackId(track);
@@ -31,8 +30,11 @@ for (const { name, configuration, ...classes } of data) {
     if (canRace === 'x') {
       for (const carClass of getCarClassesByName(carClassName)) {
         const carClassId = getCarClassId(carClass);
-        CAR_CLASS_TO_TRACKS[carClassId] = CAR_CLASS_TO_TRACKS[carClassId] || [];
-        CAR_CLASS_TO_TRACKS[carClassId].push(trackId);
+        CAR_CLASS_TO_TRACKS.set(
+          carClassId,
+          CAR_CLASS_TO_TRACKS.get(carClassId) || [],
+        );
+        CAR_CLASS_TO_TRACKS.get(carClassId)!.push(trackId);
       }
     } else if (canRace !== '') {
       throw new Error(
@@ -43,18 +45,19 @@ for (const { name, configuration, ...classes } of data) {
 }
 
 export function getTrack(id: TrackId): Track {
-  if (!TRACKS[id]) {
+  const track = TRACKS.get(id);
+  if (!track) {
     throw new Error(`Unknown track: ${id}`);
   }
 
-  return TRACKS[id];
+  return track;
 }
 
 export function getTrackIdsFor(carClass: CarClass | CarClassId): TrackId[] {
   if (typeof carClass !== 'string') {
     carClass = getCarClassId(carClass);
   }
-  return CAR_CLASS_TO_TRACKS[carClass] || [];
+  return CAR_CLASS_TO_TRACKS.get(carClass) || [];
 }
 
 export function getTracksFor(carClass: CarClass | CarClassId): Track[] {
@@ -62,5 +65,9 @@ export function getTracksFor(carClass: CarClass | CarClassId): Track[] {
 }
 
 export function getAllTracks(): Track[] {
-  return Object.values(TRACKS);
+  return [...TRACKS.values()];
+}
+
+export function getCarClassIdsWithDefinedTracks(): CarClassId[] {
+  return [...CAR_CLASS_TO_TRACKS.keys()];
 }

@@ -23,7 +23,7 @@ const data: Record[] = Papa.parse(raw('./car_classes.csv'), {
   dynamicTyping: true,
 }).data;
 
-export const CAR_CLASSES: { [key: CarClassId]: CarClass } = Object.fromEntries(
+const CAR_CLASSES: { [key: CarClassId]: CarClass } = Object.fromEntries(
   data
     .map((record: Record) => {
       const carClass = {
@@ -75,4 +75,8 @@ export function getDisciplineOfCarClass(
   cls: CarClass | CarClassId,
 ): Discipline {
   return getDiscipline(getCarClass(cls).disciplineId);
+}
+
+export function getAllCarClasses(): CarClass[] {
+  return Object.values(CAR_CLASSES);
 }

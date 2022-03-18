@@ -23,6 +23,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 
+import { Consistency } from './components/Consistency';
 import { Export } from './components/Export';
 import { ExportReminder } from './components/ExportReminder';
 import { Import } from './components/Import';
@@ -46,6 +47,8 @@ export function App() {
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Helmet>
       <CssBaseline />
+
+      <Consistency />
 
       <Container maxWidth={false}>
         <AppBar position="static">
