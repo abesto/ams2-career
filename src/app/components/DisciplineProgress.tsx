@@ -23,6 +23,10 @@ interface Props {
   career: EnrichedCareerData;
 }
 
+function formatXp(n: number): number {
+  return Math.round(n * 100);
+}
+
 export function DisciplineProgress(props: Props) {
   const { discipline, career } = props;
   const progress = career.progress[discipline.name];
@@ -89,7 +93,9 @@ export function DisciplineProgress(props: Props) {
             value={(progress.xpInLevel / xpToNextLevel) * 100}
             sx={{ mt: 2 }}
           />
-          <Typography variant="body2">{`${progress.xpInLevel} / ${xpToNextLevel} XP to next category`}</Typography>
+          <Typography variant="body2">{`${formatXp(
+            progress.xpInLevel,
+          )} / ${formatXp(xpToNextLevel)} XP to next category`}</Typography>
         </>
       )}
     </>
