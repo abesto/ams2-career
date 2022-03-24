@@ -12,7 +12,7 @@ export interface CarClass {
 export type CarClassId = string & { __brand: 'CarClassId' };
 
 export function getCarClassId(carClass: CarClass): CarClassId {
-  return `${carClass.disciplineId}-${carClass.name}` as CarClassId;
+  return `${carClass.disciplineId}-${carClass.grade}-${carClass.name}` as CarClassId;
 }
 
 export function classEquals(a: CarClass, b: CarClass): boolean {

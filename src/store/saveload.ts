@@ -42,7 +42,6 @@ function getSaveVersion(state: RootState) {
 }
 
 function applyMigration(migration: number, state: RootState) {
-  console.log(migration);
   const currentVersion = getSaveVersion(state);
   if (currentVersion !== migration) {
     throw new Error(
