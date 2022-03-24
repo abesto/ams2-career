@@ -20,6 +20,15 @@ const MIGRATIONS = [
       version: 0,
     };
   },
+  // Add AI Adjustments
+  (state: RootState) => {
+    state.mainPage!.aiAdjustment = {
+      global: 0,
+      discipline: {},
+      carClass: {},
+      car: {},
+    };
+  },
 ];
 
 const LATEST = 'latest';

@@ -38,11 +38,12 @@ export function MainPage(props: Props) {
     dispatch(mainPageActions.generateRaces({ career }));
   }
 
-  function recordResult(carId: CarId, position: number) {
+  function recordResult(carId: CarId, aiLevel: number, position: number) {
     const raceResult: RaceResult = {
       ...selectedRace!,
       position,
       carId,
+      aiLevel,
       racedAt: new Date().getTime(),
     };
     dispatch(careerActions.recordRaceResult({ raceResult }));
@@ -78,7 +79,9 @@ export function MainPage(props: Props) {
                   race={selectedRace!}
                   career={career}
                   currentCarId={currentCarId!}
-                  onRecord={position => recordResult(currentCarId!, position)}
+                  onRecord={(aiLevel, position) =>
+                    recordResult(currentCarId!, aiLevel, position)
+                  }
                   onCarSelect={carId =>
                     dispatch(
                       mainPageActions.selectCar({

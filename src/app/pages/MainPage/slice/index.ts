@@ -10,11 +10,18 @@ import { getAllDisciplines } from 'app/data/disciplines';
 import { EnrichedCareerData } from 'app/slices/CareerSlice/types';
 import { CarId } from 'types/Car';
 import { CarClassId } from 'types/CarClass';
+import { DisciplineId } from 'types/Discipline';
 
 export const initialState: MainPageState = {
   raceOptions: [],
   selectedRaceIndex: 0,
   selectedCars: {},
+  aiAdjustment: {
+    global: 0,
+    discipline: {},
+    carClass: {},
+    car: {},
+  },
 };
 
 const slice = createSlice({
@@ -42,6 +49,24 @@ const slice = createSlice({
     reset(state, action: PayloadAction<void>) {
       state.raceOptions = [];
       state.selectedRaceIndex = 0;
+    },
+    adjustAIGlobal(state, action: PayloadAction<number>) {
+      state.aiAdjustment.global = action.payload;
+    },
+    adjustAIDiscipline(
+      state,
+      action: PayloadAction<{ id: DisciplineId; value: number }>,
+    ) {
+      state.aiAdjustment.discipline[action.payload.id] = action.payload.value;
+    },
+    adjustAICarClass(
+      state,
+      action: PayloadAction<{ id: CarClassId; value: number }>,
+    ) {
+      state.aiAdjustment.carClass[action.payload.id] = action.payload.value;
+    },
+    adjustAICar(state, action: PayloadAction<{ id: CarId; value: number }>) {
+      state.aiAdjustment.car[action.payload.id] = action.payload.value;
     },
   },
 });
