@@ -1,6 +1,6 @@
 # `ams2-career`
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 A simple external career mode for Automobilista 2, built as a web application for desktops and mobile browsers. For the user guide, head to the wiki: https://github.com/abesto/ams2-career/wiki
@@ -39,6 +39,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/rsr427"><img src="https://avatars.githubusercontent.com/u/101415774?v=4?s=100" width="100px;" alt=""/><br /><sub><b>rsr427</b></sub></a><br /><a href="#content-rsr427" title="Content">🖋</a> <a href="#data-rsr427" title="Data">🔣</a> <a href="#ideas-rsr427" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://github.com/me"><img src="https://avatars.githubusercontent.com/u/9734?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ivan</b></sub></a><br /><a href="https://github.com/abesto/ams2-career/commits?author=me" title="Code">💻</a> <a href="https://github.com/abesto/ams2-career/commits?author=me" title="Documentation">📖</a> <a href="#design-me" title="Design">🎨</a></td>
   </tr>
 </table>
 
