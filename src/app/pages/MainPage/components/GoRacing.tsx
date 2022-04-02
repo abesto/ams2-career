@@ -112,6 +112,14 @@ export function GoRacing(props: Props) {
 
   const [position, setPosition] = React.useState(1);
 
+  function handlePosition(position: number) {
+    if (position < 1) {
+      setPosition(1);
+    } else {
+      setPosition(position);
+    }
+  }
+
   const track = getTrack(race.trackId);
   const carClass = getCarClass(race.carClassId);
   const discipline = getDisciplineOfRace(race);
@@ -216,7 +224,7 @@ export function GoRacing(props: Props) {
           label="Finishing position"
           type="number"
           value={position}
-          onChange={e => setPosition(parseInt(e.target.value))}
+          onChange={e => handlePosition(parseInt(e.target.value))}
           sx={{ mx: 1 }}
         />
         <Button
