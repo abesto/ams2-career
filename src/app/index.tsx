@@ -20,6 +20,7 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import CssBaseline from '@mui/material/CssBaseline';
+import Link from '@mui/material/Link';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 
@@ -28,6 +29,7 @@ import { Export } from './components/Export';
 import { ExportReminder } from './components/ExportReminder';
 import { Import } from './components/Import';
 import { NotFoundPage } from './components/NotFoundPage';
+import { Welcome } from './components/Welcome';
 import { CareerPage } from './pages/CareerPage';
 import { DataDebugPage } from './pages/DataDebugPage';
 import { MainPage } from './pages/MainPage';
@@ -49,6 +51,7 @@ export function App() {
       <CssBaseline />
 
       <Consistency />
+      <Welcome />
 
       <Container maxWidth={false}>
         <AppBar position="static">
@@ -78,6 +81,14 @@ export function App() {
 
             <Box sx={{ flexGrow: 1 }} />
 
+            <Button
+              color="inherit"
+              component={Link}
+              href="https://github.com/abesto/ams2-career/wiki"
+              target="_blank"
+            >
+              Wiki
+            </Button>
             <Button
               color="inherit"
               size="small"
