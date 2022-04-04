@@ -9,6 +9,7 @@ import Typography from '@mui/material/Typography';
 
 import { GoRacing } from './components/GoRacing';
 import { RaceOptions } from './components/RaceOptions';
+import { RaceResultFeedback } from './components/RaceResultFeedback';
 import { useMainPageSlice } from './slice';
 import {
   selectCurrentCarId,
@@ -34,6 +35,8 @@ export function MainPage(props: Props) {
   const selectedRace = useSelector(selectSelectedRace);
   const currentCarId = useSelector(selectCurrentCarId);
 
+  const [resultFeedbackOpen, setResultFeedbackOpen] = React.useState(false);
+
   if (slice.raceOptions.length === 0) {
     dispatch(mainPageActions.generateRaces({ career }));
   }
@@ -48,6 +51,7 @@ export function MainPage(props: Props) {
     };
     dispatch(careerActions.recordRaceResult({ raceResult }));
     dispatch(mainPageActions.reset());
+    setResultFeedbackOpen(true);
   }
 
   return (
@@ -96,6 +100,11 @@ export function MainPage(props: Props) {
           </GridItem>
         </Grid>
       </Grid>
+      <RaceResultFeedback
+        open={resultFeedbackOpen}
+        onClose={() => setResultFeedbackOpen(false)}
+        career={career}
+      />
     </>
   );
 }

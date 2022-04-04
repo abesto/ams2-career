@@ -10,7 +10,12 @@ import { ChipArray } from 'app/components/ChipArray';
 import { getCarClassesAt, getCarClassesIn } from 'app/data/car_classes';
 import { pluralWithNumber } from 'app/plural';
 import { aiLevel, EnrichedCareerData } from 'app/slices/CareerSlice/types';
-import { lowestGrade, xpNeededForLevelUpTo } from 'app/xp';
+import {
+  formatGrade,
+  formatXp,
+  lowestGrade,
+  xpNeededForLevelUpTo,
+} from 'app/xp';
 import {
   Discipline,
   disciplineEquals,
@@ -21,10 +26,6 @@ import { getDisciplineOfRace } from 'types/Race';
 interface Props {
   discipline: Discipline;
   career: EnrichedCareerData;
-}
-
-function formatXp(n: number): number {
-  return Math.round(n * 100);
 }
 
 export function DisciplineProgress(props: Props) {
@@ -78,7 +79,7 @@ export function DisciplineProgress(props: Props) {
       >
         {levels.map(level => (
           <Step key={level}>
-            <StepLabel icon={' ABCDEFGHIJKL'[level]}>
+            <StepLabel icon={formatGrade(level)}>
               {getCarClassesAt(discipline, level).map(carClass => (
                 <div key={carClass.name}>{carClass.name}</div>
               ))}

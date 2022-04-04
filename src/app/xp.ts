@@ -90,3 +90,11 @@ export function totalXpToProgress(
 }
 
 export const xpNeededForLevelUpTo = xpData.xpNeededForLevelUpTo;
+
+export function formatXp(n: number): number {
+  return Math.round(n * 100);
+}
+
+export function formatGrade(grade: number): string {
+  return ' ABCDEFGHIJKL'[grade];
+}
