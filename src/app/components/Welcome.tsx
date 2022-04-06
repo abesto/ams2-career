@@ -41,6 +41,7 @@ export function Welcome() {
           </a>{' '}
           page.
         </DialogContentText>
+        <DialogContentText>Good luck and be safe!</DialogContentText>
         <DialogActions>
           <Button onClick={handleClose}>Got it!</Button>
           <Button onClick={() => dispatch(actions.hide())}>
