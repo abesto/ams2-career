@@ -26,6 +26,7 @@ import { getTrack } from 'app/data/tracks';
 import { useCareerSlice } from 'app/slices/CareerSlice';
 import { selectCareer } from 'app/slices/CareerSlice/selectors';
 import { EnrichedCareerData } from 'app/slices/CareerSlice/types';
+import { useWelcomeSlice } from 'app/slices/WelcomeSlice';
 
 interface Props {}
 
@@ -117,6 +118,7 @@ export function CareerPage(props: Props) {
   const career = useSelector(selectCareer);
   const { actions: mainPageActions } = useMainPageSlice();
   const { actions: careerActions } = useCareerSlice();
+  const { actions: welcomeActions } = useWelcomeSlice();
 
   return (
     <>
@@ -134,6 +136,7 @@ export function CareerPage(props: Props) {
           onReset={() => {
             dispatch(careerActions.resetCareer());
             dispatch(mainPageActions.reset());
+            dispatch(welcomeActions.show());
           }}
         />
       </Paper>

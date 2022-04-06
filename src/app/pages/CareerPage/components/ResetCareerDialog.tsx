@@ -7,7 +7,6 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
-import Divider from '@mui/material/Divider';
 import Input from '@mui/material/Input';
 
 import { Export } from 'app/components/Export';
@@ -38,8 +37,8 @@ export function ResetCareerDialog(props: DialogProps & Props) {
 
   return (
     <Dialog {...props}>
+      <DialogTitle>Reset Career</DialogTitle>
       <DialogContent>
-        <DialogTitle>Reset Career</DialogTitle>
         <DialogContentText>
           This will reset your career.
           {racesSinceLastExport > 0 ? (
@@ -52,18 +51,17 @@ export function ResetCareerDialog(props: DialogProps & Props) {
             'You may want to download your current career before proceeding:'
           )}
           <Export />
-          <Divider sx={{ my: 3 }} />
           This is a dangerous operation. Enter <strong>reset</strong> below,
           then click the "Reset" button to continue.
-          <Input
-            autoFocus
-            fullWidth
-            onChange={handleVerificationChange}
-            sx={{ mt: 3 }}
-          />
         </DialogContentText>
       </DialogContent>
       <DialogActions>
+        <Input
+          autoFocus
+          fullWidth
+          onChange={handleVerificationChange}
+          sx={{ mt: 3 }}
+        />
         <Button onClick={() => props.onClose()}>Cancel</Button>
         <Button color="error" onClick={() => handleReset()}>
           Reset

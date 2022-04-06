@@ -16,6 +16,9 @@ const slice = createSlice({
     hide(state, action: PayloadAction<void>) {
       state.hideWelcome = true;
     },
+    show(state, action: PayloadAction<void>) {
+      state.hideWelcome = false;
+    },
   },
 });
 
