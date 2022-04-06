@@ -1,26 +1,23 @@
 discipline,grade,class,headlights,race_length,race_length_unit
-Club,1,Caterham,1,12,Laps
+Club,1,Caterham GrA,1,12,Laps
 Club,1,Ginetta G40 Cup,1,12,Laps
 Club,1,GT5,1,12,Laps
-Club,2,Caterham,0,10,Laps
+Club,2,Caterham GrB,0,10,Laps
 Club,2,TSI Cup,1,10,Laps
 Club,3,ARC,0,10,Laps
-Club,3,Caterham,1,10,Laps
+Club,3,Caterham GrC,1,10,Laps
 Club,4,Copa Classic (Class: B),1,6,Laps
 Club,4,Copa Classic (Class: FL),0,6,Laps
 Club,4,Copa Fusca,0,6,Laps
 Club,4,Copa Uno,1,6,Laps
-Club,4,Hot Cars,1,6,Laps
 Endurance,1,Group C,1,90,Minutes
 Endurance,2,GT1,1,60,Minutes
 Endurance,2,GTE,1,60,Minutes
 Endurance,2,P1,1,60,Minutes
 Endurance,3,DPi,1,60,Minutes
 Endurance,3,P2,1,45,Minutes
-Endurance,3,P3,1,30,Minutes
-Endurance,3,P4,1,30,Minutes
-Endurance,4,P3,1,25,Minutes
-Endurance,5,P4,1,20,Minutes
+Endurance,4,P3,1,30,Minutes
+Endurance,5,P4,1,30,Minutes
 GT,1,GT3,1,60,Minutes
 GT,2,GT4,1,45,Minutes
 GT,3,Carrera Cup,1,20,Laps
@@ -32,7 +29,8 @@ Karting,2,Karting 125CC,0,20,Laps
 Karting,2,Karting GX390,0,15,Laps
 Karting,2,Karting Shifter,0,15,Laps
 Karting,3,Karting Rental,0,15,Laps
-Open Wheel,1,Formula Ultimate,0,30,Laps
+Open Wheel,1,Formula Ultimate 19,0,50,Laps
+Open Wheel,1,Formula Ultimate 22,0,50,Laps
 Open Wheel,2,Formula Reiza,0,50,Laps
 Open Wheel,3,Formula V10 G1,0,30,Laps
 Open Wheel,3,Formula V10 G2,0,30,Laps
@@ -46,20 +44,23 @@ Open Wheel,4,Formula Classic G3,0,25,Laps
 Open Wheel,5,F3,0,15,Laps
 Open Wheel,6,FTS,0,10,Laps
 Open Wheel,7,FormulaVee Brazil,0,6,Laps
-Special,1,Street Cars,1,20,Minutes
-Special,2,Street Cars,1,20,Minutes
+Special,1,Street Cars A,1,20,Minutes
+Special,2,Street Cars B,1,20,Minutes
 Special,2,Ultima,1,20,Minutes
 Special,3,Sprint Race,0,10,Laps
 Special,4,Lancer Cup,0,15,Minutes
-Special,4,Street Cars,1,15,Minutes
-Touring,1,Stock Car Brasil,0,40,Laps
-Touring,2,Old Stock Race,0,30,Laps
-Touring,2,Stock Car Brasil,0,30,Laps
+Special,4,Street Cars C,1,15,Minutes
+Touring,1,Stock Car Brasil 19 GrA,0,40,Laps
+Touring,1,Stock Car Brasil 20 GrA,0,40,Laps
+Touring,1,Stock Car Brasil 21 GrA,0,40,Laps
+Touring,2,Old Stock Race 79,0,30,Laps
+Touring,2,Stock Car Brasil 86 GrB,0,30,Laps
 Touring,2,Super V8,1,30,Laps
 Touring,3,M1 PROCAR,1,20,Laps
-Touring,3,Stock Car Brasil,0,15,Laps
+Touring,3,Stock Car Brasil 99 GrC,0,15,Laps
 Touring,4,Copa Truck,0,10,Laps
 Touring,4,Group A,1,20,Laps
+Touring,4,Hot Cars,1,6,
 Touring,5,Hot Cars,0,15,Laps
 Touring,6,JCW,0,15,Minutes
 Touring,6,TSI Cup,1,15,Laps

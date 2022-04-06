@@ -7,8 +7,8 @@ import { getCarClassesByName } from './car_classes';
 
 interface Record {
   [key: string]: string;
-  name: string;
-  configuration: string;
+  Name: string;
+  Configuration: string;
 }
 
 // Manually curated
