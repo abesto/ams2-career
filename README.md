@@ -27,7 +27,7 @@ Local development is super simple:
 * `yarn install`
 * `yarn start` starts a development server, and tries to open your browser to load it. This has live reloading, error reporting, debugging support, the works.
 
-Contributing: make a pull request :)
+Contributing: make a pull request :) There are no automated tests, don't even bother looking.
 
 ## Contributors ✨
 
