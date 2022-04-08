@@ -101,6 +101,12 @@ export function GoRacing(props: Props) {
   const { actions } = useMainPageSlice();
   const dispatch = useDispatch();
   const aiAdjustment = useSelector(selectAIAdjustment);
+  const [position, setPosition] = React.useState(1);
+
+  if (!race) {
+    return null;
+  }
+
   let adjustedAI = race.aiLevel;
   if (aiAdjustment) {
     adjustedAI +=
@@ -109,8 +115,6 @@ export function GoRacing(props: Props) {
       aiAdjustment.discipline +
       aiAdjustment.global;
   }
-
-  const [position, setPosition] = React.useState(1);
 
   function handlePosition(position: number) {
     if (position < 1) {
