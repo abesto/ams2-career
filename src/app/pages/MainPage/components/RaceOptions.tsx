@@ -12,6 +12,7 @@ import {
 import { getCarClass } from 'app/data/car_classes';
 import { getDiscipline } from 'app/data/disciplines';
 import { getTrack } from 'app/data/tracks';
+import { formatGrade } from 'app/xp';
 import { getCarClassId } from 'types/CarClass';
 import { Race } from 'types/Race';
 
@@ -28,6 +29,7 @@ export function RaceOptions(props: Props) {
         <TableHead>
           <TableRow>
             <TableCell>Discipline</TableCell>
+            <TableCell>Grade</TableCell>
             <TableCell>Class</TableCell>
             <TableCell>Track</TableCell>
             <TableCell>Configuration</TableCell>
@@ -47,6 +49,7 @@ export function RaceOptions(props: Props) {
                 sx={{ cursor: 'pointer' }}
               >
                 <TableCell>{discipline.name}</TableCell>
+                <TableCell>{formatGrade(carClass.grade)}</TableCell>
                 <TableCell>{carClass.name}</TableCell>
                 <TableCell>{track.name}</TableCell>
                 <TableCell>{track.configuration}</TableCell>
