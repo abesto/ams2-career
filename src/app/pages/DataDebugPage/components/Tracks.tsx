@@ -8,6 +8,7 @@ import {
   TableContainer,
   TableHead,
   TableRow,
+  TextField,
 } from '@mui/material';
 
 import { getTrackId, Track, TrackId } from 'types/Track';
@@ -18,7 +19,17 @@ interface Props {
 }
 
 export function Tracks(props: Props) {
-  const { tracks, onHover } = props;
+  const { tracks: allTracks, onHover } = props;
+  const [nameFilter, setNameFilter] = React.useState('');
+  const [configurationFilter, setConfigurationFilter] = React.useState('');
+
+  const tracks = allTracks.filter(
+    (track: Track) =>
+      track.name.toLowerCase().includes(nameFilter.toLowerCase()) &&
+      track.configuration
+        .toLowerCase()
+        .includes(configurationFilter.toLowerCase()),
+  );
 
   return (
     <div>
@@ -27,8 +38,22 @@ export function Tracks(props: Props) {
         <Table size="small">
           <TableHead>
             <TableRow>
-              <TableCell>Name</TableCell>
-              <TableCell>Configuration</TableCell>
+              <TableCell>
+                <TextField
+                  label="Name"
+                  value={nameFilter}
+                  onChange={e => setNameFilter(e.target.value)}
+                  size="small"
+                />
+              </TableCell>
+              <TableCell>
+                <TextField
+                  label="Configuration"
+                  value={configurationFilter}
+                  onChange={e => setConfigurationFilter(e.target.value)}
+                  size="small"
+                />
+              </TableCell>
             </TableRow>
           </TableHead>
           <TableBody>

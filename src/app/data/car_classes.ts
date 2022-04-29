@@ -9,6 +9,8 @@ import {
 } from '../../types/Discipline';
 import { getDiscipline } from './disciplines';
 
+import { Car } from 'types/Car';
+
 type Record = {
   class: string;
   discipline: DisciplineId;
@@ -48,6 +50,10 @@ export function getCarClass(id: CarClassId | CarClass): CarClass {
     throw new Error(`Unknown car class: ${id}`);
   }
   return carClass;
+}
+
+export function getCarClassOfCar(car: Car): CarClass {
+  return getCarClass(car.carClassId);
 }
 
 export function getCarClassesIn(discipline: Discipline): CarClass[] {

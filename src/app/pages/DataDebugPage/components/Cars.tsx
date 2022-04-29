@@ -8,9 +8,11 @@ import {
   TableContainer,
   TableHead,
   TableRow,
+  TextField,
 } from '@mui/material';
 
-import { getCarClass } from 'app/data/car_classes';
+import { getCarClass, getCarClassOfCar } from 'app/data/car_classes';
+import { getDisciplineOfCar } from 'app/data/cars';
 import { getDiscipline } from 'app/data/disciplines';
 import { Car, CarId, getCarId } from 'types/Car';
 
@@ -20,7 +22,21 @@ interface Props {
 }
 
 export function Cars(props: Props) {
-  const { cars, onHover } = props;
+  const { cars: allCars, onHover } = props;
+  const [carFilter, setCarFilter] = React.useState('');
+  const [disciplineFilter, setDisciplineFilter] = React.useState('');
+  const [classFilter, setClassFilter] = React.useState('');
+
+  const cars = allCars.filter(
+    (car: Car) =>
+      car.name.toLowerCase().includes(carFilter.toLowerCase()) &&
+      getCarClassOfCar(car)
+        .name.toLowerCase()
+        .includes(classFilter.toLowerCase()) &&
+      getDisciplineOfCar(car)
+        .name.toLowerCase()
+        .includes(disciplineFilter.toLowerCase()),
+  );
 
   return (
     <div>
@@ -29,9 +45,30 @@ export function Cars(props: Props) {
         <Table size="small">
           <TableHead>
             <TableRow>
-              <TableCell>Name</TableCell>
-              <TableCell>Discipline</TableCell>
-              <TableCell>Class</TableCell>
+              <TableCell>
+                <TextField
+                  label="Name"
+                  value={carFilter}
+                  onChange={e => setCarFilter(e.target.value)}
+                  size="small"
+                />
+              </TableCell>
+              <TableCell>
+                <TextField
+                  label="Discipline"
+                  value={disciplineFilter}
+                  onChange={e => setDisciplineFilter(e.target.value)}
+                  size="small"
+                />
+              </TableCell>
+              <TableCell>
+                <TextField
+                  label="Class"
+                  value={classFilter}
+                  onChange={e => setClassFilter(e.target.value)}
+                  size="small"
+                />
+              </TableCell>
               <TableCell>Class Level</TableCell>
             </TableRow>
           </TableHead>
