@@ -10,12 +10,10 @@ export function VersionInfo() {
       className="version-info"
       variant="body2"
       sx={{
-        position: 'fixed',
-        bottom: 0,
-        right: 0,
+        textAlign: 'right',
         padding: '0.3rem',
         fontSize: '0.8em',
-        color: 'gray',
+        color: 'lightGray',
       }}
     >
       {gitInfo.commit.date} {gitInfo.commit.hash}
