@@ -120,6 +120,7 @@ export function Welcome(props: Props) {
   function handleClose() {
     setClosed(true);
     onClose?.();
+    setPage(0);
   }
 
   const open = forceShow || (!closed && !welcome.hideWelcome);
@@ -129,7 +130,7 @@ export function Welcome(props: Props) {
       open={open}
       onClose={handleClose}
       maxWidth="md"
-      onTransitionEnd={() => open || setPage(0)}
+      transitionDuration={0}
     >
       <DialogTitle>
         Welcome to the Automobilista 2 Career Simulator!
@@ -149,13 +150,18 @@ export function Welcome(props: Props) {
           )}
           {page === pages.length - 1 && (
             <>
-              <Button
-                onClick={() => dispatch(actions.hide())}
-                color="error"
-                variant="text"
-              >
-                Don't show again
-              </Button>
+              {forceShow || (
+                <Button
+                  onClick={() => {
+                    handleClose();
+                    dispatch(actions.hide());
+                  }}
+                  color="error"
+                  variant="text"
+                >
+                  Don't show again
+                </Button>
+              )}
               <Button onClick={handleClose} variant="outlined">
                 Got it!
               </Button>
