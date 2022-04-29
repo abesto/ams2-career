@@ -12,7 +12,7 @@ import {
   BrowserRouter,
   Link as RouterLink,
   Route,
-  Switch,
+  Routes,
 } from 'react-router-dom';
 
 import {
@@ -147,12 +147,12 @@ export function App() {
           </Toolbar>
         </AppBar>
 
-        <Switch>
-          <Route exact path="/" component={MainPage} />
-          <Route exact path="/debug" component={DataDebugPage} />
-          <Route exact path="/career" component={CareerPage} />
-          <Route component={NotFoundPage} />
-        </Switch>
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/debug" element={<DataDebugPage />} />
+          <Route path="/career" element={<CareerPage />} />
+          <Route element={<NotFoundPage />} />
+        </Routes>
 
         <ExportReminder />
         <VersionInfo />

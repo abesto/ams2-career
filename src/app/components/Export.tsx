@@ -7,6 +7,7 @@ import { serialize } from 'store/saveload';
 import { Download as DownloadIcon } from '@mui/icons-material';
 import { Badge, IconButton, IconButtonProps, Tooltip } from '@mui/material';
 
+import { RootState } from '../../types';
 import { useExportReminderSlice } from './ExportReminder/slice';
 import { selectRacesSinceLastExport } from './ExportReminder/slice/selectors';
 
@@ -33,7 +34,7 @@ export function Export({
         onClick={() => {
           dispatch(exportReminderActions.recordExport());
           saveAs(
-            new Blob([serialize(store.getState())], {
+            new Blob([serialize(store.getState() as RootState)], {
               type: 'application/octet-stream',
             }),
             filename(),

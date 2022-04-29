@@ -9,7 +9,7 @@ import 'react-app-polyfill/ie11';
 import 'react-app-polyfill/stable';
 
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import { HelmetProvider } from 'react-helmet-async';
 import { Provider } from 'react-redux';
 import reportWebVitals from 'reportWebVitals';
@@ -48,7 +48,7 @@ class ExportWithErrorBoundary extends React.Component<
 }
 
 class DropLocalStorageOnErrorBoundary extends React.Component<
-  {},
+  { children?: React.ReactNode },
   { hasError: boolean }
 > {
   constructor(props) {
@@ -88,7 +88,8 @@ class DropLocalStorageOnErrorBoundary extends React.Component<
   }
 }
 
-ReactDOM.render(
+const root = createRoot(MOUNT_NODE);
+root.render(
   <Provider store={store}>
     <HelmetProvider>
       <React.StrictMode>
@@ -98,7 +99,6 @@ ReactDOM.render(
       </React.StrictMode>
     </HelmetProvider>
   </Provider>,
-  MOUNT_NODE,
 );
 
 // If you want to start measuring performance in your app, pass a function
