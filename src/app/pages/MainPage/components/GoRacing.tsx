@@ -210,7 +210,7 @@ export function GoRacing(props: Props) {
         <Typography variant="h6" sx={{ my: 2 }}>
           How did it go?
         </Typography>
-        <FormControl>
+        <FormControl sx={{ m: 1 }}>
           <InputLabel id="car-select">Your Car</InputLabel>
           <Select
             labelId="car-select"
@@ -226,13 +226,14 @@ export function GoRacing(props: Props) {
           </Select>
         </FormControl>
 
-        <TextField
-          label="Finishing position"
-          type="number"
-          value={position}
-          onChange={e => handlePosition(parseInt(e.target.value))}
-          sx={{ mx: 1 }}
-        />
+        <FormControl sx={{ m: 1 }}>
+          <TextField
+            label="Finishing position"
+            type="number"
+            value={position}
+            onChange={e => handlePosition(parseInt(e.target.value))}
+          />
+        </FormControl>
         <Button
           size="large"
           variant="contained"
