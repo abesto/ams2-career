@@ -122,11 +122,14 @@ export function Welcome(props: Props) {
     onClose?.();
   }
 
+  const open = forceShow || (!closed && !welcome.hideWelcome);
+
   return (
     <Dialog
-      open={forceShow || (!closed && !welcome.hideWelcome)}
+      open={open}
       onClose={handleClose}
       maxWidth="md"
+      onTransitionEnd={() => open || setPage(0)}
     >
       <DialogTitle>
         Welcome to the Automobilista 2 Career Simulator!
