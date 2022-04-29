@@ -11,7 +11,13 @@ import DialogTitle from '@mui/material/DialogTitle';
 import { useWelcomeSlice } from 'app/slices/WelcomeSlice';
 import { selectWelcome } from 'app/slices/WelcomeSlice/selectors';
 
-export function Welcome() {
+type Props = {
+  forceShow: boolean;
+  onClose?: () => void;
+};
+
+export function Welcome(props: Props) {
+  const { forceShow, onClose } = props;
   const [closed, setClosed] = React.useState(false);
   const dispatch = useDispatch();
   const { actions } = useWelcomeSlice();
@@ -19,10 +25,14 @@ export function Welcome() {
 
   function handleClose() {
     setClosed(true);
+    onClose?.();
   }
 
   return (
-    <Dialog open={!closed && !welcome.hideWelcome} onClose={handleClose}>
+    <Dialog
+      open={forceShow || (!closed && !welcome.hideWelcome)}
+      onClose={handleClose}
+    >
       <DialogTitle>
         Welcome to <code>ams2-career</code>!
       </DialogTitle>

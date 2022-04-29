@@ -1,4 +1,5 @@
 import LZString from 'lz-string';
+import GitInfo from 'react-git-info/macro';
 import { AnyAction, Middleware } from 'redux';
 
 import { createAction, Reducer } from '@reduxjs/toolkit';
@@ -60,6 +61,15 @@ function applyAllMigrations(state: RootState): RootState {
   return state;
 }
 
+function addCommitVersion(state: RootState): RootState {
+  const gitInfo = GitInfo();
+  state.saveMeta!.commit = {
+    hash: gitInfo.commit.hash,
+    date: gitInfo.commit.date,
+  };
+  return state;
+}
+
 export function load(
   shouldApplyMigrations: boolean,
   version: number | string = LATEST,
@@ -72,6 +82,7 @@ export function load(
   if (shouldApplyMigrations) {
     applyAllMigrations(data);
   }
+  addCommitVersion(data);
   return data;
 }
 

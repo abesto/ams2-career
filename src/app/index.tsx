@@ -15,13 +15,19 @@ import {
   Switch,
 } from 'react-router-dom';
 
+import DataObjectIcon from '@mui/icons-material/DataObject';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import HelpIcon from '@mui/icons-material/Help';
+import MenuBookIcon from '@mui/icons-material/MenuBook';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import CssBaseline from '@mui/material/CssBaseline';
+import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Link from '@mui/material/Link';
 import Toolbar from '@mui/material/Toolbar';
+import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 
 import { Consistency } from './components/Consistency';
@@ -29,12 +35,38 @@ import { Export } from './components/Export';
 import { ExportReminder } from './components/ExportReminder';
 import { Import } from './components/Import';
 import { NotFoundPage } from './components/NotFoundPage';
+import { VersionInfo } from './components/VersionInfo';
 import { Welcome } from './components/Welcome';
 import { CareerPage } from './pages/CareerPage';
 import { DataDebugPage } from './pages/DataDebugPage';
 import { MainPage } from './pages/MainPage';
 
+type ToolbarButtonProps<D extends React.ElementType> = IconButtonProps<D> & {
+  icon: React.ReactNode;
+  label: string;
+};
+
+function ToolbarButton<D extends React.ElementType>(
+  props: ToolbarButtonProps<D>,
+) {
+  return (
+    <Tooltip title={props.label}>
+      <IconButton
+        component={props.component || Link}
+        aria-label={props.label}
+        target="_blank"
+        color="inherit"
+        {...props}
+      >
+        {props.icon}
+      </IconButton>
+    </Tooltip>
+  );
+}
+
 export function App() {
+  const [forceWelcome, setForceWelcome] = React.useState(false);
+
   return (
     <BrowserRouter>
       <Helmet titleTemplate="%s - AMS2 Career">
@@ -51,7 +83,10 @@ export function App() {
       <CssBaseline />
 
       <Consistency />
-      <Welcome />
+      <Welcome
+        forceShow={forceWelcome}
+        onClose={() => setForceWelcome(false)}
+      />
 
       <Container maxWidth={false}>
         <AppBar position="static">
@@ -81,22 +116,29 @@ export function App() {
 
             <Box sx={{ flexGrow: 1 }} />
 
-            <Button
-              color="inherit"
+            <ToolbarButton
+              label="Help"
+              icon={<HelpIcon />}
               component={Link}
+              onClick={() => setForceWelcome(true)}
+            />
+            <ToolbarButton
+              label="Wiki (new tab)"
+              icon={<MenuBookIcon />}
               href="https://github.com/abesto/ams2-career/wiki"
-              target="_blank"
-            >
-              Wiki
-            </Button>
-            <Button
-              color="inherit"
-              size="small"
+            />
+            <ToolbarButton
+              label="GitHub (new tab)"
+              icon={<GitHubIcon />}
+              href="https://github.com/abesto/ams2-career/"
+            />
+            <ToolbarButton
+              label="Data Debugger"
+              icon={<DataObjectIcon />}
               component={RouterLink}
               to="/debug"
-            >
-              Data Debugger
-            </Button>
+              target=""
+            />
           </Toolbar>
         </AppBar>
 
@@ -108,6 +150,7 @@ export function App() {
         </Switch>
 
         <ExportReminder />
+        <VersionInfo />
       </Container>
     </BrowserRouter>
   );
