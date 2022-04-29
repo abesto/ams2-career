@@ -37,9 +37,11 @@ export function MainPage(props: Props) {
 
   const [resultFeedbackOpen, setResultFeedbackOpen] = React.useState(false);
 
-  if (slice.raceOptions.length === 0) {
-    dispatch(mainPageActions.generateRaces({ career }));
-  }
+  React.useEffect(() => {
+    if (slice.raceOptions.length === 0) {
+      dispatch(mainPageActions.generateRaces({ career }));
+    }
+  });
 
   function recordResult(carId: CarId, aiLevel: number, position: number) {
     const raceResult: RaceResult = {
