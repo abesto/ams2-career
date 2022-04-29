@@ -75,10 +75,12 @@ export function RaceResultFeedback(props: Props) {
         <DialogContentText>
           With this result you've gained {formatXp(xpGained)} XP in{' '}
           {discipline.name}.
-          {before.level !== after.level &&
-            ` Congratulations, you've advanced to Grade ${formatGrade(
-              after.level,
-            )} in ${discipline.name}!`}
+          {before.level !== after.level && (
+            <div>
+              Congratulations, you've advanced to Grade{' '}
+              {formatGrade(after.level)} in {discipline.name}!
+            </div>
+          )}
         </DialogContentText>
         {before.level > 1 && (
           <>
