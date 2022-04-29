@@ -2,10 +2,7 @@ import * as React from 'react';
 import { Beforeunload } from 'react-beforeunload';
 import { useDispatch, useSelector } from 'react-redux';
 
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Snackbar from '@mui/material/Snackbar';
-import SnackbarContent from '@mui/material/SnackbarContent';
+import { Box, Button, Snackbar, SnackbarContent } from '@mui/material';
 
 import { Export } from '../Export';
 import { useExportReminderSlice } from './slice';

@@ -1,10 +1,12 @@
 import * as React from 'react';
 
-import LinearProgress from '@mui/material/LinearProgress';
-import Step from '@mui/material/Step';
-import StepLabel from '@mui/material/StepLabel';
-import Stepper from '@mui/material/Stepper';
-import Typography from '@mui/material/Typography';
+import {
+  LinearProgress,
+  Step,
+  StepLabel,
+  Stepper,
+  Typography,
+} from '@mui/material';
 
 import { ChipArray } from 'app/components/ChipArray';
 import { getCarClassesAt, getCarClassesIn } from 'app/data/car_classes';

@@ -1,15 +1,17 @@
 import * as React from 'react';
 
-import { TableHead } from '@mui/material';
-import FormControl from '@mui/material/FormControl';
-import FormLabel from '@mui/material/FormLabel';
-import MenuItem from '@mui/material/MenuItem';
-import Select from '@mui/material/Select';
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableRow from '@mui/material/TableRow';
-import TextField from '@mui/material/TextField';
+import {
+  FormControl,
+  FormLabel,
+  MenuItem,
+  Select,
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableRow,
+  TextField,
+} from '@mui/material';
 
 import { getCarClassesIn } from 'app/data/car_classes';
 import { getAllDisciplines, getDiscipline } from 'app/data/disciplines';

@@ -1,10 +1,7 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
 
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
-import Tab from '@mui/material/Tab';
-import Tabs from '@mui/material/Tabs';
+import { Box, Grid, Tab, Tabs } from '@mui/material';
 
 import { Cars } from './components/Cars';
 import { SaveData } from './components/SaveData';

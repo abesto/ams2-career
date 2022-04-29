@@ -2,15 +2,18 @@ import * as React from 'react';
 import { useStore } from 'react-redux';
 import { backup, deserialize } from 'store/saveload';
 
-import UploadIcon from '@mui/icons-material/Upload';
-import Button from '@mui/material/Button';
-import Dialog from '@mui/material/Dialog';
-import DialogActions from '@mui/material/DialogActions';
-import DialogContent from '@mui/material/DialogContent';
-import DialogContentText from '@mui/material/DialogContentText';
-import DialogTitle from '@mui/material/DialogTitle';
-import IconButton, { IconButtonProps } from '@mui/material/IconButton';
-import Tooltip from '@mui/material/Tooltip';
+import { Upload as UploadIcon } from '@mui/icons-material';
+import {
+  Button,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogContentText,
+  DialogTitle,
+  IconButton,
+  IconButtonProps,
+  Tooltip,
+} from '@mui/material';
 
 import { Export } from './Export';
 

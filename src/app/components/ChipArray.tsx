@@ -1,8 +1,6 @@
 import * as React from 'react';
 
-import Box from '@mui/material/Box';
-import Chip from '@mui/material/Chip';
-import { styled } from '@mui/material/styles';
+import { Box, Chip, styled } from '@mui/material';
 
 export const ChipArrayListItem = styled('li')(({ theme }) => ({
   margin: theme.spacing(0.5),

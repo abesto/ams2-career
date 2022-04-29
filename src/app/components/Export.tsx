@@ -4,10 +4,8 @@ import * as React from 'react';
 import { useDispatch, useSelector, useStore } from 'react-redux';
 import { serialize } from 'store/saveload';
 
-import DownloadIcon from '@mui/icons-material/Download';
-import Badge from '@mui/material/Badge';
-import IconButton, { IconButtonProps } from '@mui/material/IconButton';
-import Tooltip from '@mui/material/Tooltip';
+import { Download as DownloadIcon } from '@mui/icons-material';
+import { Badge, IconButton, IconButtonProps, Tooltip } from '@mui/material';
 
 import { useExportReminderSlice } from './ExportReminder/slice';
 import { selectRacesSinceLastExport } from './ExportReminder/slice/selectors';

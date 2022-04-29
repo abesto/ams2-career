@@ -1,7 +1,7 @@
 import * as React from 'react';
 import GitInfo from 'react-git-info/macro';
 
-import Typography from '@mui/material/Typography';
+import { Typography } from '@mui/material';
 
 export function VersionInfo() {
   const gitInfo = GitInfo();

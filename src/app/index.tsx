@@ -15,20 +15,25 @@ import {
   Switch,
 } from 'react-router-dom';
 
-import DataObjectIcon from '@mui/icons-material/DataObject';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import HelpIcon from '@mui/icons-material/Help';
-import MenuBookIcon from '@mui/icons-material/MenuBook';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Container from '@mui/material/Container';
-import CssBaseline from '@mui/material/CssBaseline';
-import IconButton, { IconButtonProps } from '@mui/material/IconButton';
-import Link from '@mui/material/Link';
-import Toolbar from '@mui/material/Toolbar';
-import Tooltip from '@mui/material/Tooltip';
-import Typography from '@mui/material/Typography';
+import {
+  DataObject as DataObjectIcon,
+  GitHub as GitHubIcon,
+  Help as HelpIcon,
+  MenuBook as MenuBookIcon,
+} from '@mui/icons-material';
+import {
+  AppBar,
+  Box,
+  Button,
+  Container,
+  CssBaseline,
+  IconButton,
+  IconButtonProps,
+  Link,
+  Toolbar,
+  Tooltip,
+  Typography,
+} from '@mui/material';
 
 import { Consistency } from './components/Consistency';
 import { Export } from './components/Export';

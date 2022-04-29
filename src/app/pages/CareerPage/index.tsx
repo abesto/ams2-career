@@ -3,17 +3,19 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useDispatch, useSelector } from 'react-redux';
 
-import Button from '@mui/material/Button';
-import Grid from '@mui/material/Grid';
-import MUIPaper from '@mui/material/Paper';
-import { styled } from '@mui/material/styles';
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
-import Typography from '@mui/material/Typography';
+import {
+  Button,
+  Grid,
+  Paper as MUIPaper,
+  styled,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+  Typography,
+} from '@mui/material';
 
 import { DisciplineProgress } from '../../components/DisciplineProgress';
 import { useMainPageSlice } from '../MainPage/slice';

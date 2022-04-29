@@ -2,9 +2,7 @@ import saveAs from 'file-saver';
 import * as React from 'react';
 import { availableVersions, load } from 'store/saveload';
 
-import Button from '@mui/material/Button';
-import Tab from '@mui/material/Tab';
-import Tabs from '@mui/material/Tabs';
+import { Button, Tab, Tabs } from '@mui/material';
 
 interface Props {}
 
