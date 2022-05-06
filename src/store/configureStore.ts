@@ -11,6 +11,7 @@ import {
   StoreEnhancer,
 } from '@reduxjs/toolkit';
 
+import { gaMiddleware } from '../utils/analytics';
 import { createReducerWithPlaceholders } from './reducers';
 import { load, saveMiddleware } from './saveload';
 
@@ -20,7 +21,7 @@ export function configureAppStore() {
   const { run: runSaga } = sagaMiddleware;
 
   // Create the store with saga middleware
-  const middlewares = [sagaMiddleware, saveMiddleware];
+  const middlewares = [sagaMiddleware, saveMiddleware, gaMiddleware];
 
   const preloadedState = load(true) || {};
 

@@ -8,6 +8,7 @@
 
 import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { useDispatch } from 'react-redux';
 import {
   BrowserRouter,
   Link as RouterLink,
@@ -35,6 +36,7 @@ import {
   Typography,
 } from '@mui/material';
 
+import { usePageViews } from '../utils/analytics';
 import { Consistency } from './components/Consistency';
 import { Export } from './components/Export';
 import { ExportReminder } from './components/ExportReminder';
@@ -45,6 +47,7 @@ import { Welcome } from './components/Welcome';
 import { CareerPage } from './pages/CareerPage';
 import { DataDebugPage } from './pages/DataDebugPage';
 import { MainPage } from './pages/MainPage';
+import { useConnectivitySlice } from './slices/ConnectivitySlice';
 
 type ToolbarButtonProps<D extends React.ElementType> = IconButtonProps<D> & {
   icon: React.ReactNode;
@@ -69,11 +72,25 @@ function ToolbarButton<D extends React.ElementType>(
   );
 }
 
-export function App() {
+function InnerApp() {
   const [forceWelcome, setForceWelcome] = React.useState(false);
+  const { actions: connectivityActions } = useConnectivitySlice();
+  const dispatch = useDispatch();
+
+  // Hook up the connectivity checker
+  React.useEffect(() => {
+    window.addEventListener('online', () => {
+      dispatch(connectivityActions.update(true));
+    });
+    window.addEventListener('offline', () => {
+      dispatch(connectivityActions.update(false));
+    });
+  }, [dispatch, connectivityActions]);
+
+  usePageViews();
 
   return (
-    <BrowserRouter>
+    <>
       <Helmet titleTemplate="%s - AMS2 Career">
         <link
           rel="stylesheet"
@@ -157,6 +174,14 @@ export function App() {
         <ExportReminder />
         <VersionInfo />
       </Container>
+    </>
+  );
+}
+
+export function App() {
+  return (
+    <BrowserRouter>
+      <InnerApp />
     </BrowserRouter>
   );
 }

@@ -94,7 +94,9 @@ export function save(
 }
 
 export function serialize(state: RootState): string {
-  return LZString.compressToUTF16(JSON.stringify(state));
+  const data = { ...state };
+  delete data.connectivity;
+  return LZString.compressToUTF16(JSON.stringify(data));
 }
 
 export function deserialize(s: string): RootState {
