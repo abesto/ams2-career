@@ -13,15 +13,32 @@ import OfflineWeb from '@redux-beacon/offline-web';
 import { selectOnline } from 'app/slices/ConnectivitySlice/selectors';
 import { RaceResult } from 'types/Race';
 
+const category = 'ams2career';
+
 const emitRaceFinished = trackEvent(action => {
   const result = action.payload.raceResult as RaceResult;
   return {
-    category: 'RaceFinished',
-    action: result.carClassId,
+    category,
+    action: 'race_result',
     label: result.carId + ' @ ' + result.trackId,
     value: result.position,
   };
 });
+
+const emitCareerReset = trackEvent(action => ({
+  category,
+  action: 'career_reset',
+}));
+
+const emitSaveExport = trackEvent(action => ({
+  category,
+  action: 'save_export',
+}));
+
+const emitSaveImport = trackEvent(action => ({
+  category,
+  action: 'save_import',
+}));
 
 const LOCATION_CHANGE_ACTION = 'analytics/LOCATION_CHANGE';
 const pageView = trackPageView(action => ({
@@ -31,6 +48,9 @@ const pageView = trackPageView(action => ({
 
 const eventsMap = {
   'career/recordRaceResult': emitRaceFinished,
+  'career/resetCareer': emitCareerReset,
+  'exportReminder/recordExport': emitSaveExport,
+  LOAD: emitSaveImport,
   [LOCATION_CHANGE_ACTION]: pageView,
 };
 
