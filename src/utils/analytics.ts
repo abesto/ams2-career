@@ -26,6 +26,7 @@ const emitRaceFinished = trackEvent(action => {
 const LOCATION_CHANGE_ACTION = 'analytics/LOCATION_CHANGE';
 const pageView = trackPageView(action => ({
   path: action.payload.pathname,
+  title: document.title,
 }));
 
 const eventsMap = {
