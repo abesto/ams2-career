@@ -1,4 +1,5 @@
 import * as React from 'react';
+import GitInfo from 'react-git-info/macro';
 import { useDispatch } from 'react-redux';
 import { useLocation } from 'react-router-dom';
 import { createMiddleware } from 'redux-beacon';
@@ -14,6 +15,26 @@ import { selectOnline } from 'app/slices/ConnectivitySlice/selectors';
 import { RaceResult } from 'types/Race';
 
 const category = 'ams2career';
+
+const gitInfo = GitInfo();
+const dimensions = [
+  ['dimension1', 'commit_hash', gitInfo.commit.hash],
+  ['dimension2', 'commit_date', gitInfo.commit.date],
+];
+
+const fieldsObject = Object.fromEntries(
+  dimensions.flatMap(([key, name, value]) => [
+    [key, name],
+    [name, value],
+  ]),
+);
+
+const LOCATION_CHANGE_ACTION = 'analytics/LOCATION_CHANGE';
+const pageView = trackPageView(action => ({
+  path: action.payload.pathname,
+  title: document.title,
+  fieldsObject,
+}));
 
 const emitRaceFinished = trackEvent(action => {
   const result = action.payload.raceResult as RaceResult;
@@ -38,12 +59,6 @@ const emitSaveExport = trackEvent(action => ({
 const emitSaveImport = trackEvent(action => ({
   category,
   action: 'save_import',
-}));
-
-const LOCATION_CHANGE_ACTION = 'analytics/LOCATION_CHANGE';
-const pageView = trackPageView(action => ({
-  path: action.payload.pathname,
-  title: document.title,
 }));
 
 const eventsMap = {
