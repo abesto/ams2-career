@@ -10,6 +10,13 @@ export interface AIAdjustment {
   car: { [key: CarId]: number };
 }
 
+export interface AIAdjustmentInstance {
+  global: number;
+  discipline: number;
+  carClass: number;
+  car: number;
+}
+
 /* --- STATE --- */
 export interface MainPageState {
   raceOptions: Race[];

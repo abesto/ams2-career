@@ -19,6 +19,7 @@ import {
 
 import { useMainPageSlice } from '../slice';
 import { selectAIAdjustment } from '../slice/selectors';
+import { AIAdjustmentInstance } from '../slice/types';
 
 import { DisciplineProgress } from 'app/components/DisciplineProgress';
 import { getCarClass } from 'app/data/car_classes';
@@ -35,7 +36,11 @@ interface Props {
   career: EnrichedCareerData;
   currentCarId: CarId | null;
   onCarSelect: (carId: CarId) => void;
-  onRecord: (aiLevel: number, position: number) => void;
+  onRecord: (
+    aiLevel: number,
+    aiAdjustment: AIAdjustmentInstance | null,
+    position: number,
+  ) => void;
 }
 
 function Item({ label, children }) {
@@ -238,7 +243,7 @@ export function GoRacing(props: Props) {
           size="large"
           variant="contained"
           sx={{ py: 1.75 }}
-          onClick={() => onRecord(adjustedAI, position)}
+          onClick={() => onRecord(adjustedAI, aiAdjustment, position)}
         >
           Record
         </Button>

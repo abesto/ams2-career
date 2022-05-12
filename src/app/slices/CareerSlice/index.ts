@@ -6,6 +6,7 @@ import { PayloadAction } from '@reduxjs/toolkit';
 
 import { CareerState } from './types';
 
+import { AIAdjustmentInstance } from 'app/pages/MainPage/slice/types';
 import { RaceResult } from 'types/Race';
 
 export const initialState: CareerState = {
@@ -16,7 +17,13 @@ const slice = createSlice({
   name: 'career',
   initialState,
   reducers: {
-    recordRaceResult(state, action: PayloadAction<{ raceResult: RaceResult }>) {
+    recordRaceResult(
+      state,
+      action: PayloadAction<{
+        raceResult: RaceResult;
+        aiAdjustment: AIAdjustmentInstance;
+      }>,
+    ) {
       state.raceResults.push(action.payload.raceResult);
     },
     resetCareer(state, action: PayloadAction<void>) {

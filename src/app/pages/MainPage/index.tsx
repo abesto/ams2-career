@@ -16,6 +16,7 @@ import {
   selectMainPage,
   selectSelectedRace,
 } from './slice/selectors';
+import { AIAdjustmentInstance } from './slice/types';
 
 import { useCareerSlice } from 'app/slices/CareerSlice';
 import { selectCareer } from 'app/slices/CareerSlice/selectors';
@@ -43,7 +44,12 @@ export function MainPage(props: Props) {
     }
   });
 
-  function recordResult(carId: CarId, aiLevel: number, position: number) {
+  function recordResult(
+    carId: CarId,
+    aiLevel: number,
+    aiAdjustment: AIAdjustmentInstance,
+    position: number,
+  ) {
     const raceResult: RaceResult = {
       ...selectedRace!,
       position,
@@ -51,7 +57,7 @@ export function MainPage(props: Props) {
       aiLevel,
       racedAt: new Date().getTime(),
     };
-    dispatch(careerActions.recordRaceResult({ raceResult }));
+    dispatch(careerActions.recordRaceResult({ raceResult, aiAdjustment }));
     dispatch(mainPageActions.reset());
     setResultFeedbackOpen(true);
   }
@@ -85,8 +91,13 @@ export function MainPage(props: Props) {
                   race={selectedRace!}
                   career={career}
                   currentCarId={currentCarId!}
-                  onRecord={(aiLevel, position) =>
-                    recordResult(currentCarId!, aiLevel, position)
+                  onRecord={(aiLevel, aiAdjustment, position) =>
+                    recordResult(
+                      currentCarId!,
+                      aiLevel,
+                      aiAdjustment!,
+                      position,
+                    )
                   }
                   onCarSelect={carId =>
                     dispatch(
