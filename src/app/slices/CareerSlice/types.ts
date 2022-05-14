@@ -1,5 +1,7 @@
 import { ADT } from 'ts-adt';
 
+import { Achievement, prepareAchievements } from './achievements';
+
 import { getAllDisciplines } from 'app/data/disciplines';
 import { DisciplineProgress, totalXpToProgress, xpGain } from 'app/xp';
 import {
@@ -20,11 +22,13 @@ export type Progress = { [key: string]: DisciplineProgress };
 export type RaceOutcome = ADT<{
   XpGain: { disciplineId: DisciplineId; amount: number };
   GradeUp: { disciplineId: DisciplineId; newGrade: number };
+  AchievementUnlocked: Achievement;
 }>;
 
 export interface EnrichedCareerData extends CareerState {
   progress: Progress;
   outcomes: RaceOutcome[][]; // First index matches outcomes to raceResults
+  achievements: Achievement[];
 }
 
 export function enrich(state: CareerState): EnrichedCareerData {
@@ -32,7 +36,9 @@ export function enrich(state: CareerState): EnrichedCareerData {
     ...state,
     progress: {},
     outcomes: [],
+    achievements: [],
   };
+  const achievements = prepareAchievements();
 
   const xp: Map<DisciplineId, number> = new Map();
 
@@ -59,8 +65,13 @@ export function enrich(state: CareerState): EnrichedCareerData {
       const xpAfter = xpBefore + gainedXp;
       const progressAfter = totalXpToProgress(targetDiscipline, xpAfter);
       xp.set(targetDisciplineId, xpAfter);
-
+      outcomes.push({
+        _type: 'XpGain',
+        disciplineId: targetDisciplineId,
+        amount: gainedXp,
+      });
       data.progress[targetDisciplineId] = progressAfter;
+
       if (progressAfter.level < progressBefore.level) {
         outcomes.push({
           _type: 'GradeUp',
@@ -68,16 +79,17 @@ export function enrich(state: CareerState): EnrichedCareerData {
           newGrade: progressAfter.level,
         });
       }
-      outcomes.push({
-        _type: 'XpGain',
-        disciplineId: targetDisciplineId,
-        amount: gainedXp,
-      });
+    }
+
+    const unlockedAchievements = achievements.process(raceResult, outcomes);
+    for (const achievement of unlockedAchievements) {
+      outcomes.push({ _type: 'AchievementUnlocked', ...achievement });
     }
 
     data.outcomes.push(outcomes);
   }
 
+  data.achievements = achievements.finalize();
   return data;
 }
 

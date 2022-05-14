@@ -14,6 +14,7 @@ import {
   Stepper,
 } from '@mui/material';
 
+import { AchievementIcon } from 'app/components/AchievementIcon';
 import {
   getCarClass,
   getCarClassesAt,
@@ -64,6 +65,8 @@ export function RaceResultFeedback(props: Props) {
   const after = career.progress[disciplineId];
   const before = totalXpToProgress(discipline, after.totalXp - mainXpGained);
 
+  const achievements = outcomes.filter(refinement('AchievementUnlocked'));
+
   // This shares a fair amount of code with DisciplineProgress, but duplicating
   // it seems less complex than adding a bunch of conditions in what's already a
   // complex component
@@ -85,6 +88,12 @@ export function RaceResultFeedback(props: Props) {
         Race Results: P{race.position} {carClass.name} at {track.name}
       </DialogTitle>
       <DialogContent>
+        {achievements.map(achievement => (
+          <DialogContentText key={achievement.name}>
+            <AchievementIcon level={achievement.level} unlocked={true} />{' '}
+            <strong>{achievement.name}</strong>: {achievement.description}
+          </DialogContentText>
+        ))}
         <DialogContentText>
           With this result you've gained {formatXp(mainXpGained)} XP in{' '}
           {discipline.name}.
