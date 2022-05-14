@@ -16,7 +16,6 @@ import {
   TableContainer,
   TableHead,
   TableRow,
-  Tooltip,
   Typography,
 } from '@mui/material';
 
@@ -103,14 +102,10 @@ function Achievements(props: { achievements: Achievement[] }) {
 function AchievementUnlocked(props: { achievement: Achievement }) {
   const { achievement } = props;
   return (
-    <Tooltip title={achievement.description}>
-      <Box
-        sx={{ borderBottom: 'dotted 2px gray', cursor: 'pointer' }}
-        component="span"
-      >
-        {achievement.name}
-      </Box>
-    </Tooltip>
+    <Box component="span">
+      <AchievementIcon level={achievement.level} unlocked={true} />
+      <strong>{achievement.name}</strong>: {achievement.description}
+    </Box>
   );
 }
 
