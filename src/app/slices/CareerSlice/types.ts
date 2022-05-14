@@ -1,4 +1,6 @@
-import { getAllDisciplines, getDiscipline } from 'app/data/disciplines';
+import { ADT } from 'ts-adt';
+
+import { getAllDisciplines } from 'app/data/disciplines';
 import { DisciplineProgress, totalXpToProgress, xpGain } from 'app/xp';
 import {
   Discipline,
@@ -15,37 +17,66 @@ export interface CareerState {
 
 export type Progress = { [key: string]: DisciplineProgress };
 
+export type RaceOutcome = ADT<{
+  XpGain: { disciplineId: DisciplineId; amount: number };
+  GradeUp: { disciplineId: DisciplineId; newGrade: number };
+}>;
+
 export interface EnrichedCareerData extends CareerState {
   progress: Progress;
+  outcomes: RaceOutcome[][]; // First index matches outcomes to raceResults
 }
 
 export function enrich(state: CareerState): EnrichedCareerData {
-  const data = {
+  const data: EnrichedCareerData = {
     ...state,
     progress: {},
+    outcomes: [],
   };
 
   const xp: Map<DisciplineId, number> = new Map();
 
   for (const discipline of getAllDisciplines()) {
-    xp.set(getDisciplineId(discipline), 0);
+    data.progress[getDisciplineId(discipline)] = totalXpToProgress(
+      discipline,
+      0,
+    );
   }
 
   for (const raceResult of state.raceResults) {
+    const outcomes: RaceOutcome[] = [];
+
     for (const targetDiscipline of getAllDisciplines()) {
       const targetDisciplineId = getDisciplineId(targetDiscipline);
-      xp.set(
-        targetDisciplineId,
-        (xp.get(targetDisciplineId) || 0) +
-          xpGain(targetDisciplineId, raceResult),
-      );
-    }
-  }
+      const xpBefore = xp.get(targetDisciplineId) || 0;
+      const progressBefore = totalXpToProgress(targetDiscipline, xpBefore);
 
-  xp.forEach((totalXp, disciplineId) => {
-    const discipline = getDiscipline(disciplineId);
-    data.progress[disciplineId] = totalXpToProgress(discipline, totalXp);
-  });
+      const gainedXp = xpGain(targetDisciplineId, raceResult);
+      if (gainedXp === 0) {
+        continue;
+      }
+
+      const xpAfter = xpBefore + gainedXp;
+      const progressAfter = totalXpToProgress(targetDiscipline, xpAfter);
+      xp.set(targetDisciplineId, xpAfter);
+
+      data.progress[targetDisciplineId] = progressAfter;
+      if (progressAfter.level < progressBefore.level) {
+        outcomes.push({
+          _type: 'GradeUp',
+          disciplineId: targetDisciplineId,
+          newGrade: progressAfter.level,
+        });
+      }
+      outcomes.push({
+        _type: 'XpGain',
+        disciplineId: targetDisciplineId,
+        amount: gainedXp,
+      });
+    }
+
+    data.outcomes.push(outcomes);
+  }
 
   return data;
 }
@@ -70,6 +101,5 @@ export function aiLevel(
     return 0;
   }
 
-  // TODO add manual AI level baseline adjustment (replace '95' here)
   return races.map(r => adjustment(r.position)).reduce((a, b) => a + b, 95);
 }

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { refinement } from 'ts-adt';
 
 import {
   Button,
@@ -25,7 +26,6 @@ import {
   formatGrade,
   formatXp,
   totalXpToProgress,
-  xpGain,
   xpNeededForLevelUpTo,
 } from 'app/xp';
 
@@ -42,14 +42,27 @@ export function RaceResultFeedback(props: Props) {
     return null;
   }
 
-  const race = career.raceResults[career.raceResults.length - 1];
+  const raceIndex = career.raceResults.length - 1;
+  const race = career.raceResults[raceIndex];
   const carClass = getCarClass(race.carClassId);
-  const discipline = getDiscipline(carClass.disciplineId);
+  const disciplineId = carClass.disciplineId;
+  const discipline = getDiscipline(disciplineId);
   const track = getTrack(race.trackId);
 
-  const xpGained = xpGain(carClass.disciplineId, race);
-  const after = career.progress[carClass.disciplineId];
-  const before = totalXpToProgress(discipline, after.totalXp - xpGained);
+  const outcomes = career.outcomes[raceIndex];
+  const xpGains = outcomes.filter(refinement('XpGain'));
+  const mainXpGained =
+    xpGains.find(g => g.disciplineId === disciplineId)?.amount ?? 0;
+  const otherXpGains = xpGains.filter(
+    g => g.disciplineId !== disciplineId && formatXp(g.amount) > 0,
+  );
+
+  const gradeUps = outcomes.filter(refinement('GradeUp'));
+  const mainGradeUp = gradeUps.find(g => g.disciplineId === disciplineId);
+  const otherGradeUps = gradeUps.filter(g => g.disciplineId !== disciplineId);
+
+  const after = career.progress[disciplineId];
+  const before = totalXpToProgress(discipline, after.totalXp - mainXpGained);
 
   // This shares a fair amount of code with DisciplineProgress, but duplicating
   // it seems less complex than adding a bunch of conditions in what's already a
@@ -73,15 +86,16 @@ export function RaceResultFeedback(props: Props) {
       </DialogTitle>
       <DialogContent>
         <DialogContentText>
-          With this result you've gained {formatXp(xpGained)} XP in{' '}
+          With this result you've gained {formatXp(mainXpGained)} XP in{' '}
           {discipline.name}.
-          {before.level !== after.level && (
-            <div>
-              Congratulations, you've advanced to Grade{' '}
-              {formatGrade(after.level)} in {discipline.name}!
-            </div>
-          )}
         </DialogContentText>
+        {mainGradeUp && (
+          <DialogContentText>
+            Congratulations, you've advanced to Grade{' '}
+            {formatGrade(mainGradeUp.newGrade)} in{' '}
+            {getDiscipline(mainGradeUp.disciplineId).name}!
+          </DialogContentText>
+        )}
         {before.level > 1 && (
           <>
             <Stepper
@@ -122,6 +136,25 @@ export function RaceResultFeedback(props: Props) {
             )}
           </>
         )}
+        <DialogContentText sx={{ mt: 3 }}>
+          {otherXpGains.length > 0 &&
+            `Your experience carries over somewhat into other racing disciplines: you also gained ${otherXpGains
+              .map(
+                g =>
+                  `${formatXp(g.amount)} XP in ${
+                    getDiscipline(g.disciplineId).name
+                  }`,
+              )
+              .join(', ')}`}
+          .
+        </DialogContentText>
+        {otherGradeUps.map((gradeUp, i) => (
+          <DialogContentText key={i}>
+            Congratulations, you've advanced to Grade{' '}
+            {formatGrade(gradeUp.newGrade)} in{' '}
+            {getDiscipline(gradeUp.disciplineId).name}!
+          </DialogContentText>
+        ))}
       </DialogContent>
       <DialogActions>
         <Button onClick={onClose}>Close</Button>
