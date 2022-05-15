@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { refinement } from 'ts-adt';
 
 import {
   Button,
@@ -22,7 +21,12 @@ import {
 } from 'app/data/car_classes';
 import { getDiscipline } from 'app/data/disciplines';
 import { getTrack } from 'app/data/tracks';
-import { EnrichedCareerData } from 'app/slices/CareerSlice/types';
+import {
+  AchievementUnlocked,
+  EnrichedCareerData,
+  GradeUp,
+  XpGain,
+} from 'app/slices/CareerSlice/types';
 import {
   formatGrade,
   formatXp,
@@ -51,21 +55,23 @@ export function RaceResultFeedback(props: Props) {
   const track = getTrack(race.trackId);
 
   const outcomes = career.outcomes[raceIndex];
-  const xpGains = outcomes.filter(refinement('XpGain'));
+  const xpGains = outcomes.filter(XpGain.is).map(x => x.value);
   const mainXpGained =
     xpGains.find(g => g.disciplineId === disciplineId)?.amount ?? 0;
   const otherXpGains = xpGains.filter(
     g => g.disciplineId !== disciplineId && formatXp(g.amount) > 0,
   );
 
-  const gradeUps = outcomes.filter(refinement('GradeUp'));
+  const gradeUps = outcomes.filter(GradeUp.is).map(x => x.value);
   const mainGradeUp = gradeUps.find(g => g.disciplineId === disciplineId);
   const otherGradeUps = gradeUps.filter(g => g.disciplineId !== disciplineId);
 
   const after = career.progress[disciplineId];
   const before = totalXpToProgress(discipline, after.totalXp - mainXpGained);
 
-  const achievements = outcomes.filter(refinement('AchievementUnlocked'));
+  const achievements = outcomes
+    .filter(AchievementUnlocked.is)
+    .map(x => x.value);
 
   // This shares a fair amount of code with DisciplineProgress, but duplicating
   // it seems less complex than adding a bunch of conditions in what's already a

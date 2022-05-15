@@ -1,12 +1,8 @@
 import * as React from 'react';
 
-import {
-  LinearProgress,
-  Step,
-  StepLabel,
-  Stepper,
-  Typography,
-} from '@mui/material';
+import { Step, StepLabel, Stepper, Typography } from '@mui/material';
+
+import { LinearProgressWithLabel } from './LinearProgressWithLabel';
 
 import { ChipArray } from 'app/components/ChipArray';
 import { getCarClassesAt, getCarClassesIn } from 'app/data/car_classes';
@@ -90,16 +86,15 @@ export function DisciplineProgress(props: Props) {
         ))}
       </Stepper>
       {progress.level > 1 && (
-        <>
-          <LinearProgress
-            variant="determinate"
-            value={(progress.xpInLevel / xpToNextLevel) * 100}
-            sx={{ mt: 2 }}
-          />
-          <Typography variant="body2">{`${formatXp(
-            progress.xpInLevel,
-          )} / ${formatXp(xpToNextLevel)} XP to next category`}</Typography>
-        </>
+        <LinearProgressWithLabel
+          max={xpToNextLevel}
+          current={progress.xpInLevel}
+          label={`${formatXp(progress.xpInLevel)} / ${formatXp(
+            xpToNextLevel,
+          )} XP to Grade ${formatGrade(
+            levels[levels.length - progress.level + 1],
+          )}`}
+        />
       )}
     </>
   );

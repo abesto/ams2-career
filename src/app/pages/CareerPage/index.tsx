@@ -2,7 +2,6 @@ import dayjs from 'dayjs';
 import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useDispatch, useSelector } from 'react-redux';
-import { matchP } from 'ts-adt';
 
 import {
   Box,
@@ -18,22 +17,32 @@ import {
   TableRow,
   Typography,
 } from '@mui/material';
+import {
+  matchExhaustive,
+  matchWildcard,
+  WILDCARD,
+} from '@practical-fp/union-types';
 
 import { DisciplineProgress } from '../../components/DisciplineProgress';
 import { useMainPageSlice } from '../MainPage/slice';
 import { ResetCareerDialog } from './components/ResetCareerDialog';
 
 import { AchievementIcon } from 'app/components/AchievementIcon';
+import { LinearProgressWithLabel } from 'app/components/LinearProgressWithLabel';
 import { getCarClass } from 'app/data/car_classes';
 import { getCar } from 'app/data/cars';
 import { getAllDisciplines, getDiscipline } from 'app/data/disciplines';
 import { getTrack } from 'app/data/tracks';
 import { useCareerSlice } from 'app/slices/CareerSlice';
-import { Achievement } from 'app/slices/CareerSlice/achievements';
+import { Achievement, isUnlocked } from 'app/slices/CareerSlice/achievements';
 import { selectCareer } from 'app/slices/CareerSlice/selectors';
 import { EnrichedCareerData } from 'app/slices/CareerSlice/types';
 import { useWelcomeSlice } from 'app/slices/WelcomeSlice';
 import { formatGrade } from 'app/xp';
+
+function formatTimestamp(ts: number): string {
+  return dayjs(ts).format('YYYY-MM-DD HH:mm');
+}
 
 interface Props {}
 
@@ -82,16 +91,24 @@ function Achievements(props: { achievements: Achievement[] }) {
           <Paper sx={{ backgroundColor: '#fafafa' }}>
             <AchievementIcon
               level={achievement.level}
-              unlocked={achievement.unlocked}
+              unlocked={isUnlocked(achievement)}
               fontSize="large"
             />
             <Typography
               variant="h6"
-              sx={{ color: achievement.unlocked ? 'black' : 'gray' }}
+              sx={{ color: isUnlocked(achievement) ? 'black' : 'gray' }}
             >
               {achievement.name}
             </Typography>
             <Typography variant="body2">{achievement.description}</Typography>
+            {matchExhaustive(achievement.progress, {
+              Unlocked: ({ timestamp }) => (
+                <em>Unlocked: {formatTimestamp(timestamp)}</em>
+              ),
+              Progress: ({ current, max }) => (
+                <LinearProgressWithLabel max={max} current={current} />
+              ),
+            })}
           </Paper>
         </Grid>
       ))}
@@ -136,12 +153,8 @@ function Logbook(props: { career: EnrichedCareerData }) {
             const outcomes = props.career.outcomes[index];
             return (
               <TableRow key={index} hover={true}>
-                <TableCell>
-                  {dayjs(result.racedAt).format('YYYY-MM-DD HH:mm')}
-                </TableCell>
-                <TableCell>
-                  {dayjs(result.simTime).format('YYYY-MM-DD HH:mm')}
-                </TableCell>
+                <TableCell>{formatTimestamp(result.racedAt)}</TableCell>
+                <TableCell>{formatTimestamp(result.simTime)}</TableCell>
                 <TableCell>{result.position}</TableCell>
                 <TableCell>{result.aiLevel}</TableCell>
                 <TableCell>{discipline.name}</TableCell>
@@ -151,21 +164,19 @@ function Logbook(props: { career: EnrichedCareerData }) {
                 <TableCell>{track.configuration}</TableCell>
                 <TableCell>
                   {outcomes
-                    .map(
-                      matchP(
-                        {
-                          GradeUp: o => (
-                            <Box>
-                              {o.disciplineId} leveled up to grade{' '}
-                              {formatGrade(o.newGrade)}
-                            </Box>
-                          ),
-                          AchievementUnlocked: achievement => (
-                            <AchievementUnlocked achievement={achievement} />
-                          ),
-                        },
-                        () => null,
-                      ),
+                    .map(o =>
+                      matchWildcard(o, {
+                        GradeUp: o => (
+                          <Box>
+                            {o.disciplineId} leveled up to grade{' '}
+                            {formatGrade(o.newGrade)}
+                          </Box>
+                        ),
+                        AchievementUnlocked: achievement => (
+                          <AchievementUnlocked achievement={achievement} />
+                        ),
+                        [WILDCARD]: () => null,
+                      }),
                     )
                     .filter(x => x !== null)
                     .map((x, i) => (

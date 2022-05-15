@@ -1598,6 +1598,11 @@
   resolved "https://registry.npmjs.org/@popperjs/core/-/core-2.11.5.tgz"
   integrity sha512-9X2obfABZuDVLCgPK9aX0a/x4jaOEweTTWE2+9sr0Qqqevj2Uv5XorvusThmc9XGYpS9yI+fhh8RTafBtGposw==
 
+"@practical-fp/union-types@1.5.1":
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/@practical-fp/union-types/-/union-types-1.5.1.tgz#10f9b2444a8d36b0668e44beab9b4fc11509e674"
+  integrity sha512-JAyEdF0KYoAZ3I0rWNTgYZxW+W9zytZc7d0OWKyywsM3G2kPInTO2OWPUTscys0N9mTbjIBGkSfo2opIBG7s1A==
+
 "@redux-beacon/google-analytics-gtag@1.1.0":
   version "1.1.0"
   resolved "https://registry.npmjs.org/@redux-beacon/google-analytics-gtag/-/google-analytics-gtag-1.1.0.tgz"
@@ -11067,11 +11072,6 @@ tryer@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/tryer/-/tryer-1.0.1.tgz"
   integrity sha512-c3zayb8/kWWpycWYg87P71E1S1ZL6b6IJxfb5fvsUgsf0S2MVGaDhDXXjDMpdCpfWXqptc+4mXwmiy1ypXqRAA==
-
-ts-adt@2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/ts-adt/-/ts-adt-2.1.2.tgz#7a8626c2d872c97e5b38437e979b814902614fb6"
-  integrity sha512-UD0lr7eyiBjxogQjb1xMCjF7skrnxGZLNm4iROeU3ky5tJzXN0yQkkS4DfNGfM4RaUGMhgyrzf2wUynqK8AdWQ==
 
 ts-node@10.7.0:
   version "10.7.0"

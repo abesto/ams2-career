@@ -1,6 +1,6 @@
-import { ADT, refinement } from 'ts-adt';
+import { impl, Variant } from '@practical-fp/union-types';
 
-import { RaceOutcome } from './types';
+import { GradeUp, RaceOutcome } from './types';
 
 import { getCarClass } from 'app/data/car_classes';
 import { checkDisciplineId, getAllDisciplines } from 'app/data/disciplines';
@@ -20,92 +20,78 @@ const Silver = AchievementLevel.Silver;
 const Gold = AchievementLevel.Gold;
 const Platinum = AchievementLevel.Platinum;
 
-type Result<S> = ADT<{
-  Next: { state: S };
-  Done: {};
-}>;
+export type AchievementProgress =
+  | Variant<'Progress', { current: number; max: number }>
+  | Variant<'Unlocked', { timestamp: number }>;
+const { Progress, Unlocked } = impl<AchievementProgress>();
 
-function next<S>(state: S): Result<S> {
-  return { _type: 'Next', state };
+interface Result<A> {
+  acc: A;
+  progress: number;
 }
 
-function done<S>(): Result<S> {
-  return { _type: 'Done' };
-}
+type Proc = (
+  result: RaceResult,
+  outcomes: RaceOutcome[],
+) => AchievementProgress;
 
-type Proc = (result: RaceResult, outcomes: RaceOutcome[]) => boolean;
-
-function proc<S>(
-  initial: S,
-  f: (s: S, r: RaceResult, o: RaceOutcome[]) => Result<S>,
+function proc<A>(
+  initialAcc: A,
+  progressMax: number,
+  f: (a: A, r: RaceResult, o: RaceOutcome[]) => Result<A>,
 ): Proc {
-  let state = initial;
+  let acc = initialAcc;
   return (r, o) => {
-    const result = f(state, r, o);
-    if (refinement('Next')(result)) {
-      state = result.state;
-      return false;
+    const result = f(acc, r, o);
+    if (result.progress >= progressMax) {
+      return Unlocked({ timestamp: r.racedAt });
+    } else {
+      acc = result.acc;
+      return Progress({ current: result.progress, max: progressMax });
     }
-    return true;
   };
 }
 
 function procUniqueTrackCount(n: number): Proc {
-  return proc(
-    new Set<TrackId>(),
-    (tracks: Set<TrackId>, result: RaceResult) => {
-      tracks.add(result.trackId);
-      if (tracks.size >= n) {
-        return done();
-      }
-      return next(tracks);
-    },
-  );
+  return proc(new Set<TrackId>(), n, (tracks, result) => {
+    tracks.add(result.trackId);
+    return { acc: tracks, progress: tracks.size };
+  });
 }
 
 function procUniqueCarClasses(n: number): Proc {
-  return proc(
-    new Set<CarClassId>(),
-    (carClasses: Set<CarClassId>, result: RaceResult) => {
-      carClasses.add(result.carClassId);
-      if (carClasses.size >= n) {
-        return done();
-      }
-      return next(carClasses);
-    },
-  );
+  return proc(new Set<CarClassId>(), n, (carClasses, result) => {
+    carClasses.add(result.carClassId);
+    return { acc: carClasses, progress: carClasses.size };
+  });
 }
 
 function procNDisciplinesToGrade(n: number, grade: number): Proc {
   return proc(
     new Set<DisciplineId>(),
-    (disciplines: Set<DisciplineId>, _, outcomes: RaceOutcome[]) => {
-      for (const outcome of outcomes) {
-        if (refinement('GradeUp')(outcome)) {
-          if (outcome.newGrade === grade) {
-            disciplines.add(outcome.disciplineId);
-          }
-        }
-      }
-      if (disciplines.size >= n) {
-        return done();
-      }
-      return next(disciplines);
+    n,
+    (disciplines, _raceResult, outcomes) => {
+      outcomes
+        .filter(GradeUp.is)
+        .forEach(outcome => disciplines.add(outcome.value.disciplineId));
+      return { acc: disciplines, progress: disciplines.size };
     },
   );
 }
 
 function procGradeA(disciplineIdStr: string): Proc {
+  // Maaaybe progress here should be how many grades there are until reaching A, but maybe that's confusing.
+  // For now, this is one where progress will be zero until it's unlocked.
   const disciplineId = checkDisciplineId(disciplineIdStr);
-  return proc(null, (_s, _r, outcomes) => {
-    for (const outcome of outcomes) {
-      if (refinement('GradeUp')(outcome)) {
-        if (outcome.newGrade === 1 && outcome.disciplineId === disciplineId) {
-          return done();
-        }
-      }
-    }
-    return next(null);
+  return proc(null, 0, (_s, _r, outcomes) => {
+    return {
+      acc: null,
+      progress: outcomes
+        .filter(GradeUp.is)
+        .some(o => o.value.disciplineId === disciplineId)
+        ? 1
+        : 0,
+    };
   });
 }
 
@@ -122,7 +108,11 @@ interface SpecItem extends AchievementBase {
 }
 
 export interface Achievement extends AchievementBase {
-  unlocked: boolean;
+  progress: AchievementProgress;
+}
+
+export function isUnlocked(achievement: Achievement): boolean {
+  return Unlocked.is(achievement.progress);
 }
 
 function makeSpec(): SpecItem[] {
@@ -157,38 +147,37 @@ function makeSpec(): SpecItem[] {
       name: 'Moving Up',
       level: Bronze,
       description: 'Level up all disciplines at least one grade',
-      proc: proc(new Set<DisciplineId>(), (disciplines, result) => {
-        disciplines.add(getCarClass(result.carClassId).disciplineId);
-        if (disciplines.size === getAllDisciplines().length) {
-          return done();
-        }
-        return next(disciplines);
-      }),
+      proc: proc(
+        new Set<DisciplineId>(),
+        getAllDisciplines().length,
+        (disciplines, result) => {
+          disciplines.add(getCarClass(result.carClassId).disciplineId);
+          return { acc: disciplines, progress: disciplines.size };
+        },
+      ),
     },
     {
       name: "Whitman's Sampler",
       level: Bronze,
       description: 'Complete one race in all disciplines',
-      proc: proc(new Set<DisciplineId>(), (disciplines, result) => {
-        disciplines.add(getCarClass(result.carClassId).disciplineId);
-        if (disciplines.size === getAllDisciplines().length) {
-          return done();
-        }
-        return next(disciplines);
-      }),
+      proc: proc(
+        new Set<DisciplineId>(),
+        getAllDisciplines().length,
+        (disciplines, result) => {
+          disciplines.add(getCarClass(result.carClassId).disciplineId);
+          return { acc: disciplines, progress: disciplines.size };
+        },
+      ),
     },
     {
       name: 'Robby Gordon!',
       level: Gold,
       description: 'Win a race in 3 disciplines',
-      proc: proc(new Set<DisciplineId>(), (disciplines, result) => {
+      proc: proc(new Set<DisciplineId>(), 3, (disciplines, result) => {
         if (result.position === 1) {
           disciplines.add(getCarClass(result.carClassId).disciplineId);
         }
-        if (disciplines.size >= 3) {
-          return done();
-        }
-        return next(disciplines);
+        return { acc: disciplines, progress: disciplines.size };
       }),
     },
     {
@@ -269,36 +258,42 @@ function makeSpec(): SpecItem[] {
 }
 
 export const prepareAchievements = () => {
-  const achievements: (Achievement & SpecItem)[] = [];
+  const specs: SpecItem[] = makeSpec();
+  const progresses: Map<AchievementId, AchievementProgress> = new Map();
 
-  function toAchievement(x: Achievement & SpecItem): Achievement {
-    const { name, level, description, unlocked } = x;
-    return { name, level, description, unlocked };
+  function toAchievement(specItem: SpecItem): Achievement {
+    const progress = progresses.get(specItem.name)!;
+    return {
+      name: specItem.name,
+      level: specItem.level,
+      description: specItem.description,
+      progress,
+    };
   }
 
-  for (const item of makeSpec()) {
-    achievements.push({
-      name: item.name,
-      level: item.level,
-      description: item.description,
-      unlocked: false,
-      proc: item.proc,
-    });
-  }
-
-  function process(result: RaceResult, outcomes: RaceOutcome[]): Achievement[] {
+  function process(
+    raceResult: RaceResult,
+    outcomes: RaceOutcome[],
+  ): Achievement[] {
     const ret: Achievement[] = [];
-    for (const achievement of achievements) {
-      if (!achievement.unlocked && achievement.proc(result, outcomes)) {
-        achievement.unlocked = true;
-        ret.push(toAchievement(achievement));
+
+    for (const spec of specs) {
+      const oldProgress = progresses.get(spec.name);
+      if (oldProgress !== undefined && Unlocked.is(oldProgress)) {
+        continue;
+      }
+
+      const newProgress = spec.proc(raceResult, outcomes);
+      progresses.set(spec.name, newProgress);
+      if (Unlocked.is(newProgress)) {
+        ret.push(toAchievement(spec));
       }
     }
     return ret;
   }
 
   function finalize(): Achievement[] {
-    return achievements.map(toAchievement);
+    return specs.map(toAchievement);
   }
 
   return { process, finalize };

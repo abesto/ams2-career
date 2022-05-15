@@ -1,4 +1,4 @@
-import { ADT } from 'ts-adt';
+import { impl, Variant } from '@practical-fp/union-types';
 
 import { Achievement, prepareAchievements } from './achievements';
 
@@ -19,11 +19,11 @@ export interface CareerState {
 
 export type Progress = { [key: string]: DisciplineProgress };
 
-export type RaceOutcome = ADT<{
-  XpGain: { disciplineId: DisciplineId; amount: number };
-  GradeUp: { disciplineId: DisciplineId; newGrade: number };
-  AchievementUnlocked: Achievement;
-}>;
+export type RaceOutcome =
+  | Variant<'XpGain', { disciplineId: DisciplineId; amount: number }>
+  | Variant<'GradeUp', { disciplineId: DisciplineId; newGrade: number }>
+  | Variant<'AchievementUnlocked', Achievement>;
+export const { XpGain, GradeUp, AchievementUnlocked } = impl<RaceOutcome>();
 
 export interface EnrichedCareerData extends CareerState {
   progress: Progress;
@@ -65,25 +65,27 @@ export function enrich(state: CareerState): EnrichedCareerData {
       const xpAfter = xpBefore + gainedXp;
       const progressAfter = totalXpToProgress(targetDiscipline, xpAfter);
       xp.set(targetDisciplineId, xpAfter);
-      outcomes.push({
-        _type: 'XpGain',
-        disciplineId: targetDisciplineId,
-        amount: gainedXp,
-      });
+      outcomes.push(
+        XpGain({
+          disciplineId: targetDisciplineId,
+          amount: gainedXp,
+        }),
+      );
       data.progress[targetDisciplineId] = progressAfter;
 
       if (progressAfter.level < progressBefore.level) {
-        outcomes.push({
-          _type: 'GradeUp',
-          disciplineId: targetDisciplineId,
-          newGrade: progressAfter.level,
-        });
+        outcomes.push(
+          GradeUp({
+            disciplineId: targetDisciplineId,
+            newGrade: progressAfter.level,
+          }),
+        );
       }
     }
 
     const unlockedAchievements = achievements.process(raceResult, outcomes);
     for (const achievement of unlockedAchievements) {
-      outcomes.push({ _type: 'AchievementUnlocked', ...achievement });
+      outcomes.push(AchievementUnlocked(achievement));
     }
 
     data.outcomes.push(outcomes);
