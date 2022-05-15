@@ -30,10 +30,10 @@ interface Result<A> {
   progress: number;
 }
 
-type Proc = (
-  result: RaceResult,
-  outcomes: RaceOutcome[],
-) => AchievementProgress;
+interface Proc {
+  process: (result: RaceResult, outcomes: RaceOutcome[]) => AchievementProgress;
+  readonly progressMax: number;
+}
 
 function proc<A>(
   initialAcc: A,
@@ -41,14 +41,17 @@ function proc<A>(
   f: (a: A, r: RaceResult, o: RaceOutcome[]) => Result<A>,
 ): Proc {
   let acc = initialAcc;
-  return (r, o) => {
-    const result = f(acc, r, o);
-    if (result.progress >= progressMax) {
-      return Unlocked({ timestamp: r.racedAt });
-    } else {
-      acc = result.acc;
-      return Progress({ current: result.progress, max: progressMax });
-    }
+  return {
+    progressMax,
+    process: (r, o) => {
+      const result = f(acc, r, o);
+      if (result.progress >= progressMax) {
+        return Unlocked({ timestamp: r.racedAt });
+      } else {
+        acc = result.acc;
+        return Progress({ current: result.progress, max: progressMax });
+      }
+    },
   };
 }
 
@@ -73,6 +76,7 @@ function procNDisciplinesToGrade(n: number, grade: number): Proc {
     (disciplines, _raceResult, outcomes) => {
       outcomes
         .filter(GradeUp.is)
+        .filter(o => o.value.newGrade === grade)
         .forEach(outcome => disciplines.add(outcome.value.disciplineId));
       return { acc: disciplines, progress: disciplines.size };
     },
@@ -83,12 +87,14 @@ function procGradeA(disciplineIdStr: string): Proc {
   // Maaaybe progress here should be how many grades there are until reaching A, but maybe that's confusing.
   // For now, this is one where progress will be zero until it's unlocked.
   const disciplineId = checkDisciplineId(disciplineIdStr);
-  return proc(null, 0, (_s, _r, outcomes) => {
+  return proc(null, 1, (_s, _r, outcomes) => {
     return {
       acc: null,
       progress: outcomes
         .filter(GradeUp.is)
-        .some(o => o.value.disciplineId === disciplineId)
+        .some(
+          o => o.value.disciplineId === disciplineId && o.value.newGrade === 1,
+        )
         ? 1
         : 0,
     };
@@ -150,8 +156,10 @@ function makeSpec(): SpecItem[] {
       proc: proc(
         new Set<DisciplineId>(),
         getAllDisciplines().length,
-        (disciplines, result) => {
-          disciplines.add(getCarClass(result.carClassId).disciplineId);
+        (disciplines, _result, outcomes) => {
+          outcomes.filter(GradeUp.is).forEach(outcome => {
+            disciplines.add(outcome.value.disciplineId);
+          });
           return { acc: disciplines, progress: disciplines.size };
         },
       ),
@@ -261,6 +269,13 @@ export const prepareAchievements = () => {
   const specs: SpecItem[] = makeSpec();
   const progresses: Map<AchievementId, AchievementProgress> = new Map();
 
+  for (const spec of specs) {
+    progresses.set(
+      spec.name,
+      Progress({ current: 0, max: spec.proc.progressMax }),
+    );
+  }
+
   function toAchievement(specItem: SpecItem): Achievement {
     const progress = progresses.get(specItem.name)!;
     return {
@@ -283,7 +298,7 @@ export const prepareAchievements = () => {
         continue;
       }
 
-      const newProgress = spec.proc(raceResult, outcomes);
+      const newProgress = spec.proc.process(raceResult, outcomes);
       progresses.set(spec.name, newProgress);
       if (Unlocked.is(newProgress)) {
         ret.push(toAchievement(spec));

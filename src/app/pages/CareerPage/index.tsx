@@ -127,6 +127,12 @@ function AchievementUnlocked(props: { achievement: Achievement }) {
 }
 
 function Logbook(props: { career: EnrichedCareerData }) {
+  const entries = props.career.raceResults
+    .map((result, index) => ({
+      result,
+      outcomes: props.career.outcomes[index],
+    }))
+    .reverse();
   return (
     <TableContainer>
       <Table size="small">
@@ -145,12 +151,11 @@ function Logbook(props: { career: EnrichedCareerData }) {
           </TableRow>
         </TableHead>
         <TableBody>
-          {props.career.raceResults.map((result, index) => {
+          {entries.map(({ result, outcomes }, index) => {
             const track = getTrack(result.trackId);
             const car = getCar(result.carId);
             const carClass = getCarClass(car.carClassId);
             const discipline = getDiscipline(carClass.disciplineId);
-            const outcomes = props.career.outcomes[index];
             return (
               <TableRow key={index} hover={true}>
                 <TableCell>{formatTimestamp(result.racedAt)}</TableCell>
