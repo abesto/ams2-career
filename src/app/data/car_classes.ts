@@ -7,7 +7,7 @@ import {
   DisciplineId,
   getDisciplineId,
 } from '../../types/Discipline';
-import { getDiscipline } from './disciplines';
+import { checkDisciplineId, getDiscipline } from './disciplines';
 
 import { Car } from 'types/Car';
 
@@ -30,7 +30,7 @@ const CAR_CLASSES: { [key: CarClassId]: CarClass } = Object.fromEntries(
     .map((record: Record) => {
       const carClass = {
         name: record.class as string,
-        disciplineId: getDisciplineId(getDiscipline(record.discipline)),
+        disciplineId: checkDisciplineId(record.discipline),
         grade: record.grade,
         headlights: record.headlights > 0,
         raceLength: record.race_length,

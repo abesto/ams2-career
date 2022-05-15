@@ -3,7 +3,7 @@ import { ADT, refinement } from 'ts-adt';
 import { RaceOutcome } from './types';
 
 import { getCarClass } from 'app/data/car_classes';
-import { getAllDisciplines } from 'app/data/disciplines';
+import { checkDisciplineId, getAllDisciplines } from 'app/data/disciplines';
 import { CarClassId } from 'types/CarClass';
 import { DisciplineId } from 'types/Discipline';
 import { RaceResult } from 'types/Race';
@@ -95,7 +95,8 @@ function procNDisciplinesToGrade(n: number, grade: number): Proc {
   );
 }
 
-function procGradeA(disciplineId: DisciplineId): Proc {
+function procGradeA(disciplineIdStr: string): Proc {
+  const disciplineId = checkDisciplineId(disciplineIdStr);
   return proc(null, (_s, _r, outcomes) => {
     for (const outcome of outcomes) {
       if (refinement('GradeUp')(outcome)) {
@@ -238,31 +239,31 @@ function makeSpec(): SpecItem[] {
       name: 'Grand Prix Driver',
       level: Gold,
       description: 'Level up Open Wheel to Grade A',
-      proc: procGradeA('Open Wheel' as DisciplineId),
+      proc: procGradeA('Open Wheel'),
     },
     {
       name: 'Welcome to La Sarthe',
       level: Gold,
       description: 'Level up Endurance to Grade A',
-      proc: procGradeA('Endurance' as DisciplineId),
+      proc: procGradeA('Endurance'),
     },
     {
       name: 'More Power than Brains',
       level: Silver,
       description: 'Level up GT to Grade A',
-      proc: procGradeA('GT' as DisciplineId),
+      proc: procGradeA('GT'),
     },
     {
       name: 'Tin Top Titan',
       level: Silver,
       description: 'Level up Touring to Grade A',
-      proc: procGradeA('Touring' as DisciplineId),
+      proc: procGradeA('Touring'),
     },
     {
       name: 'Modern Classic',
       level: Silver,
       description: 'Level up Vintage to Grade A',
-      proc: procGradeA('Vintage' as DisciplineId),
+      proc: procGradeA('Vintage'),
     },
   ];
 }

@@ -21,13 +21,17 @@ const DISCIPLINES: Discipline[] = data
   .map(name => ({ name }));
 
 export function getDiscipline(name: DisciplineId): Discipline {
-  const discipline = DISCIPLINES.find(d => d.name === name);
-  if (!discipline) {
-    throw new Error(`Unknown discipline: ${name}`);
-  }
-  return discipline;
+  return DISCIPLINES.find(d => d.name === checkDisciplineId(name))!;
 }
 
 export function getAllDisciplines(): Discipline[] {
   return Object.values(DISCIPLINES);
+}
+
+export function checkDisciplineId(id: string | DisciplineId): DisciplineId {
+  const discipline = DISCIPLINES.find(d => d.name === id);
+  if (!discipline) {
+    throw new Error(`Unknown discipline: ${id}`);
+  }
+  return id as DisciplineId;
 }
