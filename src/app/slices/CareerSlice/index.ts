@@ -30,6 +30,8 @@ const slice = createSlice({
       state.raceResults = [];
       backup('reset');
     },
+    // Used only for analytics
+    achievementUnlocked(state, action: PayloadAction<string>) {},
   },
 });
 

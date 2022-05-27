@@ -21,6 +21,7 @@ const MIGRATIONS = [
       version: 0,
     };
   },
+
   // Add AI Adjustments
   (state: RootState) => {
     state.mainPage!.aiAdjustment = {
@@ -29,6 +30,28 @@ const MIGRATIONS = [
       carClass: {},
       car: {},
     };
+  },
+
+  // https://github.com/abesto/ams2-career/issues/46
+  (state: RootState) => {
+    // Rewrite in race results
+    state.career?.raceResults.forEach(result => {
+      if (result.trackId.startsWith('Jacarepagua-Kart')) {
+        (result as any).trackId = result.trackId.replace(
+          'Jacarepagua-Kart',
+          'Interlagos-Kart',
+        );
+      }
+    });
+    // Rewrite in currently generated races
+    state.mainPage?.raceOptions.forEach(option => {
+      if (option.trackId.startsWith('Jacarepagua-Kart')) {
+        (option as any).trackId = option.trackId.replace(
+          'Jacarepagua-Kart',
+          'Interlagos-Kart',
+        );
+      }
+    });
   },
 ];
 
