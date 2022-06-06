@@ -37,6 +37,7 @@ import {
 } from '@mui/material';
 
 import { usePageViews } from '../utils/analytics';
+import { Changelog } from './components/Changelog';
 import { Consistency } from './components/Consistency';
 import { Export } from './components/Export';
 import { ExportReminder } from './components/ExportReminder';
@@ -109,6 +110,7 @@ function InnerApp() {
         forceShow={forceWelcome}
         onClose={() => setForceWelcome(false)}
       />
+      <Changelog />
 
       <Container maxWidth={false}>
         <AppBar position="static">

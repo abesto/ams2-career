@@ -1,6 +1,7 @@
 import { ExportReminderState } from 'app/components/ExportReminder/slice/types';
 import { MainPageState } from 'app/pages/MainPage/slice/types';
 import { CareerState } from 'app/slices/CareerSlice/types';
+import { ChangelogState } from 'app/slices/ChangelogSlice/types';
 import { ConnectivityState } from 'app/slices/ConnectivitySlice/types';
 import { SaveMetaState } from 'app/slices/SaveMetaSlice/types';
 import { WelcomeState } from 'app/slices/WelcomeSlice/types';
@@ -18,5 +19,6 @@ export interface RootState {
   saveMeta?: SaveMetaState;
   welcome?: WelcomeState;
   connectivity?: ConnectivityState;
+  changelog?: ChangelogState;
   // [INSERT NEW REDUCER KEY ABOVE] < Needed for generating containers seamlessly
 }
