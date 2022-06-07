@@ -106,7 +106,13 @@ function Achievements(props: { achievements: Achievement[] }) {
                 <em>Unlocked: {formatTimestamp(timestamp)}</em>
               ),
               Progress: ({ current, max }) => (
-                <LinearProgressWithLabel max={max} current={current} />
+                <LinearProgressWithLabel
+                  max={max}
+                  current={current}
+                  label={`${achievement.formatNumber?.(current) || current} / ${
+                    achievement.formatNumber?.(max) || max
+                  }`}
+                />
               ),
             })}
           </Paper>
@@ -173,8 +179,8 @@ function Logbook(props: { career: EnrichedCareerData }) {
                       matchWildcard(o, {
                         GradeUp: o => (
                           <Box>
-                            {o.disciplineId} leveled up to grade{' '}
-                            {formatGrade(o.newGrade)}
+                            {o.disciplineId} leveled up to{' '}
+                            {formatGrade(o.newGrade, true)}
                           </Box>
                         ),
                         AchievementUnlocked: achievement => (

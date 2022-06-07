@@ -75,7 +75,7 @@ export function totalXpToProgress(
   let xpInLevel = totalXp;
   const disciplineId = getDisciplineId(discipline);
   while (
-    level > 1 &&
+    level > 0 &&
     xpInLevel >= xpData.xpNeededForLevelUpTo(disciplineId, level - 1)
   ) {
     level -= 1;
@@ -95,6 +95,9 @@ export function formatXp(n: number): number {
   return Math.round(n * 100);
 }
 
-export function formatGrade(grade: number): string {
-  return ' ABCDEFGHIJKL'[grade];
+export function formatGrade(grade: number, prefix: boolean): string {
+  if (grade === 0) {
+    return 'Mastery';
+  }
+  return (prefix ? 'Grade ' : '') + ' ABCDEFGHIJKL'[grade];
 }

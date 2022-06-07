@@ -84,9 +84,22 @@ export function RaceResultFeedback(props: Props) {
   levels.reverse();
 
   const xpToNextLevel =
-    after.level === 1
+    after.level === 0
       ? 0
       : xpNeededForLevelUpTo(carClass.disciplineId, after.level - 1);
+
+  const gradeUpMessage = () => {
+    if (!mainGradeUp) {
+      return null;
+    }
+    if (mainGradeUp.newGrade === -1) {
+      return `Congratulations, you've mastered ${discipline.name}!`;
+    }
+    return `Congratulations, you've advanced to ${formatGrade(
+      mainGradeUp.newGrade,
+      true,
+    )} in ${discipline.name}!`;
+  };
 
   return (
     <Dialog open={open} onClose={onClose} fullWidth maxWidth="xl">
@@ -105,11 +118,7 @@ export function RaceResultFeedback(props: Props) {
           {discipline.name}.
         </DialogContentText>
         {mainGradeUp && (
-          <DialogContentText>
-            Congratulations, you've advanced to Grade{' '}
-            {formatGrade(mainGradeUp.newGrade)} in{' '}
-            {getDiscipline(mainGradeUp.disciplineId).name}!
-          </DialogContentText>
+          <DialogContentText>${gradeUpMessage()}</DialogContentText>
         )}
         {before.level > 1 && (
           <>
@@ -123,7 +132,7 @@ export function RaceResultFeedback(props: Props) {
                   key={level}
                   active={level === before.level || level === after.level}
                 >
-                  <StepLabel icon={formatGrade(level)}>
+                  <StepLabel icon={formatGrade(level, false)}>
                     {getCarClassesAt(discipline, level).map(carClass => (
                       <div key={carClass.name}>{carClass.name}</div>
                     ))}
@@ -165,8 +174,8 @@ export function RaceResultFeedback(props: Props) {
         </DialogContentText>
         {otherGradeUps.map((gradeUp, i) => (
           <DialogContentText key={i}>
-            Congratulations, you've advanced to Grade{' '}
-            {formatGrade(gradeUp.newGrade)} in{' '}
+            Congratulations, you've advanced to{' '}
+            {formatGrade(gradeUp.newGrade, true)} in{' '}
             {getDiscipline(gradeUp.disciplineId).name}!
           </DialogContentText>
         ))}

@@ -4,8 +4,9 @@ import { GradeUp, RaceOutcome } from './types';
 
 import { getCarClass } from 'app/data/car_classes';
 import { checkDisciplineId, getAllDisciplines } from 'app/data/disciplines';
+import { formatXp, lowestGrade, xpGain, xpNeededForLevelUpTo } from 'app/xp';
 import { CarClassId } from 'types/CarClass';
-import { DisciplineId } from 'types/Discipline';
+import { DisciplineId, getDisciplineId } from 'types/Discipline';
 import { RaceResult } from 'types/Race';
 import { TrackId } from 'types/Track';
 
@@ -107,6 +108,7 @@ interface AchievementBase {
   name: AchievementId;
   level: AchievementLevel;
   description: string;
+  formatNumber?: (n: number) => string;
 }
 
 interface SpecItem extends AchievementBase {
@@ -122,7 +124,7 @@ export function isUnlocked(achievement: Achievement): boolean {
 }
 
 function makeSpec(): SpecItem[] {
-  return [
+  const spec: SpecItem[] = [
     // Track count
     {
       name: 'Frequent Flyer',
@@ -263,6 +265,27 @@ function makeSpec(): SpecItem[] {
       proc: procGradeA('Vintage'),
     },
   ];
+
+  // Master each discipline
+  for (const discipline of getAllDisciplines()) {
+    const disciplineId = getDisciplineId(discipline);
+    let maxXp = 0;
+    for (let grade = lowestGrade(discipline) - 1; grade >= 0; grade--) {
+      maxXp += xpNeededForLevelUpTo(disciplineId, grade);
+    }
+    spec.push({
+      name: `Hall of Fame: ${discipline.name}`,
+      level: Platinum,
+      description: `Achieve maximum XP in ${discipline.name}`,
+      formatNumber: n => formatXp(n).toString(),
+      proc: proc(0, maxXp, (xp, result) => {
+        const newXp = xp + xpGain(disciplineId, result);
+        return { acc: newXp, progress: newXp };
+      }),
+    });
+  }
+
+  return spec;
 }
 
 export const prepareAchievements = () => {
@@ -282,6 +305,7 @@ export const prepareAchievements = () => {
       name: specItem.name,
       level: specItem.level,
       description: specItem.description,
+      formatNumber: specItem.formatNumber,
       progress,
     };
   }

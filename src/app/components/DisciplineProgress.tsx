@@ -8,12 +8,7 @@ import { ChipArray } from 'app/components/ChipArray';
 import { getCarClassesAt, getCarClassesIn } from 'app/data/car_classes';
 import { pluralWithNumber } from 'app/plural';
 import { aiLevel, EnrichedCareerData } from 'app/slices/CareerSlice/types';
-import {
-  formatGrade,
-  formatXp,
-  lowestGrade,
-  xpNeededForLevelUpTo,
-} from 'app/xp';
+import { formatGrade, formatXp, xpNeededForLevelUpTo } from 'app/xp';
 import {
   Discipline,
   disciplineEquals,
@@ -33,12 +28,8 @@ export function DisciplineProgress(props: Props) {
     disciplineEquals(getDisciplineOfRace(r), discipline),
   );
 
-  if (lowestGrade(discipline) === 0) {
-    return null;
-  }
-
   const xpToNextLevel =
-    progress.level === 1
+    progress.level === 0
       ? 0
       : xpNeededForLevelUpTo(getDisciplineId(discipline), progress.level - 1);
 
@@ -77,7 +68,7 @@ export function DisciplineProgress(props: Props) {
       >
         {levels.map(level => (
           <Step key={level}>
-            <StepLabel icon={formatGrade(level)}>
+            <StepLabel icon={formatGrade(level, false)}>
               {getCarClassesAt(discipline, level).map(carClass => (
                 <div key={carClass.name}>{carClass.name}</div>
               ))}
@@ -85,14 +76,15 @@ export function DisciplineProgress(props: Props) {
           </Step>
         ))}
       </Stepper>
-      {progress.level > 1 && (
+      {progress.level > 0 && (
         <LinearProgressWithLabel
           max={xpToNextLevel}
           current={progress.xpInLevel}
           label={`${formatXp(progress.xpInLevel)} / ${formatXp(
             xpToNextLevel,
-          )} XP to Grade ${formatGrade(
-            levels[levels.length - progress.level + 1],
+          )} XP to ${formatGrade(
+            levels[levels.length - progress.level + 1] || 0,
+            true,
           )}`}
         />
       )}
