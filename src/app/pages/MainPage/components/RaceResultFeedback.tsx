@@ -33,6 +33,7 @@ import {
   totalXpToProgress,
   xpNeededForLevelUpTo,
 } from 'app/xp';
+import { DisciplineId } from 'types/Discipline';
 
 interface Props {
   career: EnrichedCareerData;
@@ -88,17 +89,25 @@ export function RaceResultFeedback(props: Props) {
       ? 0
       : xpNeededForLevelUpTo(carClass.disciplineId, after.level - 1);
 
-  const gradeUpMessage = () => {
-    if (!mainGradeUp) {
+  const gradeUpMessage = (
+    gradeUp:
+      | {
+          disciplineId: DisciplineId;
+          newGrade: number;
+        }
+      | undefined,
+  ) => {
+    if (!gradeUp) {
       return null;
     }
-    if (mainGradeUp.newGrade === -1) {
-      return `Congratulations, you've mastered ${discipline.name}!`;
+    const name = getDiscipline(gradeUp.disciplineId).name;
+    if (gradeUp.newGrade === 0) {
+      return `Congratulations, you've mastered ${name}!`;
     }
     return `Congratulations, you've advanced to ${formatGrade(
-      mainGradeUp.newGrade,
+      gradeUp.newGrade,
       true,
-    )} in ${discipline.name}!`;
+    )} in ${name}!`;
   };
 
   return (
@@ -118,9 +127,9 @@ export function RaceResultFeedback(props: Props) {
           {discipline.name}.
         </DialogContentText>
         {mainGradeUp && (
-          <DialogContentText>{gradeUpMessage()}</DialogContentText>
+          <DialogContentText>{gradeUpMessage(mainGradeUp)}</DialogContentText>
         )}
-        {before.level > 1 && (
+        {before.level > 0 && (
           <>
             <Stepper
               sx={{ m: 1 }}
@@ -174,9 +183,7 @@ export function RaceResultFeedback(props: Props) {
         </DialogContentText>
         {otherGradeUps.map((gradeUp, i) => (
           <DialogContentText key={i}>
-            Congratulations, you've advanced to{' '}
-            {formatGrade(gradeUp.newGrade, true)} in{' '}
-            {getDiscipline(gradeUp.disciplineId).name}!
+            {gradeUpMessage(gradeUp)}
           </DialogContentText>
         ))}
       </DialogContent>
