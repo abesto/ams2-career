@@ -40,7 +40,7 @@ export function ResetCareerDialog(props: DialogProps & Props) {
       <DialogTitle>Reset Career</DialogTitle>
       <DialogContent>
         <DialogContentText>
-          This will reset your career.
+          This will reset your career.{' '}
           {racesSinceLastExport > 0 ? (
             <strong>
               {pluralWithNumber(racesSinceLastExport, 'race')} recorded since

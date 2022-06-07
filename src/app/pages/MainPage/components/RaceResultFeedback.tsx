@@ -118,7 +118,7 @@ export function RaceResultFeedback(props: Props) {
           {discipline.name}.
         </DialogContentText>
         {mainGradeUp && (
-          <DialogContentText>${gradeUpMessage()}</DialogContentText>
+          <DialogContentText>{gradeUpMessage()}</DialogContentText>
         )}
         {before.level > 1 && (
           <>
