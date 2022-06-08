@@ -43,7 +43,7 @@ for (const row of Papa.parse(raw('./xp_grade_breakpoints.csv'), {
   header: true,
 }).data) {
   const map: Map<number, number> = new Map();
-  for (let i = 1; i in row; i++) {
+  for (let i = 0; i in row; i++) {
     map.set(i, parseFloat(row[i]));
   }
   LEVEL_UP.set(row.discipline as DisciplineId, map);

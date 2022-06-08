@@ -33,6 +33,7 @@ import {
   totalXpToProgress,
   xpNeededForLevelUpTo,
 } from 'app/xp';
+import { DisciplineId } from 'types/Discipline';
 
 interface Props {
   career: EnrichedCareerData;
@@ -84,9 +85,30 @@ export function RaceResultFeedback(props: Props) {
   levels.reverse();
 
   const xpToNextLevel =
-    after.level === 1
+    after.level === 0
       ? 0
       : xpNeededForLevelUpTo(carClass.disciplineId, after.level - 1);
+
+  const gradeUpMessage = (
+    gradeUp:
+      | {
+          disciplineId: DisciplineId;
+          newGrade: number;
+        }
+      | undefined,
+  ) => {
+    if (!gradeUp) {
+      return null;
+    }
+    const name = getDiscipline(gradeUp.disciplineId).name;
+    if (gradeUp.newGrade === 0) {
+      return `Congratulations, you've mastered ${name}!`;
+    }
+    return `Congratulations, you've advanced to ${formatGrade(
+      gradeUp.newGrade,
+      true,
+    )} in ${name}!`;
+  };
 
   return (
     <Dialog open={open} onClose={onClose} fullWidth maxWidth="xl">
@@ -105,13 +127,9 @@ export function RaceResultFeedback(props: Props) {
           {discipline.name}.
         </DialogContentText>
         {mainGradeUp && (
-          <DialogContentText>
-            Congratulations, you've advanced to Grade{' '}
-            {formatGrade(mainGradeUp.newGrade)} in{' '}
-            {getDiscipline(mainGradeUp.disciplineId).name}!
-          </DialogContentText>
+          <DialogContentText>{gradeUpMessage(mainGradeUp)}</DialogContentText>
         )}
-        {before.level > 1 && (
+        {before.level > 0 && (
           <>
             <Stepper
               sx={{ m: 1 }}
@@ -123,7 +141,7 @@ export function RaceResultFeedback(props: Props) {
                   key={level}
                   active={level === before.level || level === after.level}
                 >
-                  <StepLabel icon={formatGrade(level)}>
+                  <StepLabel icon={formatGrade(level, false)}>
                     {getCarClassesAt(discipline, level).map(carClass => (
                       <div key={carClass.name}>{carClass.name}</div>
                     ))}
@@ -165,9 +183,7 @@ export function RaceResultFeedback(props: Props) {
         </DialogContentText>
         {otherGradeUps.map((gradeUp, i) => (
           <DialogContentText key={i}>
-            Congratulations, you've advanced to Grade{' '}
-            {formatGrade(gradeUp.newGrade)} in{' '}
-            {getDiscipline(gradeUp.disciplineId).name}!
+            {gradeUpMessage(gradeUp)}
           </DialogContentText>
         ))}
       </DialogContent>

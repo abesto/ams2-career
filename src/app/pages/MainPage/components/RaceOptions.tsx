@@ -49,7 +49,7 @@ export function RaceOptions(props: Props) {
                 sx={{ cursor: 'pointer' }}
               >
                 <TableCell>{discipline.name}</TableCell>
-                <TableCell>{formatGrade(carClass.grade)}</TableCell>
+                <TableCell>{formatGrade(carClass.grade, true)}</TableCell>
                 <TableCell>{carClass.name}</TableCell>
                 <TableCell>{track.name}</TableCell>
                 <TableCell>{track.configuration}</TableCell>

@@ -16,7 +16,7 @@ function highestUnlockedClasses(
   discipline: Discipline,
   level: number,
 ): CarClass[] {
-  for (let thisLevel = level; thisLevel >= 0; thisLevel--) {
+  for (let thisLevel = Math.max(1, level); thisLevel >= 0; thisLevel--) {
     const candidates = getCarClassesAt(discipline, thisLevel);
     if (candidates.length) {
       return candidates;
