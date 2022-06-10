@@ -6,11 +6,12 @@ import { PayloadAction } from '@reduxjs/toolkit';
 import { racegen } from '../racegen';
 import { MainPageState } from './types';
 
+import { getDisciplineOfCarClass } from 'app/data/car_classes';
 import { getAllDisciplines } from 'app/data/disciplines';
 import { EnrichedCareerData } from 'app/slices/CareerSlice/types';
 import { CarId } from 'types/Car';
 import { CarClassId } from 'types/CarClass';
-import { DisciplineId } from 'types/Discipline';
+import { DisciplineId, getDisciplineId } from 'types/Discipline';
 
 export const initialState: MainPageState = {
   raceOptions: [],
@@ -32,10 +33,29 @@ const slice = createSlice({
       state,
       action: PayloadAction<{ career: EnrichedCareerData }>,
     ) {
-      state.raceOptions = getAllDisciplines().flatMap(d =>
-        racegen(d, action.payload.career),
-      );
+      const career = action.payload.career;
+      state.raceOptions = getAllDisciplines().flatMap(d => racegen(d, career));
       state.selectedRaceIndex = 0;
+
+      if (career.raceResults.length > 0) {
+        // Select the same class as the last race by default
+        const lastRace = career.raceResults[career.raceResults.length - 1];
+        state.selectedRaceIndex = state.raceOptions.findIndex(
+          option => option.carClassId === lastRace.carClassId,
+        );
+        // The same class is not available; must have leveled up. Let's still select the first race in the same discipline.
+        if (state.selectedRaceIndex === -1) {
+          state.selectedRaceIndex = state.raceOptions.findIndex(
+            option =>
+              getDisciplineId(getDisciplineOfCarClass(option.carClassId)) ===
+              getDisciplineId(getDisciplineOfCarClass(lastRace.carClassId)),
+          );
+        }
+        // This should never happen, but you know, just in case, let's not do dumb things.
+        if (state.selectedRaceIndex === -1) {
+          state.selectedRaceIndex = 0;
+        }
+      }
     },
     selectRace(state, action: PayloadAction<number>) {
       state.selectedRaceIndex = action.payload;
