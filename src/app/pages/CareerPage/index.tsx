@@ -105,12 +105,12 @@ function Achievements(props: { achievements: Achievement[] }) {
               Unlocked: ({ timestamp }) => (
                 <em>Unlocked: {formatTimestamp(timestamp)}</em>
               ),
-              Progress: ({ current, max }) => (
+              Progress: ({ current, max, formattedCurrent, formattedMax }) => (
                 <LinearProgressWithLabel
                   max={max}
                   current={current}
-                  label={`${achievement.formatNumber?.(current) || current} / ${
-                    achievement.formatNumber?.(max) || max
+                  label={`${formattedCurrent ?? current} / ${
+                    formattedMax ?? max
                   }`}
                 />
               ),

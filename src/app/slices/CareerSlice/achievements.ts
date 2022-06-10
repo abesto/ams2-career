@@ -23,7 +23,15 @@ const Gold = AchievementLevel.Gold;
 const Platinum = AchievementLevel.Platinum;
 
 export type AchievementProgress =
-  | Variant<'Progress', { current: number; max: number }>
+  | Variant<
+      'Progress',
+      {
+        current: number;
+        max: number;
+        formattedCurrent?: string;
+        formattedMax?: string;
+      }
+    >
   | Variant<'Unlocked', { timestamp: number }>;
 const { Progress, Unlocked } = impl<AchievementProgress>();
 
@@ -109,11 +117,11 @@ interface AchievementBase {
   name: AchievementId;
   level: AchievementLevel;
   description: string;
-  formatNumber?: (n: number) => string;
 }
 
 interface SpecItem extends AchievementBase {
   proc: Proc;
+  formatNumber?: (n: number) => string;
 }
 
 export interface Achievement extends AchievementBase {
@@ -289,6 +297,13 @@ function makeSpec(settings: SettingsState): SpecItem[] {
   return spec;
 }
 
+function formatProgress(progress: AchievementProgress, spec: SpecItem) {
+  if (spec.formatNumber && Progress.is(progress)) {
+    progress.value.formattedCurrent = spec.formatNumber(progress.value.current);
+    progress.value.formattedMax = spec.formatNumber(progress.value.max);
+  }
+}
+
 export const prepareAchievements = (settings: SettingsState) => {
   const specs: SpecItem[] = makeSpec(settings);
   const progresses: Map<AchievementId, AchievementProgress> = new Map();
@@ -306,7 +321,6 @@ export const prepareAchievements = (settings: SettingsState) => {
       name: specItem.name,
       level: specItem.level,
       description: specItem.description,
-      formatNumber: specItem.formatNumber,
       progress,
     };
   }
@@ -324,6 +338,7 @@ export const prepareAchievements = (settings: SettingsState) => {
       }
 
       const newProgress = spec.proc.process(raceResult, outcomes);
+      formatProgress(newProgress, spec);
       progresses.set(spec.name, newProgress);
       if (Unlocked.is(newProgress)) {
         ret.push(toAchievement(spec));
