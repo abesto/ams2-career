@@ -53,11 +53,12 @@ export function xpGain(
 ): number {
   return (
     getBaseXpGain() *
-    getGradeMultiplier(result) *
-    getAIMultiplier(result) *
-    getPositionMultiplier(result) *
-    getCrossDisciplineMultiplier(targetDisciplineId, result, settings) *
-    getVehicleMultiplier(result)
+      getGradeMultiplier(result) *
+      getAIMultiplier(result) *
+      getPositionMultiplier(result) *
+      getCrossDisciplineMultiplier(targetDisciplineId, result, settings) *
+      getVehicleMultiplier(result) *
+      settings.xpMultiplier ?? 1.0
   );
 }
 
