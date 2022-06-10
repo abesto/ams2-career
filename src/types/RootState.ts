@@ -4,6 +4,7 @@ import { CareerState } from 'app/slices/CareerSlice/types';
 import { ChangelogState } from 'app/slices/ChangelogSlice/types';
 import { ConnectivityState } from 'app/slices/ConnectivitySlice/types';
 import { SaveMetaState } from 'app/slices/SaveMetaSlice/types';
+import { SettingsState } from 'app/slices/SettingsSlice/types';
 import { WelcomeState } from 'app/slices/WelcomeSlice/types';
 
 // [IMPORT NEW CONTAINERSTATE ABOVE] < Needed for generating containers seamlessly
@@ -20,5 +21,6 @@ export interface RootState {
   welcome?: WelcomeState;
   connectivity?: ConnectivityState;
   changelog?: ChangelogState;
+  settings?: SettingsState;
   // [INSERT NEW REDUCER KEY ABOVE] < Needed for generating containers seamlessly
 }

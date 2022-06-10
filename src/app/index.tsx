@@ -48,6 +48,7 @@ import { Welcome } from './components/Welcome';
 import { CareerPage } from './pages/CareerPage';
 import { DataDebugPage } from './pages/DataDebugPage';
 import { MainPage } from './pages/MainPage';
+import { SettingsPage } from './pages/SettingsPage';
 import { useConnectivitySlice } from './slices/ConnectivitySlice';
 
 type ToolbarButtonProps<D extends React.ElementType> = IconButtonProps<D> & {
@@ -135,6 +136,15 @@ function InnerApp() {
               Career
             </Button>
 
+            <Button
+              color="inherit"
+              size="small"
+              component={RouterLink}
+              to="/settings"
+            >
+              Settings
+            </Button>
+
             <Export color="inherit" size="small" sx={{ ml: 2 }} />
             <Import color="inherit" size="small" />
 
@@ -168,6 +178,7 @@ function InnerApp() {
 
         <Routes>
           <Route path="/" element={<MainPage />} />
+          <Route path="/settings" element={<SettingsPage />} />
           <Route path="/debug" element={<DataDebugPage />} />
           <Route path="/career" element={<CareerPage />} />
           <Route element={<NotFoundPage />} />

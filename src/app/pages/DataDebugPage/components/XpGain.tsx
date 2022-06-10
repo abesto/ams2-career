@@ -1,6 +1,8 @@
 import * as React from 'react';
+import { useSelector } from 'react-redux';
 
 import {
+  Box,
   FormControl,
   FormLabel,
   MenuItem,
@@ -15,6 +17,7 @@ import {
 
 import { getCarClassesIn } from 'app/data/car_classes';
 import { getAllDisciplines, getDiscipline } from 'app/data/disciplines';
+import { selectSettings } from 'app/slices/SettingsSlice/selectors';
 import * as xp from 'app/xp';
 import { CarId } from 'types/Car';
 import { CarClass, CarClassId, getCarClassId } from 'types/CarClass';
@@ -41,6 +44,8 @@ export function XpGain(props: Props) {
   const [aiLevel, setAiLevel] = React.useState(100);
   const [position, setPosition] = React.useState(5);
 
+  const settings = useSelector(selectSettings);
+
   const result: RaceResult = {
     position: position,
     simTime: 0,
@@ -56,6 +61,9 @@ export function XpGain(props: Props) {
   return (
     <>
       <div>
+        <Box>
+          <em>Watch out, any changed Settings affect these calculations.</em>
+        </Box>
         <FormControl sx={{ m: 1 }}>
           <FormLabel>Discipline</FormLabel>
           <Select
@@ -134,11 +142,12 @@ export function XpGain(props: Props) {
                 {xp.getCrossDisciplineMultiplier(
                   getDisciplineId(thisDiscipline),
                   result,
+                  settings,
                 )}
               </TableCell>
               <TableCell>{xp.getVehicleMultiplier(result)}</TableCell>
               <TableCell>
-                {xp.xpGain(getDisciplineId(thisDiscipline), result)}
+                {xp.xpGain(getDisciplineId(thisDiscipline), result, settings)}
               </TableCell>
             </TableRow>
           ))}

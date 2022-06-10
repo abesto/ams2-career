@@ -1,5 +1,6 @@
 import { getCarClass, getCarClassesIn } from './data/car_classes';
 import * as xpData from './data/xp';
+import { SettingsState } from './slices/SettingsSlice/types';
 
 import { Discipline, DisciplineId, getDisciplineId } from 'types/Discipline';
 import { RaceResult } from 'types/Race';
@@ -24,7 +25,11 @@ export function getGradeMultiplier(result: RaceResult): number {
 export function getCrossDisciplineMultiplier(
   targetDisciplineId: DisciplineId,
   result: RaceResult,
+  settings: SettingsState,
 ): number {
+  if (!settings.crossDisciplineGainsEnabled) {
+    return 0;
+  }
   const carClass = getCarClass(result.carClassId);
   return xpData.getCrossDisciplineMultiplier(
     carClass.disciplineId,
@@ -44,13 +49,14 @@ export function getVehicleMultiplier(result: RaceResult): number {
 export function xpGain(
   targetDisciplineId: DisciplineId,
   result: RaceResult,
+  settings: SettingsState,
 ): number {
   return (
     getBaseXpGain() *
     getGradeMultiplier(result) *
     getAIMultiplier(result) *
     getPositionMultiplier(result) *
-    getCrossDisciplineMultiplier(targetDisciplineId, result) *
+    getCrossDisciplineMultiplier(targetDisciplineId, result, settings) *
     getVehicleMultiplier(result)
   );
 }

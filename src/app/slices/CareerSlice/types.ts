@@ -1,5 +1,6 @@
 import { impl, Variant } from '@practical-fp/union-types';
 
+import { SettingsState } from '../SettingsSlice/types';
 import { Achievement, prepareAchievements } from './achievements';
 
 import { getAllDisciplines } from 'app/data/disciplines';
@@ -31,14 +32,17 @@ export interface EnrichedCareerData extends CareerState {
   achievements: Achievement[];
 }
 
-export function enrich(state: CareerState): EnrichedCareerData {
+export function enrich(
+  state: CareerState,
+  settings: SettingsState,
+): EnrichedCareerData {
   const data: EnrichedCareerData = {
     ...state,
     progress: {},
     outcomes: [],
     achievements: [],
   };
-  const achievements = prepareAchievements();
+  const achievements = prepareAchievements(settings);
 
   const xp: Map<DisciplineId, number> = new Map();
 
@@ -57,7 +61,7 @@ export function enrich(state: CareerState): EnrichedCareerData {
       const xpBefore = xp.get(targetDisciplineId) || 0;
       const progressBefore = totalXpToProgress(targetDiscipline, xpBefore);
 
-      const gainedXp = xpGain(targetDisciplineId, raceResult);
+      const gainedXp = xpGain(targetDisciplineId, raceResult, settings);
       if (gainedXp === 0) {
         continue;
       }

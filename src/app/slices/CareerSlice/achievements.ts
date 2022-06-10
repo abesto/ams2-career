@@ -1,5 +1,6 @@
 import { impl, Variant } from '@practical-fp/union-types';
 
+import { SettingsState } from '../SettingsSlice/types';
 import { GradeUp, RaceOutcome } from './types';
 
 import { getCarClass } from 'app/data/car_classes';
@@ -123,7 +124,7 @@ export function isUnlocked(achievement: Achievement): boolean {
   return Unlocked.is(achievement.progress);
 }
 
-function makeSpec(): SpecItem[] {
+function makeSpec(settings: SettingsState): SpecItem[] {
   const spec: SpecItem[] = [
     // Track count
     {
@@ -279,7 +280,7 @@ function makeSpec(): SpecItem[] {
       description: `Achieve maximum XP in ${discipline.name}`,
       formatNumber: n => formatXp(n).toString(),
       proc: proc(0, maxXp, (xp, result) => {
-        const newXp = xp + xpGain(disciplineId, result);
+        const newXp = xp + xpGain(disciplineId, result, settings);
         return { acc: newXp, progress: newXp };
       }),
     });
@@ -288,8 +289,8 @@ function makeSpec(): SpecItem[] {
   return spec;
 }
 
-export const prepareAchievements = () => {
-  const specs: SpecItem[] = makeSpec();
+export const prepareAchievements = (settings: SettingsState) => {
+  const specs: SpecItem[] = makeSpec(settings);
   const progresses: Map<AchievementId, AchievementProgress> = new Map();
 
   for (const spec of specs) {
