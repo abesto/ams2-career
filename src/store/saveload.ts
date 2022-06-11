@@ -106,6 +106,7 @@ export function load(
     applyAllMigrations(data);
   }
   addCommitVersion(data);
+  delete data.cookieConsent; // Source of truth is a cookie for this
   return data;
 }
 
@@ -118,7 +119,8 @@ export function save(
 
 export function serialize(state: RootState): string {
   const data = { ...state };
-  delete data.connectivity;
+  delete data.connectivity; // Connectivity is transient state
+  delete data.cookieConsent; // Source of truth is a cookie for this
   return LZString.compressToUTF16(JSON.stringify(data));
 }
 

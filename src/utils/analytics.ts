@@ -1,21 +1,25 @@
 import * as React from 'react';
+import { getCookieConsentValue } from 'react-cookie-consent';
 import GitInfo from 'react-git-info/macro';
 import { useDispatch } from 'react-redux';
 import { useLocation } from 'react-router-dom';
+import { Dispatch, Middleware } from 'redux';
 import { createMiddleware } from 'redux-beacon';
 
 import GoogleAnalyticsGtag, {
   trackEvent,
   trackPageView,
 } from '@redux-beacon/google-analytics-gtag';
-// import logger from '@redux-beacon/logger';
+//import logger from '@redux-beacon/logger';
 import OfflineWeb from '@redux-beacon/offline-web';
 
+import { GRANTED } from 'app/components/OurCookieConsent';
 import { getCarClass } from 'app/data/car_classes';
 import { getCar } from 'app/data/cars';
 import { getTrack } from 'app/data/tracks';
 import { AIAdjustment } from 'app/pages/MainPage/slice/types';
 import { selectOnline } from 'app/slices/ConnectivitySlice/selectors';
+import { RootState } from 'types';
 import { getDisciplineId } from 'types/Discipline';
 import { getDisciplineOfRace, RaceResult } from 'types/Race';
 
@@ -140,10 +144,23 @@ const trackingId = 'G-P011NS305M';
 const ga = GoogleAnalyticsGtag(trackingId);
 
 const offlineStorage = OfflineWeb(selectOnline);
-export const gaMiddleware = createMiddleware(eventsMap, ga, {
-  // logger,
+const gaMiddleware = createMiddleware(eventsMap, ga, {
+  //logger,
   offlineStorage,
 });
+
+export const gaMiddlewareWithConsent: Middleware<Dispatch, RootState> = ({
+  getState,
+  dispatch,
+}) => {
+  return next => action => {
+    if (getCookieConsentValue() === GRANTED) {
+      return gaMiddleware({ getState, dispatch })(next)(action);
+    } else {
+      return next(action);
+    }
+  };
+};
 
 export function usePageViews() {
   const location = useLocation();

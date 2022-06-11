@@ -8,9 +8,11 @@ The format is based on [Keep a Changelog](https://semver.org/spec/v2.0.0.html), 
 
 ### Added
 
+- We now request consent for using cookies. Currently the only use is for Google Analytics, which we use to understand how, and how much the app is used.
 - Added a Settings page (link in the top bar, next to "Go Race!" and "Career") where you can customize various aspects of your AMS2 Career experience ([#11](https://github.com/abesto/ams2-career/issues/11))
   - Cross-Discipline XP gains can be disabled ([#48](https://github.com/abesto/ams2-career/issues/48))
   - Flat XP multiplier to tweak the length of the career ([#42](https://github.com/abesto/ams2-career/issues/42))
+  - Cookie consent can be changed on the Settings page
 
 ### Fixed
 

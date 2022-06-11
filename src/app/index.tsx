@@ -43,6 +43,7 @@ import { Export } from './components/Export';
 import { ExportReminder } from './components/ExportReminder';
 import { Import } from './components/Import';
 import { NotFoundPage } from './components/NotFoundPage';
+import { OurCookieConsent } from './components/OurCookieConsent';
 import { VersionInfo } from './components/VersionInfo';
 import { Welcome } from './components/Welcome';
 import { CareerPage } from './pages/CareerPage';
@@ -112,6 +113,7 @@ function InnerApp() {
         onClose={() => setForceWelcome(false)}
       />
       <Changelog />
+      <OurCookieConsent />
 
       <Container maxWidth={false}>
         <AppBar position="static">
