@@ -27,10 +27,13 @@ export function getCrossDisciplineMultiplier(
   result: RaceResult,
   settings: SettingsState,
 ): number {
-  if (!settings.crossDisciplineGainsEnabled) {
+  const carClass = getCarClass(result.carClassId);
+  if (
+    !settings.crossDisciplineGainsEnabled &&
+    carClass.disciplineId !== targetDisciplineId
+  ) {
     return 0;
   }
-  const carClass = getCarClass(result.carClassId);
   return xpData.getCrossDisciplineMultiplier(
     carClass.disciplineId,
     targetDisciplineId,
