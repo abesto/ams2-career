@@ -82,7 +82,8 @@
     "react-scripts": "5.0.1",
     "stylelint": "14.8.0",
     "stylelint-config-recommended": "7.0.0",
-    "ts-node": "10.8.1"
+    "ts-node": "10.8.1",
+    "xml2js": "0.4.23"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -100,7 +101,8 @@
     "prettify": "prettier --write",
     "extract-messages": "i18next-scanner --config=internals/extractMessages/i18next-scanner.config.js",
     "prepare": "husky install",
-    "update-data": "ts-node ./internals/updateData/index.ts"
+    "update-data": "ts-node ./internals/updateData/index.ts",
+    "extract-game-data": "ts-node internals/extractGameData/main.ts"
   },
   "browserslist": {
     "production": [
