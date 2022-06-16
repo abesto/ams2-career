@@ -11,7 +11,7 @@ import {
   StoreEnhancer,
 } from '@reduxjs/toolkit';
 
-import { gaMiddlewareWithConsent } from '../utils/analytics';
+import { createGaMiddleware } from '../utils/analytics';
 import { createReducerWithPlaceholders } from './reducers';
 import { load, saveMiddleware } from './saveload';
 
@@ -21,7 +21,10 @@ export function configureAppStore() {
   const { run: runSaga } = sagaMiddleware;
 
   // Create the store with saga middleware
-  const middlewares = [sagaMiddleware, saveMiddleware, gaMiddlewareWithConsent];
+  const middlewares = [sagaMiddleware, saveMiddleware];
+  if (process.env.NODE_ENV === 'production') {
+    middlewares.push(createGaMiddleware());
+  }
 
   const preloadedState = load(true) || {};
 

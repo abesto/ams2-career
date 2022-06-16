@@ -1,6 +1,9 @@
 # `ams2-career`
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 A simple external career mode for Automobilista 2, built as a web application for desktops and mobile browsers. For the user guide, head to the wiki: https://github.com/abesto/ams2-career/wiki
@@ -11,8 +14,8 @@ The rest of this README serves as minimal technical documentation.
 
 Main libraries / frameworks:
 
-* https://redux-toolkit.js.org/
-* https://mui.com/
+- https://redux-toolkit.js.org/
+- https://mui.com/
 
 Points of interest:
 
@@ -24,10 +27,12 @@ Points of interest:
 - `src/pages` is where most of the UI lives
 
 Local development is super simple:
-* `yarn install`
-* `yarn start` starts a development server, and tries to open your browser to load it. This has live reloading, error reporting, debugging support, the works.
 
-Contributing: make a pull request :) There are no automated tests, don't even bother looking.
+- `yarn install`
+- `yarn start` starts a development server, and tries to open your browser to load it. This has live reloading, error reporting, debugging support, the works.
+- `yarn test` runs tests, obviously. At the time of writing coverage is extremely spotty. Help improve it?
+
+Contributing: make a pull request :) Ideally add a few tests as well for the code you're adding / changing.
 
 ## Contributors ✨
 

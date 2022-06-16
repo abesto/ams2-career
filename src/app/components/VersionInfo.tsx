@@ -16,15 +16,22 @@ export function VersionInfo() {
         color: 'lightGray',
       }}
     >
-      {gitInfo.commit.date}{' '}
-      <Link
-        color="inherit"
-        underline="hover"
-        target="_blank"
-        href={`https://github.com/abesto/ams2-career/commit/${gitInfo.commit.hash}`}
-      >
-        {gitInfo.commit.hash}
-      </Link>
+      {process.env.NODE_ENV !== 'production' ? (
+        'dev'
+      ) : (
+        <>
+          {gitInfo.commit.date}{' '}
+          <Link
+            color="inherit"
+            underline="hover"
+            target="_blank"
+            href={`https://github.com/abesto/ams2-career/commit/${gitInfo.commit.hash}`}
+          >
+            {gitInfo.commit.hash}
+          </Link>
+          )
+        </>
+      )}
     </Typography>
   );
 }

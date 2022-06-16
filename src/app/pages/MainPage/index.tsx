@@ -2,10 +2,7 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useDispatch, useSelector } from 'react-redux';
 
-import Grid from '@mui/material/Grid';
-import Paper from '@mui/material/Paper';
-import { styled } from '@mui/material/styles';
-import Typography from '@mui/material/Typography';
+import { Grid, Paper, Typography } from '@mui/material';
 
 import { GoRacing } from './components/GoRacing';
 import { RaceOptions } from './components/RaceOptions';
@@ -69,7 +66,7 @@ export function MainPage(props: Props) {
       </Helmet>
       <Grid container spacing={2}>
         <Grid item xs={12} lg={6}>
-          <GridItem>
+          <Paper sx={{ p: 2 }}>
             <Typography variant="h4" sx={{ mb: 2 }}>
               Pick a Race
             </Typography>
@@ -78,10 +75,10 @@ export function MainPage(props: Props) {
               onSelect={index => dispatch(mainPageActions.selectRace(index))}
               selectedRaceIndex={slice.selectedRaceIndex}
             />
-          </GridItem>
+          </Paper>
         </Grid>
         <Grid item xs={12} lg={6}>
-          <GridItem>
+          <Paper sx={{ p: 2 }}>
             {selectedRace !== null && (
               <>
                 <Typography variant="h4" sx={{ mt: 3 }}>
@@ -110,7 +107,7 @@ export function MainPage(props: Props) {
                 />
               </>
             )}
-          </GridItem>
+          </Paper>
         </Grid>
       </Grid>
       <RaceResultFeedback
@@ -121,8 +118,3 @@ export function MainPage(props: Props) {
     </>
   );
 }
-
-const GridItem = styled(Paper)(({ theme }) => ({
-  ...theme.typography.body2,
-  padding: theme.spacing(2),
-}));

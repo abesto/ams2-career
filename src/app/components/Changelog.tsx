@@ -33,16 +33,17 @@ export function Changelog(props: Props) {
     release => release.version && cmpSemVer(release.version, seenVersion) > 0,
   );
 
-  function markCurrentVersionSeen() {
+  const markCurrentVersionSeen = React.useCallback(() => {
     const { major, minor, patch, raw } = releases[0].version!;
     dispatch(actions.setSeenVersion({ major, minor, patch, raw }));
-  }
+  }, [releases, actions, dispatch]);
 
   // No changelog the first time the app is opened; use the current version as the latest one seen.
-  if (seenVersion.raw === '0.0.0' && releases.length > 0) {
-    markCurrentVersionSeen();
-    return null;
-  }
+  React.useEffect(() => {
+    if (seenVersion.raw === '0.0.0' && releases.length > 0) {
+      markCurrentVersionSeen();
+    }
+  }, [seenVersion, releases, markCurrentVersionSeen]);
 
   // No changelog dialog if we have no updates
   if (releases.length === 0) {

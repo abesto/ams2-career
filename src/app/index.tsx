@@ -7,7 +7,7 @@
  */
 
 import * as React from 'react';
-import { Helmet } from 'react-helmet-async';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useDispatch } from 'react-redux';
 import {
   BrowserRouter,
@@ -93,7 +93,7 @@ function InnerApp() {
   usePageViews();
 
   return (
-    <>
+    <HelmetProvider>
       <Helmet titleTemplate="%s - AMS2 Career">
         <link
           rel="stylesheet"
@@ -189,7 +189,7 @@ function InnerApp() {
         <ExportReminder />
         <VersionInfo />
       </Container>
-    </>
+    </HelmetProvider>
   );
 }
 

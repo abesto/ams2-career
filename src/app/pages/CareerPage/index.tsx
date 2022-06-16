@@ -7,8 +7,7 @@ import {
   Box,
   Button,
   Grid,
-  Paper as MUIPaper,
-  styled,
+  Paper,
   Table,
   TableBody,
   TableCell,
@@ -46,17 +45,12 @@ function formatTimestamp(ts: number): string {
 
 interface Props {}
 
-const Paper = styled(MUIPaper)(({ theme }) => ({
-  ...theme.typography.body2,
-  padding: theme.spacing(2),
-}));
-
 function DisciplineProgressGrid(props: { career: EnrichedCareerData }) {
   return (
     <Grid item container spacing={1}>
       {getAllDisciplines().map(discipline => (
         <Grid item xs={12} lg={4} key={discipline.name}>
-          <Paper>
+          <Paper sx={{ p: 2 }}>
             <DisciplineProgress discipline={discipline} career={props.career} />
           </Paper>
         </Grid>
@@ -88,7 +82,7 @@ function Achievements(props: { achievements: Achievement[] }) {
     <Grid container spacing={2} justifyContent="space-around">
       {achievements.map(achievement => (
         <Grid item sx={{ textAlign: 'center' }} key={achievement.name}>
-          <Paper sx={{ backgroundColor: '#fafafa' }}>
+          <Paper sx={{ backgroundColor: '#fafafa', p: 2 }}>
             <AchievementIcon
               level={achievement.level}
               unlocked={isUnlocked(achievement)}
@@ -216,14 +210,14 @@ export function CareerPage(props: Props) {
         <title>Career</title>
       </Helmet>
 
-      <Paper>
+      <Paper sx={{ p: 2 }}>
         <Typography variant="h4" sx={{ my: 2 }}>
           Achievements
         </Typography>
         <Achievements achievements={career.achievements} />
       </Paper>
 
-      <Paper sx={{ my: 5 }}>
+      <Paper sx={{ my: 5, p: 2 }}>
         <Typography variant="h4" sx={{ mb: 2 }}>
           Career Progress
         </Typography>
