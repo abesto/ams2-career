@@ -24,12 +24,14 @@ const MIGRATIONS = [
 
   // Add AI Adjustments
   (state: RootState) => {
-    state.mainPage!.aiAdjustment = {
-      global: 0,
-      discipline: {},
-      carClass: {},
-      car: {},
-    };
+    if (state.mainPage !== undefined) {
+      state.mainPage.aiAdjustment = {
+        global: 0,
+        discipline: {},
+        carClass: {},
+        car: {},
+      };
+    }
   },
 
   // https://github.com/abesto/ams2-career/issues/46

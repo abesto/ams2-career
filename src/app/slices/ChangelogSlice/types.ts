@@ -5,6 +5,12 @@ export interface SemVer {
   patch: number;
 }
 
+/** Drop any properties of an object outside of what's needed for our SemVer */
+export function simpleSemVer(x: SemVer): SemVer {
+  const { raw, major, minor, patch } = x;
+  return { raw, major, minor, patch };
+}
+
 export function cmpSemVer(a: SemVer, b: SemVer): number {
   if (a.major !== b.major) {
     return a.major - b.major;

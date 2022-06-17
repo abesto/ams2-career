@@ -1,6 +1,5 @@
-import { parser as parseChangelog } from 'keep-a-changelog';
+import { Changelog as ChangelogData } from 'keep-a-changelog';
 import Markdown from 'markdown-to-jsx';
-import raw from 'raw.macro';
 import * as React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -17,13 +16,10 @@ import { useChangelogSlice } from 'app/slices/ChangelogSlice';
 import { selectChangelog } from 'app/slices/ChangelogSlice/selectors';
 import { cmpSemVer } from 'app/slices/ChangelogSlice/types';
 
-const changelogText: string = raw('../../../CHANGELOG.md');
-
-const changelog = parseChangelog(changelogText);
-
-type Props = {};
+type Props = { changelog: ChangelogData };
 
 export function Changelog(props: Props) {
+  const { changelog } = props;
   const [closed, setClosed] = React.useState(false);
   const dispatch = useDispatch();
   const { actions } = useChangelogSlice();
@@ -75,7 +71,9 @@ export function Changelog(props: Props) {
           </em>
         </DialogContentText>
         {releases.map(release => (
-          <Markdown key={release.version!.raw}>{release.toString()}</Markdown>
+          <Markdown data-testid="changelog-entries" key={release.version!.raw}>
+            {release.toString()}
+          </Markdown>
         ))}
       </DialogContent>
       <DialogContent>

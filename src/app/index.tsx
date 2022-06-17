@@ -6,6 +6,8 @@
  * contain code that should be seen on all pages. (e.g. navigation bar)
  */
 
+import { parser as parseChangelog } from 'keep-a-changelog';
+import raw from 'raw.macro';
 import * as React from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useDispatch } from 'react-redux';
@@ -90,7 +92,11 @@ function InnerApp() {
     });
   }, [dispatch, connectivityActions]);
 
+  // Send analytics about page views
   usePageViews();
+
+  const changelogText: string = raw('../../CHANGELOG.md');
+  const changelog = parseChangelog(changelogText);
 
   return (
     <HelmetProvider>
@@ -112,7 +118,7 @@ function InnerApp() {
         forceShow={forceWelcome}
         onClose={() => setForceWelcome(false)}
       />
-      <Changelog />
+      <Changelog changelog={changelog} />
       <OurCookieConsent />
 
       <Container maxWidth={false}>

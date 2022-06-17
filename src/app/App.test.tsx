@@ -1,28 +1,17 @@
 import * as React from 'react';
-import { Provider } from 'react-redux';
 
-import { fireEvent, render as rtlRender, screen } from '@testing-library/react';
+import { fireEvent } from '@testing-library/react';
 
-import { configureAppStore } from '../store/configureStore';
 import { App } from './';
-
-function render(
-  ui: JSX.Element,
-  { store = configureAppStore(), ...renderOptions } = {},
-) {
-  function Wrapper({ children }) {
-    return <Provider store={store}>{children}</Provider>;
-  }
-  return rtlRender(ui, { wrapper: Wrapper, ...renderOptions });
-}
+import { render } from './test-utils';
 
 test('Basic sanity: a bunch of race results', async () => {
-  const { container } = render(<App />);
+  const { findByRole, findByText, container } = render(<App />);
   // A few convenience shorthands
   const snapshot = (name: string) => expect(container).toMatchSnapshot(name);
   const click = async (role, opts) =>
-    fireEvent.click(await screen.findByRole(role, opts));
-  const expectText = async text => expect(await screen.findByText(text));
+    fireEvent.click(await findByRole(role, opts));
+  const expectText = async text => expect(await findByText(text));
 
   // Off we go then
   snapshot('first-load');
