@@ -940,7 +940,7 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
             >
               <span
                 class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1"
-                style="transform: translateX(-70.40069999999999%);"
+                style="transform: translateX(-70%);"
               />
             </span>
             <p
@@ -6772,7 +6772,7 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
             >
               <span
                 class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1"
-                style="transform: translateX(-98.93375999999999%);"
+                style="transform: translateX(-99%);"
               />
             </span>
             <p
@@ -8318,7 +8318,7 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
             >
               <span
                 class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate css-5xe99f-MuiLinearProgress-bar1"
-                style="transform: translateX(-74.1335652173913%);"
+                style="transform: translateX(-74%);"
               />
             </span>
             <p

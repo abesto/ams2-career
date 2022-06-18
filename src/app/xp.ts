@@ -14,7 +14,7 @@ export function getPositionMultiplier(result: RaceResult): number {
 }
 
 export function getBaseXpGain(): number {
-  return 10;
+  return 1000;
 }
 
 export function getGradeMultiplier(result: RaceResult): number {
@@ -102,7 +102,7 @@ export function totalXpToProgress(
 export const xpNeededForLevelUpTo = xpData.xpNeededForLevelUpTo;
 
 export function formatXp(n: number): number {
-  return Math.round(n * 100);
+  return Math.round(n);
 }
 
 export function formatGrade(grade: number, prefix: boolean): string {

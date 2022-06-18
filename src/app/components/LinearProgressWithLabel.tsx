@@ -16,7 +16,7 @@ export function LinearProgressWithLabel(props: {
       <LinearProgress
         variant="determinate"
         style={{ height }}
-        value={(current / max) * 100}
+        value={Math.round((current / max) * 100)}
       />
       <Typography
         variant="body2"
