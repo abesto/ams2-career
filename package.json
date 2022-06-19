@@ -66,6 +66,8 @@
     "@types/webpack": "5.28.0",
     "@types/webpack-env": "1.16.4",
     "autoprefixer": "10.4.5",
+    "axios": "0.27.2",
+    "csv-stringify": "6.1.3",
     "eslint": "8.14.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-config-react-app": "7.0.1",
@@ -80,7 +82,7 @@
     "react-scripts": "5.0.1",
     "stylelint": "14.8.0",
     "stylelint-config-recommended": "7.0.0",
-    "ts-node": "10.7.0"
+    "ts-node": "10.8.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -97,7 +99,8 @@
     "generate": "plop --plopfile internals/generators/plopfile.ts",
     "prettify": "prettier --write",
     "extract-messages": "i18next-scanner --config=internals/extractMessages/i18next-scanner.config.js",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "update-data": "ts-node ./internals/updateData/index.ts"
   },
   "browserslist": {
     "production": [

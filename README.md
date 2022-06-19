@@ -32,6 +32,11 @@ Local development is super simple:
 - `yarn start` starts a development server, and tries to open your browser to load it. This has live reloading, error reporting, debugging support, the works.
 - `yarn test` runs tests, obviously. At the time of writing coverage is extremely spotty. Help improve it?
 
+The data shipped with the app is maintained in [this Google
+Sheet](https://docs.google.com/spreadsheets/d/1v4awipFv6t0RVoDaFyY8n5JgqQFdUKeXmKZN_hwTu0Q/).
+`yarn run update-data` fetches the current contents into the source tree (which
+is packaged with the app at build time).
+
 Contributing: make a pull request :) Ideally add a few tests as well for the code you're adding / changing.
 
 ## Contributors ✨

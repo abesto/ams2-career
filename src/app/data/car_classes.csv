@@ -7,7 +7,7 @@ Club,2,TSI Cup,1,10,Laps
 Club,3,ARC,0,10,Laps
 Club,3,Caterham GrC,1,10,Laps
 Club,4,Copa Classic (Class: B),1,6,Laps
-Club,4,Copa Classic (Class: FL),0,6,Laps
+Club,4,Copa Classic (Class: FL),1,6,Laps
 Club,4,Copa Fusca,0,6,Laps
 Club,4,Copa Uno,1,6,Laps
 Endurance,1,Group C,1,90,Minutes
@@ -61,7 +61,7 @@ Touring,3,Stock Car Brasil 99 GrC,0,15,Laps
 Touring,4,Copa Truck,0,10,Laps
 Touring,4,Group A,1,20,Laps
 Touring,4,Hot Cars,1,6,
-Touring,5,Hot Cars,0,15,Laps
+Touring,5,Hot Cars,1,15,Laps
 Touring,6,JCW,0,15,Minutes
 Touring,6,TSI Cup,1,15,Laps
 Vintage,1,Formula Retro G3,0,60,Minutes

@@ -20,7 +20,7 @@ type Record = {
   race_length_unit: string;
 };
 
-const data: Record[] = Papa.parse(raw('./car_classes.csv'), {
+const data: Record[] = Papa.parse(raw('./car_classes.csv').trimEnd(), {
   header: true,
   dynamicTyping: true,
 }).data;

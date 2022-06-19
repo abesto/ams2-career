@@ -12,7 +12,6 @@ type Record = {
   car: string;
   class: string;
   discipline: string;
-  grade: number;
   year: string;
 };
 
