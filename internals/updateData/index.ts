@@ -59,8 +59,8 @@ const specs: Spec[] = [
       index === 0
         ? row
         : [
-            row[0],
-            row[1],
+            row[0].trim(),
+            row[1].trim(),
             ...row.slice(2).map(s => ({ TRUE: 'x', FALSE: '' }[s] ?? s)),
           ],
   },

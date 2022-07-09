@@ -290,12 +290,12 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Silverstone
+                    Taruma
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    (2019) International
+                    Internacional
                   </td>
                 </tr>
                 <tr
@@ -319,13 +319,11 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Velopark
+                    Termas Rio Hondo
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
-                  >
-                    2010
-                  </td>
+                  />
                 </tr>
                 <tr
                   class="MuiTableRow-root MuiTableRow-hover css-10cbwbc-MuiTableRow-root"
@@ -348,7 +346,7 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Cadwell Park
+                    Campo Grande
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
@@ -431,12 +429,12 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Taruma
+                    VIR
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Internacional
+                    North
                   </td>
                 </tr>
                 <tr
@@ -487,11 +485,13 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Ibarra
+                    Kansai
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
-                  />
+                  >
+                    East
+                  </td>
                 </tr>
                 <tr
                   class="MuiTableRow-root MuiTableRow-hover css-10cbwbc-MuiTableRow-root"
@@ -514,12 +514,12 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Oulton Park
+                    Silverstone
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Fosters
+                    (2019) National
                   </td>
                 </tr>
                 <tr
@@ -543,12 +543,12 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Velopark
+                    Buenos Aires Circuito
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    2010
+                    No.7
                   </td>
                 </tr>
                 <tr
@@ -601,13 +601,11 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Goiania
+                    Guapore
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
-                  >
-                    Short
-                  </td>
+                  />
                 </tr>
                 <tr
                   class="MuiTableRow-root MuiTableRow-hover css-10cbwbc-MuiTableRow-root"
@@ -1758,7 +1756,7 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Cadwell Park
+                    Campo Grande
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
@@ -1785,13 +1783,11 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Goiania
+                    Guapore
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
-                  >
-                    Short
-                  </td>
+                  />
                 </tr>
                 <tr
                   class="MuiTableRow-root MuiTableRow-hover css-10cbwbc-MuiTableRow-root"
@@ -1814,12 +1810,12 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Oulton Park
+                    Silverstone
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Fosters
+                    (2019) National
                   </td>
                 </tr>
                 <tr
@@ -1843,12 +1839,12 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Taruma
+                    VIR
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Internacional
+                    North
                   </td>
                 </tr>
                 <tr
@@ -1872,12 +1868,12 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Watkins Glen
+                    Cordoba
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Short Inner Loop
+                    Nr.4
                   </td>
                 </tr>
                 <tr
@@ -1993,7 +1989,7 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Long
+                    Short
                   </td>
                 </tr>
                 <tr
@@ -2017,12 +2013,12 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Londrina
+                    Nurburgring
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Long
+                    Short
                   </td>
                 </tr>
                 <tr
@@ -2046,12 +2042,12 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Silverstone
+                    Taruma
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    (2019) International
+                    Internacional
                   </td>
                 </tr>
                 <tr
@@ -2075,12 +2071,12 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Watkins Glen
+                    Cordoba
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Short Inner Loop
+                    Nr.4
                   </td>
                 </tr>
                 <tr
@@ -2109,7 +2105,7 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Long
+                    Short
                   </td>
                 </tr>
                 <tr
@@ -2133,12 +2129,12 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Kansai
+                    Kyalami
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Classic
+                    1976
                   </td>
                 </tr>
               </tbody>
@@ -2556,7 +2552,7 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 css-1moisnn-MuiTypography-root"
                 >
-                  2014-10-25 13:57
+                  2014-10-17 13:34
                 </p>
               </div>
             </div>
@@ -3213,7 +3209,7 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Cadwell Park
+                    Campo Grande
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
@@ -3240,13 +3236,11 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Goiania
+                    Guapore
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
-                  >
-                    Short
-                  </td>
+                  />
                 </tr>
                 <tr
                   class="MuiTableRow-root MuiTableRow-hover css-10cbwbc-MuiTableRow-root"
@@ -3269,12 +3263,12 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Oulton Park
+                    Silverstone
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Fosters
+                    (2019) National
                   </td>
                 </tr>
                 <tr
@@ -3298,12 +3292,12 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Taruma
+                    VIR
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Internacional
+                    North
                   </td>
                 </tr>
                 <tr
@@ -3327,12 +3321,12 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Watkins Glen
+                    Cordoba
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Short Inner Loop
+                    Nr.4
                   </td>
                 </tr>
                 <tr
@@ -3448,7 +3442,7 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Long
+                    Short
                   </td>
                 </tr>
                 <tr
@@ -3472,12 +3466,12 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Londrina
+                    Nurburgring
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Long
+                    Short
                   </td>
                 </tr>
                 <tr
@@ -3501,12 +3495,12 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Silverstone
+                    Taruma
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    (2019) International
+                    Internacional
                   </td>
                 </tr>
                 <tr
@@ -3530,12 +3524,12 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Watkins Glen
+                    Cordoba
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Short Inner Loop
+                    Nr.4
                   </td>
                 </tr>
                 <tr
@@ -3564,7 +3558,7 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Long
+                    Short
                   </td>
                 </tr>
                 <tr
@@ -3588,12 +3582,12 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Kansai
+                    Kyalami
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Classic
+                    1976
                   </td>
                 </tr>
               </tbody>
@@ -3970,7 +3964,7 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 css-1moisnn-MuiTypography-root"
                 >
-                  Cadwell Park
+                  Campo Grande
                 </p>
               </div>
             </div>
@@ -4720,7 +4714,7 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Cadwell Park
+                    Campo Grande
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
@@ -4747,13 +4741,11 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Goiania
+                    Guapore
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
-                  >
-                    Short
-                  </td>
+                  />
                 </tr>
                 <tr
                   class="MuiTableRow-root MuiTableRow-hover css-10cbwbc-MuiTableRow-root"
@@ -4776,12 +4768,12 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Oulton Park
+                    Silverstone
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Fosters
+                    (2019) National
                   </td>
                 </tr>
                 <tr
@@ -4805,12 +4797,12 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Taruma
+                    VIR
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Internacional
+                    North
                   </td>
                 </tr>
                 <tr
@@ -4834,12 +4826,12 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Watkins Glen
+                    Cordoba
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Short Inner Loop
+                    Nr.4
                   </td>
                 </tr>
                 <tr
@@ -4955,7 +4947,7 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Long
+                    Short
                   </td>
                 </tr>
                 <tr
@@ -4979,12 +4971,12 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Londrina
+                    Nurburgring
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Long
+                    Short
                   </td>
                 </tr>
                 <tr
@@ -5008,12 +5000,12 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Silverstone
+                    Taruma
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    (2019) International
+                    Internacional
                   </td>
                 </tr>
                 <tr
@@ -5037,12 +5029,12 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Watkins Glen
+                    Cordoba
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Short Inner Loop
+                    Nr.4
                   </td>
                 </tr>
                 <tr
@@ -5071,7 +5063,7 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Long
+                    Short
                   </td>
                 </tr>
                 <tr
@@ -5095,12 +5087,12 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Kansai
+                    Kyalami
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Classic
+                    1976
                   </td>
                 </tr>
               </tbody>
@@ -5477,7 +5469,7 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 css-1moisnn-MuiTypography-root"
                 >
-                  Cadwell Park
+                  Campo Grande
                 </p>
               </div>
             </div>
@@ -6190,7 +6182,7 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Cadwell Park
+                    Campo Grande
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
@@ -6222,7 +6214,7 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    National
+                    Short B
                   </td>
                 </tr>
                 <tr
@@ -6246,12 +6238,12 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Londrina
+                    Nurburgring
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Long
+                    Short
                   </td>
                 </tr>
                 <tr
@@ -6275,13 +6267,11 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Nurburgring
+                    Road America
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
-                  >
-                    GP
-                  </td>
+                  />
                 </tr>
                 <tr
                   class="MuiTableRow-root MuiTableRow-hover css-10cbwbc-MuiTableRow-root"
@@ -6338,7 +6328,7 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Long
+                    Short
                   </td>
                 </tr>
                 <tr
@@ -6362,12 +6352,12 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Oulton Park
+                    Silverstone
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Island
+                    1975 "Chicane"
                   </td>
                 </tr>
                 <tr
@@ -6391,12 +6381,12 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Taruma
+                    VIR
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Internacional
+                    North
                   </td>
                 </tr>
                 <tr
@@ -6420,12 +6410,12 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Watkins Glen
+                    Cordoba
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Short Inner Loop
+                    Nr.4
                   </td>
                 </tr>
                 <tr
@@ -6454,7 +6444,7 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Long
+                    Short
                   </td>
                 </tr>
                 <tr
@@ -6835,7 +6825,7 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 css-1moisnn-MuiTypography-root"
                 >
-                  Nurburgring
+                  Road America
                 </p>
               </div>
             </div>
@@ -6852,9 +6842,7 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
                 </span>
                 <p
                   class="MuiTypography-root MuiTypography-body2 css-1moisnn-MuiTypography-root"
-                >
-                  GP
-                </p>
+                />
               </div>
             </div>
             <div
@@ -7608,12 +7596,12 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Oulton Park
+                    Silverstone
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Fosters
+                    (2019) National
                   </td>
                 </tr>
                 <tr
@@ -7637,12 +7625,12 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Taruma
+                    VIR
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Internacional
+                    North
                   </td>
                 </tr>
                 <tr
@@ -7666,7 +7654,7 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Cadwell Park
+                    Campo Grande
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
@@ -7693,13 +7681,11 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Goiania
+                    Guapore
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
-                  >
-                    Short
-                  </td>
+                  />
                 </tr>
                 <tr
                   class="MuiTableRow-root MuiTableRow-hover css-10cbwbc-MuiTableRow-root"
@@ -7722,12 +7708,12 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Londrina
+                    Nurburgring
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Long
+                    Short
                   </td>
                 </tr>
                 <tr
@@ -7896,13 +7882,11 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Goiania
+                    Guapore
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
-                  >
-                    Short
-                  </td>
+                  />
                 </tr>
                 <tr
                   class="MuiTableRow-root MuiTableRow-hover css-10cbwbc-MuiTableRow-root"
@@ -7925,12 +7909,12 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Oulton Park
+                    Silverstone
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Fosters
+                    (2019) National
                   </td>
                 </tr>
                 <tr
@@ -7954,12 +7938,12 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Taruma
+                    VIR
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Internacional
+                    North
                   </td>
                 </tr>
                 <tr
@@ -7983,12 +7967,12 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Watkins Glen
+                    Cordoba
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-dsuxgy-MuiTableCell-root"
                   >
-                    Short Inner Loop
+                    Nr.4
                   </td>
                 </tr>
                 <tr
@@ -8435,7 +8419,7 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 css-1moisnn-MuiTypography-root"
                 >
-                  2012-01-31 16:23
+                  2012-01-14 16:16
                 </p>
               </div>
             </div>
