@@ -1,3 +1,5 @@
+import { toAscii } from 'utils/string';
+
 import { CarClass, CarClassId } from './CarClass';
 
 import { getTrackIdsFor } from 'app/data/tracks';
@@ -11,7 +13,7 @@ export interface Track {
 export type TrackId = string & { __brand: 'TrackId' };
 
 export function getTrackId(track: Track): TrackId {
-  return `${track.name}-${track.configuration}` as TrackId;
+  return `${toAscii(track.name)}-${toAscii(track.configuration)}` as TrackId;
 }
 
 export function canRaceOn(

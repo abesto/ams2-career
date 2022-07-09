@@ -1,3 +1,5 @@
+import { toAscii } from 'utils/string';
+
 import { CarClassId } from './CarClass';
 
 export interface Car {
@@ -9,7 +11,7 @@ export interface Car {
 export type CarId = string & { __brand: 'CarId' };
 
 export function getCarId(car: Car): CarId {
-  return `${car.carClassId}-${car.name}` as CarId;
+  return `${car.carClassId}-${toAscii(car.name)}` as CarId;
 }
 
 export function carEquals(a: Car | null, b: Car | null): boolean {
