@@ -4,13 +4,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.2.2] - 2022-06-09
+## [1.3.1] - 2022-07-09
 
 ### Added
 
-- Added Argentinian Track Pack tracks: Termas Rio Hondo, Buenos Aires Circuito (7 layouts), and Cordoba (3 layouts)
+- Added Argentinian Track Pack tracks: Termas Río Hondo, Buenos Aires Circuito (7 layouts), and Córdoba (3 layouts) ([#58](https://github.com/abesto/ams2-career/pull/58))
+- Track names now have accents where they should ([#60](https://github.com/abesto/ams2-career/issues/60))
 - Some automated tests. Nothing you'll directly see in the app, but it'll help make changes with more confidence (and hopefully, with fewer breakages).
-- New, clean data source spreadsheet. Simple automation for synchronizing content from the sheet to the app source code. You also won't notice _this_ directly, but it'll make keeping up with AMS2 content updates easier and less error-prone.
+- New, clean data source spreadsheet. Simple automation for synchronizing content from the sheet to the app source code. You also won't notice _this_ directly, but it'll make keeping up with AMS2 content updates easier and less error-prone. ([#58](https://github.com/abesto/ams2-career/pull/58))
 
 ## [1.2.1] - 2022-06-12
 
@@ -44,7 +45,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - We now have a changelog! The app remembers what version was last seen, and only displays new items. Incidentally, this item will not be shown to any users, because the first time a changelog-enabled app version is loaded, we set the latest version as "seen". After all, a changelog makes no sense for a brand-new user in the general case, and the initial rollout is a one-off event.
 
-[1.2.2]: https://github.com/abesto/ams2-career/compare/v1.2.1..v1.2.2
+[1.3.1]: https://github.com/abesto/ams2-career/compare/v1.2.1..v1.3.1
 [1.2.1]: https://github.com/abesto/ams2-career/compare/v1.2.0..v1.2.1
 [1.2.0]: https://github.com/abesto/ams2-career/compare/v1.1.0..v1.2.0
 [1.1.0]: https://github.com/abesto/ams2-career/compare/v1.0.0..v1.1.0
