@@ -37,7 +37,7 @@ function genRaceDate(carClass: CarClass): Date {
   const end = dayjs.min(start.add(10, 'year'), dayjs());
 
   const diffMs = start.diff(end);
-  const diffRandom = Math.random() * diffMs;
+  const diffRandom = Math.round(Math.random() * diffMs);
 
   var date = start.add(diffRandom, 'millisecond');
 
