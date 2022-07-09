@@ -5,6 +5,16 @@ import { fireEvent } from '@testing-library/react';
 import { App } from './';
 import { render } from './test-utils';
 
+// Generating race dates is inconsistent (due to floating point inaccuracies?) even with Math.random
+// mocked out. Solution: directly mock out randomDateBetween.
+jest.mock('app/pages/MainPage/racegen', () => {
+  const original = jest.requireActual('app/pages/MainPage/racegen');
+  return {
+    ...original,
+    randomDateBetween: 3,
+  };
+});
+
 test('Basic sanity: a bunch of race results', async () => {
   const { findByRole, findByText, container } = render(<App />);
   const click = async (role, opts) =>

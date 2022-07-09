@@ -1,6 +1,8 @@
 import dayjs from 'dayjs';
 import minMax from 'dayjs/plugin/minMax';
 
+import { choice, randomDateBetween } from './racegen.random';
+
 import { getCarClassesAt } from 'app/data/car_classes';
 import { canRaceAtNight, getCarsInClass } from 'app/data/cars';
 import { getTrackIdsFor } from 'app/data/tracks';
@@ -25,21 +27,13 @@ function highestUnlockedClasses(
   return [];
 }
 
-function choice<T>(items: T[]): T {
-  return items[Math.floor(Math.random() * items.length)];
-}
-
 function genRaceDate(carClass: CarClass): Date {
   const cars = getCarsInClass(carClass);
 
   const startYear = Math.min(...cars.map(c => c.year));
   const start = dayjs(new Date(startYear, 1, 1)).startOf('year');
   const end = dayjs.min(start.add(10, 'year'), dayjs());
-
-  const diffMs = start.diff(end);
-  const diffRandom = Math.round(Math.random() * diffMs);
-
-  var date = start.add(diffRandom, 'millisecond');
+  var date = randomDateBetween(start, end);
 
   if (!canRaceAtNight(carClass)) {
     date = date.set('hour', 10 + Math.floor(Math.random() * 7));
