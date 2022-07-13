@@ -55,6 +55,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - We now have a changelog! The app remembers what version was last seen, and only displays new items. Incidentally, this item will not be shown to any users, because the first time a changelog-enabled app version is loaded, we set the latest version as "seen". After all, a changelog makes no sense for a brand-new user in the general case, and the initial rollout is a one-off event.
 
+[1.4.1]: https://github.com/abesto/ams2-career/compare/v1.3.1..v1.4.1
 [1.3.1]: https://github.com/abesto/ams2-career/compare/v1.2.1..v1.3.1
 [1.2.1]: https://github.com/abesto/ams2-career/compare/v1.2.0..v1.2.1
 [1.2.0]: https://github.com/abesto/ams2-career/compare/v1.1.0..v1.2.0
