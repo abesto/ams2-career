@@ -13,6 +13,23 @@ function saveKey(version: number | string) {
   return `app:save:${version}`;
 }
 
+// Store changelog data in a separate item, so that saving / loading a career doesn't overwrite what changelog popups get displayed.
+const CHANGELOG_SLICE_KEY = 'changelog';
+
+function loadChangelog(state: RootState) {
+  const data = localStorage.getItem(CHANGELOG_SLICE_KEY);
+  if (data !== null) {
+    state.changelog = deserialize(data);
+  }
+}
+
+function saveChangelog(state: RootState) {
+  const data = state.changelog;
+  if (data !== undefined) {
+    localStorage.setItem(CHANGELOG_SLICE_KEY, serialize(data));
+  }
+}
+
 const MIGRATIONS = [
   // Add saveVersion and timestamp
   (state: RootState) => {
@@ -103,12 +120,20 @@ export function load(
   if (!raw) {
     return null;
   }
-  const data = deserialize(raw);
+  return loadStr(raw, shouldApplyMigrations);
+}
+
+export function loadStr(
+  raw: string,
+  shouldApplyMigrations: boolean,
+): RootState | null {
+  const data: RootState = deserialize(raw);
   if (shouldApplyMigrations) {
     applyAllMigrations(data);
   }
   addCommitVersion(data);
   delete data.cookieConsent; // Source of truth is a cookie for this
+  loadChangelog(data);
   return data;
 }
 
@@ -117,16 +142,17 @@ export function save(
   version: number | string = LATEST,
 ): void {
   localStorage.setItem(saveKey(version), serialize(state));
+  saveChangelog(state);
 }
 
-export function serialize(state: RootState): string {
+export function serialize(state: any): string {
   const data = { ...state };
   delete data.connectivity; // Connectivity is transient state
   delete data.cookieConsent; // Source of truth is a cookie for this
   return LZString.compressToUTF16(JSON.stringify(data));
 }
 
-export function deserialize(s: string): RootState {
+function deserialize<T>(s: string): T {
   const decompressed = LZString.decompressFromUTF16(s);
   if (decompressed === null) {
     return JSON.parse(s);
