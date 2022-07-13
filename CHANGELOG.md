@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [1.4.1] - 2022-07-13
 
+### Added
+
+- A new checkbox under Settings to allow regenerating your race options. Especially useful if you get a race for content (DLC) you don't own. ([#11](https://github.com/abesto/ams2-career/issues/11))
+
 ### Fixed
 
 - Loading an older save caused a changelog popup to display with changes since the save was downloaded. Cause: "the last version you saw" was stored together with the career save. It's not anymore, so the popups aren't confused anymore. ([#53](https://github.com/abesto/ams2-career/issues/53))

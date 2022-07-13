@@ -150,6 +150,37 @@ export function SettingsPage() {
             </ToggleButtonGroup>
           </Paper>
         </Grid>
+
+        <Grid item xs={4}>
+          <Paper sx={{ p: 3 }}>
+            <Typography variant="h5">Regenerate Races</Typography>
+            <Typography>
+              This option allows you to click a button on the "Go Race!" page to
+              regenerate the currently available races. Normally we recommend
+              leaving this disabled, but it can be especially useful to ensure
+              you have races with content you own if you don't have all the
+              DLCs.
+            </Typography>
+            <FormControlLabel
+              label="Enable Regenerating Races"
+              control={
+                <Checkbox
+                  inputProps={{
+                    // @ts-ignore
+                    'data-testid': 'regenerate-races',
+                  }}
+                  checked={
+                    settings.canRegenerateRaces ??
+                    initialSettings.canRegenerateRaces
+                  }
+                  onChange={e =>
+                    dispatch(actions.setCanRegenerateRaces(e.target.checked))
+                  }
+                />
+              }
+            />
+          </Paper>
+        </Grid>
       </Grid>
     </>
   );

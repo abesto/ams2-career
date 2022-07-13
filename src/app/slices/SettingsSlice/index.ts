@@ -8,6 +8,7 @@ import { SettingsState } from './types';
 export const initialState: SettingsState = {
   crossDisciplineGainsEnabled: true,
   xpMultiplier: 1.0,
+  canRegenerateRaces: false,
 };
 
 const slice = createSlice({
@@ -26,6 +27,9 @@ const slice = createSlice({
     },
     setXpMultiplier(state, action: PayloadAction<number>) {
       state.xpMultiplier = action.payload;
+    },
+    setCanRegenerateRaces(state, action: PayloadAction<boolean>) {
+      state.canRegenerateRaces = action.payload;
     },
   },
 });

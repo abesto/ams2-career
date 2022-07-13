@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { Grid, Paper, Typography } from '@mui/material';
+import { Button, Grid, Paper, Typography } from '@mui/material';
 
 import { GoRacing } from './components/GoRacing';
 import { RaceOptions } from './components/RaceOptions';
@@ -17,6 +17,7 @@ import { AIAdjustmentInstance } from './slice/types';
 
 import { useCareerSlice } from 'app/slices/CareerSlice';
 import { selectCareer } from 'app/slices/CareerSlice/selectors';
+import { selectSettings } from 'app/slices/SettingsSlice/selectors';
 import { CarId } from 'types/Car';
 import { RaceResult } from 'types/Race';
 
@@ -32,6 +33,7 @@ export function MainPage(props: Props) {
   const slice = useSelector(selectMainPage);
   const selectedRace = useSelector(selectSelectedRace);
   const currentCarId = useSelector(selectCurrentCarId);
+  const settings = useSelector(selectSettings);
 
   const [resultFeedbackOpen, setResultFeedbackOpen] = React.useState(false);
 
@@ -70,6 +72,15 @@ export function MainPage(props: Props) {
             <Typography variant="h4" sx={{ mb: 2 }}>
               Pick a Race
             </Typography>
+            {settings.canRegenerateRaces && (
+              <Button
+                onClick={() =>
+                  dispatch(mainPageActions.generateRaces({ career }))
+                }
+              >
+                Regenerate Races
+              </Button>
+            )}
             <RaceOptions
               races={slice.raceOptions}
               onSelect={index => dispatch(mainPageActions.selectRace(index))}

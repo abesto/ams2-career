@@ -1,19 +1,9 @@
 import * as React from 'react';
 
-import { fireEvent } from '@testing-library/react';
+import { fireEvent, within } from '@testing-library/react';
 
 import { App } from './';
 import { render } from './test-utils';
-
-// Generating race dates is inconsistent (due to floating point inaccuracies?) even with Math.random
-// mocked out. Solution: directly mock out randomDateBetween.
-jest.mock('app/pages/MainPage/racegen', () => {
-  const original = jest.requireActual('app/pages/MainPage/racegen');
-  return {
-    ...original,
-    randomDateBetween: 3,
-  };
-});
 
 test('Basic sanity: a bunch of race results', async () => {
   const { findByRole, findByText, container } = render(<App />);
@@ -71,3 +61,44 @@ test('Basic sanity: a bunch of race results', async () => {
   expect(await findByText(/Achieve maximum XP in Karting/));
   expect(container).toMatchSnapshot('achievement');
 }, 15000);
+
+test('Regenerate races', async () => {
+  const {
+    container,
+    getByText,
+    queryByText,
+    findByText,
+    findAllByText,
+    findByTestId,
+  } = render(<App />);
+
+  // Starts disabled
+  expect(queryByText(/regenerate races/i)).toBeNull();
+  // findByRole('link') is f*cked unfortunately
+  fireEvent.click(await findByText('Settings'));
+  // findByRole('checkbox') is f*cked unfortunately for some reason, so here we go with the testid
+  const checkbox = (await findByTestId('regenerate-races')) as HTMLInputElement;
+  expect(checkbox.checked).toBe(false);
+
+  // Can be enabled
+  fireEvent.click(checkbox);
+  expect(checkbox.checked).toBe(true);
+  fireEvent.click(await findByText('Go Race!'));
+  await findByText(/pick a race/i);
+  expect(queryByText(/regenerate races/i)).not.toBeNull();
+
+  // Actually regenerates races
+  expect(
+    // getAllByRole('row') is also f*cked, so...
+    container
+      .querySelectorAll('tr.MuiTableRow-root')[1]
+      .querySelectorAll('td')[3].textContent,
+  ).toEqual('Córdoba');
+  fireEvent.click(getByText(/regenerate races/i));
+  await findAllByText('Copa Classic (Class: B)');
+  expect(
+    container
+      .querySelectorAll('tr.MuiTableRow-root')[1]
+      .querySelectorAll('td')[3].textContent,
+  ).toEqual('Campo Grande');
+});
