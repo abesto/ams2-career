@@ -5,6 +5,7 @@ node_modules
 stats.json
 .pnp
 .pnp.js
+.yarn
 
 # misc
 .DS_Store
