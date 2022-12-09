@@ -3,8 +3,6 @@ import raw from 'raw.macro';
 import * as React from 'react';
 import { configureAppStore } from 'store/configureStore';
 
-import { within } from '@testing-library/react';
-
 import { Changelog } from 'app/components/Changelog';
 import { changelogActions } from 'app/slices/ChangelogSlice';
 import { simpleSemVer } from 'app/slices/ChangelogSlice/types';

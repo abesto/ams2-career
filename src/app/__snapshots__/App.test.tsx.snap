@@ -17,7 +17,7 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
           class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
         >
           <a
-            class="MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeLarge MuiButton-textSizeLarge MuiButton-colorInherit MuiButtonBase-root  css-1yz1089-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeLarge MuiButton-textSizeLarge MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeLarge MuiButton-textSizeLarge MuiButton-colorInherit css-1yz1089-MuiButtonBase-root-MuiButton-root"
             href="/"
             tabindex="0"
           >
@@ -28,7 +28,7 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
           </a>
         </h6>
         <a
-          class="MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit MuiButtonBase-root  css-u44ztt-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit css-u44ztt-MuiButtonBase-root-MuiButton-root"
           href="/career"
           tabindex="0"
         >
@@ -38,7 +38,7 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
           />
         </a>
         <a
-          class="MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit MuiButtonBase-root  css-u44ztt-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit css-u44ztt-MuiButtonBase-root-MuiButton-root"
           href="/settings"
           tabindex="0"
         >
@@ -55,7 +55,7 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
           type="button"
         >
           <span
-            class="BaseBadge-root MuiBadge-root css-1c32n2y-MuiBadge-root"
+            class="MuiBadge-root MuiBadge-root css-1c32n2y-MuiBadge-root"
           >
             <svg
               aria-hidden="true"
@@ -69,7 +69,7 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
               />
             </svg>
             <span
-              class="BaseBadge-badge MuiBadge-badge MuiBadge-standard MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorInfo css-whxibi-MuiBadge-badge"
+              class="MuiBadge-badge MuiBadge-standard MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorInfo MuiBadge-badge css-whxibi-MuiBadge-badge"
             >
               5
             </span>
@@ -672,7 +672,7 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
               class="css-1kxrbkv"
             >
               <div
-                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-gac2fo-MuiChip-root"
+                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-w66kx-MuiChip-root"
               >
                 <span
                   class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
@@ -685,7 +685,7 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
               class="css-1kxrbkv"
             >
               <div
-                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-gac2fo-MuiChip-root"
+                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-w66kx-MuiChip-root"
               >
                 <span
                   class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
@@ -698,7 +698,7 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
               class="css-1kxrbkv"
             >
               <div
-                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-gac2fo-MuiChip-root"
+                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-w66kx-MuiChip-root"
               >
                 <span
                   class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
@@ -711,7 +711,7 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
               class="css-1kxrbkv"
             >
               <div
-                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-gac2fo-MuiChip-root"
+                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-w66kx-MuiChip-root"
               >
                 <span
                   class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
@@ -724,7 +724,7 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
               class="css-1kxrbkv"
             >
               <div
-                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-gac2fo-MuiChip-root"
+                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-w66kx-MuiChip-root"
               >
                 <span
                   class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
@@ -744,7 +744,7 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
                 class="MuiStepLabel-root MuiStepLabel-horizontal MuiStepLabel-alternativeLabel css-ascpo7-MuiStepLabel-root"
               >
                 <span
-                  class="MuiStepLabel-iconContainer MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
+                  class="MuiStepLabel-iconContainer Mui-completed MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
                 >
                   <svg
                     aria-hidden="true"
@@ -759,10 +759,10 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
                   </svg>
                 </span>
                 <span
-                  class="MuiStepLabel-labelContainer css-16ubnlw-MuiStepLabel-labelContainer"
+                  class="MuiStepLabel-labelContainer MuiStepLabel-alternativeLabel css-1vyamtt-MuiStepLabel-labelContainer"
                 >
                   <span
-                    class="MuiStepLabel-label Mui-completed MuiStepLabel-alternativeLabel css-qivjh0-MuiStepLabel-label"
+                    class="MuiStepLabel-label Mui-completed MuiStepLabel-alternativeLabel css-1hv8oq8-MuiStepLabel-label"
                   >
                     <div>
                       Copa Montana
@@ -788,7 +788,7 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
                 class="MuiStepLabel-root MuiStepLabel-horizontal MuiStepLabel-alternativeLabel css-ascpo7-MuiStepLabel-root"
               >
                 <span
-                  class="MuiStepLabel-iconContainer MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
+                  class="MuiStepLabel-iconContainer Mui-active MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
                 >
                   <svg
                     aria-hidden="true"
@@ -813,10 +813,10 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
                   </svg>
                 </span>
                 <span
-                  class="MuiStepLabel-labelContainer css-16ubnlw-MuiStepLabel-labelContainer"
+                  class="MuiStepLabel-labelContainer MuiStepLabel-alternativeLabel css-1vyamtt-MuiStepLabel-labelContainer"
                 >
                   <span
-                    class="MuiStepLabel-label Mui-active MuiStepLabel-alternativeLabel css-qivjh0-MuiStepLabel-label"
+                    class="MuiStepLabel-label Mui-active MuiStepLabel-alternativeLabel css-1hv8oq8-MuiStepLabel-label"
                   >
                     <div>
                       Carrera Cup
@@ -842,7 +842,7 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
                 class="MuiStepLabel-root MuiStepLabel-horizontal Mui-disabled MuiStepLabel-alternativeLabel css-ascpo7-MuiStepLabel-root"
               >
                 <span
-                  class="MuiStepLabel-iconContainer MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
+                  class="MuiStepLabel-iconContainer Mui-disabled MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
                 >
                   <svg
                     aria-hidden="true"
@@ -867,10 +867,10 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
                   </svg>
                 </span>
                 <span
-                  class="MuiStepLabel-labelContainer css-16ubnlw-MuiStepLabel-labelContainer"
+                  class="MuiStepLabel-labelContainer MuiStepLabel-alternativeLabel css-1vyamtt-MuiStepLabel-labelContainer"
                 >
                   <span
-                    class="MuiStepLabel-label Mui-disabled MuiStepLabel-alternativeLabel css-qivjh0-MuiStepLabel-label"
+                    class="MuiStepLabel-label Mui-disabled MuiStepLabel-alternativeLabel css-1hv8oq8-MuiStepLabel-label"
                   >
                     <div>
                       GT4
@@ -893,7 +893,7 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
                 class="MuiStepLabel-root MuiStepLabel-horizontal Mui-disabled MuiStepLabel-alternativeLabel css-ascpo7-MuiStepLabel-root"
               >
                 <span
-                  class="MuiStepLabel-iconContainer MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
+                  class="MuiStepLabel-iconContainer Mui-disabled MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
                 >
                   <svg
                     aria-hidden="true"
@@ -918,10 +918,10 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
                   </svg>
                 </span>
                 <span
-                  class="MuiStepLabel-labelContainer css-16ubnlw-MuiStepLabel-labelContainer"
+                  class="MuiStepLabel-labelContainer MuiStepLabel-alternativeLabel css-1vyamtt-MuiStepLabel-labelContainer"
                 >
                   <span
-                    class="MuiStepLabel-label Mui-disabled MuiStepLabel-alternativeLabel css-qivjh0-MuiStepLabel-label"
+                    class="MuiStepLabel-label Mui-disabled MuiStepLabel-alternativeLabel css-1hv8oq8-MuiStepLabel-label"
                   >
                     <div>
                       GT3
@@ -1104,7 +1104,7 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
                 class="MuiFormControl-root MuiTextField-root css-1dzm624-MuiFormControl-root-MuiTextField-root"
               >
                 <label
-                  class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
                   for=":r1a:"
                   id=":r1a:-label"
@@ -1112,11 +1112,11 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
                   Global
                 </label>
                 <div
-                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
                 >
                   <input
                     aria-invalid="false"
-                    class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
+                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
                     id=":r1a:"
                     type="number"
                     value="0"
@@ -1126,7 +1126,7 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
                     class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                   >
                     <legend
-                      class="css-1in441m"
+                      class="css-14lo706"
                     >
                       <span>
                         Global
@@ -1148,7 +1148,7 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
                 class="MuiFormControl-root MuiTextField-root css-1dzm624-MuiFormControl-root-MuiTextField-root"
               >
                 <label
-                  class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
                   for=":r1b:"
                   id=":r1b:-label"
@@ -1156,11 +1156,11 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
                   GT
                 </label>
                 <div
-                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
                 >
                   <input
                     aria-invalid="false"
-                    class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
+                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
                     id=":r1b:"
                     type="number"
                     value="0"
@@ -1170,7 +1170,7 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
                     class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                   >
                     <legend
-                      class="css-1in441m"
+                      class="css-14lo706"
                     >
                       <span>
                         GT
@@ -1192,7 +1192,7 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
                 class="MuiFormControl-root MuiTextField-root css-mxfd1w-MuiFormControl-root-MuiTextField-root"
               >
                 <label
-                  class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
                   for=":r1c:"
                   id=":r1c:-label"
@@ -1200,11 +1200,11 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
                   Carrera Cup
                 </label>
                 <div
-                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
                 >
                   <input
                     aria-invalid="false"
-                    class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
+                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
                     id=":r1c:"
                     type="number"
                     value="0"
@@ -1214,7 +1214,7 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
                     class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                   >
                     <legend
-                      class="css-1in441m"
+                      class="css-14lo706"
                     >
                       <span>
                         Carrera Cup
@@ -1236,7 +1236,7 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
                 class="MuiFormControl-root MuiTextField-root css-mgj5is-MuiFormControl-root-MuiTextField-root"
               >
                 <label
-                  class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
                   for=":r1d:"
                   id=":r1d:-label"
@@ -1244,11 +1244,11 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
                   Porsche 911 GT3 Cup 3.8
                 </label>
                 <div
-                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
                 >
                   <input
                     aria-invalid="false"
-                    class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
+                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
                     id=":r1d:"
                     type="number"
                     value="0"
@@ -1258,7 +1258,7 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
                     class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                   >
                     <legend
-                      class="css-1in441m"
+                      class="css-14lo706"
                     >
                       <span>
                         Porsche 911 GT3 Cup 3.8
@@ -1304,20 +1304,20 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
               class="MuiFormControl-root css-e363es-MuiFormControl-root"
             >
               <label
-                class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                 data-shrink="true"
                 id="car-select"
               >
                 Your Car
               </label>
               <div
-                class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl  css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+                class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl  css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
               >
                 <div
                   aria-expanded="false"
                   aria-haspopup="listbox"
                   aria-labelledby="car-select"
-                  class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+                  class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
                   role="button"
                   tabindex="0"
                 >
@@ -1345,7 +1345,7 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
                   class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                 >
                   <legend
-                    class="css-1in441m"
+                    class="css-14lo706"
                   >
                     <span>
                       Your Car
@@ -1361,7 +1361,7 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
                 class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
               >
                 <label
-                  class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
                   for=":r1e:"
                   id=":r1e:-label"
@@ -1369,11 +1369,11 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
                   Finishing position
                 </label>
                 <div
-                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
                 >
                   <input
                     aria-invalid="false"
-                    class="MuiOutlinedInput-input MuiInputBase-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+                    class="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
                     id=":r1e:"
                     type="number"
                     value="1"
@@ -1383,7 +1383,7 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
                     class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                   >
                     <legend
-                      class="css-1in441m"
+                      class="css-14lo706"
                     >
                       <span>
                         Finishing position
@@ -1394,7 +1394,7 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
               </div>
             </div>
             <button
-              class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButtonBase-root  css-6fwjxy-MuiButtonBase-root-MuiButton-root"
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge css-6fwjxy-MuiButtonBase-root-MuiButton-root"
               tabindex="0"
               type="button"
             >
@@ -1453,7 +1453,7 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
           class="MuiSnackbarContent-action css-1kr9x0n-MuiSnackbarContent-action"
         >
           <button
-            class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root  css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root"
             tabindex="0"
             type="button"
           >
@@ -1489,7 +1489,7 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
           class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
         >
           <a
-            class="MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeLarge MuiButton-textSizeLarge MuiButton-colorInherit MuiButtonBase-root  css-1yz1089-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeLarge MuiButton-textSizeLarge MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeLarge MuiButton-textSizeLarge MuiButton-colorInherit css-1yz1089-MuiButtonBase-root-MuiButton-root"
             href="/"
             tabindex="0"
           >
@@ -1500,7 +1500,7 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
           </a>
         </h6>
         <a
-          class="MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit MuiButtonBase-root  css-u44ztt-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit css-u44ztt-MuiButtonBase-root-MuiButton-root"
           href="/career"
           tabindex="0"
         >
@@ -1510,7 +1510,7 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
           />
         </a>
         <a
-          class="MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit MuiButtonBase-root  css-u44ztt-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit css-u44ztt-MuiButtonBase-root-MuiButton-root"
           href="/settings"
           tabindex="0"
         >
@@ -1527,7 +1527,7 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
           type="button"
         >
           <span
-            class="BaseBadge-root MuiBadge-root css-1c32n2y-MuiBadge-root"
+            class="MuiBadge-root MuiBadge-root css-1c32n2y-MuiBadge-root"
           >
             <svg
               aria-hidden="true"
@@ -1541,7 +1541,7 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
               />
             </svg>
             <span
-              class="BaseBadge-badge BaseBadge-invisible MuiBadge-badge MuiBadge-standard MuiBadge-invisible MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorInfo css-1pz1bts-MuiBadge-badge"
+              class="MuiBadge-badge MuiBadge-standard MuiBadge-invisible MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorInfo MuiBadge-badge MuiBadge-invisible css-1pz1bts-MuiBadge-badge"
             >
               0
             </span>
@@ -2169,7 +2169,7 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
               class="css-1kxrbkv"
             >
               <div
-                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-gac2fo-MuiChip-root"
+                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-w66kx-MuiChip-root"
               >
                 <span
                   class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
@@ -2182,7 +2182,7 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
               class="css-1kxrbkv"
             >
               <div
-                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-gac2fo-MuiChip-root"
+                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-w66kx-MuiChip-root"
               >
                 <span
                   class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
@@ -2195,7 +2195,7 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
               class="css-1kxrbkv"
             >
               <div
-                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-gac2fo-MuiChip-root"
+                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-w66kx-MuiChip-root"
               >
                 <span
                   class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
@@ -2208,7 +2208,7 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
               class="css-1kxrbkv"
             >
               <div
-                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-gac2fo-MuiChip-root"
+                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-w66kx-MuiChip-root"
               >
                 <span
                   class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
@@ -2221,7 +2221,7 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
               class="css-1kxrbkv"
             >
               <div
-                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-gac2fo-MuiChip-root"
+                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-w66kx-MuiChip-root"
               >
                 <span
                   class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
@@ -2241,7 +2241,7 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
                 class="MuiStepLabel-root MuiStepLabel-horizontal MuiStepLabel-alternativeLabel css-ascpo7-MuiStepLabel-root"
               >
                 <span
-                  class="MuiStepLabel-iconContainer MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
+                  class="MuiStepLabel-iconContainer Mui-active MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
                 >
                   <svg
                     aria-hidden="true"
@@ -2266,10 +2266,10 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
                   </svg>
                 </span>
                 <span
-                  class="MuiStepLabel-labelContainer css-16ubnlw-MuiStepLabel-labelContainer"
+                  class="MuiStepLabel-labelContainer MuiStepLabel-alternativeLabel css-1vyamtt-MuiStepLabel-labelContainer"
                 >
                   <span
-                    class="MuiStepLabel-label Mui-active MuiStepLabel-alternativeLabel css-qivjh0-MuiStepLabel-label"
+                    class="MuiStepLabel-label Mui-active MuiStepLabel-alternativeLabel css-1hv8oq8-MuiStepLabel-label"
                   >
                     <div>
                       Copa Montana
@@ -2295,7 +2295,7 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
                 class="MuiStepLabel-root MuiStepLabel-horizontal Mui-disabled MuiStepLabel-alternativeLabel css-ascpo7-MuiStepLabel-root"
               >
                 <span
-                  class="MuiStepLabel-iconContainer MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
+                  class="MuiStepLabel-iconContainer Mui-disabled MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
                 >
                   <svg
                     aria-hidden="true"
@@ -2320,10 +2320,10 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
                   </svg>
                 </span>
                 <span
-                  class="MuiStepLabel-labelContainer css-16ubnlw-MuiStepLabel-labelContainer"
+                  class="MuiStepLabel-labelContainer MuiStepLabel-alternativeLabel css-1vyamtt-MuiStepLabel-labelContainer"
                 >
                   <span
-                    class="MuiStepLabel-label Mui-disabled MuiStepLabel-alternativeLabel css-qivjh0-MuiStepLabel-label"
+                    class="MuiStepLabel-label Mui-disabled MuiStepLabel-alternativeLabel css-1hv8oq8-MuiStepLabel-label"
                   >
                     <div>
                       Carrera Cup
@@ -2349,7 +2349,7 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
                 class="MuiStepLabel-root MuiStepLabel-horizontal Mui-disabled MuiStepLabel-alternativeLabel css-ascpo7-MuiStepLabel-root"
               >
                 <span
-                  class="MuiStepLabel-iconContainer MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
+                  class="MuiStepLabel-iconContainer Mui-disabled MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
                 >
                   <svg
                     aria-hidden="true"
@@ -2374,10 +2374,10 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
                   </svg>
                 </span>
                 <span
-                  class="MuiStepLabel-labelContainer css-16ubnlw-MuiStepLabel-labelContainer"
+                  class="MuiStepLabel-labelContainer MuiStepLabel-alternativeLabel css-1vyamtt-MuiStepLabel-labelContainer"
                 >
                   <span
-                    class="MuiStepLabel-label Mui-disabled MuiStepLabel-alternativeLabel css-qivjh0-MuiStepLabel-label"
+                    class="MuiStepLabel-label Mui-disabled MuiStepLabel-alternativeLabel css-1hv8oq8-MuiStepLabel-label"
                   >
                     <div>
                       GT4
@@ -2400,7 +2400,7 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
                 class="MuiStepLabel-root MuiStepLabel-horizontal Mui-disabled MuiStepLabel-alternativeLabel css-ascpo7-MuiStepLabel-root"
               >
                 <span
-                  class="MuiStepLabel-iconContainer MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
+                  class="MuiStepLabel-iconContainer Mui-disabled MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
                 >
                   <svg
                     aria-hidden="true"
@@ -2425,10 +2425,10 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
                   </svg>
                 </span>
                 <span
-                  class="MuiStepLabel-labelContainer css-16ubnlw-MuiStepLabel-labelContainer"
+                  class="MuiStepLabel-labelContainer MuiStepLabel-alternativeLabel css-1vyamtt-MuiStepLabel-labelContainer"
                 >
                   <span
-                    class="MuiStepLabel-label Mui-disabled MuiStepLabel-alternativeLabel css-qivjh0-MuiStepLabel-label"
+                    class="MuiStepLabel-label Mui-disabled MuiStepLabel-alternativeLabel css-1hv8oq8-MuiStepLabel-label"
                   >
                     <div>
                       GT3
@@ -2613,7 +2613,7 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
                 class="MuiFormControl-root MuiTextField-root css-1dzm624-MuiFormControl-root-MuiTextField-root"
               >
                 <label
-                  class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
                   for=":ra:"
                   id=":ra:-label"
@@ -2621,11 +2621,11 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
                   Global
                 </label>
                 <div
-                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
                 >
                   <input
                     aria-invalid="false"
-                    class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
+                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
                     id=":ra:"
                     type="number"
                     value="0"
@@ -2635,7 +2635,7 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
                     class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                   >
                     <legend
-                      class="css-1in441m"
+                      class="css-14lo706"
                     >
                       <span>
                         Global
@@ -2657,7 +2657,7 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
                 class="MuiFormControl-root MuiTextField-root css-1dzm624-MuiFormControl-root-MuiTextField-root"
               >
                 <label
-                  class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
                   for=":rb:"
                   id=":rb:-label"
@@ -2665,11 +2665,11 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
                   GT
                 </label>
                 <div
-                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
                 >
                   <input
                     aria-invalid="false"
-                    class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
+                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
                     id=":rb:"
                     type="number"
                     value="0"
@@ -2679,7 +2679,7 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
                     class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                   >
                     <legend
-                      class="css-1in441m"
+                      class="css-14lo706"
                     >
                       <span>
                         GT
@@ -2701,7 +2701,7 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
                 class="MuiFormControl-root MuiTextField-root css-1dzm624-MuiFormControl-root-MuiTextField-root"
               >
                 <label
-                  class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
                   for=":rc:"
                   id=":rc:-label"
@@ -2709,11 +2709,11 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
                   GT5
                 </label>
                 <div
-                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
                 >
                   <input
                     aria-invalid="false"
-                    class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
+                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
                     id=":rc:"
                     type="number"
                     value="0"
@@ -2723,7 +2723,7 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
                     class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                   >
                     <legend
-                      class="css-1in441m"
+                      class="css-14lo706"
                     >
                       <span>
                         GT5
@@ -2745,7 +2745,7 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
                 class="MuiFormControl-root MuiTextField-root css-vbc7j-MuiFormControl-root-MuiTextField-root"
               >
                 <label
-                  class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
                   for=":rd:"
                   id=":rd:-label"
@@ -2753,11 +2753,11 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
                   Ginetta G40 GT5
                 </label>
                 <div
-                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
                 >
                   <input
                     aria-invalid="false"
-                    class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
+                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
                     id=":rd:"
                     type="number"
                     value="0"
@@ -2767,7 +2767,7 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
                     class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                   >
                     <legend
-                      class="css-1in441m"
+                      class="css-14lo706"
                     >
                       <span>
                         Ginetta G40 GT5
@@ -2813,20 +2813,20 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
               class="MuiFormControl-root css-e363es-MuiFormControl-root"
             >
               <label
-                class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                 data-shrink="true"
                 id="car-select"
               >
                 Your Car
               </label>
               <div
-                class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl  css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+                class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl  css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
               >
                 <div
                   aria-expanded="false"
                   aria-haspopup="listbox"
                   aria-labelledby="car-select"
-                  class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+                  class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
                   role="button"
                   tabindex="0"
                 >
@@ -2854,7 +2854,7 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
                   class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                 >
                   <legend
-                    class="css-1in441m"
+                    class="css-14lo706"
                   >
                     <span>
                       Your Car
@@ -2870,7 +2870,7 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
                 class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
               >
                 <label
-                  class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
                   for=":re:"
                   id=":re:-label"
@@ -2878,11 +2878,11 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
                   Finishing position
                 </label>
                 <div
-                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
                 >
                   <input
                     aria-invalid="false"
-                    class="MuiOutlinedInput-input MuiInputBase-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+                    class="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
                     id=":re:"
                     type="number"
                     value="1"
@@ -2892,7 +2892,7 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
                     class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                   >
                     <legend
-                      class="css-1in441m"
+                      class="css-14lo706"
                     >
                       <span>
                         Finishing position
@@ -2903,7 +2903,7 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
               </div>
             </div>
             <button
-              class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButtonBase-root  css-6fwjxy-MuiButtonBase-root-MuiButton-root"
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge css-6fwjxy-MuiButtonBase-root-MuiButton-root"
               tabindex="0"
               type="button"
             >
@@ -2940,7 +2940,7 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
           class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
         >
           <a
-            class="MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeLarge MuiButton-textSizeLarge MuiButton-colorInherit MuiButtonBase-root  css-1yz1089-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeLarge MuiButton-textSizeLarge MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeLarge MuiButton-textSizeLarge MuiButton-colorInherit css-1yz1089-MuiButtonBase-root-MuiButton-root"
             href="/"
             tabindex="0"
           >
@@ -2951,7 +2951,7 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
           </a>
         </h6>
         <a
-          class="MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit MuiButtonBase-root  css-u44ztt-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit css-u44ztt-MuiButtonBase-root-MuiButton-root"
           href="/career"
           tabindex="0"
         >
@@ -2961,7 +2961,7 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
           />
         </a>
         <a
-          class="MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit MuiButtonBase-root  css-u44ztt-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit css-u44ztt-MuiButtonBase-root-MuiButton-root"
           href="/settings"
           tabindex="0"
         >
@@ -2978,7 +2978,7 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
           type="button"
         >
           <span
-            class="BaseBadge-root MuiBadge-root css-1c32n2y-MuiBadge-root"
+            class="MuiBadge-root MuiBadge-root css-1c32n2y-MuiBadge-root"
           >
             <svg
               aria-hidden="true"
@@ -2992,7 +2992,7 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
               />
             </svg>
             <span
-              class="BaseBadge-badge BaseBadge-invisible MuiBadge-badge MuiBadge-standard MuiBadge-invisible MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorInfo css-1pz1bts-MuiBadge-badge"
+              class="MuiBadge-badge MuiBadge-standard MuiBadge-invisible MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorInfo MuiBadge-badge MuiBadge-invisible css-1pz1bts-MuiBadge-badge"
             >
               0
             </span>
@@ -3620,7 +3620,7 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
               class="css-1kxrbkv"
             >
               <div
-                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-gac2fo-MuiChip-root"
+                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-w66kx-MuiChip-root"
               >
                 <span
                   class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
@@ -3633,7 +3633,7 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
               class="css-1kxrbkv"
             >
               <div
-                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-gac2fo-MuiChip-root"
+                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-w66kx-MuiChip-root"
               >
                 <span
                   class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
@@ -3646,7 +3646,7 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
               class="css-1kxrbkv"
             >
               <div
-                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-gac2fo-MuiChip-root"
+                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-w66kx-MuiChip-root"
               >
                 <span
                   class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
@@ -3659,7 +3659,7 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
               class="css-1kxrbkv"
             >
               <div
-                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-gac2fo-MuiChip-root"
+                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-w66kx-MuiChip-root"
               >
                 <span
                   class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
@@ -3672,7 +3672,7 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
               class="css-1kxrbkv"
             >
               <div
-                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-gac2fo-MuiChip-root"
+                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-w66kx-MuiChip-root"
               >
                 <span
                   class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
@@ -3692,7 +3692,7 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
                 class="MuiStepLabel-root MuiStepLabel-horizontal MuiStepLabel-alternativeLabel css-ascpo7-MuiStepLabel-root"
               >
                 <span
-                  class="MuiStepLabel-iconContainer MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
+                  class="MuiStepLabel-iconContainer Mui-active MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
                 >
                   <svg
                     aria-hidden="true"
@@ -3717,10 +3717,10 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
                   </svg>
                 </span>
                 <span
-                  class="MuiStepLabel-labelContainer css-16ubnlw-MuiStepLabel-labelContainer"
+                  class="MuiStepLabel-labelContainer MuiStepLabel-alternativeLabel css-1vyamtt-MuiStepLabel-labelContainer"
                 >
                   <span
-                    class="MuiStepLabel-label Mui-active MuiStepLabel-alternativeLabel css-qivjh0-MuiStepLabel-label"
+                    class="MuiStepLabel-label Mui-active MuiStepLabel-alternativeLabel css-1hv8oq8-MuiStepLabel-label"
                   >
                     <div>
                       Copa Classic (Class: B)
@@ -3752,7 +3752,7 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
                 class="MuiStepLabel-root MuiStepLabel-horizontal Mui-disabled MuiStepLabel-alternativeLabel css-ascpo7-MuiStepLabel-root"
               >
                 <span
-                  class="MuiStepLabel-iconContainer MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
+                  class="MuiStepLabel-iconContainer Mui-disabled MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
                 >
                   <svg
                     aria-hidden="true"
@@ -3777,10 +3777,10 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
                   </svg>
                 </span>
                 <span
-                  class="MuiStepLabel-labelContainer css-16ubnlw-MuiStepLabel-labelContainer"
+                  class="MuiStepLabel-labelContainer MuiStepLabel-alternativeLabel css-1vyamtt-MuiStepLabel-labelContainer"
                 >
                   <span
-                    class="MuiStepLabel-label Mui-disabled MuiStepLabel-alternativeLabel css-qivjh0-MuiStepLabel-label"
+                    class="MuiStepLabel-label Mui-disabled MuiStepLabel-alternativeLabel css-1hv8oq8-MuiStepLabel-label"
                   >
                     <div>
                       ARC
@@ -3806,7 +3806,7 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
                 class="MuiStepLabel-root MuiStepLabel-horizontal Mui-disabled MuiStepLabel-alternativeLabel css-ascpo7-MuiStepLabel-root"
               >
                 <span
-                  class="MuiStepLabel-iconContainer MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
+                  class="MuiStepLabel-iconContainer Mui-disabled MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
                 >
                   <svg
                     aria-hidden="true"
@@ -3831,10 +3831,10 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
                   </svg>
                 </span>
                 <span
-                  class="MuiStepLabel-labelContainer css-16ubnlw-MuiStepLabel-labelContainer"
+                  class="MuiStepLabel-labelContainer MuiStepLabel-alternativeLabel css-1vyamtt-MuiStepLabel-labelContainer"
                 >
                   <span
-                    class="MuiStepLabel-label Mui-disabled MuiStepLabel-alternativeLabel css-qivjh0-MuiStepLabel-label"
+                    class="MuiStepLabel-label Mui-disabled MuiStepLabel-alternativeLabel css-1hv8oq8-MuiStepLabel-label"
                   >
                     <div>
                       Caterham GrB
@@ -3860,7 +3860,7 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
                 class="MuiStepLabel-root MuiStepLabel-horizontal Mui-disabled MuiStepLabel-alternativeLabel css-ascpo7-MuiStepLabel-root"
               >
                 <span
-                  class="MuiStepLabel-iconContainer MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
+                  class="MuiStepLabel-iconContainer Mui-disabled MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
                 >
                   <svg
                     aria-hidden="true"
@@ -3885,10 +3885,10 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
                   </svg>
                 </span>
                 <span
-                  class="MuiStepLabel-labelContainer css-16ubnlw-MuiStepLabel-labelContainer"
+                  class="MuiStepLabel-labelContainer MuiStepLabel-alternativeLabel css-1vyamtt-MuiStepLabel-labelContainer"
                 >
                   <span
-                    class="MuiStepLabel-label Mui-disabled MuiStepLabel-alternativeLabel css-qivjh0-MuiStepLabel-label"
+                    class="MuiStepLabel-label Mui-disabled MuiStepLabel-alternativeLabel css-1hv8oq8-MuiStepLabel-label"
                   >
                     <div>
                       Caterham GrA
@@ -4079,7 +4079,7 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
                 class="MuiFormControl-root MuiTextField-root css-1dzm624-MuiFormControl-root-MuiTextField-root"
               >
                 <label
-                  class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
                   for=":ra:"
                   id=":ra:-label"
@@ -4087,11 +4087,11 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
                   Global
                 </label>
                 <div
-                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
                 >
                   <input
                     aria-invalid="false"
-                    class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
+                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
                     id=":ra:"
                     type="number"
                     value="0"
@@ -4101,7 +4101,7 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
                     class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                   >
                     <legend
-                      class="css-1in441m"
+                      class="css-14lo706"
                     >
                       <span>
                         Global
@@ -4123,7 +4123,7 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
                 class="MuiFormControl-root MuiTextField-root css-1dzm624-MuiFormControl-root-MuiTextField-root"
               >
                 <label
-                  class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
                   for=":rb:"
                   id=":rb:-label"
@@ -4131,11 +4131,11 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
                   Club
                 </label>
                 <div
-                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
                 >
                   <input
                     aria-invalid="false"
-                    class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
+                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
                     id=":rb:"
                     type="number"
                     value="0"
@@ -4145,7 +4145,7 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
                     class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                   >
                     <legend
-                      class="css-1in441m"
+                      class="css-14lo706"
                     >
                       <span>
                         Club
@@ -4167,7 +4167,7 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
                 class="MuiFormControl-root MuiTextField-root css-mgj5is-MuiFormControl-root-MuiTextField-root"
               >
                 <label
-                  class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
                   for=":rc:"
                   id=":rc:-label"
@@ -4175,11 +4175,11 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
                   Copa Classic (Class: B)
                 </label>
                 <div
-                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
                 >
                   <input
                     aria-invalid="false"
-                    class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
+                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
                     id=":rc:"
                     type="number"
                     value="0"
@@ -4189,7 +4189,7 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
                     class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                   >
                     <legend
-                      class="css-1in441m"
+                      class="css-14lo706"
                     >
                       <span>
                         Copa Classic (Class: B)
@@ -4211,7 +4211,7 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
                 class="MuiFormControl-root MuiTextField-root css-1lje1k7-MuiFormControl-root-MuiTextField-root"
               >
                 <label
-                  class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
                   for=":rd:"
                   id=":rd:-label"
@@ -4219,11 +4219,11 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
                   Chevrolet Chevette
                 </label>
                 <div
-                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
                 >
                   <input
                     aria-invalid="false"
-                    class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
+                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
                     id=":rd:"
                     type="number"
                     value="0"
@@ -4233,7 +4233,7 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
                     class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                   >
                     <legend
-                      class="css-1in441m"
+                      class="css-14lo706"
                     >
                       <span>
                         Chevrolet Chevette
@@ -4279,20 +4279,20 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
               class="MuiFormControl-root css-e363es-MuiFormControl-root"
             >
               <label
-                class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                 data-shrink="true"
                 id="car-select"
               >
                 Your Car
               </label>
               <div
-                class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl  css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+                class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl  css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
               >
                 <div
                   aria-expanded="false"
                   aria-haspopup="listbox"
                   aria-labelledby="car-select"
-                  class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+                  class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
                   role="button"
                   tabindex="0"
                 >
@@ -4320,7 +4320,7 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
                   class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                 >
                   <legend
-                    class="css-1in441m"
+                    class="css-14lo706"
                   >
                     <span>
                       Your Car
@@ -4336,7 +4336,7 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
                 class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
               >
                 <label
-                  class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
                   for=":re:"
                   id=":re:-label"
@@ -4344,11 +4344,11 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
                   Finishing position
                 </label>
                 <div
-                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
                 >
                   <input
                     aria-invalid="false"
-                    class="MuiOutlinedInput-input MuiInputBase-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+                    class="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
                     id=":re:"
                     type="number"
                     value="1"
@@ -4358,7 +4358,7 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
                     class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                   >
                     <legend
-                      class="css-1in441m"
+                      class="css-14lo706"
                     >
                       <span>
                         Finishing position
@@ -4369,7 +4369,7 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
               </div>
             </div>
             <button
-              class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButtonBase-root  css-6fwjxy-MuiButtonBase-root-MuiButton-root"
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge css-6fwjxy-MuiButtonBase-root-MuiButton-root"
               tabindex="0"
               type="button"
             >
@@ -4445,7 +4445,7 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
           class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
         >
           <a
-            class="MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeLarge MuiButton-textSizeLarge MuiButton-colorInherit MuiButtonBase-root  css-1yz1089-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeLarge MuiButton-textSizeLarge MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeLarge MuiButton-textSizeLarge MuiButton-colorInherit css-1yz1089-MuiButtonBase-root-MuiButton-root"
             href="/"
             tabindex="0"
           >
@@ -4456,7 +4456,7 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
           </a>
         </h6>
         <a
-          class="MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit MuiButtonBase-root  css-u44ztt-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit css-u44ztt-MuiButtonBase-root-MuiButton-root"
           href="/career"
           tabindex="0"
         >
@@ -4466,7 +4466,7 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
           />
         </a>
         <a
-          class="MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit MuiButtonBase-root  css-u44ztt-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit css-u44ztt-MuiButtonBase-root-MuiButton-root"
           href="/settings"
           tabindex="0"
         >
@@ -4483,7 +4483,7 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
           type="button"
         >
           <span
-            class="BaseBadge-root MuiBadge-root css-1c32n2y-MuiBadge-root"
+            class="MuiBadge-root MuiBadge-root css-1c32n2y-MuiBadge-root"
           >
             <svg
               aria-hidden="true"
@@ -4497,7 +4497,7 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
               />
             </svg>
             <span
-              class="BaseBadge-badge BaseBadge-invisible MuiBadge-badge MuiBadge-standard MuiBadge-invisible MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorInfo css-1pz1bts-MuiBadge-badge"
+              class="MuiBadge-badge MuiBadge-standard MuiBadge-invisible MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorInfo MuiBadge-badge MuiBadge-invisible css-1pz1bts-MuiBadge-badge"
             >
               0
             </span>
@@ -5125,7 +5125,7 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
               class="css-1kxrbkv"
             >
               <div
-                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-gac2fo-MuiChip-root"
+                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-w66kx-MuiChip-root"
               >
                 <span
                   class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
@@ -5138,7 +5138,7 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
               class="css-1kxrbkv"
             >
               <div
-                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-gac2fo-MuiChip-root"
+                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-w66kx-MuiChip-root"
               >
                 <span
                   class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
@@ -5151,7 +5151,7 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
               class="css-1kxrbkv"
             >
               <div
-                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-gac2fo-MuiChip-root"
+                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-w66kx-MuiChip-root"
               >
                 <span
                   class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
@@ -5164,7 +5164,7 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
               class="css-1kxrbkv"
             >
               <div
-                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-gac2fo-MuiChip-root"
+                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-w66kx-MuiChip-root"
               >
                 <span
                   class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
@@ -5177,7 +5177,7 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
               class="css-1kxrbkv"
             >
               <div
-                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-gac2fo-MuiChip-root"
+                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-w66kx-MuiChip-root"
               >
                 <span
                   class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
@@ -5197,7 +5197,7 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
                 class="MuiStepLabel-root MuiStepLabel-horizontal MuiStepLabel-alternativeLabel css-ascpo7-MuiStepLabel-root"
               >
                 <span
-                  class="MuiStepLabel-iconContainer MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
+                  class="MuiStepLabel-iconContainer Mui-active MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
                 >
                   <svg
                     aria-hidden="true"
@@ -5222,10 +5222,10 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
                   </svg>
                 </span>
                 <span
-                  class="MuiStepLabel-labelContainer css-16ubnlw-MuiStepLabel-labelContainer"
+                  class="MuiStepLabel-labelContainer MuiStepLabel-alternativeLabel css-1vyamtt-MuiStepLabel-labelContainer"
                 >
                   <span
-                    class="MuiStepLabel-label Mui-active MuiStepLabel-alternativeLabel css-qivjh0-MuiStepLabel-label"
+                    class="MuiStepLabel-label Mui-active MuiStepLabel-alternativeLabel css-1hv8oq8-MuiStepLabel-label"
                   >
                     <div>
                       Copa Classic (Class: B)
@@ -5257,7 +5257,7 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
                 class="MuiStepLabel-root MuiStepLabel-horizontal Mui-disabled MuiStepLabel-alternativeLabel css-ascpo7-MuiStepLabel-root"
               >
                 <span
-                  class="MuiStepLabel-iconContainer MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
+                  class="MuiStepLabel-iconContainer Mui-disabled MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
                 >
                   <svg
                     aria-hidden="true"
@@ -5282,10 +5282,10 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
                   </svg>
                 </span>
                 <span
-                  class="MuiStepLabel-labelContainer css-16ubnlw-MuiStepLabel-labelContainer"
+                  class="MuiStepLabel-labelContainer MuiStepLabel-alternativeLabel css-1vyamtt-MuiStepLabel-labelContainer"
                 >
                   <span
-                    class="MuiStepLabel-label Mui-disabled MuiStepLabel-alternativeLabel css-qivjh0-MuiStepLabel-label"
+                    class="MuiStepLabel-label Mui-disabled MuiStepLabel-alternativeLabel css-1hv8oq8-MuiStepLabel-label"
                   >
                     <div>
                       ARC
@@ -5311,7 +5311,7 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
                 class="MuiStepLabel-root MuiStepLabel-horizontal Mui-disabled MuiStepLabel-alternativeLabel css-ascpo7-MuiStepLabel-root"
               >
                 <span
-                  class="MuiStepLabel-iconContainer MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
+                  class="MuiStepLabel-iconContainer Mui-disabled MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
                 >
                   <svg
                     aria-hidden="true"
@@ -5336,10 +5336,10 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
                   </svg>
                 </span>
                 <span
-                  class="MuiStepLabel-labelContainer css-16ubnlw-MuiStepLabel-labelContainer"
+                  class="MuiStepLabel-labelContainer MuiStepLabel-alternativeLabel css-1vyamtt-MuiStepLabel-labelContainer"
                 >
                   <span
-                    class="MuiStepLabel-label Mui-disabled MuiStepLabel-alternativeLabel css-qivjh0-MuiStepLabel-label"
+                    class="MuiStepLabel-label Mui-disabled MuiStepLabel-alternativeLabel css-1hv8oq8-MuiStepLabel-label"
                   >
                     <div>
                       Caterham GrB
@@ -5365,7 +5365,7 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
                 class="MuiStepLabel-root MuiStepLabel-horizontal Mui-disabled MuiStepLabel-alternativeLabel css-ascpo7-MuiStepLabel-root"
               >
                 <span
-                  class="MuiStepLabel-iconContainer MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
+                  class="MuiStepLabel-iconContainer Mui-disabled MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
                 >
                   <svg
                     aria-hidden="true"
@@ -5390,10 +5390,10 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
                   </svg>
                 </span>
                 <span
-                  class="MuiStepLabel-labelContainer css-16ubnlw-MuiStepLabel-labelContainer"
+                  class="MuiStepLabel-labelContainer MuiStepLabel-alternativeLabel css-1vyamtt-MuiStepLabel-labelContainer"
                 >
                   <span
-                    class="MuiStepLabel-label Mui-disabled MuiStepLabel-alternativeLabel css-qivjh0-MuiStepLabel-label"
+                    class="MuiStepLabel-label Mui-disabled MuiStepLabel-alternativeLabel css-1hv8oq8-MuiStepLabel-label"
                   >
                     <div>
                       Caterham GrA
@@ -5584,7 +5584,7 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
                 class="MuiFormControl-root MuiTextField-root css-1dzm624-MuiFormControl-root-MuiTextField-root"
               >
                 <label
-                  class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
                   for=":ra:"
                   id=":ra:-label"
@@ -5592,11 +5592,11 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
                   Global
                 </label>
                 <div
-                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
                 >
                   <input
                     aria-invalid="false"
-                    class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
+                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
                     id=":ra:"
                     type="number"
                     value="0"
@@ -5606,7 +5606,7 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
                     class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                   >
                     <legend
-                      class="css-1in441m"
+                      class="css-14lo706"
                     >
                       <span>
                         Global
@@ -5628,7 +5628,7 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
                 class="MuiFormControl-root MuiTextField-root css-1dzm624-MuiFormControl-root-MuiTextField-root"
               >
                 <label
-                  class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
                   for=":rb:"
                   id=":rb:-label"
@@ -5636,11 +5636,11 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
                   Club
                 </label>
                 <div
-                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
                 >
                   <input
                     aria-invalid="false"
-                    class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
+                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
                     id=":rb:"
                     type="number"
                     value="0"
@@ -5650,7 +5650,7 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
                     class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                   >
                     <legend
-                      class="css-1in441m"
+                      class="css-14lo706"
                     >
                       <span>
                         Club
@@ -5672,7 +5672,7 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
                 class="MuiFormControl-root MuiTextField-root css-mgj5is-MuiFormControl-root-MuiTextField-root"
               >
                 <label
-                  class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
                   for=":rc:"
                   id=":rc:-label"
@@ -5680,11 +5680,11 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
                   Copa Classic (Class: B)
                 </label>
                 <div
-                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
                 >
                   <input
                     aria-invalid="false"
-                    class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
+                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
                     id=":rc:"
                     type="number"
                     value="0"
@@ -5694,7 +5694,7 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
                     class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                   >
                     <legend
-                      class="css-1in441m"
+                      class="css-14lo706"
                     >
                       <span>
                         Copa Classic (Class: B)
@@ -5716,7 +5716,7 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
                 class="MuiFormControl-root MuiTextField-root css-1lje1k7-MuiFormControl-root-MuiTextField-root"
               >
                 <label
-                  class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
                   for=":rd:"
                   id=":rd:-label"
@@ -5724,11 +5724,11 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
                   Chevrolet Chevette
                 </label>
                 <div
-                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
                 >
                   <input
                     aria-invalid="false"
-                    class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
+                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
                     id=":rd:"
                     type="number"
                     value="0"
@@ -5738,7 +5738,7 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
                     class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                   >
                     <legend
-                      class="css-1in441m"
+                      class="css-14lo706"
                     >
                       <span>
                         Chevrolet Chevette
@@ -5784,20 +5784,20 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
               class="MuiFormControl-root css-e363es-MuiFormControl-root"
             >
               <label
-                class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                 data-shrink="true"
                 id="car-select"
               >
                 Your Car
               </label>
               <div
-                class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl  css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+                class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl  css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
               >
                 <div
                   aria-expanded="false"
                   aria-haspopup="listbox"
                   aria-labelledby="car-select"
-                  class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+                  class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
                   role="button"
                   tabindex="0"
                 >
@@ -5825,7 +5825,7 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
                   class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                 >
                   <legend
-                    class="css-1in441m"
+                    class="css-14lo706"
                   >
                     <span>
                       Your Car
@@ -5841,7 +5841,7 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
                 class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
               >
                 <label
-                  class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
                   for=":re:"
                   id=":re:-label"
@@ -5849,11 +5849,11 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
                   Finishing position
                 </label>
                 <div
-                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
                 >
                   <input
                     aria-invalid="false"
-                    class="MuiOutlinedInput-input MuiInputBase-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+                    class="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
                     id=":re:"
                     type="number"
                     value="1"
@@ -5863,7 +5863,7 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
                     class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                   >
                     <legend
-                      class="css-1in441m"
+                      class="css-14lo706"
                     >
                       <span>
                         Finishing position
@@ -5874,7 +5874,7 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
               </div>
             </div>
             <button
-              class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButtonBase-root  css-6fwjxy-MuiButtonBase-root-MuiButton-root"
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge css-6fwjxy-MuiButtonBase-root-MuiButton-root"
               tabindex="0"
               type="button"
             >
@@ -5913,7 +5913,7 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
           class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
         >
           <a
-            class="MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeLarge MuiButton-textSizeLarge MuiButton-colorInherit MuiButtonBase-root  css-1yz1089-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeLarge MuiButton-textSizeLarge MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeLarge MuiButton-textSizeLarge MuiButton-colorInherit css-1yz1089-MuiButtonBase-root-MuiButton-root"
             href="/"
             tabindex="0"
           >
@@ -5924,7 +5924,7 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
           </a>
         </h6>
         <a
-          class="MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit MuiButtonBase-root  css-u44ztt-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit css-u44ztt-MuiButtonBase-root-MuiButton-root"
           href="/career"
           tabindex="0"
         >
@@ -5934,7 +5934,7 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
           />
         </a>
         <a
-          class="MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit MuiButtonBase-root  css-u44ztt-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit css-u44ztt-MuiButtonBase-root-MuiButton-root"
           href="/settings"
           tabindex="0"
         >
@@ -5951,7 +5951,7 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
           type="button"
         >
           <span
-            class="BaseBadge-root MuiBadge-root css-1c32n2y-MuiBadge-root"
+            class="MuiBadge-root MuiBadge-root css-1c32n2y-MuiBadge-root"
           >
             <svg
               aria-hidden="true"
@@ -5965,7 +5965,7 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
               />
             </svg>
             <span
-              class="BaseBadge-badge MuiBadge-badge MuiBadge-standard MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorInfo css-whxibi-MuiBadge-badge"
+              class="MuiBadge-badge MuiBadge-standard MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorInfo MuiBadge-badge css-whxibi-MuiBadge-badge"
             >
               4
             </span>
@@ -6504,7 +6504,7 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
               class="css-1kxrbkv"
             >
               <div
-                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-gac2fo-MuiChip-root"
+                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-w66kx-MuiChip-root"
               >
                 <span
                   class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
@@ -6517,7 +6517,7 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
               class="css-1kxrbkv"
             >
               <div
-                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-gac2fo-MuiChip-root"
+                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-w66kx-MuiChip-root"
               >
                 <span
                   class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
@@ -6530,7 +6530,7 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
               class="css-1kxrbkv"
             >
               <div
-                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-gac2fo-MuiChip-root"
+                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-w66kx-MuiChip-root"
               >
                 <span
                   class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
@@ -6543,7 +6543,7 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
               class="css-1kxrbkv"
             >
               <div
-                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-gac2fo-MuiChip-root"
+                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-w66kx-MuiChip-root"
               >
                 <span
                   class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
@@ -6556,7 +6556,7 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
               class="css-1kxrbkv"
             >
               <div
-                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-gac2fo-MuiChip-root"
+                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-w66kx-MuiChip-root"
               >
                 <span
                   class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
@@ -6576,7 +6576,7 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
                 class="MuiStepLabel-root MuiStepLabel-horizontal MuiStepLabel-alternativeLabel css-ascpo7-MuiStepLabel-root"
               >
                 <span
-                  class="MuiStepLabel-iconContainer MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
+                  class="MuiStepLabel-iconContainer Mui-completed MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
                 >
                   <svg
                     aria-hidden="true"
@@ -6591,10 +6591,10 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
                   </svg>
                 </span>
                 <span
-                  class="MuiStepLabel-labelContainer css-16ubnlw-MuiStepLabel-labelContainer"
+                  class="MuiStepLabel-labelContainer MuiStepLabel-alternativeLabel css-1vyamtt-MuiStepLabel-labelContainer"
                 >
                   <span
-                    class="MuiStepLabel-label Mui-completed MuiStepLabel-alternativeLabel css-qivjh0-MuiStepLabel-label"
+                    class="MuiStepLabel-label Mui-completed MuiStepLabel-alternativeLabel css-1hv8oq8-MuiStepLabel-label"
                   >
                     <div>
                       Copa Montana
@@ -6620,7 +6620,7 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
                 class="MuiStepLabel-root MuiStepLabel-horizontal MuiStepLabel-alternativeLabel css-ascpo7-MuiStepLabel-root"
               >
                 <span
-                  class="MuiStepLabel-iconContainer MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
+                  class="MuiStepLabel-iconContainer Mui-active MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
                 >
                   <svg
                     aria-hidden="true"
@@ -6645,10 +6645,10 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
                   </svg>
                 </span>
                 <span
-                  class="MuiStepLabel-labelContainer css-16ubnlw-MuiStepLabel-labelContainer"
+                  class="MuiStepLabel-labelContainer MuiStepLabel-alternativeLabel css-1vyamtt-MuiStepLabel-labelContainer"
                 >
                   <span
-                    class="MuiStepLabel-label Mui-active MuiStepLabel-alternativeLabel css-qivjh0-MuiStepLabel-label"
+                    class="MuiStepLabel-label Mui-active MuiStepLabel-alternativeLabel css-1hv8oq8-MuiStepLabel-label"
                   >
                     <div>
                       Carrera Cup
@@ -6674,7 +6674,7 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
                 class="MuiStepLabel-root MuiStepLabel-horizontal Mui-disabled MuiStepLabel-alternativeLabel css-ascpo7-MuiStepLabel-root"
               >
                 <span
-                  class="MuiStepLabel-iconContainer MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
+                  class="MuiStepLabel-iconContainer Mui-disabled MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
                 >
                   <svg
                     aria-hidden="true"
@@ -6699,10 +6699,10 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
                   </svg>
                 </span>
                 <span
-                  class="MuiStepLabel-labelContainer css-16ubnlw-MuiStepLabel-labelContainer"
+                  class="MuiStepLabel-labelContainer MuiStepLabel-alternativeLabel css-1vyamtt-MuiStepLabel-labelContainer"
                 >
                   <span
-                    class="MuiStepLabel-label Mui-disabled MuiStepLabel-alternativeLabel css-qivjh0-MuiStepLabel-label"
+                    class="MuiStepLabel-label Mui-disabled MuiStepLabel-alternativeLabel css-1hv8oq8-MuiStepLabel-label"
                   >
                     <div>
                       GT4
@@ -6725,7 +6725,7 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
                 class="MuiStepLabel-root MuiStepLabel-horizontal Mui-disabled MuiStepLabel-alternativeLabel css-ascpo7-MuiStepLabel-root"
               >
                 <span
-                  class="MuiStepLabel-iconContainer MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
+                  class="MuiStepLabel-iconContainer Mui-disabled MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
                 >
                   <svg
                     aria-hidden="true"
@@ -6750,10 +6750,10 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
                   </svg>
                 </span>
                 <span
-                  class="MuiStepLabel-labelContainer css-16ubnlw-MuiStepLabel-labelContainer"
+                  class="MuiStepLabel-labelContainer MuiStepLabel-alternativeLabel css-1vyamtt-MuiStepLabel-labelContainer"
                 >
                   <span
-                    class="MuiStepLabel-label Mui-disabled MuiStepLabel-alternativeLabel css-qivjh0-MuiStepLabel-label"
+                    class="MuiStepLabel-label Mui-disabled MuiStepLabel-alternativeLabel css-1hv8oq8-MuiStepLabel-label"
                   >
                     <div>
                       GT3
@@ -6936,7 +6936,7 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
                 class="MuiFormControl-root MuiTextField-root css-1dzm624-MuiFormControl-root-MuiTextField-root"
               >
                 <label
-                  class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
                   for=":r14:"
                   id=":r14:-label"
@@ -6944,11 +6944,11 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
                   Global
                 </label>
                 <div
-                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
                 >
                   <input
                     aria-invalid="false"
-                    class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
+                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
                     id=":r14:"
                     type="number"
                     value="0"
@@ -6958,7 +6958,7 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
                     class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                   >
                     <legend
-                      class="css-1in441m"
+                      class="css-14lo706"
                     >
                       <span>
                         Global
@@ -6980,7 +6980,7 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
                 class="MuiFormControl-root MuiTextField-root css-1dzm624-MuiFormControl-root-MuiTextField-root"
               >
                 <label
-                  class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
                   for=":r15:"
                   id=":r15:-label"
@@ -6988,11 +6988,11 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
                   GT
                 </label>
                 <div
-                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
                 >
                   <input
                     aria-invalid="false"
-                    class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
+                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
                     id=":r15:"
                     type="number"
                     value="0"
@@ -7002,7 +7002,7 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
                     class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                   >
                     <legend
-                      class="css-1in441m"
+                      class="css-14lo706"
                     >
                       <span>
                         GT
@@ -7024,7 +7024,7 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
                 class="MuiFormControl-root MuiTextField-root css-mxfd1w-MuiFormControl-root-MuiTextField-root"
               >
                 <label
-                  class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
                   for=":r16:"
                   id=":r16:-label"
@@ -7032,11 +7032,11 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
                   Carrera Cup
                 </label>
                 <div
-                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
                 >
                   <input
                     aria-invalid="false"
-                    class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
+                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
                     id=":r16:"
                     type="number"
                     value="0"
@@ -7046,7 +7046,7 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
                     class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                   >
                     <legend
-                      class="css-1in441m"
+                      class="css-14lo706"
                     >
                       <span>
                         Carrera Cup
@@ -7068,7 +7068,7 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
                 class="MuiFormControl-root MuiTextField-root css-mgj5is-MuiFormControl-root-MuiTextField-root"
               >
                 <label
-                  class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
                   for=":r17:"
                   id=":r17:-label"
@@ -7076,11 +7076,11 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
                   Porsche 911 GT3 Cup 3.8
                 </label>
                 <div
-                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
                 >
                   <input
                     aria-invalid="false"
-                    class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
+                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
                     id=":r17:"
                     type="number"
                     value="0"
@@ -7090,7 +7090,7 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
                     class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                   >
                     <legend
-                      class="css-1in441m"
+                      class="css-14lo706"
                     >
                       <span>
                         Porsche 911 GT3 Cup 3.8
@@ -7136,20 +7136,20 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
               class="MuiFormControl-root css-e363es-MuiFormControl-root"
             >
               <label
-                class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                 data-shrink="true"
                 id="car-select"
               >
                 Your Car
               </label>
               <div
-                class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl  css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+                class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl  css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
               >
                 <div
                   aria-expanded="false"
                   aria-haspopup="listbox"
                   aria-labelledby="car-select"
-                  class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+                  class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
                   role="button"
                   tabindex="0"
                 >
@@ -7177,7 +7177,7 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
                   class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                 >
                   <legend
-                    class="css-1in441m"
+                    class="css-14lo706"
                   >
                     <span>
                       Your Car
@@ -7193,7 +7193,7 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
                 class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
               >
                 <label
-                  class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
                   for=":r18:"
                   id=":r18:-label"
@@ -7201,11 +7201,11 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
                   Finishing position
                 </label>
                 <div
-                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
                 >
                   <input
                     aria-invalid="false"
-                    class="MuiOutlinedInput-input MuiInputBase-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+                    class="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
                     id=":r18:"
                     type="number"
                     value="1"
@@ -7215,7 +7215,7 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
                     class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                   >
                     <legend
-                      class="css-1in441m"
+                      class="css-14lo706"
                     >
                       <span>
                         Finishing position
@@ -7226,7 +7226,7 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
               </div>
             </div>
             <button
-              class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButtonBase-root  css-6fwjxy-MuiButtonBase-root-MuiButton-root"
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge css-6fwjxy-MuiButtonBase-root-MuiButton-root"
               tabindex="0"
               type="button"
             >
@@ -7285,7 +7285,7 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
           class="MuiSnackbarContent-action css-1kr9x0n-MuiSnackbarContent-action"
         >
           <button
-            class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root  css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root"
             tabindex="0"
             type="button"
           >
@@ -7323,7 +7323,7 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
           class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
         >
           <a
-            class="MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeLarge MuiButton-textSizeLarge MuiButton-colorInherit MuiButtonBase-root  css-1yz1089-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeLarge MuiButton-textSizeLarge MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeLarge MuiButton-textSizeLarge MuiButton-colorInherit css-1yz1089-MuiButtonBase-root-MuiButton-root"
             href="/"
             tabindex="0"
           >
@@ -7334,7 +7334,7 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
           </a>
         </h6>
         <a
-          class="MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit MuiButtonBase-root  css-u44ztt-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit css-u44ztt-MuiButtonBase-root-MuiButton-root"
           href="/career"
           tabindex="0"
         >
@@ -7344,7 +7344,7 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
           />
         </a>
         <a
-          class="MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit MuiButtonBase-root  css-u44ztt-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorInherit css-u44ztt-MuiButtonBase-root-MuiButton-root"
           href="/settings"
           tabindex="0"
         >
@@ -7361,7 +7361,7 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
           type="button"
         >
           <span
-            class="BaseBadge-root MuiBadge-root css-1c32n2y-MuiBadge-root"
+            class="MuiBadge-root MuiBadge-root css-1c32n2y-MuiBadge-root"
           >
             <svg
               aria-hidden="true"
@@ -7375,7 +7375,7 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
               />
             </svg>
             <span
-              class="BaseBadge-badge MuiBadge-badge MuiBadge-standard MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorInfo css-whxibi-MuiBadge-badge"
+              class="MuiBadge-badge MuiBadge-standard MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorInfo MuiBadge-badge css-whxibi-MuiBadge-badge"
             >
               1
             </span>
@@ -8034,7 +8034,7 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
               class="css-1kxrbkv"
             >
               <div
-                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-gac2fo-MuiChip-root"
+                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-w66kx-MuiChip-root"
               >
                 <span
                   class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
@@ -8047,7 +8047,7 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
               class="css-1kxrbkv"
             >
               <div
-                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-gac2fo-MuiChip-root"
+                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-w66kx-MuiChip-root"
               >
                 <span
                   class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
@@ -8060,7 +8060,7 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
               class="css-1kxrbkv"
             >
               <div
-                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-gac2fo-MuiChip-root"
+                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-w66kx-MuiChip-root"
               >
                 <span
                   class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
@@ -8073,7 +8073,7 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
               class="css-1kxrbkv"
             >
               <div
-                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-gac2fo-MuiChip-root"
+                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-w66kx-MuiChip-root"
               >
                 <span
                   class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
@@ -8086,7 +8086,7 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
               class="css-1kxrbkv"
             >
               <div
-                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-gac2fo-MuiChip-root"
+                class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault css-w66kx-MuiChip-root"
               >
                 <span
                   class="MuiChip-label MuiChip-labelMedium css-6od3lo-MuiChip-label"
@@ -8106,7 +8106,7 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
                 class="MuiStepLabel-root MuiStepLabel-horizontal MuiStepLabel-alternativeLabel css-ascpo7-MuiStepLabel-root"
               >
                 <span
-                  class="MuiStepLabel-iconContainer MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
+                  class="MuiStepLabel-iconContainer Mui-active MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
                 >
                   <svg
                     aria-hidden="true"
@@ -8131,10 +8131,10 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
                   </svg>
                 </span>
                 <span
-                  class="MuiStepLabel-labelContainer css-16ubnlw-MuiStepLabel-labelContainer"
+                  class="MuiStepLabel-labelContainer MuiStepLabel-alternativeLabel css-1vyamtt-MuiStepLabel-labelContainer"
                 >
                   <span
-                    class="MuiStepLabel-label Mui-active MuiStepLabel-alternativeLabel css-qivjh0-MuiStepLabel-label"
+                    class="MuiStepLabel-label Mui-active MuiStepLabel-alternativeLabel css-1hv8oq8-MuiStepLabel-label"
                   >
                     <div>
                       Copa Montana
@@ -8160,7 +8160,7 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
                 class="MuiStepLabel-root MuiStepLabel-horizontal Mui-disabled MuiStepLabel-alternativeLabel css-ascpo7-MuiStepLabel-root"
               >
                 <span
-                  class="MuiStepLabel-iconContainer MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
+                  class="MuiStepLabel-iconContainer Mui-disabled MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
                 >
                   <svg
                     aria-hidden="true"
@@ -8185,10 +8185,10 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
                   </svg>
                 </span>
                 <span
-                  class="MuiStepLabel-labelContainer css-16ubnlw-MuiStepLabel-labelContainer"
+                  class="MuiStepLabel-labelContainer MuiStepLabel-alternativeLabel css-1vyamtt-MuiStepLabel-labelContainer"
                 >
                   <span
-                    class="MuiStepLabel-label Mui-disabled MuiStepLabel-alternativeLabel css-qivjh0-MuiStepLabel-label"
+                    class="MuiStepLabel-label Mui-disabled MuiStepLabel-alternativeLabel css-1hv8oq8-MuiStepLabel-label"
                   >
                     <div>
                       Carrera Cup
@@ -8214,7 +8214,7 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
                 class="MuiStepLabel-root MuiStepLabel-horizontal Mui-disabled MuiStepLabel-alternativeLabel css-ascpo7-MuiStepLabel-root"
               >
                 <span
-                  class="MuiStepLabel-iconContainer MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
+                  class="MuiStepLabel-iconContainer Mui-disabled MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
                 >
                   <svg
                     aria-hidden="true"
@@ -8239,10 +8239,10 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
                   </svg>
                 </span>
                 <span
-                  class="MuiStepLabel-labelContainer css-16ubnlw-MuiStepLabel-labelContainer"
+                  class="MuiStepLabel-labelContainer MuiStepLabel-alternativeLabel css-1vyamtt-MuiStepLabel-labelContainer"
                 >
                   <span
-                    class="MuiStepLabel-label Mui-disabled MuiStepLabel-alternativeLabel css-qivjh0-MuiStepLabel-label"
+                    class="MuiStepLabel-label Mui-disabled MuiStepLabel-alternativeLabel css-1hv8oq8-MuiStepLabel-label"
                   >
                     <div>
                       GT4
@@ -8265,7 +8265,7 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
                 class="MuiStepLabel-root MuiStepLabel-horizontal Mui-disabled MuiStepLabel-alternativeLabel css-ascpo7-MuiStepLabel-root"
               >
                 <span
-                  class="MuiStepLabel-iconContainer MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
+                  class="MuiStepLabel-iconContainer Mui-disabled MuiStepLabel-alternativeLabel css-vnkopk-MuiStepLabel-iconContainer"
                 >
                   <svg
                     aria-hidden="true"
@@ -8290,10 +8290,10 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
                   </svg>
                 </span>
                 <span
-                  class="MuiStepLabel-labelContainer css-16ubnlw-MuiStepLabel-labelContainer"
+                  class="MuiStepLabel-labelContainer MuiStepLabel-alternativeLabel css-1vyamtt-MuiStepLabel-labelContainer"
                 >
                   <span
-                    class="MuiStepLabel-label Mui-disabled MuiStepLabel-alternativeLabel css-qivjh0-MuiStepLabel-label"
+                    class="MuiStepLabel-label Mui-disabled MuiStepLabel-alternativeLabel css-1hv8oq8-MuiStepLabel-label"
                   >
                     <div>
                       GT3
@@ -8478,7 +8478,7 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
                 class="MuiFormControl-root MuiTextField-root css-1dzm624-MuiFormControl-root-MuiTextField-root"
               >
                 <label
-                  class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
                   for=":ri:"
                   id=":ri:-label"
@@ -8486,11 +8486,11 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
                   Global
                 </label>
                 <div
-                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
                 >
                   <input
                     aria-invalid="false"
-                    class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
+                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
                     id=":ri:"
                     type="number"
                     value="0"
@@ -8500,7 +8500,7 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
                     class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                   >
                     <legend
-                      class="css-1in441m"
+                      class="css-14lo706"
                     >
                       <span>
                         Global
@@ -8522,7 +8522,7 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
                 class="MuiFormControl-root MuiTextField-root css-1dzm624-MuiFormControl-root-MuiTextField-root"
               >
                 <label
-                  class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
                   for=":rj:"
                   id=":rj:-label"
@@ -8530,11 +8530,11 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
                   GT
                 </label>
                 <div
-                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
                 >
                   <input
                     aria-invalid="false"
-                    class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
+                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
                     id=":rj:"
                     type="number"
                     value="0"
@@ -8544,7 +8544,7 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
                     class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                   >
                     <legend
-                      class="css-1in441m"
+                      class="css-14lo706"
                     >
                       <span>
                         GT
@@ -8566,7 +8566,7 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
                 class="MuiFormControl-root MuiTextField-root css-1dzm624-MuiFormControl-root-MuiTextField-root"
               >
                 <label
-                  class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
                   for=":rk:"
                   id=":rk:-label"
@@ -8574,11 +8574,11 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
                   GT5
                 </label>
                 <div
-                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
                 >
                   <input
                     aria-invalid="false"
-                    class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
+                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
                     id=":rk:"
                     type="number"
                     value="0"
@@ -8588,7 +8588,7 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
                     class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                   >
                     <legend
-                      class="css-1in441m"
+                      class="css-14lo706"
                     >
                       <span>
                         GT5
@@ -8610,7 +8610,7 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
                 class="MuiFormControl-root MuiTextField-root css-vbc7j-MuiFormControl-root-MuiTextField-root"
               >
                 <label
-                  class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
                   for=":rl:"
                   id=":rl:-label"
@@ -8618,11 +8618,11 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
                   Ginetta G40 GT5
                 </label>
                 <div
-                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
                 >
                   <input
                     aria-invalid="false"
-                    class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
+                    class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
                     id=":rl:"
                     type="number"
                     value="0"
@@ -8632,7 +8632,7 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
                     class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                   >
                     <legend
-                      class="css-1in441m"
+                      class="css-14lo706"
                     >
                       <span>
                         Ginetta G40 GT5
@@ -8678,20 +8678,20 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
               class="MuiFormControl-root css-e363es-MuiFormControl-root"
             >
               <label
-                class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                 data-shrink="true"
                 id="car-select"
               >
                 Your Car
               </label>
               <div
-                class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl  css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+                class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl  css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
               >
                 <div
                   aria-expanded="false"
                   aria-haspopup="listbox"
                   aria-labelledby="car-select"
-                  class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+                  class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
                   role="button"
                   tabindex="0"
                 >
@@ -8719,7 +8719,7 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
                   class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                 >
                   <legend
-                    class="css-1in441m"
+                    class="css-14lo706"
                   >
                     <span>
                       Your Car
@@ -8735,7 +8735,7 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
                 class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
               >
                 <label
-                  class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
                   for=":rm:"
                   id=":rm:-label"
@@ -8743,11 +8743,11 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
                   Finishing position
                 </label>
                 <div
-                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
                 >
                   <input
                     aria-invalid="false"
-                    class="MuiOutlinedInput-input MuiInputBase-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+                    class="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
                     id=":rm:"
                     type="number"
                     value="1"
@@ -8757,7 +8757,7 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
                     class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
                   >
                     <legend
-                      class="css-1in441m"
+                      class="css-14lo706"
                     >
                       <span>
                         Finishing position
@@ -8768,7 +8768,7 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
               </div>
             </div>
             <button
-              class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButtonBase-root  css-6fwjxy-MuiButtonBase-root-MuiButton-root"
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge css-6fwjxy-MuiButtonBase-root-MuiButton-root"
               tabindex="0"
               type="button"
             >
@@ -8827,7 +8827,7 @@ exports[`Basic sanity: a bunch of race results: race-result 1`] = `
           class="MuiSnackbarContent-action css-1kr9x0n-MuiSnackbarContent-action"
         >
           <button
-            class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root  css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root"
             tabindex="0"
             type="button"
           >
