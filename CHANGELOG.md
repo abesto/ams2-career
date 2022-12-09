@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.0] - 2022-12-09
+
+### Added
+
+- A new Position XP Multiplier under Settings. This option controls how heavily your finishing position influences the amount of XP points earned. `1.0` is the default; lower values mean your race results matter less. At `0.0`, you'll get the same amount of XP for finishing a race, no matter your result. Conversely, at very high values you get a LOT of XP for winning, and possibly none at all for poor results. ([#65](https://github.com/abesto/ams2-career/issues/65))
+
+### Security
+
+- Upgraded `terser` dependency to get security fixes ([alert](https://github.com/abesto/ams2-career/security/dependabot/16), [#61](https://github.com/abesto/ams2-career/pull/61))
+- Upgraded `loader-utils` dependency to get security fixes ([alerts](https://github.com/abesto/ams2-career/security/dependabot?q=package%3Aloader-utils+manifest%3Ayarn.lock+has%3Apatch), [#64](https://github.com/abesto/ams2-career/pull/64))
+- Upgraded `decode-uri-component` dependency to get security fixes ([alert](https://github.com/abesto/ams2-career/security/dependabot/23), [#66](https://github.com/abesto/ams2-career/pull/66))
+
 ## [1.4.1] - 2022-07-13
 
 ### Added
@@ -55,6 +67,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - We now have a changelog! The app remembers what version was last seen, and only displays new items. Incidentally, this item will not be shown to any users, because the first time a changelog-enabled app version is loaded, we set the latest version as "seen". After all, a changelog makes no sense for a brand-new user in the general case, and the initial rollout is a one-off event.
 
+[1.5.0]: https://github.com/abesto/ams2-career/compare/v1.4.1..v1.5.0
 [1.4.1]: https://github.com/abesto/ams2-career/compare/v1.3.1..v1.4.1
 [1.3.1]: https://github.com/abesto/ams2-career/compare/v1.2.1..v1.3.1
 [1.2.1]: https://github.com/abesto/ams2-career/compare/v1.2.0..v1.2.1
