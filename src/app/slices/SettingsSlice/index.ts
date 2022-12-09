@@ -9,6 +9,7 @@ export const initialState: SettingsState = {
   crossDisciplineGainsEnabled: true,
   xpMultiplier: 1.0,
   canRegenerateRaces: false,
+  positionXpMultiplier: 1.0,
 };
 
 const slice = createSlice({
@@ -30,6 +31,12 @@ const slice = createSlice({
     },
     setCanRegenerateRaces(state, action: PayloadAction<boolean>) {
       state.canRegenerateRaces = action.payload;
+    },
+    setPositionXpMultiplier(state, action: PayloadAction<number>) {
+      state.positionXpMultiplier = action.payload;
+    },
+    resetPositionXpMultiplier(state, action: PayloadAction<void>) {
+      state.positionXpMultiplier = initialState.positionXpMultiplier;
     },
   },
 });

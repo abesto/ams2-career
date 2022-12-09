@@ -130,6 +130,47 @@ export function SettingsPage() {
 
         <Grid item xs={4}>
           <Paper sx={{ p: 3 }}>
+            <Typography variant="h5">Position XP Multiplier</Typography>
+            <Typography>
+              This option controls how heavily your finishing position
+              influences the amount of XP points earned. <code>1.0</code> is the
+              default; lower values mean your race results matter less. At{' '}
+              <code>0.0</code>, you'll get the same amount of XP for finishing a
+              race, no matter your result. Conversely, at very high values you
+              get a LOT of XP for winning, and possibly none at all for poor
+              results.
+            </Typography>
+            <FormGroup row sx={{ mt: 1 }}>
+              <TextField
+                type="number"
+                inputProps={{
+                  min: 0.0,
+                  step: 0.1,
+                }}
+                value={
+                  settings.positionXpMultiplier ??
+                  initialSettings.positionXpMultiplier
+                }
+                size="small"
+                sx={{ width: '200px' }}
+                onChange={e =>
+                  dispatch(
+                    actions.setPositionXpMultiplier(parseFloat(e.target.value)),
+                  )
+                }
+              />
+              <Button
+                color="secondary"
+                onClick={() => dispatch(actions.resetPositionXpMultiplier())}
+              >
+                Default
+              </Button>
+            </FormGroup>
+          </Paper>
+        </Grid>
+
+        <Grid item xs={4}>
+          <Paper sx={{ p: 3 }}>
             <Typography variant="h5">Cookies</Typography>
             <Typography>
               We use Google Analytics to understand how many people use this

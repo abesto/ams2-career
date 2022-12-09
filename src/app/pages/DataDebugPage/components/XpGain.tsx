@@ -137,7 +137,9 @@ export function XpGain(props: Props) {
               <TableCell>{xp.getBaseXpGain()}</TableCell>
               <TableCell>{xp.getGradeMultiplier(result)}</TableCell>
               <TableCell>{xp.getAIMultiplier(result)}</TableCell>
-              <TableCell>{xp.getPositionMultiplier(result)}</TableCell>
+              <TableCell>
+                {xp.getPositionMultiplier(result, settings)}
+              </TableCell>
               <TableCell>
                 {xp.getCrossDisciplineMultiplier(
                   getDisciplineId(thisDiscipline),

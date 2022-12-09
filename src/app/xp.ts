@@ -9,8 +9,14 @@ export function getAIMultiplier(result: RaceResult): number {
   return result.aiLevel * 0.01;
 }
 
-export function getPositionMultiplier(result: RaceResult): number {
-  return Math.max(0.9, 1.04 - 0.01 * result.position);
+export function getPositionMultiplier(
+  result: RaceResult,
+  settings: SettingsState,
+): number {
+  let simpleMultiplier = Math.max(0.9, 1.04 - 0.01 * result.position);
+  let simpleMagnitude = simpleMultiplier - 1.0;
+  let adjustedMagnitude = simpleMagnitude * settings.positionXpMultiplier;
+  return 1.0 + adjustedMagnitude;
 }
 
 export function getBaseXpGain(): number {
@@ -58,7 +64,7 @@ export function xpGain(
     getBaseXpGain() *
       getGradeMultiplier(result) *
       getAIMultiplier(result) *
-      getPositionMultiplier(result) *
+      getPositionMultiplier(result, settings) *
       getCrossDisciplineMultiplier(targetDisciplineId, result, settings) *
       getVehicleMultiplier(result) *
       settings.xpMultiplier ?? 1.0
