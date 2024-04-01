@@ -123,7 +123,7 @@ export function RaceResultFeedback(props: Props) {
           </DialogContentText>
         ))}
         <DialogContentText>
-          With this result you've gained {formatXp(mainXpGained)} XP in{' '}
+          With this result you&apos;ve gained {formatXp(mainXpGained)} XP in{' '}
           {discipline.name}.
         </DialogContentText>
         {mainGradeUp && (

@@ -52,7 +52,7 @@ export function ResetCareerDialog(props: DialogProps & Props) {
           )}
           <Export />
           This is a dangerous operation. Enter <strong>reset</strong> below,
-          then click the "Reset" button to continue.
+          then click the &quot;Reset&quot; button to continue.
         </DialogContentText>
       </DialogContent>
       <DialogActions>

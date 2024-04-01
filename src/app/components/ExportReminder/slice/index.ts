@@ -1,8 +1,6 @@
 import { createSlice } from 'utils/@reduxjs/toolkit';
 import { useInjectReducer } from 'utils/redux-injectors';
 
-import { PayloadAction } from '@reduxjs/toolkit';
-
 import { ExportReminderState } from './types';
 
 export const initialState: ExportReminderState = {
@@ -14,10 +12,10 @@ const slice = createSlice({
   name: 'exportReminder',
   initialState,
   reducers: {
-    recordExport(state, action: PayloadAction<void>) {
+    recordExport(state) {
       state.lastExport = new Date().getTime();
     },
-    hideAlertForever(state, action: PayloadAction<void>) {
+    hideAlertForever(state) {
       state.hideAlertForever = true;
     },
   },

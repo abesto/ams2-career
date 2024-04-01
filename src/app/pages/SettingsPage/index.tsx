@@ -135,10 +135,10 @@ export function SettingsPage() {
               This option controls how heavily your finishing position
               influences the amount of XP points earned. <code>1.0</code> is the
               default; lower values mean your race results matter less. At{' '}
-              <code>0.0</code>, you'll get the same amount of XP for finishing a
-              race, no matter your result. Conversely, at very high values you
-              get a LOT of XP for winning, and possibly none at all for poor
-              results.
+              <code>0.0</code>, you&apos;ll get the same amount of XP for
+              finishing a race, no matter your result. Conversely, at very high
+              values you get a LOT of XP for winning, and possibly none at all
+              for poor results.
             </Typography>
             <FormGroup row sx={{ mt: 1 }}>
               <TextField
@@ -177,7 +177,7 @@ export function SettingsPage() {
               app, and to understand a bit of your usage patterns. It helps us a
               lot, but your privacy is your privacy. If you do enable this, then
               please also disable any adblocker extension for this site
-              (otherwise we still won't get the data).
+              (otherwise we still won&apos;t get the data).
             </Typography>
             <ToggleButtonGroup
               exclusive
@@ -196,18 +196,18 @@ export function SettingsPage() {
           <Paper sx={{ p: 3 }}>
             <Typography variant="h5">Regenerate Races</Typography>
             <Typography>
-              This option allows you to click a button on the "Go Race!" page to
-              regenerate the currently available races. Normally we recommend
-              leaving this disabled, but it can be especially useful to ensure
-              you have races with content you own if you don't have all the
-              DLCs.
+              This option allows you to click a button on the &quot;Go
+              Race!&quot; page to regenerate the currently available races.
+              Normally we recommend leaving this disabled, but it can be
+              especially useful to ensure you have races with content you own if
+              you don&apos;t have all the DLCs.
             </Typography>
             <FormControlLabel
               label="Enable Regenerating Races"
               control={
                 <Checkbox
                   inputProps={{
-                    // @ts-ignore
+                    // @ts-expect-error the Checkbox props don't include data-testid, but we need it for testing
                     'data-testid': 'regenerate-races',
                   }}
                   checked={

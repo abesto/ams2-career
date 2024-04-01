@@ -44,7 +44,7 @@ export function getCarsInClass(what: CarClass | CarClassId): Car[] {
 }
 
 export function canRaceAtNight(what: Car | CarClass): boolean {
-  let carClass = what.hasOwnProperty('carClassId')
+  const carClass = Object.hasOwn(what, 'carClassId')
     ? getCarClassOfCar(what as Car)
     : (what as CarClass);
   return carClass.headlights;

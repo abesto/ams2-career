@@ -1,3 +1,5 @@
+import errorMessage from 'utils/error';
+
 import { getAllCarClasses, getCarClassesIn } from './car_classes';
 import { getAllCars } from './cars';
 import { getAllDisciplines } from './disciplines';
@@ -49,8 +51,8 @@ function* verifyXpCrossDisciplineMultipliers(): Result {
           getDisciplineId(discipline0),
           getDisciplineId(discilpine1),
         );
-      } catch (e: any) {
-        yield e.message;
+      } catch (e: unknown) {
+        yield errorMessage(e);
       }
     }
   }
@@ -63,8 +65,8 @@ function* verifyGrades(): Result {
     for (const grade of grades) {
       try {
         getGradeMultiplier(getDisciplineId(discipline), grade);
-      } catch (e: any) {
-        yield `getGradeMultiplier: ${e.message}`;
+      } catch (e: unknown) {
+        yield `getGradeMultiplier: ${errorMessage(e)}`;
       }
     }
 
@@ -72,8 +74,8 @@ function* verifyGrades(): Result {
     for (const grade of grades) {
       try {
         xpNeededForLevelUpTo(getDisciplineId(discipline), grade);
-      } catch (e: any) {
-        yield `xpNeededForLevelUp: ${e.message}`;
+      } catch (e: unknown) {
+        yield `xpNeededForLevelUp: ${errorMessage(e)}`;
       }
     }
   }
@@ -83,8 +85,8 @@ function* verifyPrestige(): Result {
   for (const discipline of getAllDisciplines()) {
     try {
       getPrestigeMultiplier(getDisciplineId(discipline));
-    } catch (e: any) {
-      yield e.message;
+    } catch (e: unknown) {
+      yield errorMessage(e);
     }
   }
 }

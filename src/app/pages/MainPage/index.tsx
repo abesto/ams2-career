@@ -21,9 +21,7 @@ import { selectSettings } from 'app/slices/SettingsSlice/selectors';
 import { CarId } from 'types/Car';
 import { RaceResult } from 'types/Race';
 
-interface Props {}
-
-export function MainPage(props: Props) {
+export function MainPage() {
   useCareerSlice();
   const { actions: mainPageActions } = useMainPageSlice();
   const { actions: careerActions } = useCareerSlice();

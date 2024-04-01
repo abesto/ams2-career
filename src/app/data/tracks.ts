@@ -22,7 +22,7 @@ for (const { name, configuration } of data) {
   TRACKS.set(getTrackId(track), track);
 }
 
-let CAR_CLASS_TO_TRACKS: Map<CarClassId, TrackId[]> = new Map();
+const CAR_CLASS_TO_TRACKS: Map<CarClassId, TrackId[]> = new Map();
 for (const { name, configuration, ...classes } of data) {
   const track = { name, configuration };
   const trackId = getTrackId(track);

@@ -26,12 +26,12 @@ const slice = createSlice({
     ) {
       state.raceResults.push(action.payload.raceResult);
     },
-    resetCareer(state, action: PayloadAction<void>) {
+    resetCareer(state) {
       state.raceResults = [];
       backup('reset');
     },
     // Used only for analytics
-    achievementUnlocked(state, action: PayloadAction<string>) {},
+    achievementUnlocked() {},
   },
 });
 

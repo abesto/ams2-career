@@ -6,7 +6,13 @@ const prettierOptions = JSON.parse(
 );
 
 module.exports = {
-  extends: ['react-app', 'prettier'],
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+    'plugin:prettier/recommended', // Make sure this is always the last element in the array.
+  ],
   plugins: ['prettier', 'jest-dom'],
   rules: {
     'prettier/prettier': ['error', prettierOptions],
@@ -17,4 +23,9 @@ module.exports = {
       rules: { 'prettier/prettier': ['warn', prettierOptions] },
     },
   ],
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
 };

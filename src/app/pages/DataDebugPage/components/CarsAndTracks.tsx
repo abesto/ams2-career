@@ -15,12 +15,12 @@ import { getAllTracks, getTracksFor } from 'app/data/tracks';
 import { Car, CarId } from 'types/Car';
 import { canRaceOn, getTrackId, Track, TrackId } from 'types/Track';
 
-function compareFields(a: Car): any[] {
+function compareFields(a: Car): [string, number, string, string] {
   const carClass = getCarClassOfCar(a);
   return [getDisciplineOfCar(a).name, carClass.grade, carClass.name, a.name];
 }
 
-const zip = (a: any[], b: any[]) => a.map((k, i) => [k, b[i]]);
+const zip = <A, B>(a: A[], b: B[]): [A, B][] => a.map((k, i) => [k, b[i]]);
 
 function compareCars(a: Car, b: Car): number {
   for (const [ax, bx] of zip(compareFields(a), compareFields(b))) {

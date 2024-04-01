@@ -2,7 +2,7 @@ import dayjs from 'dayjs';
 import saveAs from 'file-saver';
 import * as React from 'react';
 import { useDispatch, useSelector, useStore } from 'react-redux';
-import { serialize } from 'store/saveload';
+import { serializeRootState } from 'store/saveload';
 
 import { Download as DownloadIcon } from '@mui/icons-material';
 import { Badge, IconButton, IconButtonProps, Tooltip } from '@mui/material';
@@ -34,7 +34,7 @@ export function Export({
         onClick={() => {
           dispatch(exportReminderActions.recordExport());
           saveAs(
-            new Blob([serialize(store.getState() as RootState)], {
+            new Blob([serializeRootState(store.getState() as RootState)], {
               type: 'application/octet-stream',
             }),
             filename(),

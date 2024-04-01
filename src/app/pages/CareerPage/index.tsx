@@ -43,8 +43,6 @@ function formatTimestamp(ts: number): string {
   return dayjs(ts).format('YYYY-MM-DD HH:mm');
 }
 
-interface Props {}
-
 function DisciplineProgressGrid(props: { career: EnrichedCareerData }) {
   return (
     <Grid item container spacing={1}>
@@ -96,10 +94,20 @@ function Achievements(props: { achievements: Achievement[] }) {
             </Typography>
             <Typography variant="body2">{achievement.description}</Typography>
             {matchExhaustive(achievement.progress, {
-              Unlocked: ({ timestamp }) => (
+              Unlocked: ({ timestamp }: { timestamp: number }) => (
                 <em>Unlocked: {formatTimestamp(timestamp)}</em>
               ),
-              Progress: ({ current, max, formattedCurrent, formattedMax }) => (
+              Progress: ({
+                current,
+                max,
+                formattedCurrent,
+                formattedMax,
+              }: {
+                current: number;
+                max: number;
+                formattedCurrent?: string;
+                formattedMax?: string;
+              }) => (
                 <LinearProgressWithLabel
                   max={max}
                   current={current}
@@ -197,7 +205,7 @@ function Logbook(props: { career: EnrichedCareerData }) {
   );
 }
 
-export function CareerPage(props: Props) {
+export function CareerPage() {
   const dispatch = useDispatch();
   const career = useSelector(selectCareer);
   const { actions: mainPageActions } = useMainPageSlice();

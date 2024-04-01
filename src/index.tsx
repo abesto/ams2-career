@@ -18,6 +18,7 @@ const store = configureAppStore();
 const MOUNT_NODE = document.getElementById('root') as HTMLElement;
 
 class ExportWithErrorBoundary extends React.Component<
+  // eslint-disable-next-line @typescript-eslint/ban-types
   {},
   { hasError: boolean }
 > {
@@ -60,7 +61,7 @@ class DropLocalStorageOnErrorBoundary extends React.Component<
         <>
           <h1>Something went wrong.</h1>
           <p>
-            It's very likely that your saved state is incompatible with the
+            It&apos;s very likely that your saved state is incompatible with the
             current version of the application. Click the button below to clear
             application state, then reload the page.
           </p>

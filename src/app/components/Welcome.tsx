@@ -72,8 +72,8 @@ const Page1 = () => (
     <DialogContentText>
       Also note that the simulator will compare your result to the AI level and
       adjust it for further balancing in that car. These adjustments are per
-      car, so use the "Global" adjustment to have future offers reflect a better
-      starting AI level.
+      car, so use the &quot;Global&quot; adjustment to have future offers
+      reflect a better starting AI level.
     </DialogContentText>
   </>
 );
@@ -99,8 +99,9 @@ const Page2 = () => (
       mention this works on tablets and phones!?).
     </DialogContentText>
     <DialogContentText sx={{ mb: 1 }}>
-      Pro tip: Don't forget to take advantage of AMS2's brilliant weather and
-      day/night progression system by altering the session conditions in game.
+      Pro tip: Don&apos;t forget to take advantage of AMS2&apos;s brilliant
+      weather and day/night progression system by altering the session
+      conditions in game.
     </DialogContentText>
     <DialogContentText>Good luck and be safe!</DialogContentText>
   </>
@@ -159,7 +160,7 @@ export function Welcome(props: Props) {
                   color="error"
                   variant="text"
                 >
-                  Don't show again
+                  Don&apos;t show again
                 </Button>
               )}
               <Button onClick={handleClose} variant="outlined">

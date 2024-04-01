@@ -13,9 +13,7 @@ import {
 
 import { pluralWithNumber } from 'app/plural';
 
-interface Props {}
-
-export function ExportReminder(props: Props) {
+export function ExportReminder() {
   const racesSinceLastExport = useSelector(selectRacesSinceLastExport);
   const state = useSelector(selectExportReminder);
   const { actions } = useExportReminderSlice();

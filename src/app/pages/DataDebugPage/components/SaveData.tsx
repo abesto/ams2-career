@@ -4,9 +4,7 @@ import { availableVersions, load } from 'store/saveload';
 
 import { Button, Tab, Tabs } from '@mui/material';
 
-interface Props {}
-
-export function SaveData(props: Props) {
+export function SaveData() {
   const [tab, setTab] = React.useState(0);
   const saves = availableVersions();
   const selectedSave = saves[tab];

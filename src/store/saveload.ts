@@ -1,8 +1,8 @@
 import LZString from 'lz-string';
-import { isAction, Middleware, UnknownAction } from 'redux';
+import { isAction, Middleware } from 'redux';
 import * as GitInfo from '~build/git';
 
-import { createAction, Reducer } from '@reduxjs/toolkit';
+import { createAction } from '@reduxjs/toolkit';
 
 import { RootState } from 'types';
 
@@ -56,6 +56,7 @@ const MIGRATIONS = [
     // Rewrite in race results
     state.career?.raceResults.forEach(result => {
       if (result.trackId.startsWith('Jacarepagua-Kart')) {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         (result as any).trackId = result.trackId.replace(
           'Jacarepagua-Kart',
           'Interlagos-Kart',
@@ -65,6 +66,7 @@ const MIGRATIONS = [
     // Rewrite in currently generated races
     state.mainPage?.raceOptions.forEach(option => {
       if (option.trackId.startsWith('Jacarepagua-Kart')) {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         (option as any).trackId = option.trackId.replace(
           'Jacarepagua-Kart',
           'Interlagos-Kart',
@@ -140,14 +142,18 @@ export function save(
   state: RootState,
   version: number | string = LATEST,
 ): void {
-  localStorage.setItem(saveKey(version), serialize(state));
+  localStorage.setItem(saveKey(version), serializeRootState(state));
   saveChangelog(state);
 }
 
-export function serialize(state: any): string {
+export function serializeRootState(state: RootState): string {
   const data = { ...state };
   delete data.connectivity; // Connectivity is transient state
   delete data.cookieConsent; // Source of truth is a cookie for this
+  return serialize(data);
+}
+
+export function serialize(data: unknown): string {
   return LZString.compressToUTF16(JSON.stringify(data));
 }
 
@@ -159,6 +165,7 @@ function deserialize<T>(s: string): T {
   return JSON.parse(decompressed);
 }
 
+// eslint-disable-next-line @typescript-eslint/ban-types
 export const saveMiddleware: Middleware<{}, RootState> =
   storeApi => next => action => {
     next(action);
@@ -178,9 +185,7 @@ export function clear(): void {
 
 export const loadActionType = createAction<RootState>('LOAD');
 
-export const makeLoadableReducer: (
-  r: any,
-) => Reducer<RootState, UnknownAction> = reducer => (state, action) => {
+export const makeLoadableReducer = reducer => (state, action) => {
   if (loadActionType.match(action)) {
     return applyAllMigrations(action.payload);
   } else {

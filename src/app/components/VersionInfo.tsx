@@ -1,3 +1,4 @@
+import React from 'react';
 import * as GitInfo from '~build/git';
 
 import { Link, Typography } from '@mui/material';

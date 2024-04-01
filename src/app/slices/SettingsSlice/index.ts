@@ -16,14 +16,14 @@ const slice = createSlice({
   name: 'settings',
   initialState,
   reducers: {
-    resetCrossDisciplineGainsEnabled(state, action: PayloadAction<void>) {
+    resetCrossDisciplineGainsEnabled(state) {
       state.crossDisciplineGainsEnabled =
         initialState.crossDisciplineGainsEnabled;
     },
     setCrossDisciplineGainsEnabled(state, action: PayloadAction<boolean>) {
       state.crossDisciplineGainsEnabled = action.payload;
     },
-    resetXpMultiplier(state, action: PayloadAction<void>) {
+    resetXpMultiplier(state) {
       state.xpMultiplier = initialState.xpMultiplier;
     },
     setXpMultiplier(state, action: PayloadAction<number>) {
@@ -35,7 +35,7 @@ const slice = createSlice({
     setPositionXpMultiplier(state, action: PayloadAction<number>) {
       state.positionXpMultiplier = action.payload;
     },
-    resetPositionXpMultiplier(state, action: PayloadAction<void>) {
+    resetPositionXpMultiplier(state) {
       state.positionXpMultiplier = initialState.positionXpMultiplier;
     },
   },

@@ -1,8 +1,6 @@
 import { createSlice } from 'utils/@reduxjs/toolkit';
 import { useInjectReducer } from 'utils/redux-injectors';
 
-import { PayloadAction } from '@reduxjs/toolkit';
-
 import { WelcomeState } from './types';
 
 export const initialState: WelcomeState = {
@@ -13,10 +11,10 @@ const slice = createSlice({
   name: 'welcome',
   initialState,
   reducers: {
-    hide(state, action: PayloadAction<void>) {
+    hide(state) {
       state.hideWelcome = true;
     },
-    show(state, action: PayloadAction<void>) {
+    show(state) {
       state.hideWelcome = false;
     },
   },

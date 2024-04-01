@@ -22,7 +22,7 @@ function createReducer(injectedReducers: InjectedReducersType = {}) {
   }
 }
 
-export function createReducerWithPlaceholders(placeholders: any) {
+export function createReducerWithPlaceholders(placeholders: object) {
   return (injectedReducers: InjectedReducersType) => {
     const reducers = {
       ...placeholders,

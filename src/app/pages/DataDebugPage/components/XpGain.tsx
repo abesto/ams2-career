@@ -25,9 +25,7 @@ import { Discipline, DisciplineId, getDisciplineId } from 'types/Discipline';
 import { RaceResult } from 'types/Race';
 import { TrackId } from 'types/Track';
 
-interface Props {}
-
-export function XpGain(props: Props) {
+export function XpGain() {
   const [disciplineId, setDisciplineId] = React.useState(
     'Club' as DisciplineId,
   );
@@ -68,7 +66,7 @@ export function XpGain(props: Props) {
           <FormLabel>Discipline</FormLabel>
           <Select
             value={disciplineId}
-            onChange={(e, _) => setDisciplineId(e.target.value as DisciplineId)}
+            onChange={e => setDisciplineId(e.target.value as DisciplineId)}
           >
             {getAllDisciplines().map((discipline: Discipline) => (
               <MenuItem
@@ -85,7 +83,7 @@ export function XpGain(props: Props) {
           <FormLabel>Car Class</FormLabel>
           <Select
             value={carClassId}
-            onChange={(e, _) => setCarClassId(e.target.value as CarClassId)}
+            onChange={e => setCarClassId(e.target.value as CarClassId)}
           >
             {classes.map((carClass: CarClass) => (
               <MenuItem

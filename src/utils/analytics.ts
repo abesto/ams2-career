@@ -113,17 +113,17 @@ const emitRaceFinished = trackEvent(action => {
   };
 });
 
-const emitCareerReset = trackEvent(action => ({
+const emitCareerReset = trackEvent(() => ({
   category,
   action: 'career_reset',
 }));
 
-const emitSaveExport = trackEvent(action => ({
+const emitSaveExport = trackEvent(() => ({
   category,
   action: 'save_export',
 }));
 
-const emitSaveImport = trackEvent(action => ({
+const emitSaveImport = trackEvent(() => ({
   category,
   action: 'save_import',
 }));

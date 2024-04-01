@@ -66,7 +66,7 @@ const slice = createSlice({
     ) {
       state.selectedCars[action.payload.carClassId] = action.payload.carId;
     },
-    reset(state, action: PayloadAction<void>) {
+    reset(state) {
       state.raceOptions = [];
       state.selectedRaceIndex = 0;
     },

@@ -1,4 +1,5 @@
 import dayjs from 'dayjs';
+import PropTypes from 'prop-types';
 import * as React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -43,7 +44,13 @@ interface Props {
   ) => void;
 }
 
-function Item({ label, children }) {
+function Item({
+  label,
+  children,
+}: {
+  label: string;
+  children: PropTypes.node;
+}) {
   return (
     <Grid item>
       <Stack

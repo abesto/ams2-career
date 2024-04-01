@@ -11,7 +11,7 @@ import { createGaMiddleware } from '../utils/analytics';
 import { createReducerWithPlaceholders } from './reducers';
 import { load, saveMiddleware } from './saveload';
 
-export function configureAppStore(preloadedState?: any) {
+export function configureAppStore(preloadedState?: object) {
   const reduxSagaMonitorOptions = {};
   const sagaMiddleware = createSagaMiddleware(reduxSagaMonitorOptions);
   const { run: runSaga } = sagaMiddleware;
@@ -33,7 +33,7 @@ export function configureAppStore(preloadedState?: any) {
   // Create dummy reducers so that saved state for them is not dropped by redux
   const dummyReducers = {};
   for (const key of Object.keys(preloadedState)) {
-    dummyReducers[key] = (state: any) => state || null;
+    dummyReducers[key] = (state: object) => state || null;
   }
   const createReducer = createReducerWithPlaceholders(dummyReducers);
 

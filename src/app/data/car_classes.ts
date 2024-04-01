@@ -42,7 +42,7 @@ const CAR_CLASSES: { [key: CarClassId]: CarClass } = Object.fromEntries(
 );
 
 export function getCarClass(id: CarClassId | CarClass): CarClass {
-  if (id.hasOwnProperty('disciplineId')) {
+  if (Object.hasOwn(id, 'disciplineId')) {
     return id as CarClass;
   }
   const carClass = CAR_CLASSES[id as CarClassId];

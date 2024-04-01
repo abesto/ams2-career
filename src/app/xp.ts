@@ -13,9 +13,9 @@ export function getPositionMultiplier(
   result: RaceResult,
   settings: SettingsState,
 ): number {
-  let simpleMultiplier = Math.max(0.9, 1.04 - 0.01 * result.position);
-  let simpleMagnitude = simpleMultiplier - 1.0;
-  let adjustedMagnitude = simpleMagnitude * settings.positionXpMultiplier;
+  const simpleMultiplier = Math.max(0.9, 1.04 - 0.01 * result.position);
+  const simpleMagnitude = simpleMultiplier - 1.0;
+  const adjustedMagnitude = simpleMagnitude * settings.positionXpMultiplier;
   return 1.0 + adjustedMagnitude;
 }
 

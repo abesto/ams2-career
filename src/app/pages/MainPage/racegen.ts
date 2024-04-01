@@ -33,7 +33,7 @@ function genRaceDate(carClass: CarClass): Date {
   const startYear = Math.min(...cars.map(c => c.year));
   const start = dayjs(new Date(startYear, 1, 1)).startOf('year');
   const end = dayjs.min(start.add(10, 'year'), dayjs())!;
-  var date = randomDateBetween(start, end);
+  let date = randomDateBetween(start, end);
 
   if (!canRaceAtNight(carClass)) {
     date = date.set('hour', 10 + Math.floor(Math.random() * 7));
