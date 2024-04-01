@@ -1,9 +1,9 @@
-import * as React from 'react';
+import { expect, test } from 'vitest';
 
 import { fireEvent } from '@testing-library/react';
 
-import { App } from './';
-import { render } from './test-utils';
+import { App } from '../src/app';
+import { render } from '../src/app/test-utils';
 
 test('Basic sanity: a bunch of race results', async () => {
   const { findByRole, findByText, container } = render(<App />);

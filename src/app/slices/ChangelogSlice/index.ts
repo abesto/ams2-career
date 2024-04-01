@@ -3,7 +3,7 @@ import { useInjectReducer } from 'utils/redux-injectors';
 
 import { PayloadAction } from '@reduxjs/toolkit';
 
-import { ChangelogState, SemVer } from './types';
+import { ChangelogState, SemVerWithRaw } from './types';
 
 export const initialState: ChangelogState = {
   seenVersion: {
@@ -18,7 +18,7 @@ const slice = createSlice({
   name: 'changelog',
   initialState,
   reducers: {
-    setSeenVersion(state, action: PayloadAction<SemVer>) {
+    setSeenVersion(state, action: PayloadAction<SemVerWithRaw>) {
       state.seenVersion = action.payload;
     },
   },

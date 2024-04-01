@@ -21,14 +21,14 @@ interface PlopGenerator extends PG {
 process.chdir(path.join(__dirname, '../../generators'));
 
 const plop = nodePlop('./plopfile.ts');
-const componentGen = plop.getGenerator('component') as PlopGenerator;
-const sliceGen = plop.getGenerator('slice') as PlopGenerator;
 
 const BACKUPFILE_EXTENSION = 'rbgen';
 
 async function generateComponents() {
   const variations = componentVariations();
   const promises: Promise<{ path: string; name: string }>[] = [];
+
+  const componentGen = (await plop).getGenerator('component') as PlopGenerator;
 
   for (const variation of variations) {
     const p = componentGen
@@ -55,6 +55,8 @@ async function generateSlices() {
 
   const variations = sliceVariations();
   const slices: { path: string; name: string }[] = [];
+
+  const sliceGen = (await plop).getGenerator('slice') as PlopGenerator;
 
   for (const variation of variations) {
     const slice = await sliceGen

@@ -1,14 +1,13 @@
 import { parser as parseChangelog } from 'keep-a-changelog';
-import raw from 'raw.macro';
-import * as React from 'react';
-import { configureAppStore } from 'store/configureStore';
+import { describe, expect, it } from 'vitest';
 
-import { Changelog } from 'app/components/Changelog';
-import { changelogActions } from 'app/slices/ChangelogSlice';
-import { simpleSemVer } from 'app/slices/ChangelogSlice/types';
-import { render } from 'app/test-utils';
+import { Changelog } from '../src/app/components/Changelog';
+import { changelogActions } from '../src/app/slices/ChangelogSlice';
+import { semverWithRaw } from '../src/app/slices/ChangelogSlice/types';
+import { render } from '../src/app/test-utils';
+import { configureAppStore } from '../src/store/configureStore';
+import changelogText from './test_CHANGELOG.md?raw';
 
-const changelogText = raw('./test_CHANGELOG.md');
 const changelog = parseChangelog(changelogText);
 
 describe('Changelog component', () => {
@@ -19,12 +18,12 @@ describe('Changelog component', () => {
 
   it("Doesn't show changelog if we've seen the latest version", async () => {
     const store = configureAppStore({
-      changelog: { seenVersion: simpleSemVer(changelog.releases[0].version!) },
+      changelog: {
+        seenVersion: semverWithRaw(changelog.releases[0]),
+      },
     });
     store.dispatch(
-      changelogActions.setSeenVersion(
-        simpleSemVer(changelog.releases[0].version!),
-      ),
+      changelogActions.setSeenVersion(semverWithRaw(changelog.releases[0])),
     );
     const { asFragment } = render(<Changelog changelog={changelog} />, {
       store,
@@ -34,7 +33,7 @@ describe('Changelog component', () => {
 
   it('Shows the latest changelog entry when we saw the previous one', async () => {
     const store = configureAppStore({
-      changelog: { seenVersion: simpleSemVer(changelog.releases[1].version!) },
+      changelog: { seenVersion: semverWithRaw(changelog.releases[1]) },
     });
     const { getByTestId } = render(<Changelog changelog={changelog} />, {
       store,

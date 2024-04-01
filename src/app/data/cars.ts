@@ -1,10 +1,10 @@
 import Papa from 'papaparse';
-import raw from 'raw.macro';
 
 import { Car, CarId, getCarId } from '../../types/Car';
 import { CarClass, CarClassId, getCarClassId } from '../../types/CarClass';
 import { Discipline } from '../../types/Discipline';
 import { getCarClass, getCarClassesByName } from './car_classes';
+import carsCsv from './cars.csv?raw';
 import { getDiscipline } from './disciplines';
 import { getTrackIdsFor } from './tracks';
 
@@ -15,7 +15,7 @@ type Record = {
   year: string;
 };
 
-const data: Record[] = Papa.parse(raw('./cars.csv'), { header: true }).data;
+const data: Record[] = Papa.parse(carsCsv, { header: true }).data;
 
 function recordToCars(record: Record): Car[] {
   return getCarClassesByName(record.class).map(carClass => ({

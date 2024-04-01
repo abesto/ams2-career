@@ -1106,8 +1106,8 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                 <label
                   class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
-                  for=":r1e:"
-                  id=":r1e:-label"
+                  for=":r1f:"
+                  id=":r1f:-label"
                 >
                   Global
                 </label>
@@ -1117,7 +1117,7 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                   <input
                     aria-invalid="false"
                     class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
-                    id=":r1e:"
+                    id=":r1f:"
                     type="number"
                     value="0"
                   />
@@ -1150,8 +1150,8 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                 <label
                   class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
-                  for=":r1f:"
-                  id=":r1f:-label"
+                  for=":r1g:"
+                  id=":r1g:-label"
                 >
                   GT
                 </label>
@@ -1161,7 +1161,7 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                   <input
                     aria-invalid="false"
                     class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
-                    id=":r1f:"
+                    id=":r1g:"
                     type="number"
                     value="0"
                   />
@@ -1194,8 +1194,8 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                 <label
                   class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
-                  for=":r1g:"
-                  id=":r1g:-label"
+                  for=":r1h:"
+                  id=":r1h:-label"
                 >
                   Carrera Cup
                 </label>
@@ -1205,7 +1205,7 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                   <input
                     aria-invalid="false"
                     class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
-                    id=":r1g:"
+                    id=":r1h:"
                     type="number"
                     value="0"
                   />
@@ -1238,8 +1238,8 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                 <label
                   class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
-                  for=":r1h:"
-                  id=":r1h:-label"
+                  for=":r1i:"
+                  id=":r1i:-label"
                 >
                   Porsche 911 GT3 Cup 3.8
                 </label>
@@ -1249,7 +1249,7 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                   <input
                     aria-invalid="false"
                     class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
-                    id=":r1h:"
+                    id=":r1i:"
                     type="number"
                     value="0"
                   />
@@ -1314,7 +1314,7 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                 class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl  css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
               >
                 <div
-                  aria-controls=":r1i:"
+                  aria-controls=":r1j:"
                   aria-expanded="false"
                   aria-haspopup="listbox"
                   aria-labelledby="car-select"
@@ -1365,8 +1365,8 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                 <label
                   class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
-                  for=":r1j:"
-                  id=":r1j:-label"
+                  for=":r1k:"
+                  id=":r1k:-label"
                 >
                   Finishing position
                 </label>
@@ -1376,7 +1376,7 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                   <input
                     aria-invalid="false"
                     class="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
-                    id=":r1j:"
+                    id=":r1k:"
                     type="number"
                     value="1"
                   />
@@ -2617,8 +2617,8 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                 <label
                   class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
-                  for=":r9:"
-                  id=":r9:-label"
+                  for=":ra:"
+                  id=":ra:-label"
                 >
                   Global
                 </label>
@@ -2628,7 +2628,7 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                   <input
                     aria-invalid="false"
                     class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
-                    id=":r9:"
+                    id=":ra:"
                     type="number"
                     value="0"
                   />
@@ -2661,8 +2661,8 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                 <label
                   class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
-                  for=":ra:"
-                  id=":ra:-label"
+                  for=":rb:"
+                  id=":rb:-label"
                 >
                   GT
                 </label>
@@ -2672,7 +2672,7 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                   <input
                     aria-invalid="false"
                     class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
-                    id=":ra:"
+                    id=":rb:"
                     type="number"
                     value="0"
                   />
@@ -2705,8 +2705,8 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                 <label
                   class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
-                  for=":rb:"
-                  id=":rb:-label"
+                  for=":rc:"
+                  id=":rc:-label"
                 >
                   GT5
                 </label>
@@ -2716,7 +2716,7 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                   <input
                     aria-invalid="false"
                     class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
-                    id=":rb:"
+                    id=":rc:"
                     type="number"
                     value="0"
                   />
@@ -2749,8 +2749,8 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                 <label
                   class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
-                  for=":rc:"
-                  id=":rc:-label"
+                  for=":rd:"
+                  id=":rd:-label"
                 >
                   Ginetta G40 GT5
                 </label>
@@ -2760,7 +2760,7 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                   <input
                     aria-invalid="false"
                     class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
-                    id=":rc:"
+                    id=":rd:"
                     type="number"
                     value="0"
                   />
@@ -2825,7 +2825,7 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                 class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl  css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
               >
                 <div
-                  aria-controls=":rd:"
+                  aria-controls=":re:"
                   aria-expanded="false"
                   aria-haspopup="listbox"
                   aria-labelledby="car-select"
@@ -2876,8 +2876,8 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                 <label
                   class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
-                  for=":re:"
-                  id=":re:-label"
+                  for=":rf:"
+                  id=":rf:-label"
                 >
                   Finishing position
                 </label>
@@ -2887,7 +2887,7 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                   <input
                     aria-invalid="false"
                     class="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
-                    id=":re:"
+                    id=":rf:"
                     type="number"
                     value="1"
                   />
@@ -4085,8 +4085,8 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                 <label
                   class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
-                  for=":r9:"
-                  id=":r9:-label"
+                  for=":ra:"
+                  id=":ra:-label"
                 >
                   Global
                 </label>
@@ -4096,7 +4096,7 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                   <input
                     aria-invalid="false"
                     class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
-                    id=":r9:"
+                    id=":ra:"
                     type="number"
                     value="0"
                   />
@@ -4129,8 +4129,8 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                 <label
                   class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
-                  for=":ra:"
-                  id=":ra:-label"
+                  for=":rb:"
+                  id=":rb:-label"
                 >
                   Club
                 </label>
@@ -4140,7 +4140,7 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                   <input
                     aria-invalid="false"
                     class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
-                    id=":ra:"
+                    id=":rb:"
                     type="number"
                     value="0"
                   />
@@ -4173,8 +4173,8 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                 <label
                   class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
-                  for=":rb:"
-                  id=":rb:-label"
+                  for=":rc:"
+                  id=":rc:-label"
                 >
                   Copa Classic (Class: B)
                 </label>
@@ -4184,7 +4184,7 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                   <input
                     aria-invalid="false"
                     class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
-                    id=":rb:"
+                    id=":rc:"
                     type="number"
                     value="0"
                   />
@@ -4217,8 +4217,8 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                 <label
                   class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
-                  for=":rc:"
-                  id=":rc:-label"
+                  for=":rd:"
+                  id=":rd:-label"
                 >
                   Chevrolet Chevette
                 </label>
@@ -4228,7 +4228,7 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                   <input
                     aria-invalid="false"
                     class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
-                    id=":rc:"
+                    id=":rd:"
                     type="number"
                     value="0"
                   />
@@ -4293,7 +4293,7 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                 class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl  css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
               >
                 <div
-                  aria-controls=":rd:"
+                  aria-controls=":re:"
                   aria-expanded="false"
                   aria-haspopup="listbox"
                   aria-labelledby="car-select"
@@ -4344,8 +4344,8 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                 <label
                   class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
-                  for=":re:"
-                  id=":re:-label"
+                  for=":rf:"
+                  id=":rf:-label"
                 >
                   Finishing position
                 </label>
@@ -4355,7 +4355,7 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                   <input
                     aria-invalid="false"
                     class="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
-                    id=":re:"
+                    id=":rf:"
                     type="number"
                     value="1"
                   />
@@ -5592,8 +5592,8 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                 <label
                   class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
-                  for=":r9:"
-                  id=":r9:-label"
+                  for=":ra:"
+                  id=":ra:-label"
                 >
                   Global
                 </label>
@@ -5603,7 +5603,7 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                   <input
                     aria-invalid="false"
                     class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
-                    id=":r9:"
+                    id=":ra:"
                     type="number"
                     value="0"
                   />
@@ -5636,8 +5636,8 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                 <label
                   class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
-                  for=":ra:"
-                  id=":ra:-label"
+                  for=":rb:"
+                  id=":rb:-label"
                 >
                   Club
                 </label>
@@ -5647,7 +5647,7 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                   <input
                     aria-invalid="false"
                     class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
-                    id=":ra:"
+                    id=":rb:"
                     type="number"
                     value="0"
                   />
@@ -5680,8 +5680,8 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                 <label
                   class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
-                  for=":rb:"
-                  id=":rb:-label"
+                  for=":rc:"
+                  id=":rc:-label"
                 >
                   Copa Classic (Class: B)
                 </label>
@@ -5691,7 +5691,7 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                   <input
                     aria-invalid="false"
                     class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
-                    id=":rb:"
+                    id=":rc:"
                     type="number"
                     value="0"
                   />
@@ -5724,8 +5724,8 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                 <label
                   class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
-                  for=":rc:"
-                  id=":rc:-label"
+                  for=":rd:"
+                  id=":rd:-label"
                 >
                   Chevrolet Chevette
                 </label>
@@ -5735,7 +5735,7 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                   <input
                     aria-invalid="false"
                     class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
-                    id=":rc:"
+                    id=":rd:"
                     type="number"
                     value="0"
                   />
@@ -5800,7 +5800,7 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                 class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl  css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
               >
                 <div
-                  aria-controls=":rd:"
+                  aria-controls=":re:"
                   aria-expanded="false"
                   aria-haspopup="listbox"
                   aria-labelledby="car-select"
@@ -5851,8 +5851,8 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                 <label
                   class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
-                  for=":re:"
-                  id=":re:-label"
+                  for=":rf:"
+                  id=":rf:-label"
                 >
                   Finishing position
                 </label>
@@ -5862,7 +5862,7 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                   <input
                     aria-invalid="false"
                     class="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
-                    id=":re:"
+                    id=":rf:"
                     type="number"
                     value="1"
                   />
@@ -6946,8 +6946,8 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                 <label
                   class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
-                  for=":r17:"
-                  id=":r17:-label"
+                  for=":r18:"
+                  id=":r18:-label"
                 >
                   Global
                 </label>
@@ -6957,7 +6957,7 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                   <input
                     aria-invalid="false"
                     class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
-                    id=":r17:"
+                    id=":r18:"
                     type="number"
                     value="0"
                   />
@@ -6990,8 +6990,8 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                 <label
                   class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
-                  for=":r18:"
-                  id=":r18:-label"
+                  for=":r19:"
+                  id=":r19:-label"
                 >
                   GT
                 </label>
@@ -7001,7 +7001,7 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                   <input
                     aria-invalid="false"
                     class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
-                    id=":r18:"
+                    id=":r19:"
                     type="number"
                     value="0"
                   />
@@ -7034,8 +7034,8 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                 <label
                   class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
-                  for=":r19:"
-                  id=":r19:-label"
+                  for=":r1a:"
+                  id=":r1a:-label"
                 >
                   Carrera Cup
                 </label>
@@ -7045,7 +7045,7 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                   <input
                     aria-invalid="false"
                     class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
-                    id=":r19:"
+                    id=":r1a:"
                     type="number"
                     value="0"
                   />
@@ -7078,8 +7078,8 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                 <label
                   class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
-                  for=":r1a:"
-                  id=":r1a:-label"
+                  for=":r1b:"
+                  id=":r1b:-label"
                 >
                   Porsche 911 GT3 Cup 3.8
                 </label>
@@ -7089,7 +7089,7 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                   <input
                     aria-invalid="false"
                     class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
-                    id=":r1a:"
+                    id=":r1b:"
                     type="number"
                     value="0"
                   />
@@ -7154,7 +7154,7 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                 class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl  css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
               >
                 <div
-                  aria-controls=":r1b:"
+                  aria-controls=":r1c:"
                   aria-expanded="false"
                   aria-haspopup="listbox"
                   aria-labelledby="car-select"
@@ -7205,8 +7205,8 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                 <label
                   class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
-                  for=":r1c:"
-                  id=":r1c:-label"
+                  for=":r1d:"
+                  id=":r1d:-label"
                 >
                   Finishing position
                 </label>
@@ -7216,7 +7216,7 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                   <input
                     aria-invalid="false"
                     class="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
-                    id=":r1c:"
+                    id=":r1d:"
                     type="number"
                     value="1"
                   />
@@ -8490,8 +8490,8 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                 <label
                   class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
-                  for=":ri:"
-                  id=":ri:-label"
+                  for=":rj:"
+                  id=":rj:-label"
                 >
                   Global
                 </label>
@@ -8501,7 +8501,7 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                   <input
                     aria-invalid="false"
                     class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
-                    id=":ri:"
+                    id=":rj:"
                     type="number"
                     value="0"
                   />
@@ -8534,8 +8534,8 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                 <label
                   class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
-                  for=":rj:"
-                  id=":rj:-label"
+                  for=":rk:"
+                  id=":rk:-label"
                 >
                   GT
                 </label>
@@ -8545,7 +8545,7 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                   <input
                     aria-invalid="false"
                     class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
-                    id=":rj:"
+                    id=":rk:"
                     type="number"
                     value="0"
                   />
@@ -8578,8 +8578,8 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                 <label
                   class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
-                  for=":rk:"
-                  id=":rk:-label"
+                  for=":rl:"
+                  id=":rl:-label"
                 >
                   GT5
                 </label>
@@ -8589,7 +8589,7 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                   <input
                     aria-invalid="false"
                     class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
-                    id=":rk:"
+                    id=":rl:"
                     type="number"
                     value="0"
                   />
@@ -8622,8 +8622,8 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                 <label
                   class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
-                  for=":rl:"
-                  id=":rl:-label"
+                  for=":rm:"
+                  id=":rm:-label"
                 >
                   Ginetta G40 GT5
                 </label>
@@ -8633,7 +8633,7 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                   <input
                     aria-invalid="false"
                     class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input"
-                    id=":rl:"
+                    id=":rm:"
                     type="number"
                     value="0"
                   />
@@ -8698,7 +8698,7 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                 class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl  css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
               >
                 <div
-                  aria-controls=":rm:"
+                  aria-controls=":rn:"
                   aria-expanded="false"
                   aria-haspopup="listbox"
                   aria-labelledby="car-select"
@@ -8749,8 +8749,8 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                 <label
                   class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
-                  for=":rn:"
-                  id=":rn:-label"
+                  for=":ro:"
+                  id=":ro:-label"
                 >
                   Finishing position
                 </label>
@@ -8760,7 +8760,7 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                   <input
                     aria-invalid="false"
                     class="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
-                    id=":rn:"
+                    id=":ro:"
                     type="number"
                     value="1"
                   />

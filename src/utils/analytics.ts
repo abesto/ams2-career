@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { getCookieConsentValue } from 'react-cookie-consent';
-import GitInfo from 'react-git-info/macro';
 import { useDispatch } from 'react-redux';
 import { useLocation } from 'react-router-dom';
 import { createMiddleware } from 'redux-beacon';
+import * as GitInfo from '~build/git';
 
 import GoogleAnalyticsGtag, {
   trackEvent,
@@ -23,11 +23,9 @@ import { getDisciplineOfRace, RaceResult } from 'types/Race';
 
 const category = 'ams2career';
 
-const gitInfo = GitInfo();
-
 const staticDimensions = {
-  commit_hash: gitInfo.commit.hash,
-  commit_date: gitInfo.commit.date,
+  commit_hash: GitInfo.sha,
+  commit_date: GitInfo.committerDate,
 };
 const raceResultDimensions: { [key: string]: (result: RaceResult) => string } =
   {

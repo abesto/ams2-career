@@ -1,5 +1,4 @@
 import Papa from 'papaparse';
-import raw from 'raw.macro';
 
 import { CarClass, CarClassId, getCarClassId } from '../../types/CarClass';
 import {
@@ -7,6 +6,7 @@ import {
   DisciplineId,
   getDisciplineId,
 } from '../../types/Discipline';
+import carClassesCsv from './car_classes.csv?raw';
 import { checkDisciplineId, getDiscipline } from './disciplines';
 
 import { Car } from 'types/Car';
@@ -20,7 +20,7 @@ type Record = {
   race_length_unit: string;
 };
 
-const data: Record[] = Papa.parse(raw('./car_classes.csv').trimEnd(), {
+const data: Record[] = Papa.parse(carClassesCsv.trimEnd(), {
   header: true,
   dynamicTyping: true,
 }).data;

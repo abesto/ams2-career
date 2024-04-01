@@ -1,6 +1,6 @@
 import LZString from 'lz-string';
-import GitInfo from 'react-git-info/macro';
-import { AnyAction, Middleware } from 'redux';
+import { isAction, Middleware, UnknownAction } from 'redux';
+import * as GitInfo from '~build/git';
 
 import { createAction, Reducer } from '@reduxjs/toolkit';
 
@@ -104,10 +104,9 @@ function applyAllMigrations(state: RootState): RootState {
 }
 
 function addCommitVersion(state: RootState): RootState {
-  const gitInfo = GitInfo();
   state.saveMeta!.commit = {
-    hash: gitInfo.commit.hash,
-    date: gitInfo.commit.date,
+    hash: GitInfo.sha,
+    date: GitInfo.committerDate,
   };
   return state;
 }
@@ -163,10 +162,12 @@ function deserialize<T>(s: string): T {
 export const saveMiddleware: Middleware<{}, RootState> =
   storeApi => next => action => {
     next(action);
-    if (action.type !== 'saveMeta/updateTimestamp') {
-      storeApi.dispatch({ type: 'saveMeta/updateTimestamp' });
-    } else {
-      save(storeApi.getState());
+    if (isAction(action)) {
+      if (action.type !== 'saveMeta/updateTimestamp') {
+        storeApi.dispatch({ type: 'saveMeta/updateTimestamp' });
+      } else {
+        save(storeApi.getState());
+      }
     }
   };
 
@@ -177,14 +178,15 @@ export function clear(): void {
 
 export const loadActionType = createAction<RootState>('LOAD');
 
-export const makeLoadableReducer: (r: any) => Reducer<RootState, AnyAction> =
-  reducer => (state, action) => {
-    if (action.type === loadActionType.type) {
-      return applyAllMigrations(action.payload);
-    } else {
-      return reducer(state, action);
-    }
-  };
+export const makeLoadableReducer: (
+  r: any,
+) => Reducer<RootState, UnknownAction> = reducer => (state, action) => {
+  if (loadActionType.match(action)) {
+    return applyAllMigrations(action.payload);
+  } else {
+    return reducer(state, action);
+  }
+};
 
 export function backup(name: string): void {
   const last = localStorage.getItem(saveKey(LATEST));

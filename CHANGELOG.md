@@ -10,7 +10,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ### Changed
 
-- Changed package manager and development launcher from `yarn` to `pnpm`. This shouldn't affect your experience.
+- Caught up with two years of JS ecosystem developments. None of this should effect your experience.
+  - Changed package manager and development launcher from `yarn` to `pnpm`
+  - Switched from CRA to `vite`, from `jest` to `vitest`
+  - Upgraded literally all the dependencies
 
 ### Deprecated
 

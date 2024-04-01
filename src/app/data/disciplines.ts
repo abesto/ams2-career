@@ -1,7 +1,7 @@
 import Papa from 'papaparse';
-import raw from 'raw.macro';
 
 import { Discipline, DisciplineId } from '../../types/Discipline';
+import carClassesCsv from './car_classes.csv?raw';
 
 type Record = {
   class: string;
@@ -9,7 +9,7 @@ type Record = {
   grade: number;
 };
 
-const data: Record[] = Papa.parse(raw('./car_classes.csv'), {
+const data: Record[] = Papa.parse(carClassesCsv, {
   header: true,
   dynamicTyping: true,
 }).data;

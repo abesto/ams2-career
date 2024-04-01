@@ -7,7 +7,6 @@
  */
 
 import { parser as parseChangelog } from 'keep-a-changelog';
-import raw from 'raw.macro';
 import * as React from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useDispatch } from 'react-redux';
@@ -38,6 +37,7 @@ import {
   Typography,
 } from '@mui/material';
 
+import changelogText from '../../CHANGELOG.md?raw';
 import { usePageViews } from '../utils/analytics';
 import { Changelog } from './components/Changelog';
 import { Consistency } from './components/Consistency';
@@ -95,7 +95,6 @@ function InnerApp() {
   // Send analytics about page views
   usePageViews();
 
-  const changelogText: string = raw('../../CHANGELOG.md');
   const changelog = parseChangelog(changelogText);
 
   return (

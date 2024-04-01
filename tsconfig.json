@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
     "noImplicitAny": false,
-    "target": "es6",
+    "target": "ESNext",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
+    "allowJs": false,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -15,10 +15,15 @@
     "isolatedModules": true,
     "noEmit": true,
     "noFallthroughCasesInSwitch": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "baseUrl": "./src"
   },
-  "include": ["src"],
+  "include": [
+    "src",
+    "vitest/App.test.tsx",
+    "vitest/Changelog.test.tsx",
+    "vitest/setupTests.ts"
+  ],
   "ts-node": {
     "compilerOptions": {
       "esModuleInterop": true,

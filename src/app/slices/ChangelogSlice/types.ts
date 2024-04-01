@@ -1,17 +1,28 @@
-export interface SemVer {
-  raw: string;
-  major: number;
+import Release from 'keep-a-changelog/script/src/Release';
+
+export interface SemVerWithRaw {
   minor: number;
+  major: number;
   patch: number;
+  raw: string;
+}
+
+export function semverWithRaw(release: Release): SemVerWithRaw {
+  return {
+    major: release.parsedVersion!.major,
+    minor: release.parsedVersion!.minor,
+    patch: release.parsedVersion!.patch,
+    raw: release.version!,
+  };
 }
 
 /** Drop any properties of an object outside of what's needed for our SemVer */
-export function simpleSemVer(x: SemVer): SemVer {
+export function simpleSemVer(x: SemVerWithRaw): SemVerWithRaw {
   const { raw, major, minor, patch } = x;
   return { raw, major, minor, patch };
 }
 
-export function cmpSemVer(a: SemVer, b: SemVer): number {
+export function cmpSemVer(a: SemVerWithRaw, b: SemVerWithRaw): number {
   if (a.major !== b.major) {
     return a.major - b.major;
   }
@@ -23,5 +34,5 @@ export function cmpSemVer(a: SemVer, b: SemVer): number {
 
 /* --- STATE --- */
 export interface ChangelogState {
-  seenVersion: SemVer;
+  seenVersion: SemVerWithRaw;
 }

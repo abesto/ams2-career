@@ -1,5 +1,9 @@
 import Papa from 'papaparse';
-import raw from 'raw.macro';
+
+import xpCrossDisciplineMultiplierCsv from './xp_cross_discipline_multiplier.csv?raw';
+import xpGradeBreakpointsCsv from './xp_grade_breakpoints.csv?raw';
+import xpGradeMultiplierCsv from './xp_grade_multiplier.csv?raw';
+import xpPrestigeCsv from './xp_prestige.csv?raw';
 
 import { DisciplineId } from 'types/Discipline';
 
@@ -12,7 +16,7 @@ const PRESTIGE: Map<DisciplineId, number> = new Map();
 const LEVEL_UP: Map<DisciplineId, Map<number, number>> = new Map();
 
 // Load grade multipliers
-for (const row of Papa.parse(raw('./xp_grade_multiplier.csv')).data) {
+for (const row of Papa.parse(xpGradeMultiplierCsv).data) {
   const disciplineId = row[0] as DisciplineId;
   GRADE_MULTIPLIERS.set(disciplineId, new Map());
   for (let grade = 1; grade < row.length; grade++) {
@@ -21,7 +25,7 @@ for (const row of Papa.parse(raw('./xp_grade_multiplier.csv')).data) {
 }
 
 // Load cross-discipline multipliers
-for (const row of Papa.parse(raw('./xp_cross_discipline_multiplier.csv'), {
+for (const row of Papa.parse(xpCrossDisciplineMultiplierCsv, {
   header: true,
 }).data) {
   const fromId = row.source as DisciplineId;
@@ -33,13 +37,13 @@ for (const row of Papa.parse(raw('./xp_cross_discipline_multiplier.csv'), {
 }
 
 // Load discipline prestige multipliers
-for (const row of Papa.parse(raw('./xp_prestige.csv'), { header: true }).data) {
+for (const row of Papa.parse(xpPrestigeCsv, { header: true }).data) {
   const disciplineId = row.discipline as DisciplineId;
   PRESTIGE.set(disciplineId, parseFloat(row.prestige as string));
 }
 
 // Load class upgrade XP breakpoints
-for (const row of Papa.parse(raw('./xp_grade_breakpoints.csv'), {
+for (const row of Papa.parse(xpGradeBreakpointsCsv, {
   header: true,
 }).data) {
   const map: Map<number, number> = new Map();

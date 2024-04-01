@@ -14,7 +14,7 @@ import {
 
 import { useChangelogSlice } from 'app/slices/ChangelogSlice';
 import { selectChangelog } from 'app/slices/ChangelogSlice/selectors';
-import { cmpSemVer } from 'app/slices/ChangelogSlice/types';
+import { cmpSemVer, semverWithRaw } from 'app/slices/ChangelogSlice/types';
 
 type Props = { changelog: ChangelogData };
 
@@ -26,11 +26,14 @@ export function Changelog(props: Props) {
 
   const seenVersion = useSelector(selectChangelog).seenVersion;
   const releases = changelog.releases.filter(
-    release => release.version && cmpSemVer(release.version, seenVersion) > 0,
+    release =>
+      release.parsedVersion &&
+      cmpSemVer(semverWithRaw(release), seenVersion) > 0,
   );
 
   const markCurrentVersionSeen = React.useCallback(() => {
-    const { major, minor, patch, raw } = releases[0].version!;
+    const { major, minor, patch } = releases[0].parsedVersion!;
+    const raw = releases[0].version!;
     dispatch(actions.setSeenVersion({ major, minor, patch, raw }));
   }, [releases, actions, dispatch]);
 
@@ -71,7 +74,7 @@ export function Changelog(props: Props) {
           </em>
         </DialogContentText>
         {releases.map(release => (
-          <Markdown data-testid="changelog-entries" key={release.version!.raw}>
+          <Markdown data-testid="changelog-entries" key={release.version!}>
             {release.toString()}
           </Markdown>
         ))}

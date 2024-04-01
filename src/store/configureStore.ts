@@ -5,11 +5,7 @@
 import { createInjectorsEnhancer } from 'redux-injectors';
 import createSagaMiddleware from 'redux-saga';
 
-import {
-  configureStore,
-  getDefaultMiddleware,
-  StoreEnhancer,
-} from '@reduxjs/toolkit';
+import { configureStore, StoreEnhancer } from '@reduxjs/toolkit';
 
 import { createGaMiddleware } from '../utils/analytics';
 import { createReducerWithPlaceholders } from './reducers';
@@ -50,9 +46,10 @@ export function configureAppStore(preloadedState?: any) {
 
   const store = configureStore({
     reducer: createReducer(dummyReducers),
-    middleware: [...getDefaultMiddleware(), ...middlewares],
+    middleware: getDefaultMiddleware =>
+      getDefaultMiddleware().concat(middlewares),
     devTools: process.env.NODE_ENV !== 'production',
-    enhancers,
+    enhancers: getDefaultEnhancers => getDefaultEnhancers().concat(enhancers),
     preloadedState,
   });
 

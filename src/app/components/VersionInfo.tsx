@@ -1,10 +1,8 @@
-import * as React from 'react';
-import GitInfo from 'react-git-info/macro';
+import * as GitInfo from '~build/git';
 
 import { Link, Typography } from '@mui/material';
 
 export function VersionInfo() {
-  const gitInfo = GitInfo();
   return (
     <Typography
       className="version-info"
@@ -20,14 +18,14 @@ export function VersionInfo() {
         'dev'
       ) : (
         <>
-          {gitInfo.commit.date}{' '}
+          {GitInfo.committerDate}{' '}
           <Link
             color="inherit"
             underline="hover"
             target="_blank"
-            href={`https://github.com/abesto/ams2-career/commit/${gitInfo.commit.hash}`}
+            href={`https://github.com/abesto/ams2-career/commit/${GitInfo.sha}`}
           >
-            {gitInfo.commit.hash}
+            {GitInfo.sha}
           </Link>
         </>
       )}

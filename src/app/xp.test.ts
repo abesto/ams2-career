@@ -1,3 +1,5 @@
+import { describe, expect, it } from 'vitest';
+
 import {
   getCarClassesByName,
   getDisciplineOfCarClass,
@@ -55,7 +57,7 @@ describe('getCrossDisciplineMultiplier', () => {
 });
 
 describe('positionXPMultiplier', () => {
-  test('settings multiplier of 1.0 has no effect compared to old behavior', () => {
+  it('settings multiplier of 1.0 has no effect compared to old behavior', () => {
     const settings = { positionXpMultiplier: 1.0 } as SettingsState;
 
     let result = { position: 1 } as RaceResult;
@@ -68,7 +70,7 @@ describe('positionXPMultiplier', () => {
     expect(getPositionMultiplier(result, settings)).toBe(0.9);
   });
 
-  test('settings multiplier of 0.0 flattens out the multiplier', () => {
+  it('settings multiplier of 0.0 flattens out the multiplier', () => {
     const settings = { positionXpMultiplier: 0.0 } as SettingsState;
 
     let result = { position: 1 } as RaceResult;
@@ -78,7 +80,7 @@ describe('positionXPMultiplier', () => {
     expect(getPositionMultiplier(result, settings)).toBe(1.0);
   });
 
-  test('settings multiplier of 2.0 doubles the effect of the finishing position', () => {
+  it('settings multiplier of 2.0 doubles the effect of the finishing position', () => {
     const settings = { positionXpMultiplier: 2.0 } as SettingsState;
 
     let result = { position: 1 } as RaceResult;
