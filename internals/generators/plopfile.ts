@@ -1,7 +1,9 @@
 import { NodePlopAPI } from 'node-plop';
-import { componentGenerator } from './component';
 import shell from 'shelljs';
+
+import { componentGenerator } from './component';
 import { sliceGenerator } from './slice';
+
 interface PrettifyCustomActionData {
   path: string;
 }
@@ -12,7 +14,7 @@ export default function plop(plop: NodePlopAPI) {
 
   plop.setActionType('prettify', (answers, config) => {
     const data = config!.data as PrettifyCustomActionData;
-    shell.exec(`yarn run prettify -- "${data.path}"`, { silent: true });
+    shell.exec(`pnpm run prettify -- "${data.path}"`, { silent: true });
     return '';
   });
 }

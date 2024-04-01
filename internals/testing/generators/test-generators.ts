@@ -1,16 +1,15 @@
 import chalk from 'chalk';
 import fs from 'fs';
+import nodePlop, { PlopGenerator as PG } from 'node-plop';
+import path from 'path';
 import rimraf from 'rimraf';
 import shell from 'shelljs';
-import path from 'path';
-import nodePlop from 'node-plop';
 
 import { ComponentProptNames } from '../../generators/component';
+import { baseGeneratorPath } from '../../generators/paths';
 import { rootStatePath, SliceProptNames } from '../../generators/slice';
-import { PlopGenerator as PG } from 'node-plop';
 import { componentVariations } from './componentVariations';
 import { sliceVariations } from './sliceVariations';
-import { baseGeneratorPath } from '../../generators/paths';
 
 interface PlopGenerator extends PG {
   runActions: <T extends string | number>(props: { [P in T]: any }) => Promise<{
@@ -122,7 +121,7 @@ async function generateSlices() {
 function runLinting() {
   return new Promise<void>((resolve, reject) => {
     shell.exec(
-      `yarn run lint`,
+      `pnpm run lint`,
       {
         silent: false, // so that we can see the errors in the console
       },
@@ -134,7 +133,7 @@ function runLinting() {
 function checkTypescript() {
   return new Promise<void>((resolve, reject) => {
     shell.exec(
-      `yarn run checkTs`,
+      `pnpm run checkTs`,
       {
         silent: false, // so that we can see the errors in the console
       },
