@@ -1,23 +1,20 @@
-/**
- * Create the store with dynamic reducers
- */
-
-import { createInjectorsEnhancer } from 'redux-injectors';
-import createSagaMiddleware from 'redux-saga';
-
-import { configureStore, StoreEnhancer } from '@reduxjs/toolkit';
+import { configureStore } from '@reduxjs/toolkit';
 
 import { createGaMiddleware } from '../utils/analytics';
-import { createReducerWithPlaceholders } from './reducers';
 import { load, saveMiddleware } from './saveload';
 
-export function configureAppStore(preloadedState?: object) {
-  const reduxSagaMonitorOptions = {};
-  const sagaMiddleware = createSagaMiddleware(reduxSagaMonitorOptions);
-  const { run: runSaga } = sagaMiddleware;
+import exportReminder from 'app/components/ExportReminder/slice';
+import mainPage from 'app/pages/MainPage/slice';
+import career from 'app/slices/CareerSlice';
+import changelog from 'app/slices/ChangelogSlice';
+import connectivity from 'app/slices/ConnectivitySlice';
+import cookieConsent from 'app/slices/CookieConsentSlice';
+import saveMeta from 'app/slices/SaveMetaSlice';
+import settings from 'app/slices/SettingsSlice';
+import welcome from 'app/slices/WelcomeSlice';
 
-  // Create the store with saga middleware
-  const middlewares = [sagaMiddleware, saveMiddleware];
+export function configureAppStore(preloadedState?: object) {
+  const middlewares = [saveMiddleware];
   if (process.env.NODE_ENV === 'production') {
     middlewares.push(createGaMiddleware());
   }
@@ -30,26 +27,21 @@ export function configureAppStore(preloadedState?: object) {
     }
   }
 
-  // Create dummy reducers so that saved state for them is not dropped by redux
-  const dummyReducers = {};
-  for (const key of Object.keys(preloadedState)) {
-    dummyReducers[key] = (state: object) => state || null;
-  }
-  const createReducer = createReducerWithPlaceholders(dummyReducers);
-
-  const enhancers = [
-    createInjectorsEnhancer({
-      createReducer,
-      runSaga,
-    }),
-  ] as StoreEnhancer[];
-
   const store = configureStore({
-    reducer: createReducer(dummyReducers),
+    reducer: {
+      career,
+      mainPage,
+      exportReminder,
+      saveMeta,
+      welcome,
+      connectivity,
+      changelog,
+      settings,
+      cookieConsent,
+    },
     middleware: getDefaultMiddleware =>
       getDefaultMiddleware().concat(middlewares),
     devTools: process.env.NODE_ENV !== 'production',
-    enhancers: getDefaultEnhancers => getDefaultEnhancers().concat(enhancers),
     preloadedState,
   });
 

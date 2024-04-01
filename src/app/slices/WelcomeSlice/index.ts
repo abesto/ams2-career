@@ -1,5 +1,4 @@
-import { createSlice } from 'utils/@reduxjs/toolkit';
-import { useInjectReducer } from 'utils/redux-injectors';
+import { createSlice } from '@reduxjs/toolkit';
 
 import { WelcomeState } from './types';
 
@@ -20,21 +19,5 @@ const slice = createSlice({
   },
 });
 
-export const { actions: welcomeActions } = slice;
-
-export const useWelcomeSlice = () => {
-  useInjectReducer({ key: slice.name, reducer: slice.reducer });
-  return { actions: slice.actions };
-};
-
-/**
- * Example Usage:
- *
- * export function MyComponentNeedingThisSlice() {
- *  const { actions } = useWelcomeSlice();
- *
- *  const onButtonClick = (evt) => {
- *    dispatch(actions.someAction());
- *   };
- * }
- */
+export const { hide, show } = slice.actions;
+export default slice.reducer;

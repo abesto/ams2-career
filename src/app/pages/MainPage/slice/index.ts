@@ -1,7 +1,4 @@
-import { createSlice } from 'utils/@reduxjs/toolkit';
-import { useInjectReducer } from 'utils/redux-injectors';
-
-import { PayloadAction } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 import { racegen } from '../racegen';
 import { MainPageState } from './types';
@@ -91,21 +88,14 @@ const slice = createSlice({
   },
 });
 
-export const { actions: mainPageActions } = slice;
-
-export const useMainPageSlice = () => {
-  useInjectReducer({ key: slice.name, reducer: slice.reducer });
-  return { actions: slice.actions };
-};
-
-/**
- * Example Usage:
- *
- * export function MyComponentNeedingThisSlice() {
- *  const { actions } = useMainPageSlice();
- *
- *  const onButtonClick = (evt) => {
- *    dispatch(actions.someAction());
- *   };
- * }
- */
+export const {
+  generateRaces,
+  selectRace,
+  selectCar,
+  reset,
+  adjustAIGlobal,
+  adjustAIDiscipline,
+  adjustAICarClass,
+  adjustAICar,
+} = slice.actions;
+export default slice.reducer;

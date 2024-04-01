@@ -1,8 +1,9 @@
 import { parser as parseChangelog } from 'keep-a-changelog';
+import * as React from 'react';
 import { describe, expect, it } from 'vitest';
 
 import { Changelog } from '../src/app/components/Changelog';
-import { changelogActions } from '../src/app/slices/ChangelogSlice';
+import * as changelogActions from '../src/app/slices/ChangelogSlice';
 import { semverWithRaw } from '../src/app/slices/ChangelogSlice/types';
 import { render } from '../src/app/test-utils';
 import { configureAppStore } from '../src/store/configureStore';

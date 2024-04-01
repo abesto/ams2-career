@@ -11,7 +11,7 @@ import {
 } from '@mui/material';
 import { blue } from '@mui/material/colors';
 
-import { useWelcomeSlice } from 'app/slices/WelcomeSlice';
+import * as actions from 'app/slices/WelcomeSlice';
 import { selectWelcome } from 'app/slices/WelcomeSlice/selectors';
 
 type Props = {
@@ -112,7 +112,6 @@ export function Welcome(props: Props) {
   const [page, setPage] = React.useState(0);
   const [closed, setClosed] = React.useState(false);
   const dispatch = useDispatch();
-  const { actions } = useWelcomeSlice();
   const welcome = useSelector(selectWelcome);
 
   const pages = [Page1, Page2];

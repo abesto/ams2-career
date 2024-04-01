@@ -1,7 +1,4 @@
-import { createSlice } from 'utils/@reduxjs/toolkit';
-import { useInjectReducer } from 'utils/redux-injectors';
-
-import { PayloadAction } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 import { ChangelogState, SemVerWithRaw } from './types';
 
@@ -24,21 +21,5 @@ const slice = createSlice({
   },
 });
 
-export const { actions: changelogActions } = slice;
-
-export const useChangelogSlice = () => {
-  useInjectReducer({ key: slice.name, reducer: slice.reducer });
-  return { actions: slice.actions };
-};
-
-/**
- * Example Usage:
- *
- * export function MyComponentNeedingThisSlice() {
- *  const { actions } = useChangelogSlice();
- *
- *  const onButtonClick = (evt) => {
- *    dispatch(actions.someAction());
- *   };
- * }
- */
+export const { setSeenVersion } = slice.actions;
+export default slice.reducer;

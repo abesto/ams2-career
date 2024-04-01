@@ -21,16 +21,13 @@ import {
   GRANTED,
   useCookieConsentValue,
 } from 'app/components/OurCookieConsent';
-import {
-  initialState as initialSettings,
-  useSettingsSlice,
-} from 'app/slices/SettingsSlice';
+import * as actions from 'app/slices/SettingsSlice';
+import initialSettings from 'app/slices/SettingsSlice/initialState';
 import { selectSettings } from 'app/slices/SettingsSlice/selectors';
 
 export function SettingsPage() {
   const dispatch = useDispatch();
   const settings = useSelector(selectSettings);
-  const actions = useSettingsSlice().actions;
   const [cookieConsentValue, setCookieConsentValue] = useCookieConsentValue();
 
   return (

@@ -7,7 +7,7 @@ import { Button, Grid, Paper, Typography } from '@mui/material';
 import { GoRacing } from './components/GoRacing';
 import { RaceOptions } from './components/RaceOptions';
 import { RaceResultFeedback } from './components/RaceResultFeedback';
-import { useMainPageSlice } from './slice';
+import * as mainPageActions from './slice';
 import {
   selectCurrentCarId,
   selectMainPage,
@@ -15,17 +15,13 @@ import {
 } from './slice/selectors';
 import { AIAdjustmentInstance } from './slice/types';
 
-import { useCareerSlice } from 'app/slices/CareerSlice';
+import * as careerActions from 'app/slices/CareerSlice';
 import { selectCareer } from 'app/slices/CareerSlice/selectors';
 import { selectSettings } from 'app/slices/SettingsSlice/selectors';
 import { CarId } from 'types/Car';
 import { RaceResult } from 'types/Race';
 
 export function MainPage() {
-  useCareerSlice();
-  const { actions: mainPageActions } = useMainPageSlice();
-  const { actions: careerActions } = useCareerSlice();
-
   const dispatch = useDispatch();
   const career = useSelector(selectCareer);
   const slice = useSelector(selectMainPage);

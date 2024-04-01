@@ -12,7 +12,7 @@ import {
   DialogTitle,
 } from '@mui/material';
 
-import { useChangelogSlice } from 'app/slices/ChangelogSlice';
+import * as actions from 'app/slices/ChangelogSlice';
 import { selectChangelog } from 'app/slices/ChangelogSlice/selectors';
 import { cmpSemVer, semverWithRaw } from 'app/slices/ChangelogSlice/types';
 
@@ -22,7 +22,6 @@ export function Changelog(props: Props) {
   const { changelog } = props;
   const [closed, setClosed] = React.useState(false);
   const dispatch = useDispatch();
-  const { actions } = useChangelogSlice();
 
   const seenVersion = useSelector(selectChangelog).seenVersion;
   const releases = changelog.releases.filter(
@@ -35,7 +34,7 @@ export function Changelog(props: Props) {
     const { major, minor, patch } = releases[0].parsedVersion!;
     const raw = releases[0].version!;
     dispatch(actions.setSeenVersion({ major, minor, patch, raw }));
-  }, [releases, actions, dispatch]);
+  }, [releases, dispatch]);
 
   // No changelog the first time the app is opened; use the current version as the latest one seen.
   React.useEffect(() => {

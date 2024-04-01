@@ -52,7 +52,7 @@ import { CareerPage } from './pages/CareerPage';
 import { DataDebugPage } from './pages/DataDebugPage';
 import { MainPage } from './pages/MainPage';
 import { SettingsPage } from './pages/SettingsPage';
-import { useConnectivitySlice } from './slices/ConnectivitySlice';
+import * as connectivityActions from './slices/ConnectivitySlice';
 
 type ToolbarButtonProps<D extends React.ElementType> = IconButtonProps<D> & {
   icon: React.ReactNode;
@@ -79,7 +79,6 @@ function ToolbarButton<D extends React.ElementType>(
 
 function InnerApp() {
   const [forceWelcome, setForceWelcome] = React.useState(false);
-  const { actions: connectivityActions } = useConnectivitySlice();
   const dispatch = useDispatch();
 
   // Hook up the connectivity checker
@@ -90,7 +89,7 @@ function InnerApp() {
     window.addEventListener('offline', () => {
       dispatch(connectivityActions.update(false));
     });
-  }, [dispatch, connectivityActions]);
+  }, [dispatch]);
 
   // Send analytics about page views
   usePageViews();

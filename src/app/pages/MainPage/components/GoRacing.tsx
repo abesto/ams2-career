@@ -18,7 +18,7 @@ import {
   Typography,
 } from '@mui/material';
 
-import { useMainPageSlice } from '../slice';
+import * as actions from '../slice';
 import { selectAIAdjustment } from '../slice/selectors';
 import { AIAdjustmentInstance } from '../slice/types';
 
@@ -112,7 +112,6 @@ function AIAdjustment(props: AIAdjustmentProps) {
 export function GoRacing(props: Props) {
   const { race, career, currentCarId, onCarSelect, onRecord } = props;
 
-  const { actions } = useMainPageSlice();
   const dispatch = useDispatch();
   const aiAdjustment = useSelector(selectAIAdjustment);
   const [position, setPosition] = React.useState(1);

@@ -8,7 +8,7 @@ import { Download as DownloadIcon } from '@mui/icons-material';
 import { Badge, IconButton, IconButtonProps, Tooltip } from '@mui/material';
 
 import { RootState } from '../../types';
-import { useExportReminderSlice } from './ExportReminder/slice';
+import { recordExport } from './ExportReminder/slice';
 import { selectRacesSinceLastExport } from './ExportReminder/slice/selectors';
 
 function filename(): string {
@@ -24,7 +24,6 @@ export function Export({
   ...iconButtonProps
 }: IconButtonProps & Props) {
   const store = useStore();
-  const { actions: exportReminderActions } = useExportReminderSlice();
   const racesSinceLastExport = useSelector(selectRacesSinceLastExport);
   const dispatch = useDispatch();
 
@@ -32,7 +31,7 @@ export function Export({
     <Tooltip title="Export">
       <IconButton
         onClick={() => {
-          dispatch(exportReminderActions.recordExport());
+          dispatch(recordExport());
           saveAs(
             new Blob([serializeRootState(store.getState() as RootState)], {
               type: 'application/octet-stream',

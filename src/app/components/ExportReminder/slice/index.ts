@@ -1,5 +1,4 @@
-import { createSlice } from 'utils/@reduxjs/toolkit';
-import { useInjectReducer } from 'utils/redux-injectors';
+import { createSlice } from '@reduxjs/toolkit';
 
 import { ExportReminderState } from './types';
 
@@ -21,9 +20,5 @@ const slice = createSlice({
   },
 });
 
-export const { actions: exportReminderActions } = slice;
-
-export const useExportReminderSlice = () => {
-  useInjectReducer({ key: slice.name, reducer: slice.reducer });
-  return { actions: slice.actions };
-};
+export const { recordExport, hideAlertForever } = slice.actions;
+export default slice.reducer;

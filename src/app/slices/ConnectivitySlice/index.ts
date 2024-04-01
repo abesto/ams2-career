@@ -1,7 +1,4 @@
-import { createSlice } from 'utils/@reduxjs/toolkit';
-import { useInjectReducer } from 'utils/redux-injectors';
-
-import { PayloadAction } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 import { ConnectivityState } from './types';
 
@@ -19,21 +16,5 @@ const slice = createSlice({
   },
 });
 
-export const { actions: connectivityActions } = slice;
-
-export const useConnectivitySlice = () => {
-  useInjectReducer({ key: slice.name, reducer: slice.reducer });
-  return { actions: slice.actions };
-};
-
-/**
- * Example Usage:
- *
- * export function MyComponentNeedingThisSlice() {
- *  const { actions } = useConnectivitySlice();
- *
- *  const onButtonClick = (evt) => {
- *    dispatch(actions.someAction());
- *   };
- * }
- */
+export const { update } = slice.actions;
+export default slice.reducer;

@@ -23,7 +23,7 @@ import {
 } from '@practical-fp/union-types';
 
 import { DisciplineProgress } from '../../components/DisciplineProgress';
-import { useMainPageSlice } from '../MainPage/slice';
+import * as mainPageActions from '../MainPage/slice';
 import { ResetCareerDialog } from './components/ResetCareerDialog';
 
 import { AchievementIcon } from 'app/components/AchievementIcon';
@@ -32,11 +32,11 @@ import { getCarClass } from 'app/data/car_classes';
 import { getCar } from 'app/data/cars';
 import { getAllDisciplines, getDiscipline } from 'app/data/disciplines';
 import { getTrack } from 'app/data/tracks';
-import { useCareerSlice } from 'app/slices/CareerSlice';
+import * as careerActions from 'app/slices/CareerSlice';
 import { Achievement, isUnlocked } from 'app/slices/CareerSlice/achievements';
 import { selectCareer } from 'app/slices/CareerSlice/selectors';
 import { EnrichedCareerData } from 'app/slices/CareerSlice/types';
-import { useWelcomeSlice } from 'app/slices/WelcomeSlice';
+import * as welcomeActions from 'app/slices/WelcomeSlice';
 import { formatGrade } from 'app/xp';
 
 function formatTimestamp(ts: number): string {
@@ -208,9 +208,6 @@ function Logbook(props: { career: EnrichedCareerData }) {
 export function CareerPage() {
   const dispatch = useDispatch();
   const career = useSelector(selectCareer);
-  const { actions: mainPageActions } = useMainPageSlice();
-  const { actions: careerActions } = useCareerSlice();
-  const { actions: welcomeActions } = useWelcomeSlice();
 
   return (
     <>

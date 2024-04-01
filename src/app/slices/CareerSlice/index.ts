@@ -1,8 +1,6 @@
 import { backup } from 'store/saveload';
-import { createSlice } from 'utils/@reduxjs/toolkit';
-import { useInjectReducer } from 'utils/redux-injectors';
 
-import { PayloadAction } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 import { CareerState } from './types';
 
@@ -35,9 +33,6 @@ const slice = createSlice({
   },
 });
 
-export const { actions: careerActions } = slice;
-
-export const useCareerSlice = () => {
-  useInjectReducer({ key: slice.name, reducer: slice.reducer });
-  return { actions: slice.actions };
-};
+export const { recordRaceResult, resetCareer, achievementUnlocked } =
+  slice.actions;
+export default slice.reducer;

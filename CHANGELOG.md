@@ -10,9 +10,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ### Changed
 
-- Caught up with two years of JS ecosystem developments. None of this should effect your experience.
+- Caught up with two years of JS ecosystem developments. Some details follow for the record; none of this should effect your experience.
   - Changed package manager and development launcher from `yarn` to `pnpm`
   - Switched from CRA to `vite`, from `jest` to `vitest`
+  - Dropped `redux-saga` (was unused), dropped `redux-injectors` (seems unmaintained, bit wonky, this app doesn't really benefit from it)
   - Upgraded literally all the dependencies
 
 ### Deprecated

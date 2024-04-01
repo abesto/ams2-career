@@ -2,19 +2,19 @@
  * Container Generator
  */
 
+import inquirer from 'inquirer';
+import inquirerDirectory from 'inquirer-directory';
 import { Actions, PlopGeneratorConfig } from 'node-plop';
 import path from 'path';
-import inquirer from 'inquirer';
 
-import { pathExists } from '../utils';
 import { baseGeneratorPath } from '../paths';
+import { pathExists } from '../utils';
 
-inquirer.registerPrompt('directory', require('inquirer-directory'));
+inquirer.registerPrompt('directory', inquirerDirectory);
 
 export enum SliceProptNames {
   'sliceName' = 'sliceName',
   'path' = 'path',
-  'wantSaga' = 'wantSaga',
 }
 
 type Answers = { [P in SliceProptNames]: string };
@@ -36,13 +36,9 @@ export const sliceGenerator: PlopGeneratorConfig = {
       type: 'directory',
       name: SliceProptNames.path,
       message: 'Where do you want it to be created?',
+      // @ts-expect-error "Object literal may only specify known properties, and 'basePath' does not exist in type 'Question<Answers>'.ts(2353)"
+      // A quick Google doesn't turn up anythign about this, don't really care
       basePath: `${baseGeneratorPath}`,
-    } as any,
-    {
-      type: 'confirm',
-      name: SliceProptNames.wantSaga,
-      default: true,
-      message: 'Do you want sagas for asynchronous flows? (e.g. fetching data)',
     },
   ],
   actions: data => {
@@ -87,14 +83,6 @@ export const sliceGenerator: PlopGeneratorConfig = {
       templateFile: './slice/appendRootState.hbs',
       abortOnFail: true,
     });
-    if (answers.wantSaga) {
-      actions.push({
-        type: 'add',
-        path: `${slicePath}/saga.ts`,
-        templateFile: './slice/saga.ts.hbs',
-        abortOnFail: true,
-      });
-    }
 
     actions.push({
       type: 'prettify',

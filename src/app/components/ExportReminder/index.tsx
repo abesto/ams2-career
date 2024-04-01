@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Box, Button, Snackbar, SnackbarContent } from '@mui/material';
 
 import { Export } from '../Export';
-import { useExportReminderSlice } from './slice';
+import * as actions from './slice';
 import {
   selectExportReminder,
   selectRacesSinceLastExport,
@@ -16,7 +16,6 @@ import { pluralWithNumber } from 'app/plural';
 export function ExportReminder() {
   const racesSinceLastExport = useSelector(selectRacesSinceLastExport);
   const state = useSelector(selectExportReminder);
-  const { actions } = useExportReminderSlice();
   const dispatch = useDispatch();
 
   return (

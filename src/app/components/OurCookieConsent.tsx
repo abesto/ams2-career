@@ -2,7 +2,7 @@ import * as React from 'react';
 import CookieConsent, { Cookies } from 'react-cookie-consent';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { useCookieConsentSlice } from 'app/slices/CookieConsentSlice';
+import * as actions from 'app/slices/CookieConsentSlice';
 import { selectCookieConsent } from 'app/slices/CookieConsentSlice/selectors';
 
 export const COOKIE_NAME = 'CookieConsent';
@@ -15,7 +15,6 @@ export function useCookieConsentValue(): [
   (value: CookieConsentValue) => void,
 ] {
   const dispatch = useDispatch();
-  const actions = useCookieConsentSlice().actions;
   const cookieConsentValue =
     useSelector(selectCookieConsent).cookieConsentValue;
 

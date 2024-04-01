@@ -1,7 +1,8 @@
 import { createSelector } from '@reduxjs/toolkit';
 
+import initialState from './initialState';
+
 import { RootState } from 'types';
-import { initialState } from '.';
 
 const selectSlice = (state: RootState) => state.settings || initialState;
 

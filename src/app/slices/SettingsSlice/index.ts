@@ -1,16 +1,6 @@
-import { createSlice } from 'utils/@reduxjs/toolkit';
-import { useInjectReducer } from 'utils/redux-injectors';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { PayloadAction } from '@reduxjs/toolkit';
-
-import { SettingsState } from './types';
-
-export const initialState: SettingsState = {
-  crossDisciplineGainsEnabled: true,
-  xpMultiplier: 1.0,
-  canRegenerateRaces: false,
-  positionXpMultiplier: 1.0,
-};
+import initialState from './initialState';
 
 const slice = createSlice({
   name: 'settings',
@@ -41,21 +31,13 @@ const slice = createSlice({
   },
 });
 
-export const { actions: settingsActions } = slice;
-
-export const useSettingsSlice = () => {
-  useInjectReducer({ key: slice.name, reducer: slice.reducer });
-  return { actions: slice.actions };
-};
-
-/**
- * Example Usage:
- *
- * export function MyComponentNeedingThisSlice() {
- *  const { actions } = useSettingsSlice();
- *
- *  const onButtonClick = (evt) => {
- *    dispatch(actions.someAction());
- *   };
- * }
- */
+export const {
+  resetCrossDisciplineGainsEnabled,
+  setCrossDisciplineGainsEnabled,
+  resetXpMultiplier,
+  setXpMultiplier,
+  setCanRegenerateRaces,
+  setPositionXpMultiplier,
+  resetPositionXpMultiplier,
+} = slice.actions;
+export default slice.reducer;

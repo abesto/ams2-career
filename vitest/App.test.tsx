@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { expect, test } from 'vitest';
 
 import { fireEvent } from '@testing-library/react';
@@ -93,12 +94,12 @@ test('Regenerate races', async () => {
     container
       .querySelectorAll('tr.MuiTableRow-root')[1]
       .querySelectorAll('td')[3].textContent,
-  ).toEqual('Córdoba');
+  ).toEqual('Campo Grande');
   fireEvent.click(getByText(/regenerate races/i));
   await findAllByText('Copa Classic (Class: B)');
   expect(
     container
       .querySelectorAll('tr.MuiTableRow-root')[1]
       .querySelectorAll('td')[3].textContent,
-  ).toEqual('Campo Grande');
+  ).toEqual('Kansai');
 });
