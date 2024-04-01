@@ -1,13 +1,6 @@
-import { versionForNewSaves } from 'store/saveload';
-
 import { createSlice } from '@reduxjs/toolkit';
 
-import { SaveMetaState } from './types';
-
-export const initialState: SaveMetaState = {
-  timestamp: Date.now(),
-  version: versionForNewSaves(),
-};
+import initialState from './initialState';
 
 const slice = createSlice({
   name: 'saveMeta',

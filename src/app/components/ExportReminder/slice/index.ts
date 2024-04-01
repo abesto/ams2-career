@@ -1,11 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-import { ExportReminderState } from './types';
-
-export const initialState: ExportReminderState = {
-  lastExport: null,
-  hideAlertForever: false,
-};
+import initialState from './initialState';
 
 const slice = createSlice({
   name: 'exportReminder',

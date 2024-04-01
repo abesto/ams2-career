@@ -2,14 +2,10 @@ import { backup } from 'store/saveload';
 
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { CareerState } from './types';
+import initialState from './initialState';
 
 import { AIAdjustmentInstance } from 'app/pages/MainPage/slice/types';
 import { RaceResult } from 'types/Race';
-
-export const initialState: CareerState = {
-  raceResults: [],
-};
 
 const slice = createSlice({
   name: 'career',

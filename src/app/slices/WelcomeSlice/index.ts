@@ -1,10 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-import { WelcomeState } from './types';
-
-export const initialState: WelcomeState = {
-  hideWelcome: false,
-};
+import initialState from './initialState';
 
 const slice = createSlice({
   name: 'welcome',

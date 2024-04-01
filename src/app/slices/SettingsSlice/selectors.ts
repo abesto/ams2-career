@@ -6,4 +6,6 @@ import { RootState } from 'types';
 
 const selectSlice = (state: RootState) => state.settings || initialState;
 
-export const selectSettings = createSelector([selectSlice], state => state);
+export const selectSettings = createSelector([selectSlice], state => state, {
+  devModeChecks: { identityFunctionCheck: 'never' },
+});

@@ -1,7 +1,7 @@
 import { createSelector } from '@reduxjs/toolkit';
 
 import { selectSettings } from '../SettingsSlice/selectors';
-import { initialState } from './';
+import initialState from './initialState';
 import { enrich } from './types';
 
 import { RootState } from 'types';

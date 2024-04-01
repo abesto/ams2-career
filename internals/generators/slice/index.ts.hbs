@@ -1,8 +1,7 @@
 import { PayloadAction } from '@reduxjs/toolkit';
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from 'utils/@reduxjs/toolkit';
 import { {{ properCase sliceName }}State } from './types';
-
-export const initialState: {{ properCase sliceName }}State = {};
+import initialState from './initialState';
 
 const slice = createSlice({
   name: '{{ camelCase sliceName }}',

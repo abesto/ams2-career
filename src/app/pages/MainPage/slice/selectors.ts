@@ -1,6 +1,6 @@
 import { createSelector } from '@reduxjs/toolkit';
 
-import { initialState } from './';
+import initialState from './initialState';
 
 import {
   getCar,
@@ -15,7 +15,12 @@ import { getDisciplineId } from 'types/Discipline';
 
 const selectSlice = (state: RootState) => state.mainPage || initialState;
 
-export const selectMainPage = createSelector([selectSlice], state => state);
+export const selectMainPage = createSelector(
+  [selectSlice],
+  state => state,
+
+  { devModeChecks: { identityFunctionCheck: 'never' } },
+);
 
 export const selectSelectedRace = createSelector([selectMainPage], state =>
   state.selectedRaceIndex === null

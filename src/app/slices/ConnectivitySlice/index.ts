@@ -1,10 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { ConnectivityState } from './types';
-
-export const initialState: ConnectivityState = {
-  online: navigator.onLine,
-};
+import initialState from './initialState';
 
 const slice = createSlice({
   name: 'connectivity',

@@ -1,30 +1,12 @@
 import * as React from 'react';
-import CookieConsent, { Cookies } from 'react-cookie-consent';
-import { useDispatch, useSelector } from 'react-redux';
+import CookieConsent from 'react-cookie-consent';
 
-import * as actions from 'app/slices/CookieConsentSlice';
-import { selectCookieConsent } from 'app/slices/CookieConsentSlice/selectors';
+import { useCookieConsentValue } from 'app/slices/CookieConsentSlice/hooks';
 
 export const COOKIE_NAME = 'CookieConsent';
 export const GRANTED = 'granted';
 export const DECLINED = 'declined';
 export type CookieConsentValue = typeof GRANTED | typeof DECLINED;
-
-export function useCookieConsentValue(): [
-  string | undefined,
-  (value: CookieConsentValue) => void,
-] {
-  const dispatch = useDispatch();
-  const cookieConsentValue =
-    useSelector(selectCookieConsent).cookieConsentValue;
-
-  const setValue = (value: CookieConsentValue) => {
-    Cookies.set(COOKIE_NAME, value);
-    dispatch(actions.setCookieConsentValue(value));
-  };
-
-  return [cookieConsentValue, setValue];
-}
 
 export const OurCookieConsent = () => {
   const [cookieConsentValue, setCookieConsentValue] = useCookieConsentValue();

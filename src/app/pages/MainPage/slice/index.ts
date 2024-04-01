@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 import { racegen } from '../racegen';
-import { MainPageState } from './types';
+import initialState from './initialState';
 
 import { getDisciplineOfCarClass } from 'app/data/car_classes';
 import { getAllDisciplines } from 'app/data/disciplines';
@@ -9,18 +9,6 @@ import { EnrichedCareerData } from 'app/slices/CareerSlice/types';
 import { CarId } from 'types/Car';
 import { CarClassId } from 'types/CarClass';
 import { DisciplineId, getDisciplineId } from 'types/Discipline';
-
-export const initialState: MainPageState = {
-  raceOptions: [],
-  selectedRaceIndex: 0,
-  selectedCars: {},
-  aiAdjustment: {
-    global: 0,
-    discipline: {},
-    carClass: {},
-    car: {},
-  },
-};
 
 const slice = createSlice({
   name: 'mainPage',

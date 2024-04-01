@@ -59,6 +59,12 @@ export const sliceGenerator: PlopGeneratorConfig = {
     });
     actions.push({
       type: 'add',
+      path: `${slicePath}/initialState.ts`,
+      templateFile: './slice/initialState.ts.hbs',
+      abortOnFail: true,
+    });
+    actions.push({
+      type: 'add',
       path: `${slicePath}/selectors.ts`,
       templateFile: './slice/selectors.ts.hbs',
       abortOnFail: true,

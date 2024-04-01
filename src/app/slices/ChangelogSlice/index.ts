@@ -1,15 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { ChangelogState, SemVerWithRaw } from './types';
-
-export const initialState: ChangelogState = {
-  seenVersion: {
-    raw: '0.0.0',
-    major: 0,
-    minor: 0,
-    patch: 0,
-  },
-};
+import initialState from './initialState';
+import { SemVerWithRaw } from './types';
 
 const slice = createSlice({
   name: 'changelog',

@@ -16,11 +16,8 @@ import {
   Typography,
 } from '@mui/material';
 
-import {
-  DECLINED,
-  GRANTED,
-  useCookieConsentValue,
-} from 'app/components/OurCookieConsent';
+import { DECLINED, GRANTED } from 'app/components/OurCookieConsent';
+import { useCookieConsentValue } from 'app/slices/CookieConsentSlice/hooks';
 import * as actions from 'app/slices/SettingsSlice';
 import initialSettings from 'app/slices/SettingsSlice/initialState';
 import { selectSettings } from 'app/slices/SettingsSlice/selectors';
