@@ -7,10 +7,7 @@ import { RootState } from 'types';
 
 const selectSlice = (state: RootState) => state.exportReminder || initialState;
 
-export const selectExportReminder = createSelector(
-  [selectSlice],
-  state => state,
-);
+export const selectExportReminder = selectSlice;
 
 export const selectRacesSinceLastExport = createSelector(
   [selectExportReminder, selectCareer],

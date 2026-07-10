@@ -15,7 +15,7 @@ import { getDisciplineId } from 'types/Discipline';
 
 const selectSlice = (state: RootState) => state.mainPage || initialState;
 
-export const selectMainPage = createSelector([selectSlice], state => state);
+export const selectMainPage = selectSlice;
 
 export const selectSelectedRace = createSelector([selectMainPage], state =>
   state.selectedRaceIndex === null

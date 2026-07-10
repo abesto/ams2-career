@@ -166,8 +166,9 @@ function deserialize<T>(s: string): T {
 
 export const saveMiddleware: Middleware<{}, RootState> =
   storeApi => next => action => {
+    const typedAction = action as AnyAction;
     next(action);
-    if (action.type !== 'saveMeta/updateTimestamp') {
+    if (typedAction.type !== 'saveMeta/updateTimestamp') {
       storeApi.dispatch({ type: 'saveMeta/updateTimestamp' });
     } else {
       save(storeApi.getState());

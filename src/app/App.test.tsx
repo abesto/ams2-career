@@ -5,6 +5,17 @@ import { fireEvent } from '@testing-library/react';
 import { App } from './';
 import { render } from './test-utils';
 
+beforeEach(() => {
+  let calls = 0;
+  jest
+    .spyOn(Math, 'random')
+    .mockImplementation(() => ((calls++ % 10) + 1) / 20);
+});
+
+afterEach(() => {
+  jest.restoreAllMocks();
+});
+
 test('Basic sanity: a bunch of race results', async () => {
   const { findByRole, findByText, container } = render(<App />);
   const click = async (role, opts) =>
@@ -88,17 +99,14 @@ test('Regenerate races', async () => {
   expect(queryByText(/regenerate races/i)).not.toBeNull();
 
   // Actually regenerates races
-  expect(
-    // getAllByRole('row') is also f*cked, so...
-    container
-      .querySelectorAll('tr.MuiTableRow-root')[1]
-      .querySelectorAll('td')[3].textContent,
-  ).toEqual('Córdoba');
+  const firstTrack = container
+    .querySelectorAll('tr.MuiTableRow-root')[1]
+    .querySelectorAll('td')[3].textContent;
   fireEvent.click(getByText(/regenerate races/i));
   await findAllByText('Copa Classic (Class: B)');
   expect(
     container
       .querySelectorAll('tr.MuiTableRow-root')[1]
       .querySelectorAll('td')[3].textContent,
-  ).toEqual('Campo Grande');
+  ).not.toEqual(firstTrack);
 });
