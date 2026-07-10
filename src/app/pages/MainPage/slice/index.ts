@@ -92,6 +92,7 @@ const slice = createSlice({
 });
 
 export const { actions: mainPageActions } = slice;
+export const mainPageReducer = slice.reducer;
 
 export const useMainPageSlice = () => {
   useInjectReducer({ key: slice.name, reducer: slice.reducer });
