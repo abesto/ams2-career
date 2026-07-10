@@ -12,7 +12,7 @@ export default function plop(plop: NodePlopAPI) {
 
   plop.setActionType('prettify', (answers, config) => {
     const data = config!.data as PrettifyCustomActionData;
-    shell.exec(`yarn run prettify -- "${data.path}"`, { silent: true });
+    shell.exec(`pnpm run prettify -- "${data.path}"`, { silent: true });
     return '';
   });
 }

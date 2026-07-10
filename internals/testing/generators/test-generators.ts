@@ -122,7 +122,7 @@ async function generateSlices() {
 function runLinting() {
   return new Promise<void>((resolve, reject) => {
     shell.exec(
-      `yarn run lint`,
+      `pnpm run lint`,
       {
         silent: false, // so that we can see the errors in the console
       },
@@ -134,7 +134,7 @@ function runLinting() {
 function checkTypescript() {
   return new Promise<void>((resolve, reject) => {
     shell.exec(
-      `yarn run checkTs`,
+      `pnpm run checkTs`,
       {
         silent: false, // so that we can see the errors in the console
       },
