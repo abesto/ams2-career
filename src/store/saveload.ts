@@ -153,6 +153,10 @@ export function serialize(state: any): string {
 }
 
 function deserialize<T>(s: string): T {
+  const trimmed = s.trimStart();
+  if (trimmed.startsWith('{') || trimmed.startsWith('[')) {
+    return JSON.parse(s);
+  }
   const decompressed = LZString.decompressFromUTF16(s);
   if (decompressed === null) {
     return JSON.parse(s);
