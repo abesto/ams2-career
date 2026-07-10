@@ -11,6 +11,8 @@ import { PlopGenerator as PG } from 'node-plop';
 import { componentVariations } from './componentVariations';
 import { sliceVariations } from './sliceVariations';
 import { baseGeneratorPath } from '../../generators/paths';
+import { registerGenerators } from '../../generators/plopfile';
+import { NodePlopAPI } from 'node-plop';
 
 interface PlopGenerator extends PG {
   runActions: <T extends string | number>(props: { [P in T]: any }) => Promise<{
@@ -21,13 +23,10 @@ interface PlopGenerator extends PG {
 
 process.chdir(path.join(__dirname, '../../generators'));
 
-const plop = nodePlop('./plopfile.ts');
-const componentGen = plop.getGenerator('component') as PlopGenerator;
-const sliceGen = plop.getGenerator('slice') as PlopGenerator;
-
 const BACKUPFILE_EXTENSION = 'rbgen';
+const projectRoot = path.resolve(__dirname, '../../..');
 
-async function generateComponents() {
+async function generateComponents(componentGen: PlopGenerator) {
   const variations = componentVariations();
   const promises: Promise<{ path: string; name: string }>[] = [];
 
@@ -51,7 +50,7 @@ async function generateComponents() {
   return [cleanup];
 }
 
-async function generateSlices() {
+async function generateSlices(sliceGen: PlopGenerator) {
   backupFile(rootStatePath);
 
   const variations = sliceVariations();
@@ -82,11 +81,18 @@ async function generateSlices() {
  * Run
  */
 (async function () {
-  const componentCleanup = await generateComponents().catch(reason => {
-    reportErrors(reason);
-    return [];
-  });
-  const slicesCleanup = await generateSlices().catch(reason => {
+  const plop = (await nodePlop()) as unknown as NodePlopAPI;
+  await registerGenerators(plop);
+  const componentGen = plop.getGenerator('component') as PlopGenerator;
+  const sliceGen = plop.getGenerator('slice') as PlopGenerator;
+
+  const componentCleanup = await generateComponents(componentGen).catch(
+    reason => {
+      reportErrors(reason);
+      return [];
+    },
+  );
+  const slicesCleanup = await generateSlices(sliceGen).catch(reason => {
     reportErrors(reason);
     return [];
   });
@@ -122,7 +128,10 @@ async function generateSlices() {
 function runLinting() {
   return new Promise<void>((resolve, reject) => {
     shell.exec(
-      `pnpm run lint`,
+      `${getLocalBinary('eslint')} --ext js,ts,tsx ${path.join(
+        projectRoot,
+        'src',
+      )}`,
       {
         silent: false, // so that we can see the errors in the console
       },
@@ -134,7 +143,10 @@ function runLinting() {
 function checkTypescript() {
   return new Promise<void>((resolve, reject) => {
     shell.exec(
-      `pnpm run checkTs`,
+      `${getLocalBinary('tsc')} --noEmit --project ${path.join(
+        projectRoot,
+        'tsconfig.json',
+      )}`,
       {
         silent: false, // so that we can see the errors in the console
       },
@@ -169,6 +181,14 @@ function feedbackToUser(info) {
     console.info(chalk.blue(info));
     return result;
   };
+}
+
+function getLocalBinary(name: string) {
+  const extension = process.platform === 'win32' ? '.cmd' : '';
+  return path.resolve(
+    __dirname,
+    `../../../node_modules/.bin/${name}${extension}`,
+  );
 }
 
 function reportSuccess(message: string) {

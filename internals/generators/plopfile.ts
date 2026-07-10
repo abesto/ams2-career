@@ -1,12 +1,12 @@
 import { NodePlopAPI } from 'node-plop';
-import { componentGenerator } from './component';
+import { componentGenerator } from './component/index';
 import shell from 'shelljs';
-import { sliceGenerator } from './slice';
+import { sliceGenerator } from './slice/index';
 interface PrettifyCustomActionData {
   path: string;
 }
 
-export default function plop(plop: NodePlopAPI) {
+export function registerGenerators(plop: NodePlopAPI) {
   plop.setGenerator('component', componentGenerator);
   plop.setGenerator('slice', sliceGenerator);
 
@@ -16,3 +16,5 @@ export default function plop(plop: NodePlopAPI) {
     return '';
   });
 }
+
+export default registerGenerators;
