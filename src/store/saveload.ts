@@ -86,6 +86,16 @@ function getSaveVersion(state: RootState) {
   return state.saveMeta?.version || 0;
 }
 
+function ensureSaveMeta(state: RootState) {
+  if (state.saveMeta === undefined) {
+    state.saveMeta = {
+      timestamp: Date.now(),
+      version: 0,
+    };
+  }
+  return state.saveMeta;
+}
+
 function applyMigration(migration: number, state: RootState) {
   const currentVersion = getSaveVersion(state);
   if (currentVersion !== migration) {
@@ -106,7 +116,7 @@ function applyAllMigrations(state: RootState): RootState {
 }
 
 function addCommitVersion(state: RootState): RootState {
-  state.saveMeta!.commit = {
+  ensureSaveMeta(state).commit = {
     hash: buildInfo.commit.hash,
     date: buildInfo.commit.date,
   };

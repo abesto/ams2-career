@@ -86,6 +86,22 @@ describe('saveload', () => {
     });
   });
 
+  it('loads legacy saves without saveMeta when migrations are skipped', () => {
+    const loaded = loadStr(
+      JSON.stringify({ career: { raceResults: [] } }),
+      false,
+    );
+
+    expect(loaded?.saveMeta).toEqual({
+      version: 0,
+      timestamp: expect.any(Number),
+      commit: expect.objectContaining({
+        hash: expect.any(String),
+        date: expect.any(String),
+      }),
+    });
+  });
+
   it('applies migrations, rewrites old track ids, and creates migration backups', () => {
     const preMigrationState: RootState = {
       career: {
