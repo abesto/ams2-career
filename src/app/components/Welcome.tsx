@@ -2,6 +2,7 @@ import * as React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import {
+  Box,
   Button,
   Dialog,
   DialogActions,
@@ -24,9 +25,9 @@ const Page1 = () => (
     <DialogContentText
       sx={{
         border: 1,
-        borderColor: 'info.main',
+        borderColor: 'divider',
         bgcolor: blue[50],
-        borderRadius: 5,
+        borderRadius: 2,
         color: 'text.primary',
         p: 3,
         mb: 3,
@@ -136,8 +137,10 @@ export function Welcome(props: Props) {
         Welcome to the Automobilista 2 Career Simulator!
       </DialogTitle>
       <DialogContent>
-        <Page />
-        <DialogActions>
+        <Box sx={{ pt: 1 }}>
+          <Page />
+        </Box>
+        <DialogActions sx={{ px: 0, pt: 3 }}>
           {page > 0 && (
             <Button onClick={() => setPage(page - 1)} variant="text">
               Back

@@ -1,16 +1,19 @@
 import * as React from 'react';
 
 import {
+  Box,
   Button,
+  Chip,
   Dialog,
   DialogActions,
   DialogContent,
-  DialogContentText,
   DialogTitle,
   LinearProgress,
+  Stack,
   Step,
   StepLabel,
   Stepper,
+  Typography,
 } from '@mui/material';
 
 import { AchievementIcon } from 'app/components/AchievementIcon';
@@ -112,83 +115,165 @@ export function RaceResultFeedback(props: Props) {
 
   return (
     <Dialog open={open} onClose={onClose} fullWidth maxWidth="xl">
-      <DialogTitle>
-        Race Results: P{race.position} {carClass.name} at {track.name}
-      </DialogTitle>
+      <DialogTitle>Race Results: P{race.position}</DialogTitle>
       <DialogContent>
-        {achievements.map(achievement => (
-          <DialogContentText key={achievement.name}>
-            <AchievementIcon level={achievement.level} unlocked={true} />{' '}
-            <strong>{achievement.name}</strong>: {achievement.description}
-          </DialogContentText>
-        ))}
-        <DialogContentText>
-          With this result you've gained {formatXp(mainXpGained)} XP in{' '}
-          {discipline.name}.
-        </DialogContentText>
-        {mainGradeUp && (
-          <DialogContentText>{gradeUpMessage(mainGradeUp)}</DialogContentText>
-        )}
-        {before.level > 0 && (
-          <>
-            <Stepper
-              sx={{ m: 1 }}
-              activeStep={levels.length - before.level}
-              alternativeLabel
+        <Stack spacing={3}>
+          <Box
+            sx={{
+              border: 1,
+              borderColor: 'divider',
+              borderRadius: 2,
+              backgroundColor: 'grey.50',
+              px: 2,
+              py: 1.5,
+            }}
+          >
+            <Typography variant="subtitle1" sx={{ mb: 0.5 }}>
+              {carClass.name} at {track.name}
+            </Typography>
+            <Typography color="text.secondary">
+              {track.configuration ?? 'Standard'} configuration
+            </Typography>
+          </Box>
+
+          {achievements.length > 0 && (
+            <Box>
+              <Typography variant="subtitle1" sx={{ mb: 1 }}>
+                Unlocked this race
+              </Typography>
+              <Stack spacing={1}>
+                {achievements.map(achievement => (
+                  <Box
+                    key={achievement.name}
+                    sx={{
+                      display: 'flex',
+                      gap: 1.25,
+                      alignItems: 'flex-start',
+                      border: 1,
+                      borderColor: 'divider',
+                      borderRadius: 2,
+                      px: 1.5,
+                      py: 1.25,
+                    }}
+                  >
+                    <AchievementIcon
+                      level={achievement.level}
+                      unlocked={true}
+                    />
+                    <Box>
+                      <Typography sx={{ fontWeight: 700 }}>
+                        {achievement.name}
+                      </Typography>
+                      <Typography variant="body2" color="text.secondary">
+                        {achievement.description}
+                      </Typography>
+                    </Box>
+                  </Box>
+                ))}
+              </Stack>
+            </Box>
+          )}
+
+          <Box>
+            <Typography variant="subtitle1" sx={{ mb: 0.5 }}>
+              Discipline progress
+            </Typography>
+            <Typography color="text.secondary">
+              You gained {formatXp(mainXpGained)} XP in {discipline.name}.
+            </Typography>
+          </Box>
+
+          {mainGradeUp && (
+            <Typography sx={{ fontWeight: 600 }}>
+              {gradeUpMessage(mainGradeUp)}
+            </Typography>
+          )}
+          {before.level > 0 && (
+            <Box
+              sx={{
+                border: 1,
+                borderColor: 'divider',
+                borderRadius: 2,
+                p: 2,
+              }}
             >
-              {levels.map(level => (
-                <Step
-                  key={level}
-                  active={level === before.level || level === after.level}
-                >
-                  <StepLabel icon={formatGrade(level, false)}>
-                    {getCarClassesAt(discipline, level).map(carClass => (
-                      <div key={carClass.name}>{carClass.name}</div>
-                    ))}
-                  </StepLabel>
-                </Step>
-              ))}
-            </Stepper>
-            {before.level === after.level && (
-              <LinearProgress
-                variant="buffer"
-                value={(before.xpInLevel / xpToNextLevel) * 100}
-                valueBuffer={(after.xpInLevel / xpToNextLevel) * 100}
+              <Stepper
                 sx={{
-                  mt: 2,
-                  '& .MuiLinearProgress-dashed': { animation: 'none' },
+                  mb: 2,
+                  overflowX: 'auto',
+                  '& .MuiStepLabel-label': {
+                    fontSize: '0.78rem',
+                  },
                 }}
-              />
-            )}
-            {before.level !== after.level && (
-              <LinearProgress
-                variant="determinate"
-                value={(after.xpInLevel / xpToNextLevel) * 100}
-                sx={{ mt: 2 }}
-              />
-            )}
-          </>
-        )}
-        <DialogContentText sx={{ mt: 3 }}>
-          {otherXpGains.length > 0 &&
-            `Your experience carries over somewhat into other racing disciplines: you also gained ${otherXpGains
-              .map(
-                g =>
-                  `${formatXp(g.amount)} XP in ${
-                    getDiscipline(g.disciplineId).name
-                  }`,
-              )
-              .join(', ')}`}
-          .
-        </DialogContentText>
-        {otherGradeUps.map((gradeUp, i) => (
-          <DialogContentText key={i}>
-            {gradeUpMessage(gradeUp)}
-          </DialogContentText>
-        ))}
+                activeStep={levels.length - before.level}
+                alternativeLabel
+              >
+                {levels.map(level => (
+                  <Step
+                    key={level}
+                    active={level === before.level || level === after.level}
+                  >
+                    <StepLabel icon={formatGrade(level, false)}>
+                      {getCarClassesAt(discipline, level).map(carClass => (
+                        <div key={carClass.name}>{carClass.name}</div>
+                      ))}
+                    </StepLabel>
+                  </Step>
+                ))}
+              </Stepper>
+              {before.level === after.level && (
+                <LinearProgress
+                  variant="buffer"
+                  value={(before.xpInLevel / xpToNextLevel) * 100}
+                  valueBuffer={(after.xpInLevel / xpToNextLevel) * 100}
+                  sx={{
+                    mt: 2,
+                    '& .MuiLinearProgress-dashed': { animation: 'none' },
+                  }}
+                />
+              )}
+              {before.level !== after.level && (
+                <LinearProgress
+                  variant="determinate"
+                  value={(after.xpInLevel / xpToNextLevel) * 100}
+                  sx={{ mt: 2 }}
+                />
+              )}
+            </Box>
+          )}
+          {(otherXpGains.length > 0 || otherGradeUps.length > 0) && (
+            <Box>
+              <Typography variant="subtitle1" sx={{ mb: 1 }}>
+                Other progress
+              </Typography>
+              {otherXpGains.length > 0 && (
+                <Stack
+                  direction="row"
+                  spacing={1}
+                  useFlexGap
+                  sx={{ flexWrap: 'wrap' }}
+                >
+                  {otherXpGains.map(g => (
+                    <Chip
+                      key={g.disciplineId}
+                      label={`+${formatXp(g.amount)} ${getDiscipline(g.disciplineId).name}`}
+                    />
+                  ))}
+                </Stack>
+              )}
+              {otherGradeUps.map((gradeUp, i) => (
+                <Typography key={i} sx={{ mt: 1.5 }}>
+                  {gradeUpMessage(gradeUp)}
+                </Typography>
+              ))}
+            </Box>
+          )}
+        </Stack>
       </DialogContent>
       <DialogActions>
-        <Button onClick={onClose}>Close</Button>
+        <Button onClick={onClose} variant="contained">
+          Close
+        </Button>
       </DialogActions>
     </Dialog>
   );

@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 import {
+  Box,
   Table,
   TableBody,
   TableCell,
@@ -24,7 +25,12 @@ interface Props {
 
 export function RaceOptions(props: Props) {
   return (
-    <TableContainer>
+    <TableContainer
+      sx={{
+        borderTop: 1,
+        borderColor: 'divider',
+      }}
+    >
       <Table size="small">
         <TableHead>
           <TableRow>
@@ -40,19 +46,35 @@ export function RaceOptions(props: Props) {
             const carClass = getCarClass(race.carClassId);
             const discipline = getDiscipline(carClass.disciplineId);
             const track = getTrack(race.trackId);
+            const selected = index === props.selectedRaceIndex;
             return (
               <TableRow
-                key={getCarClassId(carClass)}
+                key={`${getCarClassId(carClass)}-${race.trackId}-${index}`}
                 hover={true}
-                selected={index === props.selectedRaceIndex}
+                selected={selected}
                 onClick={() => props.onSelect(index)}
-                sx={{ cursor: 'pointer' }}
+                sx={{
+                  cursor: 'pointer',
+                  '& td': {
+                    transition: 'background-color 120ms ease',
+                  },
+                  '&.Mui-selected td': {
+                    backgroundColor: 'rgba(31, 79, 143, 0.08)',
+                  },
+                  '&.Mui-selected:hover td': {
+                    backgroundColor: 'rgba(31, 79, 143, 0.12)',
+                  },
+                }}
               >
-                <TableCell>{discipline.name}</TableCell>
+                <TableCell sx={{ fontWeight: selected ? 700 : 500 }}>
+                  {discipline.name}
+                </TableCell>
                 <TableCell>{formatGrade(carClass.grade, true)}</TableCell>
                 <TableCell>{carClass.name}</TableCell>
-                <TableCell>{track.name}</TableCell>
-                <TableCell>{track.configuration}</TableCell>
+                <TableCell>
+                  <Box sx={{ fontWeight: 500 }}>{track.name}</Box>
+                </TableCell>
+                <TableCell>{track.configuration ?? 'Standard'}</TableCell>
               </TableRow>
             );
           })}

@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.7.0] - 2026-07-11
+
+### Changed
+
+- Refreshed the app's overall look and feel with clearer spacing, improved visual hierarchy, and a more polished layout while keeping the same core structure and workflows.
+- Updated the main racing screen to make race selection, simulator settings, AI adjustments, and result entry easier to scan, especially on larger screens.
+- Restyled the career, settings, and debugger pages so related information is grouped more clearly and important controls are easier to pick out at a glance.
+- Improved dialogs and popups, including race outcome summaries, onboarding, and cookie consent, so they better match the rest of the app.
+
 ## [1.6.0] - 2026-07-11
 
 ### Changed
@@ -80,6 +89,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - We now have a changelog! The app remembers what version was last seen, and only displays new items. Incidentally, this item will not be shown to any users, because the first time a changelog-enabled app version is loaded, we set the latest version as "seen". After all, a changelog makes no sense for a brand-new user in the general case, and the initial rollout is a one-off event.
 
+[1.7.0]: https://github.com/abesto/ams2-career/compare/v1.6.0..v1.7.0
 [1.6.0]: https://github.com/abesto/ams2-career/compare/v1.5.0..v1.6.0
 [1.5.0]: https://github.com/abesto/ams2-career/compare/v1.4.1..v1.5.0
 [1.4.1]: https://github.com/abesto/ams2-career/compare/v1.3.1..v1.4.1
@@ -88,4 +98,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 [1.2.0]: https://github.com/abesto/ams2-career/compare/v1.1.0..v1.2.0
 [1.1.0]: https://github.com/abesto/ams2-career/compare/v1.0.0..v1.1.0
 [1.0.0]: https://github.com/abesto/ams2-career/releases/tag/v1.0.0
-[Unreleased]: https://github.com/abesto/ams2-career/compare/v1.6.0..HEAD
+[Unreleased]: https://github.com/abesto/ams2-career/compare/v1.7.0..HEAD

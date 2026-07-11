@@ -15,6 +15,7 @@ import {
   Link as RouterLink,
   Route,
   Routes,
+  useLocation,
 } from 'react-router-dom';
 
 import {
@@ -31,6 +32,7 @@ import {
   CssBaseline,
   IconButton,
   IconButtonProps,
+  Stack,
   Toolbar,
   Tooltip,
   Typography,
@@ -83,6 +85,7 @@ function InnerApp() {
   const [forceWelcome, setForceWelcome] = React.useState(false);
   const { actions: connectivityActions } = useConnectivitySlice();
   const dispatch = useDispatch();
+  const location = useLocation();
 
   // Hook up the connectivity checker
   React.useEffect(() => {
@@ -122,81 +125,151 @@ function InnerApp() {
       <Changelog changelog={changelog} />
       <OurCookieConsent />
 
-      <Container maxWidth={false}>
-        <AppBar position="static">
-          <Toolbar>
-            <Typography variant="h6">
-              <Button
-                color="inherit"
-                size="large"
-                component={RouterLink}
-                to="/"
-              >
-                Go Race!
-              </Button>
-            </Typography>
-
-            <Button
-              color="inherit"
-              size="small"
-              component={RouterLink}
-              to="/career"
+      <Box sx={{ minHeight: '100vh', backgroundColor: 'background.default' }}>
+        <AppBar position="sticky">
+          <Container
+            maxWidth={false}
+            sx={{ maxWidth: 1760, px: { xs: 2, sm: 3 } }}
+          >
+            <Toolbar
+              disableGutters
+              sx={{
+                minHeight: 72,
+                gap: 2,
+                flexWrap: 'wrap',
+                py: 1.5,
+              }}
             >
-              Career
-            </Button>
+              <Box sx={{ mr: { xs: 0, md: 1 } }}>
+                <Typography variant="subtitle1">AMS2 Career</Typography>
+                <Typography
+                  variant="body2"
+                  sx={{ color: 'rgba(248, 250, 252, 0.72)' }}
+                >
+                  Career companion for Automobilista 2
+                </Typography>
+              </Box>
 
-            <Button
-              color="inherit"
-              size="small"
-              component={RouterLink}
-              to="/settings"
-            >
-              Settings
-            </Button>
+              <Stack direction="row" spacing={1} sx={{ flexWrap: 'wrap' }}>
+                <Button
+                  color="inherit"
+                  variant={location.pathname === '/' ? 'contained' : 'text'}
+                  component={RouterLink}
+                  to="/"
+                  sx={{
+                    color: 'inherit',
+                    ...(location.pathname === '/'
+                      ? {
+                          backgroundColor: 'rgba(255, 255, 255, 0.16)',
+                        }
+                      : {
+                          '&:hover': {
+                            backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                          },
+                        }),
+                  }}
+                >
+                  Go Race!
+                </Button>
+                <Button
+                  color="inherit"
+                  variant={
+                    location.pathname === '/career' ? 'contained' : 'text'
+                  }
+                  component={RouterLink}
+                  to="/career"
+                  sx={{
+                    color: 'inherit',
+                    ...(location.pathname === '/career'
+                      ? {
+                          backgroundColor: 'rgba(255, 255, 255, 0.16)',
+                        }
+                      : {
+                          '&:hover': {
+                            backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                          },
+                        }),
+                  }}
+                >
+                  Career
+                </Button>
+                <Button
+                  color="inherit"
+                  variant={
+                    location.pathname === '/settings' ? 'contained' : 'text'
+                  }
+                  component={RouterLink}
+                  to="/settings"
+                  sx={{
+                    color: 'inherit',
+                    ...(location.pathname === '/settings'
+                      ? {
+                          backgroundColor: 'rgba(255, 255, 255, 0.16)',
+                        }
+                      : {
+                          '&:hover': {
+                            backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                          },
+                        }),
+                  }}
+                >
+                  Settings
+                </Button>
+              </Stack>
 
-            <Export color="inherit" size="small" sx={{ ml: 2 }} />
-            <Import color="inherit" size="small" />
+              <Stack direction="row" spacing={0.5} sx={{ ml: { md: 1 } }}>
+                <Export color="inherit" size="small" />
+                <Import color="inherit" size="small" />
+              </Stack>
 
-            <Box sx={{ flexGrow: 1 }} />
+              <Box sx={{ flexGrow: 1 }} />
 
-            <ToolbarButton
-              label="Help"
-              icon={<HelpIcon />}
-              onClick={() => setForceWelcome(true)}
-            />
-            <ToolbarButton
-              label="Wiki (new tab)"
-              icon={<MenuBookIcon />}
-              component="a"
-              href="https://github.com/abesto/ams2-career/wiki"
-            />
-            <ToolbarButton
-              label="GitHub (new tab)"
-              icon={<GitHubIcon />}
-              component="a"
-              href="https://github.com/abesto/ams2-career/"
-            />
-            <ToolbarButton
-              label="Data Debugger"
-              icon={<DataObjectIcon />}
-              component={RouterLink}
-              to="/debug"
-              target=""
-            />
-          </Toolbar>
+              <Stack direction="row" spacing={0.5}>
+                <ToolbarButton
+                  label="Help"
+                  icon={<HelpIcon />}
+                  onClick={() => setForceWelcome(true)}
+                />
+                <ToolbarButton
+                  label="Wiki (new tab)"
+                  icon={<MenuBookIcon />}
+                  component="a"
+                  href="https://github.com/abesto/ams2-career/wiki"
+                />
+                <ToolbarButton
+                  label="GitHub (new tab)"
+                  icon={<GitHubIcon />}
+                  component="a"
+                  href="https://github.com/abesto/ams2-career/"
+                />
+                <ToolbarButton
+                  label="Data Debugger"
+                  icon={<DataObjectIcon />}
+                  component={RouterLink}
+                  to="/debug"
+                  target=""
+                />
+              </Stack>
+            </Toolbar>
+          </Container>
         </AppBar>
 
-        <Routes>
-          <Route path="/" element={<MainPage />} />
-          <Route path="/settings" element={<SettingsPage />} />
-          <Route path="/debug" element={<DataDebugPage />} />
-          <Route path="/career" element={<CareerPage />} />
-          <Route element={<NotFoundPage />} />
-        </Routes>
+        <Container
+          maxWidth={false}
+          sx={{ maxWidth: 1760, px: { xs: 2, sm: 3 }, py: { xs: 3, md: 4 } }}
+        >
+          <Routes>
+            <Route path="/" element={<MainPage />} />
+            <Route path="/settings" element={<SettingsPage />} />
+            <Route path="/debug" element={<DataDebugPage />} />
+            <Route path="/career" element={<CareerPage />} />
+            <Route element={<NotFoundPage />} />
+          </Routes>
 
-        <ExportReminder />
-        <VersionInfo />
-      </Container>
+          <ExportReminder />
+          <VersionInfo />
+        </Container>
+      </Box>
     </HelmetProvider>
   );
 }

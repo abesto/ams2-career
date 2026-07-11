@@ -5,10 +5,12 @@ import { Provider } from 'react-redux';
 import { configureAppStore } from 'store/configureStore';
 
 import Button from '@mui/material/Button';
+import { ThemeProvider } from '@mui/material/styles';
 
 // Import root app
 import { App } from 'app';
 import { Export } from 'app/components/Export';
+import { appTheme } from 'app/theme';
 
 const store = configureAppStore();
 const MOUNT_NODE = document.getElementById('root') as HTMLElement;
@@ -81,11 +83,13 @@ const root = createRoot(MOUNT_NODE);
 root.render(
   <Provider store={store}>
     <HelmetProvider>
-      <React.StrictMode>
-        <DropLocalStorageOnErrorBoundary>
-          <App />
-        </DropLocalStorageOnErrorBoundary>
-      </React.StrictMode>
+      <ThemeProvider theme={appTheme}>
+        <React.StrictMode>
+          <DropLocalStorageOnErrorBoundary>
+            <App />
+          </DropLocalStorageOnErrorBoundary>
+        </React.StrictMode>
+      </ThemeProvider>
     </HelmetProvider>
   </Provider>,
 );

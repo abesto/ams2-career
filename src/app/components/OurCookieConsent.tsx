@@ -39,9 +39,34 @@ export const OurCookieConsent = () => {
       visible={cookieConsentValue === undefined ? 'show' : 'hidden'}
       onAccept={() => setCookieConsentValue(GRANTED)}
       onDecline={() => setCookieConsentValue(DECLINED)}
+      style={{
+        background: '#17324d',
+        color: '#f8fafc',
+        boxShadow: '0 -8px 24px rgba(15, 23, 42, 0.18)',
+        alignItems: 'center',
+      }}
+      contentStyle={{
+        flex: '1 1 auto',
+        margin: 0,
+      }}
+      buttonStyle={{
+        borderRadius: 8,
+        padding: '10px 16px',
+        background: '#f8fafc',
+        color: '#17324d',
+        fontWeight: 600,
+      }}
+      declineButtonStyle={{
+        borderRadius: 8,
+        padding: '10px 16px',
+        background: 'transparent',
+        color: '#f8fafc',
+        border: '1px solid rgba(248, 250, 252, 0.32)',
+        fontWeight: 600,
+      }}
     >
       This website uses cookies to enhance the user experience.{' '}
-      <span style={{ fontSize: '12px', color: 'lightGray' }}>
+      <span style={{ fontSize: '12px', color: 'rgba(248, 250, 252, 0.72)' }}>
         In particular, we use Google Analytics to understand your use of the
         app. You can change this later in the Settings menu.
       </span>

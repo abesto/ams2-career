@@ -10,10 +10,13 @@ export function VersionInfo() {
       className="version-info"
       variant="body2"
       sx={{
+        mt: 4,
+        pt: 2,
         textAlign: 'right',
-        padding: '0.3rem',
         fontSize: '0.8em',
-        color: 'lightGray',
+        color: 'text.secondary',
+        borderTop: 1,
+        borderColor: 'divider',
       }}
     >
       {!import.meta.env.PROD ? (

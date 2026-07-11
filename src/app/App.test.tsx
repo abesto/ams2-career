@@ -51,19 +51,19 @@ test('Basic sanity: a bunch of race results', async () => {
 
   // Race result dialog
   await click('button', { name: /Record/i });
-  expect(await screen.findByText(/Race Results: P1 GT5/));
+  expect(await screen.findByText(/Race Results: P1/));
   expect(container).toMatchSnapshot('race-result');
   await click('button', { name: /Close/i });
 
   // 3 more wins
   await click('button', { name: /Record/i });
-  expect(await screen.findByText(/Race Results: P1 GT5/));
+  expect(await screen.findByText(/Race Results: P1/));
   await click('button', { name: /Close/i });
   await click('button', { name: /Record/i });
-  expect(await screen.findByText(/Race Results: P1 GT5/));
+  expect(await screen.findByText(/Race Results: P1/));
   await click('button', { name: /Close/i });
   await click('button', { name: /Record/i });
-  expect(await screen.findByText(/Race Results: P1 GT5/));
+  expect(await screen.findByText(/Race Results: P1/));
 
   // Level up!
   expect(
@@ -76,7 +76,7 @@ test('Basic sanity: a bunch of race results', async () => {
 
   // Now let's get an achievement
   await click('button', { name: /Record/i });
-  expect(await screen.findByText(/Race Results: P1 Carrera Cup/));
+  expect(await screen.findByText(/Race Results: P1/));
   expect(await screen.findByText(/Achieve maximum XP in Karting/));
   expect(container).toMatchSnapshot('achievement');
   expect(consoleError).not.toHaveBeenCalledWith(
@@ -103,7 +103,7 @@ test('Regenerate races', async () => {
   fireEvent.click(checkbox);
   expect(checkbox.checked).toBe(true);
   fireEvent.click(await screen.findByText('Go Race!'));
-  await screen.findByText(/pick a race/i);
+  await screen.findByText(/current race offers/i);
   expect(screen.getByText(/regenerate races/i)).toBeInTheDocument();
 
   // Actually regenerates races

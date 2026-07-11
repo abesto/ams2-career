@@ -10,6 +10,7 @@ import {
   FormGroup,
   Grid,
   Paper,
+  Stack,
   TextField,
   ToggleButton,
   ToggleButtonGroup,
@@ -39,9 +40,11 @@ export function SettingsPage() {
         <title>Settings</title>
       </Helmet>
 
-      <Box sx={{ flexGrow: 1, m: 2 }}>
-        <Typography variant="h4">Settings</Typography>
-        <Typography>
+      <Box sx={{ mb: 3 }}>
+        <Typography variant="h4" sx={{ mb: 1 }}>
+          Settings
+        </Typography>
+        <Typography color="text.secondary" sx={{ maxWidth: 820 }}>
           Here you can customize various aspects of your AMS2 Career experience.
           Note that all changes are applied immediately and retroactively, but
           you can always set things back to the way they were before without
@@ -49,182 +52,216 @@ export function SettingsPage() {
         </Typography>
       </Box>
 
-      <Grid container spacing={2}>
-        <Grid size={4}>
-          <Paper sx={{ p: 3 }}>
-            <Typography variant="h5">Cross-Discipline XP</Typography>
-            <Typography>
-              Usually race results earn you some small amount of XP in
-              disciplines other than the one you raced in, based on how similar
-              they are to each other, and their relative difficulty. You may
-              want to disable this if you want to climb the ladders of multiple
-              racing disciplines start to finish.
-            </Typography>
-            <FormGroup row>
-              <FormControlLabel
-                label="Enable Cross-Discipline XP"
-                control={
-                  <Checkbox
-                    checked={
-                      settings.crossDisciplineGainsEnabled ??
-                      initialSettings.crossDisciplineGainsEnabled
-                    }
-                    onChange={e =>
-                      dispatch(
-                        actions.setCrossDisciplineGainsEnabled(
-                          e.target.checked,
-                        ),
-                      )
-                    }
-                  />
-                }
-              />
-              <Button
-                color="secondary"
-                onClick={() =>
-                  dispatch(actions.resetCrossDisciplineGainsEnabled())
-                }
-              >
-                Reset
-              </Button>
-            </FormGroup>
-          </Paper>
-        </Grid>
-
-        <Grid size={4}>
-          <Paper sx={{ p: 3 }}>
-            <Typography variant="h5">XP Multiplier</Typography>
-            <Typography>
-              This option applies a flat multiplier to all XP points earned. You
-              can use this to tweak how long your career is.
-            </Typography>
-            <FormGroup row sx={{ mt: 1 }}>
-              <TextField
-                type="number"
-                slotProps={{
-                  htmlInput: {
-                    min: 0.1,
-                    step: 0.1,
-                  },
-                }}
-                value={settings.xpMultiplier ?? initialSettings.xpMultiplier}
-                size="small"
-                sx={{ width: '200px' }}
-                onChange={e =>
-                  dispatch(actions.setXpMultiplier(parseFloat(e.target.value)))
-                }
-              />
-              <Button onClick={() => dispatch(actions.setXpMultiplier(1.5))}>
-                Short Career
-              </Button>
-              <Button
-                color="secondary"
-                onClick={() => dispatch(actions.resetXpMultiplier())}
-              >
-                Default
-              </Button>
-              <Button onClick={() => dispatch(actions.setXpMultiplier(0.5))}>
-                Long Career
-              </Button>
-            </FormGroup>
-          </Paper>
-        </Grid>
-
-        <Grid size={4}>
-          <Paper sx={{ p: 3 }}>
-            <Typography variant="h5">Position XP Multiplier</Typography>
-            <Typography>
-              This option controls how heavily your finishing position
-              influences the amount of XP points earned. <code>1.0</code> is the
-              default; lower values mean your race results matter less. At{' '}
-              <code>0.0</code>, you'll get the same amount of XP for finishing a
-              race, no matter your result. Conversely, at very high values you
-              get a LOT of XP for winning, and possibly none at all for poor
-              results.
-            </Typography>
-            <FormGroup row sx={{ mt: 1 }}>
-              <TextField
-                type="number"
-                slotProps={{
-                  htmlInput: {
-                    min: 0.0,
-                    step: 0.1,
-                  },
-                }}
-                value={
-                  settings.positionXpMultiplier ??
-                  initialSettings.positionXpMultiplier
-                }
-                size="small"
-                sx={{ width: '200px' }}
-                onChange={e =>
-                  dispatch(
-                    actions.setPositionXpMultiplier(parseFloat(e.target.value)),
-                  )
-                }
-              />
-              <Button
-                color="secondary"
-                onClick={() => dispatch(actions.resetPositionXpMultiplier())}
-              >
-                Default
-              </Button>
-            </FormGroup>
-          </Paper>
-        </Grid>
-
-        <Grid size={4}>
-          <Paper sx={{ p: 3 }}>
-            <Typography variant="h5">Cookies</Typography>
-            <Typography>
-              We use Google Analytics to understand how many people use this
-              app, and to understand a bit of your usage patterns. It helps us a
-              lot, but your privacy is your privacy. If you do enable this, then
-              please also disable any adblocker extension for this site
-              (otherwise we still won't get the data).
-            </Typography>
-            <ToggleButtonGroup
-              exclusive
-              value={cookieConsentValue}
-              onChange={(e, value) => setCookieConsentValue(value)}
-              sx={{ mt: 2 }}
-              size="small"
-            >
-              <ToggleButton value={GRANTED}>Grant</ToggleButton>
-              <ToggleButton value={DECLINED}>Deny</ToggleButton>
-            </ToggleButtonGroup>
-          </Paper>
-        </Grid>
-
-        <Grid size={4}>
-          <Paper sx={{ p: 3 }}>
-            <Typography variant="h5">Regenerate Races</Typography>
-            <Typography>
-              This option allows you to click a button on the "Go Race!" page to
-              regenerate the currently available races. Normally we recommend
-              leaving this disabled, but it can be especially useful to ensure
-              you have races with content you own if you don't have all the
-              DLCs.
-            </Typography>
-            <FormControlLabel
-              label="Enable Regenerating Races"
-              control={
-                <Checkbox
-                  slotProps={{
-                    input: {
-                      'data-testid': 'regenerate-races',
-                    } as React.ComponentProps<'input'>,
-                  }}
-                  checked={
-                    settings.canRegenerateRaces ??
-                    initialSettings.canRegenerateRaces
-                  }
-                  onChange={e =>
-                    dispatch(actions.setCanRegenerateRaces(e.target.checked))
+      <Grid container spacing={3}>
+        <Grid size={{ xs: 12, md: 6, xl: 4 }}>
+          <Paper sx={{ p: 3, height: '100%' }}>
+            <Stack spacing={2}>
+              <Typography variant="h5">Cross-Discipline XP</Typography>
+              <Typography color="text.secondary">
+                Usually race results earn you some small amount of XP in
+                disciplines other than the one you raced in, based on how
+                similar they are to each other, and their relative difficulty.
+                You may want to disable this if you want to climb the ladders of
+                multiple racing disciplines start to finish.
+              </Typography>
+              <FormGroup sx={{ gap: 1.5 }}>
+                <FormControlLabel
+                  label="Enable Cross-Discipline XP"
+                  control={
+                    <Checkbox
+                      checked={
+                        settings.crossDisciplineGainsEnabled ??
+                        initialSettings.crossDisciplineGainsEnabled
+                      }
+                      onChange={e =>
+                        dispatch(
+                          actions.setCrossDisciplineGainsEnabled(
+                            e.target.checked,
+                          ),
+                        )
+                      }
+                    />
                   }
                 />
-              }
-            />
+                <Button
+                  color="secondary"
+                  variant="outlined"
+                  onClick={() =>
+                    dispatch(actions.resetCrossDisciplineGainsEnabled())
+                  }
+                >
+                  Reset
+                </Button>
+              </FormGroup>
+            </Stack>
+          </Paper>
+        </Grid>
+
+        <Grid size={{ xs: 12, md: 6, xl: 4 }}>
+          <Paper sx={{ p: 3, height: '100%' }}>
+            <Stack spacing={2}>
+              <Typography variant="h5">XP Multiplier</Typography>
+              <Typography color="text.secondary">
+                This option applies a flat multiplier to all XP points earned.
+                You can use this to tweak how long your career is.
+              </Typography>
+              <FormGroup sx={{ mt: 1, gap: 1.5 }}>
+                <TextField
+                  type="number"
+                  slotProps={{
+                    htmlInput: {
+                      min: 0.1,
+                      step: 0.1,
+                    },
+                  }}
+                  value={settings.xpMultiplier ?? initialSettings.xpMultiplier}
+                  size="small"
+                  sx={{ width: { xs: '100%', sm: 220 } }}
+                  onChange={e =>
+                    dispatch(
+                      actions.setXpMultiplier(parseFloat(e.target.value)),
+                    )
+                  }
+                />
+                <Stack
+                  direction="row"
+                  spacing={1.5}
+                  useFlexGap
+                  sx={{ flexWrap: 'wrap' }}
+                >
+                  <Button
+                    variant="outlined"
+                    onClick={() => dispatch(actions.setXpMultiplier(1.5))}
+                  >
+                    Short Career
+                  </Button>
+                  <Button
+                    color="secondary"
+                    variant="outlined"
+                    onClick={() => dispatch(actions.resetXpMultiplier())}
+                  >
+                    Default
+                  </Button>
+                  <Button
+                    variant="outlined"
+                    onClick={() => dispatch(actions.setXpMultiplier(0.5))}
+                  >
+                    Long Career
+                  </Button>
+                </Stack>
+              </FormGroup>
+            </Stack>
+          </Paper>
+        </Grid>
+
+        <Grid size={{ xs: 12, md: 6, xl: 4 }}>
+          <Paper sx={{ p: 3, height: '100%' }}>
+            <Stack spacing={2}>
+              <Typography variant="h5">Position XP Multiplier</Typography>
+              <Typography color="text.secondary">
+                This option controls how heavily your finishing position
+                influences the amount of XP points earned. <code>1.0</code> is
+                the default; lower values mean your race results matter less. At{' '}
+                <code>0.0</code>, you'll get the same amount of XP for finishing
+                a race, no matter your result. Conversely, at very high values
+                you get a LOT of XP for winning, and possibly none at all for
+                poor results.
+              </Typography>
+              <FormGroup row sx={{ mt: 1, gap: 1.5, alignItems: 'center' }}>
+                <TextField
+                  type="number"
+                  slotProps={{
+                    htmlInput: {
+                      min: 0.0,
+                      step: 0.1,
+                    },
+                  }}
+                  value={
+                    settings.positionXpMultiplier ??
+                    initialSettings.positionXpMultiplier
+                  }
+                  size="small"
+                  sx={{ width: { xs: '100%', sm: 220 } }}
+                  onChange={e =>
+                    dispatch(
+                      actions.setPositionXpMultiplier(
+                        parseFloat(e.target.value),
+                      ),
+                    )
+                  }
+                />
+                <Button
+                  color="secondary"
+                  variant="outlined"
+                  onClick={() => dispatch(actions.resetPositionXpMultiplier())}
+                >
+                  Default
+                </Button>
+              </FormGroup>
+            </Stack>
+          </Paper>
+        </Grid>
+
+        <Grid size={{ xs: 12, md: 6, xl: 4 }}>
+          <Paper sx={{ p: 3, height: '100%' }}>
+            <Stack spacing={2}>
+              <Typography variant="h5">Cookies</Typography>
+              <Typography color="text.secondary">
+                We use Google Analytics to understand how many people use this
+                app, and to understand a bit of your usage patterns. It helps us
+                a lot, but your privacy is your privacy. If you do enable this,
+                then please also disable any adblocker extension for this site
+                (otherwise we still won't get the data).
+              </Typography>
+              <ToggleButtonGroup
+                exclusive
+                value={cookieConsentValue}
+                onChange={(e, value) => setCookieConsentValue(value)}
+                sx={{ mt: 2 }}
+                size="small"
+              >
+                <ToggleButton value={GRANTED}>Grant</ToggleButton>
+                <ToggleButton value={DECLINED}>Deny</ToggleButton>
+              </ToggleButtonGroup>
+            </Stack>
+          </Paper>
+        </Grid>
+
+        <Grid size={{ xs: 12, md: 6, xl: 4 }}>
+          <Paper sx={{ p: 3, height: '100%' }}>
+            <Stack spacing={2}>
+              <Typography variant="h5">Regenerate Races</Typography>
+              <Typography color="text.secondary">
+                This option allows you to click a button on the "Go Race!" page
+                to regenerate the currently available races. Normally we
+                recommend leaving this disabled, but it can be especially useful
+                to ensure you have races with content you own if you don't have
+                all the DLCs.
+              </Typography>
+              <Box sx={{ pt: 0.5 }}>
+                <FormControlLabel
+                  label="Enable Regenerating Races"
+                  control={
+                    <Checkbox
+                      slotProps={{
+                        input: {
+                          'data-testid': 'regenerate-races',
+                        } as React.ComponentProps<'input'>,
+                      }}
+                      checked={
+                        settings.canRegenerateRaces ??
+                        initialSettings.canRegenerateRaces
+                      }
+                      onChange={e =>
+                        dispatch(
+                          actions.setCanRegenerateRaces(e.target.checked),
+                        )
+                      }
+                    />
+                  }
+                />
+              </Box>
+            </Stack>
           </Paper>
         </Grid>
       </Grid>

@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { Button, Grid, Paper, Typography } from '@mui/material';
+import { Box, Button, Grid, Paper, Stack, Typography } from '@mui/material';
 
 import { GoRacing } from './components/GoRacing';
 import { RaceOptions } from './components/RaceOptions';
@@ -66,61 +66,106 @@ export function MainPage(props: Props) {
       <Helmet>
         <title>Go Race!</title>
       </Helmet>
-      <Grid container spacing={2}>
-        <Grid size={{ xs: 12, lg: 6 }}>
-          <Paper sx={{ p: 2 }}>
-            <Typography variant="h4" sx={{ mb: 2 }}>
-              Pick a Race
-            </Typography>
-            {settings.canRegenerateRaces && (
-              <Button
-                onClick={() =>
-                  dispatch(mainPageActions.generateRaces({ career }))
-                }
+      <Stack spacing={3}>
+        <Grid container spacing={3} sx={{ alignItems: 'stretch' }}>
+          <Grid size={{ xs: 12, xl: 6 }}>
+            <Paper sx={{ height: '100%', overflow: 'hidden' }}>
+              <Stack
+                direction={{ xs: 'column', sm: 'row' }}
+                spacing={2}
+                sx={{
+                  px: 3,
+                  py: 2.5,
+                  alignItems: { xs: 'flex-start', sm: 'center' },
+                  justifyContent: 'space-between',
+                }}
               >
-                Regenerate Races
-              </Button>
-            )}
-            <RaceOptions
-              races={slice.raceOptions}
-              onSelect={index => dispatch(mainPageActions.selectRace(index))}
-              selectedRaceIndex={slice.selectedRaceIndex}
-            />
-          </Paper>
+                <Box>
+                  <Typography variant="h5" sx={{ mb: 0.5 }}>
+                    Current race offers
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    Choose one offer to see the setup guidance and record your
+                    finishing position.
+                  </Typography>
+                </Box>
+                {settings.canRegenerateRaces && (
+                  <Button
+                    variant="outlined"
+                    onClick={() =>
+                      dispatch(mainPageActions.generateRaces({ career }))
+                    }
+                  >
+                    Regenerate races
+                  </Button>
+                )}
+              </Stack>
+              <RaceOptions
+                races={slice.raceOptions}
+                onSelect={index => dispatch(mainPageActions.selectRace(index))}
+                selectedRaceIndex={slice.selectedRaceIndex}
+              />
+            </Paper>
+          </Grid>
+          <Grid size={{ xs: 12, xl: 6 }}>
+            <Paper sx={{ height: '100%', p: 3 }}>
+              {selectedRace !== null ? (
+                <>
+                  <Typography variant="h5" sx={{ mb: 0.5 }}>
+                    Race setup and results
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="text.secondary"
+                    sx={{ mb: 3 }}
+                  >
+                    Review the suggested settings, adjust AI if needed, then
+                    record the result once the race is done.
+                  </Typography>
+                  <GoRacing
+                    race={selectedRace!}
+                    career={career}
+                    currentCarId={currentCarId!}
+                    onRecord={(aiLevel, aiAdjustment, position) =>
+                      recordResult(
+                        currentCarId!,
+                        aiLevel,
+                        aiAdjustment!,
+                        position,
+                      )
+                    }
+                    onCarSelect={carId =>
+                      dispatch(
+                        mainPageActions.selectCar({
+                          carClassId: selectedRace!.carClassId,
+                          carId,
+                        }),
+                      )
+                    }
+                  />
+                </>
+              ) : (
+                <Stack
+                  spacing={1.5}
+                  sx={{
+                    justifyContent: 'center',
+                    minHeight: 320,
+                  }}
+                >
+                  <Typography variant="h5">
+                    Select a race to continue
+                  </Typography>
+                  <Typography color="text.secondary">
+                    The right-hand side will show the current discipline
+                    progress, race details, AI adjustments, and result entry
+                    once you choose an offer.
+                  </Typography>
+                </Stack>
+              )}
+            </Paper>
+          </Grid>
         </Grid>
-        <Grid size={{ xs: 12, lg: 6 }}>
-          <Paper sx={{ p: 2 }}>
-            {selectedRace !== null && (
-              <>
-                <Typography variant="h4" sx={{ mt: 3 }}>
-                  Go Racing!
-                </Typography>
-                <GoRacing
-                  race={selectedRace!}
-                  career={career}
-                  currentCarId={currentCarId!}
-                  onRecord={(aiLevel, aiAdjustment, position) =>
-                    recordResult(
-                      currentCarId!,
-                      aiLevel,
-                      aiAdjustment!,
-                      position,
-                    )
-                  }
-                  onCarSelect={carId =>
-                    dispatch(
-                      mainPageActions.selectCar({
-                        carClassId: selectedRace!.carClassId,
-                        carId,
-                      }),
-                    )
-                  }
-                />
-              </>
-            )}
-          </Paper>
-        </Grid>
-      </Grid>
+      </Stack>
       <RaceResultFeedback
         open={resultFeedbackOpen}
         onClose={() => setResultFeedbackOpen(false)}

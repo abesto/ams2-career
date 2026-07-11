@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Step, StepLabel, Stepper, Typography } from '@mui/material';
+import { Box, Step, StepLabel, Stepper, Typography } from '@mui/material';
 
 import { LinearProgressWithLabel } from './LinearProgressWithLabel';
 
@@ -40,8 +40,8 @@ export function DisciplineProgress(props: Props) {
   levels.reverse();
 
   return (
-    <>
-      <Typography variant="h6" component="span">
+    <Box>
+      <Typography variant="subtitle1" sx={{ mb: 1 }}>
         {discipline.name}
       </Typography>
 
@@ -61,21 +61,28 @@ export function DisciplineProgress(props: Props) {
         ]}
       />
 
-      <Stepper
-        sx={{ m: 1 }}
-        activeStep={levels.length - progress.level}
-        alternativeLabel
-      >
-        {levels.map(level => (
-          <Step key={level}>
-            <StepLabel icon={formatGrade(level, false)}>
-              {getCarClassesAt(discipline, level).map(carClass => (
-                <div key={carClass.name}>{carClass.name}</div>
-              ))}
-            </StepLabel>
-          </Step>
-        ))}
-      </Stepper>
+      <Box sx={{ overflowX: 'auto', py: 1 }}>
+        <Stepper
+          sx={{
+            minWidth: 440,
+            '& .MuiStepLabel-label': {
+              fontSize: '0.78rem',
+            },
+          }}
+          activeStep={levels.length - progress.level}
+          alternativeLabel
+        >
+          {levels.map(level => (
+            <Step key={level}>
+              <StepLabel icon={formatGrade(level, false)}>
+                {getCarClassesAt(discipline, level).map(carClass => (
+                  <div key={carClass.name}>{carClass.name}</div>
+                ))}
+              </StepLabel>
+            </Step>
+          ))}
+        </Stepper>
+      </Box>
       {progress.level > 0 && (
         <LinearProgressWithLabel
           max={xpToNextLevel}
@@ -88,6 +95,6 @@ export function DisciplineProgress(props: Props) {
           )}`}
         />
       )}
-    </>
+    </Box>
   );
 }

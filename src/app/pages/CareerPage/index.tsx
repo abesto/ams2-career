@@ -6,8 +6,10 @@ import { useDispatch, useSelector } from 'react-redux';
 import {
   Box,
   Button,
+  Chip,
   Grid,
   Paper,
+  Stack,
   Table,
   TableBody,
   TableCell,
@@ -47,10 +49,10 @@ interface Props {}
 
 function DisciplineProgressGrid(props: { career: EnrichedCareerData }) {
   return (
-    <Grid container spacing={1}>
+    <Grid container spacing={2}>
       {getAllDisciplines().map(discipline => (
         <Grid size={{ xs: 12, lg: 4 }} key={discipline.name}>
-          <Paper sx={{ p: 2 }}>
+          <Paper sx={{ p: 2.5, height: '100%' }}>
             <DisciplineProgress discipline={discipline} career={props.career} />
           </Paper>
         </Grid>
@@ -82,14 +84,14 @@ function Achievements(props: { achievements: Achievement[] }) {
     <Grid container spacing={2} sx={{ justifyContent: 'space-around' }}>
       {achievements.map(achievement => (
         <Grid size="auto" sx={{ textAlign: 'center' }} key={achievement.name}>
-          <Paper sx={{ backgroundColor: '#fafafa', p: 2 }}>
+          <Paper sx={{ backgroundColor: '#fafafa', p: 2, width: 250 }}>
             <AchievementIcon
               level={achievement.level}
               unlocked={isUnlocked(achievement)}
               fontSize="large"
             />
             <Typography
-              variant="h6"
+              variant="subtitle1"
               sx={{ color: isUnlocked(achievement) ? 'black' : 'gray' }}
             >
               {achievement.name}
@@ -134,7 +136,7 @@ function Logbook(props: { career: EnrichedCareerData }) {
     }))
     .reverse();
   return (
-    <TableContainer>
+    <TableContainer sx={{ borderTop: 1, borderColor: 'divider' }}>
       <Table size="small">
         <TableHead>
           <TableRow>
@@ -203,6 +205,8 @@ export function CareerPage(props: Props) {
   const { actions: mainPageActions } = useMainPageSlice();
   const { actions: careerActions } = useCareerSlice();
   const { actions: welcomeActions } = useWelcomeSlice();
+  const wins = career.raceResults.filter(r => r.position === 1).length;
+  const podiums = career.raceResults.filter(r => r.position <= 3).length;
 
   return (
     <>
@@ -210,31 +214,76 @@ export function CareerPage(props: Props) {
         <title>Career</title>
       </Helmet>
 
-      <Paper sx={{ p: 2 }}>
-        <Typography variant="h4" sx={{ my: 2 }}>
-          Achievements
-        </Typography>
-        <Achievements achievements={career.achievements} />
-      </Paper>
+      <Stack spacing={4}>
+        <Box>
+          <Typography variant="h4" sx={{ mb: 1 }}>
+            Career
+          </Typography>
+          <Typography color="text.secondary" sx={{ mb: 2 }}>
+            Track your progress, unlocked achievements, and complete race
+            history across every discipline.
+          </Typography>
+          <Stack
+            direction="row"
+            spacing={1}
+            useFlexGap
+            sx={{ flexWrap: 'wrap' }}
+          >
+            <Chip label={`${career.raceResults.length} starts`} />
+            <Chip label={`${wins} wins`} />
+            <Chip label={`${podiums} podiums`} />
+          </Stack>
+        </Box>
 
-      <Paper sx={{ my: 5, p: 2 }}>
-        <Typography variant="h4" sx={{ mb: 2 }}>
-          Career Progress
-        </Typography>
-        <DisciplineProgressGrid career={career} />
-        <ResetCareer
-          onReset={() => {
-            dispatch(careerActions.resetCareer());
-            dispatch(mainPageActions.reset());
-            dispatch(welcomeActions.show());
-          }}
-        />
-      </Paper>
+        <Paper sx={{ p: 3 }}>
+          <Typography variant="h5" sx={{ mb: 2 }}>
+            Achievements
+          </Typography>
+          <Achievements achievements={career.achievements} />
+        </Paper>
 
-      <Typography variant="h4" sx={{ my: 2 }}>
-        Logbook
-      </Typography>
-      <Logbook career={career} />
+        <Paper sx={{ p: 3 }}>
+          <Stack
+            direction={{ xs: 'column', sm: 'row' }}
+            spacing={2}
+            sx={{
+              justifyContent: 'space-between',
+              alignItems: { sm: 'center' },
+              mb: 2,
+            }}
+          >
+            <Box>
+              <Typography variant="h5" sx={{ mb: 0.5 }}>
+                Career progress
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Promotion tracks and current standing in each discipline.
+              </Typography>
+            </Box>
+            <ResetCareer
+              onReset={() => {
+                dispatch(careerActions.resetCareer());
+                dispatch(mainPageActions.reset());
+                dispatch(welcomeActions.show());
+              }}
+            />
+          </Stack>
+          <DisciplineProgressGrid career={career} />
+        </Paper>
+
+        <Paper sx={{ overflow: 'hidden' }}>
+          <Box sx={{ px: 3, py: 2.5 }}>
+            <Typography variant="h5" sx={{ mb: 0.5 }}>
+              Logbook
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Full record of completed races, milestones, and discipline
+              progression.
+            </Typography>
+          </Box>
+          <Logbook career={career} />
+        </Paper>
+      </Stack>
     </>
   );
 }
