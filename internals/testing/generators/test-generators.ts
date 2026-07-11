@@ -4,8 +4,7 @@ import shell from 'shelljs';
 import path from 'path';
 import nodePlop from 'node-plop';
 
-import { ComponentProptNames } from '../../generators/component';
-import { rootStatePath, SliceProptNames } from '../../generators/slice';
+import { rootStatePath } from '../../generators/slice';
 import { PlopGenerator as PG } from 'node-plop';
 import { componentVariations } from './componentVariations';
 import { sliceVariations } from './sliceVariations';
@@ -14,11 +13,10 @@ import { registerGenerators } from '../../generators/plopfile';
 import { NodePlopAPI } from 'node-plop';
 
 interface PlopGenerator extends PG {
-  runActions: <T extends string | number>(props: { [P in T]: any }) => Promise<{
-    changes: [];
-    failures: [];
-  }>;
+  runActions: (answers: Parameters<PG['runActions']>[0]) => ReturnType<PG['runActions']>;
 }
+
+type RunActionsResult = Awaited<ReturnType<PG['runActions']>>;
 
 process.chdir(path.join(__dirname, '../../generators'));
 
@@ -31,10 +29,10 @@ async function generateComponents(componentGen: PlopGenerator) {
 
   for (const variation of variations) {
     const p = componentGen
-      .runActions<ComponentProptNames>(variation)
+      .runActions(variation)
       .then(handleResult)
       .then(feedbackToUser(`Generated '${variation.componentName}'`))
-      .then(_ => ({ name: variation.componentName, path: variation.path }));
+      .then(() => ({ name: variation.componentName, path: variation.path }));
     promises.push(p);
   }
   const components = await Promise.all(promises);
@@ -57,10 +55,10 @@ async function generateSlices(sliceGen: PlopGenerator) {
 
   for (const variation of variations) {
     const slice = await sliceGen
-      .runActions<SliceProptNames>(variation)
+      .runActions(variation)
       .then(handleResult)
       .then(feedbackToUser(`Generated '${variation.sliceName}'`))
-      .then(_ => ({ name: variation.sliceName, path: variation.path }));
+      .then(() => ({ name: variation.sliceName, path: variation.path }));
     slices.push(slice);
   }
 
@@ -127,10 +125,7 @@ async function generateSlices(sliceGen: PlopGenerator) {
 function runLinting() {
   return new Promise<void>((resolve, reject) => {
     shell.exec(
-      `${getLocalBinary('eslint')} --ext js,ts,tsx ${path.join(
-        projectRoot,
-        'src',
-      )}`,
+      `${getLocalBinary('eslint')} ${path.join(projectRoot, 'src')}`,
       {
         silent: false, // so that we can see the errors in the console
       },
@@ -171,9 +166,9 @@ async function handleResult({
   changes,
   failures,
 }: {
-  changes: [];
-  failures: [];
-}) {
+  changes: RunActionsResult['changes'];
+  failures: RunActionsResult['failures'];
+}): Promise<RunActionsResult['changes']> {
   return new Promise((resolve, reject) => {
     if (Array.isArray(failures) && failures.length > 0) {
       reject(new Error(JSON.stringify(failures, null, 2)));
@@ -181,8 +176,8 @@ async function handleResult({
     resolve(changes);
   });
 }
-function feedbackToUser(info) {
-  return (result?: any) => {
+function feedbackToUser(info: string) {
+  return <T>(result?: T) => {
     console.info(chalk.blue(info));
     return result;
   };
@@ -197,7 +192,7 @@ function getLocalBinary(name: string) {
 }
 
 function reportSuccess(message: string) {
-  return result => {
+  return <T>(result?: T) => {
     console.log(chalk.green(` ✓ ${message}`));
     return result;
   };

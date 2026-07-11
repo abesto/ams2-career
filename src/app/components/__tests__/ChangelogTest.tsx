@@ -6,6 +6,7 @@ import { Changelog } from 'app/components/Changelog';
 import { changelogActions } from 'app/slices/ChangelogSlice';
 import { simpleSemVer } from 'app/slices/ChangelogSlice/types';
 import { render } from 'app/test-utils';
+import { screen } from '@testing-library/react';
 import changelogText from './test_CHANGELOG.md?raw';
 
 const changelog = parseChangelog(changelogText);
@@ -39,10 +40,10 @@ describe('Changelog component', () => {
         seenVersion: simpleSemVer(changelog.releases[1].parsedVersion!),
       },
     });
-    const { getByTestId } = render(<Changelog changelog={changelog} />, {
+    render(<Changelog changelog={changelog} />, {
       store,
     });
-    const entries = getByTestId('changelog-entries');
+    const entries = screen.getByTestId('changelog-entries');
     expect(entries).toHaveTextContent('1.2.1');
     expect(entries).toHaveTextContent(
       'When cross-discipline XP gains were disabled, there was no XP gained for races at all',

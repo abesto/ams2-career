@@ -45,6 +45,7 @@
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "16.3.2",
+    "@eslint/js": "^9.39.5",
     "@types/file-saver": "^2.0.7",
     "@types/node": "^26.1.1",
     "@types/react": "19.2.17",
@@ -54,17 +55,18 @@
     "@vitejs/plugin-react": "^6.0.3",
     "axios": "^1.18.1",
     "csv-stringify": "^6.8.1",
-    "eslint": "^8.57.1",
+    "eslint": "^9.39.5",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-config-react-app": "^7.0.1",
-    "eslint-plugin-jest-dom": "^5.5.0",
     "eslint-plugin-prettier": "^5.5.6",
-    "eslint-plugin-react-hooks": "^4.5.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-testing-library": "^7.13.3",
+    "globals": "^17.7.0",
     "jsdom": "^29.1.1",
     "node-plop": "^0.32.3",
     "plop": "^4.0.5",
     "prettier": "^3.9.5",
     "ts-node": "^10.9.2",
+    "typescript-eslint": "^8.63.0",
     "typescript": "^5.9.3",
     "vite": "^8.1.4",
     "vitest": "^4.1.10"
@@ -76,9 +78,9 @@
     "start:prod": "pnpm run build && serve -s build",
     "test:generators": "ts-node ./internals/testing/generators/test-generators.ts",
     "checkTs": "tsc --noEmit",
-    "eslint": "eslint --ext js,ts,tsx",
-    "lint": "pnpm run eslint src",
-    "lint:fix": "pnpm run eslint --fix src",
+    "eslint": "eslint",
+    "lint": "pnpm exec eslint src",
+    "lint:fix": "pnpm exec eslint --fix src",
     "generate": "plop --plopfile internals/generators/plopfile.ts",
     "prettify": "prettier --write",
     "extract-messages": "i18next-scanner --config=internals/extractMessages/i18next-scanner.config.js",
@@ -90,7 +92,7 @@
   },
   "lint-staged": {
     "*.{ts,tsx,js,jsx}": [
-      "pnpm run eslint --fix"
+      "pnpm exec eslint --fix"
     ],
     "*.{md,json}": [
       "prettier --write"
