@@ -1,5 +1,4 @@
 import { parser as parseChangelog } from 'keep-a-changelog';
-import raw from 'raw.macro';
 import * as React from 'react';
 import { configureAppStore } from 'store/configureStore';
 
@@ -7,8 +6,8 @@ import { Changelog } from 'app/components/Changelog';
 import { changelogActions } from 'app/slices/ChangelogSlice';
 import { simpleSemVer } from 'app/slices/ChangelogSlice/types';
 import { render } from 'app/test-utils';
+import changelogText from './test_CHANGELOG.md?raw';
 
-const changelogText = raw('./test_CHANGELOG.md');
 const changelog = parseChangelog(changelogText);
 
 describe('Changelog component', () => {

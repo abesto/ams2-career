@@ -1,10 +1,12 @@
 import LZString from 'lz-string';
-import GitInfo from 'react-git-info/macro';
 import { AnyAction, Middleware } from 'redux';
 
 import { createAction, Reducer } from '@reduxjs/toolkit';
 
+import { buildInfo } from '../buildInfo';
 import { RootState } from 'types';
+
+const storage = () => window.localStorage;
 
 function saveKey(version: number | string) {
   if (typeof version === 'string' && version.startsWith('app:save:')) {
@@ -17,7 +19,7 @@ function saveKey(version: number | string) {
 const CHANGELOG_SLICE_KEY = 'changelog';
 
 function loadChangelog(state: RootState) {
-  const data = localStorage.getItem(CHANGELOG_SLICE_KEY);
+  const data = storage().getItem(CHANGELOG_SLICE_KEY);
   if (data !== null) {
     state.changelog = deserialize(data);
   }
@@ -26,7 +28,7 @@ function loadChangelog(state: RootState) {
 function saveChangelog(state: RootState) {
   const data = state.changelog;
   if (data !== undefined) {
-    localStorage.setItem(CHANGELOG_SLICE_KEY, serialize(data));
+    storage().setItem(CHANGELOG_SLICE_KEY, serialize(data));
   }
 }
 
@@ -104,10 +106,9 @@ function applyAllMigrations(state: RootState): RootState {
 }
 
 function addCommitVersion(state: RootState): RootState {
-  const gitInfo = GitInfo();
   state.saveMeta!.commit = {
-    hash: gitInfo.commit.hash,
-    date: gitInfo.commit.date,
+    hash: buildInfo.commit.hash,
+    date: buildInfo.commit.date,
   };
   return state;
 }
@@ -116,7 +117,7 @@ export function load(
   shouldApplyMigrations: boolean,
   version: number | string = LATEST,
 ): RootState | null {
-  const raw = localStorage.getItem(saveKey(version));
+  const raw = storage().getItem(saveKey(version));
   if (!raw) {
     return null;
   }
@@ -141,7 +142,7 @@ export function save(
   state: RootState,
   version: number | string = LATEST,
 ): void {
-  localStorage.setItem(saveKey(version), serialize(state));
+  storage().setItem(saveKey(version), serialize(state));
   saveChangelog(state);
 }
 
@@ -177,7 +178,7 @@ export const saveMiddleware: Middleware<{}, RootState> =
 
 export function clear(): void {
   backup('clear');
-  localStorage.removeItem(saveKey(LATEST));
+  storage().removeItem(saveKey(LATEST));
 }
 
 export const loadActionType = createAction<RootState>('LOAD');
@@ -192,13 +193,14 @@ export const makeLoadableReducer: (r: any) => Reducer<RootState, AnyAction> =
   };
 
 export function backup(name: string): void {
-  const last = localStorage.getItem(saveKey(LATEST));
+  const last = storage().getItem(saveKey(LATEST));
   if (last) {
-    localStorage.setItem(saveKey(`backup:${name}`), last);
+    storage().setItem(saveKey(`backup:${name}`), last);
   }
 }
 
 export function availableVersions(): string[] {
+  const localStorage = storage();
   const keys: string[] = [];
   for (let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i);

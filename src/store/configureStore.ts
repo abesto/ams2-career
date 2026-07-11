@@ -18,12 +18,12 @@ export function configureAppStore(preloadedState?: any) {
 
   // Create the store with saga middleware
   const middlewares = [sagaMiddleware, saveMiddleware];
-  if (process.env.NODE_ENV === 'production') {
+  if (import.meta.env.PROD) {
     middlewares.push(createGaMiddleware());
   }
 
   if (preloadedState === undefined) {
-    if (process.env.NODE_ENV === 'test') {
+    if (import.meta.env.MODE === 'test') {
       preloadedState = {};
     } else {
       preloadedState = load(true) || {};
@@ -48,7 +48,7 @@ export function configureAppStore(preloadedState?: any) {
     reducer: createReducer(dummyReducers),
     middleware: getDefaultMiddleware =>
       getDefaultMiddleware().concat(...middlewares),
-    devTools: process.env.NODE_ENV !== 'production',
+    devTools: !import.meta.env.PROD,
     enhancers: getDefaultEnhancers => getDefaultEnhancers().concat(enhancers),
     preloadedState,
   });

@@ -1,30 +1,33 @@
-jest.mock('react-cookie-consent', () => ({
-  getCookieConsentValue: jest.fn(),
+import { vi } from 'vitest';
+
+import { getCookieConsentValue } from 'react-cookie-consent';
+import { createMiddleware } from 'redux-beacon';
+
+import { createGaMiddleware } from './analytics';
+
+vi.mock('react-cookie-consent', () => ({
+  getCookieConsentValue: vi.fn(),
 }));
 
-jest.mock('@redux-beacon/google-analytics-gtag', () => ({
+vi.mock('@redux-beacon/google-analytics-gtag', () => ({
   __esModule: true,
-  default: jest.fn(() => 'ga'),
-  trackEvent: jest.fn(fn => fn),
-  trackPageView: jest.fn(fn => fn),
+  default: vi.fn(() => 'ga'),
+  trackEvent: vi.fn(fn => fn),
+  trackPageView: vi.fn(fn => fn),
 }));
 
-jest.mock('@redux-beacon/offline-web', () => jest.fn(() => 'offline-storage'));
+vi.mock('@redux-beacon/offline-web', () => ({
+  default: vi.fn(() => 'offline-storage'),
+}));
 
-jest.mock('redux-beacon', () => ({
-  createMiddleware: jest.fn(),
+vi.mock('redux-beacon', () => ({
+  createMiddleware: vi.fn(),
 }));
 
 describe('analytics middleware', () => {
-  const { getCookieConsentValue } = jest.requireMock(
-    'react-cookie-consent',
-  ) as {
-    getCookieConsentValue: jest.Mock;
-  };
-  const reduxBeacon = jest.requireMock('redux-beacon') as {
-    createMiddleware: jest.Mock;
-  };
-  const beaconStoreSpy = jest.fn();
+  const mockedGetCookieConsentValue = vi.mocked(getCookieConsentValue);
+  const mockedCreateMiddleware = vi.mocked(createMiddleware);
+  const beaconStoreSpy = vi.fn();
   const beaconMiddleware = (storeApi: unknown) => {
     beaconStoreSpy(storeApi);
     return (next: any) => (action: any) => {
@@ -34,20 +37,16 @@ describe('analytics middleware', () => {
   };
 
   beforeEach(() => {
-    jest.clearAllMocks();
-    reduxBeacon.createMiddleware.mockReturnValue(beaconMiddleware);
+    vi.clearAllMocks();
+    mockedCreateMiddleware.mockReturnValue(beaconMiddleware as any);
   });
 
   it('builds beacon middleware with the expected event map', () => {
-    getCookieConsentValue.mockReturnValue('granted');
-    let createGaMiddleware!: typeof import('./analytics').createGaMiddleware;
-    jest.isolateModules(() => {
-      ({ createGaMiddleware } = require('./analytics'));
-    });
+    mockedGetCookieConsentValue.mockReturnValue('granted');
 
     createGaMiddleware();
 
-    expect(reduxBeacon.createMiddleware).toHaveBeenCalledWith(
+    expect(mockedCreateMiddleware).toHaveBeenCalledWith(
       expect.objectContaining({
         'career/recordRaceResult': expect.any(Function),
         'career/resetCareer': expect.any(Function),
@@ -61,22 +60,18 @@ describe('analytics middleware', () => {
   });
 
   it('gates analytics dispatch on cookie consent', () => {
-    let createGaMiddleware!: typeof import('./analytics').createGaMiddleware;
-    jest.isolateModules(() => {
-      ({ createGaMiddleware } = require('./analytics'));
-    });
-    const next = jest.fn(action => action.type);
-    const storeApi = { getState: jest.fn(), dispatch: jest.fn() };
+    const next = vi.fn(action => action.type);
+    const storeApi = { getState: vi.fn(), dispatch: vi.fn() };
     const action = { type: 'career/resetCareer' };
 
-    getCookieConsentValue.mockReturnValue('declined');
+    mockedGetCookieConsentValue.mockReturnValue('declined');
     const middleware = createGaMiddleware();
     const declinedResult = middleware(storeApi as any)(next)(action);
     expect(declinedResult).toBe('career/resetCareer');
     expect(beaconStoreSpy).not.toHaveBeenCalled();
 
     next.mockClear();
-    getCookieConsentValue.mockReturnValue('granted');
+    mockedGetCookieConsentValue.mockReturnValue('granted');
     const grantedResult = middleware(storeApi as any)(next)(action);
     expect(grantedResult).toBe('tracked');
     expect(beaconStoreSpy).toHaveBeenCalledWith(storeApi);

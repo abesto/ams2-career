@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Basic sanity: a bunch of race results: achievement 1`] = `
+exports[`Basic sanity: a bunch of race results > achievement 1`] = `
 <div
   aria-hidden="true"
 >
@@ -1472,7 +1472,7 @@ exports[`Basic sanity: a bunch of race results: achievement 1`] = `
 </div>
 `;
 
-exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
+exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
 <div>
   <div
     class="MuiContainer-root css-ur2jdm-MuiContainer-root"
@@ -2923,7 +2923,7 @@ exports[`Basic sanity: a bunch of race results: after-class-pick 1`] = `
 </div>
 `;
 
-exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
+exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
 <div>
   <div
     class="MuiContainer-root css-ur2jdm-MuiContainer-root"
@@ -4389,7 +4389,7 @@ exports[`Basic sanity: a bunch of race results: after-dialogs 1`] = `
 </div>
 `;
 
-exports[`Basic sanity: a bunch of race results: first-load 1`] = `
+exports[`Basic sanity: a bunch of race results > first-load 1`] = `
 <div
   aria-hidden="true"
 >
@@ -4404,7 +4404,7 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
       This website uses cookies to enhance the user experience.
        
       <span
-        style="font-size: 12px; color: lightGray;"
+        style="font-size: 12px; color: lightgray;"
       >
         In particular, we use Google Analytics to understand your use of the app. You can change this later in the Settings menu.
       </span>
@@ -5894,7 +5894,7 @@ exports[`Basic sanity: a bunch of race results: first-load 1`] = `
 </div>
 `;
 
-exports[`Basic sanity: a bunch of race results: level-up 1`] = `
+exports[`Basic sanity: a bunch of race results > level-up 1`] = `
 <div
   aria-hidden="true"
 >
@@ -7312,7 +7312,7 @@ exports[`Basic sanity: a bunch of race results: level-up 1`] = `
 </div>
 `;
 
-exports[`Basic sanity: a bunch of race results: race-result 1`] = `
+exports[`Basic sanity: a bunch of race results > race-result 1`] = `
 <div
   aria-hidden="true"
 >

@@ -26,7 +26,7 @@ export function SaveData(props: Props) {
       <Button
         onClick={() =>
           saveAs(
-            new Blob([localStorage.getItem(selectedSave)!], {
+            new Blob([window.localStorage.getItem(selectedSave)!], {
               type: 'application/octet-stream',
             }),
             selectedSave.replaceAll(':', '-') + '.ams2career',

@@ -7,7 +7,6 @@
  */
 
 import { parser as parseChangelog } from 'keep-a-changelog';
-import raw from 'raw.macro';
 import * as React from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useDispatch } from 'react-redux';
@@ -54,6 +53,8 @@ import { MainPage } from './pages/MainPage';
 import { SettingsPage } from './pages/SettingsPage';
 import { useConnectivitySlice } from './slices/ConnectivitySlice';
 
+import changelogText from '../../CHANGELOG.md?raw';
+
 type ToolbarButtonProps<D extends React.ElementType> = IconButtonProps<D> & {
   icon: React.ReactNode;
   label: string;
@@ -95,7 +96,6 @@ function InnerApp() {
   // Send analytics about page views
   usePageViews();
 
-  const changelogText: string = raw('../../CHANGELOG.md');
   const changelog = parseChangelog(changelogText);
 
   return (

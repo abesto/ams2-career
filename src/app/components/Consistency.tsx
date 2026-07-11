@@ -3,7 +3,7 @@ import * as React from 'react';
 import { checkConsistency } from 'app/data/consistency';
 
 export function Consistency() {
-  if (process.env.NODE_ENV === 'production') {
+  if (import.meta.env.PROD) {
     return null;
   }
   const problems = [...checkConsistency()];

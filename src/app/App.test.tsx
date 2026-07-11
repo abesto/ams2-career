@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { vi } from 'vitest';
 
 import { fireEvent } from '@testing-library/react';
 
@@ -7,13 +8,11 @@ import { render } from './test-utils';
 
 beforeEach(() => {
   let calls = 0;
-  jest
-    .spyOn(Math, 'random')
-    .mockImplementation(() => ((calls++ % 10) + 1) / 20);
+  vi.spyOn(Math, 'random').mockImplementation(() => ((calls++ % 10) + 1) / 20);
 });
 
 afterEach(() => {
-  jest.restoreAllMocks();
+  vi.restoreAllMocks();
 });
 
 test('Basic sanity: a bunch of race results', async () => {

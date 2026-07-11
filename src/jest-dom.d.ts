@@ -1,1 +1,1 @@
-/// <reference types="testing-library__jest-dom" />
+/// <reference types="@testing-library/jest-dom" />

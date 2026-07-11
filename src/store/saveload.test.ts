@@ -11,6 +11,7 @@ import {
   serialize,
   versionForNewSaves,
 } from './saveload';
+import { vi } from 'vitest';
 
 import { RootState } from 'types';
 
@@ -29,8 +30,8 @@ function sampleState(overrides: Partial<RootState> = {}): RootState {
 
 describe('saveload', () => {
   beforeEach(() => {
-    localStorage.clear();
-    jest.restoreAllMocks();
+    window.localStorage.clear();
+    vi.restoreAllMocks();
   });
 
   it('saves and loads compressed state while dropping transient keys', () => {
@@ -62,11 +63,11 @@ describe('saveload', () => {
         seenVersion: { raw: '1.2.3', major: 1, minor: 2, patch: 3 },
       },
     });
-    expect(localStorage.getItem('app:save:latest')).not.toBeNull();
+    expect(window.localStorage.getItem('app:save:latest')).not.toBeNull();
   });
 
   it('loads legacy plain JSON strings', () => {
-    localStorage.setItem(
+    window.localStorage.setItem(
       'app:save:latest',
       JSON.stringify(
         sampleState({ saveMeta: { version: 3, timestamp: 1000 } }),
@@ -129,13 +130,19 @@ describe('saveload', () => {
     });
     expect(loaded?.career?.raceResults[0].trackId).toBe('Interlagos-Kart-1');
     expect(loaded?.mainPage?.raceOptions[0].trackId).toBe('Interlagos-Kart-2');
-    expect(localStorage.getItem('app:save:backup:migration:0')).not.toBeNull();
-    expect(localStorage.getItem('app:save:backup:migration:1')).not.toBeNull();
-    expect(localStorage.getItem('app:save:backup:migration:2')).not.toBeNull();
+    expect(
+      window.localStorage.getItem('app:save:backup:migration:0'),
+    ).not.toBeNull();
+    expect(
+      window.localStorage.getItem('app:save:backup:migration:1'),
+    ).not.toBeNull();
+    expect(
+      window.localStorage.getItem('app:save:backup:migration:2'),
+    ).not.toBeNull();
   });
 
   it('loads changelog state from its separate storage key', () => {
-    localStorage.setItem(
+    window.localStorage.setItem(
       'changelog',
       serialize({
         seenVersion: { raw: '1.0.1', major: 1, minor: 0, patch: 1 },
@@ -150,20 +157,22 @@ describe('saveload', () => {
   });
 
   it('backs up and clears the latest save', () => {
-    localStorage.setItem('app:save:latest', serialize(sampleState()));
+    window.localStorage.setItem('app:save:latest', serialize(sampleState()));
 
     backup('manual');
     clear();
 
-    expect(localStorage.getItem('app:save:latest')).toBeNull();
-    expect(localStorage.getItem('app:save:backup:manual')).not.toBeNull();
-    expect(localStorage.getItem('app:save:backup:clear')).not.toBeNull();
+    expect(window.localStorage.getItem('app:save:latest')).toBeNull();
+    expect(
+      window.localStorage.getItem('app:save:backup:manual'),
+    ).not.toBeNull();
+    expect(window.localStorage.getItem('app:save:backup:clear')).not.toBeNull();
   });
 
   it('lists available saved versions', () => {
-    localStorage.setItem('app:save:latest', 'a');
-    localStorage.setItem('app:save:backup:reset', 'b');
-    localStorage.setItem('other:key', 'c');
+    window.localStorage.setItem('app:save:latest', 'a');
+    window.localStorage.setItem('app:save:backup:reset', 'b');
+    window.localStorage.setItem('other:key', 'c');
 
     expect(availableVersions().sort()).toEqual([
       'app:save:backup:reset',
@@ -172,7 +181,7 @@ describe('saveload', () => {
   });
 
   it('loadable reducer migrates LOAD actions before returning payload state', () => {
-    const reducer = jest.fn((state = { untouched: true }) => state);
+    const reducer = vi.fn((state = { untouched: true }) => state);
     const loadableReducer = makeLoadableReducer(reducer);
     const payload = {
       career: { raceResults: [] },
@@ -186,8 +195,8 @@ describe('saveload', () => {
   });
 
   it('save middleware dispatches timestamp updates and persists on timestamp actions', () => {
-    const dispatch = jest.fn();
-    const next = jest.fn();
+    const dispatch = vi.fn();
+    const next = vi.fn();
     const state = sampleState();
     const middleware = saveMiddleware({
       dispatch,

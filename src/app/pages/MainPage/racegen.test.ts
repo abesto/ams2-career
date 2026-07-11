@@ -1,4 +1,5 @@
 import dayjs from 'dayjs';
+import { vi } from 'vitest';
 
 import {
   getCarClassesByName,
@@ -18,14 +19,14 @@ const enduranceDiscipline = getDisciplineOfCarClass(p4Class);
 
 describe('racegen', () => {
   beforeEach(() => {
-    jest.restoreAllMocks();
-    jest.spyOn(random, 'choice').mockImplementation(items => items[0]);
+    vi.restoreAllMocks();
+    vi.spyOn(random, 'choice').mockImplementation(items => items[0]);
   });
 
   it('falls back to the highest available unlocked class when the player level has no exact match', () => {
-    jest
-      .spyOn(random, 'randomDateBetween')
-      .mockReturnValue(dayjs('2005-06-01T00:00:00'));
+    vi.spyOn(random, 'randomDateBetween').mockReturnValue(
+      dayjs('2005-06-01T00:00:00'),
+    );
 
     const races = racegen(enduranceDiscipline, {
       raceResults: [],
@@ -42,9 +43,9 @@ describe('racegen', () => {
   });
 
   it('forces daytime race hours for classes without headlights', () => {
-    jest
-      .spyOn(random, 'randomDateBetween')
-      .mockReturnValue(dayjs('2005-06-01T00:00:00'));
+    vi.spyOn(random, 'randomDateBetween').mockReturnValue(
+      dayjs('2005-06-01T00:00:00'),
+    );
 
     const races = racegen(openWheelDiscipline, {
       raceResults: [],

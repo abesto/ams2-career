@@ -4,16 +4,14 @@ import {
 } from 'app/data/car_classes';
 import { getCarClassId } from 'types/CarClass';
 import { getDisciplineId } from 'types/Discipline';
+import { vi } from 'vitest';
 
 import { mainPageActions, mainPageReducer, initialState } from './';
+import { racegen } from '../racegen';
 
-jest.mock('../racegen', () => ({
-  racegen: jest.fn(),
+vi.mock('../racegen', () => ({
+  racegen: vi.fn(),
 }));
-
-const { racegen } = jest.requireMock('../racegen') as {
-  racegen: jest.Mock;
-};
 
 const clubGt5 = getCarClassesByName('GT5')[0];
 const gtGt5 = getCarClassesByName('GT5')[1];
@@ -37,11 +35,11 @@ function race(carClassId: string) {
 
 describe('main page slice', () => {
   beforeEach(() => {
-    racegen.mockReset();
+    vi.mocked(racegen).mockReset();
   });
 
   it('keeps the last raced class selected when it is still available', () => {
-    racegen.mockImplementation(discipline => {
+    vi.mocked(racegen).mockImplementation(discipline => {
       if (discipline.name === 'Club') {
         return [race(clubGt5Id)];
       }
@@ -71,7 +69,7 @@ describe('main page slice', () => {
   });
 
   it('falls back to the same discipline when the exact last class is unavailable', () => {
-    racegen.mockImplementation(discipline =>
+    vi.mocked(racegen).mockImplementation(discipline =>
       discipline.name === 'GT' ? [race(gt3Id)] : [],
     );
 
@@ -99,7 +97,7 @@ describe('main page slice', () => {
   });
 
   it('falls back to the first race when the previous discipline is unavailable', () => {
-    racegen.mockImplementation(discipline =>
+    vi.mocked(racegen).mockImplementation(discipline =>
       discipline.name === 'Club' ? [race(clubGt5Id)] : [],
     );
 

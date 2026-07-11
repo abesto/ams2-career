@@ -3,14 +3,15 @@ import * as React from 'react';
 import { fireEvent, render } from '@testing-library/react';
 import { HelmetProvider } from 'react-helmet-async';
 import { Provider } from 'react-redux';
+import { vi } from 'vitest';
 
 import { configureAppStore } from 'store/configureStore';
 
 import { SettingsPage } from './index';
 
-const mockSetCookieConsentValue = jest.fn();
+const mockSetCookieConsentValue = vi.fn();
 
-jest.mock('app/components/OurCookieConsent', () => ({
+vi.mock('app/components/OurCookieConsent', () => ({
   GRANTED: 'granted',
   DECLINED: 'declined',
   useCookieConsentValue: () => ['declined', mockSetCookieConsentValue],

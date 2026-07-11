@@ -1,9 +1,9 @@
 import Papa from 'papaparse';
-import raw from 'raw.macro';
 
 import { CarClass, CarClassId, getCarClassId } from '../../types/CarClass';
 import { getTrackId, Track, TrackId } from '../../types/Track';
 import { getCarClassesByName } from './car_classes';
+import tracksCsv from './tracks.csv?raw';
 
 interface Record {
   [key: string]: string;
@@ -12,7 +12,7 @@ interface Record {
 }
 
 // Manually curated
-const data: Record[] = Papa.parse(raw('./tracks.csv'), {
+const data: Record[] = Papa.parse(tracksCsv, {
   header: true,
 }).data;
 
