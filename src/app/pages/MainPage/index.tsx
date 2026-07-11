@@ -67,7 +67,7 @@ export function MainPage(props: Props) {
         <title>Go Race!</title>
       </Helmet>
       <Grid container spacing={2}>
-        <Grid item xs={12} lg={6}>
+        <Grid size={{ xs: 12, lg: 6 }}>
           <Paper sx={{ p: 2 }}>
             <Typography variant="h4" sx={{ mb: 2 }}>
               Pick a Race
@@ -88,7 +88,7 @@ export function MainPage(props: Props) {
             />
           </Paper>
         </Grid>
-        <Grid item xs={12} lg={6}>
+        <Grid size={{ xs: 12, lg: 6 }}>
           <Paper sx={{ p: 2 }}>
             {selectedRace !== null && (
               <>

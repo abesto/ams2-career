@@ -47,9 +47,9 @@ interface Props {}
 
 function DisciplineProgressGrid(props: { career: EnrichedCareerData }) {
   return (
-    <Grid item container spacing={1}>
+    <Grid container spacing={1}>
       {getAllDisciplines().map(discipline => (
-        <Grid item xs={12} lg={4} key={discipline.name}>
+        <Grid size={{ xs: 12, lg: 4 }} key={discipline.name}>
           <Paper sx={{ p: 2 }}>
             <DisciplineProgress discipline={discipline} career={props.career} />
           </Paper>
@@ -79,9 +79,9 @@ function ResetCareer(props: { onReset: () => void }) {
 function Achievements(props: { achievements: Achievement[] }) {
   const { achievements } = props;
   return (
-    <Grid container spacing={2} justifyContent="space-around">
+    <Grid container spacing={2} sx={{ justifyContent: 'space-around' }}>
       {achievements.map(achievement => (
-        <Grid item sx={{ textAlign: 'center' }} key={achievement.name}>
+        <Grid size="auto" sx={{ textAlign: 'center' }} key={achievement.name}>
           <Paper sx={{ backgroundColor: '#fafafa', p: 2 }}>
             <AchievementIcon
               level={achievement.level}

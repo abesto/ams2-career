@@ -50,7 +50,7 @@ export function SettingsPage() {
       </Box>
 
       <Grid container spacing={2}>
-        <Grid item xs={4}>
+        <Grid size={4}>
           <Paper sx={{ p: 3 }}>
             <Typography variant="h5">Cross-Discipline XP</Typography>
             <Typography>
@@ -91,7 +91,7 @@ export function SettingsPage() {
           </Paper>
         </Grid>
 
-        <Grid item xs={4}>
+        <Grid size={4}>
           <Paper sx={{ p: 3 }}>
             <Typography variant="h5">XP Multiplier</Typography>
             <Typography>
@@ -101,9 +101,11 @@ export function SettingsPage() {
             <FormGroup row sx={{ mt: 1 }}>
               <TextField
                 type="number"
-                inputProps={{
-                  min: 0.1,
-                  step: 0.1,
+                slotProps={{
+                  htmlInput: {
+                    min: 0.1,
+                    step: 0.1,
+                  },
                 }}
                 value={settings.xpMultiplier ?? initialSettings.xpMultiplier}
                 size="small"
@@ -128,7 +130,7 @@ export function SettingsPage() {
           </Paper>
         </Grid>
 
-        <Grid item xs={4}>
+        <Grid size={4}>
           <Paper sx={{ p: 3 }}>
             <Typography variant="h5">Position XP Multiplier</Typography>
             <Typography>
@@ -143,9 +145,11 @@ export function SettingsPage() {
             <FormGroup row sx={{ mt: 1 }}>
               <TextField
                 type="number"
-                inputProps={{
-                  min: 0.0,
-                  step: 0.1,
+                slotProps={{
+                  htmlInput: {
+                    min: 0.0,
+                    step: 0.1,
+                  },
                 }}
                 value={
                   settings.positionXpMultiplier ??
@@ -169,7 +173,7 @@ export function SettingsPage() {
           </Paper>
         </Grid>
 
-        <Grid item xs={4}>
+        <Grid size={4}>
           <Paper sx={{ p: 3 }}>
             <Typography variant="h5">Cookies</Typography>
             <Typography>
@@ -192,7 +196,7 @@ export function SettingsPage() {
           </Paper>
         </Grid>
 
-        <Grid item xs={4}>
+        <Grid size={4}>
           <Paper sx={{ p: 3 }}>
             <Typography variant="h5">Regenerate Races</Typography>
             <Typography>
@@ -206,9 +210,10 @@ export function SettingsPage() {
               label="Enable Regenerating Races"
               control={
                 <Checkbox
-                  inputProps={{
-                    // @ts-ignore
-                    'data-testid': 'regenerate-races',
+                  slotProps={{
+                    input: {
+                      'data-testid': 'regenerate-races',
+                    } as React.ComponentProps<'input'>,
                   }}
                   checked={
                     settings.canRegenerateRaces ??

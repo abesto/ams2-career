@@ -45,7 +45,7 @@ interface Props {
 
 function Item({ label, children }) {
   return (
-    <Grid item>
+    <Grid size="auto">
       <Stack
         direction="row"
         sx={{
@@ -85,8 +85,8 @@ function AIAdjustment(props: AIAdjustmentProps) {
   const { label, value, onChange } = props;
   return (
     <>
-      <Grid item>+</Grid>
-      <Grid item>
+      <Grid size="auto">+</Grid>
+      <Grid size="auto">
         <TextField
           sx={{ width: Math.max(10, label.length * 1.1).toString() + 'ch' }}
           label={label}
@@ -165,7 +165,7 @@ export function GoRacing(props: Props) {
           <InfoIcon fontSize="small" />
         </Tooltip>
       </Typography>
-      <Grid container spacing={1} alignItems="center">
+      <Grid container spacing={1} sx={{ alignItems: 'center' }}>
         <Item label="Based on past results">{race.aiLevel}</Item>
         <AIAdjustment
           label="Global"
@@ -208,7 +208,7 @@ export function GoRacing(props: Props) {
             )
           }
         />
-        <Grid item>=</Grid>
+        <Grid size="auto">=</Grid>
         <Item label="Final AI Strength">{adjustedAI}</Item>
       </Grid>
       <Box sx={{ mt: 3 }}>

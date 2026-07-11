@@ -58,10 +58,10 @@ export function CarsAndTracks() {
 
   return (
     <Grid container spacing={3}>
-      <Grid item xs={8}>
+      <Grid size={8}>
         <Cars cars={cars} onHover={setHoveredCarId} />
       </Grid>
-      <Grid item xs={4}>
+      <Grid size={4}>
         <Tracks tracks={tracks} onHover={setHoveredTrackId} />
       </Grid>
     </Grid>
