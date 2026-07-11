@@ -2,7 +2,6 @@ import { execSync } from 'node:child_process';
 
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
-import tsconfigPaths from 'vite-tsconfig-paths';
 
 function readGitValue(command: string, fallback = 'unknown') {
   try {
@@ -13,7 +12,10 @@ function readGitValue(command: string, fallback = 'unknown') {
 }
 
 export default defineConfig({
-  plugins: [react(), tsconfigPaths()],
+  plugins: [react()],
+  resolve: {
+    tsconfigPaths: true,
+  },
   build: {
     outDir: 'build',
     sourcemap: false,

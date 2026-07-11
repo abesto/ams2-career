@@ -51,7 +51,7 @@
     "@types/react-dom": "19.2.3",
     "@types/react-test-renderer": "19.1.0",
     "@types/shelljs": "^0.10.0",
-    "@vitejs/plugin-react": "^5.1.0",
+    "@vitejs/plugin-react": "^6.0.3",
     "axios": "^1.18.1",
     "csv-stringify": "^6.8.1",
     "eslint": "^8.57.1",
@@ -68,8 +68,7 @@
     "stylelint-config-recommended": "^7.0.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3",
-    "vite": "^7.1.0",
-    "vite-tsconfig-paths": "^5.1.4",
+    "vite": "^8.1.4",
     "vitest": "^4.1.10"
   },
   "scripts": {
