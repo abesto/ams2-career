@@ -26,11 +26,13 @@ export function Changelog(props: Props) {
 
   const seenVersion = useSelector(selectChangelog).seenVersion;
   const releases = changelog.releases.filter(
-    release => release.version && cmpSemVer(release.version, seenVersion) > 0,
+    release =>
+      release.parsedVersion &&
+      cmpSemVer(release.parsedVersion, seenVersion) > 0,
   );
 
   const markCurrentVersionSeen = React.useCallback(() => {
-    const { major, minor, patch, raw } = releases[0].version!;
+    const { major, minor, patch, raw } = releases[0].parsedVersion!;
     dispatch(actions.setSeenVersion({ major, minor, patch, raw }));
   }, [releases, actions, dispatch]);
 
@@ -71,7 +73,7 @@ export function Changelog(props: Props) {
           </em>
         </DialogContentText>
         {releases.map(release => (
-          <Markdown data-testid="changelog-entries" key={release.version!.raw}>
+          <Markdown data-testid="changelog-entries" key={release.version!}>
             {release.toString()}
           </Markdown>
         ))}

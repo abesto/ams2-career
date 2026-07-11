@@ -18,11 +18,13 @@ describe('Changelog component', () => {
 
   it("Doesn't show changelog if we've seen the latest version", async () => {
     const store = configureAppStore({
-      changelog: { seenVersion: simpleSemVer(changelog.releases[0].version!) },
+      changelog: {
+        seenVersion: simpleSemVer(changelog.releases[0].parsedVersion!),
+      },
     });
     store.dispatch(
       changelogActions.setSeenVersion(
-        simpleSemVer(changelog.releases[0].version!),
+        simpleSemVer(changelog.releases[0].parsedVersion!),
       ),
     );
     const { asFragment } = render(<Changelog changelog={changelog} />, {
@@ -33,7 +35,9 @@ describe('Changelog component', () => {
 
   it('Shows the latest changelog entry when we saw the previous one', async () => {
     const store = configureAppStore({
-      changelog: { seenVersion: simpleSemVer(changelog.releases[1].version!) },
+      changelog: {
+        seenVersion: simpleSemVer(changelog.releases[1].parsedVersion!),
+      },
     });
     const { getByTestId } = render(<Changelog changelog={changelog} />, {
       store,

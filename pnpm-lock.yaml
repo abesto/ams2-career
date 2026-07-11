@@ -54,8 +54,8 @@ importers:
         specifier: ^2.2.0
         version: 2.2.0
       keep-a-changelog:
-        specifier: ^2.1.0
-        version: 2.1.0
+        specifier: ^3.0.5
+        version: 3.0.5
       lint-staged:
         specifier: ^17.0.8
         version: 17.0.8
@@ -911,12 +911,6 @@ packages:
   '@csstools/css-tokenizer@4.0.0':
     resolution: {integrity: sha512-QxULHAm7cNu72w97JUNCBFODFaXpbDg+dP8b/oWFAZ2MTRppA3U00Y2L1HqaS4J6yBqxwa/Y3nMBaxVKbB/NsA==}
     engines: {node: '>=20.19.0'}
-
-  '@deno/shim-deno-test@0.3.3':
-    resolution: {integrity: sha512-Ge0Tnl7zZY0VvEfgsyLhjid8DzI1d0La0dgm+3m0/A8gZXgp5xwlyIyue5e4SCUuVB/3AH/0lun9LcJhhTwmbg==}
-
-  '@deno/shim-deno@0.4.3':
-    resolution: {integrity: sha512-m5iXsq3Nvv1aJ1xwUQGnXXOztZ5UUF9dZje3l6EbX41zE5+MioK1NN+2+C3nlWWs9PvSFam4EbZVG3JUbLCeDg==}
 
   '@emnapi/core@1.11.1':
     resolution: {integrity: sha512-RSvbQmHzdKzNsLYa/wHrbc3KN4sYLKAdPZxqiM2HATqv/SBk2/ENSHpvXGaLOMcsAyz0poEGqkmmKYG3OWiJEQ==}
@@ -2814,6 +2808,10 @@ packages:
   ini@1.3.8:
     resolution: {integrity: sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==}
 
+  ini@6.0.0:
+    resolution: {integrity: sha512-IBTdIkzZNOpqm7q3dRqJvMaldXjDHWkEDfrwGEQTs5eaQMWV+djAhR+wahyNNMAa+qpbDUhBMVt4ZKNwpPm7xQ==}
+    engines: {node: ^20.17.0 || >=22.9.0}
+
   inquirer-directory@2.2.0:
     resolution: {integrity: sha512-gWp7B/Axj6IimZ6qrI5iiRZ7Ew3jssjM4CXketdwh1IPT0b19dBP2f3O/suXQy4iWjWJcNNycSzHIPBOWTxtsQ==}
 
@@ -3087,8 +3085,8 @@ packages:
     resolution: {integrity: sha512-ZZow9HBI5O6EPgSJLUb8n2NKgmVWTwCvHGwFuJlMjvLFqlGG6pjirPhtdsseaLZjSibD8eegzmYpUZwoIlj2cQ==}
     engines: {node: '>=4.0'}
 
-  keep-a-changelog@2.1.0:
-    resolution: {integrity: sha512-Svnmt3UTW0U8RdAi24jy2OuU03wEYZkD7vrJuK9u5gIYk6as/BvbSDK0oFtnZLC8xDludDYDsomq7tetEUR0Ow==}
+  keep-a-changelog@3.0.5:
+    resolution: {integrity: sha512-ReDwgw+/5/emBeE+fbUpXr3KDqtAjo7VX/o9H+WiEh2yRqxozWzD6RUIs+rsj/C6FxQeBqjwkAAZtJrCIxcJQw==}
     hasBin: true
 
   keyv@4.5.4:
@@ -5366,13 +5364,6 @@ snapshots:
 
   '@csstools/css-tokenizer@4.0.0': {}
 
-  '@deno/shim-deno-test@0.3.3': {}
-
-  '@deno/shim-deno@0.4.3':
-    dependencies:
-      '@deno/shim-deno-test': 0.3.3
-      which: 2.0.2
-
   '@emnapi/core@1.11.1':
     dependencies:
       '@emnapi/wasi-threads': 1.2.2
@@ -7417,6 +7408,8 @@ snapshots:
 
   ini@1.3.8: {}
 
+  ini@6.0.0: {}
+
   inquirer-directory@2.2.0:
     dependencies:
       chalk: 1.1.3
@@ -7731,9 +7724,10 @@ snapshots:
       object.assign: 4.1.7
       object.values: 1.2.1
 
-  keep-a-changelog@2.1.0:
+  keep-a-changelog@3.0.5:
     dependencies:
-      '@deno/shim-deno': 0.4.3
+      ini: 6.0.0
+      semver: 7.8.5
 
   keyv@4.5.4:
     dependencies:
