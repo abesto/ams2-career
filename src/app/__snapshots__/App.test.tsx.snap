@@ -102,14 +102,13 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
         <div
           class="MuiBox-root css-i9gxme"
         />
-        <a
+        <button
           aria-label="Help"
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1270g0r-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiIconButton-root"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-h7cjts-MuiButtonBase-root-MuiIconButton-root"
           data-mui-internal-clone-element="true"
           icon="[object Object]"
           label="Help"
           tabindex="0"
-          target="_blank"
           type="button"
         >
           <svg
@@ -123,10 +122,10 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
               d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 17h-2v-2h2zm2.07-7.75-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25"
             />
           </svg>
-        </a>
+        </button>
         <a
           aria-label="Wiki (new tab)"
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1270g0r-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiIconButton-root"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-h7cjts-MuiButtonBase-root-MuiIconButton-root"
           data-mui-internal-clone-element="true"
           href="https://github.com/abesto/ams2-career/wiki"
           icon="[object Object]"
@@ -151,7 +150,7 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
         </a>
         <a
           aria-label="GitHub (new tab)"
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1270g0r-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiIconButton-root"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-h7cjts-MuiButtonBase-root-MuiIconButton-root"
           data-mui-internal-clone-element="true"
           href="https://github.com/abesto/ams2-career/"
           icon="[object Object]"
@@ -1553,14 +1552,13 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
         <div
           class="MuiBox-root css-i9gxme"
         />
-        <a
+        <button
           aria-label="Help"
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1270g0r-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiIconButton-root"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-h7cjts-MuiButtonBase-root-MuiIconButton-root"
           data-mui-internal-clone-element="true"
           icon="[object Object]"
           label="Help"
           tabindex="0"
-          target="_blank"
           type="button"
         >
           <svg
@@ -1574,10 +1572,10 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
               d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 17h-2v-2h2zm2.07-7.75-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25"
             />
           </svg>
-        </a>
+        </button>
         <a
           aria-label="Wiki (new tab)"
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1270g0r-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiIconButton-root"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-h7cjts-MuiButtonBase-root-MuiIconButton-root"
           data-mui-internal-clone-element="true"
           href="https://github.com/abesto/ams2-career/wiki"
           icon="[object Object]"
@@ -1602,7 +1600,7 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
         </a>
         <a
           aria-label="GitHub (new tab)"
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1270g0r-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiIconButton-root"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-h7cjts-MuiButtonBase-root-MuiIconButton-root"
           data-mui-internal-clone-element="true"
           href="https://github.com/abesto/ams2-career/"
           icon="[object Object]"
@@ -2991,14 +2989,13 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
         <div
           class="MuiBox-root css-i9gxme"
         />
-        <a
+        <button
           aria-label="Help"
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1270g0r-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiIconButton-root"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-h7cjts-MuiButtonBase-root-MuiIconButton-root"
           data-mui-internal-clone-element="true"
           icon="[object Object]"
           label="Help"
           tabindex="0"
-          target="_blank"
           type="button"
         >
           <svg
@@ -3012,10 +3009,10 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
               d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 17h-2v-2h2zm2.07-7.75-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25"
             />
           </svg>
-        </a>
+        </button>
         <a
           aria-label="Wiki (new tab)"
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1270g0r-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiIconButton-root"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-h7cjts-MuiButtonBase-root-MuiIconButton-root"
           data-mui-internal-clone-element="true"
           href="https://github.com/abesto/ams2-career/wiki"
           icon="[object Object]"
@@ -3040,7 +3037,7 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
         </a>
         <a
           aria-label="GitHub (new tab)"
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1270g0r-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiIconButton-root"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-h7cjts-MuiButtonBase-root-MuiIconButton-root"
           data-mui-internal-clone-element="true"
           href="https://github.com/abesto/ams2-career/"
           icon="[object Object]"
@@ -4483,14 +4480,13 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
         <div
           class="MuiBox-root css-i9gxme"
         />
-        <a
+        <button
           aria-label="Help"
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1270g0r-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiIconButton-root"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-h7cjts-MuiButtonBase-root-MuiIconButton-root"
           data-mui-internal-clone-element="true"
           icon="[object Object]"
           label="Help"
           tabindex="0"
-          target="_blank"
           type="button"
         >
           <svg
@@ -4504,10 +4500,10 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
               d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 17h-2v-2h2zm2.07-7.75-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25"
             />
           </svg>
-        </a>
+        </button>
         <a
           aria-label="Wiki (new tab)"
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1270g0r-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiIconButton-root"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-h7cjts-MuiButtonBase-root-MuiIconButton-root"
           data-mui-internal-clone-element="true"
           href="https://github.com/abesto/ams2-career/wiki"
           icon="[object Object]"
@@ -4532,7 +4528,7 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
         </a>
         <a
           aria-label="GitHub (new tab)"
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1270g0r-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiIconButton-root"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-h7cjts-MuiButtonBase-root-MuiIconButton-root"
           data-mui-internal-clone-element="true"
           href="https://github.com/abesto/ams2-career/"
           icon="[object Object]"
@@ -5938,14 +5934,13 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
         <div
           class="MuiBox-root css-i9gxme"
         />
-        <a
+        <button
           aria-label="Help"
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1270g0r-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiIconButton-root"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-h7cjts-MuiButtonBase-root-MuiIconButton-root"
           data-mui-internal-clone-element="true"
           icon="[object Object]"
           label="Help"
           tabindex="0"
-          target="_blank"
           type="button"
         >
           <svg
@@ -5959,10 +5954,10 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
               d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 17h-2v-2h2zm2.07-7.75-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25"
             />
           </svg>
-        </a>
+        </button>
         <a
           aria-label="Wiki (new tab)"
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1270g0r-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiIconButton-root"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-h7cjts-MuiButtonBase-root-MuiIconButton-root"
           data-mui-internal-clone-element="true"
           href="https://github.com/abesto/ams2-career/wiki"
           icon="[object Object]"
@@ -5987,7 +5982,7 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
         </a>
         <a
           aria-label="GitHub (new tab)"
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1270g0r-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiIconButton-root"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-h7cjts-MuiButtonBase-root-MuiIconButton-root"
           data-mui-internal-clone-element="true"
           href="https://github.com/abesto/ams2-career/"
           icon="[object Object]"
@@ -7337,14 +7332,13 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
         <div
           class="MuiBox-root css-i9gxme"
         />
-        <a
+        <button
           aria-label="Help"
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1270g0r-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiIconButton-root"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-h7cjts-MuiButtonBase-root-MuiIconButton-root"
           data-mui-internal-clone-element="true"
           icon="[object Object]"
           label="Help"
           tabindex="0"
-          target="_blank"
           type="button"
         >
           <svg
@@ -7358,10 +7352,10 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
               d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 17h-2v-2h2zm2.07-7.75-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25"
             />
           </svg>
-        </a>
+        </button>
         <a
           aria-label="Wiki (new tab)"
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1270g0r-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiIconButton-root"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-h7cjts-MuiButtonBase-root-MuiIconButton-root"
           data-mui-internal-clone-element="true"
           href="https://github.com/abesto/ams2-career/wiki"
           icon="[object Object]"
@@ -7386,7 +7380,7 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
         </a>
         <a
           aria-label="GitHub (new tab)"
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1270g0r-MuiTypography-root-MuiLink-root-MuiButtonBase-root-MuiIconButton-root"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium css-h7cjts-MuiButtonBase-root-MuiIconButton-root"
           data-mui-internal-clone-element="true"
           href="https://github.com/abesto/ams2-career/"
           icon="[object Object]"

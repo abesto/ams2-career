@@ -16,6 +16,9 @@ afterEach(() => {
 });
 
 test('Basic sanity: a bunch of race results', async () => {
+  const consoleError = vi
+    .spyOn(console, 'error')
+    .mockImplementation(() => undefined);
   const { findByRole, findByText, container } = render(<App />);
   const click = async (role, opts) =>
     fireEvent.click(await findByRole(role, opts));
@@ -70,6 +73,11 @@ test('Basic sanity: a bunch of race results', async () => {
   expect(await findByText(/Race Results: P1 Carrera Cup/));
   expect(await findByText(/Achieve maximum XP in Karting/));
   expect(container).toMatchSnapshot('achievement');
+  expect(consoleError).not.toHaveBeenCalledWith(
+    expect.stringContaining(
+      'A component rendering a native <button> resolved to a non-<button> element',
+    ),
+  );
 }, 15000);
 
 test('Regenerate races', async () => {

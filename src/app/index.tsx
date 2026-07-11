@@ -31,7 +31,6 @@ import {
   CssBaseline,
   IconButton,
   IconButtonProps,
-  Link,
   Toolbar,
   Tooltip,
   Typography,
@@ -63,12 +62,14 @@ type ToolbarButtonProps<D extends React.ElementType> = IconButtonProps<D> & {
 function ToolbarButton<D extends React.ElementType>(
   props: ToolbarButtonProps<D>,
 ) {
+  const target = props.href ? '_blank' : undefined;
+
   return (
     <Tooltip title={props.label}>
       <IconButton
-        component={props.component || Link}
+        component={props.component}
         aria-label={props.label}
-        target="_blank"
+        target={target}
         color="inherit"
         {...props}
       >
@@ -161,17 +162,18 @@ function InnerApp() {
             <ToolbarButton
               label="Help"
               icon={<HelpIcon />}
-              component={Link}
               onClick={() => setForceWelcome(true)}
             />
             <ToolbarButton
               label="Wiki (new tab)"
               icon={<MenuBookIcon />}
+              component="a"
               href="https://github.com/abesto/ams2-career/wiki"
             />
             <ToolbarButton
               label="GitHub (new tab)"
               icon={<GitHubIcon />}
+              component="a"
               href="https://github.com/abesto/ams2-career/"
             />
             <ToolbarButton
