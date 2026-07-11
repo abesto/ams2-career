@@ -26,7 +26,7 @@ export function Tracks(props: Props) {
   const tracks = allTracks.filter(
     (track: Track) =>
       track.name.toLowerCase().includes(nameFilter.toLowerCase()) &&
-      track.configuration
+      (track.configuration ?? '')
         .toLowerCase()
         .includes(configurationFilter.toLowerCase()),
   );
@@ -65,7 +65,7 @@ export function Tracks(props: Props) {
                 hover={true}
               >
                 <TableCell>{track.name}</TableCell>
-                <TableCell>{track.configuration}</TableCell>
+                <TableCell>{track.configuration ?? ''}</TableCell>
               </TableRow>
             ))}
           </TableBody>

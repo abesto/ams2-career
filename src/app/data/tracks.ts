@@ -18,13 +18,13 @@ const data: Record[] = Papa.parse(tracksCsv, {
 
 export const TRACKS: Map<TrackId, Track> = new Map();
 for (const { name, configuration } of data) {
-  const track = { name, configuration };
+  const track = { name: name ?? '', configuration: configuration ?? '' };
   TRACKS.set(getTrackId(track), track);
 }
 
 let CAR_CLASS_TO_TRACKS: Map<CarClassId, TrackId[]> = new Map();
 for (const { name, configuration, ...classes } of data) {
-  const track = { name, configuration };
+  const track = { name: name ?? '', configuration: configuration ?? '' };
   const trackId = getTrackId(track);
   for (const [carClassName, canRace] of Object.entries(classes)) {
     if (canRace === 'x') {
