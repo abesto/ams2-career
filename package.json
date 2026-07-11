@@ -36,7 +36,6 @@
     "react-test-renderer": "^19.2.7",
     "redux": "^5.0.1",
     "redux-beacon": "^2.1.0",
-    "redux-injectors": "^2.1.0",
     "redux-saga": "^1.5.0",
     "serve": "^14.2.6",
     "shelljs": "^0.10.0"

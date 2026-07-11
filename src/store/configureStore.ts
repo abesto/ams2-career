@@ -2,12 +2,12 @@
  * Create the store with dynamic reducers
  */
 
-import { createInjectorsEnhancer } from 'redux-injectors';
 import createSagaMiddleware from 'redux-saga';
 
 import { configureStore, StoreEnhancer } from '@reduxjs/toolkit';
 
 import { createGaMiddleware } from '../utils/analytics';
+import { createInjectorsEnhancer } from '../utils/redux-injectors';
 import { createReducerWithPlaceholders } from './reducers';
 import { load, saveMiddleware } from './saveload';
 

@@ -1525,9 +1525,7 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
               aria-hidden="true"
               class="MuiBadge-badge MuiBadge-standard MuiBadge-invisible MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorInfo css-pdb7rd-MuiBadge-badge"
               style="--Badge-translate: 50%, -50%; --Badge-inset: 0 0 auto auto; --Badge-origin: 100% 0%;"
-            >
-              0
-            </span>
+            />
           </span>
         </button>
         <button
@@ -2962,9 +2960,7 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
               aria-hidden="true"
               class="MuiBadge-badge MuiBadge-standard MuiBadge-invisible MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorInfo css-pdb7rd-MuiBadge-badge"
               style="--Badge-translate: 50%, -50%; --Badge-inset: 0 0 auto auto; --Badge-origin: 100% 0%;"
-            >
-              0
-            </span>
+            />
           </span>
         </button>
         <button
@@ -4453,9 +4449,7 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
               aria-hidden="true"
               class="MuiBadge-badge MuiBadge-standard MuiBadge-invisible MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorInfo css-pdb7rd-MuiBadge-badge"
               style="--Badge-translate: 50%, -50%; --Badge-inset: 0 0 auto auto; --Badge-origin: 100% 0%;"
-            >
-              0
-            </span>
+            />
           </span>
         </button>
         <button

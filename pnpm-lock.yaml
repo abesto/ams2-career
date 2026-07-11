@@ -101,9 +101,6 @@ importers:
       redux-beacon:
         specifier: ^2.1.0
         version: 2.1.0
-      redux-injectors:
-        specifier: ^2.1.0
-        version: 2.1.0(react-dom@19.2.7(react@19.2.7))(react-redux@9.3.0(@types/react@19.2.17)(react@19.2.7)(redux@5.0.1))(react@19.2.7)
       redux-saga:
         specifier: ^1.5.0
         version: 1.5.0
@@ -2670,13 +2667,6 @@ packages:
     resolution: {integrity: sha512-KMbopAM7YLnQdospn5ClG3o8c4uhYkLBDEWSmxNbvQb4MGAJJh3sbbPKoEB00qU5rTXbwKuaaqZlWdgrY1Twxw==}
     engines: {node: '>= 6'}
 
-  redux-injectors@2.1.0:
-    resolution: {integrity: sha512-LwGYiUfeoNoPwmTNnjwuxfAxeeNkqQBm3rz/XMDW7DUKdUvSy+A/RBAYMcSFlgv1qX6sXQX9R+YrwHAkyJmyYg==}
-    peerDependencies:
-      react: ^16.6.0 || ^17.0.0 || ^18.0.0
-      react-dom: ^16.6.0 || ^17.0.0 || ^18.0.0
-      react-redux: ^7.1.0
-
   redux-saga@1.5.0:
     resolution: {integrity: sha512-IdnDBfgt/XuBhSwWMGwjtcOOQAmiqOc1nRGxNst2MWP9yLN0zOvaPpinm8rtKoL00kMZgczZFPNNQgy2hoBIBw==}
 
@@ -2684,9 +2674,6 @@ packages:
     resolution: {integrity: sha512-NW2r5T6ksUKXCabzhL9z+h206HQw/NJkcLm1GPImRQ8IzfXwRGqjVhKJGauHirT0DAuyy6hjdnMZaRoAcy0Klw==}
     peerDependencies:
       redux: ^5.0.0
-
-  redux@4.2.1:
-    resolution: {integrity: sha512-LAUYz4lc+Do8/g7aeRa8JkyDErK6ekstQaqWQrNRW//MY1TvCEpMtpTWvlQ+FPbWCx+Xixu/6SHt5N0HR+SB4w==}
 
   redux@5.0.1:
     resolution: {integrity: sha512-M9/ELqF6fy8FwmkpnF0S3YKOqMyoWJ4+CS5Efg2ct3oY9daQvd/Pc71FpGZsVsbl3Cpb+IIcjBDUnnyBdQbq4w==}
@@ -5678,16 +5665,6 @@ snapshots:
     dependencies:
       array-flatten: 2.1.1
 
-  redux-injectors@2.1.0(react-dom@19.2.7(react@19.2.7))(react-redux@9.3.0(@types/react@19.2.17)(react@19.2.7)(redux@5.0.1))(react@19.2.7):
-    dependencies:
-      hoist-non-react-statics: 3.3.2
-      invariant: 2.2.4
-      lodash: 4.18.1
-      react: 19.2.7
-      react-dom: 19.2.7(react@19.2.7)
-      react-redux: 9.3.0(@types/react@19.2.17)(react@19.2.7)(redux@5.0.1)
-      redux: 4.2.1
-
   redux-saga@1.5.0:
     dependencies:
       '@babel/runtime': 7.29.7
@@ -5696,10 +5673,6 @@ snapshots:
   redux-thunk@3.1.0(redux@5.0.1):
     dependencies:
       redux: 5.0.1
-
-  redux@4.2.1:
-    dependencies:
-      '@babel/runtime': 7.29.7
 
   redux@5.0.1: {}
 
