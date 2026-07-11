@@ -72,8 +72,8 @@ importers:
         specifier: ^19.2.7
         version: 19.2.7
       react-beforeunload:
-        specifier: 2.5.3
-        version: 2.5.3(react@19.2.7)
+        specifier: 2.7.0
+        version: 2.7.0(react@19.2.7)
       react-cookie-consent:
         specifier: 7.4.1
         version: 7.4.1(react@19.2.7)
@@ -3591,10 +3591,10 @@ packages:
     resolution: {integrity: sha512-y3bGgqKj3QBdxLbLkomlohkvsA8gdAiUQlSBJnBhfn+BPxg4bc62d8TcBW15wavDfgexCgccckhcZvywyQYPOw==}
     hasBin: true
 
-  react-beforeunload@2.5.3:
-    resolution: {integrity: sha512-roOH5Qja6DGwydKYDMdzw3LR/mX6CCaglGqOb/1W9VREVBDp+DlOlC+aXKru5K7aH+vxdviBpfgyX3lTutOulg==}
+  react-beforeunload@2.7.0:
+    resolution: {integrity: sha512-iyHA7CI2m76ECgOMC8WdPM5J6GKDmVzHj1oJ/1h8bKft+cqFggbU3/tUlZ4vCChH3vA4Jj1ciY2hquwGbB5VPA==}
     peerDependencies:
-      react: ^16.8.0 || 17 || 18
+      react: '>=16.8.0'
 
   react-cookie-consent@7.4.1:
     resolution: {integrity: sha512-SGerGIHuNkFh/eJk1ulNb4Kb/EL21UTFrAf+gCtvVE5+JkdNCeyC89Oq9X17YjvLxH7E35W4DY+nxPE5n2RxPQ==}
@@ -4079,9 +4079,6 @@ packages:
 
   through@2.3.8:
     resolution: {integrity: sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg==}
-
-  tiny-invariant@1.3.3:
-    resolution: {integrity: sha512-+FbBPE1o9QAYvviau/qC5SE3caw21q3xkvWKBtja5vgqOWIHHJ3ioaq1VPfn/Szqctz2bU/oYeKd9/z5BL+PVg==}
 
   tinybench@2.9.0:
     resolution: {integrity: sha512-0+DUvqWMValLmha6lr4kD8iAMK1HzV0/aKnCtWb9v9641TnP/MFb7Pc2bxoxQjTXAErryXVgUOfv2YqNllqGeg==}
@@ -8197,11 +8194,9 @@ snapshots:
       minimist: 1.2.8
       strip-json-comments: 2.0.1
 
-  react-beforeunload@2.5.3(react@19.2.7):
+  react-beforeunload@2.7.0(react@19.2.7):
     dependencies:
-      prop-types: 15.8.1
       react: 19.2.7
-      tiny-invariant: 1.3.3
 
   react-cookie-consent@7.4.1(react@19.2.7):
     dependencies:
@@ -8775,8 +8770,6 @@ snapshots:
   text-table@0.2.0: {}
 
   through@2.3.8: {}
-
-  tiny-invariant@1.3.3: {}
 
   tinybench@2.9.0: {}
 
