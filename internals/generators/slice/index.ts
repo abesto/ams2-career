@@ -6,10 +6,12 @@ import { Actions, PlopGeneratorConfig } from 'node-plop';
 import path from 'path';
 import inquirer from 'inquirer';
 
-import { pathExists } from '../utils';
+import {
+  normalizeRelativeGeneratorPath,
+  pathExists,
+  validateRelativeGeneratorPath,
+} from '../utils';
 import { baseGeneratorPath } from '../paths';
-
-inquirer.registerPrompt('directory', require('inquirer-directory'));
 
 export enum SliceProptNames {
   'sliceName' = 'sliceName',
@@ -17,7 +19,11 @@ export enum SliceProptNames {
   'wantSaga' = 'wantSaga',
 }
 
-type Answers = { [P in SliceProptNames]: string };
+type Answers = {
+  [SliceProptNames.sliceName]: string;
+  [SliceProptNames.path]: string;
+  [SliceProptNames.wantSaga]: boolean;
+};
 
 export const rootStatePath = path.join(
   __dirname,
@@ -26,29 +32,31 @@ export const rootStatePath = path.join(
 
 export const sliceGenerator: PlopGeneratorConfig = {
   description: 'Add a redux toolkit slice',
-  prompts: [
-    {
-      type: 'input',
-      name: SliceProptNames.sliceName,
-      message: 'What should it be called (automatically adds ...Slice postfix)',
-    },
-    {
-      type: 'directory',
-      name: SliceProptNames.path,
-      message: 'Where do you want it to be created?',
-      basePath: `${baseGeneratorPath}`,
-    } as any,
-    {
-      type: 'confirm',
-      name: SliceProptNames.wantSaga,
-      default: true,
-      message: 'Do you want sagas for asynchronous flows? (e.g. fetching data)',
-    },
-  ],
+  prompts: async () =>
+    inquirer.prompt<Answers>([
+      {
+        type: 'input',
+        name: SliceProptNames.sliceName,
+        message: 'What should it be called (automatically adds ...Slice postfix)',
+      },
+      {
+        type: 'input',
+        name: SliceProptNames.path,
+        message: 'Where do you want it to be created? (relative to src/app)',
+        default: '.',
+        validate: input => validateRelativeGeneratorPath(input, baseGeneratorPath),
+        filter: input => normalizeRelativeGeneratorPath(input),
+      },
+      {
+        type: 'confirm',
+        name: SliceProptNames.wantSaga,
+        default: true,
+        message: 'Do you want sagas for asynchronous flows? (e.g. fetching data)',
+      },
+    ]),
   actions: data => {
     const answers = data as Answers;
-
-    const slicePath = `${baseGeneratorPath}/${answers.path}/slice`;
+    const slicePath = path.join(baseGeneratorPath, answers.path || '.', 'slice');
 
     if (pathExists(slicePath)) {
       throw new Error(`Slice '${answers.sliceName}' already exists`);
