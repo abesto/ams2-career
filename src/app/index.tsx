@@ -51,6 +51,7 @@ import { Welcome } from './components/Welcome';
 import { CareerPage } from './pages/CareerPage';
 import { CarExplorerPage } from './pages/CarExplorerPage';
 import { DataDebugPage } from './pages/DataDebugPage';
+import { GameDataPage } from './pages/GameDataPage';
 import { MainPage } from './pages/MainPage';
 import { MatrixExplorerPage } from './pages/MatrixExplorerPage';
 import { SettingsPage } from './pages/SettingsPage';
@@ -252,6 +253,13 @@ function InnerApp() {
                   to="/debug"
                   target=""
                 />
+                <ToolbarButton
+                  label="Game Data"
+                  icon={<DataObjectIcon />}
+                  component={RouterLink}
+                  to="/data"
+                  target=""
+                />
               </Stack>
             </Toolbar>
           </Container>
@@ -265,6 +273,7 @@ function InnerApp() {
             <Route path="/" element={<MainPage />} />
             <Route path="/settings" element={<SettingsPage />} />
             <Route path="/debug" element={<DataDebugPage />} />
+            <Route path="/data" element={<GameDataPage />} />
             <Route path="/cars" element={<CarExplorerPage />} />
             <Route path="/tracks" element={<TrackExplorerPage />} />
             <Route path="/matrix" element={<MatrixExplorerPage />} />
