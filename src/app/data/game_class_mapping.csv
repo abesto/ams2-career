@@ -2,7 +2,7 @@ game_class,meta_class,discipline,grade,headlights,mapping_source
 F5,FTS,Open Wheel,6,0,heuristic-family
 Kart1,Karting 125CC,Karting,2,0,explicit-alias
 LMP3,P3,Endurance,4,1,explicit-alias
-SprintRace,Sprint Race,Special,3,0,heuristic-family
+SprintRace,Sprint Race,Special,3,0,explicit-alias
 F-3,F3,Open Wheel,5,0,explicit-alias
 CopaClassicB,Copa Classic (Class: B),Club,4,1,explicit-alias
 Kartcross,Karting 125CC,Karting,2,0,heuristic-family
@@ -46,12 +46,12 @@ Supercars,Street Cars B,Special,2,1,heuristic-family
 Group 5,Group C,Endurance,1,1,explicit-alias
 F-Dirt,Sprint Race,Special,3,0,heuristic-family
 GT3,GT3,GT,1,1,explicit-alias
-MiniChallenge,GT Classics,Vintage,4,1,heuristic-family
+MiniChallenge,JCW,Touring,6,0,explicit-alias
 CopaUno,Copa Uno,Club,4,1,explicit-alias
 GT3N,GT3,GT,1,1,explicit-alias
 TC60S2,GT Classics,Vintage,4,1,heuristic-family
 GT2_05_LD,GT Classics,Vintage,4,1,heuristic-family
-Carrera Cup,Carrera Cup,GT,3,1,heuristic-family
+Carrera Cup,Carrera Cup,GT,3,1,explicit-alias
 G55Supercup,Ginetta G55 Supercup,GT,3,1,explicit-alias
 StockCarV8_2023,Stock Car Brasil 19 GrA,Touring,1,0,explicit-alias
 CopaTruck,Copa Truck,Touring,4,0,explicit-alias
@@ -69,7 +69,7 @@ LMP2_05_LD,P2,Endurance,3,1,heuristic-family
 GTR_04_LD,GT1,Endurance,2,1,heuristic-family
 GTOpen,GT3,GT,1,1,explicit-alias
 DPI,DPi,Endurance,3,1,explicit-alias
-GTCupN,GT Classics,Vintage,4,1,heuristic-family
+GTCupN,Carrera Cup,GT,3,1,explicit-alias
 GT1_LD,GT1,Endurance,2,1,heuristic-family
 GT3_Gen2,GT3,GT,1,1,explicit-alias
 OldStock,Old Stock Race 79,Touring,2,0,explicit-alias

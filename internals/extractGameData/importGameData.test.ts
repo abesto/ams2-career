@@ -21,4 +21,15 @@ describe('metaClassMappingFor', () => {
       source: 'heuristic-family',
     });
   });
+
+  it('maps game-specific cup and challenge classes to the matching app classes', () => {
+    expect(metaClassMappingFor('GTCupN', 'GT3', 'GT')).toEqual({
+      metaClass: 'Carrera Cup',
+      source: 'explicit-alias',
+    });
+    expect(metaClassMappingFor('MiniChallenge', 'GT', 'GT')).toEqual({
+      metaClass: 'JCW',
+      source: 'explicit-alias',
+    });
+  });
 });
