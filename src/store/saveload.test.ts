@@ -229,10 +229,10 @@ describe('saveload', () => {
       saveMeta: { version: 3, timestamp: 1 },
     } as any;
     const migrated = loadStr(JSON.stringify(state), true);
-    expect(migrated?.career?.raceResults[0].carId).toBe('Caterham_620R-8');
+    expect(migrated?.career?.raceResults[0].carId).toBe('Caterham_620R-8-caterhamgra-Club-1-Caterham GrA');
     expect(migrated?.career?.raceResults[0].trackId).toBe('Azure_Circuit-4');
-    expect(migrated?.mainPage?.selectedCars?.['Club-1-Caterham GrA']).toBe('Caterham_620R-8');
-    expect(migrated?.mainPage?.aiAdjustment.car?.['Caterham_620R-8']).toBe(2);
+    expect(migrated?.mainPage?.selectedCars?.['Club-1-Caterham GrA']).toBe('Caterham_620R-8-caterhamgra-Club-1-Caterham GrA');
+    expect(migrated?.mainPage?.aiAdjustment.car?.['Caterham_620R-8-caterhamgra-Club-1-Caterham GrA']).toBe(2);
   });
 
   it('save middleware dispatches timestamp updates and persists on timestamp actions', () => {

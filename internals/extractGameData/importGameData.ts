@@ -202,6 +202,7 @@ function main() {
     const classRow = classByName.get(metaClass);
     cars.push({
       game_id: id,
+      canonical_id: `${id}-${normalize(metaClass)}`,
       ...row,
       has_headlights: String(Number(classRow?.headlights ?? 0) > 0),
       headlights_source: 'meta-class-default',
@@ -266,11 +267,16 @@ function main() {
   const legacyAliases: Row[] = [];
   const oldCars = readCsv(path.join(APP_DATA_DIR, 'cars.csv'));
   for (const old of oldCars) {
-    const match = cars.find(row => normalize(row['Vehicle Name']) === normalize(old.car));
+    const matches = cars.filter(row => normalize(row['Vehicle Name']) === normalize(old.car));
+    const match = matches.find(row => row.meta_class === old.class) || matches[0];
+    const oldClass = classRows.find(row => row.class === old.class && row.discipline === old.discipline) ||
+      classRows.find(row => row.class === old.class);
     legacyAliases.push({
       kind: 'car',
       legacy_id: `${old.class}-${old.car}`,
-      canonical_id: match?.game_id ?? '',
+      canonical_id: match && oldClass
+        ? `${match.canonical_id}-${oldClass.discipline}-${oldClass.grade}-${old.class}`
+        : '',
       status: match ? 'canonical' : 'legacy-fallback',
     });
   }

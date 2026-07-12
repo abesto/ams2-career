@@ -1,59 +1,59 @@
 kind,legacy_id,canonical_id,status
-car,Caterham GrA-Caterham 620R,Caterham_620R-8,canonical
-car,Ginetta G40 Cup-Ginetta G40,Ginetta_G40-131,canonical
+car,Caterham GrA-Caterham 620R,Caterham_620R-8-caterhamgra-Club-1-Caterham GrA,canonical
+car,Ginetta G40 Cup-Ginetta G40,Ginetta_G40-131-gt5-Club-1-Ginetta G40 Cup,canonical
 car,GT5-Ginetta G40 GT5,,legacy-fallback
 car,Caterham GrB-Caterham Superlight (360R),,legacy-fallback
 car,Caterham GrB-Caterham Supersport (360R),,legacy-fallback
-car,TSI Cup-Volkswagen Polo,VW_Polo-149,canonical
+car,TSI Cup-Volkswagen Polo,VW_Polo-149-tsicup-Club-2-TSI Cup,canonical
 car,ARC-Aussie Racing Camaro,,legacy-fallback
 car,Caterham GrC-Caterham Academy (270R),,legacy-fallback
-car,Copa Classic (Class: B)-Chevrolet Chevette,Chevette-12,canonical
+car,Copa Classic (Class: B)-Chevrolet Chevette,Chevette-12-copaclassicclassb-Club-4-Copa Classic (Class: B),canonical
 car,Copa Classic (Class: B)-Fiat Uno,,legacy-fallback
-car,Copa Classic (Class: B)-Puma GTE,Puma_GTE-94,canonical
+car,Copa Classic (Class: B)-Puma GTE,Puma_GTE-94-copaclassicclassb-Club-4-Copa Classic (Class: B),canonical
 car,Copa Classic (Class: B)-Volkswagen Gol B,,legacy-fallback
 car,Copa Classic (Class: B)-Volkswagen Passat,,legacy-fallback
-car,Copa Classic (Class: FL)-Puma GTB,Puma_GTB-93,canonical
+car,Copa Classic (Class: FL)-Puma GTB,Puma_GTB-93-copaclassicclassfl-Club-4-Copa Classic (Class: FL),canonical
 car,Copa Classic (Class: FL)-Volkswagen Fusca FL,,legacy-fallback
 car,Copa Classic (Class: FL)-Volkswagen Gol FL,,legacy-fallback
 car,Copa Classic (Class: FL)-Volkswagen Passat,,legacy-fallback
 car,Copa Fusca-Volkswagen Fusca Copa,,legacy-fallback
 car,Copa Uno-Fiat Uno,,legacy-fallback
-car,Group C-Porsche 962C,Porsche_962C-89,canonical
+car,Group C-Porsche 962C,Porsche_962C-89-groupc-Endurance-1-Group C,canonical
 car,Group C-Sauber C9,,legacy-fallback
-car,GT1-McLaren F1 GTR,McLaren_F1_GTR-130,canonical
-car,GT1-Mercedes-Benz CLK LM,Mercedes_CLK-LM-68,canonical
-car,GT1-Porsche 911 GT1-98,Porsche_911_GT1_98-88,canonical
-car,GTE-BMW M8 GTE,BMW_M8_GTE-143,canonical
-car,GTE-Chevrolet Corvette C8.R,Chevrolet_Corvette_C8R-142,canonical
+car,GT1-McLaren F1 GTR,McLaren_F1_GTR-130-gt1-Endurance-2-GT1,canonical
+car,GT1-Mercedes-Benz CLK LM,Mercedes_CLK-LM-68-gt1-Endurance-2-GT1,canonical
+car,GT1-Porsche 911 GT1-98,Porsche_911_GT1_98-88-gt1-Endurance-2-GT1,canonical
+car,GTE-BMW M8 GTE,BMW_M8_GTE-143-gte-Endurance-2-GTE,canonical
+car,GTE-Chevrolet Corvette C8.R,Chevrolet_Corvette_C8R-142-gte-Endurance-2-GTE,canonical
 car,GTE-Porsche 911 RSR-19,,legacy-fallback
-car,P1-Ginetta G58,Ginetta_G58-47,canonical
-car,P1-MetalMoro AJR - Chevrolet,MetalMoro_AJR_Chevy_V8-73,canonical
-car,P1-MetalMoro AJR - Honda,MetalMoro_AJR_Honda-71,canonical
-car,P1-MetalMoro AJR - Judd,MetalMoro_AJR_Judd-72,canonical
-car,P1-MetalMoro AJR - Nissan,MetalMoro_AJR_V6_Turbo-70,canonical
-car,DPi-Cadillac DPi-V.R,Cadillac_DPi-VR-145,canonical
+car,P1-Ginetta G58,Ginetta_G58-47-p1-Endurance-2-P1,canonical
+car,P1-MetalMoro AJR - Chevrolet,MetalMoro_AJR_Chevy_V8-73-p1-Endurance-2-P1,canonical
+car,P1-MetalMoro AJR - Honda,MetalMoro_AJR_Honda-71-p1-Endurance-2-P1,canonical
+car,P1-MetalMoro AJR - Judd,MetalMoro_AJR_Judd-72-p1-Endurance-2-P1,canonical
+car,P1-MetalMoro AJR - Nissan,MetalMoro_AJR_V6_Turbo-70-p1-Endurance-2-P1,canonical
+car,DPi-Cadillac DPi-V.R,Cadillac_DPi-VR-145-dpi-Endurance-3-DPi,canonical
 car,P2-MetalMoro MRX P2 - Ford,,legacy-fallback
-car,P2-Sigma P1,Sigma_P1-98,canonical
+car,P2-Sigma P1,Sigma_P1-98-p2-Endurance-3-P2,canonical
 car,P3-MetalMoro MRX P3 - Ford,,legacy-fallback
 car,P3-MetalMoro MRX P3 - Honda,,legacy-fallback
-car,P3-Roco 001,Roco_001-96,canonical
-car,P4-MCR S2000,MCR_Sports_2000-66,canonical
+car,P3-Roco 001,Roco_001-96-p3-Endurance-4-P3,canonical
+car,P4-MCR S2000,MCR_Sports_2000-66-p4-Endurance-5-P4,canonical
 car,P4-MetalMoro MRX P4 - Ford,,legacy-fallback
-car,GT3-BMW M6 GT3,BMW_M6_GT3-124,canonical
+car,GT3-BMW M6 GT3,BMW_M6_GT3-124-gt3-GT-1-GT3,canonical
 car,GT3-McLaren 720S,,legacy-fallback
-car,GT3-Mercedes-AMG GT3,Mercedes_AMG_GT3-67,canonical
-car,GT3-Porsche 911 GT3 R,Porsche_991_GT3R-91,canonical
-car,GT4-BMW M4 GT4,BMW_M4_GT4-144,canonical
+car,GT3-Mercedes-AMG GT3,Mercedes_AMG_GT3-67-gt3-GT-1-GT3,canonical
+car,GT3-Porsche 911 GT3 R,Porsche_991_GT3R-91-gt3-GT-1-GT3,canonical
+car,GT4-BMW M4 GT4,BMW_M4_GT4-144-gt4-GT-2-GT4,canonical
 car,GT4-Camaro GT4.R,,legacy-fallback
-car,GT4-Ginetta G55 GT4,Ginetta_G55_GT4_2-129,canonical
+car,GT4-Ginetta G55 GT4,Ginetta_G55_GT4_2-129-gt4-GT-2-GT4,canonical
 car,GT4-McLaren 570S,,legacy-fallback
 car,GT4-Porsche Cayman GT4 CS MR,,legacy-fallback
-car,Carrera Cup-Porsche 911 GT3 Cup 3.8,Porsche_991_GT3-90,canonical
-car,Carrera Cup-Porsche 911 GT3 Cup 4.0,Porsche_991_GT3_2-122,canonical
+car,Carrera Cup-Porsche 911 GT3 Cup 3.8,Porsche_991_GT3-90-carreracup-GT-3-Carrera Cup,canonical
+car,Carrera Cup-Porsche 911 GT3 Cup 4.0,Porsche_991_GT3_2-122-carreracup-GT-3-Carrera Cup,canonical
 car,Ginetta G55 Supercup-Ginetta G55 SuperCup,,legacy-fallback
 car,Copa Montana-Chevrolet Montana,,legacy-fallback
-car,GT5-Puma P052,Puma_P052-95,canonical
-car,Super Kart-Super Kart 250cc,Superkart-102,canonical
+car,GT5-Puma P052,Puma_P052-95-gt5-GT-4-GT5,canonical
+car,Super Kart-Super Kart 250cc,Superkart-102-superkart-Karting-1-Super Kart,canonical
 car,Karting 125CC-Kart 125cc 2STROKE,,legacy-fallback
 car,Karting GX390-Kart GX390 Race,,legacy-fallback
 car,Karting Shifter-Kart 125cc Shifter,,legacy-fallback
@@ -65,22 +65,22 @@ car,Formula V10 G1-Formula V10 G1 (Dome F105),,legacy-fallback
 car,Formula V10 G1-McLaren MP4/12,,legacy-fallback
 car,Formula V10 G2-Formula V10 G2 (Williams FW22),,legacy-fallback
 car,Formula V12-Formula V12 (Ferrari 412 T2),,legacy-fallback
-car,F-USA Gen.1-Lola T95/00 Ford-Cosworth,CART_Lola_T95_Ford-174,canonical
-car,F-USA Gen.1-Lola T95/00 Mercedes-Benz,CART_Lola_T95_Mercedes-175,canonical
-car,F-USA Gen.1-Reynard 95i Ford-Cosworth,CART_Reynard_95i_Ford-176,canonical
-car,F-USA Gen.1-Reynard 95i Honda,CART_Reynard_95i_Honda-177,canonical
-car,F-USA Gen.1-Reynard 95i Mercedes-Benz,CART_Reynard_95i_Mercedes-178,canonical
+car,F-USA Gen.1-Lola T95/00 Ford-Cosworth,CART_Lola_T95_Ford-174-fusagen1-Open Wheel-4-F-USA Gen.1,canonical
+car,F-USA Gen.1-Lola T95/00 Mercedes-Benz,CART_Lola_T95_Mercedes-175-fusagen1-Open Wheel-4-F-USA Gen.1,canonical
+car,F-USA Gen.1-Reynard 95i Ford-Cosworth,CART_Reynard_95i_Ford-176-fusagen1-Open Wheel-4-F-USA Gen.1,canonical
+car,F-USA Gen.1-Reynard 95i Honda,CART_Reynard_95i_Honda-177-fusagen1-Open Wheel-4-F-USA Gen.1,canonical
+car,F-USA Gen.1-Reynard 95i Mercedes-Benz,CART_Reynard_95i_Mercedes-178-fusagen1-Open Wheel-4-F-USA Gen.1,canonical
 car,F-USA Gen.2-Lola T98,,legacy-fallback
 car,F-USA Gen.2-Reynard 98i Ford,,legacy-fallback
-car,F-USA Gen.2-Reynard 98i Honda,CART_Reynard_98i_Honda-155,canonical
+car,F-USA Gen.2-Reynard 98i Honda,CART_Reynard_98i_Honda-155-fusagen2-Open Wheel-4-F-USA Gen.2,canonical
 car,F-USA Gen.2-Reynard 98i Mercedes,,legacy-fallback
-car,F-USA Gen.2-Reynard 98i Toyota,CART_Reynard_98i_Toyota-157,canonical
+car,F-USA Gen.2-Reynard 98i Toyota,CART_Reynard_98i_Toyota-157-fusagen2-Open Wheel-4-F-USA Gen.2,canonical
 car,F-USA Gen.2-Swift 009c,,legacy-fallback
-car,F-USA Gen.3-Lola B2K00 Ford-Cosworth,CART_Lola_B2K00_Ford-164,canonical
+car,F-USA Gen.3-Lola B2K00 Ford-Cosworth,CART_Lola_B2K00_Ford-164-fusagen3-Open Wheel-4-F-USA Gen.3,canonical
 car,F-USA Gen.3-Lola B2K00 Mercedez-Benz,,legacy-fallback
-car,F-USA Gen.3-Lola B2K00 Toyota,CART_Lola_B2K00_Toyota-172,canonical
-car,F-USA Gen.3-Reynard 2ki Ford-Cosworth,CART_Reynard_2KI_Ford-160,canonical
-car,F-USA Gen.3-Reynard 2ki Honda,CART_Reynard_2KI_Honda-168,canonical
+car,F-USA Gen.3-Lola B2K00 Toyota,CART_Lola_B2K00_Toyota-172-fusagen3-Open Wheel-4-F-USA Gen.3,canonical
+car,F-USA Gen.3-Reynard 2ki Ford-Cosworth,CART_Reynard_2KI_Ford-160-fusagen3-Open Wheel-4-F-USA Gen.3,canonical
+car,F-USA Gen.3-Reynard 2ki Honda,CART_Reynard_2KI_Honda-168-fusagen3-Open Wheel-4-F-USA Gen.3,canonical
 car,F-USA Gen.3-Reynard 2ki Mercedez-Benz,,legacy-fallback
 car,Formula Classic G1-Formula Classic G1 M1 (Williams FW11B),,legacy-fallback
 car,Formula Classic G1-Formula Classic G1 M2 (Arrows-BMW A9),,legacy-fallback
@@ -92,17 +92,17 @@ car,Formula Classic G3-Formula Classic G3 M2 (Williams FW14),,legacy-fallback
 car,Formula Classic G3-Formula Classic G3 M3 (Benetton B191),,legacy-fallback
 car,F3-F301,,legacy-fallback
 car,F3-F309,,legacy-fallback
-car,FTS-Formula Trainer,Formula_Trainer-27,canonical
-car,FTS-Formula Trainer Advanced,Formula_Trainer_A-26,canonical
+car,FTS-Formula Trainer,Formula_Trainer-27-fts-Open Wheel-6-FTS,canonical
+car,FTS-Formula Trainer Advanced,Formula_Trainer_A-26-fts-Open Wheel-6-FTS,canonical
 car,FormulaVee Brazil-Formula Vee,,legacy-fallback
 car,FormulaVee Brazil-Formula Vee + Fin,,legacy-fallback
-car,Street Cars A-McLaren F1 LM,McLaren_F1_LM-63,canonical
+car,Street Cars A-McLaren F1 LM,McLaren_F1_LM-63-streetcarsb-Special-1-Street Cars A,canonical
 car,Street Cars B-Ultima GTR (640),,legacy-fallback
-car,Ultima-Ultima GTR Race,Ultima_GTR_Race-103,canonical
-car,Sprint Race-Sprint Race,Sprint_Race-99,canonical
-car,Lancer Cup-Mitsubishi Lancer R,Mitsubishi_LancerR-78,canonical
-car,Lancer Cup-Mitsubishi Lancer RS,Mitsubishi_LancerRS-79,canonical
-car,Street Cars C-Chevrolet Camaro SS,Camaro_SS-7,canonical
+car,Ultima-Ultima GTR Race,Ultima_GTR_Race-103-gt3-Special-2-Ultima,canonical
+car,Sprint Race-Sprint Race,Sprint_Race-99-sprintrace-Special-3-Sprint Race,canonical
+car,Lancer Cup-Mitsubishi Lancer R,Mitsubishi_LancerR-78-lancercup-Special-4-Lancer Cup,canonical
+car,Lancer Cup-Mitsubishi Lancer RS,Mitsubishi_LancerRS-79-lancercup-Special-4-Lancer Cup,canonical
+car,Street Cars C-Chevrolet Camaro SS,Camaro_SS-7-streetcarsa-Special-4-Street Cars C,canonical
 car,Stock Car Brasil 19 GrA-Chevrolet Cruz 2019,,legacy-fallback
 car,Stock Car Brasil 20 GrA-Chevrolet Cruz 2020,,legacy-fallback
 car,Stock Car Brasil 20 GrA-Toyota Carolla 2020,,legacy-fallback
@@ -111,42 +111,42 @@ car,Stock Car Brasil 21 GrA-Toyota Carolla 2021,,legacy-fallback
 car,Old Stock Race 79-Chevrolet Opala 1979,,legacy-fallback
 car,Stock Car Brasil 86 GrB-Chevrolet Opala 1986,,legacy-fallback
 car,Super V8-Super V8 (Gen2 ZB),,legacy-fallback
-car,M1 PROCAR-BMW M1 Procar,BMW_M1-5,canonical
+car,M1 PROCAR-BMW M1 Procar,BMW_M1-5-m1procar-Touring-3-M1 PROCAR,canonical
 car,Stock Car Brasil 99 GrC-Chevrolet Omega,,legacy-fallback
-car,Copa Truck-IVECO Stralis,Copa_Truck_Iveco-37,canonical
-car,Copa Truck-MAN TGX,Copa_Truck_MAN-38,canonical
+car,Copa Truck-IVECO Stralis,Copa_Truck_Iveco-37-copatruck-Touring-4-Copa Truck,canonical
+car,Copa Truck-MAN TGX,Copa_Truck_MAN-38-copatruck-Touring-4-Copa Truck,canonical
 car,Copa Truck-Mercedes-Benz Actros-2651,,legacy-fallback
-car,Copa Truck-Volkswagen Constellation,Copa_Truck_VW-40,canonical
+car,Copa Truck-Volkswagen Constellation,Copa_Truck_VW-40-copatruck-Touring-4-Copa Truck,canonical
 car,Group A-BMW M3 Sport Evo GrA,,legacy-fallback
 car,Group A-Mercedes-Benz 190E EVO 2 DTM,,legacy-fallback
 car,Hot Cars-Volkswagen Fusca HC1,,legacy-fallback
 car,Hot Cars-Volkswagen Fusca HC2,,legacy-fallback
 car,Hot Cars-Volkswagen Gol HC,,legacy-fallback
 car,Hot Cars-Volkswagen Passat HC,,legacy-fallback
-car,JCW-MINI Cooper JCW,Mini_Cooper-118,canonical
-car,TSI Cup-Volkswagen Virtus,VW_Virtus-150,canonical
-car,Formula Retro G3-Formula Retro Gen3 DFY,Formula_Retro_G3-162,canonical
-car,Formula Retro G3-Formula Retro Gen3 Turbo,Formula_Retro_G3_TE-167,canonical
+car,JCW-MINI Cooper JCW,Mini_Cooper-118-gtclassics-Touring-6-JCW,canonical
+car,TSI Cup-Volkswagen Virtus,VW_Virtus-150-tsicup-Touring-6-TSI Cup,canonical
+car,Formula Retro G3-Formula Retro Gen3 DFY,Formula_Retro_G3-162-formularetrog3-Vintage-1-Formula Retro G3,canonical
+car,Formula Retro G3-Formula Retro Gen3 Turbo,Formula_Retro_G3_TE-167-formularetrog3-Vintage-1-Formula Retro G3,canonical
 car,Formula Retro G3-McLaren MP4-1C,,legacy-fallback
-car,Formula Retro G1-Brabham BT44,Brabham_BT44-24,canonical
-car,Formula Retro G1-Formula Retro V12,Formula_Retro_V12-128,canonical
-car,Formula Retro G1-Formula Retro V8,Formula_Retro_V8-126,canonical
+car,Formula Retro G1-Brabham BT44,Brabham_BT44-24-formularetrog1-Vintage-2-Formula Retro G1,canonical
+car,Formula Retro G1-Formula Retro V12,Formula_Retro_V12-128-formularetrog1-Vintage-2-Formula Retro G1,canonical
+car,Formula Retro G1-Formula Retro V8,Formula_Retro_V8-126-formularetrog1-Vintage-2-Formula Retro G1,canonical
 car,Formula Retro G1-Lotus Type 72E,,legacy-fallback
-car,Formula Retro G1-McLaren M23,McLaren_M23-112,canonical
+car,Formula Retro G1-McLaren M23,McLaren_M23-112-formularetrog1-Vintage-2-Formula Retro G1,canonical
 car,Formula Retro G2-Brabham BT46B,,legacy-fallback
-car,Formula Retro G2-Formula Retro Gen2,Formula_Retro_G2-139,canonical
-car,Formula Retro G2-Lotus 79,Lotus_79-137,canonical
+car,Formula Retro G2-Formula Retro Gen2,Formula_Retro_G2-139-formularetrog2-Vintage-2-Formula Retro G2,canonical
+car,Formula Retro G2-Lotus 79,Lotus_79-137-formularetrog2-Vintage-2-Formula Retro G2,canonical
 car,Formula Vintage G1-Formula Vintage G1 M1 (Lotus 49),,legacy-fallback
 car,Formula Vintage G1-Formula Vintage G1 M2 (AAR Eagle Mk1),,legacy-fallback
-car,Formula Vintage G2-Brabham BT26A,Repco_Brabham_BT26-115,canonical
+car,Formula Vintage G2-Brabham BT26A,Repco_Brabham_BT26-115-formulavintageg2-Vintage-3-Formula Vintage G2,canonical
 car,Formula Vintage G2-Formula Vintage G2 M1,,legacy-fallback
 car,Formula Vintage G2-Formula Vintage G2 M2,,legacy-fallback
 car,Formula Vintage G2-Lotus Type 49C,,legacy-fallback
-car,GT Classics-Chevrolet Corvette C3.R,Chevrolet_Corvette_C3_RC-148,canonical
+car,GT Classics-Chevrolet Corvette C3.R,Chevrolet_Corvette_C3_RC-148-gtclassics-Vintage-4-GT Classics,canonical
 car,GT Classics-Porsche 911 RSR,,legacy-fallback
-car,Vintage Touring Cars T1-BMW 2002 Turbo,BMW_2002_Turbo-4,canonical
-car,Vintage Touring Cars T1-Chevrolet Corvette C3,Chevrolet_Corvette_73-141,canonical
-car,Vintage Touring Cars T2-Lotus 23,Lotus_23-119,canonical
+car,Vintage Touring Cars T1-BMW 2002 Turbo,BMW_2002_Turbo-4-gtclassics-Vintage-5-Vintage Touring Cars T1,canonical
+car,Vintage Touring Cars T1-Chevrolet Corvette C3,Chevrolet_Corvette_73-141-gtclassics-Vintage-5-Vintage Touring Cars T1,canonical
+car,Vintage Touring Cars T2-Lotus 23,Lotus_23-119-gtclassics-Vintage-6-Vintage Touring Cars T2,canonical
 car,Vintage Touring Cars T2-Mini Cooper S,,legacy-fallback
 track,Adelaide V8-,,legacy-fallback
 track,Adelaide GP-1988,,legacy-fallback

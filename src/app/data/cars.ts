@@ -18,6 +18,7 @@ type Record = {
 
 type GameRecord = {
   game_id: string;
+  canonical_id: string;
   'Vehicle Name': string;
   'Vehicle Year': string;
   'Vehicle Class': string;
@@ -39,24 +40,21 @@ function recordToLegacyCars(record: Record): Car[] {
   }));
 }
 
-function gameRecordToCar(record: GameRecord): Car | null {
-  const carClass = getCarClassesByName(record.meta_class)[0];
-  if (!carClass) return null;
-  return {
+function gameRecordToCars(record: GameRecord): Car[] {
+  return getCarClassesByName(record.meta_class).map(carClass => ({
     name: record['Vehicle Name'],
     carClassId: getCarClassId(carClass),
     year: parseInt(record['Vehicle Year'], 10) || new Date().getFullYear() - 10,
-    gameId: record.game_id,
+    gameId: `${record.canonical_id}-${getCarClassId(carClass)}`,
     gameClass: record['Vehicle Class'],
     headlights: record.has_headlights === 'true',
     downforceVariant: record.downforce_variant,
-  };
+  }));
 }
 
 const CARS: { [key: CarId]: Car } = Object.fromEntries(
   gameData
-    .map(gameRecordToCar)
-    .filter((car): car is Car => Boolean(car))
+    .flatMap(gameRecordToCars)
     .filter(car => getTrackIdsFor(getCarClassOfCar(car)).length > 0)
     .map(car => [getCarId(car), car]),
 );
