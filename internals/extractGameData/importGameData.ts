@@ -119,7 +119,7 @@ const META_ALIASES: Record<string, string> = {
   fclassicgen1: 'Formula Classic G1',
   fclassicgen2: 'Formula Classic G2',
   fclassicgen3: 'Formula Classic G3',
-  fclassicgen4: 'Formula Classic G3',
+  fclassicgen4: 'Formula Classic G4',
   fhitechgen1: 'Formula Classic G1',
   fhitechgen2: 'Formula Classic G2',
   fretrogen1: 'Formula Retro G1',
@@ -203,8 +203,10 @@ export function metaClassMappingFor(
     return heuristic('Formula Classic G1');
   if (/^f-?classic[_-]?gen2/i.test(gameClass))
     return heuristic('Formula Classic G2');
-  if (/^f-?classic[_-]?gen3|^f-?classic[_-]?gen4/i.test(gameClass))
+  if (/^f-?classic[_-]?gen3/i.test(gameClass))
     return heuristic('Formula Classic G3');
+  if (/^f-?classic[_-]?gen4/i.test(gameClass))
+    return heuristic('Formula Classic G4');
   if (/^f-?hitech[_-]?gen1/i.test(gameClass))
     return heuristic('Formula Classic G1');
   if (/^f-?hitech[_-]?gen2/i.test(gameClass))
@@ -269,6 +271,11 @@ export function metaClassMappingFor(
 function disciplineFor(metaClass: string): string {
   const rows = readCsv(path.join(APP_DATA_DIR, 'car_classes.csv'));
   return rows.find(row => row.class === metaClass)?.discipline ?? 'GT';
+}
+
+function canonicalClassForId(metaClass: string): string {
+  // Formula Classic Gen4 was previously imported as Gen3; retain those IDs for saves.
+  return metaClass === 'Formula Classic G4' ? 'Formula Classic G3' : metaClass;
 }
 
 function trackClassesFor(
@@ -368,7 +375,7 @@ function main() {
     const classRow = classByName.get(metaClass);
     cars.push({
       game_id: id,
-      canonical_id: `${id}-${normalize(metaClass)}`,
+      canonical_id: `${id}-${normalize(canonicalClassForId(metaClass))}`,
       ...row,
       has_headlights: String(Number(classRow?.headlights ?? 0) > 0),
       headlights_source: `meta-class-default:${metaClass}`,

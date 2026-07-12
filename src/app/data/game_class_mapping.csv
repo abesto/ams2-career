@@ -163,10 +163,10 @@ F-Reiza_LD,Formula Reiza,Open Wheel,2,0,explicit-alias
 F-Reiza_HD,Formula Reiza,Open Wheel,2,0,explicit-alias
 F-V8_Gen2_LD,Formula Reiza,Open Wheel,2,0,explicit-alias
 F-Hitech_Gen1_HD,Formula Classic G1,Open Wheel,4,0,explicit-alias
-F-Classic_Gen4_LD,Formula Classic G3,Open Wheel,4,0,explicit-alias
+F-Classic_Gen4_LD,Formula Classic G4,Open Wheel,4,0,explicit-alias
 F-V8_Gen1_HD,Formula Reiza,Open Wheel,2,0,explicit-alias
 F-V8_Gen2_HD,Formula Reiza,Open Wheel,2,0,explicit-alias
-F-Classic_Gen4_HD,Formula Classic G3,Open Wheel,4,0,explicit-alias
+F-Classic_Gen4_HD,Formula Classic G4,Open Wheel,4,0,explicit-alias
 F-Hitech_Gen1_LD,Formula Classic G1,Open Wheel,4,0,explicit-alias
 F-Ultimate_HD,Formula Ultimate Gen1,Open Wheel,1,0,explicit-alias
 F-V10_Gen3_LD,Formula V10 G2,Open Wheel,3,0,explicit-alias
@@ -187,7 +187,7 @@ FE-G1,Formula V10 G2,Open Wheel,3,0,explicit-alias
 F-Reiza,Formula Reiza,Open Wheel,2,0,explicit-alias
 F-V12,Formula V12,Open Wheel,3,0,explicit-alias
 F-V8_Gen2,Formula Reiza,Open Wheel,2,0,explicit-alias
-F-Classic_Gen4,Formula Classic G3,Open Wheel,4,0,explicit-alias
+F-Classic_Gen4,Formula Classic G4,Open Wheel,4,0,explicit-alias
 F-V10_Gen3,Formula V10 G2,Open Wheel,3,0,explicit-alias
 F-V8_Gen1,Formula Reiza,Open Wheel,2,0,explicit-alias
 F-Classic_Gen2,Formula Classic G2,Open Wheel,4,0,explicit-alias

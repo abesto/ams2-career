@@ -33,6 +33,21 @@ describe('metaClassMappingFor', () => {
     });
   });
 
+  it('keeps Formula Classic Gen3 and Gen4 in separate classes', () => {
+    expect(
+      metaClassMappingFor('F-Classic_Gen3', 'Historic Openwheel', 'OpenWheel'),
+    ).toEqual({
+      metaClass: 'Formula Classic G3',
+      source: 'explicit-alias',
+    });
+    expect(
+      metaClassMappingFor('F-Classic_Gen4', 'Historic Openwheel', 'OpenWheel'),
+    ).toEqual({
+      metaClass: 'Formula Classic G4',
+      source: 'explicit-alias',
+    });
+  });
+
   it('splits the mixed LES 2025 family by its actual vehicle group', () => {
     expect(metaClassMappingFor('LES_2025', 'LMP4', 'Prototype')).toEqual({
       metaClass: 'P4',
