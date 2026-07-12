@@ -31,7 +31,7 @@ import { ResetCareerDialog } from './components/ResetCareerDialog';
 import { AchievementIcon } from 'app/components/AchievementIcon';
 import { LinearProgressWithLabel } from 'app/components/LinearProgressWithLabel';
 import { getCarClass } from 'app/data/car_classes';
-import { getCar } from 'app/data/cars';
+import { findCar } from 'app/data/cars';
 import { getAllDisciplines, getDiscipline } from 'app/data/disciplines';
 import { getTrack } from 'app/data/tracks';
 import { useCareerSlice } from 'app/slices/CareerSlice';
@@ -155,8 +155,8 @@ function Logbook(props: { career: EnrichedCareerData }) {
         <TableBody>
           {entries.map(({ result, outcomes }, index) => {
             const track = getTrack(result.trackId);
-            const car = getCar(result.carId);
-            const carClass = getCarClass(car.carClassId);
+            const car = findCar(result.carId);
+            const carClass = getCarClass(result.carClassId);
             const discipline = getDiscipline(carClass.disciplineId);
             return (
               <TableRow key={index} hover={true}>
@@ -166,7 +166,9 @@ function Logbook(props: { career: EnrichedCareerData }) {
                 <TableCell>{result.aiLevel}</TableCell>
                 <TableCell>{discipline.name}</TableCell>
                 <TableCell>{carClass.name}</TableCell>
-                <TableCell>{car.name}</TableCell>
+                <TableCell>
+                  {car?.name || `Unavailable (${result.carId})`}
+                </TableCell>
                 <TableCell>{track.name}</TableCell>
                 <TableCell>{track.configuration}</TableCell>
                 <TableCell>

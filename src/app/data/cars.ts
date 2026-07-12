@@ -113,9 +113,14 @@ export function getDisciplineOfCar(car: Car): Discipline {
 }
 
 export function getCar(carId: CarId): Car {
-  if (!CARS[carId] && !LEGACY_CARS[carId]) {
+  const car = findCar(carId);
+  if (!car) {
     throw new Error(`Unknown car: ${carId}`);
   }
+  return car;
+}
+
+export function findCar(carId: CarId): Car | undefined {
   return CARS[carId] || LEGACY_CARS[carId];
 }
 
