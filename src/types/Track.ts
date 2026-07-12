@@ -8,6 +8,7 @@ import { getTrackIdsFor } from 'app/data/tracks';
 export interface Track {
   readonly name: string;
   readonly configuration: string;
+  readonly category?: string;
   readonly gameId?: string;
   readonly downforceVariant?: DownforceVariant;
   // readonly multiclass: boolean;

@@ -4,6 +4,7 @@ import { CarClass, CarClassId, getCarClassId } from '../../types/CarClass';
 import type { Car, DownforceVariant } from '../../types/Car';
 import { getTrackId, Track, TrackId } from '../../types/Track';
 import { getCarClassesByName } from './car_classes';
+import { getTrackLabels } from './trackNames';
 import tracksCsv from './tracks.csv?raw';
 import gameTracksCsv from './game_tracks.csv?raw';
 import gameTrackMappingCsv from './game_track_mapping.csv?raw';
@@ -31,6 +32,10 @@ type GameTrack = {
   TrackName: string;
   ShortTrackName: string;
   Track_Variation: string;
+  'Track Group': string;
+  display_name?: string;
+  display_configuration?: string;
+  display_category?: string;
   downforce_variant: DownforceVariant;
 };
 type GameTrackMapping = {
@@ -42,9 +47,17 @@ const gameTracks: GameTrack[] = Papa.parse<GameTrack>(gameTracksCsv, { header: t
 const gameMappings: GameTrackMapping[] = Papa.parse<GameTrackMapping>(gameTrackMappingCsv, { header: true }).data;
 for (const gameTrack of gameTracks) {
   const { game_id, TrackName, ShortTrackName, Track_Variation } = gameTrack;
-  const track: Track = {
+  const labels = getTrackLabels({
     name: TrackName ?? '',
-    configuration: Track_Variation || ShortTrackName || '',
+    shortName: ShortTrackName,
+    variation: Track_Variation,
+    category: gameTrack['Track Group'],
+    displayName: gameTrack.display_name,
+    displayConfiguration: gameTrack.display_configuration,
+    displayCategory: gameTrack.display_category,
+  });
+  const track: Track = {
+    ...labels,
     gameId: game_id,
     downforceVariant: gameTrack.downforce_variant,
   };

@@ -21,6 +21,7 @@ import {
 } from '@mui/material';
 
 import gameTracksCsv from 'app/data/game_tracks.csv?raw';
+import { getTrackLabels, TrackLabels } from 'app/data/trackNames';
 
 type TrackRecord = Record<string, string> & {
   game_id: string;
@@ -37,6 +38,9 @@ type TrackRecord = Record<string, string> & {
   Class: string;
   Downforce: string;
   downforce_variant: string;
+  display_name?: string;
+  display_configuration?: string;
+  display_category?: string;
 };
 
 const parseOptions = { header: true, skipEmptyLines: true } as const;
@@ -66,11 +70,24 @@ function valueFor(track: TrackRecord, key: string): string {
   return track[key] || 'Not specified';
 }
 
+function labelsFor(track: TrackRecord): TrackLabels {
+  return getTrackLabels({
+    name: track.TrackName,
+    shortName: track.ShortTrackName,
+    variation: track.Track_Variation,
+    category: track['Track Group'],
+    displayName: track.display_name,
+    displayConfiguration: track.display_configuration,
+    displayCategory: track.display_category,
+  });
+}
+
 function TrackDetails({ track }: { track: TrackRecord }) {
+  const labels = labelsFor(track);
   return (
     <Stack spacing={2}>
       <Stack direction="row" spacing={1} sx={{ flexWrap: 'wrap' }}>
-        <Chip label={`Group: ${valueFor(track, 'Track Group')}`} />
+        <Chip label={`Group: ${labels.category}`} />
         <Chip label={`Type: ${valueFor(track, 'Track Type')}`} />
         <Chip
           color={track.downforce_variant === 'low' ? 'warning' : 'default'}
@@ -105,6 +122,7 @@ function TrackDetails({ track }: { track: TrackRecord }) {
 }
 
 function TrackAccordion({ track }: { track: TrackRecord }) {
+  const labels = labelsFor(track);
   return (
     <Accordion
       disableGutters
@@ -114,12 +132,11 @@ function TrackAccordion({ track }: { track: TrackRecord }) {
       <AccordionSummary expandIcon={<ExpandMoreIcon />}>
         <Box sx={{ minWidth: 0 }}>
           <Typography variant="subtitle1" noWrap>
-            {valueFor(track, 'TrackName')}
+            {labels.name}
           </Typography>
           <Typography variant="caption" color="text.secondary">
-            {valueFor(track, 'Track_Variation') ||
-              valueFor(track, 'ShortTrackName')}{' '}
-            · {valueFor(track, 'Location')} · {valueFor(track, 'Country')} ·{' '}
+            {labels.configuration || 'Default configuration'} ·{' '}
+            {valueFor(track, 'Location')} · {valueFor(track, 'Country')} ·{' '}
             {valueFor(track, 'Length')} m
           </Typography>
         </Box>
@@ -131,9 +148,15 @@ function TrackAccordion({ track }: { track: TrackRecord }) {
   );
 }
 
+function filterValue(track: TrackRecord, key: keyof TrackRecord): string {
+  const labels = labelsFor(track);
+  if (key === 'Track Group') return labels.category;
+  return String(track[key] ?? '');
+}
+
 function optionsFor(key: keyof TrackRecord): string[] {
   const values: string[] = tracks
-    .map(track => String(track[key] ?? ''))
+    .map(track => filterValue(track, key))
     .filter(Boolean);
   return [...new Set<string>(values)].sort((left, right) =>
     left.localeCompare(right),
@@ -205,7 +228,7 @@ export function TrackExplorerPage() {
             .join(' ')
             .toLowerCase()
             .includes(search)) &&
-        (group === 'all' || track['Track Group'] === group) &&
+        (group === 'all' || filterValue(track, 'Track Group') === group) &&
         (trackType === 'all' || track['Track Type'] === trackType) &&
         (country === 'all' || track.Country === country) &&
         (downforce === 'all' || track.downforce_variant === downforce)
