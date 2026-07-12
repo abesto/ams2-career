@@ -4350,7 +4350,7 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                         <p
                           class="MuiTypography-root MuiTypography-body2 css-1m5ndv6-MuiTypography-root"
                         >
-                          1965-01-01 00:00
+                          2016-01-01 00:00
                         </p>
                       </div>
                     </div>
@@ -5988,7 +5988,7 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                         <p
                           class="MuiTypography-root MuiTypography-body2 css-1m5ndv6-MuiTypography-root"
                         >
-                          1965-01-01 00:00
+                          2016-01-01 00:00
                         </p>
                       </div>
                     </div>

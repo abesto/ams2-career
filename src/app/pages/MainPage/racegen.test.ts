@@ -8,7 +8,7 @@ import {
 import { getTrackIdsFor } from 'app/data/tracks';
 import { getCarClassId } from 'types/CarClass';
 
-import { racegen } from './racegen';
+import { raceDateRange, racegen } from './racegen';
 import * as random from './racegen.random';
 
 const openWheelDiscipline = getDisciplineOfCarClass(
@@ -21,6 +21,22 @@ describe('racegen', () => {
   beforeEach(() => {
     vi.restoreAllMocks();
     vi.spyOn(random, 'choice').mockImplementation(items => items[0]);
+  });
+
+  it('uses the modern era for Copa Classic races', () => {
+    const [start, end] = raceDateRange(
+      getCarClassesByName('Copa Classic (Class: B)')[0],
+    );
+
+    expect(start.year()).toBeGreaterThanOrEqual(new Date().getFullYear() - 10);
+    expect(end.year()).toBe(new Date().getFullYear());
+  });
+
+  it('uses the 1990s for Copa Uno races', () => {
+    const [start, end] = raceDateRange(getCarClassesByName('Copa Uno')[0]);
+
+    expect(start.format('YYYY-MM-DD')).toBe('1990-01-01');
+    expect(end.format('YYYY-MM-DD')).toBe('2000-01-01');
   });
 
   it('falls back to the highest available unlocked class when the player level has no exact match', () => {

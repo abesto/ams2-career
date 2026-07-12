@@ -1,4 +1,4 @@
-import dayjs from 'dayjs';
+import dayjs, { Dayjs } from 'dayjs';
 import minMax from 'dayjs/plugin/minMax';
 
 import { choice, randomDateBetween } from './racegen.random';
@@ -15,6 +15,24 @@ import { TrackId } from 'types/Track';
 
 dayjs.extend(minMax);
 
+const HISTORICAL_RACE_DATE_RANGES: Record<
+  string,
+  { start: () => Dayjs; end: () => Dayjs }
+> = {
+  'Copa Classic (Class: B)': {
+    start: () => dayjs().subtract(10, 'year').startOf('year'),
+    end: () => dayjs(),
+  },
+  'Copa Classic (Class: FL)': {
+    start: () => dayjs().subtract(10, 'year').startOf('year'),
+    end: () => dayjs(),
+  },
+  'Copa Uno': {
+    start: () => dayjs('1990-01-01'),
+    end: () => dayjs('2000-01-01'),
+  },
+};
+
 function highestUnlockedClasses(
   discipline: Discipline,
   level: number,
@@ -28,12 +46,26 @@ function highestUnlockedClasses(
   return [];
 }
 
-function genRaceDate(carClass: CarClass, downforceVariant: DownforceVariant): Date {
-  const cars = getCarsInClass(carClass, downforceVariant);
+export function raceDateRange(
+  carClass: CarClass,
+  downforceVariant?: DownforceVariant,
+): [Dayjs, Dayjs] {
+  const override = HISTORICAL_RACE_DATE_RANGES[carClass.name];
+  if (override) {
+    return [override.start(), override.end()];
+  }
 
+  const cars = getCarsInClass(carClass, downforceVariant);
   const startYear = Math.min(...cars.map(c => c.year));
   const start = dayjs(new Date(startYear, 1, 1)).startOf('year');
-  const end = dayjs.min(start.add(10, 'year'), dayjs());
+  return [start, dayjs.min(start.add(10, 'year'), dayjs())];
+}
+
+function genRaceDate(
+  carClass: CarClass,
+  downforceVariant: DownforceVariant,
+): Date {
+  const [start, end] = raceDateRange(carClass, downforceVariant);
   var date = randomDateBetween(start, end);
 
   if (!canRaceAtNight(carClass)) {
@@ -53,7 +85,9 @@ export function racegen(
     .flatMap(carClass => {
       const variants = [
         ...new Set(
-          getCarsInClass(carClass).map(car => car.downforceVariant || 'standard'),
+          getCarsInClass(carClass).map(
+            car => car.downforceVariant || 'standard',
+          ),
         ),
       ].filter(variant => getTrackIdsFor(carClass, variant).length > 0);
       return variants.map(downforceVariant => ({
