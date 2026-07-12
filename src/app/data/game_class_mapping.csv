@@ -55,7 +55,7 @@ Carrera Cup,Carrera Cup,GT,3,1,explicit-alias
 G55Supercup,Ginetta G55 Supercup,GT,3,1,explicit-alias
 StockCarV8_2023,Stock Car Brasil 19 GrA,Touring,1,0,explicit-alias
 CopaTruck,Copa Truck,Touring,4,0,explicit-alias
-LES_2025,GT Classics,Vintage,4,1,heuristic-family
+LES_2025,P4,Endurance,5,1,explicit-alias
 StockCarV8_2024,Stock Car Brasil 21 GrA,Touring,1,0,explicit-alias
 F-USA_2022,F-USA Gen.3,Open Wheel,4,0,heuristic-family
 P1Gen2,P1,Endurance,2,1,explicit-alias

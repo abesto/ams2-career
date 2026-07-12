@@ -32,4 +32,15 @@ describe('metaClassMappingFor', () => {
       source: 'explicit-alias',
     });
   });
+
+  it('splits the mixed LES 2025 family by its actual vehicle group', () => {
+    expect(metaClassMappingFor('LES_2025', 'LMP4', 'Prototype')).toEqual({
+      metaClass: 'P4',
+      source: 'explicit-alias',
+    });
+    expect(metaClassMappingFor('LES_2025', 'GT4', 'GT')).toEqual({
+      metaClass: 'GT4',
+      source: 'explicit-alias',
+    });
+  });
 });

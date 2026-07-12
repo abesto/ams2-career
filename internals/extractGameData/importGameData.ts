@@ -144,6 +144,12 @@ export function metaClassMappingFor(
   shape: string,
 ): MetaClassMapping {
   const key = normalize(gameClass.replace(/_(LD|HD|SO|SS|SW|RET)$/i, ''));
+  if (/^les_2025$/i.test(gameClass) && /^lmp4$/i.test(group)) {
+    return { metaClass: 'P4', source: 'explicit-alias' };
+  }
+  if (/^les_2025$/i.test(gameClass) && /^gt4$/i.test(group)) {
+    return { metaClass: 'GT4', source: 'explicit-alias' };
+  }
   if (META_ALIASES[key])
     return { metaClass: META_ALIASES[key], source: 'explicit-alias' };
   const heuristic = (metaClass: string): MetaClassMapping => ({
