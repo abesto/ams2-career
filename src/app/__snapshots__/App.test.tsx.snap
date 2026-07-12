@@ -349,12 +349,14 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Snetterton 100
+                          Snetterton
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        100
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -380,12 +382,14 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Adelaide Modern Time Trial
+                          Adelaide
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        Modern Time Trial
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -411,12 +415,14 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Cordoba GP
+                          Cordoba
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        GP
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root Mui-selected MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -442,12 +448,14 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Buenos Aires Circuito 7
+                          Buenos Aires
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        Circuito 7
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -473,7 +481,7 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Nurburgring Sprint Alt
+                          Nürburgring
                         </div>
                       </td>
                       <td
@@ -506,12 +514,14 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Granja Viana Kart 102
+                          Granja Viana
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        Granja Viana Kart 102
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -537,12 +547,14 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Velo Citta Club Day
+                          Velo Citta
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        Club Day
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -568,12 +580,14 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Snetterton 100
+                          Snetterton
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        100
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -599,12 +613,14 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Cordoba National
+                          Cordoba
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        National
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -630,12 +646,14 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Buenos Aires Circuito 8
+                          Buenos Aires
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        Circuito 8
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -1010,7 +1028,7 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         <p
                           class="MuiTypography-root MuiTypography-body2 css-1m5ndv6-MuiTypography-root"
                         >
-                          Buenos Aires Circuito 7
+                          Buenos Aires
                         </p>
                       </div>
                     </div>
@@ -1027,7 +1045,9 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         </span>
                         <p
                           class="MuiTypography-root MuiTypography-body2 css-1m5ndv6-MuiTypography-root"
-                        />
+                        >
+                          Circuito 7
+                        </p>
                       </div>
                     </div>
                     <div
@@ -1891,12 +1911,14 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Pocono Oval
+                          Pocono
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        Oval
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -1922,12 +1944,14 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Nurb 1971 Nords
+                          Nürburgring
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        1971 Nords
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -1953,12 +1977,14 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Guapore Time Trial
+                          Guapore
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        Time Trial
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -1984,12 +2010,14 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Jacarepagua 2005
+                          Jacarepagua
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        2005
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -2015,12 +2043,14 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Virginia North
+                          Virginia
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        North
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -2046,12 +2076,14 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Barcelona 1991
+                          Barcelona
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        1991
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root Mui-selected MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -2077,12 +2109,14 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Fontana Sports Car Course
+                          Fontana
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        Sports Car Course
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -2108,12 +2142,14 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Cordoba National
+                          Cordoba
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        National
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -2139,12 +2175,14 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Goiania Short
+                          Goiania
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        Short
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -2170,12 +2208,14 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Virginia North
+                          Virginia
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        North
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -2201,12 +2241,14 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Ibarra Time Trial
+                          Ibarra
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        Time Trial
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -2591,7 +2633,7 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                         <p
                           class="MuiTypography-root MuiTypography-body2 css-1m5ndv6-MuiTypography-root"
                         >
-                          Fontana Sports Car Course
+                          Fontana
                         </p>
                       </div>
                     </div>
@@ -2608,7 +2650,9 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                         </span>
                         <p
                           class="MuiTypography-root MuiTypography-body2 css-1m5ndv6-MuiTypography-root"
-                        />
+                        >
+                          Sports Car Course
+                        </p>
                       </div>
                     </div>
                     <div
@@ -3420,12 +3464,14 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Pocono Oval
+                          Pocono
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        Oval
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -3451,12 +3497,14 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Nurb 1971 Nords
+                          Nürburgring
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        1971 Nords
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -3482,12 +3530,14 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Guapore Time Trial
+                          Guapore
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        Time Trial
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -3513,12 +3563,14 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Jacarepagua 2005
+                          Jacarepagua
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        2005
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -3544,12 +3596,14 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Virginia North
+                          Virginia
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        North
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -3575,12 +3629,14 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Barcelona 1991
+                          Barcelona
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        1991
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -3606,12 +3662,14 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Fontana Sports Car Course
+                          Fontana
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        Sports Car Course
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -3637,12 +3695,14 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Cordoba National
+                          Cordoba
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        National
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -3668,12 +3728,14 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Goiania Short
+                          Goiania
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        Short
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -3699,12 +3761,14 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Virginia North
+                          Virginia
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        North
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -3730,12 +3794,14 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Ibarra Time Trial
+                          Ibarra
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        Time Trial
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -4135,7 +4201,7 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                         <p
                           class="MuiTypography-root MuiTypography-body2 css-1m5ndv6-MuiTypography-root"
                         >
-                          Pocono Oval
+                          Pocono
                         </p>
                       </div>
                     </div>
@@ -4152,7 +4218,9 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                         </span>
                         <p
                           class="MuiTypography-root MuiTypography-body2 css-1m5ndv6-MuiTypography-root"
-                        />
+                        >
+                          Oval
+                        </p>
                       </div>
                     </div>
                     <div
@@ -5003,12 +5071,14 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Pocono Oval
+                          Pocono
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        Oval
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -5034,12 +5104,14 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Nurb 1971 Nords
+                          Nürburgring
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        1971 Nords
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -5065,12 +5137,14 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Guapore Time Trial
+                          Guapore
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        Time Trial
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -5096,12 +5170,14 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Jacarepagua 2005
+                          Jacarepagua
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        2005
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -5127,12 +5203,14 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Virginia North
+                          Virginia
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        North
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -5158,12 +5236,14 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Barcelona 1991
+                          Barcelona
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        1991
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -5189,12 +5269,14 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Fontana Sports Car Course
+                          Fontana
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        Sports Car Course
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -5220,12 +5302,14 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Cordoba National
+                          Cordoba
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        National
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -5251,12 +5335,14 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Goiania Short
+                          Goiania
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        Short
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -5282,12 +5368,14 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Virginia North
+                          Virginia
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        North
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -5313,12 +5401,14 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Ibarra Time Trial
+                          Ibarra
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        Time Trial
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -5718,7 +5808,7 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                         <p
                           class="MuiTypography-root MuiTypography-body2 css-1m5ndv6-MuiTypography-root"
                         >
-                          Pocono Oval
+                          Pocono
                         </p>
                       </div>
                     </div>
@@ -5735,7 +5825,9 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                         </span>
                         <p
                           class="MuiTypography-root MuiTypography-body2 css-1m5ndv6-MuiTypography-root"
-                        />
+                        >
+                          Oval
+                        </p>
                       </div>
                     </div>
                     <div
@@ -6551,12 +6643,14 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Ibarra Time Trial
+                          Ibarra
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        Time Trial
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -6582,12 +6676,14 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Circuit de Catalunya GP
+                          Barcelona
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        Circuit de Catalunya GP
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -6613,12 +6709,14 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Snetterton 100
+                          Snetterton
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        100
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root Mui-selected MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -6644,12 +6742,14 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Watkins Glen 1971 GP
+                          Watkins Glen
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        1971 GP
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -6675,12 +6775,14 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Cordoba National
+                          Cordoba
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        National
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -6706,12 +6808,14 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Willow Springs Horse Thief Mile
+                          Willow Springs
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        Horse Thief Mile
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -6737,12 +6841,14 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Jacarepagua 2005
+                          Jacarepagua
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        2005
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -6768,12 +6874,14 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Ibarra Time Trial
+                          Ibarra
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        Time Trial
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -7148,7 +7256,7 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                         <p
                           class="MuiTypography-root MuiTypography-body2 css-1m5ndv6-MuiTypography-root"
                         >
-                          Watkins Glen 1971 GP
+                          Watkins Glen
                         </p>
                       </div>
                     </div>
@@ -7165,7 +7273,9 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                         </span>
                         <p
                           class="MuiTypography-root MuiTypography-body2 css-1m5ndv6-MuiTypography-root"
-                        />
+                        >
+                          1971 GP
+                        </p>
                       </div>
                     </div>
                     <div
@@ -8033,12 +8143,14 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Brands Hatch Indy
+                          Brands Hatch
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        Indy
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -8095,12 +8207,14 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Pocono Oval
+                          Pocono
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        Oval
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -8126,12 +8240,14 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Nurb 1971 Nords
+                          Nürburgring
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        1971 Nords
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -8157,12 +8273,14 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Willow Springs Horse Thief Mile
+                          Willow Springs
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        Horse Thief Mile
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -8188,12 +8306,14 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Circuit de Catalunya National No Chicane
+                          Barcelona
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        Circuit de Catalunya National No Chicane
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root Mui-selected MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -8250,12 +8370,14 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Ortona 2
+                          Ortona
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        2
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -8281,12 +8403,14 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Adelaide Modern Time Trial
+                          Adelaide
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        Modern Time Trial
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -8312,7 +8436,7 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Nurburgring Sprint Alt
+                          Nürburgring
                         </div>
                       </td>
                       <td
@@ -8345,12 +8469,14 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Circuit de Catalunya National No Chicane
+                          Barcelona
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        Circuit de Catalunya National No Chicane
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -8376,12 +8502,14 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Ibarra Time Trial
+                          Ibarra
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        Time Trial
+                      </td>
                     </tr>
                   </tbody>
                 </table>

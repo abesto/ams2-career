@@ -10,6 +10,13 @@ A simple external career mode for Automobilista 2, built as a web application fo
 
 The rest of this README serves as minimal technical documentation.
 
+## AI-assisted development
+
+Starting with version `1.6.0`, this project has been developed with AI assistance. AI
+has been used for code implementation, research, exploratory tooling, documentation,
+and test generation. Changes are reviewed and tested by the project maintainer, but
+game-data extraction and compatibility mappings remain subject to ongoing validation.
+
 ## Basic Details
 
 Main libraries / frameworks:

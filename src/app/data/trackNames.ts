@@ -43,6 +43,40 @@ function comparable(value: string): string {
   return value.toLowerCase().replace(/[^a-z0-9]/g, '');
 }
 
+function baseTrackGroup(value: string): string {
+  // Some AMS2 groups include the historical year in the group itself. That
+  // year identifies a configuration, not a different parent circuit.
+  const withoutYear = value.replace(/[_ -](?:19|20)\d{2}(?:[_ -].*)?$/i, '');
+  return withoutYear;
+}
+
+function displayTrackGroup(value: string): string {
+  const base = baseTrackGroup(value);
+  const formatted = formatTrackLabel(base);
+  if (comparable(base) === 'watkinsglen') return 'Watkins Glen';
+  return comparable(base) === 'nurb' || comparable(base) === 'nurburgring'
+    ? 'Nürburgring'
+    : formatted;
+}
+
+function configurationFromName(name: string, group: string): string {
+  const base = baseTrackGroup(group);
+  const prefixes = [base];
+  if (comparable(base) === 'nurb' || comparable(base) === 'nurburgring') {
+    prefixes.push('Nurburgring', 'Nurb');
+  }
+  for (const value of prefixes.sort((a, b) => b.length - a.length)) {
+    const prefix = new RegExp(
+      `^${value.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')}[_ -]?`,
+      'i',
+    );
+    if (prefix.test(name)) {
+      return name.replace(prefix, '');
+    }
+  }
+  return name;
+}
+
 function deduplicateConfiguration(
   configuration: string,
   name: string,
@@ -64,10 +98,30 @@ function deduplicateConfiguration(
 }
 
 export function getTrackLabels(source: TrackLabelSource): TrackLabels {
-  const name = source.displayName || formatTrackLabel(source.name);
-  const category =
-    source.displayCategory || formatTrackLabel(source.category || source.name);
-  const rawConfiguration = source.displayConfiguration || source.variation || source.shortName || '';
+  const rawGroup = source.category || source.name;
+  const category = source.displayCategory || displayTrackGroup(rawGroup);
+  // TrackName is often the configuration-specific game identifier (for
+  // example California_Highway_Full). Track Group is the circuit identity.
+  const name =
+    source.displayName ||
+    (source.category ? category : formatTrackLabel(source.name));
+  const configurationFromTrackName = configurationFromName(
+    source.name,
+    rawGroup,
+  );
+  const configurationFromDisplayName = source.displayConfiguration
+    ? configurationFromName(source.displayConfiguration, rawGroup)
+    : '';
+  const rawConfiguration =
+    configurationFromDisplayName ||
+    (source.variation &&
+    comparable(source.variation) !== comparable(source.name)
+      ? comparable(configurationFromTrackName).endsWith(
+          comparable(source.variation),
+        )
+        ? configurationFromTrackName
+        : source.variation
+      : configurationFromTrackName);
   const configuration = deduplicateConfiguration(
     formatTrackLabel(rawConfiguration),
     name,
