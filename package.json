@@ -84,6 +84,7 @@
     "scan-game-payloads": "ts-node ./internals/extractGameData/decodeBffPayloadSamples.ts",
     "extract-bootflow-details": "ts-node ./internals/extractGameData/extractBootflowDetails.ts",
     "import-game-data": "ts-node ./internals/extractGameData/importGameData.ts",
+    "audit-imported-data": "ts-node ./internals/extractGameData/auditImportedData.ts",
     "cross-check-bootflow-details": "ts-node ./internals/extractGameData/crossCheckBootflowDetails.ts",
     "build-data-comparison-report": "ts-node ./internals/extractGameData/buildComparisonReport.ts",
     "cross-check-physics-vehicles": "ts-node ./internals/extractGameData/crossCheckPhysicsVehicles.ts",
