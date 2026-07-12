@@ -67,6 +67,7 @@ Open Wheel,4,F-USA Gen.3,0,25,Laps
 Open Wheel,4,Formula Classic G1,0,25,Laps
 Open Wheel,4,Formula Classic G2,0,25,Laps
 Open Wheel,4,Formula Classic G3,0,25,Laps
+Open Wheel,4,Formula Classic G4,0,25,Laps
 Open Wheel,5,F3,0,15,Laps
 Open Wheel,6,FTS,0,10,Laps
 Open Wheel,7,FormulaVee Brazil,0,6,Laps
@@ -544,6 +545,7 @@ Bannochbrae1-5,Bannochbrae_Road_Circuit,standard,F-USA Gen.3,track-type-fallback
 Bannochbrae1-5,Bannochbrae_Road_Circuit,standard,Formula Classic G1,track-type-fallback
 Bannochbrae1-5,Bannochbrae_Road_Circuit,standard,Formula Classic G2,track-type-fallback
 Bannochbrae1-5,Bannochbrae_Road_Circuit,standard,Formula Classic G3,track-type-fallback
+Bannochbrae1-5 Bannochbrae_Road_Circuit standard Formula Classic G4 track-type-fallback
 Bannochbrae1-5,Bannochbrae_Road_Circuit,standard,F3,track-type-fallback
 Bannochbrae1-5,Bannochbrae_Road_Circuit,standard,FTS,track-type-fallback
 Bannochbrae1-5,Bannochbrae_Road_Circuit,standard,FormulaVee Brazil,track-type-fallback
@@ -648,6 +650,7 @@ Nurburgring_GP-70,Nurburgring_GP,standard,DPi,existing-app-matrix
 Nurburgring_GP-70,Nurburgring_GP,standard,F3,existing-app-matrix
 Nurburgring_GP-70,Nurburgring_GP,standard,Formula Classic G2,existing-app-matrix
 Nurburgring_GP-70,Nurburgring_GP,standard,Formula Classic G3,existing-app-matrix
+Nurburgring_GP-70,Nurburgring_GP,standard,Formula Classic G4,existing-app-matrix
 Nurburgring_GP-70,Nurburgring_GP,standard,Formula Reiza,existing-app-matrix
 Nurburgring_GP-70,Nurburgring_GP,standard,Formula Retro G3,existing-app-matrix
 Nurburgring_GP-70,Nurburgring_GP,standard,Formula V10 G1,existing-app-matrix
@@ -700,6 +703,7 @@ Nurburgring_SprintAlt-73,Nurburgring_SprintAlt,standard,F-USA Gen.3,track-type-f
 Nurburgring_SprintAlt-73,Nurburgring_SprintAlt,standard,Formula Classic G1,track-type-fallback
 Nurburgring_SprintAlt-73,Nurburgring_SprintAlt,standard,Formula Classic G2,track-type-fallback
 Nurburgring_SprintAlt-73,Nurburgring_SprintAlt,standard,Formula Classic G3,track-type-fallback
+Nurburgring_SprintAlt-73,Nurburgring_SprintAlt,standard,Formula Classic G4,track-type-fallback
 Nurburgring_SprintAlt-73,Nurburgring_SprintAlt,standard,F3,track-type-fallback
 Nurburgring_SprintAlt-73,Nurburgring_SprintAlt,standard,FTS,track-type-fallback
 Nurburgring_SprintAlt-73,Nurburgring_SprintAlt,standard,FormulaVee Brazil,track-type-fallback
@@ -780,6 +784,7 @@ California_Horse_Thief_Mile-15,Willow_Springs_Horse_Thief_Mile,standard,F-USA Ge
 California_Horse_Thief_Mile-15,Willow_Springs_Horse_Thief_Mile,standard,Formula Classic G1,track-type-fallback
 California_Horse_Thief_Mile-15,Willow_Springs_Horse_Thief_Mile,standard,Formula Classic G2,track-type-fallback
 California_Horse_Thief_Mile-15,Willow_Springs_Horse_Thief_Mile,standard,Formula Classic G3,track-type-fallback
+California_Horse_Thief_Mile-15,Willow_Springs_Horse_Thief_Mile,standard,Formula Classic G4,track-type-fallback
 California_Horse_Thief_Mile-15,Willow_Springs_Horse_Thief_Mile,standard,F3,track-type-fallback
 California_Horse_Thief_Mile-15,Willow_Springs_Horse_Thief_Mile,standard,FTS,track-type-fallback
 California_Horse_Thief_Mile-15,Willow_Springs_Horse_Thief_Mile,standard,FormulaVee Brazil,track-type-fallback
@@ -845,6 +850,7 @@ Nordschleife-69,Nordschleife,standard,F-USA Gen.3,track-type-fallback
 Nordschleife-69,Nordschleife,standard,Formula Classic G1,track-type-fallback
 Nordschleife-69,Nordschleife,standard,Formula Classic G2,track-type-fallback
 Nordschleife-69,Nordschleife,standard,Formula Classic G3,track-type-fallback
+Nordschleife-69,Nordschleife,standard,Formula Classic G4,track-type-fallback
 Nordschleife-69,Nordschleife,standard,F3,track-type-fallback
 Nordschleife-69,Nordschleife,standard,FTS,track-type-fallback
 Nordschleife-69,Nordschleife,standard,FormulaVee Brazil,track-type-fallback
@@ -910,6 +916,7 @@ Nurburgring_Sprint-72,Nurburgring_Sprint,standard,F-USA Gen.3,track-type-fallbac
 Nurburgring_Sprint-72,Nurburgring_Sprint,standard,Formula Classic G1,track-type-fallback
 Nurburgring_Sprint-72,Nurburgring_Sprint,standard,Formula Classic G2,track-type-fallback
 Nurburgring_Sprint-72,Nurburgring_Sprint,standard,Formula Classic G3,track-type-fallback
+Nurburgring_Sprint-72,Nurburgring_Sprint,standard,Formula Classic G4,track-type-fallback
 Nurburgring_Sprint-72,Nurburgring_Sprint,standard,F3,track-type-fallback
 Nurburgring_Sprint-72,Nurburgring_Sprint,standard,FTS,track-type-fallback
 Nurburgring_Sprint-72,Nurburgring_Sprint,standard,FormulaVee Brazil,track-type-fallback
@@ -975,6 +982,7 @@ Nurburgring_Muellenbach-129,Nurburgring_Muellenbach,standard,F-USA Gen.3,track-t
 Nurburgring_Muellenbach-129,Nurburgring_Muellenbach,standard,Formula Classic G1,track-type-fallback
 Nurburgring_Muellenbach-129,Nurburgring_Muellenbach,standard,Formula Classic G2,track-type-fallback
 Nurburgring_Muellenbach-129,Nurburgring_Muellenbach,standard,Formula Classic G3,track-type-fallback
+Nurburgring_Muellenbach-129,Nurburgring_Muellenbach,standard,Formula Classic G4,track-type-fallback
 Nurburgring_Muellenbach-129,Nurburgring_Muellenbach,standard,F3,track-type-fallback
 Nurburgring_Muellenbach-129,Nurburgring_Muellenbach,standard,FTS,track-type-fallback
 Nurburgring_Muellenbach-129,Nurburgring_Muellenbach,standard,FormulaVee Brazil,track-type-fallback
@@ -1040,6 +1048,7 @@ Nordschleife_Full-68,Nordschleife_Full,standard,F-USA Gen.3,track-type-fallback
 Nordschleife_Full-68,Nordschleife_Full,standard,Formula Classic G1,track-type-fallback
 Nordschleife_Full-68,Nordschleife_Full,standard,Formula Classic G2,track-type-fallback
 Nordschleife_Full-68,Nordschleife_Full,standard,Formula Classic G3,track-type-fallback
+Nordschleife_Full-68,Nordschleife_Full,standard,Formula Classic G4,track-type-fallback
 Nordschleife_Full-68,Nordschleife_Full,standard,F3,track-type-fallback
 Nordschleife_Full-68,Nordschleife_Full,standard,FTS,track-type-fallback
 Nordschleife_Full-68,Nordschleife_Full,standard,FormulaVee Brazil,track-type-fallback
@@ -1105,6 +1114,7 @@ SpaFrancorchamps_SMS-88,SpaFrancorchamps_SMS,standard,F-USA Gen.3,track-type-fal
 SpaFrancorchamps_SMS-88,SpaFrancorchamps_SMS,standard,Formula Classic G1,track-type-fallback
 SpaFrancorchamps_SMS-88,SpaFrancorchamps_SMS,standard,Formula Classic G2,track-type-fallback
 SpaFrancorchamps_SMS-88,SpaFrancorchamps_SMS,standard,Formula Classic G3,track-type-fallback
+SpaFrancorchamps_SMS-88,SpaFrancorchamps_SMS,standard,Formula Classic G4,track-type-fallback
 SpaFrancorchamps_SMS-88,SpaFrancorchamps_SMS,standard,F3,track-type-fallback
 SpaFrancorchamps_SMS-88,SpaFrancorchamps_SMS,standard,FTS,track-type-fallback
 SpaFrancorchamps_SMS-88,SpaFrancorchamps_SMS,standard,FormulaVee Brazil,track-type-fallback
@@ -1170,6 +1180,7 @@ Charade_20-128,Charade_20,standard,F-USA Gen.3,track-type-fallback
 Charade_20-128,Charade_20,standard,Formula Classic G1,track-type-fallback
 Charade_20-128,Charade_20,standard,Formula Classic G2,track-type-fallback
 Charade_20-128,Charade_20,standard,Formula Classic G3,track-type-fallback
+Charade_20-128,Charade_20,standard,Formula Classic G4,track-type-fallback
 Charade_20-128,Charade_20,standard,F3,track-type-fallback
 Charade_20-128,Charade_20,standard,FTS,track-type-fallback
 Charade_20-128,Charade_20,standard,FormulaVee Brazil,track-type-fallback
@@ -1235,6 +1246,7 @@ TestOval-96,TestOval,standard,F-USA Gen.3,track-type-fallback
 TestOval-96,TestOval,standard,Formula Classic G1,track-type-fallback
 TestOval-96,TestOval,standard,Formula Classic G2,track-type-fallback
 TestOval-96,TestOval,standard,Formula Classic G3,track-type-fallback
+TestOval-96,TestOval,standard,Formula Classic G4,track-type-fallback
 TestOval-96,TestOval,standard,F3,track-type-fallback
 TestOval-96,TestOval,standard,FTS,track-type-fallback
 TestOval-96,TestOval,standard,FormulaVee Brazil,track-type-fallback
@@ -1268,6 +1280,7 @@ Azure_Circuit-4,Azure_Circuit,standard,F3,existing-app-matrix
 Azure_Circuit-4,Azure_Circuit,standard,Formula Classic G1,existing-app-matrix
 Azure_Circuit-4,Azure_Circuit,standard,Formula Classic G2,existing-app-matrix
 Azure_Circuit-4,Azure_Circuit,standard,Formula Classic G3,existing-app-matrix
+Azure_Circuit-4,Azure_Circuit,standard,Formula Classic G4,existing-app-matrix
 Azure_Circuit-4,Azure_Circuit,standard,Formula Reiza,existing-app-matrix
 Azure_Circuit-4,Azure_Circuit,standard,Formula Retro G1,existing-app-matrix
 Azure_Circuit-4,Azure_Circuit,standard,Formula Retro G2,existing-app-matrix
@@ -1327,6 +1340,7 @@ GoianiaShort-29,GoianiaShort,standard,F-USA Gen.3,track-type-fallback
 GoianiaShort-29,GoianiaShort,standard,Formula Classic G1,track-type-fallback
 GoianiaShort-29,GoianiaShort,standard,Formula Classic G2,track-type-fallback
 GoianiaShort-29,GoianiaShort,standard,Formula Classic G3,track-type-fallback
+GoianiaShort-29,GoianiaShort,standard,Formula Classic G4,track-type-fallback
 GoianiaShort-29,GoianiaShort,standard,F3,track-type-fallback
 GoianiaShort-29,GoianiaShort,standard,FTS,track-type-fallback
 GoianiaShort-29,GoianiaShort,standard,FormulaVee Brazil,track-type-fallback
@@ -1392,6 +1406,7 @@ Guapore_STT-228,Guapore_STT,standard,F-USA Gen.3,track-type-fallback
 Guapore_STT-228,Guapore_STT,standard,Formula Classic G1,track-type-fallback
 Guapore_STT-228,Guapore_STT,standard,Formula Classic G2,track-type-fallback
 Guapore_STT-228,Guapore_STT,standard,Formula Classic G3,track-type-fallback
+Guapore_STT-228,Guapore_STT,standard,Formula Classic G4,track-type-fallback
 Guapore_STT-228,Guapore_STT,standard,F3,track-type-fallback
 Guapore_STT-228,Guapore_STT,standard,FTS,track-type-fallback
 Guapore_STT-228,Guapore_STT,standard,FormulaVee Brazil,track-type-fallback
@@ -1517,6 +1532,7 @@ Jerez_Standard-53,Jerez_Standard,standard,F-USA Gen.3,track-type-fallback
 Jerez_Standard-53,Jerez_Standard,standard,Formula Classic G1,track-type-fallback
 Jerez_Standard-53,Jerez_Standard,standard,Formula Classic G2,track-type-fallback
 Jerez_Standard-53,Jerez_Standard,standard,Formula Classic G3,track-type-fallback
+Jerez_Standard-53,Jerez_Standard,standard,Formula Classic G4,track-type-fallback
 Jerez_Standard-53,Jerez_Standard,standard,F3,track-type-fallback
 Jerez_Standard-53,Jerez_Standard,standard,FTS,track-type-fallback
 Jerez_Standard-53,Jerez_Standard,standard,FormulaVee Brazil,track-type-fallback
@@ -1582,6 +1598,7 @@ Brasilia_Full-107,Brasilia_Full,standard,F-USA Gen.3,track-type-fallback
 Brasilia_Full-107,Brasilia_Full,standard,Formula Classic G1,track-type-fallback
 Brasilia_Full-107,Brasilia_Full,standard,Formula Classic G2,track-type-fallback
 Brasilia_Full-107,Brasilia_Full,standard,Formula Classic G3,track-type-fallback
+Brasilia_Full-107,Brasilia_Full,standard,Formula Classic G4,track-type-fallback
 Brasilia_Full-107,Brasilia_Full,standard,F3,track-type-fallback
 Brasilia_Full-107,Brasilia_Full,standard,FTS,track-type-fallback
 Brasilia_Full-107,Brasilia_Full,standard,FormulaVee Brazil,track-type-fallback
@@ -1674,6 +1691,7 @@ Spielberg_Vintage-92,Spielberg_Vintage,standard,F-USA Gen.3,track-type-fallback
 Spielberg_Vintage-92,Spielberg_Vintage,standard,Formula Classic G1,track-type-fallback
 Spielberg_Vintage-92,Spielberg_Vintage,standard,Formula Classic G2,track-type-fallback
 Spielberg_Vintage-92,Spielberg_Vintage,standard,Formula Classic G3,track-type-fallback
+Spielberg_Vintage-92,Spielberg_Vintage,standard,Formula Classic G4,track-type-fallback
 Spielberg_Vintage-92,Spielberg_Vintage,standard,F3,track-type-fallback
 Spielberg_Vintage-92,Spielberg_Vintage,standard,FTS,track-type-fallback
 Spielberg_Vintage-92,Spielberg_Vintage,standard,FormulaVee Brazil,track-type-fallback
@@ -1739,6 +1757,7 @@ Tykki_Tarmac-199,Tykki_Tarmac,standard,F-USA Gen.3,track-type-fallback
 Tykki_Tarmac-199,Tykki_Tarmac,standard,Formula Classic G1,track-type-fallback
 Tykki_Tarmac-199,Tykki_Tarmac,standard,Formula Classic G2,track-type-fallback
 Tykki_Tarmac-199,Tykki_Tarmac,standard,Formula Classic G3,track-type-fallback
+Tykki_Tarmac-199,Tykki_Tarmac,standard,Formula Classic G4,track-type-fallback
 Tykki_Tarmac-199,Tykki_Tarmac,standard,F3,track-type-fallback
 Tykki_Tarmac-199,Tykki_Tarmac,standard,FTS,track-type-fallback
 Tykki_Tarmac-199,Tykki_Tarmac,standard,FormulaVee Brazil,track-type-fallback
@@ -1804,6 +1823,7 @@ Guapore-31,Guapore,standard,F-USA Gen.3,track-type-fallback
 Guapore-31,Guapore,standard,Formula Classic G1,track-type-fallback
 Guapore-31,Guapore,standard,Formula Classic G2,track-type-fallback
 Guapore-31,Guapore,standard,Formula Classic G3,track-type-fallback
+Guapore-31,Guapore,standard,Formula Classic G4,track-type-fallback
 Guapore-31,Guapore,standard,F3,track-type-fallback
 Guapore-31,Guapore,standard,FTS,track-type-fallback
 Guapore-31,Guapore,standard,FormulaVee Brazil,track-type-fallback
@@ -1869,6 +1889,7 @@ Brasilia_Outer-108,Brasilia_Outer,standard,F-USA Gen.3,track-type-fallback
 Brasilia_Outer-108,Brasilia_Outer,standard,Formula Classic G1,track-type-fallback
 Brasilia_Outer-108,Brasilia_Outer,standard,Formula Classic G2,track-type-fallback
 Brasilia_Outer-108,Brasilia_Outer,standard,Formula Classic G3,track-type-fallback
+Brasilia_Outer-108,Brasilia_Outer,standard,Formula Classic G4,track-type-fallback
 Brasilia_Outer-108,Brasilia_Outer,standard,F3,track-type-fallback
 Brasilia_Outer-108,Brasilia_Outer,standard,FTS,track-type-fallback
 Brasilia_Outer-108,Brasilia_Outer,standard,FormulaVee Brazil,track-type-fallback
@@ -1934,6 +1955,7 @@ Silverstone_1975-109,Silverstone_1975,standard,F-USA Gen.3,track-type-fallback
 Silverstone_1975-109,Silverstone_1975,standard,Formula Classic G1,track-type-fallback
 Silverstone_1975-109,Silverstone_1975,standard,Formula Classic G2,track-type-fallback
 Silverstone_1975-109,Silverstone_1975,standard,Formula Classic G3,track-type-fallback
+Silverstone_1975-109,Silverstone_1975,standard,Formula Classic G4,track-type-fallback
 Silverstone_1975-109,Silverstone_1975,standard,F3,track-type-fallback
 Silverstone_1975-109,Silverstone_1975,standard,FTS,track-type-fallback
 Silverstone_1975-109,Silverstone_1975,standard,FormulaVee Brazil,track-type-fallback
@@ -1989,6 +2011,7 @@ Cascais_Alternate-141,Cascais_Alternate,standard,DPi,existing-app-matrix
 Cascais_Alternate-141,Cascais_Alternate,standard,Formula Classic G1,existing-app-matrix
 Cascais_Alternate-141,Cascais_Alternate,standard,Formula Classic G2,existing-app-matrix
 Cascais_Alternate-141,Cascais_Alternate,standard,Formula Classic G3,existing-app-matrix
+Cascais_Alternate-141,Cascais_Alternate,standard,Formula Classic G4,existing-app-matrix
 Cascais_Alternate-141,Cascais_Alternate,standard,Formula Reiza,existing-app-matrix
 Cascais_Alternate-141,Cascais_Alternate,standard,Formula Retro G1,existing-app-matrix
 Cascais_Alternate-141,Cascais_Alternate,standard,Formula Retro G2,existing-app-matrix
@@ -2066,6 +2089,7 @@ Spielberg_Historic-90,Spielberg_Historic,standard,F-USA Gen.3,track-type-fallbac
 Spielberg_Historic-90,Spielberg_Historic,standard,Formula Classic G1,track-type-fallback
 Spielberg_Historic-90,Spielberg_Historic,standard,Formula Classic G2,track-type-fallback
 Spielberg_Historic-90,Spielberg_Historic,standard,Formula Classic G3,track-type-fallback
+Spielberg_Historic-90,Spielberg_Historic,standard,Formula Classic G4,track-type-fallback
 Spielberg_Historic-90,Spielberg_Historic,standard,F3,track-type-fallback
 Spielberg_Historic-90,Spielberg_Historic,standard,FTS,track-type-fallback
 Spielberg_Historic-90,Spielberg_Historic,standard,FormulaVee Brazil,track-type-fallback
@@ -2149,6 +2173,7 @@ Circuit_de_Catalunya_NATL_NC-209,Circuit_de_Catalunya_NATL_NC,standard,F-USA Gen
 Circuit_de_Catalunya_NATL_NC-209,Circuit_de_Catalunya_NATL_NC,standard,Formula Classic G1,track-type-fallback
 Circuit_de_Catalunya_NATL_NC-209,Circuit_de_Catalunya_NATL_NC,standard,Formula Classic G2,track-type-fallback
 Circuit_de_Catalunya_NATL_NC-209,Circuit_de_Catalunya_NATL_NC,standard,Formula Classic G3,track-type-fallback
+Circuit_de_Catalunya_NATL_NC-209,Circuit_de_Catalunya_NATL_NC,standard,Formula Classic G4,track-type-fallback
 Circuit_de_Catalunya_NATL_NC-209,Circuit_de_Catalunya_NATL_NC,standard,F3,track-type-fallback
 Circuit_de_Catalunya_NATL_NC-209,Circuit_de_Catalunya_NATL_NC,standard,FTS,track-type-fallback
 Circuit_de_Catalunya_NATL_NC-209,Circuit_de_Catalunya_NATL_NC,standard,FormulaVee Brazil,track-type-fallback
@@ -2214,6 +2239,7 @@ Jacarepagua_2005-134,Jacarepagua_2005,standard,F-USA Gen.3,track-type-fallback
 Jacarepagua_2005-134,Jacarepagua_2005,standard,Formula Classic G1,track-type-fallback
 Jacarepagua_2005-134,Jacarepagua_2005,standard,Formula Classic G2,track-type-fallback
 Jacarepagua_2005-134,Jacarepagua_2005,standard,Formula Classic G3,track-type-fallback
+Jacarepagua_2005-134,Jacarepagua_2005,standard,Formula Classic G4,track-type-fallback
 Jacarepagua_2005-134,Jacarepagua_2005,standard,F3,track-type-fallback
 Jacarepagua_2005-134,Jacarepagua_2005,standard,FTS,track-type-fallback
 Jacarepagua_2005-134,Jacarepagua_2005,standard,FormulaVee Brazil,track-type-fallback
@@ -2287,6 +2313,7 @@ GoianiaOuter-28,GoianiaOuter,standard,F-USA Gen.3,track-type-fallback
 GoianiaOuter-28,GoianiaOuter,standard,Formula Classic G1,track-type-fallback
 GoianiaOuter-28,GoianiaOuter,standard,Formula Classic G2,track-type-fallback
 GoianiaOuter-28,GoianiaOuter,standard,Formula Classic G3,track-type-fallback
+GoianiaOuter-28,GoianiaOuter,standard,Formula Classic G4,track-type-fallback
 GoianiaOuter-28,GoianiaOuter,standard,F3,track-type-fallback
 GoianiaOuter-28,GoianiaOuter,standard,FTS,track-type-fallback
 GoianiaOuter-28,GoianiaOuter,standard,FormulaVee Brazil,track-type-fallback
@@ -2352,6 +2379,7 @@ Jacarepagua_SHORT-137,Jacarepagua_SHORT,standard,F-USA Gen.3,track-type-fallback
 Jacarepagua_SHORT-137,Jacarepagua_SHORT,standard,Formula Classic G1,track-type-fallback
 Jacarepagua_SHORT-137,Jacarepagua_SHORT,standard,Formula Classic G2,track-type-fallback
 Jacarepagua_SHORT-137,Jacarepagua_SHORT,standard,Formula Classic G3,track-type-fallback
+Jacarepagua_SHORT-137,Jacarepagua_SHORT,standard,Formula Classic G4,track-type-fallback
 Jacarepagua_SHORT-137,Jacarepagua_SHORT,standard,F3,track-type-fallback
 Jacarepagua_SHORT-137,Jacarepagua_SHORT,standard,FTS,track-type-fallback
 Jacarepagua_SHORT-137,Jacarepagua_SHORT,standard,FormulaVee Brazil,track-type-fallback
@@ -2429,6 +2457,7 @@ Interlagos_Historic-46,Interlagos_Historic,standard,F-USA Gen.3,track-type-fallb
 Interlagos_Historic-46,Interlagos_Historic,standard,Formula Classic G1,track-type-fallback
 Interlagos_Historic-46,Interlagos_Historic,standard,Formula Classic G2,track-type-fallback
 Interlagos_Historic-46,Interlagos_Historic,standard,Formula Classic G3,track-type-fallback
+Interlagos_Historic-46,Interlagos_Historic,standard,Formula Classic G4,track-type-fallback
 Interlagos_Historic-46,Interlagos_Historic,standard,F3,track-type-fallback
 Interlagos_Historic-46,Interlagos_Historic,standard,FTS,track-type-fallback
 Interlagos_Historic-46,Interlagos_Historic,standard,FormulaVee Brazil,track-type-fallback
@@ -2494,6 +2523,7 @@ Virginia_South-106,Virginia_South,standard,F-USA Gen.3,track-type-fallback
 Virginia_South-106,Virginia_South,standard,Formula Classic G1,track-type-fallback
 Virginia_South-106,Virginia_South,standard,Formula Classic G2,track-type-fallback
 Virginia_South-106,Virginia_South,standard,Formula Classic G3,track-type-fallback
+Virginia_South-106,Virginia_South,standard,Formula Classic G4,track-type-fallback
 Virginia_South-106,Virginia_South,standard,F3,track-type-fallback
 Virginia_South-106,Virginia_South,standard,FTS,track-type-fallback
 Virginia_South-106,Virginia_South,standard,FormulaVee Brazil,track-type-fallback
@@ -2559,6 +2589,7 @@ GoianiaMixed-27,GoianiaMixed,standard,F-USA Gen.3,track-type-fallback
 GoianiaMixed-27,GoianiaMixed,standard,Formula Classic G1,track-type-fallback
 GoianiaMixed-27,GoianiaMixed,standard,Formula Classic G2,track-type-fallback
 GoianiaMixed-27,GoianiaMixed,standard,Formula Classic G3,track-type-fallback
+GoianiaMixed-27,GoianiaMixed,standard,Formula Classic G4,track-type-fallback
 GoianiaMixed-27,GoianiaMixed,standard,F3,track-type-fallback
 GoianiaMixed-27,GoianiaMixed,standard,FTS,track-type-fallback
 GoianiaMixed-27,GoianiaMixed,standard,FormulaVee Brazil,track-type-fallback
@@ -2624,6 +2655,7 @@ Jacarepagua_SCB-136,Jacarepagua_SCB,standard,F-USA Gen.3,track-type-fallback
 Jacarepagua_SCB-136,Jacarepagua_SCB,standard,Formula Classic G1,track-type-fallback
 Jacarepagua_SCB-136,Jacarepagua_SCB,standard,Formula Classic G2,track-type-fallback
 Jacarepagua_SCB-136,Jacarepagua_SCB,standard,Formula Classic G3,track-type-fallback
+Jacarepagua_SCB-136,Jacarepagua_SCB,standard,Formula Classic G4,track-type-fallback
 Jacarepagua_SCB-136,Jacarepagua_SCB,standard,F3,track-type-fallback
 Jacarepagua_SCB-136,Jacarepagua_SCB,standard,FTS,track-type-fallback
 Jacarepagua_SCB-136,Jacarepagua_SCB,standard,FormulaVee Brazil,track-type-fallback
@@ -2689,6 +2721,7 @@ Nurb_GP_2020_Sprint_S-73,Nurb_GP_2020_Sprint_S,standard,F-USA Gen.3,track-type-f
 Nurb_GP_2020_Sprint_S-73,Nurb_GP_2020_Sprint_S,standard,Formula Classic G1,track-type-fallback
 Nurb_GP_2020_Sprint_S-73,Nurb_GP_2020_Sprint_S,standard,Formula Classic G2,track-type-fallback
 Nurb_GP_2020_Sprint_S-73,Nurb_GP_2020_Sprint_S,standard,Formula Classic G3,track-type-fallback
+Nurb_GP_2020_Sprint_S-73,Nurb_GP_2020_Sprint_S,standard,Formula Classic G4,track-type-fallback
 Nurb_GP_2020_Sprint_S-73,Nurb_GP_2020_Sprint_S,standard,F3,track-type-fallback
 Nurb_GP_2020_Sprint_S-73,Nurb_GP_2020_Sprint_S,standard,FTS,track-type-fallback
 Nurb_GP_2020_Sprint_S-73,Nurb_GP_2020_Sprint_S,standard,FormulaVee Brazil,track-type-fallback
@@ -2754,6 +2787,7 @@ Virginia_Patriot-105,Virginia_Patriot,standard,F-USA Gen.3,track-type-fallback
 Virginia_Patriot-105,Virginia_Patriot,standard,Formula Classic G1,track-type-fallback
 Virginia_Patriot-105,Virginia_Patriot,standard,Formula Classic G2,track-type-fallback
 Virginia_Patriot-105,Virginia_Patriot,standard,Formula Classic G3,track-type-fallback
+Virginia_Patriot-105,Virginia_Patriot,standard,Formula Classic G4,track-type-fallback
 Virginia_Patriot-105,Virginia_Patriot,standard,F3,track-type-fallback
 Virginia_Patriot-105,Virginia_Patriot,standard,FTS,track-type-fallback
 Virginia_Patriot-105,Virginia_Patriot,standard,FormulaVee Brazil,track-type-fallback
@@ -2819,6 +2853,7 @@ Virginia_North-104,Virginia_North,standard,F-USA Gen.3,track-type-fallback
 Virginia_North-104,Virginia_North,standard,Formula Classic G1,track-type-fallback
 Virginia_North-104,Virginia_North,standard,Formula Classic G2,track-type-fallback
 Virginia_North-104,Virginia_North,standard,Formula Classic G3,track-type-fallback
+Virginia_North-104,Virginia_North,standard,Formula Classic G4,track-type-fallback
 Virginia_North-104,Virginia_North,standard,F3,track-type-fallback
 Virginia_North-104,Virginia_North,standard,FTS,track-type-fallback
 Virginia_North-104,Virginia_North,standard,FormulaVee Brazil,track-type-fallback
@@ -2884,6 +2919,7 @@ Interlagos_Historic_Outer-45,Interlagos_Historic_Outer,standard,F-USA Gen.3,trac
 Interlagos_Historic_Outer-45,Interlagos_Historic_Outer,standard,Formula Classic G1,track-type-fallback
 Interlagos_Historic_Outer-45,Interlagos_Historic_Outer,standard,Formula Classic G2,track-type-fallback
 Interlagos_Historic_Outer-45,Interlagos_Historic_Outer,standard,Formula Classic G3,track-type-fallback
+Interlagos_Historic_Outer-45,Interlagos_Historic_Outer,standard,Formula Classic G4,track-type-fallback
 Interlagos_Historic_Outer-45,Interlagos_Historic_Outer,standard,F3,track-type-fallback
 Interlagos_Historic_Outer-45,Interlagos_Historic_Outer,standard,FTS,track-type-fallback
 Interlagos_Historic_Outer-45,Interlagos_Historic_Outer,standard,FormulaVee Brazil,track-type-fallback
@@ -2920,6 +2956,7 @@ Kansai-54,Kansai_Classic,standard,F3,existing-app-matrix
 Kansai-54,Kansai_Classic,standard,Formula Classic G1,existing-app-matrix
 Kansai-54,Kansai_Classic,standard,Formula Classic G2,existing-app-matrix
 Kansai-54,Kansai_Classic,standard,Formula Classic G3,existing-app-matrix
+Kansai-54,Kansai_Classic,standard,Formula Classic G4,existing-app-matrix
 Kansai-54,Kansai_Classic,standard,Formula Retro G1,existing-app-matrix
 Kansai-54,Kansai_Classic,standard,Formula Retro G2,existing-app-matrix
 Kansai-54,Kansai_Classic,standard,Formula Retro G3,existing-app-matrix
@@ -2973,6 +3010,7 @@ VeloCittaTD-99,VeloCittaTD,standard,F-USA Gen.3,track-type-fallback
 VeloCittaTD-99,VeloCittaTD,standard,Formula Classic G1,track-type-fallback
 VeloCittaTD-99,VeloCittaTD,standard,Formula Classic G2,track-type-fallback
 VeloCittaTD-99,VeloCittaTD,standard,Formula Classic G3,track-type-fallback
+VeloCittaTD-99,VeloCittaTD,standard,Formula Classic G4,track-type-fallback
 VeloCittaTD-99,VeloCittaTD,standard,F3,track-type-fallback
 VeloCittaTD-99,VeloCittaTD,standard,FTS,track-type-fallback
 VeloCittaTD-99,VeloCittaTD,standard,FormulaVee Brazil,track-type-fallback
@@ -3038,6 +3076,7 @@ Kyalami_Historic-59,Kyalami_Historic,standard,F-USA Gen.3,track-type-fallback
 Kyalami_Historic-59,Kyalami_Historic,standard,Formula Classic G1,track-type-fallback
 Kyalami_Historic-59,Kyalami_Historic,standard,Formula Classic G2,track-type-fallback
 Kyalami_Historic-59,Kyalami_Historic,standard,Formula Classic G3,track-type-fallback
+Kyalami_Historic-59,Kyalami_Historic,standard,Formula Classic G4,track-type-fallback
 Kyalami_Historic-59,Kyalami_Historic,standard,F3,track-type-fallback
 Kyalami_Historic-59,Kyalami_Historic,standard,FTS,track-type-fallback
 Kyalami_Historic-59,Kyalami_Historic,standard,FormulaVee Brazil,track-type-fallback
@@ -3103,6 +3142,7 @@ Virginia_Grand-103,Virginia_Grand,standard,F-USA Gen.3,track-type-fallback
 Virginia_Grand-103,Virginia_Grand,standard,Formula Classic G1,track-type-fallback
 Virginia_Grand-103,Virginia_Grand,standard,Formula Classic G2,track-type-fallback
 Virginia_Grand-103,Virginia_Grand,standard,Formula Classic G3,track-type-fallback
+Virginia_Grand-103,Virginia_Grand,standard,Formula Classic G4,track-type-fallback
 Virginia_Grand-103,Virginia_Grand,standard,F3,track-type-fallback
 Virginia_Grand-103,Virginia_Grand,standard,FTS,track-type-fallback
 Virginia_Grand-103,Virginia_Grand,standard,FormulaVee Brazil,track-type-fallback
@@ -3192,6 +3232,7 @@ VeloCittaClubDay-98,VeloCittaClubDay,standard,F-USA Gen.3,track-type-fallback
 VeloCittaClubDay-98,VeloCittaClubDay,standard,Formula Classic G1,track-type-fallback
 VeloCittaClubDay-98,VeloCittaClubDay,standard,Formula Classic G2,track-type-fallback
 VeloCittaClubDay-98,VeloCittaClubDay,standard,Formula Classic G3,track-type-fallback
+VeloCittaClubDay-98,VeloCittaClubDay,standard,Formula Classic G4,track-type-fallback
 VeloCittaClubDay-98,VeloCittaClubDay,standard,F3,track-type-fallback
 VeloCittaClubDay-98,VeloCittaClubDay,standard,FTS,track-type-fallback
 VeloCittaClubDay-98,VeloCittaClubDay,standard,FormulaVee Brazil,track-type-fallback
@@ -3257,6 +3298,7 @@ Salvador_Street_Circuit-140,Salvador_Street_Circuit,standard,F-USA Gen.3,track-t
 Salvador_Street_Circuit-140,Salvador_Street_Circuit,standard,Formula Classic G1,track-type-fallback
 Salvador_Street_Circuit-140,Salvador_Street_Circuit,standard,Formula Classic G2,track-type-fallback
 Salvador_Street_Circuit-140,Salvador_Street_Circuit,standard,Formula Classic G3,track-type-fallback
+Salvador_Street_Circuit-140,Salvador_Street_Circuit,standard,Formula Classic G4,track-type-fallback
 Salvador_Street_Circuit-140,Salvador_Street_Circuit,standard,F3,track-type-fallback
 Salvador_Street_Circuit-140,Salvador_Street_Circuit,standard,FTS,track-type-fallback
 Salvador_Street_Circuit-140,Salvador_Street_Circuit,standard,FormulaVee Brazil,track-type-fallback
@@ -3322,6 +3364,7 @@ Cascais-26,Cascais,standard,F-USA Gen.3,track-type-fallback
 Cascais-26,Cascais,standard,Formula Classic G1,track-type-fallback
 Cascais-26,Cascais,standard,Formula Classic G2,track-type-fallback
 Cascais-26,Cascais,standard,Formula Classic G3,track-type-fallback
+Cascais-26,Cascais,standard,Formula Classic G4,track-type-fallback
 Cascais-26,Cascais,standard,F3,track-type-fallback
 Cascais-26,Cascais,standard,FTS,track-type-fallback
 Cascais-26,Cascais,standard,FormulaVee Brazil,track-type-fallback
@@ -3420,6 +3463,7 @@ Silverstone_Intl_2019-118,Silverstone_Intl_2019,standard,F-USA Gen.3,track-type-
 Silverstone_Intl_2019-118,Silverstone_Intl_2019,standard,Formula Classic G1,track-type-fallback
 Silverstone_Intl_2019-118,Silverstone_Intl_2019,standard,Formula Classic G2,track-type-fallback
 Silverstone_Intl_2019-118,Silverstone_Intl_2019,standard,Formula Classic G3,track-type-fallback
+Silverstone_Intl_2019-118,Silverstone_Intl_2019,standard,Formula Classic G4,track-type-fallback
 Silverstone_Intl_2019-118,Silverstone_Intl_2019,standard,F3,track-type-fallback
 Silverstone_Intl_2019-118,Silverstone_Intl_2019,standard,FTS,track-type-fallback
 Silverstone_Intl_2019-118,Silverstone_Intl_2019,standard,FormulaVee Brazil,track-type-fallback
@@ -3485,6 +3529,7 @@ Ibarra_STT-234,Ibarra_STT,standard,F-USA Gen.3,track-type-fallback
 Ibarra_STT-234,Ibarra_STT,standard,Formula Classic G1,track-type-fallback
 Ibarra_STT-234,Ibarra_STT,standard,Formula Classic G2,track-type-fallback
 Ibarra_STT-234,Ibarra_STT,standard,Formula Classic G3,track-type-fallback
+Ibarra_STT-234,Ibarra_STT,standard,Formula Classic G4,track-type-fallback
 Ibarra_STT-234,Ibarra_STT,standard,F3,track-type-fallback
 Ibarra_STT-234,Ibarra_STT,standard,FTS,track-type-fallback
 Ibarra_STT-234,Ibarra_STT,standard,FormulaVee Brazil,track-type-fallback
@@ -3553,6 +3598,7 @@ Azure_Circuit_88-3,Azure_Circuit_88,standard,F-USA Gen.3,track-type-fallback
 Azure_Circuit_88-3,Azure_Circuit_88,standard,Formula Classic G1,track-type-fallback
 Azure_Circuit_88-3,Azure_Circuit_88,standard,Formula Classic G2,track-type-fallback
 Azure_Circuit_88-3,Azure_Circuit_88,standard,Formula Classic G3,track-type-fallback
+Azure_Circuit_88-3,Azure_Circuit_88,standard,Formula Classic G4,track-type-fallback
 Azure_Circuit_88-3,Azure_Circuit_88,standard,F3,track-type-fallback
 Azure_Circuit_88-3,Azure_Circuit_88,standard,FTS,track-type-fallback
 Azure_Circuit_88-3,Azure_Circuit_88,standard,FormulaVee Brazil,track-type-fallback
@@ -3618,6 +3664,7 @@ Jerez_1988-183,Jerez_GP1988,standard,F-USA Gen.3,track-type-fallback
 Jerez_1988-183,Jerez_GP1988,standard,Formula Classic G1,track-type-fallback
 Jerez_1988-183,Jerez_GP1988,standard,Formula Classic G2,track-type-fallback
 Jerez_1988-183,Jerez_GP1988,standard,Formula Classic G3,track-type-fallback
+Jerez_1988-183,Jerez_GP1988,standard,Formula Classic G4,track-type-fallback
 Jerez_1988-183,Jerez_GP1988,standard,F3,track-type-fallback
 Jerez_1988-183,Jerez_GP1988,standard,FTS,track-type-fallback
 Jerez_1988-183,Jerez_GP1988,standard,FormulaVee Brazil,track-type-fallback
@@ -3683,6 +3730,7 @@ Gateway_RC2-161,Gateway_RC2,standard,F-USA Gen.3,track-type-fallback
 Gateway_RC2-161,Gateway_RC2,standard,Formula Classic G1,track-type-fallback
 Gateway_RC2-161,Gateway_RC2,standard,Formula Classic G2,track-type-fallback
 Gateway_RC2-161,Gateway_RC2,standard,Formula Classic G3,track-type-fallback
+Gateway_RC2-161,Gateway_RC2,standard,Formula Classic G4,track-type-fallback
 Gateway_RC2-161,Gateway_RC2,standard,F3,track-type-fallback
 Gateway_RC2-161,Gateway_RC2,standard,FTS,track-type-fallback
 Gateway_RC2-161,Gateway_RC2,standard,FormulaVee Brazil,track-type-fallback
@@ -3748,6 +3796,7 @@ Jerez_2019-52,Jerez_GP2019,standard,F-USA Gen.3,track-type-fallback
 Jerez_2019-52,Jerez_GP2019,standard,Formula Classic G1,track-type-fallback
 Jerez_2019-52,Jerez_GP2019,standard,Formula Classic G2,track-type-fallback
 Jerez_2019-52,Jerez_GP2019,standard,Formula Classic G3,track-type-fallback
+Jerez_2019-52,Jerez_GP2019,standard,Formula Classic G4,track-type-fallback
 Jerez_2019-52,Jerez_GP2019,standard,F3,track-type-fallback
 Jerez_2019-52,Jerez_GP2019,standard,FTS,track-type-fallback
 Jerez_2019-52,Jerez_GP2019,standard,FormulaVee Brazil,track-type-fallback
@@ -3813,6 +3862,7 @@ Silverstone_Natl_2019-119,Silverstone_Natl_2019,standard,F-USA Gen.3,track-type-
 Silverstone_Natl_2019-119,Silverstone_Natl_2019,standard,Formula Classic G1,track-type-fallback
 Silverstone_Natl_2019-119,Silverstone_Natl_2019,standard,Formula Classic G2,track-type-fallback
 Silverstone_Natl_2019-119,Silverstone_Natl_2019,standard,Formula Classic G3,track-type-fallback
+Silverstone_Natl_2019-119,Silverstone_Natl_2019,standard,Formula Classic G4,track-type-fallback
 Silverstone_Natl_2019-119,Silverstone_Natl_2019,standard,F3,track-type-fallback
 Silverstone_Natl_2019-119,Silverstone_Natl_2019,standard,FTS,track-type-fallback
 Silverstone_Natl_2019-119,Silverstone_Natl_2019,standard,FormulaVee Brazil,track-type-fallback
@@ -3896,6 +3946,7 @@ Virginia_Full-102,Virginia_Full,standard,F-USA Gen.3,track-type-fallback
 Virginia_Full-102,Virginia_Full,standard,Formula Classic G1,track-type-fallback
 Virginia_Full-102,Virginia_Full,standard,Formula Classic G2,track-type-fallback
 Virginia_Full-102,Virginia_Full,standard,Formula Classic G3,track-type-fallback
+Virginia_Full-102,Virginia_Full,standard,Formula Classic G4,track-type-fallback
 Virginia_Full-102,Virginia_Full,standard,F3,track-type-fallback
 Virginia_Full-102,Virginia_Full,standard,FTS,track-type-fallback
 Virginia_Full-102,Virginia_Full,standard,FormulaVee Brazil,track-type-fallback
@@ -3961,6 +4012,7 @@ Nordschleife_2025-238,Nordschleife_2025,standard,F-USA Gen.3,track-type-fallback
 Nordschleife_2025-238,Nordschleife_2025,standard,Formula Classic G1,track-type-fallback
 Nordschleife_2025-238,Nordschleife_2025,standard,Formula Classic G2,track-type-fallback
 Nordschleife_2025-238,Nordschleife_2025,standard,Formula Classic G3,track-type-fallback
+Nordschleife_2025-238,Nordschleife_2025,standard,Formula Classic G4,track-type-fallback
 Nordschleife_2025-238,Nordschleife_2025,standard,F3,track-type-fallback
 Nordschleife_2025-238,Nordschleife_2025,standard,FTS,track-type-fallback
 Nordschleife_2025-238,Nordschleife_2025,standard,FormulaVee Brazil,track-type-fallback
@@ -4031,6 +4083,7 @@ Gateway_RC1-163,Gateway_RC1,standard,F-USA Gen.3,track-type-fallback
 Gateway_RC1-163,Gateway_RC1,standard,Formula Classic G1,track-type-fallback
 Gateway_RC1-163,Gateway_RC1,standard,Formula Classic G2,track-type-fallback
 Gateway_RC1-163,Gateway_RC1,standard,Formula Classic G3,track-type-fallback
+Gateway_RC1-163,Gateway_RC1,standard,Formula Classic G4,track-type-fallback
 Gateway_RC1-163,Gateway_RC1,standard,F3,track-type-fallback
 Gateway_RC1-163,Gateway_RC1,standard,FTS,track-type-fallback
 Gateway_RC1-163,Gateway_RC1,standard,FormulaVee Brazil,track-type-fallback
@@ -4096,6 +4149,7 @@ Cascais_1988-185,Cascais_1988,standard,F-USA Gen.3,track-type-fallback
 Cascais_1988-185,Cascais_1988,standard,Formula Classic G1,track-type-fallback
 Cascais_1988-185,Cascais_1988,standard,Formula Classic G2,track-type-fallback
 Cascais_1988-185,Cascais_1988,standard,Formula Classic G3,track-type-fallback
+Cascais_1988-185,Cascais_1988,standard,Formula Classic G4,track-type-fallback
 Cascais_1988-185,Cascais_1988,standard,F3,track-type-fallback
 Cascais_1988-185,Cascais_1988,standard,FTS,track-type-fallback
 Cascais_1988-185,Cascais_1988,standard,FormulaVee Brazil,track-type-fallback
@@ -4179,6 +4233,7 @@ Cleveland_STT-232,Cleveland_STT,standard,F-USA Gen.3,track-type-fallback
 Cleveland_STT-232,Cleveland_STT,standard,Formula Classic G1,track-type-fallback
 Cleveland_STT-232,Cleveland_STT,standard,Formula Classic G2,track-type-fallback
 Cleveland_STT-232,Cleveland_STT,standard,Formula Classic G3,track-type-fallback
+Cleveland_STT-232,Cleveland_STT,standard,Formula Classic G4,track-type-fallback
 Cleveland_STT-232,Cleveland_STT,standard,F3,track-type-fallback
 Cleveland_STT-232,Cleveland_STT,standard,FTS,track-type-fallback
 Cleveland_STT-232,Cleveland_STT,standard,FormulaVee Brazil,track-type-fallback
@@ -4244,6 +4299,7 @@ Barcelona_1991-208,Barcelona_1991,standard,F-USA Gen.3,track-type-fallback
 Barcelona_1991-208,Barcelona_1991,standard,Formula Classic G1,track-type-fallback
 Barcelona_1991-208,Barcelona_1991,standard,Formula Classic G2,track-type-fallback
 Barcelona_1991-208,Barcelona_1991,standard,Formula Classic G3,track-type-fallback
+Barcelona_1991-208,Barcelona_1991,standard,Formula Classic G4,track-type-fallback
 Barcelona_1991-208,Barcelona_1991,standard,F3,track-type-fallback
 Barcelona_1991-208,Barcelona_1991,standard,FTS,track-type-fallback
 Barcelona_1991-208,Barcelona_1991,standard,FormulaVee Brazil,track-type-fallback
@@ -4309,6 +4365,7 @@ Circuit_de_Catalunya_GP-186,Circuit_de_Catalunya_GP,standard,F-USA Gen.3,track-t
 Circuit_de_Catalunya_GP-186,Circuit_de_Catalunya_GP,standard,Formula Classic G1,track-type-fallback
 Circuit_de_Catalunya_GP-186,Circuit_de_Catalunya_GP,standard,Formula Classic G2,track-type-fallback
 Circuit_de_Catalunya_GP-186,Circuit_de_Catalunya_GP,standard,Formula Classic G3,track-type-fallback
+Circuit_de_Catalunya_GP-186,Circuit_de_Catalunya_GP,standard,Formula Classic G4,track-type-fallback
 Circuit_de_Catalunya_GP-186,Circuit_de_Catalunya_GP,standard,F3,track-type-fallback
 Circuit_de_Catalunya_GP-186,Circuit_de_Catalunya_GP,standard,FTS,track-type-fallback
 Circuit_de_Catalunya_GP-186,Circuit_de_Catalunya_GP,standard,FormulaVee Brazil,track-type-fallback
@@ -4418,6 +4475,7 @@ VeloCitta1-97,VeloCitta1,standard,F-USA Gen.3,track-type-fallback
 VeloCitta1-97,VeloCitta1,standard,Formula Classic G1,track-type-fallback
 VeloCitta1-97,VeloCitta1,standard,Formula Classic G2,track-type-fallback
 VeloCitta1-97,VeloCitta1,standard,Formula Classic G3,track-type-fallback
+VeloCitta1-97,VeloCitta1,standard,Formula Classic G4,track-type-fallback
 VeloCitta1-97,VeloCitta1,standard,F3,track-type-fallback
 VeloCitta1-97,VeloCitta1,standard,FTS,track-type-fallback
 VeloCitta1-97,VeloCitta1,standard,FormulaVee Brazil,track-type-fallback
@@ -4493,6 +4551,7 @@ Adelaide_Historic-1,Adelaide_Historic,standard,F-USA Gen.3,track-type-fallback
 Adelaide_Historic-1,Adelaide_Historic,standard,Formula Classic G1,track-type-fallback
 Adelaide_Historic-1,Adelaide_Historic,standard,Formula Classic G2,track-type-fallback
 Adelaide_Historic-1,Adelaide_Historic,standard,Formula Classic G3,track-type-fallback
+Adelaide_Historic-1,Adelaide_Historic,standard,Formula Classic G4,track-type-fallback
 Adelaide_Historic-1,Adelaide_Historic,standard,F3,track-type-fallback
 Adelaide_Historic-1,Adelaide_Historic,standard,FTS,track-type-fallback
 Adelaide_Historic-1,Adelaide_Historic,standard,FormulaVee Brazil,track-type-fallback
@@ -4561,6 +4620,7 @@ Long_Beach_STT-204,Long_Beach_STT,standard,F-USA Gen.3,track-type-fallback
 Long_Beach_STT-204,Long_Beach_STT,standard,Formula Classic G1,track-type-fallback
 Long_Beach_STT-204,Long_Beach_STT,standard,Formula Classic G2,track-type-fallback
 Long_Beach_STT-204,Long_Beach_STT,standard,Formula Classic G3,track-type-fallback
+Long_Beach_STT-204,Long_Beach_STT,standard,Formula Classic G4,track-type-fallback
 Long_Beach_STT-204,Long_Beach_STT,standard,F3,track-type-fallback
 Long_Beach_STT-204,Long_Beach_STT,standard,FTS,track-type-fallback
 Long_Beach_STT-204,Long_Beach_STT,standard,FormulaVee Brazil,track-type-fallback
@@ -4626,6 +4686,7 @@ Barcelona_GP_1999-245,Barcelona_GP_1999,standard,F-USA Gen.3,track-type-fallback
 Barcelona_GP_1999-245,Barcelona_GP_1999,standard,Formula Classic G1,track-type-fallback
 Barcelona_GP_1999-245,Barcelona_GP_1999,standard,Formula Classic G2,track-type-fallback
 Barcelona_GP_1999-245,Barcelona_GP_1999,standard,Formula Classic G3,track-type-fallback
+Barcelona_GP_1999-245,Barcelona_GP_1999,standard,Formula Classic G4,track-type-fallback
 Barcelona_GP_1999-245,Barcelona_GP_1999,standard,F3,track-type-fallback
 Barcelona_GP_1999-245,Barcelona_GP_1999,standard,FTS,track-type-fallback
 Barcelona_GP_1999-245,Barcelona_GP_1999,standard,FormulaVee Brazil,track-type-fallback
@@ -4691,6 +4752,7 @@ Ibarra2-39,Ibarra2,standard,F-USA Gen.3,track-type-fallback
 Ibarra2-39,Ibarra2,standard,Formula Classic G1,track-type-fallback
 Ibarra2-39,Ibarra2,standard,Formula Classic G2,track-type-fallback
 Ibarra2-39,Ibarra2,standard,Formula Classic G3,track-type-fallback
+Ibarra2-39,Ibarra2,standard,Formula Classic G4,track-type-fallback
 Ibarra2-39,Ibarra2,standard,F3,track-type-fallback
 Ibarra2-39,Ibarra2,standard,FTS,track-type-fallback
 Ibarra2-39,Ibarra2,standard,FormulaVee Brazil,track-type-fallback
@@ -4780,6 +4842,7 @@ Sebring_STT-230,Sebring_STT,standard,F-USA Gen.3,track-type-fallback
 Sebring_STT-230,Sebring_STT,standard,Formula Classic G1,track-type-fallback
 Sebring_STT-230,Sebring_STT,standard,Formula Classic G2,track-type-fallback
 Sebring_STT-230,Sebring_STT,standard,Formula Classic G3,track-type-fallback
+Sebring_STT-230,Sebring_STT,standard,Formula Classic G4,track-type-fallback
 Sebring_STT-230,Sebring_STT,standard,F3,track-type-fallback
 Sebring_STT-230,Sebring_STT,standard,FTS,track-type-fallback
 Sebring_STT-230,Sebring_STT,standard,FormulaVee Brazil,track-type-fallback
@@ -4845,6 +4908,7 @@ Termas_Rio_Hondo-95,Termas_Rio_Hondo,standard,F-USA Gen.3,track-type-fallback
 Termas_Rio_Hondo-95,Termas_Rio_Hondo,standard,Formula Classic G1,track-type-fallback
 Termas_Rio_Hondo-95,Termas_Rio_Hondo,standard,Formula Classic G2,track-type-fallback
 Termas_Rio_Hondo-95,Termas_Rio_Hondo,standard,Formula Classic G3,track-type-fallback
+Termas_Rio_Hondo-95,Termas_Rio_Hondo,standard,Formula Classic G4,track-type-fallback
 Termas_Rio_Hondo-95,Termas_Rio_Hondo,standard,F3,track-type-fallback
 Termas_Rio_Hondo-95,Termas_Rio_Hondo,standard,FTS,track-type-fallback
 Termas_Rio_Hondo-95,Termas_Rio_Hondo,standard,FormulaVee Brazil,track-type-fallback
@@ -4910,6 +4974,7 @@ Road_America_STT-226,Road_America_STT,standard,F-USA Gen.3,track-type-fallback
 Road_America_STT-226,Road_America_STT,standard,Formula Classic G1,track-type-fallback
 Road_America_STT-226,Road_America_STT,standard,Formula Classic G2,track-type-fallback
 Road_America_STT-226,Road_America_STT,standard,Formula Classic G3,track-type-fallback
+Road_America_STT-226,Road_America_STT,standard,Formula Classic G4,track-type-fallback
 Road_America_STT-226,Road_America_STT,standard,F3,track-type-fallback
 Road_America_STT-226,Road_America_STT,standard,FTS,track-type-fallback
 Road_America_STT-226,Road_America_STT,standard,FormulaVee Brazil,track-type-fallback
@@ -4975,6 +5040,7 @@ Circuit_de_Catalunya_GP_NC-195,Circuit_de_Catalunya_GP_NC,standard,F-USA Gen.3,t
 Circuit_de_Catalunya_GP_NC-195,Circuit_de_Catalunya_GP_NC,standard,Formula Classic G1,track-type-fallback
 Circuit_de_Catalunya_GP_NC-195,Circuit_de_Catalunya_GP_NC,standard,Formula Classic G2,track-type-fallback
 Circuit_de_Catalunya_GP_NC-195,Circuit_de_Catalunya_GP_NC,standard,Formula Classic G3,track-type-fallback
+Circuit_de_Catalunya_GP_NC-195,Circuit_de_Catalunya_GP_NC,standard,Formula Classic G4,track-type-fallback
 Circuit_de_Catalunya_GP_NC-195,Circuit_de_Catalunya_GP_NC,standard,F3,track-type-fallback
 Circuit_de_Catalunya_GP_NC-195,Circuit_de_Catalunya_GP_NC,standard,FTS,track-type-fallback
 Circuit_de_Catalunya_GP_NC-195,Circuit_de_Catalunya_GP_NC,standard,FormulaVee Brazil,track-type-fallback
@@ -5040,6 +5106,7 @@ Fontana_SCC-167,Fontana_SCC,standard,F-USA Gen.3,track-type-fallback
 Fontana_SCC-167,Fontana_SCC,standard,Formula Classic G1,track-type-fallback
 Fontana_SCC-167,Fontana_SCC,standard,Formula Classic G2,track-type-fallback
 Fontana_SCC-167,Fontana_SCC,standard,Formula Classic G3,track-type-fallback
+Fontana_SCC-167,Fontana_SCC,standard,Formula Classic G4,track-type-fallback
 Fontana_SCC-167,Fontana_SCC,standard,F3,track-type-fallback
 Fontana_SCC-167,Fontana_SCC,standard,FTS,track-type-fallback
 Fontana_SCC-167,Fontana_SCC,standard,FormulaVee Brazil,track-type-fallback
@@ -5105,6 +5172,7 @@ Galeao_Airport-160,Galeao_Airport,standard,F-USA Gen.3,track-type-fallback
 Galeao_Airport-160,Galeao_Airport,standard,Formula Classic G1,track-type-fallback
 Galeao_Airport-160,Galeao_Airport,standard,Formula Classic G2,track-type-fallback
 Galeao_Airport-160,Galeao_Airport,standard,Formula Classic G3,track-type-fallback
+Galeao_Airport-160,Galeao_Airport,standard,Formula Classic G4,track-type-fallback
 Galeao_Airport-160,Galeao_Airport,standard,F3,track-type-fallback
 Galeao_Airport-160,Galeao_Airport,standard,FTS,track-type-fallback
 Galeao_Airport-160,Galeao_Airport,standard,FormulaVee Brazil,track-type-fallback
@@ -5170,6 +5238,7 @@ Watkins_Glen_1971_GP-248,Watkins_Glen_1971_GP,standard,F-USA Gen.3,track-type-fa
 Watkins_Glen_1971_GP-248,Watkins_Glen_1971_GP,standard,Formula Classic G1,track-type-fallback
 Watkins_Glen_1971_GP-248,Watkins_Glen_1971_GP,standard,Formula Classic G2,track-type-fallback
 Watkins_Glen_1971_GP-248,Watkins_Glen_1971_GP,standard,Formula Classic G3,track-type-fallback
+Watkins_Glen_1971_GP-248,Watkins_Glen_1971_GP,standard,Formula Classic G4,track-type-fallback
 Watkins_Glen_1971_GP-248,Watkins_Glen_1971_GP,standard,F3,track-type-fallback
 Watkins_Glen_1971_GP-248,Watkins_Glen_1971_GP,standard,FTS,track-type-fallback
 Watkins_Glen_1971_GP-248,Watkins_Glen_1971_GP,standard,FormulaVee Brazil,track-type-fallback
@@ -5235,6 +5304,7 @@ Cordoba_International-165,Cordoba_International,standard,F-USA Gen.3,track-type-
 Cordoba_International-165,Cordoba_International,standard,Formula Classic G1,track-type-fallback
 Cordoba_International-165,Cordoba_International,standard,Formula Classic G2,track-type-fallback
 Cordoba_International-165,Cordoba_International,standard,Formula Classic G3,track-type-fallback
+Cordoba_International-165,Cordoba_International,standard,Formula Classic G4,track-type-fallback
 Cordoba_International-165,Cordoba_International,standard,F3,track-type-fallback
 Cordoba_International-165,Cordoba_International,standard,FTS,track-type-fallback
 Cordoba_International-165,Cordoba_International,standard,FormulaVee Brazil,track-type-fallback
@@ -5300,6 +5370,7 @@ Adelaide_Modern_STT-203,Adelaide_Modern_STT,standard,F-USA Gen.3,track-type-fall
 Adelaide_Modern_STT-203,Adelaide_Modern_STT,standard,Formula Classic G1,track-type-fallback
 Adelaide_Modern_STT-203,Adelaide_Modern_STT,standard,Formula Classic G2,track-type-fallback
 Adelaide_Modern_STT-203,Adelaide_Modern_STT,standard,Formula Classic G3,track-type-fallback
+Adelaide_Modern_STT-203,Adelaide_Modern_STT,standard,Formula Classic G4,track-type-fallback
 Adelaide_Modern_STT-203,Adelaide_Modern_STT,standard,F3,track-type-fallback
 Adelaide_Modern_STT-203,Adelaide_Modern_STT,standard,FTS,track-type-fallback
 Adelaide_Modern_STT-203,Adelaide_Modern_STT,standard,FormulaVee Brazil,track-type-fallback
@@ -5365,6 +5436,7 @@ Watkins_Glen_1971_Short-249,Watkins_Glen_1971_Short,standard,F-USA Gen.3,track-t
 Watkins_Glen_1971_Short-249,Watkins_Glen_1971_Short,standard,Formula Classic G1,track-type-fallback
 Watkins_Glen_1971_Short-249,Watkins_Glen_1971_Short,standard,Formula Classic G2,track-type-fallback
 Watkins_Glen_1971_Short-249,Watkins_Glen_1971_Short,standard,Formula Classic G3,track-type-fallback
+Watkins_Glen_1971_Short-249,Watkins_Glen_1971_Short,standard,Formula Classic G4,track-type-fallback
 Watkins_Glen_1971_Short-249,Watkins_Glen_1971_Short,standard,F3,track-type-fallback
 Watkins_Glen_1971_Short-249,Watkins_Glen_1971_Short,standard,FTS,track-type-fallback
 Watkins_Glen_1971_Short-249,Watkins_Glen_1971_Short,standard,FormulaVee Brazil,track-type-fallback
@@ -5466,6 +5538,7 @@ Nurb_1971_Beton-190,Nurb_1971_Beton,standard,F-USA Gen.3,track-type-fallback
 Nurb_1971_Beton-190,Nurb_1971_Beton,standard,Formula Classic G1,track-type-fallback
 Nurb_1971_Beton-190,Nurb_1971_Beton,standard,Formula Classic G2,track-type-fallback
 Nurb_1971_Beton-190,Nurb_1971_Beton,standard,Formula Classic G3,track-type-fallback
+Nurb_1971_Beton-190,Nurb_1971_Beton,standard,Formula Classic G4,track-type-fallback
 Nurb_1971_Beton-190,Nurb_1971_Beton,standard,F3,track-type-fallback
 Nurb_1971_Beton-190,Nurb_1971_Beton,standard,FTS,track-type-fallback
 Nurb_1971_Beton-190,Nurb_1971_Beton,standard,FormulaVee Brazil,track-type-fallback
@@ -5531,6 +5604,7 @@ Nurb_GP_2020_Sprint-72,Nurb_GP_2020_Sprint,standard,F-USA Gen.3,track-type-fallb
 Nurb_GP_2020_Sprint-72,Nurb_GP_2020_Sprint,standard,Formula Classic G1,track-type-fallback
 Nurb_GP_2020_Sprint-72,Nurb_GP_2020_Sprint,standard,Formula Classic G2,track-type-fallback
 Nurb_GP_2020_Sprint-72,Nurb_GP_2020_Sprint,standard,Formula Classic G3,track-type-fallback
+Nurb_GP_2020_Sprint-72,Nurb_GP_2020_Sprint,standard,Formula Classic G4,track-type-fallback
 Nurb_GP_2020_Sprint-72,Nurb_GP_2020_Sprint,standard,F3,track-type-fallback
 Nurb_GP_2020_Sprint-72,Nurb_GP_2020_Sprint,standard,FTS,track-type-fallback
 Nurb_GP_2020_Sprint-72,Nurb_GP_2020_Sprint,standard,FormulaVee Brazil,track-type-fallback
@@ -5596,6 +5670,7 @@ Nurb_1971_Gesamt-189,Nurb_1971_Gesamt,standard,F-USA Gen.3,track-type-fallback
 Nurb_1971_Gesamt-189,Nurb_1971_Gesamt,standard,Formula Classic G1,track-type-fallback
 Nurb_1971_Gesamt-189,Nurb_1971_Gesamt,standard,Formula Classic G2,track-type-fallback
 Nurb_1971_Gesamt-189,Nurb_1971_Gesamt,standard,Formula Classic G3,track-type-fallback
+Nurb_1971_Gesamt-189,Nurb_1971_Gesamt,standard,Formula Classic G4,track-type-fallback
 Nurb_1971_Gesamt-189,Nurb_1971_Gesamt,standard,F3,track-type-fallback
 Nurb_1971_Gesamt-189,Nurb_1971_Gesamt,standard,FTS,track-type-fallback
 Nurb_1971_Gesamt-189,Nurb_1971_Gesamt,standard,FormulaVee Brazil,track-type-fallback
@@ -5680,6 +5755,7 @@ Sebring_School-215,Sebring_School,standard,F-USA Gen.3,track-type-fallback
 Sebring_School-215,Sebring_School,standard,Formula Classic G1,track-type-fallback
 Sebring_School-215,Sebring_School,standard,Formula Classic G2,track-type-fallback
 Sebring_School-215,Sebring_School,standard,Formula Classic G3,track-type-fallback
+Sebring_School-215,Sebring_School,standard,Formula Classic G4,track-type-fallback
 Sebring_School-215,Sebring_School,standard,F3,track-type-fallback
 Sebring_School-215,Sebring_School,standard,FTS,track-type-fallback
 Sebring_School-215,Sebring_School,standard,FormulaVee Brazil,track-type-fallback
@@ -5745,6 +5821,7 @@ Cordoba_GP-166,Cordoba_GP,standard,F-USA Gen.3,track-type-fallback
 Cordoba_GP-166,Cordoba_GP,standard,Formula Classic G1,track-type-fallback
 Cordoba_GP-166,Cordoba_GP,standard,Formula Classic G2,track-type-fallback
 Cordoba_GP-166,Cordoba_GP,standard,Formula Classic G3,track-type-fallback
+Cordoba_GP-166,Cordoba_GP,standard,Formula Classic G4,track-type-fallback
 Cordoba_GP-166,Cordoba_GP,standard,F3,track-type-fallback
 Cordoba_GP-166,Cordoba_GP,standard,FTS,track-type-fallback
 Cordoba_GP-166,Cordoba_GP,standard,FormulaVee Brazil,track-type-fallback
@@ -5813,6 +5890,7 @@ Pocono_RC6-224,Pocono_RC6,standard,F-USA Gen.3,track-type-fallback
 Pocono_RC6-224,Pocono_RC6,standard,Formula Classic G1,track-type-fallback
 Pocono_RC6-224,Pocono_RC6,standard,Formula Classic G2,track-type-fallback
 Pocono_RC6-224,Pocono_RC6,standard,Formula Classic G3,track-type-fallback
+Pocono_RC6-224,Pocono_RC6,standard,Formula Classic G4,track-type-fallback
 Pocono_RC6-224,Pocono_RC6,standard,F3,track-type-fallback
 Pocono_RC6-224,Pocono_RC6,standard,FTS,track-type-fallback
 Pocono_RC6-224,Pocono_RC6,standard,FormulaVee Brazil,track-type-fallback
@@ -5894,6 +5972,7 @@ Silverstone_GP-84,Silverstone_GP,standard,F-USA Gen.3,track-type-fallback
 Silverstone_GP-84,Silverstone_GP,standard,Formula Classic G1,track-type-fallback
 Silverstone_GP-84,Silverstone_GP,standard,Formula Classic G2,track-type-fallback
 Silverstone_GP-84,Silverstone_GP,standard,Formula Classic G3,track-type-fallback
+Silverstone_GP-84,Silverstone_GP,standard,Formula Classic G4,track-type-fallback
 Silverstone_GP-84,Silverstone_GP,standard,F3,track-type-fallback
 Silverstone_GP-84,Silverstone_GP,standard,FTS,track-type-fallback
 Silverstone_GP-84,Silverstone_GP,standard,FormulaVee Brazil,track-type-fallback
@@ -5959,6 +6038,7 @@ Cordoba_NATL-168,Cordoba_NATL,standard,F-USA Gen.3,track-type-fallback
 Cordoba_NATL-168,Cordoba_NATL,standard,Formula Classic G1,track-type-fallback
 Cordoba_NATL-168,Cordoba_NATL,standard,Formula Classic G2,track-type-fallback
 Cordoba_NATL-168,Cordoba_NATL,standard,Formula Classic G3,track-type-fallback
+Cordoba_NATL-168,Cordoba_NATL,standard,Formula Classic G4,track-type-fallback
 Cordoba_NATL-168,Cordoba_NATL,standard,F3,track-type-fallback
 Cordoba_NATL-168,Cordoba_NATL,standard,FTS,track-type-fallback
 Cordoba_NATL-168,Cordoba_NATL,standard,FormulaVee Brazil,track-type-fallback
@@ -6024,6 +6104,7 @@ Sebring_Club-214,Sebring_Club,standard,F-USA Gen.3,track-type-fallback
 Sebring_Club-214,Sebring_Club,standard,Formula Classic G1,track-type-fallback
 Sebring_Club-214,Sebring_Club,standard,Formula Classic G2,track-type-fallback
 Sebring_Club-214,Sebring_Club,standard,Formula Classic G3,track-type-fallback
+Sebring_Club-214,Sebring_Club,standard,Formula Classic G4,track-type-fallback
 Sebring_Club-214,Sebring_Club,standard,F3,track-type-fallback
 Sebring_Club-214,Sebring_Club,standard,FTS,track-type-fallback
 Sebring_Club-214,Sebring_Club,standard,FormulaVee Brazil,track-type-fallback
@@ -6089,6 +6170,7 @@ CampoGrande-16,CampoGrande1,standard,F-USA Gen.3,track-type-fallback
 CampoGrande-16,CampoGrande1,standard,Formula Classic G1,track-type-fallback
 CampoGrande-16,CampoGrande1,standard,Formula Classic G2,track-type-fallback
 CampoGrande-16,CampoGrande1,standard,Formula Classic G3,track-type-fallback
+CampoGrande-16,CampoGrande1,standard,Formula Classic G4,track-type-fallback
 CampoGrande-16,CampoGrande1,standard,F3,track-type-fallback
 CampoGrande-16,CampoGrande1,standard,FTS,track-type-fallback
 CampoGrande-16,CampoGrande1,standard,FormulaVee Brazil,track-type-fallback
@@ -6170,6 +6252,7 @@ Taruma_Chicane-94,Taruma_Chicane,standard,F-USA Gen.3,track-type-fallback
 Taruma_Chicane-94,Taruma_Chicane,standard,Formula Classic G1,track-type-fallback
 Taruma_Chicane-94,Taruma_Chicane,standard,Formula Classic G2,track-type-fallback
 Taruma_Chicane-94,Taruma_Chicane,standard,Formula Classic G3,track-type-fallback
+Taruma_Chicane-94,Taruma_Chicane,standard,Formula Classic G4,track-type-fallback
 Taruma_Chicane-94,Taruma_Chicane,standard,F3,track-type-fallback
 Taruma_Chicane-94,Taruma_Chicane,standard,FTS,track-type-fallback
 Taruma_Chicane-94,Taruma_Chicane,standard,FormulaVee Brazil,track-type-fallback
@@ -6251,6 +6334,7 @@ Watkins_Glen_STT-227,Watkins_Glen_STT,standard,F-USA Gen.3,track-type-fallback
 Watkins_Glen_STT-227,Watkins_Glen_STT,standard,Formula Classic G1,track-type-fallback
 Watkins_Glen_STT-227,Watkins_Glen_STT,standard,Formula Classic G2,track-type-fallback
 Watkins_Glen_STT-227,Watkins_Glen_STT,standard,Formula Classic G3,track-type-fallback
+Watkins_Glen_STT-227,Watkins_Glen_STT,standard,Formula Classic G4,track-type-fallback
 Watkins_Glen_STT-227,Watkins_Glen_STT,standard,F3,track-type-fallback
 Watkins_Glen_STT-227,Watkins_Glen_STT,standard,FTS,track-type-fallback
 Watkins_Glen_STT-227,Watkins_Glen_STT,standard,FormulaVee Brazil,track-type-fallback
@@ -6316,6 +6400,7 @@ Monza_2020_STT-233,Monza_2020_STT,standard,F-USA Gen.3,track-type-fallback
 Monza_2020_STT-233,Monza_2020_STT,standard,Formula Classic G1,track-type-fallback
 Monza_2020_STT-233,Monza_2020_STT,standard,Formula Classic G2,track-type-fallback
 Monza_2020_STT-233,Monza_2020_STT,standard,Formula Classic G3,track-type-fallback
+Monza_2020_STT-233,Monza_2020_STT,standard,Formula Classic G4,track-type-fallback
 Monza_2020_STT-233,Monza_2020_STT,standard,F3,track-type-fallback
 Monza_2020_STT-233,Monza_2020_STT,standard,FTS,track-type-fallback
 Monza_2020_STT-233,Monza_2020_STT,standard,FormulaVee Brazil,track-type-fallback
@@ -6397,6 +6482,7 @@ Watkins_Glen_SIL-157,Watkins_Glen_SIL,standard,F-USA Gen.3,track-type-fallback
 Watkins_Glen_SIL-157,Watkins_Glen_SIL,standard,Formula Classic G1,track-type-fallback
 Watkins_Glen_SIL-157,Watkins_Glen_SIL,standard,Formula Classic G2,track-type-fallback
 Watkins_Glen_SIL-157,Watkins_Glen_SIL,standard,Formula Classic G3,track-type-fallback
+Watkins_Glen_SIL-157,Watkins_Glen_SIL,standard,Formula Classic G4,track-type-fallback
 Watkins_Glen_SIL-157,Watkins_Glen_SIL,standard,F3,track-type-fallback
 Watkins_Glen_SIL-157,Watkins_Glen_SIL,standard,FTS,track-type-fallback
 Watkins_Glen_SIL-157,Watkins_Glen_SIL,standard,FormulaVee Brazil,track-type-fallback
@@ -6462,6 +6548,7 @@ Buenos_Aires_Circuito_12-174,Buenos_Aires_Circuito_12,standard,F-USA Gen.3,track
 Buenos_Aires_Circuito_12-174,Buenos_Aires_Circuito_12,standard,Formula Classic G1,track-type-fallback
 Buenos_Aires_Circuito_12-174,Buenos_Aires_Circuito_12,standard,Formula Classic G2,track-type-fallback
 Buenos_Aires_Circuito_12-174,Buenos_Aires_Circuito_12,standard,Formula Classic G3,track-type-fallback
+Buenos_Aires_Circuito_12-174,Buenos_Aires_Circuito_12,standard,Formula Classic G4,track-type-fallback
 Buenos_Aires_Circuito_12-174,Buenos_Aires_Circuito_12,standard,F3,track-type-fallback
 Buenos_Aires_Circuito_12-174,Buenos_Aires_Circuito_12,standard,FTS,track-type-fallback
 Buenos_Aires_Circuito_12-174,Buenos_Aires_Circuito_12,standard,FormulaVee Brazil,track-type-fallback
@@ -6527,6 +6614,7 @@ Buenos_Aires_Circuito_7-171,Buenos_Aires_Circuito_7,standard,F-USA Gen.3,track-t
 Buenos_Aires_Circuito_7-171,Buenos_Aires_Circuito_7,standard,Formula Classic G1,track-type-fallback
 Buenos_Aires_Circuito_7-171,Buenos_Aires_Circuito_7,standard,Formula Classic G2,track-type-fallback
 Buenos_Aires_Circuito_7-171,Buenos_Aires_Circuito_7,standard,Formula Classic G3,track-type-fallback
+Buenos_Aires_Circuito_7-171,Buenos_Aires_Circuito_7,standard,Formula Classic G4,track-type-fallback
 Buenos_Aires_Circuito_7-171,Buenos_Aires_Circuito_7,standard,F3,track-type-fallback
 Buenos_Aires_Circuito_7-171,Buenos_Aires_Circuito_7,standard,FTS,track-type-fallback
 Buenos_Aires_Circuito_7-171,Buenos_Aires_Circuito_7,standard,FormulaVee Brazil,track-type-fallback
@@ -6592,6 +6680,7 @@ Nurb_1971_Nords-187,Nurb_1971_Nords,standard,F-USA Gen.3,track-type-fallback
 Nurb_1971_Nords-187,Nurb_1971_Nords,standard,Formula Classic G1,track-type-fallback
 Nurb_1971_Nords-187,Nurb_1971_Nords,standard,Formula Classic G2,track-type-fallback
 Nurb_1971_Nords-187,Nurb_1971_Nords,standard,Formula Classic G3,track-type-fallback
+Nurb_1971_Nords-187,Nurb_1971_Nords,standard,Formula Classic G4,track-type-fallback
 Nurb_1971_Nords-187,Nurb_1971_Nords,standard,F3,track-type-fallback
 Nurb_1971_Nords-187,Nurb_1971_Nords,standard,FTS,track-type-fallback
 Nurb_1971_Nords-187,Nurb_1971_Nords,standard,FormulaVee Brazil,track-type-fallback
@@ -6657,6 +6746,7 @@ Barcelona_GP_2001-246,Barcelona_GP_2001,standard,F-USA Gen.3,track-type-fallback
 Barcelona_GP_2001-246,Barcelona_GP_2001,standard,Formula Classic G1,track-type-fallback
 Barcelona_GP_2001-246,Barcelona_GP_2001,standard,Formula Classic G2,track-type-fallback
 Barcelona_GP_2001-246,Barcelona_GP_2001,standard,Formula Classic G3,track-type-fallback
+Barcelona_GP_2001-246,Barcelona_GP_2001,standard,Formula Classic G4,track-type-fallback
 Barcelona_GP_2001-246,Barcelona_GP_2001,standard,F3,track-type-fallback
 Barcelona_GP_2001-246,Barcelona_GP_2001,standard,FTS,track-type-fallback
 Barcelona_GP_2001-246,Barcelona_GP_2001,standard,FormulaVee Brazil,track-type-fallback
@@ -6722,6 +6812,7 @@ Daytona_Road_Course-22,Daytona_Road_Course,standard,F-USA Gen.3,track-type-fallb
 Daytona_Road_Course-22,Daytona_Road_Course,standard,Formula Classic G1,track-type-fallback
 Daytona_Road_Course-22,Daytona_Road_Course,standard,Formula Classic G2,track-type-fallback
 Daytona_Road_Course-22,Daytona_Road_Course,standard,Formula Classic G3,track-type-fallback
+Daytona_Road_Course-22,Daytona_Road_Course,standard,Formula Classic G4,track-type-fallback
 Daytona_Road_Course-22,Daytona_Road_Course,standard,F3,track-type-fallback
 Daytona_Road_Course-22,Daytona_Road_Course,standard,FTS,track-type-fallback
 Daytona_Road_Course-22,Daytona_Road_Course,standard,FormulaVee Brazil,track-type-fallback
@@ -6787,6 +6878,7 @@ Daytona_Nascar_Road_Course-138,Daytona_Nascar_Road_Course,standard,F-USA Gen.3,t
 Daytona_Nascar_Road_Course-138,Daytona_Nascar_Road_Course,standard,Formula Classic G1,track-type-fallback
 Daytona_Nascar_Road_Course-138,Daytona_Nascar_Road_Course,standard,Formula Classic G2,track-type-fallback
 Daytona_Nascar_Road_Course-138,Daytona_Nascar_Road_Course,standard,Formula Classic G3,track-type-fallback
+Daytona_Nascar_Road_Course-138,Daytona_Nascar_Road_Course,standard,Formula Classic G4,track-type-fallback
 Daytona_Nascar_Road_Course-138,Daytona_Nascar_Road_Course,standard,F3,track-type-fallback
 Daytona_Nascar_Road_Course-138,Daytona_Nascar_Road_Course,standard,FTS,track-type-fallback
 Daytona_Nascar_Road_Course-138,Daytona_Nascar_Road_Course,standard,FormulaVee Brazil,track-type-fallback
@@ -6852,6 +6944,7 @@ Interlagos_1991-191,Interlagos_1991,standard,F-USA Gen.3,track-type-fallback
 Interlagos_1991-191,Interlagos_1991,standard,Formula Classic G1,track-type-fallback
 Interlagos_1991-191,Interlagos_1991,standard,Formula Classic G2,track-type-fallback
 Interlagos_1991-191,Interlagos_1991,standard,Formula Classic G3,track-type-fallback
+Interlagos_1991-191,Interlagos_1991,standard,Formula Classic G4,track-type-fallback
 Interlagos_1991-191,Interlagos_1991,standard,F3,track-type-fallback
 Interlagos_1991-191,Interlagos_1991,standard,FTS,track-type-fallback
 Interlagos_1991-191,Interlagos_1991,standard,FormulaVee Brazil,track-type-fallback
@@ -6917,6 +7010,7 @@ Interlagos_1993-211,Interlagos_1993,standard,F-USA Gen.3,track-type-fallback
 Interlagos_1993-211,Interlagos_1993,standard,Formula Classic G1,track-type-fallback
 Interlagos_1993-211,Interlagos_1993,standard,Formula Classic G2,track-type-fallback
 Interlagos_1993-211,Interlagos_1993,standard,Formula Classic G3,track-type-fallback
+Interlagos_1993-211,Interlagos_1993,standard,Formula Classic G4,track-type-fallback
 Interlagos_1993-211,Interlagos_1993,standard,F3,track-type-fallback
 Interlagos_1993-211,Interlagos_1993,standard,FTS,track-type-fallback
 Interlagos_1993-211,Interlagos_1993,standard,FormulaVee Brazil,track-type-fallback
@@ -6982,6 +7076,7 @@ Jacarepagua_Historic-51,Jacarepagua_Historic,standard,F-USA Gen.3,track-type-fal
 Jacarepagua_Historic-51,Jacarepagua_Historic,standard,Formula Classic G1,track-type-fallback
 Jacarepagua_Historic-51,Jacarepagua_Historic,standard,Formula Classic G2,track-type-fallback
 Jacarepagua_Historic-51,Jacarepagua_Historic,standard,Formula Classic G3,track-type-fallback
+Jacarepagua_Historic-51,Jacarepagua_Historic,standard,Formula Classic G4,track-type-fallback
 Jacarepagua_Historic-51,Jacarepagua_Historic,standard,F3,track-type-fallback
 Jacarepagua_Historic-51,Jacarepagua_Historic,standard,FTS,track-type-fallback
 Jacarepagua_Historic-51,Jacarepagua_Historic,standard,FormulaVee Brazil,track-type-fallback
@@ -7047,6 +7142,7 @@ Buenos_Aires_Circuito_8-172,Buenos_Aires_Circuito_8,standard,F-USA Gen.3,track-t
 Buenos_Aires_Circuito_8-172,Buenos_Aires_Circuito_8,standard,Formula Classic G1,track-type-fallback
 Buenos_Aires_Circuito_8-172,Buenos_Aires_Circuito_8,standard,Formula Classic G2,track-type-fallback
 Buenos_Aires_Circuito_8-172,Buenos_Aires_Circuito_8,standard,Formula Classic G3,track-type-fallback
+Buenos_Aires_Circuito_8-172,Buenos_Aires_Circuito_8,standard,Formula Classic G4,track-type-fallback
 Buenos_Aires_Circuito_8-172,Buenos_Aires_Circuito_8,standard,F3,track-type-fallback
 Buenos_Aires_Circuito_8-172,Buenos_Aires_Circuito_8,standard,FTS,track-type-fallback
 Buenos_Aires_Circuito_8-172,Buenos_Aires_Circuito_8,standard,FormulaVee Brazil,track-type-fallback
@@ -7115,6 +7211,7 @@ Montreal_Historic-66,Montreal_Historic,standard,F-USA Gen.3,track-type-fallback
 Montreal_Historic-66,Montreal_Historic,standard,Formula Classic G1,track-type-fallback
 Montreal_Historic-66,Montreal_Historic,standard,Formula Classic G2,track-type-fallback
 Montreal_Historic-66,Montreal_Historic,standard,Formula Classic G3,track-type-fallback
+Montreal_Historic-66,Montreal_Historic,standard,Formula Classic G4,track-type-fallback
 Montreal_Historic-66,Montreal_Historic,standard,F3,track-type-fallback
 Montreal_Historic-66,Montreal_Historic,standard,FTS,track-type-fallback
 Montreal_Historic-66,Montreal_Historic,standard,FormulaVee Brazil,track-type-fallback
@@ -7180,6 +7277,7 @@ Monza_2020_Junior-144,Monza_2020_Junior,standard,F-USA Gen.3,track-type-fallback
 Monza_2020_Junior-144,Monza_2020_Junior,standard,Formula Classic G1,track-type-fallback
 Monza_2020_Junior-144,Monza_2020_Junior,standard,Formula Classic G2,track-type-fallback
 Monza_2020_Junior-144,Monza_2020_Junior,standard,Formula Classic G3,track-type-fallback
+Monza_2020_Junior-144,Monza_2020_Junior,standard,Formula Classic G4,track-type-fallback
 Monza_2020_Junior-144,Monza_2020_Junior,standard,F3,track-type-fallback
 Monza_2020_Junior-144,Monza_2020_Junior,standard,FTS,track-type-fallback
 Monza_2020_Junior-144,Monza_2020_Junior,standard,FormulaVee Brazil,track-type-fallback
@@ -7266,6 +7364,7 @@ Buenos_Aires_Circuito_9-997,Buenos_Aires_Circuito_9,standard,F-USA Gen.3,track-t
 Buenos_Aires_Circuito_9-997,Buenos_Aires_Circuito_9,standard,Formula Classic G1,track-type-fallback
 Buenos_Aires_Circuito_9-997,Buenos_Aires_Circuito_9,standard,Formula Classic G2,track-type-fallback
 Buenos_Aires_Circuito_9-997,Buenos_Aires_Circuito_9,standard,Formula Classic G3,track-type-fallback
+Buenos_Aires_Circuito_9-997,Buenos_Aires_Circuito_9,standard,Formula Classic G4,track-type-fallback
 Buenos_Aires_Circuito_9-997,Buenos_Aires_Circuito_9,standard,F3,track-type-fallback
 Buenos_Aires_Circuito_9-997,Buenos_Aires_Circuito_9,standard,FTS,track-type-fallback
 Buenos_Aires_Circuito_9-997,Buenos_Aires_Circuito_9,standard,FormulaVee Brazil,track-type-fallback
@@ -7331,6 +7430,7 @@ Curitiba_outer-18,Curitiba_outer,standard,F-USA Gen.3,track-type-fallback
 Curitiba_outer-18,Curitiba_outer,standard,Formula Classic G1,track-type-fallback
 Curitiba_outer-18,Curitiba_outer,standard,Formula Classic G2,track-type-fallback
 Curitiba_outer-18,Curitiba_outer,standard,Formula Classic G3,track-type-fallback
+Curitiba_outer-18,Curitiba_outer,standard,Formula Classic G4,track-type-fallback
 Curitiba_outer-18,Curitiba_outer,standard,F3,track-type-fallback
 Curitiba_outer-18,Curitiba_outer,standard,FTS,track-type-fallback
 Curitiba_outer-18,Curitiba_outer,standard,FormulaVee Brazil,track-type-fallback
@@ -7396,6 +7496,7 @@ Pocono_RC4-222,Pocono_RC4,standard,F-USA Gen.3,track-type-fallback
 Pocono_RC4-222,Pocono_RC4,standard,Formula Classic G1,track-type-fallback
 Pocono_RC4-222,Pocono_RC4,standard,Formula Classic G2,track-type-fallback
 Pocono_RC4-222,Pocono_RC4,standard,Formula Classic G3,track-type-fallback
+Pocono_RC4-222,Pocono_RC4,standard,Formula Classic G4,track-type-fallback
 Pocono_RC4-222,Pocono_RC4,standard,F3,track-type-fallback
 Pocono_RC4-222,Pocono_RC4,standard,FTS,track-type-fallback
 Pocono_RC4-222,Pocono_RC4,standard,FormulaVee Brazil,track-type-fallback
@@ -7461,6 +7562,7 @@ Hockenheim_STT-231,Hockenheim_STT,standard,F-USA Gen.3,track-type-fallback
 Hockenheim_STT-231,Hockenheim_STT,standard,Formula Classic G1,track-type-fallback
 Hockenheim_STT-231,Hockenheim_STT,standard,Formula Classic G2,track-type-fallback
 Hockenheim_STT-231,Hockenheim_STT,standard,Formula Classic G3,track-type-fallback
+Hockenheim_STT-231,Hockenheim_STT,standard,Formula Classic G4,track-type-fallback
 Hockenheim_STT-231,Hockenheim_STT,standard,F3,track-type-fallback
 Hockenheim_STT-231,Hockenheim_STT,standard,FTS,track-type-fallback
 Hockenheim_STT-231,Hockenheim_STT,standard,FormulaVee Brazil,track-type-fallback
@@ -7526,6 +7628,7 @@ Pocono_RC2-218,Pocono_RC2,standard,F-USA Gen.3,track-type-fallback
 Pocono_RC2-218,Pocono_RC2,standard,Formula Classic G1,track-type-fallback
 Pocono_RC2-218,Pocono_RC2,standard,Formula Classic G2,track-type-fallback
 Pocono_RC2-218,Pocono_RC2,standard,Formula Classic G3,track-type-fallback
+Pocono_RC2-218,Pocono_RC2,standard,Formula Classic G4,track-type-fallback
 Pocono_RC2-218,Pocono_RC2,standard,F3,track-type-fallback
 Pocono_RC2-218,Pocono_RC2,standard,FTS,track-type-fallback
 Pocono_RC2-218,Pocono_RC2,standard,FormulaVee Brazil,track-type-fallback
@@ -7591,6 +7694,7 @@ Buenos_Aires_Circuito_15-999,Buenos_Aires_Circuito_15,standard,F-USA Gen.3,track
 Buenos_Aires_Circuito_15-999,Buenos_Aires_Circuito_15,standard,Formula Classic G1,track-type-fallback
 Buenos_Aires_Circuito_15-999,Buenos_Aires_Circuito_15,standard,Formula Classic G2,track-type-fallback
 Buenos_Aires_Circuito_15-999,Buenos_Aires_Circuito_15,standard,Formula Classic G3,track-type-fallback
+Buenos_Aires_Circuito_15-999,Buenos_Aires_Circuito_15,standard,Formula Classic G4,track-type-fallback
 Buenos_Aires_Circuito_15-999,Buenos_Aires_Circuito_15,standard,F3,track-type-fallback
 Buenos_Aires_Circuito_15-999,Buenos_Aires_Circuito_15,standard,FTS,track-type-fallback
 Buenos_Aires_Circuito_15-999,Buenos_Aires_Circuito_15,standard,FormulaVee Brazil,track-type-fallback
@@ -7656,6 +7760,7 @@ Buenos_Aires_Circuito_6T-170,Buenos_Aires_Circuito_6T,standard,F-USA Gen.3,track
 Buenos_Aires_Circuito_6T-170,Buenos_Aires_Circuito_6T,standard,Formula Classic G1,track-type-fallback
 Buenos_Aires_Circuito_6T-170,Buenos_Aires_Circuito_6T,standard,Formula Classic G2,track-type-fallback
 Buenos_Aires_Circuito_6T-170,Buenos_Aires_Circuito_6T,standard,Formula Classic G3,track-type-fallback
+Buenos_Aires_Circuito_6T-170,Buenos_Aires_Circuito_6T,standard,Formula Classic G4,track-type-fallback
 Buenos_Aires_Circuito_6T-170,Buenos_Aires_Circuito_6T,standard,F3,track-type-fallback
 Buenos_Aires_Circuito_6T-170,Buenos_Aires_Circuito_6T,standard,FTS,track-type-fallback
 Buenos_Aires_Circuito_6T-170,Buenos_Aires_Circuito_6T,standard,FormulaVee Brazil,track-type-fallback
@@ -7721,6 +7826,7 @@ Cleveland_GP-152,Cleveland_GP,standard,F-USA Gen.3,track-type-fallback
 Cleveland_GP-152,Cleveland_GP,standard,Formula Classic G1,track-type-fallback
 Cleveland_GP-152,Cleveland_GP,standard,Formula Classic G2,track-type-fallback
 Cleveland_GP-152,Cleveland_GP,standard,Formula Classic G3,track-type-fallback
+Cleveland_GP-152,Cleveland_GP,standard,Formula Classic G4,track-type-fallback
 Cleveland_GP-152,Cleveland_GP,standard,F3,track-type-fallback
 Cleveland_GP-152,Cleveland_GP,standard,FTS,track-type-fallback
 Cleveland_GP-152,Cleveland_GP,standard,FormulaVee Brazil,track-type-fallback
@@ -7786,6 +7892,7 @@ Imola_GP_1972-41,Imola_GP_1972,standard,F-USA Gen.3,track-type-fallback
 Imola_GP_1972-41,Imola_GP_1972,standard,Formula Classic G1,track-type-fallback
 Imola_GP_1972-41,Imola_GP_1972,standard,Formula Classic G2,track-type-fallback
 Imola_GP_1972-41,Imola_GP_1972,standard,Formula Classic G3,track-type-fallback
+Imola_GP_1972-41,Imola_GP_1972,standard,Formula Classic G4,track-type-fallback
 Imola_GP_1972-41,Imola_GP_1972,standard,F3,track-type-fallback
 Imola_GP_1972-41,Imola_GP_1972,standard,FTS,track-type-fallback
 Imola_GP_1972-41,Imola_GP_1972,standard,FormulaVee Brazil,track-type-fallback
@@ -7851,6 +7958,7 @@ Pocono_RC5-223,Pocono_RC5,standard,F-USA Gen.3,track-type-fallback
 Pocono_RC5-223,Pocono_RC5,standard,Formula Classic G1,track-type-fallback
 Pocono_RC5-223,Pocono_RC5,standard,Formula Classic G2,track-type-fallback
 Pocono_RC5-223,Pocono_RC5,standard,Formula Classic G3,track-type-fallback
+Pocono_RC5-223,Pocono_RC5,standard,Formula Classic G4,track-type-fallback
 Pocono_RC5-223,Pocono_RC5,standard,F3,track-type-fallback
 Pocono_RC5-223,Pocono_RC5,standard,FTS,track-type-fallback
 Pocono_RC5-223,Pocono_RC5,standard,FormulaVee Brazil,track-type-fallback
@@ -7916,6 +8024,7 @@ VeloCittaTD_TSICup-151,VeloCittaTD_TSICup,standard,F-USA Gen.3,track-type-fallba
 VeloCittaTD_TSICup-151,VeloCittaTD_TSICup,standard,Formula Classic G1,track-type-fallback
 VeloCittaTD_TSICup-151,VeloCittaTD_TSICup,standard,Formula Classic G2,track-type-fallback
 VeloCittaTD_TSICup-151,VeloCittaTD_TSICup,standard,Formula Classic G3,track-type-fallback
+VeloCittaTD_TSICup-151,VeloCittaTD_TSICup,standard,Formula Classic G4,track-type-fallback
 VeloCittaTD_TSICup-151,VeloCittaTD_TSICup,standard,F3,track-type-fallback
 VeloCittaTD_TSICup-151,VeloCittaTD_TSICup,standard,FTS,track-type-fallback
 VeloCittaTD_TSICup-151,VeloCittaTD_TSICup,standard,FormulaVee Brazil,track-type-fallback
@@ -7981,6 +8090,7 @@ Nordschleife_2020_24hr-68,Nordschleife_2020_24hr,standard,F-USA Gen.3,track-type
 Nordschleife_2020_24hr-68,Nordschleife_2020_24hr,standard,Formula Classic G1,track-type-fallback
 Nordschleife_2020_24hr-68,Nordschleife_2020_24hr,standard,Formula Classic G2,track-type-fallback
 Nordschleife_2020_24hr-68,Nordschleife_2020_24hr,standard,Formula Classic G3,track-type-fallback
+Nordschleife_2020_24hr-68,Nordschleife_2020_24hr,standard,Formula Classic G4,track-type-fallback
 Nordschleife_2020_24hr-68,Nordschleife_2020_24hr,standard,F3,track-type-fallback
 Nordschleife_2020_24hr-68,Nordschleife_2020_24hr,standard,FTS,track-type-fallback
 Nordschleife_2020_24hr-68,Nordschleife_2020_24hr,standard,FormulaVee Brazil,track-type-fallback
@@ -8062,6 +8172,7 @@ Mosport_1971-252,Mosport_1971,standard,F-USA Gen.3,track-type-fallback
 Mosport_1971-252,Mosport_1971,standard,Formula Classic G1,track-type-fallback
 Mosport_1971-252,Mosport_1971,standard,Formula Classic G2,track-type-fallback
 Mosport_1971-252,Mosport_1971,standard,Formula Classic G3,track-type-fallback
+Mosport_1971-252,Mosport_1971,standard,Formula Classic G4,track-type-fallback
 Mosport_1971-252,Mosport_1971,standard,F3,track-type-fallback
 Mosport_1971-252,Mosport_1971,standard,FTS,track-type-fallback
 Mosport_1971-252,Mosport_1971,standard,FormulaVee Brazil,track-type-fallback
@@ -8127,6 +8238,7 @@ VeloCittaClubDay_TSICup-150,VeloCittaClubDay_TSICup,standard,F-USA Gen.3,track-t
 VeloCittaClubDay_TSICup-150,VeloCittaClubDay_TSICup,standard,Formula Classic G1,track-type-fallback
 VeloCittaClubDay_TSICup-150,VeloCittaClubDay_TSICup,standard,Formula Classic G2,track-type-fallback
 VeloCittaClubDay_TSICup-150,VeloCittaClubDay_TSICup,standard,Formula Classic G3,track-type-fallback
+VeloCittaClubDay_TSICup-150,VeloCittaClubDay_TSICup,standard,Formula Classic G4,track-type-fallback
 VeloCittaClubDay_TSICup-150,VeloCittaClubDay_TSICup,standard,F3,track-type-fallback
 VeloCittaClubDay_TSICup-150,VeloCittaClubDay_TSICup,standard,FTS,track-type-fallback
 VeloCittaClubDay_TSICup-150,VeloCittaClubDay_TSICup,standard,FormulaVee Brazil,track-type-fallback
@@ -8192,6 +8304,7 @@ Watkins_Glen_S-156,Watkins_Glen_S,standard,F-USA Gen.3,track-type-fallback
 Watkins_Glen_S-156,Watkins_Glen_S,standard,Formula Classic G1,track-type-fallback
 Watkins_Glen_S-156,Watkins_Glen_S,standard,Formula Classic G2,track-type-fallback
 Watkins_Glen_S-156,Watkins_Glen_S,standard,Formula Classic G3,track-type-fallback
+Watkins_Glen_S-156,Watkins_Glen_S,standard,Formula Classic G4,track-type-fallback
 Watkins_Glen_S-156,Watkins_Glen_S,standard,F3,track-type-fallback
 Watkins_Glen_S-156,Watkins_Glen_S,standard,FTS,track-type-fallback
 Watkins_Glen_S-156,Watkins_Glen_S,standard,FormulaVee Brazil,track-type-fallback
@@ -8257,6 +8370,7 @@ SantaCruzDoSul-82,SantaCruzDoSul,standard,F-USA Gen.3,track-type-fallback
 SantaCruzDoSul-82,SantaCruzDoSul,standard,Formula Classic G1,track-type-fallback
 SantaCruzDoSul-82,SantaCruzDoSul,standard,Formula Classic G2,track-type-fallback
 SantaCruzDoSul-82,SantaCruzDoSul,standard,Formula Classic G3,track-type-fallback
+SantaCruzDoSul-82,SantaCruzDoSul,standard,Formula Classic G4,track-type-fallback
 SantaCruzDoSul-82,SantaCruzDoSul,standard,F3,track-type-fallback
 SantaCruzDoSul-82,SantaCruzDoSul,standard,FTS,track-type-fallback
 SantaCruzDoSul-82,SantaCruzDoSul,standard,FormulaVee Brazil,track-type-fallback
@@ -8288,6 +8402,7 @@ SantaCruzDoSul-82,SantaCruzDoSul,standard,Vintage Touring Cars T1,track-type-fal
 SantaCruzDoSul-82,SantaCruzDoSul,standard,Vintage Touring Cars T2,track-type-fallback
 Silverstone_1991-110,Silverstone_1991,standard,Formula Classic G2,existing-app-matrix
 Silverstone_1991-110,Silverstone_1991,standard,Formula Classic G3,existing-app-matrix
+Silverstone_1991-110,Silverstone_1991,standard,Formula Classic G4,existing-app-matrix
 Silverstone_1991-110,Silverstone_1991,standard,Formula V10 G1,existing-app-matrix
 Silverstone_1991-110,Silverstone_1991,standard,Formula V12,existing-app-matrix
 Silverstone_1991-110,Silverstone_1991,standard,FTS,existing-app-matrix
@@ -8330,6 +8445,7 @@ Velopark_2017_STT-162,Velopark_2017_STT,standard,F-USA Gen.3,track-type-fallback
 Velopark_2017_STT-162,Velopark_2017_STT,standard,Formula Classic G1,track-type-fallback
 Velopark_2017_STT-162,Velopark_2017_STT,standard,Formula Classic G2,track-type-fallback
 Velopark_2017_STT-162,Velopark_2017_STT,standard,Formula Classic G3,track-type-fallback
+Velopark_2017_STT-162,Velopark_2017_STT,standard,Formula Classic G4,track-type-fallback
 Velopark_2017_STT-162,Velopark_2017_STT,standard,F3,track-type-fallback
 Velopark_2017_STT-162,Velopark_2017_STT,standard,FTS,track-type-fallback
 Velopark_2017_STT-162,Velopark_2017_STT,standard,FormulaVee Brazil,track-type-fallback
@@ -8395,6 +8511,7 @@ Laguna_Seca_1971-255,Laguna_Seca_1971,standard,F-USA Gen.3,track-type-fallback
 Laguna_Seca_1971-255,Laguna_Seca_1971,standard,Formula Classic G1,track-type-fallback
 Laguna_Seca_1971-255,Laguna_Seca_1971,standard,Formula Classic G2,track-type-fallback
 Laguna_Seca_1971-255,Laguna_Seca_1971,standard,Formula Classic G3,track-type-fallback
+Laguna_Seca_1971-255,Laguna_Seca_1971,standard,Formula Classic G4,track-type-fallback
 Laguna_Seca_1971-255,Laguna_Seca_1971,standard,F3,track-type-fallback
 Laguna_Seca_1971-255,Laguna_Seca_1971,standard,FTS,track-type-fallback
 Laguna_Seca_1971-255,Laguna_Seca_1971,standard,FormulaVee Brazil,track-type-fallback
@@ -8460,6 +8577,7 @@ Taruma_Internacional-93,Taruma_Internacional,standard,F-USA Gen.3,track-type-fal
 Taruma_Internacional-93,Taruma_Internacional,standard,Formula Classic G1,track-type-fallback
 Taruma_Internacional-93,Taruma_Internacional,standard,Formula Classic G2,track-type-fallback
 Taruma_Internacional-93,Taruma_Internacional,standard,Formula Classic G3,track-type-fallback
+Taruma_Internacional-93,Taruma_Internacional,standard,Formula Classic G4,track-type-fallback
 Taruma_Internacional-93,Taruma_Internacional,standard,F3,track-type-fallback
 Taruma_Internacional-93,Taruma_Internacional,standard,FTS,track-type-fallback
 Taruma_Internacional-93,Taruma_Internacional,standard,FormulaVee Brazil,track-type-fallback
@@ -8525,6 +8643,7 @@ Watkins_Glen_GPIL-155,Watkins_Glen_GPIL,standard,F-USA Gen.3,track-type-fallback
 Watkins_Glen_GPIL-155,Watkins_Glen_GPIL,standard,Formula Classic G1,track-type-fallback
 Watkins_Glen_GPIL-155,Watkins_Glen_GPIL,standard,Formula Classic G2,track-type-fallback
 Watkins_Glen_GPIL-155,Watkins_Glen_GPIL,standard,Formula Classic G3,track-type-fallback
+Watkins_Glen_GPIL-155,Watkins_Glen_GPIL,standard,Formula Classic G4,track-type-fallback
 Watkins_Glen_GPIL-155,Watkins_Glen_GPIL,standard,F3,track-type-fallback
 Watkins_Glen_GPIL-155,Watkins_Glen_GPIL,standard,FTS,track-type-fallback
 Watkins_Glen_GPIL-155,Watkins_Glen_GPIL,standard,FormulaVee Brazil,track-type-fallback
@@ -8590,6 +8709,7 @@ Road_America_RCB-159,Road_America_RCB,standard,F-USA Gen.3,track-type-fallback
 Road_America_RCB-159,Road_America_RCB,standard,Formula Classic G1,track-type-fallback
 Road_America_RCB-159,Road_America_RCB,standard,Formula Classic G2,track-type-fallback
 Road_America_RCB-159,Road_America_RCB,standard,Formula Classic G3,track-type-fallback
+Road_America_RCB-159,Road_America_RCB,standard,Formula Classic G4,track-type-fallback
 Road_America_RCB-159,Road_America_RCB,standard,F3,track-type-fallback
 Road_America_RCB-159,Road_America_RCB,standard,FTS,track-type-fallback
 Road_America_RCB-159,Road_America_RCB,standard,FormulaVee Brazil,track-type-fallback
@@ -8671,6 +8791,7 @@ Nurb_1971_Suds-188,Nurb_1971_Suds,standard,F-USA Gen.3,track-type-fallback
 Nurb_1971_Suds-188,Nurb_1971_Suds,standard,Formula Classic G1,track-type-fallback
 Nurb_1971_Suds-188,Nurb_1971_Suds,standard,Formula Classic G2,track-type-fallback
 Nurb_1971_Suds-188,Nurb_1971_Suds,standard,Formula Classic G3,track-type-fallback
+Nurb_1971_Suds-188,Nurb_1971_Suds,standard,Formula Classic G4,track-type-fallback
 Nurb_1971_Suds-188,Nurb_1971_Suds,standard,F3,track-type-fallback
 Nurb_1971_Suds-188,Nurb_1971_Suds,standard,FTS,track-type-fallback
 Nurb_1971_Suds-188,Nurb_1971_Suds,standard,FormulaVee Brazil,track-type-fallback
@@ -8736,6 +8857,7 @@ Spa_Francorchamps_1970-177,Spa_Francorchamps_1970,standard,F-USA Gen.3,track-typ
 Spa_Francorchamps_1970-177,Spa_Francorchamps_1970,standard,Formula Classic G1,track-type-fallback
 Spa_Francorchamps_1970-177,Spa_Francorchamps_1970,standard,Formula Classic G2,track-type-fallback
 Spa_Francorchamps_1970-177,Spa_Francorchamps_1970,standard,Formula Classic G3,track-type-fallback
+Spa_Francorchamps_1970-177,Spa_Francorchamps_1970,standard,Formula Classic G4,track-type-fallback
 Spa_Francorchamps_1970-177,Spa_Francorchamps_1970,standard,F3,track-type-fallback
 Spa_Francorchamps_1970-177,Spa_Francorchamps_1970,standard,FTS,track-type-fallback
 Spa_Francorchamps_1970-177,Spa_Francorchamps_1970,standard,FormulaVee Brazil,track-type-fallback
@@ -8827,6 +8949,7 @@ Buenos_Aires_Circuito_6-169,Buenos_Aires_Circuito_6,standard,F-USA Gen.3,track-t
 Buenos_Aires_Circuito_6-169,Buenos_Aires_Circuito_6,standard,Formula Classic G1,track-type-fallback
 Buenos_Aires_Circuito_6-169,Buenos_Aires_Circuito_6,standard,Formula Classic G2,track-type-fallback
 Buenos_Aires_Circuito_6-169,Buenos_Aires_Circuito_6,standard,Formula Classic G3,track-type-fallback
+Buenos_Aires_Circuito_6-169,Buenos_Aires_Circuito_6,standard,Formula Classic G4,track-type-fallback
 Buenos_Aires_Circuito_6-169,Buenos_Aires_Circuito_6,standard,F3,track-type-fallback
 Buenos_Aires_Circuito_6-169,Buenos_Aires_Circuito_6,standard,FTS,track-type-fallback
 Buenos_Aires_Circuito_6-169,Buenos_Aires_Circuito_6,standard,FormulaVee Brazil,track-type-fallback
@@ -8892,6 +9015,7 @@ Kyalami_2019-58,Kyalami_2019,standard,F-USA Gen.3,track-type-fallback
 Kyalami_2019-58,Kyalami_2019,standard,Formula Classic G1,track-type-fallback
 Kyalami_2019-58,Kyalami_2019,standard,Formula Classic G2,track-type-fallback
 Kyalami_2019-58,Kyalami_2019,standard,Formula Classic G3,track-type-fallback
+Kyalami_2019-58,Kyalami_2019,standard,Formula Classic G4,track-type-fallback
 Kyalami_2019-58,Kyalami_2019,standard,F3,track-type-fallback
 Kyalami_2019-58,Kyalami_2019,standard,FTS,track-type-fallback
 Kyalami_2019-58,Kyalami_2019,standard,FormulaVee Brazil,track-type-fallback
@@ -8957,6 +9081,7 @@ Spa_Francorchamps_1970_1000km-182,Spa_Francorchamps_1970_1000km,standard,F-USA G
 Spa_Francorchamps_1970_1000km-182,Spa_Francorchamps_1970_1000km,standard,Formula Classic G1,track-type-fallback
 Spa_Francorchamps_1970_1000km-182,Spa_Francorchamps_1970_1000km,standard,Formula Classic G2,track-type-fallback
 Spa_Francorchamps_1970_1000km-182,Spa_Francorchamps_1970_1000km,standard,Formula Classic G3,track-type-fallback
+Spa_Francorchamps_1970_1000km-182,Spa_Francorchamps_1970_1000km,standard,Formula Classic G4,track-type-fallback
 Spa_Francorchamps_1970_1000km-182,Spa_Francorchamps_1970_1000km,standard,F3,track-type-fallback
 Spa_Francorchamps_1970_1000km-182,Spa_Francorchamps_1970_1000km,standard,FTS,track-type-fallback
 Spa_Francorchamps_1970_1000km-182,Spa_Francorchamps_1970_1000km,standard,FormulaVee Brazil,track-type-fallback
@@ -9022,6 +9147,7 @@ Hockenheim_1977-32,Hockenheim_1977,standard,F-USA Gen.3,track-type-fallback
 Hockenheim_1977-32,Hockenheim_1977,standard,Formula Classic G1,track-type-fallback
 Hockenheim_1977-32,Hockenheim_1977,standard,Formula Classic G2,track-type-fallback
 Hockenheim_1977-32,Hockenheim_1977,standard,Formula Classic G3,track-type-fallback
+Hockenheim_1977-32,Hockenheim_1977,standard,Formula Classic G4,track-type-fallback
 Hockenheim_1977-32,Hockenheim_1977,standard,F3,track-type-fallback
 Hockenheim_1977-32,Hockenheim_1977,standard,FTS,track-type-fallback
 Hockenheim_1977-32,Hockenheim_1977,standard,FormulaVee Brazil,track-type-fallback
@@ -9087,6 +9213,7 @@ Hockenheim_National-36,Hockenheim_National,standard,F-USA Gen.3,track-type-fallb
 Hockenheim_National-36,Hockenheim_National,standard,Formula Classic G1,track-type-fallback
 Hockenheim_National-36,Hockenheim_National,standard,Formula Classic G2,track-type-fallback
 Hockenheim_National-36,Hockenheim_National,standard,Formula Classic G3,track-type-fallback
+Hockenheim_National-36,Hockenheim_National,standard,Formula Classic G4,track-type-fallback
 Hockenheim_National-36,Hockenheim_National,standard,F3,track-type-fallback
 Hockenheim_National-36,Hockenheim_National,standard,FTS,track-type-fallback
 Hockenheim_National-36,Hockenheim_National,standard,FormulaVee Brazil,track-type-fallback
@@ -9152,6 +9279,7 @@ Le_Mans_Circuit_Bugatti-194,Le_Mans_Circuit_Bugatti,standard,F-USA Gen.3,track-t
 Le_Mans_Circuit_Bugatti-194,Le_Mans_Circuit_Bugatti,standard,Formula Classic G1,track-type-fallback
 Le_Mans_Circuit_Bugatti-194,Le_Mans_Circuit_Bugatti,standard,Formula Classic G2,track-type-fallback
 Le_Mans_Circuit_Bugatti-194,Le_Mans_Circuit_Bugatti,standard,Formula Classic G3,track-type-fallback
+Le_Mans_Circuit_Bugatti-194,Le_Mans_Circuit_Bugatti,standard,Formula Classic G4,track-type-fallback
 Le_Mans_Circuit_Bugatti-194,Le_Mans_Circuit_Bugatti,standard,F3,track-type-fallback
 Le_Mans_Circuit_Bugatti-194,Le_Mans_Circuit_Bugatti,standard,FTS,track-type-fallback
 Le_Mans_Circuit_Bugatti-194,Le_Mans_Circuit_Bugatti,standard,FormulaVee Brazil,track-type-fallback
@@ -9240,6 +9368,7 @@ Pocono_RC1-220,Pocono_RC1,standard,F-USA Gen.3,track-type-fallback
 Pocono_RC1-220,Pocono_RC1,standard,Formula Classic G1,track-type-fallback
 Pocono_RC1-220,Pocono_RC1,standard,Formula Classic G2,track-type-fallback
 Pocono_RC1-220,Pocono_RC1,standard,Formula Classic G3,track-type-fallback
+Pocono_RC1-220,Pocono_RC1,standard,Formula Classic G4,track-type-fallback
 Pocono_RC1-220,Pocono_RC1,standard,F3,track-type-fallback
 Pocono_RC1-220,Pocono_RC1,standard,FTS,track-type-fallback
 Pocono_RC1-220,Pocono_RC1,standard,FormulaVee Brazil,track-type-fallback
@@ -9305,6 +9434,7 @@ Hockenheim_ShortA-37,Hockenheim_ShortA,standard,F-USA Gen.3,track-type-fallback
 Hockenheim_ShortA-37,Hockenheim_ShortA,standard,Formula Classic G1,track-type-fallback
 Hockenheim_ShortA-37,Hockenheim_ShortA,standard,Formula Classic G2,track-type-fallback
 Hockenheim_ShortA-37,Hockenheim_ShortA,standard,Formula Classic G3,track-type-fallback
+Hockenheim_ShortA-37,Hockenheim_ShortA,standard,Formula Classic G4,track-type-fallback
 Hockenheim_ShortA-37,Hockenheim_ShortA,standard,F3,track-type-fallback
 Hockenheim_ShortA-37,Hockenheim_ShortA,standard,FTS,track-type-fallback
 Hockenheim_ShortA-37,Hockenheim_ShortA,standard,FormulaVee Brazil,track-type-fallback
@@ -9370,6 +9500,7 @@ Imola_GP-40,Imola_GP_2001,standard,F-USA Gen.3,track-type-fallback
 Imola_GP-40,Imola_GP_2001,standard,Formula Classic G1,track-type-fallback
 Imola_GP-40,Imola_GP_2001,standard,Formula Classic G2,track-type-fallback
 Imola_GP-40,Imola_GP_2001,standard,Formula Classic G3,track-type-fallback
+Imola_GP-40,Imola_GP_2001,standard,Formula Classic G4,track-type-fallback
 Imola_GP-40,Imola_GP_2001,standard,F3,track-type-fallback
 Imola_GP-40,Imola_GP_2001,standard,FTS,track-type-fallback
 Imola_GP-40,Imola_GP_2001,standard,FormulaVee Brazil,track-type-fallback
@@ -9435,6 +9566,7 @@ Pocono_RC3-221,Pocono_RC3,standard,F-USA Gen.3,track-type-fallback
 Pocono_RC3-221,Pocono_RC3,standard,Formula Classic G1,track-type-fallback
 Pocono_RC3-221,Pocono_RC3,standard,Formula Classic G2,track-type-fallback
 Pocono_RC3-221,Pocono_RC3,standard,Formula Classic G3,track-type-fallback
+Pocono_RC3-221,Pocono_RC3,standard,Formula Classic G4,track-type-fallback
 Pocono_RC3-221,Pocono_RC3,standard,F3,track-type-fallback
 Pocono_RC3-221,Pocono_RC3,standard,FTS,track-type-fallback
 Pocono_RC3-221,Pocono_RC3,standard,FormulaVee Brazil,track-type-fallback
@@ -9532,6 +9664,7 @@ Nurb_GP_2020_Veedol-71,Nurb_GP_2020_Veedol,standard,F-USA Gen.3,track-type-fallb
 Nurb_GP_2020_Veedol-71,Nurb_GP_2020_Veedol,standard,Formula Classic G1,track-type-fallback
 Nurb_GP_2020_Veedol-71,Nurb_GP_2020_Veedol,standard,Formula Classic G2,track-type-fallback
 Nurb_GP_2020_Veedol-71,Nurb_GP_2020_Veedol,standard,Formula Classic G3,track-type-fallback
+Nurb_GP_2020_Veedol-71,Nurb_GP_2020_Veedol,standard,Formula Classic G4,track-type-fallback
 Nurb_GP_2020_Veedol-71,Nurb_GP_2020_Veedol,standard,F3,track-type-fallback
 Nurb_GP_2020_Veedol-71,Nurb_GP_2020_Veedol,standard,FTS,track-type-fallback
 Nurb_GP_2020_Veedol-71,Nurb_GP_2020_Veedol,standard,FormulaVee Brazil,track-type-fallback
@@ -9634,6 +9767,7 @@ Spielberg_STT-229,Spielberg_STT,standard,F-USA Gen.3,track-type-fallback
 Spielberg_STT-229,Spielberg_STT,standard,Formula Classic G1,track-type-fallback
 Spielberg_STT-229,Spielberg_STT,standard,Formula Classic G2,track-type-fallback
 Spielberg_STT-229,Spielberg_STT,standard,Formula Classic G3,track-type-fallback
+Spielberg_STT-229,Spielberg_STT,standard,Formula Classic G4,track-type-fallback
 Spielberg_STT-229,Spielberg_STT,standard,F3,track-type-fallback
 Spielberg_STT-229,Spielberg_STT,standard,FTS,track-type-fallback
 Spielberg_STT-229,Spielberg_STT,standard,FormulaVee Brazil,track-type-fallback
@@ -9699,6 +9833,7 @@ Hockenheim_1988_short-126,Hockenheim_1988_short,standard,F-USA Gen.3,track-type-
 Hockenheim_1988_short-126,Hockenheim_1988_short,standard,Formula Classic G1,track-type-fallback
 Hockenheim_1988_short-126,Hockenheim_1988_short,standard,Formula Classic G2,track-type-fallback
 Hockenheim_1988_short-126,Hockenheim_1988_short,standard,Formula Classic G3,track-type-fallback
+Hockenheim_1988_short-126,Hockenheim_1988_short,standard,Formula Classic G4,track-type-fallback
 Hockenheim_1988_short-126,Hockenheim_1988_short,standard,F3,track-type-fallback
 Hockenheim_1988_short-126,Hockenheim_1988_short,standard,FTS,track-type-fallback
 Hockenheim_1988_short-126,Hockenheim_1988_short,standard,FormulaVee Brazil,track-type-fallback
@@ -9764,6 +9899,7 @@ Hockenheim_ShortB-38,Hockenheim_ShortB,standard,F-USA Gen.3,track-type-fallback
 Hockenheim_ShortB-38,Hockenheim_ShortB,standard,Formula Classic G1,track-type-fallback
 Hockenheim_ShortB-38,Hockenheim_ShortB,standard,Formula Classic G2,track-type-fallback
 Hockenheim_ShortB-38,Hockenheim_ShortB,standard,Formula Classic G3,track-type-fallback
+Hockenheim_ShortB-38,Hockenheim_ShortB,standard,Formula Classic G4,track-type-fallback
 Hockenheim_ShortB-38,Hockenheim_ShortB,standard,F3,track-type-fallback
 Hockenheim_ShortB-38,Hockenheim_ShortB,standard,FTS,track-type-fallback
 Hockenheim_ShortB-38,Hockenheim_ShortB,standard,FormulaVee Brazil,track-type-fallback
@@ -9829,6 +9965,7 @@ VeloCitta1_TSICup-149,VeloCitta1_TSICup,standard,F-USA Gen.3,track-type-fallback
 VeloCitta1_TSICup-149,VeloCitta1_TSICup,standard,Formula Classic G1,track-type-fallback
 VeloCitta1_TSICup-149,VeloCitta1_TSICup,standard,Formula Classic G2,track-type-fallback
 VeloCitta1_TSICup-149,VeloCitta1_TSICup,standard,Formula Classic G3,track-type-fallback
+VeloCitta1_TSICup-149,VeloCitta1_TSICup,standard,Formula Classic G4,track-type-fallback
 VeloCitta1_TSICup-149,VeloCitta1_TSICup,standard,F3,track-type-fallback
 VeloCitta1_TSICup-149,VeloCitta1_TSICup,standard,FTS,track-type-fallback
 VeloCitta1_TSICup-149,VeloCitta1_TSICup,standard,FormulaVee Brazil,track-type-fallback
@@ -9894,6 +10031,7 @@ Road_Atlanta-179,Road_Atlanta,standard,F-USA Gen.3,track-type-fallback
 Road_Atlanta-179,Road_Atlanta,standard,Formula Classic G1,track-type-fallback
 Road_Atlanta-179,Road_Atlanta,standard,Formula Classic G2,track-type-fallback
 Road_Atlanta-179,Road_Atlanta,standard,Formula Classic G3,track-type-fallback
+Road_Atlanta-179,Road_Atlanta,standard,Formula Classic G4,track-type-fallback
 Road_Atlanta-179,Road_Atlanta,standard,F3,track-type-fallback
 Road_Atlanta-179,Road_Atlanta,standard,FTS,track-type-fallback
 Road_Atlanta-179,Road_Atlanta,standard,FormulaVee Brazil,track-type-fallback
@@ -9959,6 +10097,7 @@ Adelaide_Modern-2,Adelaide_Modern,standard,F-USA Gen.3,track-type-fallback
 Adelaide_Modern-2,Adelaide_Modern,standard,Formula Classic G1,track-type-fallback
 Adelaide_Modern-2,Adelaide_Modern,standard,Formula Classic G2,track-type-fallback
 Adelaide_Modern-2,Adelaide_Modern,standard,Formula Classic G3,track-type-fallback
+Adelaide_Modern-2,Adelaide_Modern,standard,Formula Classic G4,track-type-fallback
 Adelaide_Modern-2,Adelaide_Modern,standard,F3,track-type-fallback
 Adelaide_Modern-2,Adelaide_Modern,standard,FTS,track-type-fallback
 Adelaide_Modern-2,Adelaide_Modern,standard,FormulaVee Brazil,track-type-fallback
@@ -10024,6 +10163,7 @@ Le_Mans_24h_1971-225,Le_Mans_24h_1971,standard,F-USA Gen.3,track-type-fallback
 Le_Mans_24h_1971-225,Le_Mans_24h_1971,standard,Formula Classic G1,track-type-fallback
 Le_Mans_24h_1971-225,Le_Mans_24h_1971,standard,Formula Classic G2,track-type-fallback
 Le_Mans_24h_1971-225,Le_Mans_24h_1971,standard,Formula Classic G3,track-type-fallback
+Le_Mans_24h_1971-225,Le_Mans_24h_1971,standard,Formula Classic G4,track-type-fallback
 Le_Mans_24h_1971-225,Le_Mans_24h_1971,standard,F3,track-type-fallback
 Le_Mans_24h_1971-225,Le_Mans_24h_1971,standard,FTS,track-type-fallback
 Le_Mans_24h_1971-225,Le_Mans_24h_1971,standard,FormulaVee Brazil,track-type-fallback
@@ -10089,6 +10229,7 @@ Monza_1971_Junior-145,Monza_1971_Junior,standard,F-USA Gen.3,track-type-fallback
 Monza_1971_Junior-145,Monza_1971_Junior,standard,Formula Classic G1,track-type-fallback
 Monza_1971_Junior-145,Monza_1971_Junior,standard,Formula Classic G2,track-type-fallback
 Monza_1971_Junior-145,Monza_1971_Junior,standard,Formula Classic G3,track-type-fallback
+Monza_1971_Junior-145,Monza_1971_Junior,standard,Formula Classic G4,track-type-fallback
 Monza_1971_Junior-145,Monza_1971_Junior,standard,F3,track-type-fallback
 Monza_1971_Junior-145,Monza_1971_Junior,standard,FTS,track-type-fallback
 Monza_1971_Junior-145,Monza_1971_Junior,standard,FormulaVee Brazil,track-type-fallback
@@ -10173,6 +10314,7 @@ Road_Atlanta_Moto-216,Road_Atlanta_Moto,standard,F-USA Gen.3,track-type-fallback
 Road_Atlanta_Moto-216,Road_Atlanta_Moto,standard,Formula Classic G1,track-type-fallback
 Road_Atlanta_Moto-216,Road_Atlanta_Moto,standard,Formula Classic G2,track-type-fallback
 Road_Atlanta_Moto-216,Road_Atlanta_Moto,standard,Formula Classic G3,track-type-fallback
+Road_Atlanta_Moto-216,Road_Atlanta_Moto,standard,Formula Classic G4,track-type-fallback
 Road_Atlanta_Moto-216,Road_Atlanta_Moto,standard,F3,track-type-fallback
 Road_Atlanta_Moto-216,Road_Atlanta_Moto,standard,FTS,track-type-fallback
 Road_Atlanta_Moto-216,Road_Atlanta_Moto,standard,FormulaVee Brazil,track-type-fallback
@@ -10238,6 +10380,7 @@ Imola_88-42,Imola_GP_1988,standard,F-USA Gen.3,track-type-fallback
 Imola_88-42,Imola_GP_1988,standard,Formula Classic G1,track-type-fallback
 Imola_88-42,Imola_GP_1988,standard,Formula Classic G2,track-type-fallback
 Imola_88-42,Imola_GP_1988,standard,Formula Classic G3,track-type-fallback
+Imola_88-42,Imola_GP_1988,standard,Formula Classic G4,track-type-fallback
 Imola_88-42,Imola_GP_1988,standard,F3,track-type-fallback
 Imola_88-42,Imola_GP_1988,standard,FTS,track-type-fallback
 Imola_88-42,Imola_GP_1988,standard,FormulaVee Brazil,track-type-fallback
@@ -10303,6 +10446,7 @@ Road_Atlanta_2005_short-243,Road_Atlanta_2005_short,standard,F-USA Gen.3,track-t
 Road_Atlanta_2005_short-243,Road_Atlanta_2005_short,standard,Formula Classic G1,track-type-fallback
 Road_Atlanta_2005_short-243,Road_Atlanta_2005_short,standard,Formula Classic G2,track-type-fallback
 Road_Atlanta_2005_short-243,Road_Atlanta_2005_short,standard,Formula Classic G3,track-type-fallback
+Road_Atlanta_2005_short-243,Road_Atlanta_2005_short,standard,Formula Classic G4,track-type-fallback
 Road_Atlanta_2005_short-243,Road_Atlanta_2005_short,standard,F3,track-type-fallback
 Road_Atlanta_2005_short-243,Road_Atlanta_2005_short,standard,FTS,track-type-fallback
 Road_Atlanta_2005_short-243,Road_Atlanta_2005_short,standard,FormulaVee Brazil,track-type-fallback
@@ -10368,6 +10512,7 @@ Imola_GP-43,Imola_GP_2018,standard,F-USA Gen.3,track-type-fallback
 Imola_GP-43,Imola_GP_2018,standard,Formula Classic G1,track-type-fallback
 Imola_GP-43,Imola_GP_2018,standard,Formula Classic G2,track-type-fallback
 Imola_GP-43,Imola_GP_2018,standard,Formula Classic G3,track-type-fallback
+Imola_GP-43,Imola_GP_2018,standard,Formula Classic G4,track-type-fallback
 Imola_GP-43,Imola_GP_2018,standard,F3,track-type-fallback
 Imola_GP-43,Imola_GP_2018,standard,FTS,track-type-fallback
 Imola_GP-43,Imola_GP_2018,standard,FormulaVee Brazil,track-type-fallback
@@ -10433,6 +10578,7 @@ Bathurst_1983-184,Bathurst_1983,standard,F-USA Gen.3,track-type-fallback
 Bathurst_1983-184,Bathurst_1983,standard,Formula Classic G1,track-type-fallback
 Bathurst_1983-184,Bathurst_1983,standard,Formula Classic G2,track-type-fallback
 Bathurst_1983-184,Bathurst_1983,standard,Formula Classic G3,track-type-fallback
+Bathurst_1983-184,Bathurst_1983,standard,Formula Classic G4,track-type-fallback
 Bathurst_1983-184,Bathurst_1983,standard,F3,track-type-fallback
 Bathurst_1983-184,Bathurst_1983,standard,FTS,track-type-fallback
 Bathurst_1983-184,Bathurst_1983,standard,FormulaVee Brazil,track-type-fallback
@@ -10498,6 +10644,7 @@ Monza_1971_10knc-147,Monza_1971_10knc,standard,F-USA Gen.3,track-type-fallback
 Monza_1971_10knc-147,Monza_1971_10knc,standard,Formula Classic G1,track-type-fallback
 Monza_1971_10knc-147,Monza_1971_10knc,standard,Formula Classic G2,track-type-fallback
 Monza_1971_10knc-147,Monza_1971_10knc,standard,Formula Classic G3,track-type-fallback
+Monza_1971_10knc-147,Monza_1971_10knc,standard,Formula Classic G4,track-type-fallback
 Monza_1971_10knc-147,Monza_1971_10knc,standard,F3,track-type-fallback
 Monza_1971_10knc-147,Monza_1971_10knc,standard,FTS,track-type-fallback
 Monza_1971_10knc-147,Monza_1971_10knc,standard,FormulaVee Brazil,track-type-fallback
@@ -10563,6 +10710,7 @@ CuritibaInternacional-19,CuritibaInternacional,standard,F-USA Gen.3,track-type-f
 CuritibaInternacional-19,CuritibaInternacional,standard,Formula Classic G1,track-type-fallback
 CuritibaInternacional-19,CuritibaInternacional,standard,Formula Classic G2,track-type-fallback
 CuritibaInternacional-19,CuritibaInternacional,standard,Formula Classic G3,track-type-fallback
+CuritibaInternacional-19,CuritibaInternacional,standard,Formula Classic G4,track-type-fallback
 CuritibaInternacional-19,CuritibaInternacional,standard,F3,track-type-fallback
 CuritibaInternacional-19,CuritibaInternacional,standard,FTS,track-type-fallback
 CuritibaInternacional-19,CuritibaInternacional,standard,FormulaVee Brazil,track-type-fallback
@@ -10628,6 +10776,7 @@ Bathurst_2020-127,Bathurst_2020,standard,F-USA Gen.3,track-type-fallback
 Bathurst_2020-127,Bathurst_2020,standard,Formula Classic G1,track-type-fallback
 Bathurst_2020-127,Bathurst_2020,standard,Formula Classic G2,track-type-fallback
 Bathurst_2020-127,Bathurst_2020,standard,Formula Classic G3,track-type-fallback
+Bathurst_2020-127,Bathurst_2020,standard,Formula Classic G4,track-type-fallback
 Bathurst_2020-127,Bathurst_2020,standard,F3,track-type-fallback
 Bathurst_2020-127,Bathurst_2020,standard,FTS,track-type-fallback
 Bathurst_2020-127,Bathurst_2020,standard,FormulaVee Brazil,track-type-fallback
@@ -10693,6 +10842,7 @@ Nurb_GP_2025-237,Nurb_GP_2025,standard,F-USA Gen.3,track-type-fallback
 Nurb_GP_2025-237,Nurb_GP_2025,standard,Formula Classic G1,track-type-fallback
 Nurb_GP_2025-237,Nurb_GP_2025,standard,Formula Classic G2,track-type-fallback
 Nurb_GP_2025-237,Nurb_GP_2025,standard,Formula Classic G3,track-type-fallback
+Nurb_GP_2025-237,Nurb_GP_2025,standard,Formula Classic G4,track-type-fallback
 Nurb_GP_2025-237,Nurb_GP_2025,standard,F3,track-type-fallback
 Nurb_GP_2025-237,Nurb_GP_2025,standard,FTS,track-type-fallback
 Nurb_GP_2025-237,Nurb_GP_2025,standard,FormulaVee Brazil,track-type-fallback
@@ -10758,6 +10908,7 @@ Nurb_GP_2020-70,Nurb_GP_2020,standard,F-USA Gen.3,track-type-fallback
 Nurb_GP_2020-70,Nurb_GP_2020,standard,Formula Classic G1,track-type-fallback
 Nurb_GP_2020-70,Nurb_GP_2020,standard,Formula Classic G2,track-type-fallback
 Nurb_GP_2020-70,Nurb_GP_2020,standard,Formula Classic G3,track-type-fallback
+Nurb_GP_2020-70,Nurb_GP_2020,standard,Formula Classic G4,track-type-fallback
 Nurb_GP_2020-70,Nurb_GP_2020,standard,F3,track-type-fallback
 Nurb_GP_2020-70,Nurb_GP_2020,standard,FTS,track-type-fallback
 Nurb_GP_2020-70,Nurb_GP_2020,standard,FormulaVee Brazil,track-type-fallback
@@ -10824,6 +10975,7 @@ Road_America_RC-158,Road_America_RC,standard,F-USA Gen.3,track-type-fallback
 Road_America_RC-158,Road_America_RC,standard,Formula Classic G1,track-type-fallback
 Road_America_RC-158,Road_America_RC,standard,Formula Classic G2,track-type-fallback
 Road_America_RC-158,Road_America_RC,standard,Formula Classic G3,track-type-fallback
+Road_America_RC-158,Road_America_RC,standard,Formula Classic G4,track-type-fallback
 Road_America_RC-158,Road_America_RC,standard,F3,track-type-fallback
 Road_America_RC-158,Road_America_RC,standard,FTS,track-type-fallback
 Road_America_RC-158,Road_America_RC,standard,FormulaVee Brazil,track-type-fallback
@@ -10889,6 +11041,7 @@ Montreal_Historic_1991-210,Montreal_Historic_1991,standard,F-USA Gen.3,track-typ
 Montreal_Historic_1991-210,Montreal_Historic_1991,standard,Formula Classic G1,track-type-fallback
 Montreal_Historic_1991-210,Montreal_Historic_1991,standard,Formula Classic G2,track-type-fallback
 Montreal_Historic_1991-210,Montreal_Historic_1991,standard,Formula Classic G3,track-type-fallback
+Montreal_Historic_1991-210,Montreal_Historic_1991,standard,Formula Classic G4,track-type-fallback
 Montreal_Historic_1991-210,Montreal_Historic_1991,standard,F3,track-type-fallback
 Montreal_Historic_1991-210,Montreal_Historic_1991,standard,FTS,track-type-fallback
 Montreal_Historic_1991-210,Montreal_Historic_1991,standard,FormulaVee Brazil,track-type-fallback
@@ -10954,6 +11107,7 @@ Azure_Circuit_2021-153,Azure_Circuit_2021,standard,F-USA Gen.3,track-type-fallba
 Azure_Circuit_2021-153,Azure_Circuit_2021,standard,Formula Classic G1,track-type-fallback
 Azure_Circuit_2021-153,Azure_Circuit_2021,standard,Formula Classic G2,track-type-fallback
 Azure_Circuit_2021-153,Azure_Circuit_2021,standard,Formula Classic G3,track-type-fallback
+Azure_Circuit_2021-153,Azure_Circuit_2021,standard,Formula Classic G4,track-type-fallback
 Azure_Circuit_2021-153,Azure_Circuit_2021,standard,F3,track-type-fallback
 Azure_Circuit_2021-153,Azure_Circuit_2021,standard,FTS,track-type-fallback
 Azure_Circuit_2021-153,Azure_Circuit_2021,standard,FormulaVee Brazil,track-type-fallback
@@ -11019,6 +11173,7 @@ Sebring-213,Sebring,standard,F-USA Gen.3,track-type-fallback
 Sebring-213,Sebring,standard,Formula Classic G1,track-type-fallback
 Sebring-213,Sebring,standard,Formula Classic G2,track-type-fallback
 Sebring-213,Sebring,standard,Formula Classic G3,track-type-fallback
+Sebring-213,Sebring,standard,Formula Classic G4,track-type-fallback
 Sebring-213,Sebring,standard,F3,track-type-fallback
 Sebring-213,Sebring,standard,FTS,track-type-fallback
 Sebring-213,Sebring,standard,FormulaVee Brazil,track-type-fallback
@@ -11084,6 +11239,7 @@ Montreal_Modern-67,Montreal_Modern,standard,F-USA Gen.3,track-type-fallback
 Montreal_Modern-67,Montreal_Modern,standard,Formula Classic G1,track-type-fallback
 Montreal_Modern-67,Montreal_Modern,standard,Formula Classic G2,track-type-fallback
 Montreal_Modern-67,Montreal_Modern,standard,Formula Classic G3,track-type-fallback
+Montreal_Modern-67,Montreal_Modern,standard,Formula Classic G4,track-type-fallback
 Montreal_Modern-67,Montreal_Modern,standard,F3,track-type-fallback
 Montreal_Modern-67,Montreal_Modern,standard,FTS,track-type-fallback
 Montreal_Modern-67,Montreal_Modern,standard,FormulaVee Brazil,track-type-fallback
@@ -11149,6 +11305,7 @@ Le_Mans_24h-193,Le_Mans_24h,standard,F-USA Gen.3,track-type-fallback
 Le_Mans_24h-193,Le_Mans_24h,standard,Formula Classic G1,track-type-fallback
 Le_Mans_24h-193,Le_Mans_24h,standard,Formula Classic G2,track-type-fallback
 Le_Mans_24h-193,Le_Mans_24h,standard,Formula Classic G3,track-type-fallback
+Le_Mans_24h-193,Le_Mans_24h,standard,Formula Classic G4,track-type-fallback
 Le_Mans_24h-193,Le_Mans_24h,standard,F3,track-type-fallback
 Le_Mans_24h-193,Le_Mans_24h,standard,FTS,track-type-fallback
 Le_Mans_24h-193,Le_Mans_24h,standard,FormulaVee Brazil,track-type-fallback
@@ -11214,6 +11371,7 @@ Velopark_2017-101,Velopark_2017,standard,F-USA Gen.3,track-type-fallback
 Velopark_2017-101,Velopark_2017,standard,Formula Classic G1,track-type-fallback
 Velopark_2017-101,Velopark_2017,standard,Formula Classic G2,track-type-fallback
 Velopark_2017-101,Velopark_2017,standard,Formula Classic G3,track-type-fallback
+Velopark_2017-101,Velopark_2017,standard,Formula Classic G4,track-type-fallback
 Velopark_2017-101,Velopark_2017,standard,F3,track-type-fallback
 Velopark_2017-101,Velopark_2017,standard,FTS,track-type-fallback
 Velopark_2017-101,Velopark_2017,standard,FormulaVee Brazil,track-type-fallback
@@ -11279,6 +11437,7 @@ Imola_GP-253,Imola_GP_2005,standard,F-USA Gen.3,track-type-fallback
 Imola_GP-253,Imola_GP_2005,standard,Formula Classic G1,track-type-fallback
 Imola_GP-253,Imola_GP_2005,standard,Formula Classic G2,track-type-fallback
 Imola_GP-253,Imola_GP_2005,standard,Formula Classic G3,track-type-fallback
+Imola_GP-253,Imola_GP_2005,standard,Formula Classic G4,track-type-fallback
 Imola_GP-253,Imola_GP_2005,standard,F3,track-type-fallback
 Imola_GP-253,Imola_GP_2005,standard,FTS,track-type-fallback
 Imola_GP-253,Imola_GP_2005,standard,FormulaVee Brazil,track-type-fallback
@@ -11344,6 +11503,7 @@ Mosport-212,Mosport,standard,F-USA Gen.3,track-type-fallback
 Mosport-212,Mosport,standard,Formula Classic G1,track-type-fallback
 Mosport-212,Mosport,standard,Formula Classic G2,track-type-fallback
 Mosport-212,Mosport,standard,Formula Classic G3,track-type-fallback
+Mosport-212,Mosport,standard,Formula Classic G4,track-type-fallback
 Mosport-212,Mosport,standard,F3,track-type-fallback
 Mosport-212,Mosport,standard,FTS,track-type-fallback
 Mosport-212,Mosport,standard,FormulaVee Brazil,track-type-fallback
@@ -11409,6 +11569,7 @@ Hockenheim_2001-34,Hockenheim_2001,standard,F-USA Gen.3,track-type-fallback
 Hockenheim_2001-34,Hockenheim_2001,standard,Formula Classic G1,track-type-fallback
 Hockenheim_2001-34,Hockenheim_2001,standard,Formula Classic G2,track-type-fallback
 Hockenheim_2001-34,Hockenheim_2001,standard,Formula Classic G3,track-type-fallback
+Hockenheim_2001-34,Hockenheim_2001,standard,Formula Classic G4,track-type-fallback
 Hockenheim_2001-34,Hockenheim_2001,standard,F3,track-type-fallback
 Hockenheim_2001-34,Hockenheim_2001,standard,FTS,track-type-fallback
 Hockenheim_2001-34,Hockenheim_2001,standard,FormulaVee Brazil,track-type-fallback
@@ -11474,6 +11635,7 @@ Nordschleife_2025_24hr-239,Nordschleife_2025_24hr,standard,F-USA Gen.3,track-typ
 Nordschleife_2025_24hr-239,Nordschleife_2025_24hr,standard,Formula Classic G1,track-type-fallback
 Nordschleife_2025_24hr-239,Nordschleife_2025_24hr,standard,Formula Classic G2,track-type-fallback
 Nordschleife_2025_24hr-239,Nordschleife_2025_24hr,standard,Formula Classic G3,track-type-fallback
+Nordschleife_2025_24hr-239,Nordschleife_2025_24hr,standard,Formula Classic G4,track-type-fallback
 Nordschleife_2025_24hr-239,Nordschleife_2025_24hr,standard,F3,track-type-fallback
 Nordschleife_2025_24hr-239,Nordschleife_2025_24hr,standard,FTS,track-type-fallback
 Nordschleife_2025_24hr-239,Nordschleife_2025_24hr,standard,FormulaVee Brazil,track-type-fallback
@@ -11539,6 +11701,7 @@ Road_Atlanta_2005-236,Road_Atlanta_2005,standard,F-USA Gen.3,track-type-fallback
 Road_Atlanta_2005-236,Road_Atlanta_2005,standard,Formula Classic G1,track-type-fallback
 Road_Atlanta_2005-236,Road_Atlanta_2005,standard,Formula Classic G2,track-type-fallback
 Road_Atlanta_2005-236,Road_Atlanta_2005,standard,Formula Classic G3,track-type-fallback
+Road_Atlanta_2005-236,Road_Atlanta_2005,standard,Formula Classic G4,track-type-fallback
 Road_Atlanta_2005-236,Road_Atlanta_2005,standard,F3,track-type-fallback
 Road_Atlanta_2005-236,Road_Atlanta_2005,standard,FTS,track-type-fallback
 Road_Atlanta_2005-236,Road_Atlanta_2005,standard,FormulaVee Brazil,track-type-fallback
@@ -11604,6 +11767,7 @@ Le_Mans_24h_2005-219,Le_Mans_24h_2005,standard,F-USA Gen.3,track-type-fallback
 Le_Mans_24h_2005-219,Le_Mans_24h_2005,standard,Formula Classic G1,track-type-fallback
 Le_Mans_24h_2005-219,Le_Mans_24h_2005,standard,Formula Classic G2,track-type-fallback
 Le_Mans_24h_2005-219,Le_Mans_24h_2005,standard,Formula Classic G3,track-type-fallback
+Le_Mans_24h_2005-219,Le_Mans_24h_2005,standard,Formula Classic G4,track-type-fallback
 Le_Mans_24h_2005-219,Le_Mans_24h_2005,standard,F3,track-type-fallback
 Le_Mans_24h_2005-219,Le_Mans_24h_2005,standard,FTS,track-type-fallback
 Le_Mans_24h_2005-219,Le_Mans_24h_2005,standard,FormulaVee Brazil,track-type-fallback
@@ -11669,6 +11833,7 @@ Donington_Nat-25,Donington_Nat,standard,F-USA Gen.3,track-type-fallback
 Donington_Nat-25,Donington_Nat,standard,Formula Classic G1,track-type-fallback
 Donington_Nat-25,Donington_Nat,standard,Formula Classic G2,track-type-fallback
 Donington_Nat-25,Donington_Nat,standard,Formula Classic G3,track-type-fallback
+Donington_Nat-25,Donington_Nat,standard,Formula Classic G4,track-type-fallback
 Donington_Nat-25,Donington_Nat,standard,F3,track-type-fallback
 Donington_Nat-25,Donington_Nat,standard,FTS,track-type-fallback
 Donington_Nat-25,Donington_Nat,standard,FormulaVee Brazil,track-type-fallback
@@ -11734,6 +11899,7 @@ Spielberg_2001-247,Spielberg_2001,standard,F-USA Gen.3,track-type-fallback
 Spielberg_2001-247,Spielberg_2001,standard,Formula Classic G1,track-type-fallback
 Spielberg_2001-247,Spielberg_2001,standard,Formula Classic G2,track-type-fallback
 Spielberg_2001-247,Spielberg_2001,standard,Formula Classic G3,track-type-fallback
+Spielberg_2001-247,Spielberg_2001,standard,Formula Classic G4,track-type-fallback
 Spielberg_2001-247,Spielberg_2001,standard,F3,track-type-fallback
 Spielberg_2001-247,Spielberg_2001,standard,FTS,track-type-fallback
 Spielberg_2001-247,Spielberg_2001,standard,FormulaVee Brazil,track-type-fallback
@@ -11799,6 +11965,7 @@ Hockenheim_1988-33,Hockenheim_1988,standard,F-USA Gen.3,track-type-fallback
 Hockenheim_1988-33,Hockenheim_1988,standard,Formula Classic G1,track-type-fallback
 Hockenheim_1988-33,Hockenheim_1988,standard,Formula Classic G2,track-type-fallback
 Hockenheim_1988-33,Hockenheim_1988,standard,Formula Classic G3,track-type-fallback
+Hockenheim_1988-33,Hockenheim_1988,standard,Formula Classic G4,track-type-fallback
 Hockenheim_1988-33,Hockenheim_1988,standard,F3,track-type-fallback
 Hockenheim_1988-33,Hockenheim_1988,standard,FTS,track-type-fallback
 Hockenheim_1988-33,Hockenheim_1988,standard,FormulaVee Brazil,track-type-fallback
@@ -11869,6 +12036,7 @@ Laguna_Seca_2020-133,Laguna_Seca_2020,standard,F-USA Gen.3,track-type-fallback
 Laguna_Seca_2020-133,Laguna_Seca_2020,standard,Formula Classic G1,track-type-fallback
 Laguna_Seca_2020-133,Laguna_Seca_2020,standard,Formula Classic G2,track-type-fallback
 Laguna_Seca_2020-133,Laguna_Seca_2020,standard,Formula Classic G3,track-type-fallback
+Laguna_Seca_2020-133,Laguna_Seca_2020,standard,Formula Classic G4,track-type-fallback
 Laguna_Seca_2020-133,Laguna_Seca_2020,standard,F3,track-type-fallback
 Laguna_Seca_2020-133,Laguna_Seca_2020,standard,FTS,track-type-fallback
 Laguna_Seca_2020-133,Laguna_Seca_2020,standard,FormulaVee Brazil,track-type-fallback
@@ -11934,6 +12102,7 @@ Monza_2020-139,Monza_2020,standard,F-USA Gen.3,track-type-fallback
 Monza_2020-139,Monza_2020,standard,Formula Classic G1,track-type-fallback
 Monza_2020-139,Monza_2020,standard,Formula Classic G2,track-type-fallback
 Monza_2020-139,Monza_2020,standard,Formula Classic G3,track-type-fallback
+Monza_2020-139,Monza_2020,standard,Formula Classic G4,track-type-fallback
 Monza_2020-139,Monza_2020,standard,F3,track-type-fallback
 Monza_2020-139,Monza_2020,standard,FTS,track-type-fallback
 Monza_2020-139,Monza_2020,standard,FormulaVee Brazil,track-type-fallback
@@ -11999,6 +12168,7 @@ Nordschleife_2025_tourist-244,Nordschleife_2025_tourist,standard,F-USA Gen.3,tra
 Nordschleife_2025_tourist-244,Nordschleife_2025_tourist,standard,Formula Classic G1,track-type-fallback
 Nordschleife_2025_tourist-244,Nordschleife_2025_tourist,standard,Formula Classic G2,track-type-fallback
 Nordschleife_2025_tourist-244,Nordschleife_2025_tourist,standard,Formula Classic G3,track-type-fallback
+Nordschleife_2025_tourist-244,Nordschleife_2025_tourist,standard,Formula Classic G4,track-type-fallback
 Nordschleife_2025_tourist-244,Nordschleife_2025_tourist,standard,F3,track-type-fallback
 Nordschleife_2025_tourist-244,Nordschleife_2025_tourist,standard,FTS,track-type-fallback
 Nordschleife_2025_tourist-244,Nordschleife_2025_tourist,standard,FormulaVee Brazil,track-type-fallback
@@ -12053,6 +12223,7 @@ Donington_GP-24,Donington_GP,standard,F3,existing-app-matrix
 Donington_GP-24,Donington_GP,standard,Formula Classic G1,existing-app-matrix
 Donington_GP-24,Donington_GP,standard,Formula Classic G2,existing-app-matrix
 Donington_GP-24,Donington_GP,standard,Formula Classic G3,existing-app-matrix
+Donington_GP-24,Donington_GP,standard,Formula Classic G4,existing-app-matrix
 Donington_GP-24,Donington_GP,standard,Formula Reiza,existing-app-matrix
 Donington_GP-24,Donington_GP,standard,Formula Ultimate Gen1,existing-app-matrix
 Donington_GP-24,Donington_GP,standard,Formula Ultimate Gen2,existing-app-matrix
@@ -12107,6 +12278,7 @@ Istanbul_GP-256,Istanbul_GP,standard,F-USA Gen.3,track-type-fallback
 Istanbul_GP-256,Istanbul_GP,standard,Formula Classic G1,track-type-fallback
 Istanbul_GP-256,Istanbul_GP,standard,Formula Classic G2,track-type-fallback
 Istanbul_GP-256,Istanbul_GP,standard,Formula Classic G3,track-type-fallback
+Istanbul_GP-256,Istanbul_GP,standard,Formula Classic G4,track-type-fallback
 Istanbul_GP-256,Istanbul_GP,standard,F3,track-type-fallback
 Istanbul_GP-256,Istanbul_GP,standard,FTS,track-type-fallback
 Istanbul_GP-256,Istanbul_GP,standard,FormulaVee Brazil,track-type-fallback
@@ -12172,6 +12344,7 @@ Monza_2005-254,Monza_2005,standard,F-USA Gen.3,track-type-fallback
 Monza_2005-254,Monza_2005,standard,Formula Classic G1,track-type-fallback
 Monza_2005-254,Monza_2005,standard,Formula Classic G2,track-type-fallback
 Monza_2005-254,Monza_2005,standard,Formula Classic G3,track-type-fallback
+Monza_2005-254,Monza_2005,standard,Formula Classic G4,track-type-fallback
 Monza_2005-254,Monza_2005,standard,F3,track-type-fallback
 Monza_2005-254,Monza_2005,standard,FTS,track-type-fallback
 Monza_2005-254,Monza_2005,standard,FormulaVee Brazil,track-type-fallback
@@ -12237,6 +12410,7 @@ Indianapolis_2022_RC-181,Indianapolis_2022_RC,standard,F-USA Gen.3,track-type-fa
 Indianapolis_2022_RC-181,Indianapolis_2022_RC,standard,Formula Classic G1,track-type-fallback
 Indianapolis_2022_RC-181,Indianapolis_2022_RC,standard,Formula Classic G2,track-type-fallback
 Indianapolis_2022_RC-181,Indianapolis_2022_RC,standard,Formula Classic G3,track-type-fallback
+Indianapolis_2022_RC-181,Indianapolis_2022_RC,standard,Formula Classic G4,track-type-fallback
 Indianapolis_2022_RC-181,Indianapolis_2022_RC,standard,F3,track-type-fallback
 Indianapolis_2022_RC-181,Indianapolis_2022_RC,standard,FTS,track-type-fallback
 Indianapolis_2022_RC-181,Indianapolis_2022_RC,standard,FormulaVee Brazil,track-type-fallback
@@ -12272,6 +12446,7 @@ Monza_1991-148,Monza_1991,standard,F-USA Gen.3,existing-app-matrix
 Monza_1991-148,Monza_1991,standard,Formula Classic G1,existing-app-matrix
 Monza_1991-148,Monza_1991,standard,Formula Classic G2,existing-app-matrix
 Monza_1991-148,Monza_1991,standard,Formula Classic G3,existing-app-matrix
+Monza_1991-148,Monza_1991,standard,Formula Classic G4,existing-app-matrix
 Monza_1991-148,Monza_1991,standard,Formula Retro G1,existing-app-matrix
 Monza_1991-148,Monza_1991,standard,Formula Retro G2,existing-app-matrix
 Monza_1991-148,Monza_1991,standard,Formula Retro G3,existing-app-matrix
@@ -12357,6 +12532,7 @@ Spielberg_Modern-89,Spielberg_Modern,standard,F-USA Gen.3,track-type-fallback
 Spielberg_Modern-89,Spielberg_Modern,standard,Formula Classic G1,track-type-fallback
 Spielberg_Modern-89,Spielberg_Modern,standard,Formula Classic G2,track-type-fallback
 Spielberg_Modern-89,Spielberg_Modern,standard,Formula Classic G3,track-type-fallback
+Spielberg_Modern-89,Spielberg_Modern,standard,Formula Classic G4,track-type-fallback
 Spielberg_Modern-89,Spielberg_Modern,standard,F3,track-type-fallback
 Spielberg_Modern-89,Spielberg_Modern,standard,FTS,track-type-fallback
 Spielberg_Modern-89,Spielberg_Modern,standard,FormulaVee Brazil,track-type-fallback
@@ -12422,6 +12598,7 @@ Cascavel1-17,Cascavel2,standard,F-USA Gen.3,track-type-fallback
 Cascavel1-17,Cascavel2,standard,Formula Classic G1,track-type-fallback
 Cascavel1-17,Cascavel2,standard,Formula Classic G2,track-type-fallback
 Cascavel1-17,Cascavel2,standard,Formula Classic G3,track-type-fallback
+Cascavel1-17,Cascavel2,standard,Formula Classic G4,track-type-fallback
 Cascavel1-17,Cascavel2,standard,F3,track-type-fallback
 Cascavel1-17,Cascavel2,standard,FTS,track-type-fallback
 Cascavel1-17,Cascavel2,standard,FormulaVee Brazil,track-type-fallback
@@ -12487,6 +12664,7 @@ Hockenheim_GP-35,Hockenheim_GP,standard,F-USA Gen.3,track-type-fallback
 Hockenheim_GP-35,Hockenheim_GP,standard,Formula Classic G1,track-type-fallback
 Hockenheim_GP-35,Hockenheim_GP,standard,Formula Classic G2,track-type-fallback
 Hockenheim_GP-35,Hockenheim_GP,standard,Formula Classic G3,track-type-fallback
+Hockenheim_GP-35,Hockenheim_GP,standard,Formula Classic G4,track-type-fallback
 Hockenheim_GP-35,Hockenheim_GP,standard,F3,track-type-fallback
 Hockenheim_GP-35,Hockenheim_GP,standard,FTS,track-type-fallback
 Hockenheim_GP-35,Hockenheim_GP,standard,FormulaVee Brazil,track-type-fallback
@@ -12552,6 +12730,7 @@ Spa_Francorchamps_2005-235,Spa_Francorchamps_2005,standard,F-USA Gen.3,track-typ
 Spa_Francorchamps_2005-235,Spa_Francorchamps_2005,standard,Formula Classic G1,track-type-fallback
 Spa_Francorchamps_2005-235,Spa_Francorchamps_2005,standard,Formula Classic G2,track-type-fallback
 Spa_Francorchamps_2005-235,Spa_Francorchamps_2005,standard,Formula Classic G3,track-type-fallback
+Spa_Francorchamps_2005-235,Spa_Francorchamps_2005,standard,Formula Classic G4,track-type-fallback
 Spa_Francorchamps_2005-235,Spa_Francorchamps_2005,standard,F3,track-type-fallback
 Spa_Francorchamps_2005-235,Spa_Francorchamps_2005,standard,FTS,track-type-fallback
 Spa_Francorchamps_2005-235,Spa_Francorchamps_2005,standard,FormulaVee Brazil,track-type-fallback
@@ -12617,6 +12796,7 @@ Spa_Francorchamps_2020-130,Spa_Francorchamps_2020,standard,F-USA Gen.3,track-typ
 Spa_Francorchamps_2020-130,Spa_Francorchamps_2020,standard,Formula Classic G1,track-type-fallback
 Spa_Francorchamps_2020-130,Spa_Francorchamps_2020,standard,Formula Classic G2,track-type-fallback
 Spa_Francorchamps_2020-130,Spa_Francorchamps_2020,standard,Formula Classic G3,track-type-fallback
+Spa_Francorchamps_2020-130,Spa_Francorchamps_2020,standard,Formula Classic G4,track-type-fallback
 Spa_Francorchamps_2020-130,Spa_Francorchamps_2020,standard,F3,track-type-fallback
 Spa_Francorchamps_2020-130,Spa_Francorchamps_2020,standard,FTS,track-type-fallback
 Spa_Francorchamps_2020-130,Spa_Francorchamps_2020,standard,FormulaVee Brazil,track-type-fallback
@@ -12682,6 +12862,7 @@ Indianapolis_2001_RC-251,Indianapolis_2001_RC,standard,F-USA Gen.3,track-type-fa
 Indianapolis_2001_RC-251,Indianapolis_2001_RC,standard,Formula Classic G1,track-type-fallback
 Indianapolis_2001_RC-251,Indianapolis_2001_RC,standard,Formula Classic G2,track-type-fallback
 Indianapolis_2001_RC-251,Indianapolis_2001_RC,standard,Formula Classic G3,track-type-fallback
+Indianapolis_2001_RC-251,Indianapolis_2001_RC,standard,Formula Classic G4,track-type-fallback
 Indianapolis_2001_RC-251,Indianapolis_2001_RC,standard,F3,track-type-fallback
 Indianapolis_2001_RC-251,Indianapolis_2001_RC,standard,FTS,track-type-fallback
 Indianapolis_2001_RC-251,Indianapolis_2001_RC,standard,FormulaVee Brazil,track-type-fallback
@@ -12747,6 +12928,7 @@ Hungaroring_GP_2025-242,Hungaroring_GP_2025,standard,F-USA Gen.3,track-type-fall
 Hungaroring_GP_2025-242,Hungaroring_GP_2025,standard,Formula Classic G1,track-type-fallback
 Hungaroring_GP_2025-242,Hungaroring_GP_2025,standard,Formula Classic G2,track-type-fallback
 Hungaroring_GP_2025-242,Hungaroring_GP_2025,standard,Formula Classic G3,track-type-fallback
+Hungaroring_GP_2025-242,Hungaroring_GP_2025,standard,Formula Classic G4,track-type-fallback
 Hungaroring_GP_2025-242,Hungaroring_GP_2025,standard,F3,track-type-fallback
 Hungaroring_GP_2025-242,Hungaroring_GP_2025,standard,FTS,track-type-fallback
 Hungaroring_GP_2025-242,Hungaroring_GP_2025,standard,FormulaVee Brazil,track-type-fallback
@@ -12812,6 +12994,7 @@ Spa_Francorchamps_2005_EC-240,Spa_Francorchamps_2005_EC,standard,F-USA Gen.3,tra
 Spa_Francorchamps_2005_EC-240,Spa_Francorchamps_2005_EC,standard,Formula Classic G1,track-type-fallback
 Spa_Francorchamps_2005_EC-240,Spa_Francorchamps_2005_EC,standard,Formula Classic G2,track-type-fallback
 Spa_Francorchamps_2005_EC-240,Spa_Francorchamps_2005_EC,standard,Formula Classic G3,track-type-fallback
+Spa_Francorchamps_2005_EC-240,Spa_Francorchamps_2005_EC,standard,Formula Classic G4,track-type-fallback
 Spa_Francorchamps_2005_EC-240,Spa_Francorchamps_2005_EC,standard,F3,track-type-fallback
 Spa_Francorchamps_2005_EC-240,Spa_Francorchamps_2005_EC,standard,FTS,track-type-fallback
 Spa_Francorchamps_2005_EC-240,Spa_Francorchamps_2005_EC,standard,FormulaVee Brazil,track-type-fallback
@@ -12877,6 +13060,7 @@ Spa_Francorchamps_1993-132,Spa_Francorchamps_1993,standard,F-USA Gen.3,track-typ
 Spa_Francorchamps_1993-132,Spa_Francorchamps_1993,standard,Formula Classic G1,track-type-fallback
 Spa_Francorchamps_1993-132,Spa_Francorchamps_1993,standard,Formula Classic G2,track-type-fallback
 Spa_Francorchamps_1993-132,Spa_Francorchamps_1993,standard,Formula Classic G3,track-type-fallback
+Spa_Francorchamps_1993-132,Spa_Francorchamps_1993,standard,Formula Classic G4,track-type-fallback
 Spa_Francorchamps_1993-132,Spa_Francorchamps_1993,standard,F3,track-type-fallback
 Spa_Francorchamps_1993-132,Spa_Francorchamps_1993,standard,FTS,track-type-fallback
 Spa_Francorchamps_1993-132,Spa_Francorchamps_1993,standard,FormulaVee Brazil,track-type-fallback
@@ -12942,6 +13126,7 @@ Interlagos_SCB-142,Interlagos_SCB,standard,F-USA Gen.3,track-type-fallback
 Interlagos_SCB-142,Interlagos_SCB,standard,Formula Classic G1,track-type-fallback
 Interlagos_SCB-142,Interlagos_SCB,standard,Formula Classic G2,track-type-fallback
 Interlagos_SCB-142,Interlagos_SCB,standard,Formula Classic G3,track-type-fallback
+Interlagos_SCB-142,Interlagos_SCB,standard,Formula Classic G4,track-type-fallback
 Interlagos_SCB-142,Interlagos_SCB,standard,F3,track-type-fallback
 Interlagos_SCB-142,Interlagos_SCB,standard,FTS,track-type-fallback
 Interlagos_SCB-142,Interlagos_SCB,standard,FormulaVee Brazil,track-type-fallback
@@ -12989,6 +13174,7 @@ BrandsHatch-7,BrandsHatch_GP,standard,F3,existing-app-matrix
 BrandsHatch-7,BrandsHatch_GP,standard,Formula Classic G1,existing-app-matrix
 BrandsHatch-7,BrandsHatch_GP,standard,Formula Classic G2,existing-app-matrix
 BrandsHatch-7,BrandsHatch_GP,standard,Formula Classic G3,existing-app-matrix
+BrandsHatch-7,BrandsHatch_GP,standard,Formula Classic G4,existing-app-matrix
 BrandsHatch-7,BrandsHatch_GP,standard,Formula Retro G1,existing-app-matrix
 BrandsHatch-7,BrandsHatch_GP,standard,Formula Retro G2,existing-app-matrix
 BrandsHatch-7,BrandsHatch_GP,standard,Formula Retro G3,existing-app-matrix
@@ -13056,6 +13242,7 @@ Spa_Francorchamps_2022-178,Spa_Francorchamps_2022,standard,F-USA Gen.3,track-typ
 Spa_Francorchamps_2022-178,Spa_Francorchamps_2022,standard,Formula Classic G1,track-type-fallback
 Spa_Francorchamps_2022-178,Spa_Francorchamps_2022,standard,Formula Classic G2,track-type-fallback
 Spa_Francorchamps_2022-178,Spa_Francorchamps_2022,standard,Formula Classic G3,track-type-fallback
+Spa_Francorchamps_2022-178,Spa_Francorchamps_2022,standard,Formula Classic G4,track-type-fallback
 Spa_Francorchamps_2022-178,Spa_Francorchamps_2022,standard,F3,track-type-fallback
 Spa_Francorchamps_2022-178,Spa_Francorchamps_2022,standard,FTS,track-type-fallback
 Spa_Francorchamps_2022-178,Spa_Francorchamps_2022,standard,FormulaVee Brazil,track-type-fallback
@@ -13662,16 +13849,16 @@ Formula_Reiza_HD-473,Formula_Reiza_HD-473-formulareiza,570,Formula_Reiza_HD,Form
 Renault_R28_LD-518,Renault_R28_LD-518-formulareiza,825,Renault_R28_LD,Renault R28 - Low Downforce,Renault R28,518,Renault,Renault R28,Renault_R28_LD.vhf,Renault_R28,Renault_R28_LD,Renault_R28_LD_Cockpit.bin,Renault_R28,2008,5.00,7.00,0,0,Renault_R28_ambsh.dds,3,F-V8_Gen2_LD,Openwheel,OpenWheel,Mid-Rear,2,0.312;0.511;0.915,0.322;0.524;1.215,0.036,1,0;0.500;1.770,0;0.500;1.770,,true,129,,,,,5,120000,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.355;0.669;-0.517,-0.355;0.669;-0.517,-0.898;-0.002;-2.291,0.898;1.099;2.282,FORMULA_MODERN_USER_OVERRIDE,outfit_FORMULA_MODERN_USER_OVERRIDE,,,,-0.312;0.511;0.915,-0.322;0.524;1.215,,,100.0,true,,,SafetyF2KDriver,,,,,,,,0.85,,,,,,,,,,,,,,,,,,,,100,140,0,25,0.75,false,,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Reiza,low-drag,Formula Reiza,Open Wheel
 CART_Lola_T95_Mercedes-175,CART_Lola_T95_Mercedes-175-fusagen1,403,CART_Lola_T95_Mercedes,Lola T95/00 Mercedes-Benz,Lola T95/00 Mercedes,175,Lola,Lola T95,CART_Lola_T95.vhf,CART_Lola_T95,CART_Lola_T95_Mercedes,CART_Lola_T95_Cockpit.bin,CART_Lola_T95_Mercedes,1995,5.0,7.0,0.0,0.0,CART_Lola_T95_ambsh.dds,4,F-USA_Gen1,Historic Openwheel,OpenWheel,Mid-Rear,2,0.256;0.319;1.828,0.256;0.319;2.128,0.0,1,0;0.598;1.162,0;0.598;1.162,,false,458,,,,,5,120,NA,USA,N/A,13,20,13,20,,,,1,0.0;3.141592653589;0.0,0.327;0.630;-0.533,-0.327;0.630;-0.533,-1.5;-0.0;-4.1,1.5;1.5;4.0,CART_USER_OVERRIDE,outfit_CART_USER_OVERRIDE,2.75,4.00,,-0.349;0.319;1.825,-0.349;0.319;2.125,,racinusapt2pack,100.0,true,,,SafetyBMWM3Driver,,,,CART_Lola_T95_Mercedes_SW,CART_Lola_T95_Mercedes_SO,CART_Lola_T95_Mercedes_SW,CART_Lola_T95_Mercedes_SW,,,,,,,,,,,,,,,false,,,,,,,,,,,,CART_Lola_T95_Mercedes_HD,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:F-USA Gen.1,standard,F-USA Gen.1,Open Wheel
 Formula_Hitech_G1M2_HD-461,Formula_Hitech_G1M2_HD-461-formulaclassicg1,550,Formula_Hitech_G1M2_HD,Formula HiTech Gen1 Model2 - High Downforce,F-HiTech Gen1 M2,461,Reiza,Formula Hitech G1M2,Formula_Hitech_G1M2_HD.vhf,Formula_Hitech_G1M2,Formula_Hitech_G1M2_HD,Formula_Hitech_G1M2_Cockpit.bin,Formula_Hitech_G1M2,1992,5.00,7.00,0,0,Formula_Hitech_G1M2_ambsh.dds,4,F-Hitech_Gen1_HD,Historic Openwheel,OpenWheel,Mid,4,0.252;0.179;1.884,0.252;0.081;2.229,0.05,1,0;0.583;1.16,0;0.583;1.16,,true,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.263;0.636;-0.248,-0.263;0.636;-0.248,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,,,,-0.252;0.179;1.884,-0.252;0.081;2.229,,,100.0,true,,,SafetyBMWM3Driver,,,,,,,,0.85,,,,,,,,,,,,,,,,,,,,70,100,0,25,0.75,false,,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G1,high-downforce,Formula Classic G1,Open Wheel
-Formula_Classic_G4M2_LD-240,Formula_Classic_G4M2_LD-240-formulaclassicg3,532,Formula_Classic_G4M2_LD,Formula Classic Gen4 Model2 - Low Downforce,F-Classic Gen4 M2,240,Reiza,Formula Classic G4M2,Formula_Classic_G4M2_LD.vhf,Formula_Classic_G4M2,Formula_Classic_G4M2_LD,Formula_Classic_G4M2_LD_Cockpit.bin,Formula_Classic_G4M2,1992,5.00,7.00,0,0,Formula_Classic_G4M2_ambsh.dds,4,F-Classic_Gen4_LD,Historic Openwheel,OpenWheel,Mid-Rear,4,0.252;0.179;1.884,0.252;0.081;2.229,0.05,1,0;0.583;1.16,0;0.583;1.16,,true,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.263;0.636;-0.248,-0.263;0.636;-0.248,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,,,,-0.252;0.179;1.884,-0.252;0.081;2.229,,,100.0,true,,,SafetyBMWM3Driver,,,,,,,,0.85,,,,,,,,,,,,,,,,,,,,100,140,0,25,0.75,false,,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G3,low-drag,Formula Classic G3,Open Wheel
+Formula_Classic_G4M2_LD-240,Formula_Classic_G4M2_LD-240-formulaclassicg3,532,Formula_Classic_G4M2_LD,Formula Classic Gen4 Model2 - Low Downforce,F-Classic Gen4 M2,240,Reiza,Formula Classic G4M2,Formula_Classic_G4M2_LD.vhf,Formula_Classic_G4M2,Formula_Classic_G4M2_LD,Formula_Classic_G4M2_LD_Cockpit.bin,Formula_Classic_G4M2,1992,5.00,7.00,0,0,Formula_Classic_G4M2_ambsh.dds,4,F-Classic_Gen4_LD,Historic Openwheel,OpenWheel,Mid-Rear,4,0.252;0.179;1.884,0.252;0.081;2.229,0.05,1,0;0.583;1.16,0;0.583;1.16,,true,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.263;0.636;-0.248,-0.263;0.636;-0.248,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,,,,-0.252;0.179;1.884,-0.252;0.081;2.229,,,100.0,true,,,SafetyBMWM3Driver,,,,,,,,0.85,,,,,,,,,,,,,,,,,,,,100,140,0,25,0.75,false,,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G4,low-drag,Formula Classic G4,Open Wheel
 Renault_R26_HD-514,Renault_R26_HD-514-formulareiza,821,Renault_R26_HD,Renault R26 - High Downforce,Renault R26,514,Renault,Renault R26,Renault_R26_HD.vhf,Renault_R26,Renault_R26_HD,Renault_R26_HD_Cockpit.bin,Renault_R26,2006,5.00,7.00,0,0,Renault_R26_ambsh.dds,3,F-V8_Gen1_HD,Openwheel,OpenWheel,Mid-Rear,2,0.298;0.479;0.845,0.322;0.578;1.145,0.036,1,0;0.964;1.069,0;0.964;1.069,,true,129,,,,,5,120000,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.378;0.664;-0.406,-0.378;0.664;-0.406,-0.898;-0.002;-2.291,0.898;1.099;2.282,FORMULA_MODERN_USER_OVERRIDE,outfit_FORMULA_MODERN_USER_OVERRIDE,,,,-0.298;0.479;0.845,-0.322;0.578;1.145,,,100.0,true,,,SafetyF2KDriver,,,,,,,,0.85,,,,,,,,,,,,,,,,,,,,70,100,0,25,0.75,false,,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Reiza,high-downforce,Formula Reiza,Open Wheel
 Renault_R28_HD-517,Renault_R28_HD-517-formulareiza,824,Renault_R28_HD,Renault R28 - High Downforce,Renault R28,517,Renault,Renault R28,Renault_R28_HD.vhf,Renault_R28,Renault_R28_HD,Renault_R28_HD_Cockpit.bin,Renault_R28,2008,5.00,7.00,0,0,Renault_R28_ambsh.dds,3,F-V8_Gen2_HD,Openwheel,OpenWheel,Mid-Rear,2,0.312;0.511;0.915,0.322;0.524;1.215,0.036,1,0;0.500;1.770,0;0.500;1.770,,true,129,,,,,5,120000,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.355;0.669;-0.517,-0.355;0.669;-0.517,-0.898;-0.002;-2.291,0.898;1.099;2.282,FORMULA_MODERN_USER_OVERRIDE,outfit_FORMULA_MODERN_USER_OVERRIDE,,,,-0.312;0.511;0.915,-0.322;0.524;1.215,,,100.0,true,,,SafetyF2KDriver,,,,,,,,0.85,,,,,,,,,,,,,,,,,,,,70,100,0,25,0.75,false,,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Reiza,high-downforce,Formula Reiza,Open Wheel
-Formula_Classic_G4M2_HD-458,Formula_Classic_G4M2_HD-458-formulaclassicg3,531,Formula_Classic_G4M2_HD,Formula Classic Gen4 Model2 - High Downforce,F-Classic Gen4 M2,458,Reiza,Formula Classic G4M2,Formula_Classic_G4M2_HD.vhf,Formula_Classic_G4M2,Formula_Classic_G4M2_HD,Formula_Classic_G4M2_HD_Cockpit.bin,Formula_Classic_G4M2,1992,5.00,7.00,0,0,Formula_Classic_G4M2_ambsh.dds,4,F-Classic_Gen4_HD,Historic Openwheel,OpenWheel,Mid-Rear,4,0.252;0.179;1.884,0.252;0.081;2.229,0.05,1,0;0.583;1.16,0;0.583;1.16,,true,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.263;0.636;-0.248,-0.263;0.636;-0.248,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,,,,-0.252;0.179;1.884,-0.252;0.081;2.229,,,100.0,true,,,SafetyBMWM3Driver,,,,,,,,0.85,,,,,,,,,,,,,,,,,,,,70,100,0,25,0.75,false,,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G3,high-downforce,Formula Classic G3,Open Wheel
+Formula_Classic_G4M2_HD-458,Formula_Classic_G4M2_HD-458-formulaclassicg3,531,Formula_Classic_G4M2_HD,Formula Classic Gen4 Model2 - High Downforce,F-Classic Gen4 M2,458,Reiza,Formula Classic G4M2,Formula_Classic_G4M2_HD.vhf,Formula_Classic_G4M2,Formula_Classic_G4M2_HD,Formula_Classic_G4M2_HD_Cockpit.bin,Formula_Classic_G4M2,1992,5.00,7.00,0,0,Formula_Classic_G4M2_ambsh.dds,4,F-Classic_Gen4_HD,Historic Openwheel,OpenWheel,Mid-Rear,4,0.252;0.179;1.884,0.252;0.081;2.229,0.05,1,0;0.583;1.16,0;0.583;1.16,,true,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.263;0.636;-0.248,-0.263;0.636;-0.248,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,,,,-0.252;0.179;1.884,-0.252;0.081;2.229,,,100.0,true,,,SafetyBMWM3Driver,,,,,,,,0.85,,,,,,,,,,,,,,,,,,,,70,100,0,25,0.75,false,,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G4,high-downforce,Formula Classic G4,Open Wheel
 McLaren_MP45B_LD-268,McLaren_MP45B_LD-268-formulaclassicg3,730,McLaren_MP45B_LD,McLaren Honda MP4/5B - Low Downforce,McLaren MP4/5B,268,McLaren,McLaren MP4/5,McLaren_MP45B_LD.vhf,McLaren_MP45B,McLaren_MP45B_LD,McLaren_MP45B_LD_Cockpit.bin,McLaren_MP45B,1990,5.00,7.50,0,0,McLaren_MP45B_ambsh.dds,4,F-Classic_Gen3_LD,Openwheel,OpenWheel,Mid-Rear,2,0.235;0.078;1.443,0.235;0.078;1.943,0.1,1,0;0.63;0.47,0;0.63;0.47,,true,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.318;0.619;-0.403,-0.318;0.619;-0.403,-1.5;-0.0;-3.85,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,2.125,2.5,,-0.235;0.078;1.443,-0.235;0.078;1.943,,brazilianlegendspt1pack,,true,,,SafetyBMWM3Driver,,,,,,,,0.85,,,,,,,,,,,,,,,,,,,,100,140,0,25,0.75,false,,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G3,low-drag,Formula Classic G3,Open Wheel
-Formula_Classic_G4M3_HD-459,Formula_Classic_G4M3_HD-459-formulaclassicg3,534,Formula_Classic_G4M3_HD,Formula Classic Gen4 Model3 - High Downforce,F-Classic Gen4 M3,459,Reiza,Formula Classic G4M3,Formula_Classic_G4M3_HD.vhf,Formula_Classic_G4M3,Formula_Classic_G4M3_HD,Formula_Classic_G4M3_HD_Cockpit.bin,Formula_Classic_G4M3,1992,5.00,7.00,0,0,Formula_Classic_G4M3_ambsh.dds,4,F-Classic_Gen4_HD,Historic Openwheel,OpenWheel,Mid-Rear,2,0.228;0.320;1.716,0.228;0.348;2.018,0.1,1,0;0.778;0.798,0;0.778;0.798,,true,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.325;0.682;-0.344,-0.325;0.682;-0.344,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,,,,-0.228;0.320;1.716,-0.228;0.348;2.018,,,100.0,true,,,SafetyBMWM3Driver,,,,,,,,0.85,,,,,,,,,,,,,,,,,,,,70,100,0,25,0.75,false,,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G3,high-downforce,Formula Classic G3,Open Wheel
+Formula_Classic_G4M3_HD-459,Formula_Classic_G4M3_HD-459-formulaclassicg3,534,Formula_Classic_G4M3_HD,Formula Classic Gen4 Model3 - High Downforce,F-Classic Gen4 M3,459,Reiza,Formula Classic G4M3,Formula_Classic_G4M3_HD.vhf,Formula_Classic_G4M3,Formula_Classic_G4M3_HD,Formula_Classic_G4M3_HD_Cockpit.bin,Formula_Classic_G4M3,1992,5.00,7.00,0,0,Formula_Classic_G4M3_ambsh.dds,4,F-Classic_Gen4_HD,Historic Openwheel,OpenWheel,Mid-Rear,2,0.228;0.320;1.716,0.228;0.348;2.018,0.1,1,0;0.778;0.798,0;0.778;0.798,,true,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.325;0.682;-0.344,-0.325;0.682;-0.344,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,,,,-0.228;0.320;1.716,-0.228;0.348;2.018,,,100.0,true,,,SafetyBMWM3Driver,,,,,,,,0.85,,,,,,,,,,,,,,,,,,,,70,100,0,25,0.75,false,,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G4,high-downforce,Formula Classic G4,Open Wheel
 Formula_Hitech_G1M2_LD-306,Formula_Hitech_G1M2_LD-306-formulaclassicg1,551,Formula_Hitech_G1M2_LD,Formula HiTech Gen1 Model2 - Low Downforce,F-HiTech Gen1 M2,306,Reiza,Formula Hitech G1M2,Formula_Hitech_G1M2_LD.vhf,Formula_Hitech_G1M2,Formula_Hitech_G1M2_LD,Formula_Hitech_G1M2_LD_Cockpit.bin,Formula_Hitech_G1M2,1992,5.00,7.00,0,0,Formula_Hitech_G1M2_ambsh.dds,4,F-Hitech_Gen1_LD,Historic Openwheel,OpenWheel,Mid,4,0.252;0.179;1.884,0.252;0.081;2.229,0.05,1,0;0.583;1.16,0;0.583;1.16,,true,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.263;0.636;-0.248,-0.263;0.636;-0.248,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,,,,-0.252;0.179;1.884,-0.252;0.081;2.229,,,100.0,true,,,SafetyBMWM3Driver,,,,,,,,0.85,,,,,,,,,,,,,,,,,,,,100,140,0,25,0.75,false,,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G1,low-drag,Formula Classic G1,Open Wheel
 Formula_Hitech_G1M4_HD-483,Formula_Hitech_G1M4_HD-483-formulaclassicg1,553,Formula_Hitech_G1M4_HD,Formula HiTech Gen1 Model4 - High Downforce,F-HiTech G1M4,483,Reiza,Formula Hitech G1M4,Formula_Hitech_G1M4_HD.vhf,Formula_Hitech_G1M4,Formula_Hitech_G1M4_HD,Formula_Hitech_G1M4_Cockpit.bin,Formula_Hitech_G1M4,1992,5.00,7.00,0,0,Formula_Hitech_G1M2_ambsh.dds,4,F-Hitech_Gen1_HD,Historic Openwheel,OpenWheel,Mid-Rear,4,0.252;0.179;1.884,0.252;0.081;2.229,0.05,1,0;0.583;1.16,0;0.583;1.16,,true,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.263;0.636;-0.248,-0.263;0.636;-0.248,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,,,,-0.252;0.179;1.884,-0.252;0.081;2.229,,,100.0,true,,,SafetyBMWM3Driver,,,,,,,,0.85,,,,,,,,,,,,,,,,,,,,70,100,0,25,0.75,false,,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G1,high-downforce,Formula Classic G1,Open Wheel
 Formula_Hitech_G1M3_HD-462,Formula_Hitech_G1M3_HD-462-formulaclassicg1,556,Formula_Hitech_G1M3_HD,Formula HiTech Gen1 Model3 - High Downforce,F-HiTech Gen1 M3,462,Reiza,Formula Hitech G4M3,Formula_Hitech_G1M3_HD.vhf,Formula_Hitech_G1M3,Formula_Hitech_G1M3_HD,Formula_Hitech_G1M3_Cockpit.bin,Formula_Hitech_G1M3,1992,5.00,7.00,0,0,Formula_Hitech_G1M3_ambsh.dds,4,F-Hitech_Gen1_HD,Historic Openwheel,OpenWheel,Mid-Rear,2,0.228;0.320;1.716,0.228;0.348;2.018,0.1,1,0;0.778;0.798,0;0.778;0.798,,true,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.325;0.682;-0.344,-0.325;0.682;-0.344,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,,,,-0.228;0.320;1.716,-0.228;0.348;2.018,,,100.0,true,,,SafetyBMWM3Driver,,,,,,,,0.85,,,,,,,,,,,,,,,,,,,,70,100,0,25,0.75,false,,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G1,high-downforce,Formula Classic G1,Open Wheel
-Formula_Classic_G4M3_LD-241,Formula_Classic_G4M3_LD-241-formulaclassicg3,535,Formula_Classic_G4M3_LD,Formula Classic Gen4 Model3 - Low Downforce,F-Classic Gen4 M3,241,Reiza,Formula Classic G4M3,Formula_Classic_G4M3_LD.vhf,Formula_Classic_G4M3,Formula_Classic_G4M3_LD,Formula_Classic_G4M3_LD_Cockpit.bin,Formula_Classic_G4M3,1992,5.00,7.00,0,0,Formula_Classic_G4M3_ambsh.dds,4,F-Classic_Gen4_LD,Historic Openwheel,OpenWheel,Mid-Rear,2,0.228;0.320;1.716,0.228;0.348;2.018,0.1,1,0;0.778;0.798,0;0.778;0.798,,true,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.325;0.682;-0.344,-0.325;0.682;-0.344,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,,,,-0.228;0.320;1.716,-0.228;0.348;2.018,,,100.0,true,,,SafetyBMWM3Driver,,,,,,,,0.85,,,,,,,,,,,,,,,,,,,,100,140,0,25,0.75,false,,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G3,low-drag,Formula Classic G3,Open Wheel
+Formula_Classic_G4M3_LD-241,Formula_Classic_G4M3_LD-241-formulaclassicg3,535,Formula_Classic_G4M3_LD,Formula Classic Gen4 Model3 - Low Downforce,F-Classic Gen4 M3,241,Reiza,Formula Classic G4M3,Formula_Classic_G4M3_LD.vhf,Formula_Classic_G4M3,Formula_Classic_G4M3_LD,Formula_Classic_G4M3_LD_Cockpit.bin,Formula_Classic_G4M3,1992,5.00,7.00,0,0,Formula_Classic_G4M3_ambsh.dds,4,F-Classic_Gen4_LD,Historic Openwheel,OpenWheel,Mid-Rear,2,0.228;0.320;1.716,0.228;0.348;2.018,0.1,1,0;0.778;0.798,0;0.778;0.798,,true,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.325;0.682;-0.344,-0.325;0.682;-0.344,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,,,,-0.228;0.320;1.716,-0.228;0.348;2.018,,,100.0,true,,,SafetyBMWM3Driver,,,,,,,,0.85,,,,,,,,,,,,,,,,,,,,100,140,0,25,0.75,false,,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G4,low-drag,Formula Classic G4,Open Wheel
 Formula_Hitech_G2M2_LD-312,Formula_Hitech_G2M2_LD-312-formulaclassicg2,563,Formula_Hitech_G2M2_LD,Formula HiTech Gen2 Model2 - Low Downforce,F-HiTech Gen2 M2,312,Reiza,Formula Hitech G2M2,Formula_Hitech_G2M2_LD.vhf,Formula_Hitech_G2M2,Formula_Hitech_G2M2_LD,Formula_Hitech_G2M2_LD_Cockpit.bin,Formula_Hitech_G2M2,1993,5.00,7.00,0,0,Formula_Hitech_G2M2_ambsh.dds,4,F-Hitech_Gen2_LD,Historic Openwheel,OpenWheel,Mid-Rear,4,0.252;0.179;1.884,0.252;0.081;2.229,0.05,1,0;0.583;1.16,0;0.583;1.16,,true,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.263;0.636;-0.248,-0.263;0.636;-0.248,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,,,,-0.252;0.179;1.884,-0.252;0.081;2.229,,,100.0,true,,,SafetyBMWM3Driver,,,,,,,,0.85,,,,,,,,,,,,,,,,,,,,100,140,0,25,0.75,false,,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G2,low-drag,Formula Classic G2,Open Wheel
 Formula_Ultimate_2019_HD-469,Formula_Ultimate_2019_HD-469-formulaultimategen1,587,Formula_Ultimate_2019_HD,Formula Ultimate Hybrid Gen2 - High Downforce,F-Hybrid Gen2,469,Reiza,Formula Reiza,Formula_Ultimate_2019_HD.vhf,Formula_Ultimate_2019,Formula_Ultimate_2019_HD,Formula_Ultimate_2019_Cockpit.bin,Formula_Ultimate_2019,2019,5.00,7.00,0,0,Formula_Ultimate_2019_ambsh.dds,1,F-Ultimate_HD,Openwheel,OpenWheel,Mid-Rear,2,0.0;0.569;1.952,0.0;0.569;2.252,0.1,1,0;0.835;0.897,0;0.835;0.897,,true,129,,,,,5,120000,SA,Brazil,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.353;0.727;-0.595,-0.353;0.727;-0.595,-1.006;-0.001;-2.872,1.006;1.121;2.508,FORMULA_MODERN_USER_OVERRIDE,outfit_FORMULA_MODERN_USER_OVERRIDE,,,,,,,,100.0,true,,,SafetyAMGDriver2,,,,,,,,0.4,,,,,,,,,,,,,,,,,,,,70,100,0,25,0.75,true,,,2,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Ultimate Gen1,high-downforce,Formula Ultimate Gen1,Open Wheel
 McLaren_MP420_LD-527,McLaren_MP420_LD-527-formulav10g2,720,McLaren_MP420_LD,McLaren MP4/20 - Low Downforce,McLaren MP4/20,527,McLaren,McLaren MP4/20,McLaren_MP420_LD.vhf,McLaren_MP420,McLaren_MP420_LD,McLaren_MP420_LD_Cockpit.bin,McLaren_MP420,2006,5.00,7.00,0,0,McLaren_MP420_ambsh.dds,3,F-V10_Gen3_LD,Openwheel,OpenWheel,Mid-Rear,2,0.288;0.563;1.049,0.288;0.572;1.349,0.036,1,0;0.440;0.560,0;0.440;0.560,,true,129,,,,,5,120000,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.457;0.650;-0.623,-0.457;0.650;-0.623,-0.898;-0.002;-2.291,0.898;1.099;2.282,FORMULA_MODERN_USER_OVERRIDE,outfit_FORMULA_MODERN_USER_OVERRIDE,,,,-0.288;0.563;1.049,-0.288;0.572;1.349,,,100.0,true,,,SafetyF2KDriver,,,,,,,,0.85,,,,,,,,,,,,,,,,,,,,100,140,0,25,0.75,false,,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula V10 G2,low-drag,Formula V10 G2,Open Wheel
@@ -13723,10 +13910,10 @@ Formula_V10_LD-211,Formula_V10_LD-211-formulav10g2,603,Formula_V10_LD,Formula V1
 Formula_V10_M_LD-530,Formula_V10_M_LD-530-formulav10g2,606,Formula_V10_M_LD,Formula V10 Gen2 (M) - Low Downforce,F-V10 Gen2 (M),530,Reiza,Formula V10,Formula_V10_M_LD.vhf,Formula_V10,Formula_V10_M_LD,Formula_V10_M_LD_Cockpit.bin,Formula_V10_M,2002,5.00,7.00,0,0,Formula_V10_ambsh.dds,3,F-V10_Gen2_LD,Openwheel,OpenWheel,Mid-Rear,2,0.261;0.482;1.428,0.171;0.626;1.751,0.036,1,0;0.964;1.069,0;0.964;1.069,,true,129,,,,,5,120000,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.356;0.669;-0.274,-0.356;0.669;-0.27,-0.898;-0.002;-2.291,0.898;1.099;2.282,FORMULA_MODERN_USER_OVERRIDE,outfit_FORMULA_MODERN_USER_OVERRIDE,,,,-0.261;0.482;1.428,-0.171;0.626;1.751,,,100.0,true,,,SafetyF2KDriver,,,,,,,,0.85,,,,,,,,,,,,,,,,,,,,100,140,0,25,0.75,false,,,,true,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula V10 G2,low-drag,Formula V10 G2,Open Wheel
 McLaren_MP44_LD-280,McLaren_MP44_LD-280-formulaclassicg2,726,McLaren_MP44_LD,McLaren Honda MP4/4 - Low Downforce,McLaren MP4/4,280,McLaren,McLaren MP4/4,McLaren_MP44_LD.vhf,McLaren_MP44,McLaren_MP44_LD,McLaren_MP44_LD_Cockpit.bin,McLaren_MP44,1988,5.00,7.50,0,0,McLaren_MP44_ambsh.dds,4,F-Classic_Gen2_LD,Openwheel,OpenWheel,Mid-Rear,2,0.226;0.139;1.425,0.226;0.139;1.725,0.4,1,0;0.63;0.47,0;0.63;0.47,,true,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.254;0.571;-0.612,-0.254;0.571;-0.612,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_80_USER_OVERRIDE,outfit_DRIVER_80_USER_OVERRIDE,1.5,3.00,,-0.226;0.139;1.425,-0.226;0.139;1.725,,brazilianlegendspt1pack,,true,,,SafetyBMWM3Driver,,,,,,,,0.85,,,,,,,,,,,,,,,,,,,,100,140,0,25,0.75,false,,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G2,low-drag,Formula Classic G2,Open Wheel
 Formula_V10_M_HD-529,Formula_V10_M_HD-529-formulav10g2,605,Formula_V10_M_HD,Formula V10 Gen2 (M) - High Downforce,F-V10 Gen2 (M),529,Reiza,Formula V10,Formula_V10_M_HD.vhf,Formula_V10,Formula_V10_M_HD,Formula_V10_M_HD_Cockpit.bin,Formula_V10_M,2002,5.00,7.00,0,0,Formula_V10_ambsh.dds,3,F-V10_Gen2_HD,Openwheel,OpenWheel,Mid-Rear,2,0.261;0.482;1.428,0.171;0.626;1.751,0.036,1,0;0.964;1.069,0;0.964;1.069,,true,129,,,,,5,120000,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.356;0.669;-0.274,-0.356;0.669;-0.27,-0.898;-0.002;-2.291,0.898;1.099;2.282,FORMULA_MODERN_USER_OVERRIDE,outfit_FORMULA_MODERN_USER_OVERRIDE,,,,-0.261;0.482;1.428,-0.171;0.626;1.751,,,100.0,true,,,SafetyF2KDriver,,,,,,,,0.85,,,,,,,,,,,,,,,,,,,,70,100,0,25,0.75,false,,,,true,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula V10 G2,high-downforce,Formula V10 G2,Open Wheel
-McLaren_MP46_LD-269,McLaren_MP46_LD-269-formulaclassicg3,733,McLaren_MP46_LD,McLaren Honda MP4/6 - Low Downforce,McLaren MP4/6,269,McLaren,McLaren MP4/6,McLaren_MP46_LD.vhf,McLaren_MP46,McLaren_MP46_LD,McLaren_MP46_Cockpit.bin,McLaren_MP46,1991,5.00,7.50,0,0,McLaren_MP46_ambsh.dds,4,F-Classic_Gen4_LD,Openwheel,OpenWheel,Mid-Rear,2,0.235;0.078;1.443,0.235;0.078;1.943,0.1,1,0;0.63;0.47,0;0.63;0.47,,true,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.318;0.619;-0.403,-0.318;0.619;-0.403,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,2.125,2.5,,-0.235;0.078;1.443,-0.235;0.078;1.943,,brazilianlegendspt1pack,,true,,,SafetyBMWM3Driver,,,,,,,,0.85,,,,,,,,,,,,,,,,,,,,100,140,0,25,0.75,false,,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G3,low-drag,Formula Classic G3,Open Wheel
+McLaren_MP46_LD-269,McLaren_MP46_LD-269-formulaclassicg3,733,McLaren_MP46_LD,McLaren Honda MP4/6 - Low Downforce,McLaren MP4/6,269,McLaren,McLaren MP4/6,McLaren_MP46_LD.vhf,McLaren_MP46,McLaren_MP46_LD,McLaren_MP46_Cockpit.bin,McLaren_MP46,1991,5.00,7.50,0,0,McLaren_MP46_ambsh.dds,4,F-Classic_Gen4_LD,Openwheel,OpenWheel,Mid-Rear,2,0.235;0.078;1.443,0.235;0.078;1.943,0.1,1,0;0.63;0.47,0;0.63;0.47,,true,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.318;0.619;-0.403,-0.318;0.619;-0.403,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,2.125,2.5,,-0.235;0.078;1.443,-0.235;0.078;1.943,,brazilianlegendspt1pack,,true,,,SafetyBMWM3Driver,,,,,,,,0.85,,,,,,,,,,,,,,,,,,,,100,140,0,25,0.75,false,,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G4,low-drag,Formula Classic G4,Open Wheel
 Formula_V10_G1-114,Formula_V10_G1-114-formulav10g1,607,Formula_V10_G1,Formula V10 Gen1,F-V10 Gen1,114,Reiza,Formula V10 G1,Formula_V10_G1.vhf,Formula_V10_G1,Formula_V10_G1,Formula_V10_G1_Cockpit.bin,Formula_V10_G1,1997,5.00,7.00,0,0,Formula_V10_G1_ambsh.dds,3,F-V10_Gen1,Openwheel,OpenWheel,Mid-Rear,1,0.0;0.101;1.819,0.0;0.101;2.119,0.036,1,0;0.581;0.978,0;0.581;0.978,,false,129,,,,,5,120000,EU,England,N/A,13,13,13,13,20.0,,,1,0.0;3.141592653589;0.0,0.324;0.629;-0.648,-0.324;0.629;-0.648,-1.033;-0.0;-2.564,1.033;1.124;1.968,FORMULA_MODERN_USER_OVERRIDE,outfit_FORMULA_MODERN_USER_OVERRIDE,,,,,,,,100.0,true,,,SafetyBMWM3Driver,,,,Formula_V10_G1_LD,Formula_V10_G1_LD,Formula_V10_G1_LD,Formula_V10_G1_LD,,,,,,,,,,Formula_V10_G1_LD,,,,,,,,,,,70,100,0,25,0.75,false,Formula_V10_G1_HD,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula V10 G1,standard,Formula V10 G1,Open Wheel
 Formula_Classic_G3M3-262,Formula_Classic_G3M3-262-formulaclassicg3,521,Formula_Classic_G3M3,Formula Classic Gen3 Model3,F-Classic Gen3 M3,262,Reiza,Formula Classic G2M3,Formula_Classic_G3M3.vhf,Formula_Classic_G3M3,Formula_Classic_G3M3,Formula_Classic_G3M3_Cockpit.bin,Formula_Classic_G3M3,1986,5.0,7.0,0.0,0.0,Formula_Classic_G3M3_ambsh.dds,4,F-Classic_Gen3,Historic Openwheel,OpenWheel,Mid-Rear,2,0.239;0.175;1.669,0.239;0.175;1.969,0.0,1,0;0.40;0.87,0;0.40;0.87,,false,458,,,,,5,120,EU,England,N/A,13,20,13,20,,,,1,0.0;3.141592653589;0.0,0.272;0.613;-0.501,-0.272;0.613;-0.501,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,,,,-0.239;0.175;1.669,-0.239;0.175;1.969,,,100.0,true,,,SafetyBMWM3Driver,,,,Formula_Classic_G3M3_LD,Formula_Classic_G3M3_LD,Formula_Classic_G3M3_LD,Formula_Classic_G3M3_LD,0.85,,,,,,,,,Formula_Classic_G3M3_LD,,,,,false,,,,,,70,100,0,25,0.75,false,Formula_Classic_G3M3_HD,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G3,standard,Formula Classic G3,Open Wheel
-McLaren_MP46_LD-479,McLaren_MP46_LD-479-formulaclassicg3,732,McLaren_MP46_LD,McLaren Honda MP4/6 - High Downforce,McLaren MP4/6,479,McLaren,McLaren MP4/6,McLaren_MP46_HD.vhf,McLaren_MP46,McLaren_MP46_HD,McLaren_MP46_Cockpit.bin,McLaren_MP46,1991,5.00,7.50,0,0,McLaren_MP46_ambsh.dds,4,F-Classic_Gen4_HD,Openwheel,OpenWheel,Mid-Rear,2,0.235;0.078;1.443,0.235;0.078;1.943,0.1,1,0;0.63;0.47,0;0.63;0.47,,true,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.318;0.619;-0.403,-0.318;0.619;-0.403,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,2.125,2.5,,-0.235;0.078;1.443,-0.235;0.078;1.943,,brazilianlegendspt1pack,,true,,,SafetyBMWM3Driver,,,,,,,,0.85,,,,,,,,,,,,,,,,,,,,70,100,0,25,0.75,false,,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G3,high-downforce,Formula Classic G3,Open Wheel
+McLaren_MP46_LD-479,McLaren_MP46_LD-479-formulaclassicg3,732,McLaren_MP46_LD,McLaren Honda MP4/6 - High Downforce,McLaren MP4/6,479,McLaren,McLaren MP4/6,McLaren_MP46_HD.vhf,McLaren_MP46,McLaren_MP46_HD,McLaren_MP46_Cockpit.bin,McLaren_MP46,1991,5.00,7.50,0,0,McLaren_MP46_ambsh.dds,4,F-Classic_Gen4_HD,Openwheel,OpenWheel,Mid-Rear,2,0.235;0.078;1.443,0.235;0.078;1.943,0.1,1,0;0.63;0.47,0;0.63;0.47,,true,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.318;0.619;-0.403,-0.318;0.619;-0.403,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,2.125,2.5,,-0.235;0.078;1.443,-0.235;0.078;1.943,,brazilianlegendspt1pack,,true,,,SafetyBMWM3Driver,,,,,,,,0.85,,,,,,,,,,,,,,,,,,,,70,100,0,25,0.75,false,,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G4,high-downforce,Formula Classic G4,Open Wheel
 Formula_V8_G1_HD-471,Formula_V8_G1_HD-471-formulareiza,622,Formula_V8_G1_HD,Formula V8 Gen1 (M) - High Downforce,F-V8 Gen1 M1 (M),471,Reiza,Formula V8,Formula_V8_G1_HD.vhf,Formula_V8_G1,Formula_V8_G1_HD,Formula_V8_G1_HD_Cockpit.bin,Formula_V8_G1,2006,5.00,7.00,0,0,Formula_V8_G1_ambsh.dds,3,F-V8_Gen1_HD,Openwheel,OpenWheel,Mid-Rear,2,0.19;0.522;1.317,0.144;0.576;1.546,0.036,1,0;0.964;1.069,0;0.964;1.069,,true,129,,,,,5,120000,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.356;0.669;-0.274,-0.356;0.669;-0.27,-0.898;-0.002;-2.291,0.898;1.099;2.282,FORMULA_MODERN_USER_OVERRIDE,outfit_FORMULA_MODERN_USER_OVERRIDE,,,,-0.19;0.522;1.317,-0.144;0.576;1.546,,,100.0,true,,,SafetyF2KDriver,,,,,,,,0.85,,,,,,,,,,,,,,,,,,,,70,100,0,25,0.75,false,,,,true,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Reiza,high-downforce,Formula Reiza,Open Wheel
 Formula_V8_G1_LD-429,Formula_V8_G1_LD-429-formulareiza,623,Formula_V8_G1_LD,Formula V8 Gen1 (M) - Low Downforce,F-V8 Gen1 M1 (M),429,Reiza,Formula V8,Formula_V8_G1_LD.vhf,Formula_V8_G1,Formula_V8_G1_LD,Formula_V8_G1_LD_Cockpit.bin,Formula_V8_G1,2006,5.00,7.00,0,0,Formula_V8_G1_ambsh.dds,3,F-V8_Gen1_LD,Openwheel,OpenWheel,Mid-Rear,2,0.19;0.522;1.317,0.144;0.576;1.546,0.036,1,0;0.964;1.069,0;0.964;1.069,,true,129,,,,,5,120000,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.356;0.669;-0.274,-0.356;0.669;-0.27,-0.898;-0.002;-2.291,0.898;1.099;2.282,FORMULA_MODERN_USER_OVERRIDE,outfit_FORMULA_MODERN_USER_OVERRIDE,,,,-0.19;0.522;1.317,-0.144;0.576;1.546,,,100.0,true,,,SafetyF2KDriver,,,,,,,,0.85,,,,,,,,,,,,,,,,,,,,100,140,0,25,0.75,false,,,,true,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Reiza,low-drag,Formula Reiza,Open Wheel
 Formula_V10_G3_B_HD-532,Formula_V10_G3_B_HD-532-formulav10g2,612,Formula_V10_G3_B_HD,Formula V10 Gen3 (B) - High Downforce,F-V10 Gen3 (B),532,Reiza,Formula V10,Formula_V10_G3_B_HD.vhf,Formula_V10_G3,Formula_V10_G3_B_HD,Formula_V10_G3_B_HD_Cockpit.bin,Formula_V10_G3_B,2006,5.00,7.00,0,0,Formula_V10_g3_ambsh.dds,3,F-V10_Gen3_HD,Openwheel,OpenWheel,Mid-Rear,2,0.19;0.522;1.317,0.144;0.576;1.546,0.036,1,0;0.964;1.069,0;0.964;1.069,,true,129,,,,,5,120000,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.356;0.669;-0.274,-0.356;0.669;-0.27,-0.898;-0.002;-2.291,0.898;1.099;2.282,FORMULA_MODERN_USER_OVERRIDE,outfit_FORMULA_MODERN_USER_OVERRIDE,,,,-0.19;0.522;1.317,-0.144;0.576;1.546,,,100.0,true,,,SafetyF2KDriver,,,,,,,,0.85,,,,,,,,,,,,,,,,,,,,70,100,0,25,0.75,false,,,,true,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula V10 G2,high-downforce,Formula V10 G2,Open Wheel
@@ -13743,17 +13930,17 @@ Formula_Reiza-23,Formula_Reiza-23-formulareiza,569,Formula_Reiza,Formula V8 Gen3
 Formula_V12-30,Formula_V12-30-formulav12,616,Formula_V12,Formula V12,F-V12,30,Reiza,Formula V12,Formula_V12.vhf,Formula_V12,Formula_V12,Formula_V12_Cockpit.bin,Formula_V12,1995,5.00,7.00,0,0,Formula_V12_ambsh.dds,4,F-V12,Openwheel,OpenWheel,Mid-Rear,2,0.244;0.272;1.718,0.244;0.272;1.968,0.036,1,0;0.7;0.9,0;0.7;0.9,,false,129,,,,,5,120000,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.271;0.663;-0.309,-0.271;0.663;-0.309,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,2.125,2.5,,-0.244;0.272;1.718,-0.244;0.272;1.968,,,100.0,true,,,SafetyBMWM3Driver,,,,Formula_V12_LD,Formula_V12_LD,Formula_V12_LD,Formula_V12_LD,0.85,,,,,,,,,Formula_V12_LD,,,,,,,,,,,60,95,0,25,0.70,false,,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula V12,standard,Formula V12,Open Wheel
 Formula_Edge_G1M3-447,Formula_Edge_G1M3-447-formulav10g2,543,Formula_Edge_G1M3,Formula Edge Model3,F-Edge M3,447,Reiza,Formula Edge M3,Formula_Edge_G1M3.vhf,Formula_Edge_G1M3,Formula_Edge_G1M3,Formula_Edge_G1M3_Cockpit.bin,Formula_Edge_G1M3,1995,5.00,7.00,0,0,Formula_Edge_G1M3_ambsh.dds,4,FE-G1,Openwheel,OpenWheel,Mid-Rear,2,0.325;0.094;1.209,0.325;0.11;1.535,0.036,1,0;0.7;0.9,0;0.7;0.9,,false,129,,,,,5,120000,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.271;0.663;-0.309,-0.271;0.663;-0.309,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,,,,-0.325;0.094;1.209,-0.325;0.11;1.535,,,100.0,true,,,SafetyBMWM3Driver,,,,Formula_Edge_G1M3_LD,Formula_Edge_G1M3_LD,Formula_Edge_G1M3_LD,Formula_Edge_G1M3_LD,0.85,,,,,,,,,Formula_Edge_G1M3_LD,,,,,,,,,,,70,100,0,25,0.75,false,Formula_Edge_G1M3_HD,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula V10 G2,standard,Formula V10 G2,Open Wheel
 Renault_R28-516,Renault_R28-516-formulareiza,823,Renault_R28,Renault R28,Renault R28,516,Renault,Renault R28,Renault_R28.vhf,Renault_R28,Renault_R28,Renault_R28_Cockpit.bin,Renault_R28,2008,5.00,7.00,0,0,Renault_R28_ambsh.dds,3,F-V8_Gen2,Openwheel,OpenWheel,Mid-Rear,2,0.312;0.511;0.915,0.322;0.524;1.215,0.036,1,0;0.500;1.770,0;0.500;1.770,,false,129,,,,,5,120000,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.355;0.669;-0.517,-0.355;0.669;-0.517,-0.898;-0.002;-2.291,0.898;1.099;2.282,FORMULA_MODERN_USER_OVERRIDE,outfit_FORMULA_MODERN_USER_OVERRIDE,,,,-0.312;0.511;0.915,-0.322;0.524;1.215,,,100.0,true,,,SafetyF2KDriver,,,,Renault_R28_LD,Renault_R28_LD,Renault_R28_LD,Renault_R28_LD,0.85,,,,,,,,,Renault_R28_LD,,,,,,,,,,,70,100,0,25,0.75,false,Renault_R28_HD,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Reiza,standard,Formula Reiza,Open Wheel
-Formula_Classic_G4M2-21,Formula_Classic_G4M2-21-formulaclassicg3,530,Formula_Classic_G4M2,Formula Classic Gen4 Model2,F-Classic Gen4 M2,21,Reiza,Formula Classic G4M2,Formula_Classic_G4M2.vhf,Formula_Classic_G4M2,Formula_Classic_G4M2,Formula_Classic_G4M2_Cockpit.bin,Formula_Classic_G4M2,1992,5.00,7.00,0,0,Formula_Classic_G4M2_ambsh.dds,4,F-Classic_Gen4,Historic Openwheel,OpenWheel,Mid-Rear,4,0.252;0.179;1.884,0.252;0.081;2.229,0.05,1,0;0.583;1.16,0;0.583;1.16,,false,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.263;0.636;-0.248,-0.263;0.636;-0.248,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,,,,-0.252;0.179;1.884,-0.252;0.081;2.229,,,100.0,true,,,SafetyBMWM3Driver,,,,Formula_Classic_G4M2_LD,Formula_Classic_G4M2_LD,Formula_Classic_G4M2_LD,Formula_Classic_G4M2_LD,0.85,,,,,,,,,Formula_Classic_G4M2_LD,,,,,,,,,,,70,100,0,25,0.75,false,Formula_Classic_G4M2_HD,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G3,standard,Formula Classic G3,Open Wheel
-Formula_Classic_G4M3-22,Formula_Classic_G4M3-22-formulaclassicg3,533,Formula_Classic_G4M3,Formula Classic Gen4 Model3,F-Classic Gen4 M3,22,Reiza,Formula Classic G4M3,Formula_Classic_G4M3.vhf,Formula_Classic_G4M3,Formula_Classic_G4M3,Formula_Classic_G4M3_Cockpit.bin,Formula_Classic_G4M3,1992,5.00,7.00,0,0,Formula_Classic_G4M3_ambsh.dds,4,F-Classic_Gen4,Historic Openwheel,OpenWheel,Mid-Rear,2,0.228;0.320;1.716,0.228;0.348;2.018,0.1,1,0;0.778;0.798,0;0.778;0.798,,false,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.325;0.682;-0.344,-0.325;0.682;-0.344,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,,,,-0.228;0.320;1.716,-0.228;0.348;2.018,,,100.0,true,,,SafetyBMWM3Driver,,,,Formula_Classic_G4M3_LD,Formula_Classic_G4M3_LD,Formula_Classic_G4M3_LD,Formula_Classic_G4M3_LD,0.85,,,,,,,,,Formula_Classic_G4M3_LD,,,,,,,,,,,70,100,0,25,0.75,false,Formula_Classic_G4M3_HD,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G3,standard,Formula Classic G3,Open Wheel
+Formula_Classic_G4M2-21,Formula_Classic_G4M2-21-formulaclassicg3,530,Formula_Classic_G4M2,Formula Classic Gen4 Model2,F-Classic Gen4 M2,21,Reiza,Formula Classic G4M2,Formula_Classic_G4M2.vhf,Formula_Classic_G4M2,Formula_Classic_G4M2,Formula_Classic_G4M2_Cockpit.bin,Formula_Classic_G4M2,1992,5.00,7.00,0,0,Formula_Classic_G4M2_ambsh.dds,4,F-Classic_Gen4,Historic Openwheel,OpenWheel,Mid-Rear,4,0.252;0.179;1.884,0.252;0.081;2.229,0.05,1,0;0.583;1.16,0;0.583;1.16,,false,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.263;0.636;-0.248,-0.263;0.636;-0.248,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,,,,-0.252;0.179;1.884,-0.252;0.081;2.229,,,100.0,true,,,SafetyBMWM3Driver,,,,Formula_Classic_G4M2_LD,Formula_Classic_G4M2_LD,Formula_Classic_G4M2_LD,Formula_Classic_G4M2_LD,0.85,,,,,,,,,Formula_Classic_G4M2_LD,,,,,,,,,,,70,100,0,25,0.75,false,Formula_Classic_G4M2_HD,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G4,standard,Formula Classic G4,Open Wheel
+Formula_Classic_G4M3-22,Formula_Classic_G4M3-22-formulaclassicg3,533,Formula_Classic_G4M3,Formula Classic Gen4 Model3,F-Classic Gen4 M3,22,Reiza,Formula Classic G4M3,Formula_Classic_G4M3.vhf,Formula_Classic_G4M3,Formula_Classic_G4M3,Formula_Classic_G4M3_Cockpit.bin,Formula_Classic_G4M3,1992,5.00,7.00,0,0,Formula_Classic_G4M3_ambsh.dds,4,F-Classic_Gen4,Historic Openwheel,OpenWheel,Mid-Rear,2,0.228;0.320;1.716,0.228;0.348;2.018,0.1,1,0;0.778;0.798,0;0.778;0.798,,false,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.325;0.682;-0.344,-0.325;0.682;-0.344,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,,,,-0.228;0.320;1.716,-0.228;0.348;2.018,,,100.0,true,,,SafetyBMWM3Driver,,,,Formula_Classic_G4M3_LD,Formula_Classic_G4M3_LD,Formula_Classic_G4M3_LD,Formula_Classic_G4M3_LD,0.85,,,,,,,,,Formula_Classic_G4M3_LD,,,,,,,,,,,70,100,0,25,0.75,false,Formula_Classic_G4M3_HD,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G4,standard,Formula Classic G4,Open Wheel
 McLaren_MP420-525,McLaren_MP420-525-formulav10g2,718,McLaren_MP420,McLaren MP4/20,McLaren MP4/20,525,McLaren,McLaren MP4/20,McLaren_MP420.vhf,McLaren_MP420,McLaren_MP420,McLaren_MP420_Cockpit.bin,McLaren_MP420,2006,5.00,7.00,0,0,McLaren_MP420_ambsh.dds,3,F-V10_Gen3,Openwheel,OpenWheel,Mid-Rear,2,0.288;0.563;1.049,0.288;0.572;1.349,0.036,1,0;0.964;1.069,0;0.964;1.069,,false,129,,,,,5,120000,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.457;0.650;-0.623,-0.457;0.650;-0.623,-0.898;-0.002;-2.291,0.898;1.099;2.282,FORMULA_MODERN_USER_OVERRIDE,outfit_FORMULA_MODERN_USER_OVERRIDE,,,,-0.288;0.563;1.049,-0.288;0.572;1.349,,,100.0,true,,,SafetyF2KDriver,,,,McLaren_MP420_LD,McLaren_MP420_LD,McLaren_MP420_LD,McLaren_MP420_LD,0.85,,,,,,,,,McLaren_MP420_LD,,,,,,,,,,,70,100,0,25,0.75,false,McLaren_MP420_HD,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula V10 G2,standard,Formula V10 G2,Open Wheel
 McLaren_MP45B-173,McLaren_MP45B-173-formulaclassicg3,728,McLaren_MP45B,McLaren Honda MP4/5B,McLaren MP4/5B,173,McLaren,McLaren MP4/5,McLaren_MP45B.vhf,McLaren_MP45B,McLaren_MP45B,McLaren_MP45B_Cockpit.bin,McLaren_MP45B,1990,5.00,7.50,0,0,McLaren_MP45B_ambsh.dds,4,F-Classic_Gen3,Openwheel,OpenWheel,Mid-Rear,2,0.235;0.078;1.443,0.235;0.078;1.943,0.1,1,0;0.63;0.47,0;0.63;0.47,,false,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.318;0.619;-0.403,-0.318;0.619;-0.403,-1.5;-0.0;-3.85,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,2.125,2.5,,-0.235;0.078;1.443,-0.235;0.078;1.943,,brazilianlegendspt1pack,,true,,,SafetyBMWM3Driver,,,,McLaren_MP45B_LD,McLaren_MP45B_LD,McLaren_MP45B_LD,McLaren_MP45B_LD,0.85,,,,,,,,,McLaren_MP45B_LD,,,,,,,,,,,70,100,0,25,0.75,false,McLaren_MP45B_HD,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G3,standard,Formula Classic G3,Open Wheel
 Renault_R25-510,Renault_R25-510-formulav10g2,817,Renault_R25,Renault R25,Renault R25,510,Renault,Renault R25,Renault_R25.vhf,Renault_R25,Renault_R25,Renault_R25_Cockpit.bin,Renault_R25,2006,5.00,7.00,0,0,Renault_R25_ambsh.dds,3,F-V10_Gen3,Openwheel,OpenWheel,Mid-Rear,2,0.289;0.426;0.919,0.396;0.529;1.218,0.036,1,0;0.964;1.069,0;0.964;1.069,,false,129,,,,,5,120000,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.331;0.659;-0.462,-0.331;0.659;-0.462,-0.898;-0.002;-2.291,0.898;1.099;2.282,FORMULA_MODERN_USER_OVERRIDE,outfit_FORMULA_MODERN_USER_OVERRIDE,,,,-0.289;0.426;0.919,-0.396;0.529;1.218,,,100.0,true,,,SafetyF2KDriver,,,,Renault_R25_LD,Renault_R25_LD,Renault_R25_LD,Renault_R25_LD,0.85,,,,,,,,,Renault_R25_LD,,,,,,,,,,,70,100,0,25,0.75,false,Renault_R25_HD,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula V10 G2,standard,Formula V10 G2,Open Wheel
 Renault_R26-513,Renault_R26-513-formulareiza,820,Renault_R26,Renault R26,Renault R26,513,Renault,Renault R26,Renault_R26.vhf,Renault_R26,Renault_R26,Renault_R26_Cockpit.bin,Renault_R26,2006,5.00,7.00,0,0,Renault_R26_ambsh.dds,3,F-V8_Gen1,Openwheel,OpenWheel,Mid-Rear,2,0.298;0.479;0.845,0.322;0.578;1.145,0.036,1,0;0.964;1.069,0;0.964;1.069,,false,129,,,,,5,120000,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.378;0.664;-0.406,-0.378;0.664;-0.406,-0.898;-0.002;-2.291,0.898;1.099;2.282,FORMULA_MODERN_USER_OVERRIDE,outfit_FORMULA_MODERN_USER_OVERRIDE,,,,-0.298;0.479;0.845,-0.322;0.578;1.145,,,100.0,true,,,SafetyF2KDriver,,,,Renault_R26_LD,Renault_R26_LD,Renault_R26_LD,Renault_R26_LD,0.85,,,,,,,,,Renault_R26_LD,,,,,,,,,,,70,100,0,25,0.75,false,Renault_R26_HD,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Reiza,standard,Formula Reiza,Open Wheel
-Formula_Classic_G4M1_HD-457,Formula_Classic_G4M1_HD-457-formulaclassicg3,528,Formula_Classic_G4M1_HD,Formula Classic Gen4 Model1 - High Downforce,F-Classic Gen4 M1,457,Reiza,Formula Classic G4M1,Formula_Classic_G4M1_HD.vhf,Formula_Classic_G4M1,Formula_Classic_G4M1_HD,Formula_Classic_G4M1_HD_Cockpit.bin,Formula_Classic_G4M1,1991,5.00,7.00,0,0,Formula_Classic_G4M1_ambsh.dds,4,F-Classic_Gen4_HD,Historic Openwheel,OpenWheel,Mid-Rear,4,0.266;0.290;2.18,0.266;0.315;2.48,0.1,1,0;0.63;0.47,0;0.63;0.47,,true,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.301;0.669;-0.279,-0.301;0.669;-0.279,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,2.125,2.5,,0.194;0.290;2.18,0.194;0.315;2.48,,,100.0,true,,,SafetyBMWM3Driver,,,,,,,,0.85,-0.194;0.290;2.18,-0.266;0.290;2.18,-0.194;0.315;2.48,-0.266;0.315;2.48,,,,,,,,,,,,,,,,70,100,0,25,0.75,false,,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G3,high-downforce,Formula Classic G3,Open Wheel
+Formula_Classic_G4M1_HD-457,Formula_Classic_G4M1_HD-457-formulaclassicg3,528,Formula_Classic_G4M1_HD,Formula Classic Gen4 Model1 - High Downforce,F-Classic Gen4 M1,457,Reiza,Formula Classic G4M1,Formula_Classic_G4M1_HD.vhf,Formula_Classic_G4M1,Formula_Classic_G4M1_HD,Formula_Classic_G4M1_HD_Cockpit.bin,Formula_Classic_G4M1,1991,5.00,7.00,0,0,Formula_Classic_G4M1_ambsh.dds,4,F-Classic_Gen4_HD,Historic Openwheel,OpenWheel,Mid-Rear,4,0.266;0.290;2.18,0.266;0.315;2.48,0.1,1,0;0.63;0.47,0;0.63;0.47,,true,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.301;0.669;-0.279,-0.301;0.669;-0.279,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,2.125,2.5,,0.194;0.290;2.18,0.194;0.315;2.48,,,100.0,true,,,SafetyBMWM3Driver,,,,,,,,0.85,-0.194;0.290;2.18,-0.266;0.290;2.18,-0.194;0.315;2.48,-0.266;0.315;2.48,,,,,,,,,,,,,,,,70,100,0,25,0.75,false,,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G4,high-downforce,Formula Classic G4,Open Wheel
 Formula_Hitech_G1M1_HD-460,Formula_Hitech_G1M1_HD-460-formulaclassicg1,547,Formula_Hitech_G1M1_HD,Formula HiTech Gen1 Model1 - High Downforce,F-HiTech Gen1 M1,460,Reiza,Formula Hitech G1M1,Formula_Hitech_G1M1_HD.vhf,Formula_Hitech_G1M1,Formula_Hitech_G1M1_HD,Formula_Hitech_G1M1_Cockpit.bin,Formula_Hitech_G1M1,1992,5.00,7.00,0,0,Formula_Hitech_G1M1_ambsh.dds,4,F-Hitech_Gen1_HD,Historic Openwheel,OpenWheel,Mid-Rear,4,0.266;0.290;2.18,0.266;0.315;2.48,0.1,1,0;0.63;0.47,0;0.63;0.47,,true,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.301;0.669;-0.279,-0.301;0.669;-0.279,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,2.125,2.5,,0.194;0.290;2.18,0.194;0.315;2.48,,,100.0,true,,,SafetyBMWM3Driver,,,,,,,,0.85,-0.194;0.290;2.18,-0.266;0.290;2.18,-0.194;0.315;2.48,-0.266;0.315;2.48,,,,,,,,,,,,,,,,70,100,0,25,0.75,false,,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G1,high-downforce,Formula Classic G1,Open Wheel
 Formula_Hitech_G1M1_LD-304,Formula_Hitech_G1M1_LD-304-formulaclassicg1,548,Formula_Hitech_G1M1_LD,Formula HiTech Gen1 Model1 - Low Downforce,F-HiTech Gen1 M1,304,Reiza,Formula Hitech G1M1,Formula_Hitech_G1M1_LD.vhf,Formula_Hitech_G1M1,Formula_Hitech_G1M1_LD,Formula_Hitech_G1M1_LD_Cockpit.bin,Formula_Hitech_G1M1,1992,5.00,7.00,0,0,Formula_Hitech_G1M1_ambsh.dds,4,F-Hitech_Gen1_LD,Historic Openwheel,OpenWheel,Mid-Rear,4,0.266;0.290;2.18,0.266;0.315;2.48,0.1,1,0;0.63;0.47,0;0.63;0.47,,true,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.301;0.669;-0.279,-0.301;0.669;-0.279,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,2.125,2.5,,0.194;0.290;2.18,0.194;0.315;2.48,,,100.0,true,,,SafetyBMWM3Driver,,,,,,,,0.85,-0.194;0.290;2.18,-0.266;0.290;2.18,-0.194;0.315;2.48,-0.266;0.315;2.48,,,,,,,,,,,,,,,,100,140,0,25,0.75,false,,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G1,low-drag,Formula Classic G1,Open Wheel
 Formula_Classic_G2M3-19,Formula_Classic_G2M3-19-formulaclassicg2,512,Formula_Classic_G2M3,Formula Classic Gen2 Model3,F-Classic Gen2 M3,19,Reiza,Formula Classic G2M3,Formula_Classic_G2M3.vhf,Formula_Classic_G2M3,Formula_Classic_G2M3,Formula_Classic_G2M3_Cockpit.bin,Formula_Classic_G2M3,1986,5.0,7.0,0.0,0.0,Formula_Classic_G2M3_ambsh.dds,4,F-Classic_Gen2,Historic Openwheel,OpenWheel,Mid-Rear,2,0.186;0.170;1.671,0.186;0.170;1.971,0.0,1,0;0.40;0.87,0;0.40;0.87,,false,458,,,,,5,120,EU,England,N/A,13,20,13,20,,,,1,0.0;3.141592653589;0.0,0.272;0.613;-0.501,-0.272;0.613;-0.501,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,1.5,3.00,,-0.186;0.170;1.671,-0.186;0.170;1.971,,,100.0,true,,,SafetyBMWM3Driver,,,,Formula_Classic_G2M3_LD,Formula_Classic_G2M3_LD,Formula_Classic_G2M3_LD,Formula_Classic_G2M3_LD,0.85,,,,,,,,,Formula_Classic_G2M3_LD,,,,,false,,,,,,70,100,0,25,0.75,false,Formula_Classic_G2M3_HD,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G2,standard,Formula Classic G2,Open Wheel
-Formula_Classic_G4M1_LD-239,Formula_Classic_G4M1_LD-239-formulaclassicg3,529,Formula_Classic_G4M1_LD,Formula Classic Gen4 Model1 - Low Downforce,F-Classic Gen4 M1,239,Reiza,Formula Classic G4M1,Formula_Classic_G4M1_LD.vhf,Formula_Classic_G4M1,Formula_Classic_G4M1_LD,Formula_Classic_G4M1_LD_Cockpit.bin,Formula_Classic_G4M1,1991,5.00,7.00,0,0,Formula_Classic_G4M1_ambsh.dds,4,F-Classic_Gen4_LD,Historic Openwheel,OpenWheel,Mid-Rear,4,0.266;0.290;2.18,0.266;0.315;2.48,0.1,1,0;0.63;0.47,0;0.63;0.47,,true,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.301;0.669;-0.279,-0.301;0.669;-0.279,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,2.125,2.5,,0.194;0.290;2.18,0.194;0.315;2.48,,,100.0,true,,,SafetyBMWM3Driver,,,,,,,,0.85,-0.194;0.290;2.18,-0.266;0.290;2.18,-0.194;0.315;2.48,-0.266;0.315;2.48,,,,,,,,,,,,,,,,100,140,0,25,0.75,false,,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G3,low-drag,Formula Classic G3,Open Wheel
+Formula_Classic_G4M1_LD-239,Formula_Classic_G4M1_LD-239-formulaclassicg3,529,Formula_Classic_G4M1_LD,Formula Classic Gen4 Model1 - Low Downforce,F-Classic Gen4 M1,239,Reiza,Formula Classic G4M1,Formula_Classic_G4M1_LD.vhf,Formula_Classic_G4M1,Formula_Classic_G4M1_LD,Formula_Classic_G4M1_LD_Cockpit.bin,Formula_Classic_G4M1,1991,5.00,7.00,0,0,Formula_Classic_G4M1_ambsh.dds,4,F-Classic_Gen4_LD,Historic Openwheel,OpenWheel,Mid-Rear,4,0.266;0.290;2.18,0.266;0.315;2.48,0.1,1,0;0.63;0.47,0;0.63;0.47,,true,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.301;0.669;-0.279,-0.301;0.669;-0.279,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,2.125,2.5,,0.194;0.290;2.18,0.194;0.315;2.48,,,100.0,true,,,SafetyBMWM3Driver,,,,,,,,0.85,-0.194;0.290;2.18,-0.266;0.290;2.18,-0.194;0.315;2.48,-0.266;0.315;2.48,,,,,,,,,,,,,,,,100,140,0,25,0.75,false,,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G4,low-drag,Formula Classic G4,Open Wheel
 McLaren_MP423-519,McLaren_MP423-519-formulareiza,721,McLaren_MP423,McLaren MP4/23,McLaren MP4/23,519,McLaren,McLaren_MP423,McLaren_MP423.vhf,McLaren_MP423,McLaren_MP423,McLaren_MP423_Cockpit.bin,McLaren_MP423,2008,5.00,7.00,0,0,McLaren_MP423_ambsh.dds,3,F-V8_Gen2,Openwheel,OpenWheel,Mid-Rear,2,0.240;0.489;1.075,0.174;0.556;1.376,0.036,1,0;0.964;1.069,0;0.964;1.069,,false,129,,,,,5,120000,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.468;0.692;-0.527,-0.468;0.692;-0.527,-0.898;-0.002;-2.291,0.898;1.099;2.282,FORMULA_MODERN_USER_OVERRIDE,outfit_FORMULA_MODERN_USER_OVERRIDE,,,,-0.240;0.489;1.075,-0.174;0.556;1.376,,,100.0,true,,,SafetyF2KDriver,,,,McLaren_MP423_LD,McLaren_MP423_LD,McLaren_MP423_LD,McLaren_MP423_LD,0.85,,,,,,,,,McLaren_MP423_LD,,,,,,,,,,,70,100,0,25,0.75,false,McLaren_MP423_HD,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Reiza,standard,Formula Reiza,Open Wheel
 Formula_Hitech_G2M1_HD-463,Formula_Hitech_G2M1_HD-463-formulaclassicg2,559,Formula_Hitech_G2M1_HD,Formula HiTech Gen2 Model1 - High Downforce,F-HiTech Gen2 M1,463,Reiza,Formula Hitech G2M1,Formula_Hitech_G2M1_HD.vhf,Formula_Hitech_G2M1,Formula_Hitech_G2M1_HD,Formula_Hitech_G2M1_HD_Cockpit.bin,Formula_Hitech_G2M1,1993,5.00,7.00,0,0,Formula_Hitech_G2M1_ambsh.dds,4,F-Hitech_Gen2_HD,Historic Openwheel,OpenWheel,Mid-Rear,4,0.266;0.290;2.18,0.266;0.315;2.48,0.1,1,0;0.63;0.47,0;0.63;0.47,,true,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.301;0.669;-0.279,-0.301;0.669;-0.279,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,2.125,2.5,,0.194;0.290;2.18,0.194;0.315;2.48,,,100.0,true,,,SafetyBMWM3Driver,,,,,,,,0.85,-0.194;0.290;2.18,-0.266;0.290;2.18,-0.194;0.315;2.48,-0.266;0.315;2.48,,,,,,,,,,,,,,,,70,100,0,25,0.75,false,,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G2,high-downforce,Formula Classic G2,Open Wheel
 Formula_Hitech_G2M1_LD-310,Formula_Hitech_G2M1_LD-310-formulaclassicg2,560,Formula_Hitech_G2M1_LD,Formula HiTech Gen2 Model1 - Low Downforce,F-HiTech Gen2 M1,310,Reiza,Formula Hitech G2M1,Formula_Hitech_G2M1_LD.vhf,Formula_Hitech_G2M1,Formula_Hitech_G2M1_LD,Formula_Hitech_G2M1_LD_Cockpit.bin,Formula_Hitech_G2M1,1993,5.00,7.00,0,0,Formula_Hitech_G2M1_ambsh.dds,4,F-Hitech_Gen2_LD,Historic Openwheel,OpenWheel,Mid-Rear,4,0.266;0.290;2.18,0.266;0.315;2.48,0.1,1,0;0.63;0.47,0;0.63;0.47,,true,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.301;0.669;-0.279,-0.301;0.669;-0.279,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,2.125,2.5,,0.194;0.290;2.18,0.194;0.315;2.48,,,100.0,true,,,SafetyBMWM3Driver,,,,,,,,0.85,-0.194;0.290;2.18,-0.266;0.290;2.18,-0.194;0.315;2.48,-0.266;0.315;2.48,,,,,,,,,,,,,,,,100,140,0,25,0.75,false,,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G2,low-drag,Formula Classic G2,Open Wheel
@@ -13773,7 +13960,7 @@ Formula_Hitech_G2M3-313,Formula_Hitech_G2M3-313-formulaclassicg2,564,Formula_Hit
 Formula_Hitech_G1M4-320,Formula_Hitech_G1M4-320-formulaclassicg1,552,Formula_Hitech_G1M4,Formula HiTech Gen1 Model4,F-HiTech Gen1 M4,320,Reiza,Formula Hitech G1M4,Formula_Hitech_G1M4.vhf,Formula_Hitech_G1M4,Formula_Hitech_G1M4,Formula_Hitech_G1M4_Cockpit.bin,Formula_Hitech_G1M4,1992,5.00,7.00,0,0,Formula_Hitech_G1M2_ambsh.dds,4,F-Hitech_Gen1,Historic Openwheel,OpenWheel,Mid-Rear,4,0.252;0.179;1.884,0.252;0.081;2.229,0.05,1,0;0.583;1.16,0;0.583;1.16,,false,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.263;0.636;-0.248,-0.263;0.636;-0.248,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,,,,-0.252;0.179;1.884,-0.252;0.081;2.229,,formulahitechpack,100.0,true,,,SafetyBMWM3Driver,,,,Formula_Hitech_G1M4_LD,Formula_Hitech_G1M4_LD,Formula_Hitech_G1M4_LD,Formula_Hitech_G1M4_LD,0.85,,,,,,,,,Formula_Hitech_G1M4_LD,,,,,,,,,,,70,100,0,25,0.75,false,Formula_Hitech_G1M4_HD,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G1,standard,Formula Classic G1,Open Wheel
 Formula_Hitech_G1M3-307,Formula_Hitech_G1M3-307-formulaclassicg1,555,Formula_Hitech_G1M3,Formula HiTech Gen1 Model3,F-HiTech Gen1 M3,307,Reiza,Formula Hitech G1M3,Formula_Hitech_G1M3.vhf,Formula_Hitech_G1M3,Formula_Hitech_G1M3,Formula_Hitech_G1M3_Cockpit.bin,Formula_Hitech_G1M3,1992,5.00,7.00,0,0,Formula_Hitech_G1M3_ambsh.dds,4,F-Hitech_Gen1,Historic Openwheel,OpenWheel,Mid-Rear,2,0.228;0.320;1.716,0.228;0.348;2.018,0.1,1,0;0.778;0.798,0;0.778;0.798,,false,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.325;0.682;-0.344,-0.325;0.682;-0.344,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,,,,-0.228;0.320;1.716,-0.228;0.348;2.018,,formulahitechpack,100.0,true,,,SafetyBMWM3Driver,,,,Formula_Hitech_G1M3_LD,Formula_Hitech_G1M3_LD,Formula_Hitech_G1M3_LD,Formula_Hitech_G1M3_LD,0.85,,,,,,,,,Formula_Hitech_G1M3_LD,,,,,,,,,,,70,100,0,25,0.75,false,Formula_Hitech_G1M3_HD,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G1,standard,Formula Classic G1,Open Wheel
 Formula_Hitech_G2M2-311,Formula_Hitech_G2M2-311-formulaclassicg2,561,Formula_Hitech_G2M2,Formula HiTech Gen2 Model2,F-HiTech Gen2 M2,311,Reiza,Formula Hitech G2M2,Formula_Hitech_G2M2.vhf,Formula_Hitech_G2M2,Formula_Hitech_G2M2,Formula_Hitech_G2M2_Cockpit.bin,Formula_Hitech_G2M2,1993,5.00,7.00,0,0,Formula_Hitech_G2M2_ambsh.dds,4,F-Hitech_Gen2,Historic Openwheel,OpenWheel,Mid-Rear,4,0.252;0.179;1.884,0.252;0.081;2.229,0.05,1,0;0.583;1.16,0;0.583;1.16,,false,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.263;0.636;-0.248,-0.263;0.636;-0.248,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,,,,-0.252;0.179;1.884,-0.252;0.081;2.229,,formulahitechpack,100.0,true,,,SafetyBMWM3Driver,,,,Formula_Hitech_G2M2_LD,Formula_Hitech_G2M2_LD,Formula_Hitech_G2M2_LD,Formula_Hitech_G2M2_LD,0.85,,,,,,,,,Formula_Hitech_G2M2_LD,,,,,,,,,,,70,100,0,25,0.75,false,Formula_Hitech_G2M2_HD,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G2,standard,Formula Classic G2,Open Wheel
-McLaren_MP46-65,McLaren_MP46-65-formulaclassicg3,731,McLaren_MP46,McLaren Honda MP4/6,McLaren MP4/6,65,McLaren,McLaren MP4/6,McLaren_MP46.vhf,McLaren_MP46,McLaren_MP46,McLaren_MP46_Cockpit.bin,McLaren_MP46,1991,5.00,7.50,0,0,McLaren_MP46_ambsh.dds,4,F-Classic_Gen4,Openwheel,OpenWheel,Mid-Rear,2,0.235;0.078;1.443,0.235;0.078;1.943,0.1,1,0;0.63;0.47,0;0.63;0.47,,false,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.318;0.619;-0.403,-0.318;0.619;-0.403,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,2.125,2.5,,-0.235;0.078;1.443,-0.235;0.078;1.943,,brazilianlegendspt1pack,,true,,,SafetyBMWM3Driver,,,,McLaren_MP46_LD,McLaren_MP46_LD,McLaren_MP46_LD,McLaren_MP46_LD,0.85,,,,,,,,,McLaren_MP46_LD,,,,,,,,,,,70,100,0,25,0.75,false,McLaren_MP46_HD,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G3,standard,Formula Classic G3,Open Wheel
+McLaren_MP46-65,McLaren_MP46-65-formulaclassicg3,731,McLaren_MP46,McLaren Honda MP4/6,McLaren MP4/6,65,McLaren,McLaren MP4/6,McLaren_MP46.vhf,McLaren_MP46,McLaren_MP46,McLaren_MP46_Cockpit.bin,McLaren_MP46,1991,5.00,7.50,0,0,McLaren_MP46_ambsh.dds,4,F-Classic_Gen4,Openwheel,OpenWheel,Mid-Rear,2,0.235;0.078;1.443,0.235;0.078;1.943,0.1,1,0;0.63;0.47,0;0.63;0.47,,false,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.318;0.619;-0.403,-0.318;0.619;-0.403,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,2.125,2.5,,-0.235;0.078;1.443,-0.235;0.078;1.943,,brazilianlegendspt1pack,,true,,,SafetyBMWM3Driver,,,,McLaren_MP46_LD,McLaren_MP46_LD,McLaren_MP46_LD,McLaren_MP46_LD,0.85,,,,,,,,,McLaren_MP46_LD,,,,,,,,,,,70,100,0,25,0.75,false,McLaren_MP46_HD,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G4,standard,Formula Classic G4,Open Wheel
 Formula_Edge_G1M1-441,Formula_Edge_G1M1-441-formulav10g2,537,Formula_Edge_G1M1,Formula Edge Model1,F-Edge M1,441,Reiza,Formula Edge M1,Formula_Edge_G1M1.vhf,Formula_Edge_G1M1,Formula_Edge_G1M1,Formula_Edge_G1M1_Cockpit.bin,Formula_Edge_G1M1,1995,5.00,7.00,0,0,Formula_Edge_G1M1_ambsh.dds,4,FE-G1,Openwheel,OpenWheel,Mid-Rear,2,0.244;0.272;1.718,0.244;0.272;1.968,0.036,1,0;0.7;0.9,0;0.7;0.9,,false,129,,,,,5,120000,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.271;0.663;-0.309,-0.271;0.663;-0.309,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,2.125,2.5,,-0.244;0.272;1.718,-0.244;0.272;1.968,,,100.0,true,,,SafetyBMWM3Driver,,,,Formula_Edge_G1M1_LD,Formula_Edge_G1M1_LD,Formula_Edge_G1M1_LD,Formula_Edge_G1M1_LD,0.85,,,,,,,,,Formula_Edge_G1M1_LD,,,,,,,,,,,70,100,0,25,0.75,false,Formula_Edge_G1M1_HD,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula V10 G2,standard,Formula V10 G2,Open Wheel
 Formula_V8_G1-428,Formula_V8_G1-428-formulareiza,618,Formula_V8_G1,Formula V8 Gen1 (M),F-V8 Gen1 M1 (M),428,Reiza,Formula V8,Formula_V8_G1.vhf,Formula_V8_G1,Formula_V8_G1,Formula_V8_G1_Cockpit.bin,Formula_V8_G1,2006,5.00,7.00,0,0,Formula_V8_G1_ambsh.dds,3,F-V8_Gen1,Openwheel,OpenWheel,Mid-Rear,2,0.19;0.522;1.317,0.144;0.576;1.546,0.036,1,0;0.964;1.069,0;0.964;1.069,,false,129,,,,,5,120000,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.356;0.669;-0.274,-0.356;0.669;-0.27,-0.898;-0.002;-2.291,0.898;1.099;2.282,FORMULA_MODERN_USER_OVERRIDE,outfit_FORMULA_MODERN_USER_OVERRIDE,,,,-0.19;0.522;1.317,-0.144;0.576;1.546,,,100.0,true,,,SafetyF2KDriver,,,,Formula_V8_G1_LD,Formula_V8_G1_LD,Formula_V8_G1_LD,Formula_V8_G1_LD,0.85,,,,,,,,,Formula_V8_G1_LD,,,,,,,,,,,70,100,0,25,0.75,false,Formula_V8_G1_HD,,,true,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Reiza,standard,Formula Reiza,Open Wheel
 McLaren_MP44-64,McLaren_MP44-64-formulaclassicg2,724,McLaren_MP44,McLaren Honda MP4/4,McLaren MP4/4,64,McLaren,McLaren MP4/4,McLaren_MP44.vhf,McLaren_MP44,McLaren_MP44,McLaren_MP44_Cockpit.bin,McLaren_MP44,1988,5.00,7.50,0,0,McLaren_MP44_ambsh.dds,4,F-Classic_Gen2,Openwheel,OpenWheel,Mid-Rear,2,0.226;0.139;1.425,0.226;0.139;1.725,0.4,1,0;0.63;0.47,0;0.63;0.47,,false,129,,,,,5,120000,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.254;0.571;-0.612,-0.254;0.571;-0.612,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_80_USER_OVERRIDE,outfit_DRIVER_80_USER_OVERRIDE,1.5,3.00,,-0.226;0.139;1.425,-0.226;0.139;1.725,,brazilianlegendspt1pack,,true,,,SafetyBMWM3Driver,,,,McLaren_MP44_LD,McLaren_MP44_LD,McLaren_MP44_LD,McLaren_MP44_LD,0.85,,,,,,,,,McLaren_MP44_LD,,,,,,,,,,,70,100,0,25,0.75,false,McLaren_MP44_HD,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G2,standard,Formula Classic G2,Open Wheel
@@ -13781,11 +13968,11 @@ Formula_V10_G3-426,Formula_V10_G3-426-formulav10g2,610,Formula_V10_G3,Formula V1
 Formula_V8_G1_B-534,Formula_V8_G1_B-534-formulareiza,619,Formula_V8_G1_B,Formula V8 Gen1 (B),F-V8 Gen1 M1 (B),534,Reiza,Formula V8,Formula_V8_G1_B.vhf,Formula_V8_G1,Formula_V8_G1_B,Formula_V8_G1_B_Cockpit.bin,Formula_V8_G1_B,2006,5.00,7.00,0,0,Formula_V8_G1_ambsh.dds,3,F-V8_Gen1,Openwheel,OpenWheel,Mid-Rear,2,0.19;0.522;1.317,0.144;0.576;1.546,0.036,1,0;0.964;1.069,0;0.964;1.069,,false,129,,,,,5,120000,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.356;0.669;-0.274,-0.356;0.669;-0.27,-0.898;-0.002;-2.291,0.898;1.099;2.282,FORMULA_MODERN_USER_OVERRIDE,outfit_FORMULA_MODERN_USER_OVERRIDE,,,,-0.19;0.522;1.317,-0.144;0.576;1.546,,,100.0,true,,,SafetyF2KDriver,,,,Formula_V8_G1_B_LD,Formula_V8_G1_B_LD,Formula_V8_G1_B_LD,Formula_V8_G1_B_LD,0.85,,,,,,,,,Formula_V8_G1_B_LD,,,,,,,,,,,70,100,0,25,0.75,false,Formula_V8_G1_B_HD,,,true,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Reiza,standard,Formula Reiza,Open Wheel
 Formula_V10_G3_B-531,Formula_V10_G3_B-531-formulav10g2,611,Formula_V10_G3_B,Formula V10 Gen3 (B),F-V10 Gen3 (B),531,Reiza,Formula V10,Formula_V10_G3_B.vhf,Formula_V10_G3,Formula_V10_G3_B,Formula_V10_G3_B_Cockpit.bin,Formula_V10_G3_B,2006,5.00,7.00,0,0,Formula_V10_g3_ambsh.dds,3,F-V10_Gen3,Openwheel,OpenWheel,Mid-Rear,2,0.19;0.522;1.317,0.144;0.576;1.546,0.036,1,0;0.964;1.069,0;0.964;1.069,,false,129,,,,,5,120000,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.356;0.669;-0.274,-0.356;0.669;-0.27,-0.898;-0.002;-2.291,0.898;1.099;2.282,FORMULA_MODERN_USER_OVERRIDE,outfit_FORMULA_MODERN_USER_OVERRIDE,,,,-0.19;0.522;1.317,-0.144;0.576;1.546,,,100.0,true,,,SafetyF2KDriver,,,,Formula_V10_G3_B_LD,Formula_V10_G3_B_LD,Formula_V10_G3_B_LD,Formula_V10_G3_B_LD,0.85,,,,,,,,,Formula_V10_G3_B_LD,,,,,,,,,,,70,100,0,25,0.75,false,Formula_V10_G3_B_HD,,,true,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula V10 G2,standard,Formula V10 G2,Open Wheel
 Aston_Martin_Vantage_GT3-2,Aston_Martin_Vantage_GT3-2-gt3,337,Aston_Martin_Vantage_GT3,Aston Martin Vantage GT3,Aston Martin Vantage GT3,2,Aston Martin Racing,Vantage GT3,Aston_Martin_Vantage_GT3.vhf,Aston_Martin_Vantage_GT3,Aston_Martin_Vantage_GT3,Aston_Martin_Vantage_GT3_Cockpit.bin,Aston_Martin_Vantage_GT3,2013,5.5,7.0,0,0,Aston_Martin_Vantage_GT3_ambsh.dds,10,GT3N,GT3,GT,Front,2,0.878;0.161;0.740,0.956;0.161;0.745,0.4,1,0;0.615;-1.38,0;0.615;-1.38,,false,107,,,,,5,373000,EU,England,N/A,13,20,13,20,,,,1,0.0;3.141592653589;0.0,0.9115;0.8986;-0.1354,-0.9115;0.8986;-0.1354,-1.5;-0.0;-4.0,1.5;1.5;4.0,helmet_GT_Modern_USER_OVERRIDE,outfit_GT_Modern_USER_OVERRIDE,2.25,2.75,0.0245,-0.878;0.161;0.740,-0.956;0.161;0.745,false,,,,0.1426;0.8199;-0.2072,common_windscreen_scratches_03.dds,,0.0000;1.1013;0.0528,,,,,,,,,,,,funpack,Japspeed #26,funpack,Japspeed #27,,,,,,,,,,,,,,,,,,,,,,funpack,Team ESL #99,funpack,Team ESL #100,porschepack,eSports + Cars #97,porschepack,eSports + Cars #98,lemanspack,GTA Racing #70,lemanspack,GTA Racing #71,ferraripack,HUD Motorsport #12,ferraripack,HUD Motorsport #14,,,,,true,meta-class-default:GT3,standard,GT3,GT
-Formula_Classic_G4M1-20,Formula_Classic_G4M1-20-formulaclassicg3,527,Formula_Classic_G4M1,Formula Classic Gen4 Model1,F-Classic Gen4 M1,20,Reiza,Formula Classic G4M1,Formula_Classic_G4M1.vhf,Formula_Classic_G4M1,Formula_Classic_G4M1,Formula_Classic_G4M1_Cockpit.bin,Formula_Classic_G4M1,1991,5.00,7.00,0,0,Formula_Classic_G4M1_ambsh.dds,4,F-Classic_Gen4,Historic Openwheel,OpenWheel,Mid-Rear,4,0.266;0.290;2.18,0.266;0.315;2.48,0.1,1,0;0.63;0.47,0;0.63;0.47,,false,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.301;0.669;-0.279,-0.301;0.669;-0.279,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,2.125,2.5,,0.194;0.290;2.18,0.194;0.315;2.48,,,100.0,true,,,SafetyBMWM3Driver,,,,Formula_Classic_G4M1_LD,Formula_Classic_G4M1_LD,Formula_Classic_G4M1_LD,Formula_Classic_G4M1_LD,0.85,-0.194;0.290;2.18,-0.266;0.290;2.18,-0.194;0.315;2.48,-0.266;0.315;2.48,,,,,Formula_Classic_G4M1_LD,,,,,,,,,,,70,100,0,25,0.75,false,Formula_Classic_G4M1_HD,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G3,standard,Formula Classic G3,Open Wheel
+Formula_Classic_G4M1-20,Formula_Classic_G4M1-20-formulaclassicg3,527,Formula_Classic_G4M1,Formula Classic Gen4 Model1,F-Classic Gen4 M1,20,Reiza,Formula Classic G4M1,Formula_Classic_G4M1.vhf,Formula_Classic_G4M1,Formula_Classic_G4M1,Formula_Classic_G4M1_Cockpit.bin,Formula_Classic_G4M1,1991,5.00,7.00,0,0,Formula_Classic_G4M1_ambsh.dds,4,F-Classic_Gen4,Historic Openwheel,OpenWheel,Mid-Rear,4,0.266;0.290;2.18,0.266;0.315;2.48,0.1,1,0;0.63;0.47,0;0.63;0.47,,false,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.301;0.669;-0.279,-0.301;0.669;-0.279,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,2.125,2.5,,0.194;0.290;2.18,0.194;0.315;2.48,,,100.0,true,,,SafetyBMWM3Driver,,,,Formula_Classic_G4M1_LD,Formula_Classic_G4M1_LD,Formula_Classic_G4M1_LD,Formula_Classic_G4M1_LD,0.85,-0.194;0.290;2.18,-0.266;0.290;2.18,-0.194;0.315;2.48,-0.266;0.315;2.48,,,,,Formula_Classic_G4M1_LD,,,,,,,,,,,70,100,0,25,0.75,false,Formula_Classic_G4M1_HD,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G4,standard,Formula Classic G4,Open Wheel
 Renault_R26_LD-515,Renault_R26_LD-515-formulareiza,822,Renault_R26_LD,Renault R26 - Low Downforce,Renault R26,515,Renault,Renault R26,Renault_R26_LD.vhf,Renault_R26,Renault_R26_LD,Renault_R26_LD_Cockpit.bin,Renault_R26,2006,5.00,7.00,0,0,Renault_R26_ambsh.dds,3,F-V8_Gen1_LD,Openwheel,OpenWheel,Mid-Rear,2,0.298;0.479;0.845,0.322;0.578;1.145,0.036,1,0;0.964;1.069,0;0.964;1.069,,true,129,,,,,5,120000,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.378;0.664;-0.406,-0.378;0.664;-0.406,-0.898;-0.002;-2.291,0.898;1.099;2.282,FORMULA_MODERN_USER_OVERRIDE,outfit_FORMULA_MODERN_USER_OVERRIDE,,,,-0.298;0.479;0.845,-0.322;0.578;1.145,,,100.0,true,,,SafetyF2KDriver,,,,,,,,0.85,,,,,basegameformula2026branded,Renault R26 #1,basegameformula2026branded,Renault R26 #2,,,,,,,,,,,,100,140,0,25,0.75,false,,,,,basegameformula2026debranded,Team Virystone #1,basegameformula2026debranded,Team Virystone #2,,,,,,,,,,,,,basegameformula2026branded,Renault R26 - Low Downforce,Renault R26,Renault,false,meta-class-default:Formula Reiza,low-drag,Formula Reiza,Open Wheel
 Formula_Hitech_G1M1-303,Formula_Hitech_G1M1-303-formulaclassicg1,546,Formula_Hitech_G1M1,Formula HiTech Gen1 Model1,F-HiTech Gen1 M1,303,Reiza,Formula Hitech G1M1 ,Formula_Hitech_G1M1.vhf,Formula_Hitech_G1M1,Formula_Hitech_G1M1,Formula_Hitech_G1M1_Cockpit.bin,Formula_Hitech_G1M1,1992,5.00,7.00,0,0,Formula_Hitech_G1M1_ambsh.dds,4,F-Hitech_Gen1,Historic Openwheel,OpenWheel,Mid-Rear,4,0.266;0.290;2.18,0.266;0.315;2.48,0.1,1,0;0.63;0.47,0;0.63;0.47,,false,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.301;0.669;-0.279,-0.301;0.669;-0.279,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,2.125,2.5,,0.194;0.290;2.18,0.194;0.315;2.48,,formulahitechpack,100.0,true,,,SafetyBMWM3Driver,,,,Formula_Hitech_G1M1_LD,Formula_Hitech_G1M1_LD,Formula_Hitech_G1M1_LD,Formula_Hitech_G1M1_LD,0.85,-0.194;0.290;2.18,-0.266;0.290;2.18,-0.194;0.315;2.48,-0.266;0.315;2.48,,,,,Formula_Hitech_G1M1_LD,,,,,,,,,,,70,100,0,25,0.75,false,Formula_Hitech_G1M1_HD,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G1,standard,Formula Classic G1,Open Wheel
 Formula_Hitech_G2M1-309,Formula_Hitech_G2M1-309-formulaclassicg2,558,Formula_Hitech_G2M1,Formula HiTech Gen2 Model1,F-HiTech Gen2 M1,309,Reiza,Formula Hitech G2M1 ,Formula_Hitech_G2M1.vhf,Formula_Hitech_G2M1,Formula_Hitech_G2M1,Formula_Hitech_G2M1_Cockpit.bin,Formula_Hitech_G2M1,1993,5.00,7.00,0,0,Formula_Hitech_G2M1_ambsh.dds,4,F-Hitech_Gen2,Historic Openwheel,OpenWheel,Mid-Rear,4,0.266;0.290;2.18,0.266;0.315;2.48,0.1,1,0;0.63;0.47,0;0.63;0.47,,false,129,,,,,5,1,EU,England,N/A,13,17,13,17,20.0,,,1,0.0;3.141592653589;0.0,0.301;0.669;-0.279,-0.301;0.669;-0.279,-1.5;-0.0;-4.0,1.5;1.5;4.0,DRIVER_91_USER_OVERRIDE,outfit_DRIVER_91_USER_OVERRIDE,2.125,2.5,,0.194;0.290;2.18,0.194;0.315;2.48,,formulahitechpack,100.0,true,,,SafetyBMWM3Driver,,,,Formula_Hitech_G2M1_LD,Formula_Hitech_G2M1_LD,Formula_Hitech_G2M1_LD,Formula_Hitech_G2M1_LD,0.85,-0.194;0.290;2.18,-0.266;0.290;2.18,-0.194;0.315;2.48,-0.266;0.315;2.48,,,,,Formula_Hitech_G2M1_LD,,,,,,,,,,,70,100,0,25,0.75,false,Formula_Hitech_G2M1_HD,,,,,,,,,,,,,,,,,,,,,,,,false,meta-class-default:Formula Classic G2,standard,Formula Classic G2,Open Wheel
-`,qu=eu.default.parse(Gu,{header:!0}).data,Ju=eu.default.parse(Ku,{header:!0}).data;function Yu(e){return _u(e.class).map(t=>({name:e.car,carClassId:nu(t),year:parseInt(e.year.trim().replace(/\*/g,``).split(`-`)[0])||new Date().getFullYear()-10}))}function Xu(e){return/^(true|1)$/i.test(e[`AI ONLY`]||``)?[]:_u(e.meta_class).map(t=>({name:e[`Vehicle Name`],carClassId:nu(t),year:parseInt(e[`Vehicle Year`],10)||new Date().getFullYear()-10,gameId:`${e.canonical_id}-${nu(t)}`,gameClass:e[`Vehicle Class`],headlights:e.has_headlights===`true`,downforceVariant:`standard`,hasDedicatedHighDownforceVariant:e[`Vehicle Variant High Downforce Track`]!==``}))}var Zu=Object.fromEntries(Ju.flatMap(Xu).filter(e=>Hu(nd(e)).length>0).map(e=>[bu(e),e])),Qu=Object.fromEntries(qu.flatMap(Yu).map(e=>[bu(e),e]));function $u(e,t){let n=fu(e);return Object.values(Zu).filter(e=>e.carClassId===nu(n)&&(!t||e.downforceVariant===t))}function ed(e,t){return $u(e).filter(e=>Hu(e).includes(t))}function td(e){return e.hasOwnProperty(`carClassId`)&&e.headlights!==void 0?e.headlights:(e.hasOwnProperty(`carClassId`)?nd(e):e).headlights}function nd(e){return fu(e.carClassId)}function rd(e){return su(nd(e).disciplineId)}function id(e){let t=ad(e);if(!t)throw Error(`Unknown car: ${e}`);return t}function ad(e){return Zu[e]||Qu[e]}function od(){return Object.values(Zu)}var sd={online:navigator.onLine},cd=zl({name:`connectivity`,initialState:sd,reducers:{update(e,t){e.online=t.payload}}}),{actions:ld}=cd,ud=()=>(Hl({key:cd.name,reducer:cd.reducer}),{actions:cd.actions}),dd=pa([e=>e.connectivity||sd],e=>e.online);function fd(e){return vu(e.carClassId)}var pd={commit:{date:`2026-07-12T14:46:08+01:00`,hash:`c1ddd37979a65944ae8ac9af9b22bfc0dc656042`}},md=`ams2career`,hd={commit_hash:pd.commit.hash,commit_date:pd.commit.date},gd={discipline:e=>fd(e).name,car_class:e=>fu(e.carClassId).name,car:e=>id(e.carId).name,track:e=>Bu(e.trackId).name,track_configuration:e=>Bu(e.trackId).configuration},_d={},vd={ai_final:e=>e.aiLevel,ai_adj_global:(e,t)=>t.global,ai_adj_discipline:(e,t)=>t.discipline[ru(fd(e))],ai_adj_carclass:(e,t)=>t.carClass[e.carClassId],ai_adj_car:(e,t)=>t.car[e.carId]};function yd(e,t,n){let r={...t},i=1;return[...Object.keys(t),...Object.keys(n)].forEach(t=>{if(i>20)throw Error(`Too many ${e} fragment`);r[`${e}${i}`]=t,i++}),r}function bd(e,t){return Object.fromEntries([...Object.entries(gd).map(([t,n])=>[t,n(e)]),...Object.entries(vd).map(([n,r])=>[n,t===null?0:r(e,t)])])}var xd=`analytics/LOCATION_CHANGE`,Sd=(0,Ll.trackPageView)(e=>({path:e.payload.pathname,title:document.title,fieldsObject:{...yd(`dimension`,hd,gd),...yd(`metric`,_d,vd)}})),Cd={"career/recordRaceResult":(0,Ll.trackEvent)(e=>{let t=e.payload.raceResult,n=e.payload.aiAdjustment;return{category:md,action:`race_result`,label:t.carId+` @ `+t.trackId,value:t.position,fieldsObject:bd(t,n)}}),"career/resetCareer":(0,Ll.trackEvent)(e=>({category:md,action:`career_reset`})),"exportReminder/recordExport":(0,Ll.trackEvent)(e=>({category:md,action:`save_export`})),LOAD:(0,Ll.trackEvent)(e=>({category:md,action:`save_import`})),[xd]:Sd},wd=`G-P011NS305M`;function Td(){let e=(0,Ll.default)(wd),t=(0,Rl.default)(dd),n=(0,Il.createMiddleware)(Cd,e,{offlineStorage:t});return({getState:e,dispatch:t})=>r=>i=>lo()===`granted`?n({getState:e,dispatch:t})(r)(i):r(i)}function Ed(){let e=Bs(),t=et();x.useEffect(()=>{t({type:xd,payload:e})},[e,t])}var Dd=c(o(((e,t)=>{var n=(function(){var e=String.fromCharCode,t=`ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=`,n=`ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+-$`,r={};function i(e,t){if(!r[e]){r[e]={};for(var n=0;n<e.length;n++)r[e][e.charAt(n)]=n}return r[e][t]}var a={compressToBase64:function(e){if(e==null)return``;var n=a._compress(e,6,function(e){return t.charAt(e)});switch(n.length%4){default:case 0:return n;case 1:return n+`===`;case 2:return n+`==`;case 3:return n+`=`}},decompressFromBase64:function(e){return e==null?``:e==``?null:a._decompress(e.length,32,function(n){return i(t,e.charAt(n))})},compressToUTF16:function(t){return t==null?``:a._compress(t,15,function(t){return e(t+32)})+` `},decompressFromUTF16:function(e){return e==null?``:e==``?null:a._decompress(e.length,16384,function(t){return e.charCodeAt(t)-32})},compressToUint8Array:function(e){for(var t=a.compress(e),n=new Uint8Array(t.length*2),r=0,i=t.length;r<i;r++){var o=t.charCodeAt(r);n[r*2]=o>>>8,n[r*2+1]=o%256}return n},decompressFromUint8Array:function(t){if(t==null)return a.decompress(t);for(var n=Array(t.length/2),r=0,i=n.length;r<i;r++)n[r]=t[r*2]*256+t[r*2+1];var o=[];return n.forEach(function(t){o.push(e(t))}),a.decompress(o.join(``))},compressToEncodedURIComponent:function(e){return e==null?``:a._compress(e,6,function(e){return n.charAt(e)})},decompressFromEncodedURIComponent:function(e){return e==null?``:e==``?null:(e=e.replace(/ /g,`+`),a._decompress(e.length,32,function(t){return i(n,e.charAt(t))}))},compress:function(t){return a._compress(t,16,function(t){return e(t)})},_compress:function(e,t,n){if(e==null)return``;var r,i,a={},o={},s=``,c=``,l=``,u=2,d=3,f=2,p=[],m=0,h=0,g;for(g=0;g<e.length;g+=1)if(s=e.charAt(g),Object.prototype.hasOwnProperty.call(a,s)||(a[s]=d++,o[s]=!0),c=l+s,Object.prototype.hasOwnProperty.call(a,c))l=c;else{if(Object.prototype.hasOwnProperty.call(o,l)){if(l.charCodeAt(0)<256){for(r=0;r<f;r++)m<<=1,h==t-1?(h=0,p.push(n(m)),m=0):h++;for(i=l.charCodeAt(0),r=0;r<8;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1}else{for(i=1,r=0;r<f;r++)m=m<<1|i,h==t-1?(h=0,p.push(n(m)),m=0):h++,i=0;for(i=l.charCodeAt(0),r=0;r<16;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1}u--,u==0&&(u=2**f,f++),delete o[l]}else for(i=a[l],r=0;r<f;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1;u--,u==0&&(u=2**f,f++),a[c]=d++,l=String(s)}if(l!==``){if(Object.prototype.hasOwnProperty.call(o,l)){if(l.charCodeAt(0)<256){for(r=0;r<f;r++)m<<=1,h==t-1?(h=0,p.push(n(m)),m=0):h++;for(i=l.charCodeAt(0),r=0;r<8;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1}else{for(i=1,r=0;r<f;r++)m=m<<1|i,h==t-1?(h=0,p.push(n(m)),m=0):h++,i=0;for(i=l.charCodeAt(0),r=0;r<16;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1}u--,u==0&&(u=2**f,f++),delete o[l]}else for(i=a[l],r=0;r<f;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1;u--,u==0&&(u=2**f,f++)}for(i=2,r=0;r<f;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1;for(;;)if(m<<=1,h==t-1){p.push(n(m));break}else h++;return p.join(``)},decompress:function(e){return e==null?``:e==``?null:a._decompress(e.length,32768,function(t){return e.charCodeAt(t)})},_decompress:function(t,n,r){var i=[],a=4,o=4,s=3,c=``,l=[],u,d,f,p,m,h,g,_={val:r(0),position:n,index:1};for(u=0;u<3;u+=1)i[u]=u;for(f=0,m=2**2,h=1;h!=m;)p=_.val&_.position,_.position>>=1,_.position==0&&(_.position=n,_.val=r(_.index++)),f|=+(p>0)*h,h<<=1;switch(f){case 0:for(f=0,m=2**8,h=1;h!=m;)p=_.val&_.position,_.position>>=1,_.position==0&&(_.position=n,_.val=r(_.index++)),f|=+(p>0)*h,h<<=1;g=e(f);break;case 1:for(f=0,m=2**16,h=1;h!=m;)p=_.val&_.position,_.position>>=1,_.position==0&&(_.position=n,_.val=r(_.index++)),f|=+(p>0)*h,h<<=1;g=e(f);break;case 2:return``}for(i[3]=g,d=g,l.push(g);;){if(_.index>t)return``;for(f=0,m=2**s,h=1;h!=m;)p=_.val&_.position,_.position>>=1,_.position==0&&(_.position=n,_.val=r(_.index++)),f|=+(p>0)*h,h<<=1;switch(g=f){case 0:for(f=0,m=2**8,h=1;h!=m;)p=_.val&_.position,_.position>>=1,_.position==0&&(_.position=n,_.val=r(_.index++)),f|=+(p>0)*h,h<<=1;i[o++]=e(f),g=o-1,a--;break;case 1:for(f=0,m=2**16,h=1;h!=m;)p=_.val&_.position,_.position>>=1,_.position==0&&(_.position=n,_.val=r(_.index++)),f|=+(p>0)*h,h<<=1;i[o++]=e(f),g=o-1,a--;break;case 2:return l.join(``)}if(a==0&&(a=2**s,s++),i[g])c=i[g];else if(g===o)c=d+d.charAt(0);else return null;l.push(c),i[o++]=d+c.charAt(0),a--,d=c,a==0&&(a=2**s,s++)}}};return a})();typeof define==`function`&&define.amd?define(function(){return n}):t!==void 0&&t!=null?t.exports=n:typeof angular<`u`&&angular!=null&&angular.module(`LZString`,[]).factory(`LZString`,function(){return n})}))()),Od=`kind,legacy_id,canonical_id,status
+`,qu=eu.default.parse(Gu,{header:!0}).data,Ju=eu.default.parse(Ku,{header:!0}).data;function Yu(e){return _u(e.class).map(t=>({name:e.car,carClassId:nu(t),year:parseInt(e.year.trim().replace(/\*/g,``).split(`-`)[0])||new Date().getFullYear()-10}))}function Xu(e){return/^(true|1)$/i.test(e[`AI ONLY`]||``)?[]:_u(e.meta_class).map(t=>({name:e[`Vehicle Name`],carClassId:nu(t),year:parseInt(e[`Vehicle Year`],10)||new Date().getFullYear()-10,gameId:`${e.canonical_id}-${nu(t)}`,gameClass:e[`Vehicle Class`],headlights:e.has_headlights===`true`,downforceVariant:`standard`,hasDedicatedHighDownforceVariant:e[`Vehicle Variant High Downforce Track`]!==``}))}var Zu=Object.fromEntries(Ju.flatMap(Xu).filter(e=>Hu(nd(e)).length>0).map(e=>[bu(e),e])),Qu=Object.fromEntries(qu.flatMap(Yu).map(e=>[bu(e),e]));function $u(e,t){let n=fu(e);return Object.values(Zu).filter(e=>e.carClassId===nu(n)&&(!t||e.downforceVariant===t))}function ed(e,t){return $u(e).filter(e=>Hu(e).includes(t))}function td(e){return e.hasOwnProperty(`carClassId`)&&e.headlights!==void 0?e.headlights:(e.hasOwnProperty(`carClassId`)?nd(e):e).headlights}function nd(e){return fu(e.carClassId)}function rd(e){return su(nd(e).disciplineId)}function id(e){let t=ad(e);if(!t)throw Error(`Unknown car: ${e}`);return t}function ad(e){return Zu[e]||Qu[e]}function od(){return Object.values(Zu)}var sd={online:navigator.onLine},cd=zl({name:`connectivity`,initialState:sd,reducers:{update(e,t){e.online=t.payload}}}),{actions:ld}=cd,ud=()=>(Hl({key:cd.name,reducer:cd.reducer}),{actions:cd.actions}),dd=pa([e=>e.connectivity||sd],e=>e.online);function fd(e){return vu(e.carClassId)}var pd={commit:{date:`2026-07-12T14:51:05+01:00`,hash:`3d5dac0f07b7a04a0ff3ca9859d7c6c8a9870d9b`}},md=`ams2career`,hd={commit_hash:pd.commit.hash,commit_date:pd.commit.date},gd={discipline:e=>fd(e).name,car_class:e=>fu(e.carClassId).name,car:e=>id(e.carId).name,track:e=>Bu(e.trackId).name,track_configuration:e=>Bu(e.trackId).configuration},_d={},vd={ai_final:e=>e.aiLevel,ai_adj_global:(e,t)=>t.global,ai_adj_discipline:(e,t)=>t.discipline[ru(fd(e))],ai_adj_carclass:(e,t)=>t.carClass[e.carClassId],ai_adj_car:(e,t)=>t.car[e.carId]};function yd(e,t,n){let r={...t},i=1;return[...Object.keys(t),...Object.keys(n)].forEach(t=>{if(i>20)throw Error(`Too many ${e} fragment`);r[`${e}${i}`]=t,i++}),r}function bd(e,t){return Object.fromEntries([...Object.entries(gd).map(([t,n])=>[t,n(e)]),...Object.entries(vd).map(([n,r])=>[n,t===null?0:r(e,t)])])}var xd=`analytics/LOCATION_CHANGE`,Sd=(0,Ll.trackPageView)(e=>({path:e.payload.pathname,title:document.title,fieldsObject:{...yd(`dimension`,hd,gd),...yd(`metric`,_d,vd)}})),Cd={"career/recordRaceResult":(0,Ll.trackEvent)(e=>{let t=e.payload.raceResult,n=e.payload.aiAdjustment;return{category:md,action:`race_result`,label:t.carId+` @ `+t.trackId,value:t.position,fieldsObject:bd(t,n)}}),"career/resetCareer":(0,Ll.trackEvent)(e=>({category:md,action:`career_reset`})),"exportReminder/recordExport":(0,Ll.trackEvent)(e=>({category:md,action:`save_export`})),LOAD:(0,Ll.trackEvent)(e=>({category:md,action:`save_import`})),[xd]:Sd},wd=`G-P011NS305M`;function Td(){let e=(0,Ll.default)(wd),t=(0,Rl.default)(dd),n=(0,Il.createMiddleware)(Cd,e,{offlineStorage:t});return({getState:e,dispatch:t})=>r=>i=>lo()===`granted`?n({getState:e,dispatch:t})(r)(i):r(i)}function Ed(){let e=Bs(),t=et();x.useEffect(()=>{t({type:xd,payload:e})},[e,t])}var Dd=c(o(((e,t)=>{var n=(function(){var e=String.fromCharCode,t=`ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=`,n=`ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+-$`,r={};function i(e,t){if(!r[e]){r[e]={};for(var n=0;n<e.length;n++)r[e][e.charAt(n)]=n}return r[e][t]}var a={compressToBase64:function(e){if(e==null)return``;var n=a._compress(e,6,function(e){return t.charAt(e)});switch(n.length%4){default:case 0:return n;case 1:return n+`===`;case 2:return n+`==`;case 3:return n+`=`}},decompressFromBase64:function(e){return e==null?``:e==``?null:a._decompress(e.length,32,function(n){return i(t,e.charAt(n))})},compressToUTF16:function(t){return t==null?``:a._compress(t,15,function(t){return e(t+32)})+` `},decompressFromUTF16:function(e){return e==null?``:e==``?null:a._decompress(e.length,16384,function(t){return e.charCodeAt(t)-32})},compressToUint8Array:function(e){for(var t=a.compress(e),n=new Uint8Array(t.length*2),r=0,i=t.length;r<i;r++){var o=t.charCodeAt(r);n[r*2]=o>>>8,n[r*2+1]=o%256}return n},decompressFromUint8Array:function(t){if(t==null)return a.decompress(t);for(var n=Array(t.length/2),r=0,i=n.length;r<i;r++)n[r]=t[r*2]*256+t[r*2+1];var o=[];return n.forEach(function(t){o.push(e(t))}),a.decompress(o.join(``))},compressToEncodedURIComponent:function(e){return e==null?``:a._compress(e,6,function(e){return n.charAt(e)})},decompressFromEncodedURIComponent:function(e){return e==null?``:e==``?null:(e=e.replace(/ /g,`+`),a._decompress(e.length,32,function(t){return i(n,e.charAt(t))}))},compress:function(t){return a._compress(t,16,function(t){return e(t)})},_compress:function(e,t,n){if(e==null)return``;var r,i,a={},o={},s=``,c=``,l=``,u=2,d=3,f=2,p=[],m=0,h=0,g;for(g=0;g<e.length;g+=1)if(s=e.charAt(g),Object.prototype.hasOwnProperty.call(a,s)||(a[s]=d++,o[s]=!0),c=l+s,Object.prototype.hasOwnProperty.call(a,c))l=c;else{if(Object.prototype.hasOwnProperty.call(o,l)){if(l.charCodeAt(0)<256){for(r=0;r<f;r++)m<<=1,h==t-1?(h=0,p.push(n(m)),m=0):h++;for(i=l.charCodeAt(0),r=0;r<8;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1}else{for(i=1,r=0;r<f;r++)m=m<<1|i,h==t-1?(h=0,p.push(n(m)),m=0):h++,i=0;for(i=l.charCodeAt(0),r=0;r<16;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1}u--,u==0&&(u=2**f,f++),delete o[l]}else for(i=a[l],r=0;r<f;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1;u--,u==0&&(u=2**f,f++),a[c]=d++,l=String(s)}if(l!==``){if(Object.prototype.hasOwnProperty.call(o,l)){if(l.charCodeAt(0)<256){for(r=0;r<f;r++)m<<=1,h==t-1?(h=0,p.push(n(m)),m=0):h++;for(i=l.charCodeAt(0),r=0;r<8;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1}else{for(i=1,r=0;r<f;r++)m=m<<1|i,h==t-1?(h=0,p.push(n(m)),m=0):h++,i=0;for(i=l.charCodeAt(0),r=0;r<16;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1}u--,u==0&&(u=2**f,f++),delete o[l]}else for(i=a[l],r=0;r<f;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1;u--,u==0&&(u=2**f,f++)}for(i=2,r=0;r<f;r++)m=m<<1|i&1,h==t-1?(h=0,p.push(n(m)),m=0):h++,i>>=1;for(;;)if(m<<=1,h==t-1){p.push(n(m));break}else h++;return p.join(``)},decompress:function(e){return e==null?``:e==``?null:a._decompress(e.length,32768,function(t){return e.charCodeAt(t)})},_decompress:function(t,n,r){var i=[],a=4,o=4,s=3,c=``,l=[],u,d,f,p,m,h,g,_={val:r(0),position:n,index:1};for(u=0;u<3;u+=1)i[u]=u;for(f=0,m=2**2,h=1;h!=m;)p=_.val&_.position,_.position>>=1,_.position==0&&(_.position=n,_.val=r(_.index++)),f|=+(p>0)*h,h<<=1;switch(f){case 0:for(f=0,m=2**8,h=1;h!=m;)p=_.val&_.position,_.position>>=1,_.position==0&&(_.position=n,_.val=r(_.index++)),f|=+(p>0)*h,h<<=1;g=e(f);break;case 1:for(f=0,m=2**16,h=1;h!=m;)p=_.val&_.position,_.position>>=1,_.position==0&&(_.position=n,_.val=r(_.index++)),f|=+(p>0)*h,h<<=1;g=e(f);break;case 2:return``}for(i[3]=g,d=g,l.push(g);;){if(_.index>t)return``;for(f=0,m=2**s,h=1;h!=m;)p=_.val&_.position,_.position>>=1,_.position==0&&(_.position=n,_.val=r(_.index++)),f|=+(p>0)*h,h<<=1;switch(g=f){case 0:for(f=0,m=2**8,h=1;h!=m;)p=_.val&_.position,_.position>>=1,_.position==0&&(_.position=n,_.val=r(_.index++)),f|=+(p>0)*h,h<<=1;i[o++]=e(f),g=o-1,a--;break;case 1:for(f=0,m=2**16,h=1;h!=m;)p=_.val&_.position,_.position>>=1,_.position==0&&(_.position=n,_.val=r(_.index++)),f|=+(p>0)*h,h<<=1;i[o++]=e(f),g=o-1,a--;break;case 2:return l.join(``)}if(a==0&&(a=2**s,s++),i[g])c=i[g];else if(g===o)c=d+d.charAt(0);else return null;l.push(c),i[o++]=d+c.charAt(0),a--,d=c,a==0&&(a=2**s,s++)}}};return a})();typeof define==`function`&&define.amd?define(function(){return n}):t!==void 0&&t!=null?t.exports=n:typeof angular<`u`&&angular!=null&&angular.module(`LZString`,[]).factory(`LZString`,function(){return n})}))()),Od=`kind,legacy_id,canonical_id,status
 car,Caterham GrA-Caterham 620R,Caterham_620R-8-caterhamgra-Club-1-Caterham GrA,canonical
 car,Ginetta G40 Cup-Ginetta G40,Ginetta_G40-131-gt5-Club-1-Ginetta G40 Cup,canonical
 car,GT5-Ginetta G40 GT5,Ginetta_G40-131-gt5-Club-1-GT5,canonical
@@ -14555,10 +14742,10 @@ F-Reiza_LD,Formula Reiza,Open Wheel,2,0,explicit-alias
 F-Reiza_HD,Formula Reiza,Open Wheel,2,0,explicit-alias
 F-V8_Gen2_LD,Formula Reiza,Open Wheel,2,0,explicit-alias
 F-Hitech_Gen1_HD,Formula Classic G1,Open Wheel,4,0,explicit-alias
-F-Classic_Gen4_LD,Formula Classic G3,Open Wheel,4,0,explicit-alias
+F-Classic_Gen4_LD,Formula Classic G4,Open Wheel,4,0,explicit-alias
 F-V8_Gen1_HD,Formula Reiza,Open Wheel,2,0,explicit-alias
 F-V8_Gen2_HD,Formula Reiza,Open Wheel,2,0,explicit-alias
-F-Classic_Gen4_HD,Formula Classic G3,Open Wheel,4,0,explicit-alias
+F-Classic_Gen4_HD,Formula Classic G4,Open Wheel,4,0,explicit-alias
 F-Hitech_Gen1_LD,Formula Classic G1,Open Wheel,4,0,explicit-alias
 F-Ultimate_HD,Formula Ultimate Gen1,Open Wheel,1,0,explicit-alias
 F-V10_Gen3_LD,Formula V10 G2,Open Wheel,3,0,explicit-alias
@@ -14579,7 +14766,7 @@ FE-G1,Formula V10 G2,Open Wheel,3,0,explicit-alias
 F-Reiza,Formula Reiza,Open Wheel,2,0,explicit-alias
 F-V12,Formula V12,Open Wheel,3,0,explicit-alias
 F-V8_Gen2,Formula Reiza,Open Wheel,2,0,explicit-alias
-F-Classic_Gen4,Formula Classic G3,Open Wheel,4,0,explicit-alias
+F-Classic_Gen4,Formula Classic G4,Open Wheel,4,0,explicit-alias
 F-V10_Gen3,Formula V10 G2,Open Wheel,3,0,explicit-alias
 F-V8_Gen1,Formula Reiza,Open Wheel,2,0,explicit-alias
 F-Classic_Gen2,Formula Classic G2,Open Wheel,4,0,explicit-alias
@@ -14591,6 +14778,13 @@ F-Hitech_Gen1,Formula Classic G1,Open Wheel,4,0,explicit-alias
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [1.8.1] - 2026-07-12
+
+### Fixed
+
+- Formula Classic cars are now split into their correct G3 and G4 groups.
+- Existing career saves keep working after the correction.
 
 ## [1.8.0] - 2026-07-12
 
