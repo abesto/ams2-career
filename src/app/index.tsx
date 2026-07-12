@@ -49,6 +49,7 @@ import { OurCookieConsent } from './components/OurCookieConsent';
 import { VersionInfo } from './components/VersionInfo';
 import { Welcome } from './components/Welcome';
 import { CareerPage } from './pages/CareerPage';
+import { CarExplorerPage } from './pages/CarExplorerPage';
 import { DataDebugPage } from './pages/DataDebugPage';
 import { MainPage } from './pages/MainPage';
 import { SettingsPage } from './pages/SettingsPage';
@@ -262,6 +263,7 @@ function InnerApp() {
             <Route path="/" element={<MainPage />} />
             <Route path="/settings" element={<SettingsPage />} />
             <Route path="/debug" element={<DataDebugPage />} />
+            <Route path="/cars" element={<CarExplorerPage />} />
             <Route path="/career" element={<CareerPage />} />
             <Route element={<NotFoundPage />} />
           </Routes>
