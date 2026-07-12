@@ -37,12 +37,16 @@ export const selectCurrentCarId = createSelector(
     if (!race) return null;
     if (!findTrack(race.trackId)) return null;
     if (!findCarClass(race.carClassId)) return null;
+    const compatibleCars = getCarsInClassAtTrack(race.carClassId, race.trackId);
     const selectedCarId = cars[race.carClassId];
-    if (selectedCarId && findCar(selectedCarId)) return selectedCarId;
-    const availableCar = getCarsInClassAtTrack(
-      race.carClassId,
-      race.trackId,
-    )[0];
+    if (
+      selectedCarId &&
+      findCar(selectedCarId) &&
+      compatibleCars.some(car => getCarId(car) === selectedCarId)
+    ) {
+      return selectedCarId;
+    }
+    const availableCar = compatibleCars[0];
     return availableCar ? getCarId(availableCar) : null;
   },
 );
