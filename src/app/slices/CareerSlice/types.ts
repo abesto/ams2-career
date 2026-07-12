@@ -12,6 +12,7 @@ import {
   getDisciplineId,
 } from 'types/Discipline';
 import { getDisciplineOfRace, RaceResult } from 'types/Race';
+import { findCarClass } from 'app/data/car_classes';
 
 /* --- STATE --- */
 export interface CareerState {
@@ -55,6 +56,10 @@ export function enrich(
 
   for (const raceResult of state.raceResults) {
     const outcomes: RaceOutcome[] = [];
+    if (!findCarClass(raceResult.carClassId)) {
+      data.outcomes.push(outcomes);
+      continue;
+    }
 
     for (const targetDiscipline of getAllDisciplines()) {
       const targetDisciplineId = getDisciplineId(targetDiscipline);
@@ -103,8 +108,10 @@ export function aiLevel(
   career: EnrichedCareerData,
   discipline: Discipline,
 ): number {
-  const races = career.raceResults.filter(r =>
-    disciplineEquals(getDisciplineOfRace(r), discipline),
+  const races = career.raceResults.filter(
+    r =>
+      findCarClass(r.carClassId) &&
+      disciplineEquals(getDisciplineOfRace(r), discipline),
   );
   function adjustment(position: number): number {
     if (position < 3) {

@@ -30,10 +30,10 @@ import { ResetCareerDialog } from './components/ResetCareerDialog';
 
 import { AchievementIcon } from 'app/components/AchievementIcon';
 import { LinearProgressWithLabel } from 'app/components/LinearProgressWithLabel';
-import { getCarClass } from 'app/data/car_classes';
+import { findCarClass } from 'app/data/car_classes';
 import { findCar } from 'app/data/cars';
 import { getAllDisciplines, getDiscipline } from 'app/data/disciplines';
-import { getTrack } from 'app/data/tracks';
+import { findTrack } from 'app/data/tracks';
 import { useCareerSlice } from 'app/slices/CareerSlice';
 import { Achievement, isUnlocked } from 'app/slices/CareerSlice/achievements';
 import { selectCareer } from 'app/slices/CareerSlice/selectors';
@@ -154,23 +154,29 @@ function Logbook(props: { career: EnrichedCareerData }) {
         </TableHead>
         <TableBody>
           {entries.map(({ result, outcomes }, index) => {
-            const track = getTrack(result.trackId);
+            const track = findTrack(result.trackId);
             const car = findCar(result.carId);
-            const carClass = getCarClass(result.carClassId);
-            const discipline = getDiscipline(carClass.disciplineId);
+            const carClass = findCarClass(result.carClassId);
+            const discipline = carClass
+              ? getDiscipline(carClass.disciplineId)
+              : undefined;
             return (
               <TableRow key={index} hover={true}>
                 <TableCell>{formatTimestamp(result.racedAt)}</TableCell>
                 <TableCell>{formatTimestamp(result.simTime)}</TableCell>
                 <TableCell>{result.position}</TableCell>
                 <TableCell>{result.aiLevel}</TableCell>
-                <TableCell>{discipline.name}</TableCell>
-                <TableCell>{carClass.name}</TableCell>
+                <TableCell>{discipline?.name || 'Unavailable'}</TableCell>
+                <TableCell>
+                  {carClass?.name || `Unavailable (${result.carClassId})`}
+                </TableCell>
                 <TableCell>
                   {car?.name || `Unavailable (${result.carId})`}
                 </TableCell>
-                <TableCell>{track.name}</TableCell>
-                <TableCell>{track.configuration}</TableCell>
+                <TableCell>
+                  {track?.name || `Unavailable (${result.trackId})`}
+                </TableCell>
+                <TableCell>{track?.configuration || ''}</TableCell>
                 <TableCell>
                   {outcomes
                     .map(o =>

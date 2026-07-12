@@ -42,14 +42,18 @@ const CAR_CLASSES: { [key: CarClassId]: CarClass } = Object.fromEntries(
 );
 
 export function getCarClass(id: CarClassId | CarClass): CarClass {
-  if (id.hasOwnProperty('disciplineId')) {
-    return id as CarClass;
-  }
-  const carClass = CAR_CLASSES[id as CarClassId];
+  const carClass = findCarClass(id);
   if (!carClass) {
     throw new Error(`Unknown car class: ${id}`);
   }
   return carClass;
+}
+
+export function findCarClass(id: CarClassId | CarClass): CarClass | undefined {
+  if (id.hasOwnProperty('disciplineId')) {
+    return id as CarClass;
+  }
+  return CAR_CLASSES[id as CarClassId];
 }
 
 export function getCarClassOfCar(car: Car): CarClass {

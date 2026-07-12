@@ -7,7 +7,10 @@ import {
   getCarClassOfCar,
   getCarsInClassAtTrack,
   getDisciplineOfCar,
+  findCar,
 } from 'app/data/cars';
+import { findTrack } from 'app/data/tracks';
+import { findCarClass } from 'app/data/car_classes';
 import { RootState } from 'types';
 import { getCarId } from 'types/Car';
 import { getCarClassId } from 'types/CarClass';
@@ -32,8 +35,10 @@ export const selectCurrentCarId = createSelector(
   [selectSelectedCars, selectSelectedRace],
   (cars, race) => {
     if (!race) return null;
+    if (!findTrack(race.trackId)) return null;
+    if (!findCarClass(race.carClassId)) return null;
     const selectedCarId = cars[race.carClassId];
-    if (selectedCarId) return selectedCarId;
+    if (selectedCarId && findCar(selectedCarId)) return selectedCarId;
     const availableCar = getCarsInClassAtTrack(
       race.carClassId,
       race.trackId,

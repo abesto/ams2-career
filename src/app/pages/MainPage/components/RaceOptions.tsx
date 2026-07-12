@@ -10,9 +10,9 @@ import {
   TableRow,
 } from '@mui/material';
 
-import { getCarClass } from 'app/data/car_classes';
+import { findCarClass } from 'app/data/car_classes';
 import { getDiscipline } from 'app/data/disciplines';
-import { getTrack } from 'app/data/tracks';
+import { findTrack } from 'app/data/tracks';
 import { formatGrade } from 'app/xp';
 import { getCarClassId } from 'types/CarClass';
 import { Race } from 'types/Race';
@@ -43,9 +43,11 @@ export function RaceOptions(props: Props) {
         </TableHead>
         <TableBody>
           {props.races.map((race, index) => {
-            const carClass = getCarClass(race.carClassId);
+            const carClass = findCarClass(race.carClassId);
+            if (!carClass) return null;
             const discipline = getDiscipline(carClass.disciplineId);
-            const track = getTrack(race.trackId);
+            const track = findTrack(race.trackId);
+            if (!track) return null;
             const selected = index === props.selectedRaceIndex;
             return (
               <TableRow

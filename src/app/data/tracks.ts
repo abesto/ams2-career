@@ -81,12 +81,16 @@ for (const { game_track_id, meta_class } of gameMappings) {
 }
 
 export function getTrack(id: TrackId): Track {
-  const track = TRACKS.get(id) || legacyTracks.get(id);
+  const track = findTrack(id);
   if (!track) {
     throw new Error(`Unknown track: ${id}`);
   }
 
   return track;
+}
+
+export function findTrack(id: TrackId): Track | undefined {
+  return TRACKS.get(id) || legacyTracks.get(id);
 }
 
 export function getTrackIdsFor(
