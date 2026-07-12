@@ -137,6 +137,7 @@ const META_ALIASES: Record<string, string> = {
   fusa2022: 'F-USA Gen.3',
   fusa2023: 'F-USA Gen.3',
   mclarenmp46: 'Formula V10 G2',
+  safetycar: 'Street Cars A',
   sst: 'Sprint Race',
   finter: 'FTS',
   supercars: 'Street Cars B',
@@ -171,13 +172,6 @@ export type MetaClassMapping = {
   metaClass: string;
   source: 'explicit-alias' | 'heuristic-family';
 };
-
-export function isPlayerDriveableGameCar(row: Row): boolean {
-  return !(
-    /^safetycar$/i.test(row['Vehicle Class'] || '') &&
-    /^(true|1)$/i.test(row['AI ONLY'] || '')
-  );
-}
 
 export function metaClassMappingFor(
   gameClass: string,
@@ -242,6 +236,7 @@ export function metaClassMappingFor(
   if (/^f5$/i.test(gameClass)) return heuristic('FTS');
   if (/sprint|^rx$|^sst$|^stt$|dirt/i.test(gameClass))
     return heuristic('Sprint Race');
+  if (/safetycar/i.test(gameClass)) return heuristic('Street Cars A');
   if (/supercars|hypercars/i.test(gameClass)) return heuristic('Street Cars B');
   if (/^tc60|^tc70|^st96/i.test(gameClass)) return heuristic('GT Classics');
   if (/carrer[a]? ?cup/i.test(gameClass)) return heuristic('Carrera Cup');
@@ -289,7 +284,6 @@ function main() {
   const cars: Row[] = [];
   const seenCars = new Set<string>();
   for (const row of rawCars) {
-    if (!isPlayerDriveableGameCar(row)) continue;
     const id = gameId(row.Name, row.XLASTID);
     if (seenCars.has(id)) continue;
     seenCars.add(id);

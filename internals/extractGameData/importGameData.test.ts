@@ -1,4 +1,4 @@
-import { isPlayerDriveableGameCar, metaClassMappingFor } from './importGameData';
+import { metaClassMappingFor } from './importGameData';
 
 describe('metaClassMappingFor', () => {
   it('uses the existing app class for Hot Cars', () => {
@@ -15,19 +15,11 @@ describe('metaClassMappingFor', () => {
     });
   });
 
-  it('excludes AI-only safety cars from player car data', () => {
-    expect(
-      isPlayerDriveableGameCar({
-        'Vehicle Class': 'SafetyCar',
-        'AI ONLY': 'true',
-      }),
-    ).toBe(false);
-    expect(
-      isPlayerDriveableGameCar({
-        'Vehicle Class': 'GT3',
-        'AI ONLY': 'true',
-      }),
-    ).toBe(true);
+  it('maps safety cars to their source class explicitly', () => {
+    expect(metaClassMappingFor('SafetyCar', 'GT', 'Road')).toEqual({
+      metaClass: 'Street Cars A',
+      source: 'explicit-alias',
+    });
   });
 
   it('maps game-specific cup and challenge classes to the matching app classes', () => {

@@ -23,6 +23,7 @@ type GameRecord = {
   'Vehicle Name': string;
   'Vehicle Year': string;
   'Vehicle Class': string;
+  'AI ONLY': string;
   meta_class: string;
   has_headlights: string;
   downforce_variant: 'standard' | 'low';
@@ -43,6 +44,7 @@ function recordToLegacyCars(record: Record): Car[] {
 }
 
 function gameRecordToCars(record: GameRecord): Car[] {
+  if (/^(true|1)$/i.test(record['AI ONLY'] || '')) return [];
   return getCarClassesByName(record.meta_class).map(carClass => ({
     name: record['Vehicle Name'],
     carClassId: getCarClassId(carClass),
