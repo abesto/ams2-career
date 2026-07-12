@@ -15,10 +15,10 @@ describe('metaClassMappingFor', () => {
     });
   });
 
-  it('keeps fallback rules explicitly heuristic', () => {
+  it('uses the explicit app class for safety cars', () => {
     expect(metaClassMappingFor('SafetyCar', 'GT', 'Road')).toEqual({
       metaClass: 'Street Cars A',
-      source: 'heuristic-family',
+      source: 'explicit-alias',
     });
   });
 

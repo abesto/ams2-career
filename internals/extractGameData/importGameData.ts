@@ -131,6 +131,38 @@ const META_ALIASES: Record<string, string> = {
   'f-usagen1': 'F-USA Gen.1',
   'f-usagen2': 'F-USA Gen.2',
   'f-usagen3': 'F-USA Gen.3',
+  f5: 'FTS',
+  kartcross: 'Karting 125CC',
+  rx: 'Sprint Race',
+  fusa2022: 'F-USA Gen.3',
+  fusa2023: 'F-USA Gen.3',
+  mclarenmp46: 'Formula V10 G2',
+  safetycar: 'Street Cars A',
+  sst: 'Sprint Race',
+  finter: 'FTS',
+  supercars: 'Street Cars B',
+  fdirt: 'Sprint Race',
+  tc60s2: 'GT Classics',
+  gt205: 'GT Classics',
+  hypercars: 'Street Cars B',
+  stt: 'Sprint Race',
+  lmp105: 'P1',
+  tc60s: 'GT Classics',
+  st96: 'GT Classics',
+  groupa: 'Group A',
+  fultimategen2ret: 'Formula Ultimate Gen2',
+  supertrofeo: 'GT Classics',
+  stockcarv82022: 'Stock Car Brasil 21 GrA',
+  stockusagen1: 'Group A',
+  stockusagen2: 'Group A',
+  stockusagen3: 'Group A',
+  stockusagen3lm: 'Group A',
+  fultimategen2ld: 'Formula Ultimate Gen2',
+  tc70s: 'GT Classics',
+  feg1: 'Formula V10 G2',
+  fv8gen1: 'Formula Reiza',
+  fv8gen2: 'Formula Reiza',
+  trofeo2005: 'GT Classics',
 };
 const NORMALIZED_META_ALIASES = Object.fromEntries(
   Object.entries(META_ALIASES).map(([key, value]) => [normalize(key), value]),
@@ -356,9 +388,21 @@ function main() {
   const legacyAliases: Row[] = [];
   const oldCars = readCsv(path.join(APP_DATA_DIR, 'cars.csv'));
   for (const old of oldCars) {
-    const matches = cars.filter(
+    const exactMatches = cars.filter(
       row => normalize(row['Vehicle Name']) === normalize(old.car),
     );
+    const normalizedOldCar = normalize(old.car);
+    const fuzzyMatches = cars.filter(row => {
+      const normalizedGameCar = normalize(row['Vehicle Name']);
+      return (
+        normalizedOldCar.includes(normalizedGameCar) ||
+        normalizedGameCar.includes(normalizedOldCar)
+      );
+    });
+    const matches =
+      exactMatches.length || fuzzyMatches.length !== 1
+        ? exactMatches
+        : fuzzyMatches;
     const match =
       matches.find(row => row.meta_class === old.class) || matches[0];
     const oldClass =
@@ -376,9 +420,17 @@ function main() {
     });
   }
   for (const old of appTracks) {
-    const match = tracks.find(
+    const exactMatch = tracks.find(
       row => normalize(row.TrackName) === normalize(old.name),
     );
+    const labelMatches = tracks.filter(
+      row =>
+        normalize(row.display_name) === normalize(old.name) &&
+        normalize(row.display_configuration) === normalize(old.configuration),
+    );
+    const match =
+      exactMatch ||
+      (labelMatches.length === 1 ? labelMatches[0] : undefined);
     legacyAliases.push({
       kind: 'track',
       legacy_id: `${old.name}-${old.configuration}`,
