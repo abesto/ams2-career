@@ -24,7 +24,7 @@ import { AIAdjustmentInstance } from '../slice/types';
 
 import { DisciplineProgress } from 'app/components/DisciplineProgress';
 import { getCarClass } from 'app/data/car_classes';
-import { getCar, getCarsInClass } from 'app/data/cars';
+import { getCar, getCarsInClassAtTrack } from 'app/data/cars';
 import { getTrack } from 'app/data/tracks';
 import { EnrichedCareerData } from 'app/slices/CareerSlice/types';
 import { CarId, getCarId } from 'types/Car';
@@ -308,7 +308,7 @@ export function GoRacing(props: Props) {
               onChange={handleCarSelectChange}
               label="Your Car"
             >
-              {getCarsInClass(race.carClassId, race.downforceVariant).map(car => (
+              {getCarsInClassAtTrack(race.carClassId, race.trackId).map(car => (
                 <MenuItem key={getCarId(car)} value={getCarId(car)}>
                   {car.name}
                 </MenuItem>

@@ -6,6 +6,7 @@ import { Discipline } from '../../types/Discipline';
 import { getCarClass, getCarClassesByName } from './car_classes';
 import { getDiscipline } from './disciplines';
 import { getTrackIdsFor } from './tracks';
+import type { TrackId } from '../../types/Track';
 import carsCsv from './cars.csv?raw';
 import gameCarsCsv from './game_cars.csv?raw';
 
@@ -25,6 +26,7 @@ type GameRecord = {
   meta_class: string;
   has_headlights: string;
   downforce_variant: 'standard' | 'low';
+  'Vehicle Variant High Downforce Track': string;
 };
 
 const data: Record[] = Papa.parse(carsCsv, { header: true }).data;
@@ -49,6 +51,8 @@ function gameRecordToCars(record: GameRecord): Car[] {
     gameClass: record['Vehicle Class'],
     headlights: record.has_headlights === 'true',
     downforceVariant: record.downforce_variant,
+    hasDedicatedHighDownforceVariant:
+      record['Vehicle Variant High Downforce Track'] !== '',
   }));
 }
 
@@ -60,9 +64,7 @@ const CARS: { [key: CarId]: Car } = Object.fromEntries(
 );
 
 const LEGACY_CARS: { [key: CarId]: Car } = Object.fromEntries(
-  data
-    .flatMap(recordToLegacyCars)
-    .map((car: Car) => [getCarId(car), car]),
+  data.flatMap(recordToLegacyCars).map((car: Car) => [getCarId(car), car]),
 );
 
 export function getCarsInClass(
@@ -77,8 +79,20 @@ export function getCarsInClass(
   );
 }
 
+export function getCarsInClassAtTrack(
+  what: CarClass | CarClassId,
+  trackId: TrackId,
+): Car[] {
+  return getCarsInClass(what).filter(car =>
+    getTrackIdsFor(car).includes(trackId),
+  );
+}
+
 export function canRaceAtNight(what: Car | CarClass): boolean {
-  if (what.hasOwnProperty('carClassId') && (what as Car).headlights !== undefined) {
+  if (
+    what.hasOwnProperty('carClassId') &&
+    (what as Car).headlights !== undefined
+  ) {
     return (what as Car).headlights!;
   }
   let carClass = what.hasOwnProperty('carClassId')

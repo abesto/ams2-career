@@ -43,8 +43,13 @@ type GameTrackMapping = {
   meta_class: string;
   downforce_variant: DownforceVariant;
 };
-const gameTracks: GameTrack[] = Papa.parse<GameTrack>(gameTracksCsv, { header: true }).data;
-const gameMappings: GameTrackMapping[] = Papa.parse<GameTrackMapping>(gameTrackMappingCsv, { header: true }).data;
+const gameTracks: GameTrack[] = Papa.parse<GameTrack>(gameTracksCsv, {
+  header: true,
+}).data;
+const gameMappings: GameTrackMapping[] = Papa.parse<GameTrackMapping>(
+  gameTrackMappingCsv,
+  { header: true },
+).data;
 for (const gameTrack of gameTracks) {
   const { game_id, TrackName, ShortTrackName, Track_Variation } = gameTrack;
   const labels = getTrackLabels({
@@ -88,6 +93,10 @@ export function getTrackIdsFor(
   carClass: CarClass | CarClassId | Car,
   downforceVariant?: DownforceVariant,
 ): TrackId[] {
+  const car =
+    typeof carClass !== 'string' && 'carClassId' in carClass
+      ? carClass
+      : undefined;
   if (typeof carClass !== 'string' && 'carClassId' in carClass) {
     downforceVariant = carClass.downforceVariant;
     carClass = carClass.carClassId;
@@ -95,9 +104,18 @@ export function getTrackIdsFor(
   if (typeof carClass !== 'string') {
     carClass = getCarClassId(carClass);
   }
-  return (CAR_CLASS_TO_TRACKS.get(carClass) || []).filter(trackId =>
-    downforceVariant ? getTrack(trackId).downforceVariant === downforceVariant : true,
-  );
+  return (CAR_CLASS_TO_TRACKS.get(carClass) || []).filter(trackId => {
+    const track = getTrack(trackId);
+    if (downforceVariant && track.downforceVariant !== downforceVariant)
+      return false;
+
+    // AMS2 swaps these base cars for their dedicated high-downforce vehicle
+    // on standard tracks. Expose the vehicle the game actually runs instead.
+    return !(
+      car?.hasDedicatedHighDownforceVariant &&
+      track.downforceVariant === 'standard'
+    );
+  });
 }
 
 export function getTracksFor(

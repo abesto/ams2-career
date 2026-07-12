@@ -12,6 +12,8 @@ export interface Car {
   readonly gameClass?: string;
   readonly headlights?: boolean;
   readonly downforceVariant?: DownforceVariant;
+  /** The game replaces this base car with a dedicated high-downforce variant. */
+  readonly hasDedicatedHighDownforceVariant?: boolean;
 }
 
 export type CarId = string & { __brand: 'CarId' };

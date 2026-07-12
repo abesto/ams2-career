@@ -5,7 +5,7 @@ import { initialState } from './';
 import {
   getCar,
   getCarClassOfCar,
-  getCarsInClass,
+  getCarsInClassAtTrack,
   getDisciplineOfCar,
 } from 'app/data/cars';
 import { RootState } from 'types';
@@ -32,7 +32,8 @@ export const selectCurrentCarId = createSelector(
   [selectSelectedCars, selectSelectedRace],
   (cars, race) =>
     race
-      ? cars[race.carClassId] || getCarId(getCarsInClass(race.carClassId, race.downforceVariant)[0])
+      ? cars[race.carClassId] ||
+        getCarId(getCarsInClassAtTrack(race.carClassId, race.trackId)[0])
       : null,
 );
 
