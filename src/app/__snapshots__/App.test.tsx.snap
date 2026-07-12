@@ -349,13 +349,13 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Cordoba
+                          Barcelona
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        GP
+                        Circuit de Catalunya National No Chicane
                       </td>
                     </tr>
                     <tr
@@ -382,13 +382,13 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Nürburgring
+                          Virginia
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        1971 Nords
+                        Patriot
                       </td>
                     </tr>
                     <tr
@@ -415,13 +415,13 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Willow Springs
+                          Ibarra
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Horse Thief Mile
+                        Time Trial
                       </td>
                     </tr>
                     <tr
@@ -448,13 +448,13 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Goiania
+                          Gateway
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Short
+                        Road Course 1
                       </td>
                     </tr>
                     <tr
@@ -481,13 +481,13 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Cascais
+                          Barcelona
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Alternate
+                        GP 1999
                       </td>
                     </tr>
                     <tr
@@ -514,13 +514,13 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Londrina
+                          Snetterton
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        long
+                        200
                       </td>
                     </tr>
                     <tr
@@ -547,13 +547,13 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Snetterton
+                          Willow Springs
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        100
+                        Horse Thief Mile
                       </td>
                     </tr>
                     <tr
@@ -580,13 +580,13 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Cordoba
+                          Barcelona
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        GP
+                        Circuit de Catalunya National No Chicane
                       </td>
                     </tr>
                     <tr
@@ -613,14 +613,12 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Nürburgring
+                          Kyalami Historic
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      >
-                        Sprint
-                      </td>
+                      />
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -646,12 +644,47 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Test Oval
+                          Barcelona
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        Circuit de Catalunya GP
+                      </td>
+                    </tr>
+                    <tr
+                      class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
+                    >
+                      <td
+                        class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-efwkj3-MuiTableCell-root"
+                      >
+                        Touring
+                      </td>
+                      <td
+                        class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
+                      >
+                        Grade D
+                      </td>
+                      <td
+                        class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
+                      >
+                        Hot Cars
+                      </td>
+                      <td
+                        class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
+                      >
+                        <div
+                          class="MuiBox-root css-10rvbm3"
+                        >
+                          Snetterton
+                        </div>
+                      </td>
+                      <td
+                        class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
+                      >
+                        100
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -1026,7 +1059,7 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         <p
                           class="MuiTypography-root MuiTypography-body2 css-1m5ndv6-MuiTypography-root"
                         >
-                          Goiania
+                          Gateway
                         </p>
                       </div>
                     </div>
@@ -1044,7 +1077,7 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         <p
                           class="MuiTypography-root MuiTypography-body2 css-1m5ndv6-MuiTypography-root"
                         >
-                          Short
+                          Road Course 1
                         </p>
                       </div>
                     </div>
@@ -6740,13 +6773,13 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Snetterton
+                          Nürburgring
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        100
+                        1971 Nords
                       </td>
                     </tr>
                     <tr
@@ -6773,13 +6806,13 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Adelaide
+                          Willow Springs
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Modern Time Trial
+                        Horse Thief Mile
                       </td>
                     </tr>
                     <tr
@@ -6806,13 +6839,13 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Cordoba
+                          Goiania
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        GP
+                        Short
                       </td>
                     </tr>
                     <tr
@@ -6839,13 +6872,13 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Buenos Aires
+                          Silverstone
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Circuito 7
+                        1975
                       </td>
                     </tr>
                     <tr
@@ -6878,7 +6911,7 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Sprint
+                        GP 2020 Sprint S
                       </td>
                     </tr>
                     <tr
@@ -6905,13 +6938,13 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Granja Viana
+                          Nürburgring
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Granja Viana Kart 102
+                        Nordschleife 2025
                       </td>
                     </tr>
                     <tr
@@ -6938,13 +6971,13 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Velo Citta
+                          Adelaide
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Club Day
+                        Modern Time Trial
                       </td>
                     </tr>
                     <tr
@@ -6971,13 +7004,46 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Snetterton
+                          Nürburgring
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        100
+                        1971 Nords
+                      </td>
+                    </tr>
+                    <tr
+                      class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
+                    >
+                      <td
+                        class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-efwkj3-MuiTableCell-root"
+                      >
+                        Touring
+                      </td>
+                      <td
+                        class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
+                      >
+                        Grade E
+                      </td>
+                      <td
+                        class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
+                      >
+                        Hot Cars
+                      </td>
+                      <td
+                        class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
+                      >
+                        <div
+                          class="MuiBox-root css-10rvbm3"
+                        >
+                          Willow Springs
+                        </div>
+                      </td>
+                      <td
+                        class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
+                      >
+                        Horse Thief Mile
                       </td>
                     </tr>
                   </tbody>
@@ -7353,7 +7419,7 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                         <p
                           class="MuiTypography-root MuiTypography-body2 css-1m5ndv6-MuiTypography-root"
                         >
-                          Buenos Aires
+                          Silverstone
                         </p>
                       </div>
                     </div>
@@ -7371,7 +7437,7 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                         <p
                           class="MuiTypography-root MuiTypography-body2 css-1m5ndv6-MuiTypography-root"
                         >
-                          Circuito 7
+                          1975
                         </p>
                       </div>
                     </div>
@@ -8610,6 +8676,39 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
                         100
+                      </td>
+                    </tr>
+                    <tr
+                      class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
+                    >
+                      <td
+                        class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-efwkj3-MuiTableCell-root"
+                      >
+                        Touring
+                      </td>
+                      <td
+                        class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
+                      >
+                        Grade E
+                      </td>
+                      <td
+                        class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
+                      >
+                        Hot Cars
+                      </td>
+                      <td
+                        class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
+                      >
+                        <div
+                          class="MuiBox-root css-10rvbm3"
+                        >
+                          Adelaide
+                        </div>
+                      </td>
+                      <td
+                        class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
+                      >
+                        Modern Time Trial
                       </td>
                     </tr>
                   </tbody>
