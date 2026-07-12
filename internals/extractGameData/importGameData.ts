@@ -132,6 +132,9 @@ const META_ALIASES: Record<string, string> = {
   'f-usagen2': 'F-USA Gen.2',
   'f-usagen3': 'F-USA Gen.3',
 };
+const NORMALIZED_META_ALIASES = Object.fromEntries(
+  Object.entries(META_ALIASES).map(([key, value]) => [normalize(key), value]),
+);
 
 export type MetaClassMapping = {
   metaClass: string;
@@ -150,8 +153,11 @@ export function metaClassMappingFor(
   if (/^les_2025$/i.test(gameClass) && /^gt4$/i.test(group)) {
     return { metaClass: 'GT4', source: 'explicit-alias' };
   }
-  if (META_ALIASES[key])
-    return { metaClass: META_ALIASES[key], source: 'explicit-alias' };
+  if (NORMALIZED_META_ALIASES[key])
+    return {
+      metaClass: NORMALIZED_META_ALIASES[key],
+      source: 'explicit-alias',
+    };
   const heuristic = (metaClass: string): MetaClassMapping => ({
     metaClass,
     source: 'heuristic-family',

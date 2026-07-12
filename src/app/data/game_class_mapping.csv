@@ -110,19 +110,19 @@ F-USA_2023_SW,F-USA Gen.3,Open Wheel,4,0,heuristic-family
 F-USA_2023_HD,F-USA Gen.3,Open Wheel,4,0,heuristic-family
 F-Vintage_Gen1,Formula Vintage G1,Vintage,3,0,explicit-alias
 LMP2_LD,P2,Endurance,3,1,explicit-alias
-F-USA_Gen3_SW,F-USA Gen.3,Open Wheel,4,0,heuristic-family
-F-USA_Gen2_SW,F-USA Gen.2,Open Wheel,4,0,heuristic-family
+F-USA_Gen3_SW,F-USA Gen.3,Open Wheel,4,0,explicit-alias
+F-USA_Gen2_SW,F-USA Gen.2,Open Wheel,4,0,explicit-alias
 GT1,GT1,Endurance,2,1,explicit-alias
 LMDh_LD,DPi,Endurance,3,1,explicit-alias
-F-USA_Gen3_HD,F-USA Gen.3,Open Wheel,4,0,heuristic-family
-F-USA_Gen3_SO,F-USA Gen.3,Open Wheel,4,0,heuristic-family
-F-USA_Gen1_SW,F-USA Gen.1,Open Wheel,4,0,heuristic-family
-F-USA_Gen2_SO,F-USA Gen.2,Open Wheel,4,0,heuristic-family
-F-USA_Gen1_SO,F-USA Gen.1,Open Wheel,4,0,heuristic-family
-F-USA_Gen2_HD,F-USA Gen.2,Open Wheel,4,0,heuristic-family
-F-USA_Gen2_SS,F-USA Gen.2,Open Wheel,4,0,heuristic-family
-F-USA_Gen3_SS,F-USA Gen.3,Open Wheel,4,0,heuristic-family
-F-USA_Gen1_HD,F-USA Gen.1,Open Wheel,4,0,heuristic-family
+F-USA_Gen3_HD,F-USA Gen.3,Open Wheel,4,0,explicit-alias
+F-USA_Gen3_SO,F-USA Gen.3,Open Wheel,4,0,explicit-alias
+F-USA_Gen1_SW,F-USA Gen.1,Open Wheel,4,0,explicit-alias
+F-USA_Gen2_SO,F-USA Gen.2,Open Wheel,4,0,explicit-alias
+F-USA_Gen1_SO,F-USA Gen.1,Open Wheel,4,0,explicit-alias
+F-USA_Gen2_HD,F-USA Gen.2,Open Wheel,4,0,explicit-alias
+F-USA_Gen2_SS,F-USA Gen.2,Open Wheel,4,0,explicit-alias
+F-USA_Gen3_SS,F-USA Gen.3,Open Wheel,4,0,explicit-alias
+F-USA_Gen1_HD,F-USA Gen.1,Open Wheel,4,0,explicit-alias
 F-V10_Gen1_LD,Formula V10 G1,Open Wheel,3,0,explicit-alias
 Stock_USA_Gen3,Group A,Touring,4,1,heuristic-family
 StockCarV8,Stock Car Brasil 19 GrA,Touring,1,0,explicit-alias
@@ -151,10 +151,10 @@ LMDh,DPi,Endurance,3,1,explicit-alias
 F-Classic_Gen3_HD,Formula Classic G3,Open Wheel,4,0,explicit-alias
 F-Classic_Gen3_LD,Formula Classic G3,Open Wheel,4,0,explicit-alias
 F-V10_Gen1,Formula V10 G1,Open Wheel,3,0,explicit-alias
-F-USA_Gen3,F-USA Gen.3,Open Wheel,4,0,heuristic-family
+F-USA_Gen3,F-USA Gen.3,Open Wheel,4,0,explicit-alias
 F-USA_2023,F-USA Gen.3,Open Wheel,4,0,heuristic-family
-F-USA_Gen2,F-USA Gen.2,Open Wheel,4,0,heuristic-family
-F-USA_Gen1,F-USA Gen.1,Open Wheel,4,0,heuristic-family
+F-USA_Gen2,F-USA Gen.2,Open Wheel,4,0,explicit-alias
+F-USA_Gen1,F-USA Gen.1,Open Wheel,4,0,explicit-alias
 F-V10_Gen2_LD,Formula V10 G2,Open Wheel,3,0,explicit-alias
 F-V10_Gen2_HD,Formula V10 G2,Open Wheel,3,0,explicit-alias
 FE-G1_LD,Formula V10 G2,Open Wheel,3,0,heuristic-family
