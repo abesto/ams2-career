@@ -52,6 +52,7 @@ import { CareerPage } from './pages/CareerPage';
 import { CarExplorerPage } from './pages/CarExplorerPage';
 import { DataDebugPage } from './pages/DataDebugPage';
 import { MainPage } from './pages/MainPage';
+import { MatrixExplorerPage } from './pages/MatrixExplorerPage';
 import { SettingsPage } from './pages/SettingsPage';
 import { TrackExplorerPage } from './pages/TrackExplorerPage';
 import { useConnectivitySlice } from './slices/ConnectivitySlice';
@@ -266,6 +267,7 @@ function InnerApp() {
             <Route path="/debug" element={<DataDebugPage />} />
             <Route path="/cars" element={<CarExplorerPage />} />
             <Route path="/tracks" element={<TrackExplorerPage />} />
+            <Route path="/matrix" element={<MatrixExplorerPage />} />
             <Route path="/career" element={<CareerPage />} />
             <Route element={<NotFoundPage />} />
           </Routes>
