@@ -9,8 +9,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ### Added
 
 - The career now includes the cars and tracks available in Automobilista 2.
-- New pages let you browse the cars and tracks in the game.
-- You can check which cars are suitable for each track.
+- Race suggestions now cover much more of the content in the game.
 
 ### Changed
 
