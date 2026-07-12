@@ -53,6 +53,7 @@ import { CarExplorerPage } from './pages/CarExplorerPage';
 import { DataDebugPage } from './pages/DataDebugPage';
 import { MainPage } from './pages/MainPage';
 import { SettingsPage } from './pages/SettingsPage';
+import { TrackExplorerPage } from './pages/TrackExplorerPage';
 import { useConnectivitySlice } from './slices/ConnectivitySlice';
 
 import changelogText from '../../CHANGELOG.md?raw';
@@ -264,6 +265,7 @@ function InnerApp() {
             <Route path="/settings" element={<SettingsPage />} />
             <Route path="/debug" element={<DataDebugPage />} />
             <Route path="/cars" element={<CarExplorerPage />} />
+            <Route path="/tracks" element={<TrackExplorerPage />} />
             <Route path="/career" element={<CareerPage />} />
             <Route element={<NotFoundPage />} />
           </Routes>
