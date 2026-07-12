@@ -308,7 +308,7 @@ export function GoRacing(props: Props) {
               onChange={handleCarSelectChange}
               label="Your Car"
             >
-              {getCarsInClass(race.carClassId).map(car => (
+              {getCarsInClass(race.carClassId, race.downforceVariant).map(car => (
                 <MenuItem key={getCarId(car)} value={getCarId(car)}>
                   {car.name}
                 </MenuItem>

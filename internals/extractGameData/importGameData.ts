@@ -205,6 +205,7 @@ function main() {
       ...row,
       has_headlights: String(Number(classRow?.headlights ?? 0) > 0),
       headlights_source: 'meta-class-default',
+      downforce_variant: /_LD(?:_|$)/i.test(row['Vehicle Class']) ? 'low' : 'standard',
       meta_class: metaClass,
       discipline: disciplineFor(metaClass),
     });
@@ -228,7 +229,11 @@ function main() {
     const id = gameId(row.Name, row.XLASTID);
     if (seenTracks.has(id)) continue;
     seenTracks.add(id);
-    tracks.push({ game_id: id, ...row });
+    tracks.push({
+      game_id: id,
+      ...row,
+      downforce_variant: row.Downforce === 'Low' ? 'low' : 'standard',
+    });
   }
 
   const appTracks = readCsv(path.join(APP_DATA_DIR, 'tracks.csv'));
@@ -251,6 +256,7 @@ function main() {
       trackMappings.push({
         game_track_id: track.game_id,
         game_track_name: track.TrackName,
+        downforce_variant: track.downforce_variant,
         meta_class: metaClass,
         mapping_source: matchingApp ? 'existing-app-matrix' : 'track-type-fallback',
       });

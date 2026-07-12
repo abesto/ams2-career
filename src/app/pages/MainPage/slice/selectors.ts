@@ -32,7 +32,7 @@ export const selectCurrentCarId = createSelector(
   [selectSelectedCars, selectSelectedRace],
   (cars, race) =>
     race
-      ? cars[race.carClassId] || getCarId(getCarsInClass(race.carClassId)[0])
+      ? cars[race.carClassId] || getCarId(getCarsInClass(race.carClassId, race.downforceVariant)[0])
       : null,
 );
 

@@ -23,6 +23,7 @@ type GameRecord = {
   'Vehicle Class': string;
   meta_class: string;
   has_headlights: string;
+  downforce_variant: 'standard' | 'low';
 };
 
 const data: Record[] = Papa.parse(carsCsv, { header: true }).data;
@@ -48,6 +49,7 @@ function gameRecordToCar(record: GameRecord): Car | null {
     gameId: record.game_id,
     gameClass: record['Vehicle Class'],
     headlights: record.has_headlights === 'true',
+    downforceVariant: record.downforce_variant,
   };
 }
 
@@ -65,10 +67,15 @@ const LEGACY_CARS: { [key: CarId]: Car } = Object.fromEntries(
     .map((car: Car) => [getCarId(car), car]),
 );
 
-export function getCarsInClass(what: CarClass | CarClassId): Car[] {
+export function getCarsInClass(
+  what: CarClass | CarClassId,
+  downforceVariant?: 'standard' | 'low',
+): Car[] {
   const carClass = getCarClass(what);
   return Object.values(CARS).filter(
-    c => c.carClassId === getCarClassId(carClass),
+    c =>
+      c.carClassId === getCarClassId(carClass) &&
+      (!downforceVariant || c.downforceVariant === downforceVariant),
   );
 }
 

@@ -1,4 +1,4 @@
-import { CarId } from './Car';
+import { CarId, DownforceVariant } from './Car';
 import { CarClassId } from './CarClass';
 import { Discipline } from './Discipline';
 import { TrackId } from './Track';
@@ -12,6 +12,7 @@ export interface Race {
   readonly carClassId: CarClassId;
   readonly playerLevel: number;
   readonly aiLevel: number;
+  readonly downforceVariant?: DownforceVariant;
 }
 
 export interface RaceResult extends Race {

@@ -1,6 +1,7 @@
 import Papa from 'papaparse';
 
 import { CarClass, CarClassId, getCarClassId } from '../../types/CarClass';
+import type { Car, DownforceVariant } from '../../types/Car';
 import { getTrackId, Track, TrackId } from '../../types/Track';
 import { getCarClassesByName } from './car_classes';
 import tracksCsv from './tracks.csv?raw';
@@ -25,15 +26,27 @@ for (const { name, configuration } of data) {
   legacyTracks.set(getTrackId(track), track);
 }
 
-type GameTrack = { game_id: string; TrackName: string; ShortTrackName: string; Track_Variation: string };
-type GameTrackMapping = { game_track_id: string; meta_class: string };
+type GameTrack = {
+  game_id: string;
+  TrackName: string;
+  ShortTrackName: string;
+  Track_Variation: string;
+  downforce_variant: DownforceVariant;
+};
+type GameTrackMapping = {
+  game_track_id: string;
+  meta_class: string;
+  downforce_variant: DownforceVariant;
+};
 const gameTracks: GameTrack[] = Papa.parse<GameTrack>(gameTracksCsv, { header: true }).data;
 const gameMappings: GameTrackMapping[] = Papa.parse<GameTrackMapping>(gameTrackMappingCsv, { header: true }).data;
-for (const { game_id, TrackName, ShortTrackName, Track_Variation } of gameTracks) {
-  const track = {
+for (const gameTrack of gameTracks) {
+  const { game_id, TrackName, ShortTrackName, Track_Variation } = gameTrack;
+  const track: Track = {
     name: TrackName ?? '',
     configuration: Track_Variation || ShortTrackName || '',
     gameId: game_id,
+    downforceVariant: gameTrack.downforce_variant,
   };
   TRACKS.set(getTrackId(track), track);
 }
@@ -58,15 +71,27 @@ export function getTrack(id: TrackId): Track {
   return track;
 }
 
-export function getTrackIdsFor(carClass: CarClass | CarClassId): TrackId[] {
+export function getTrackIdsFor(
+  carClass: CarClass | CarClassId | Car,
+  downforceVariant?: DownforceVariant,
+): TrackId[] {
+  if (typeof carClass !== 'string' && 'carClassId' in carClass) {
+    downforceVariant = carClass.downforceVariant;
+    carClass = carClass.carClassId;
+  }
   if (typeof carClass !== 'string') {
     carClass = getCarClassId(carClass);
   }
-  return CAR_CLASS_TO_TRACKS.get(carClass) || [];
+  return (CAR_CLASS_TO_TRACKS.get(carClass) || []).filter(trackId =>
+    downforceVariant ? getTrack(trackId).downforceVariant === downforceVariant : true,
+  );
 }
 
-export function getTracksFor(carClass: CarClass | CarClassId): Track[] {
-  return getTrackIdsFor(carClass).map(getTrack);
+export function getTracksFor(
+  carClass: CarClass | CarClassId | Car,
+  downforceVariant?: DownforceVariant,
+): Track[] {
+  return getTrackIdsFor(carClass, downforceVariant).map(getTrack);
 }
 
 export function getAllTracks(): Track[] {

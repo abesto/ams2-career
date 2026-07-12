@@ -7,6 +7,7 @@ import { getCarClassesAt } from 'app/data/car_classes';
 import { canRaceAtNight, getCarsInClass } from 'app/data/cars';
 import { getTrackIdsFor } from 'app/data/tracks';
 import { aiLevel, EnrichedCareerData } from 'app/slices/CareerSlice/types';
+import { DownforceVariant } from 'types/Car';
 import { CarClass, getCarClassId } from 'types/CarClass';
 import { Discipline } from 'types/Discipline';
 import { Race } from 'types/Race';
@@ -27,8 +28,8 @@ function highestUnlockedClasses(
   return [];
 }
 
-function genRaceDate(carClass: CarClass): Date {
-  const cars = getCarsInClass(carClass);
+function genRaceDate(carClass: CarClass, downforceVariant: DownforceVariant): Date {
+  const cars = getCarsInClass(carClass, downforceVariant);
 
   const startYear = Math.min(...cars.map(c => c.year));
   const start = dayjs(new Date(startYear, 1, 1)).startOf('year');
@@ -49,15 +50,21 @@ export function racegen(
   const generatedAt = new Date().getTime();
   const playerLevel = career.progress[discipline.name].level;
   return highestUnlockedClasses(discipline, playerLevel)
-    .map(carClass => {
-      return {
+    .flatMap(carClass => {
+      const variants = [
+        ...new Set(
+          getCarsInClass(carClass).map(car => car.downforceVariant || 'standard'),
+        ),
+      ].filter(variant => getTrackIdsFor(carClass, variant).length > 0);
+      return variants.map(downforceVariant => ({
         generatedAt,
-        simTime: genRaceDate(carClass).getTime(),
+        simTime: genRaceDate(carClass, downforceVariant).getTime(),
         carClassId: getCarClassId(carClass),
-        trackId: choice(getTrackIdsFor(carClass)) as TrackId,
+        trackId: choice(getTrackIdsFor(carClass, downforceVariant)) as TrackId,
+        downforceVariant,
         playerLevel,
         aiLevel: aiLevel(career, discipline),
-      };
+      }));
     })
     .filter(race => race.trackId);
 }

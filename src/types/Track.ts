@@ -1,6 +1,7 @@
 import { toAscii } from 'utils/string';
 
 import { CarClass, CarClassId } from './CarClass';
+import { Car, DownforceVariant } from './Car';
 
 import { getTrackIdsFor } from 'app/data/tracks';
 
@@ -8,6 +9,7 @@ export interface Track {
   readonly name: string;
   readonly configuration: string;
   readonly gameId?: string;
+  readonly downforceVariant?: DownforceVariant;
   // readonly multiclass: boolean;
 }
 
@@ -21,13 +23,16 @@ export function getTrackId(track: Track): TrackId {
 }
 
 export function canRaceOn(
-  carClass: CarClass | CarClassId,
+  carClass: CarClass | CarClassId | Car,
   track: Track | TrackId,
 ): boolean {
   if (typeof track !== 'string') {
     track = getTrackId(track);
   }
-  return getTrackIdsFor(carClass).some(candidate => candidate === track);
+  const variant = typeof carClass === 'string' || !('gameId' in carClass)
+    ? undefined
+    : carClass.downforceVariant;
+  return getTrackIdsFor(carClass, variant).some(candidate => candidate === track);
 }
 
 export function trackEquals(a: Track | null, b: Track | null): boolean {

@@ -45,7 +45,7 @@ export function CarsAndTracks() {
   );
 
   const tracks = hoveredCarId
-    ? getTracksFor(getCar(hoveredCarId).carClassId)
+    ? getTracksFor(getCar(hoveredCarId))
     : getAllTracks();
   tracks.sort(compareTracks);
 

@@ -2,6 +2,8 @@ import { toAscii } from 'utils/string';
 
 import { CarClassId } from './CarClass';
 
+export type DownforceVariant = 'standard' | 'low';
+
 export interface Car {
   readonly name: string;
   readonly carClassId: CarClassId;
@@ -9,6 +11,7 @@ export interface Car {
   readonly gameId?: string;
   readonly gameClass?: string;
   readonly headlights?: boolean;
+  readonly downforceVariant?: DownforceVariant;
 }
 
 export type CarId = string & { __brand: 'CarId' };
