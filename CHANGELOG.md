@@ -8,20 +8,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ### Added
 
-- The career now includes the cars and tracks available in Automobilista 2.
-- Race suggestions now cover much more of the content in the game.
+- Expanded the career with the cars and tracks available in Automobilista 2,
+  including content that was missing before.
 
 ### Changed
 
-- Race suggestions now use the cars and tracks from the game.
-- Cars that cannot be driven by players, such as safety cars, are no longer
-  offered.
+- Race suggestions now cover the expanded content and avoid unsuitable
+  car-and-track combinations.
 
 ### Fixed
 
-- Older career saves should continue to work even when the game content has
-  changed.
-- Old race results remain visible even if a car is no longer available.
+- Older career saves and their race history continue to work even when game
+  content has changed.
 
 If you spot a missing car or track, an incorrect class, or another problem,
 [report it in the issue tracker](https://github.com/abesto/ams2-career/issues).
