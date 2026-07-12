@@ -51,7 +51,7 @@ export function CarsAndTracks() {
 
   const cars = hoveredTrackId
     ? getAllCars().filter((car: Car) =>
-        canRaceOn(car.carClassId, hoveredTrackId),
+        canRaceOn(car, hoveredTrackId),
       )
     : getAllCars();
   cars.sort(compareCars);
