@@ -77,7 +77,7 @@ describe('saveload', () => {
     const loaded = load(true);
 
     expect(loaded?.saveMeta).toEqual({
-      version: 3,
+      version: versionForNewSaves(),
       timestamp: 1000,
       commit: expect.objectContaining({
         hash: expect.any(String),
@@ -208,6 +208,31 @@ describe('saveload', () => {
 
     expect(nextState.saveMeta?.version).toBe(versionForNewSaves());
     expect(reducer).not.toHaveBeenCalled();
+  });
+
+  it('migrates known editorial IDs while preserving unresolved legacy IDs', () => {
+    const state = {
+      career: {
+        raceResults: [
+          {
+            trackId: 'Azure Circuit-' as any,
+            carClassId: 'Club-1-Caterham GrA' as any,
+            carId: 'Caterham GrA-Caterham 620R' as any,
+          },
+        ],
+      },
+      mainPage: {
+        raceOptions: [{ trackId: 'Azure Circuit-' }],
+        selectedCars: { 'Club-1-Caterham GrA': 'Caterham GrA-Caterham 620R' },
+        aiAdjustment: { global: 0, discipline: {}, carClass: {}, car: { 'Caterham GrA-Caterham 620R': 2 } },
+      },
+      saveMeta: { version: 3, timestamp: 1 },
+    } as any;
+    const migrated = loadStr(JSON.stringify(state), true);
+    expect(migrated?.career?.raceResults[0].carId).toBe('Caterham_620R-8');
+    expect(migrated?.career?.raceResults[0].trackId).toBe('Azure_Circuit-4');
+    expect(migrated?.mainPage?.selectedCars?.['Club-1-Caterham GrA']).toBe('Caterham_620R-8');
+    expect(migrated?.mainPage?.aiAdjustment.car?.['Caterham_620R-8']).toBe(2);
   });
 
   it('save middleware dispatches timestamp updates and persists on timestamp actions', () => {

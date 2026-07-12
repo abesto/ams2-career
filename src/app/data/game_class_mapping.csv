@@ -1,0 +1,196 @@
+game_class,meta_class,discipline,grade,headlights,mapping_source
+F5,FTS,Open Wheel,6,0,heuristic-family
+Kart1,Karting 125CC,Karting,2,0,explicit-alias
+LMP3,P3,Endurance,4,1,explicit-alias
+SprintRace,Sprint Race,Special,3,0,heuristic-family
+F-3,F3,Open Wheel,5,0,explicit-alias
+CopaClassicB,Copa Classic (Class: B),Club,4,1,explicit-alias
+Kartcross,Karting 125CC,Karting,2,0,heuristic-family
+Cat_Superlight,Caterham GrB,Club,2,0,explicit-alias
+RX,Sprint Race,Special,3,0,heuristic-family
+F-USA_2022_SW,F-USA Gen.3,Open Wheel,4,0,heuristic-family
+F-USA_2022_SO,F-USA Gen.3,Open Wheel,4,0,heuristic-family
+GTO,GT3,GT,1,1,explicit-alias
+Cat620R,Caterham GrA,Club,1,1,explicit-alias
+Cat_Supersport,Caterham GrB,Club,2,0,explicit-alias
+KartGX390,Karting GX390,Karting,2,0,explicit-alias
+Mclaren_MP46,Formula V10 G2,Open Wheel,3,0,heuristic-family
+KartRental,Karting Rental,Karting,3,0,explicit-alias
+GT5,GT5,GT,4,0,explicit-alias
+P3,P3,Endurance,4,1,explicit-alias
+Kart125cc,Karting 125CC,Karting,2,0,explicit-alias
+CopaClassicFL,Copa Classic (Class: FL),Club,4,1,explicit-alias
+P2,P2,Endurance,3,1,explicit-alias
+SafetyCar,Street Cars A,Special,1,1,heuristic-family
+P4,P4,Endurance,5,1,explicit-alias
+ARC_Cam,ARC,Club,3,0,explicit-alias
+SuperKart,Super Kart,Karting,1,0,explicit-alias
+Cat_Academy,Caterham GrC,Club,3,1,explicit-alias
+F-Trainer,FTS,Open Wheel,6,0,explicit-alias
+KartShifter,Karting Shifter,Karting,2,0,explicit-alias
+F-Vee,FormulaVee Brazil,Open Wheel,7,0,explicit-alias
+P1,P1,Endurance,2,1,explicit-alias
+CopaFusca,Copa Fusca,Club,4,0,explicit-alias
+G40Cup,Ginetta G40 Cup,Club,1,1,explicit-alias
+F-Trainer_A,FTS,Open Wheel,6,0,explicit-alias
+SST,Sprint Race,Special,3,0,heuristic-family
+F-Inter,FTS,Open Wheel,6,0,heuristic-family
+F-Vee_Gen2,FormulaVee Brazil,Open Wheel,7,0,explicit-alias
+GT3_Gen2_LD,GT3,GT,1,1,heuristic-family
+GT4,GT4,GT,2,1,explicit-alias
+TSICup,TSI Cup,Touring,6,1,explicit-alias
+Street,Street Cars A,Special,1,1,explicit-alias
+LancerCup,Lancer Cup,Special,4,0,explicit-alias
+GTE_LD,GTE,Endurance,2,1,heuristic-family
+Supercars,Street Cars B,Special,2,1,heuristic-family
+Group 5,Group C,Endurance,1,1,explicit-alias
+F-Dirt,Sprint Race,Special,3,0,heuristic-family
+GT3,GT3,GT,1,1,explicit-alias
+MiniChallenge,GT Classics,Vintage,4,1,heuristic-family
+CopaUno,Copa Uno,Club,4,1,explicit-alias
+GT3N,GT3,GT,1,1,explicit-alias
+TC60S2,GT Classics,Vintage,4,1,heuristic-family
+GT2_05_LD,GT Classics,Vintage,4,1,heuristic-family
+Carrera Cup,Carrera Cup,GT,3,1,heuristic-family
+G55Supercup,Ginetta G55 Supercup,GT,3,1,explicit-alias
+StockCarV8_2023,Stock Car Brasil 19 GrA,Touring,1,0,explicit-alias
+CopaTruck,Copa Truck,Touring,4,0,explicit-alias
+LES_2025,GT Classics,Vintage,4,1,heuristic-family
+StockCarV8_2024,Stock Car Brasil 21 GrA,Touring,1,0,explicit-alias
+F-USA_2022,F-USA Gen.3,Open Wheel,4,0,heuristic-family
+P1Gen2,P1,Endurance,2,1,explicit-alias
+Stock_USA_Gen3_SO,Group A,Touring,4,1,heuristic-family
+Stock_USA_Gen3_SS,Group A,Touring,4,1,heuristic-family
+Stock_USA_Gen3_SW,Group A,Touring,4,1,heuristic-family
+Hypercars,Street Cars B,Special,2,1,heuristic-family
+GT1_05_LD,GT1,Endurance,2,1,heuristic-family
+Procar,M1 PROCAR,Touring,3,1,explicit-alias
+LMP2_05_LD,P2,Endurance,3,1,heuristic-family
+GTR_04_LD,GT1,Endurance,2,1,heuristic-family
+GTOpen,GT3,GT,1,1,explicit-alias
+DPI,DPi,Endurance,3,1,explicit-alias
+GTCupN,GT Classics,Vintage,4,1,heuristic-family
+GT1_LD,GT1,Endurance,2,1,heuristic-family
+GT3_Gen2,GT3,GT,1,1,explicit-alias
+OldStock,Old Stock Race 79,Touring,2,0,explicit-alias
+Hot Cars,GT Classics,Vintage,4,1,heuristic-family
+STT,Sprint Race,Special,3,0,heuristic-family
+LMP1_05_LD,P1,Endurance,2,1,heuristic-family
+GT4N,GT4,GT,2,1,explicit-alias
+GTE,GTE,Endurance,2,1,explicit-alias
+F-Ultimate_Gen2_LD,Formula Ultimate Gen2,Open Wheel,1,0,heuristic-family
+F-Ultimate_Gen2_HD,Formula Ultimate Gen2,Open Wheel,1,0,heuristic-family
+Stock_USA_Gen3_LM,Group A,Touring,4,1,heuristic-family
+TC60S,GT Classics,Vintage,4,1,heuristic-family
+ST96,GT Classics,Vintage,4,1,heuristic-family
+Group A,Group A,Touring,4,1,heuristic-family
+Stock_USA_Gen2_SO,Group A,Touring,4,1,heuristic-family
+Stock_USA_Gen2_SW,Group A,Touring,4,1,heuristic-family
+F-Junior,FTS,Open Wheel,6,0,explicit-alias
+Opala79,Old Stock Race 79,Touring,2,0,explicit-alias
+Stock_USA_Gen2_SS,Group A,Touring,4,1,heuristic-family
+Group C_LD,Group C,Endurance,1,1,heuristic-family
+Stock_USA_Gen1_SO,Group A,Touring,4,1,heuristic-family
+GT2_05,GT Classics,Vintage,4,1,heuristic-family
+Montana,Copa Montana,GT,4,0,explicit-alias
+Stock_USA_Gen1_SW,Group A,Touring,4,1,heuristic-family
+F-Ultimate_Gen2_LD_RET,Formula Ultimate Gen2,Open Wheel,1,0,heuristic-family
+SuperV8,Super V8,Touring,2,1,explicit-alias
+Super Trofeo_LD,GT Classics,Vintage,4,1,heuristic-family
+StockCarV8_2020,Stock Car Brasil 20 GrA,Touring,1,0,explicit-alias
+StockCarV8_2022,Group A,Touring,4,1,heuristic-family
+Group 7,Group C,Endurance,1,1,explicit-alias
+StockCarV8_2021,Stock Car Brasil 21 GrA,Touring,1,0,explicit-alias
+F-Vintage_Gen2,Formula Vintage G2,Vintage,3,0,explicit-alias
+LMP2_Gen1_LD,P2,Endurance,3,1,heuristic-family
+TC70S,GT Classics,Vintage,4,1,heuristic-family
+F-Retro_Gen1,Formula Retro G1,Vintage,2,0,explicit-alias
+F-USA_2023_SO,F-USA Gen.3,Open Wheel,4,0,heuristic-family
+F-USA_2023_SW,F-USA Gen.3,Open Wheel,4,0,heuristic-family
+F-USA_2023_HD,F-USA Gen.3,Open Wheel,4,0,heuristic-family
+F-Vintage_Gen1,Formula Vintage G1,Vintage,3,0,explicit-alias
+LMP2_LD,P2,Endurance,3,1,heuristic-family
+F-USA_Gen3_SW,F-USA Gen.3,Open Wheel,4,0,heuristic-family
+F-USA_Gen2_SW,F-USA Gen.2,Open Wheel,4,0,heuristic-family
+GT1,GT1,Endurance,2,1,explicit-alias
+LMDh_LD,DPi,Endurance,3,1,heuristic-family
+F-USA_Gen3_HD,F-USA Gen.3,Open Wheel,4,0,heuristic-family
+F-USA_Gen3_SO,F-USA Gen.3,Open Wheel,4,0,heuristic-family
+F-USA_Gen1_SW,F-USA Gen.1,Open Wheel,4,0,heuristic-family
+F-USA_Gen2_SO,F-USA Gen.2,Open Wheel,4,0,heuristic-family
+F-USA_Gen1_SO,F-USA Gen.1,Open Wheel,4,0,heuristic-family
+F-USA_Gen2_HD,F-USA Gen.2,Open Wheel,4,0,heuristic-family
+F-USA_Gen2_SS,F-USA Gen.2,Open Wheel,4,0,heuristic-family
+F-USA_Gen3_SS,F-USA Gen.3,Open Wheel,4,0,heuristic-family
+F-USA_Gen1_HD,F-USA Gen.1,Open Wheel,4,0,heuristic-family
+F-V10_Gen1_LD,Formula V10 G1,Open Wheel,3,0,heuristic-family
+Stock_USA_Gen3,Group A,Touring,4,1,heuristic-family
+StockCarV8,Stock Car Brasil 19 GrA,Touring,1,0,explicit-alias
+StockCar99,Stock Car Brasil 99 GrC,Touring,3,0,explicit-alias
+Opala86,Stock Car Brasil 86 GrB,Touring,2,0,explicit-alias
+GT1_05,GT1,Endurance,2,1,explicit-alias
+Group C,Group C,Endurance,1,1,explicit-alias
+F-V10_Gen1_HD,Formula V10 G1,Open Wheel,3,0,heuristic-family
+GTR_04,GT1,Endurance,2,1,explicit-alias
+LMP2_05,P2,Endurance,3,1,explicit-alias
+F-Ultimate_Gen2_RET,Formula Ultimate Gen2,Open Wheel,1,0,heuristic-family
+LMP1_05,P1,Endurance,2,1,heuristic-family
+Stock_USA_Gen2,Group A,Touring,4,1,heuristic-family
+F-Hitech_Gen2_HD,Formula Classic G2,Open Wheel,4,0,heuristic-family
+Stock_USA_Gen1,Group A,Touring,4,1,heuristic-family
+F-Ultimate_Gen2,Formula Ultimate Gen2,Open Wheel,1,0,explicit-alias
+F-Hitech_Gen2_LD,Formula Classic G2,Open Wheel,4,0,heuristic-family
+F-Retro_Gen2,Formula Retro G2,Vintage,2,0,explicit-alias
+Super Trofeo,GT Classics,Vintage,4,1,heuristic-family
+LMP2_Gen1,P2,Endurance,3,1,explicit-alias
+F-Retro_Gen3_HD,Formula Retro G3,Vintage,1,0,heuristic-family
+Trofeo_2005,GT Classics,Vintage,4,1,heuristic-family
+F-Retro_Gen3,Formula Retro G3,Vintage,1,0,explicit-alias
+LMP2,P2,Endurance,3,1,explicit-alias
+LMDh,DPi,Endurance,3,1,explicit-alias
+F-Classic_Gen3_HD,Formula Classic G3,Open Wheel,4,0,heuristic-family
+F-Classic_Gen3_LD,Formula Classic G3,Open Wheel,4,0,heuristic-family
+F-V10_Gen1,Formula V10 G1,Open Wheel,3,0,explicit-alias
+F-USA_Gen3,F-USA Gen.3,Open Wheel,4,0,heuristic-family
+F-USA_2023,F-USA Gen.3,Open Wheel,4,0,heuristic-family
+F-USA_Gen2,F-USA Gen.2,Open Wheel,4,0,heuristic-family
+F-USA_Gen1,F-USA Gen.1,Open Wheel,4,0,heuristic-family
+F-V10_Gen2_LD,Formula V10 G2,Open Wheel,3,0,heuristic-family
+F-V10_Gen2_HD,Formula V10 G2,Open Wheel,3,0,heuristic-family
+FE-G1_LD,Formula V10 G2,Open Wheel,3,0,heuristic-family
+FE-G1_HD,Formula V10 G2,Open Wheel,3,0,heuristic-family
+F-Reiza_LD,Formula Reiza,Open Wheel,2,0,heuristic-family
+F-Reiza_HD,Formula Reiza,Open Wheel,2,0,heuristic-family
+F-V8_Gen2_LD,Formula Reiza,Open Wheel,2,0,heuristic-family
+F-Hitech_Gen1_HD,Formula Classic G1,Open Wheel,4,0,heuristic-family
+F-Classic_Gen4_LD,Formula Classic G3,Open Wheel,4,0,heuristic-family
+F-V8_Gen1_HD,Formula Reiza,Open Wheel,2,0,heuristic-family
+F-V8_Gen2_HD,Formula Reiza,Open Wheel,2,0,heuristic-family
+F-Classic_Gen4_HD,Formula Classic G3,Open Wheel,4,0,heuristic-family
+F-Hitech_Gen1_LD,Formula Classic G1,Open Wheel,4,0,heuristic-family
+F-Ultimate_HD,Formula Ultimate Gen1,Open Wheel,1,0,heuristic-family
+F-V10_Gen3_LD,Formula V10 G2,Open Wheel,3,0,heuristic-family
+F-Ultimate_LD,Formula Ultimate Gen1,Open Wheel,1,0,heuristic-family
+F-V10_Gen3_HD,Formula V10 G2,Open Wheel,3,0,heuristic-family
+F-Classic_Gen2_HD,Formula Classic G2,Open Wheel,4,0,heuristic-family
+F-Classic_Gen1_HD,Formula Classic G1,Open Wheel,4,0,heuristic-family
+F-Classic_Gen2_LD,Formula Classic G2,Open Wheel,4,0,heuristic-family
+F-Ultimate_Gen1_LD,Formula Ultimate Gen1,Open Wheel,1,0,heuristic-family
+F-Ultimate_Gen1_HD,Formula Ultimate Gen1,Open Wheel,1,0,heuristic-family
+F-V12_LD,Formula V12,Open Wheel,3,0,heuristic-family
+F-Hitech_Gen2,Formula Classic G2,Open Wheel,4,0,explicit-alias
+F-Classic_Gen1,Formula Classic G1,Open Wheel,4,0,explicit-alias
+F-Classic_Gen3,Formula Classic G3,Open Wheel,4,0,explicit-alias
+F-V8_Gen1_LD,Formula Reiza,Open Wheel,2,0,heuristic-family
+F-V10_Gen2,Formula V10 G2,Open Wheel,3,0,explicit-alias
+FE-G1,Formula V10 G2,Open Wheel,3,0,heuristic-family
+F-Reiza,Formula Reiza,Open Wheel,2,0,explicit-alias
+F-V12,Formula V12,Open Wheel,3,0,explicit-alias
+F-V8_Gen2,Formula Reiza,Open Wheel,2,0,heuristic-family
+F-Classic_Gen4,Formula Classic G3,Open Wheel,4,0,explicit-alias
+F-V10_Gen3,Formula V10 G2,Open Wheel,3,0,explicit-alias
+F-V8_Gen1,Formula Reiza,Open Wheel,2,0,heuristic-family
+F-Classic_Gen2,Formula Classic G2,Open Wheel,4,0,explicit-alias
+F-Ultimate,Formula Ultimate Gen1,Open Wheel,1,0,explicit-alias
+F-Ultimate_Gen1,Formula Ultimate Gen1,Open Wheel,1,0,explicit-alias
+F-Hitech_Gen1,Formula Classic G1,Open Wheel,4,0,explicit-alias

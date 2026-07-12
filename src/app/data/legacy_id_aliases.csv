@@ -1,0 +1,296 @@
+kind,legacy_id,canonical_id,status
+car,Caterham GrA-Caterham 620R,Caterham_620R-8,canonical
+car,Ginetta G40 Cup-Ginetta G40,Ginetta_G40-131,canonical
+car,GT5-Ginetta G40 GT5,,legacy-fallback
+car,Caterham GrB-Caterham Superlight (360R),,legacy-fallback
+car,Caterham GrB-Caterham Supersport (360R),,legacy-fallback
+car,TSI Cup-Volkswagen Polo,VW_Polo-149,canonical
+car,ARC-Aussie Racing Camaro,,legacy-fallback
+car,Caterham GrC-Caterham Academy (270R),,legacy-fallback
+car,Copa Classic (Class: B)-Chevrolet Chevette,Chevette-12,canonical
+car,Copa Classic (Class: B)-Fiat Uno,,legacy-fallback
+car,Copa Classic (Class: B)-Puma GTE,Puma_GTE-94,canonical
+car,Copa Classic (Class: B)-Volkswagen Gol B,,legacy-fallback
+car,Copa Classic (Class: B)-Volkswagen Passat,,legacy-fallback
+car,Copa Classic (Class: FL)-Puma GTB,Puma_GTB-93,canonical
+car,Copa Classic (Class: FL)-Volkswagen Fusca FL,,legacy-fallback
+car,Copa Classic (Class: FL)-Volkswagen Gol FL,,legacy-fallback
+car,Copa Classic (Class: FL)-Volkswagen Passat,,legacy-fallback
+car,Copa Fusca-Volkswagen Fusca Copa,,legacy-fallback
+car,Copa Uno-Fiat Uno,,legacy-fallback
+car,Group C-Porsche 962C,Porsche_962C-89,canonical
+car,Group C-Sauber C9,,legacy-fallback
+car,GT1-McLaren F1 GTR,McLaren_F1_GTR-130,canonical
+car,GT1-Mercedes-Benz CLK LM,Mercedes_CLK-LM-68,canonical
+car,GT1-Porsche 911 GT1-98,Porsche_911_GT1_98-88,canonical
+car,GTE-BMW M8 GTE,BMW_M8_GTE-143,canonical
+car,GTE-Chevrolet Corvette C8.R,Chevrolet_Corvette_C8R-142,canonical
+car,GTE-Porsche 911 RSR-19,,legacy-fallback
+car,P1-Ginetta G58,Ginetta_G58-47,canonical
+car,P1-MetalMoro AJR - Chevrolet,MetalMoro_AJR_Chevy_V8-73,canonical
+car,P1-MetalMoro AJR - Honda,MetalMoro_AJR_Honda-71,canonical
+car,P1-MetalMoro AJR - Judd,MetalMoro_AJR_Judd-72,canonical
+car,P1-MetalMoro AJR - Nissan,MetalMoro_AJR_V6_Turbo-70,canonical
+car,DPi-Cadillac DPi-V.R,Cadillac_DPi-VR-145,canonical
+car,P2-MetalMoro MRX P2 - Ford,,legacy-fallback
+car,P2-Sigma P1,Sigma_P1-98,canonical
+car,P3-MetalMoro MRX P3 - Ford,,legacy-fallback
+car,P3-MetalMoro MRX P3 - Honda,,legacy-fallback
+car,P3-Roco 001,Roco_001-96,canonical
+car,P4-MCR S2000,MCR_Sports_2000-66,canonical
+car,P4-MetalMoro MRX P4 - Ford,,legacy-fallback
+car,GT3-BMW M6 GT3,BMW_M6_GT3-124,canonical
+car,GT3-McLaren 720S,,legacy-fallback
+car,GT3-Mercedes-AMG GT3,Mercedes_AMG_GT3-67,canonical
+car,GT3-Porsche 911 GT3 R,Porsche_991_GT3R-91,canonical
+car,GT4-BMW M4 GT4,BMW_M4_GT4-144,canonical
+car,GT4-Camaro GT4.R,,legacy-fallback
+car,GT4-Ginetta G55 GT4,Ginetta_G55_GT4_2-129,canonical
+car,GT4-McLaren 570S,,legacy-fallback
+car,GT4-Porsche Cayman GT4 CS MR,,legacy-fallback
+car,Carrera Cup-Porsche 911 GT3 Cup 3.8,Porsche_991_GT3-90,canonical
+car,Carrera Cup-Porsche 911 GT3 Cup 4.0,Porsche_991_GT3_2-122,canonical
+car,Ginetta G55 Supercup-Ginetta G55 SuperCup,,legacy-fallback
+car,Copa Montana-Chevrolet Montana,,legacy-fallback
+car,GT5-Puma P052,Puma_P052-95,canonical
+car,Super Kart-Super Kart 250cc,Superkart-102,canonical
+car,Karting 125CC-Kart 125cc 2STROKE,,legacy-fallback
+car,Karting GX390-Kart GX390 Race,,legacy-fallback
+car,Karting Shifter-Kart 125cc Shifter,,legacy-fallback
+car,Karting Rental-Kart GX390 Rental,,legacy-fallback
+car,Formula Ultimate Gen1-Formula Ultimate 2019,,legacy-fallback
+car,Formula Ultimate Gen2-Formula Ultimate 2022,,legacy-fallback
+car,Formula Reiza-Formula Reiza (Red Bull Racing RB7),,legacy-fallback
+car,Formula V10 G1-Formula V10 G1 (Dome F105),,legacy-fallback
+car,Formula V10 G1-McLaren MP4/12,,legacy-fallback
+car,Formula V10 G2-Formula V10 G2 (Williams FW22),,legacy-fallback
+car,Formula V12-Formula V12 (Ferrari 412 T2),,legacy-fallback
+car,F-USA Gen.1-Lola T95/00 Ford-Cosworth,CART_Lola_T95_Ford-174,canonical
+car,F-USA Gen.1-Lola T95/00 Mercedes-Benz,CART_Lola_T95_Mercedes-175,canonical
+car,F-USA Gen.1-Reynard 95i Ford-Cosworth,CART_Reynard_95i_Ford-176,canonical
+car,F-USA Gen.1-Reynard 95i Honda,CART_Reynard_95i_Honda-177,canonical
+car,F-USA Gen.1-Reynard 95i Mercedes-Benz,CART_Reynard_95i_Mercedes-178,canonical
+car,F-USA Gen.2-Lola T98,,legacy-fallback
+car,F-USA Gen.2-Reynard 98i Ford,,legacy-fallback
+car,F-USA Gen.2-Reynard 98i Honda,CART_Reynard_98i_Honda-155,canonical
+car,F-USA Gen.2-Reynard 98i Mercedes,,legacy-fallback
+car,F-USA Gen.2-Reynard 98i Toyota,CART_Reynard_98i_Toyota-157,canonical
+car,F-USA Gen.2-Swift 009c,,legacy-fallback
+car,F-USA Gen.3-Lola B2K00 Ford-Cosworth,CART_Lola_B2K00_Ford-164,canonical
+car,F-USA Gen.3-Lola B2K00 Mercedez-Benz,,legacy-fallback
+car,F-USA Gen.3-Lola B2K00 Toyota,CART_Lola_B2K00_Toyota-172,canonical
+car,F-USA Gen.3-Reynard 2ki Ford-Cosworth,CART_Reynard_2KI_Ford-160,canonical
+car,F-USA Gen.3-Reynard 2ki Honda,CART_Reynard_2KI_Honda-168,canonical
+car,F-USA Gen.3-Reynard 2ki Mercedez-Benz,,legacy-fallback
+car,Formula Classic G1-Formula Classic G1 M1 (Williams FW11B),,legacy-fallback
+car,Formula Classic G1-Formula Classic G1 M2 (Arrows-BMW A9),,legacy-fallback
+car,Formula Classic G2-Formula Classic G2 M1,,legacy-fallback
+car,Formula Classic G2-Formula Classic G2 M2,,legacy-fallback
+car,Formula Classic G2-Formula Classic G2 M3,,legacy-fallback
+car,Formula Classic G3-Formula Classic G3 M1 (Ferrari 643),,legacy-fallback
+car,Formula Classic G3-Formula Classic G3 M2 (Williams FW14),,legacy-fallback
+car,Formula Classic G3-Formula Classic G3 M3 (Benetton B191),,legacy-fallback
+car,F3-F301,,legacy-fallback
+car,F3-F309,,legacy-fallback
+car,FTS-Formula Trainer,Formula_Trainer-27,canonical
+car,FTS-Formula Trainer Advanced,Formula_Trainer_A-26,canonical
+car,FormulaVee Brazil-Formula Vee,,legacy-fallback
+car,FormulaVee Brazil-Formula Vee + Fin,,legacy-fallback
+car,Street Cars A-McLaren F1 LM,McLaren_F1_LM-63,canonical
+car,Street Cars B-Ultima GTR (640),,legacy-fallback
+car,Ultima-Ultima GTR Race,Ultima_GTR_Race-103,canonical
+car,Sprint Race-Sprint Race,Sprint_Race-99,canonical
+car,Lancer Cup-Mitsubishi Lancer R,Mitsubishi_LancerR-78,canonical
+car,Lancer Cup-Mitsubishi Lancer RS,Mitsubishi_LancerRS-79,canonical
+car,Street Cars C-Chevrolet Camaro SS,Camaro_SS-7,canonical
+car,Stock Car Brasil 19 GrA-Chevrolet Cruz 2019,,legacy-fallback
+car,Stock Car Brasil 20 GrA-Chevrolet Cruz 2020,,legacy-fallback
+car,Stock Car Brasil 20 GrA-Toyota Carolla 2020,,legacy-fallback
+car,Stock Car Brasil 21 GrA-Chevrolet Cruz 2021,,legacy-fallback
+car,Stock Car Brasil 21 GrA-Toyota Carolla 2021,,legacy-fallback
+car,Old Stock Race 79-Chevrolet Opala 1979,,legacy-fallback
+car,Stock Car Brasil 86 GrB-Chevrolet Opala 1986,,legacy-fallback
+car,Super V8-Super V8 (Gen2 ZB),,legacy-fallback
+car,M1 PROCAR-BMW M1 Procar,BMW_M1-5,canonical
+car,Stock Car Brasil 99 GrC-Chevrolet Omega,,legacy-fallback
+car,Copa Truck-IVECO Stralis,Copa_Truck_Iveco-37,canonical
+car,Copa Truck-MAN TGX,Copa_Truck_MAN-38,canonical
+car,Copa Truck-Mercedes-Benz Actros-2651,,legacy-fallback
+car,Copa Truck-Volkswagen Constellation,Copa_Truck_VW-40,canonical
+car,Group A-BMW M3 Sport Evo GrA,,legacy-fallback
+car,Group A-Mercedes-Benz 190E EVO 2 DTM,,legacy-fallback
+car,Hot Cars-Volkswagen Fusca HC1,,legacy-fallback
+car,Hot Cars-Volkswagen Fusca HC2,,legacy-fallback
+car,Hot Cars-Volkswagen Gol HC,,legacy-fallback
+car,Hot Cars-Volkswagen Passat HC,,legacy-fallback
+car,JCW-MINI Cooper JCW,Mini_Cooper-118,canonical
+car,TSI Cup-Volkswagen Virtus,VW_Virtus-150,canonical
+car,Formula Retro G3-Formula Retro Gen3 DFY,Formula_Retro_G3-162,canonical
+car,Formula Retro G3-Formula Retro Gen3 Turbo,Formula_Retro_G3_TE-167,canonical
+car,Formula Retro G3-McLaren MP4-1C,,legacy-fallback
+car,Formula Retro G1-Brabham BT44,Brabham_BT44-24,canonical
+car,Formula Retro G1-Formula Retro V12,Formula_Retro_V12-128,canonical
+car,Formula Retro G1-Formula Retro V8,Formula_Retro_V8-126,canonical
+car,Formula Retro G1-Lotus Type 72E,,legacy-fallback
+car,Formula Retro G1-McLaren M23,McLaren_M23-112,canonical
+car,Formula Retro G2-Brabham BT46B,,legacy-fallback
+car,Formula Retro G2-Formula Retro Gen2,Formula_Retro_G2-139,canonical
+car,Formula Retro G2-Lotus 79,Lotus_79-137,canonical
+car,Formula Vintage G1-Formula Vintage G1 M1 (Lotus 49),,legacy-fallback
+car,Formula Vintage G1-Formula Vintage G1 M2 (AAR Eagle Mk1),,legacy-fallback
+car,Formula Vintage G2-Brabham BT26A,Repco_Brabham_BT26-115,canonical
+car,Formula Vintage G2-Formula Vintage G2 M1,,legacy-fallback
+car,Formula Vintage G2-Formula Vintage G2 M2,,legacy-fallback
+car,Formula Vintage G2-Lotus Type 49C,,legacy-fallback
+car,GT Classics-Chevrolet Corvette C3.R,Chevrolet_Corvette_C3_RC-148,canonical
+car,GT Classics-Porsche 911 RSR,,legacy-fallback
+car,Vintage Touring Cars T1-BMW 2002 Turbo,BMW_2002_Turbo-4,canonical
+car,Vintage Touring Cars T1-Chevrolet Corvette C3,Chevrolet_Corvette_73-141,canonical
+car,Vintage Touring Cars T2-Lotus 23,Lotus_23-119,canonical
+car,Vintage Touring Cars T2-Mini Cooper S,,legacy-fallback
+track,Adelaide V8-,,legacy-fallback
+track,Adelaide GP-1988,,legacy-fallback
+track,Azure Circuit-,Azure_Circuit-4,canonical
+track,Bathurst-,,legacy-fallback
+track,Brands Hatch-GP,,legacy-fallback
+track,Brands Hatch-Indy,,legacy-fallback
+track,Brasília-Full,,legacy-fallback
+track,Brasília-Outer,,legacy-fallback
+track,Cadwell Park-,CadwellPark-9,canonical
+track,Campo Grande-,,legacy-fallback
+track,Cascais-,Cascais-26,canonical
+track,Cascais-Alternate,Cascais-26,canonical
+track,Cascavel-,,legacy-fallback
+track,Cleveland-,,legacy-fallback
+track,Curitiba-,,legacy-fallback
+track,Curitiba-Oval,,legacy-fallback
+track,Curvelo-Long,,legacy-fallback
+track,Curvelo-Short,,legacy-fallback
+track,Daytona-24 Hour Course,,legacy-fallback
+track,Daytona-Nascar Course,,legacy-fallback
+track,Donington-GP,,legacy-fallback
+track,Donington-National,,legacy-fallback
+track,Goiânia-,,legacy-fallback
+track,Goiânia-Oval,,legacy-fallback
+track,Goiânia-Short,,legacy-fallback
+track,Guaporé-,,legacy-fallback
+track,Hockenheimring-1977,,legacy-fallback
+track,Hockenheimring-National,,legacy-fallback
+track,Hockenheimring-Short A,,legacy-fallback
+track,Hockenheimring-Short B,,legacy-fallback
+track,Hockenheimring-1988,,legacy-fallback
+track,Hockenheimring-2001,,legacy-fallback
+track,Hockenheimring-2020,,legacy-fallback
+track,Ibarra-,,legacy-fallback
+track,Ibarra-Reverse,,legacy-fallback
+track,Imola GP-,,legacy-fallback
+track,Imola-1972,,legacy-fallback
+track,Imola-1988,,legacy-fallback
+track,Imola-2001,,legacy-fallback
+track,Interlagos GP-,Interlagos_GP-47,canonical
+track,Interlagos-Stock Car,,legacy-fallback
+track,Interlagos-1976,,legacy-fallback
+track,Interlagos-1976 Outer,,legacy-fallback
+track,Jacarepaguá-1988,,legacy-fallback
+track,Jacarepaguá-2005,,legacy-fallback
+track,Jacarepaguá-2005 Oval,,legacy-fallback
+track,Jacarepaguá-2005 SCB,,legacy-fallback
+track,Jacarepaguá-2005 Short,,legacy-fallback
+track,Jerez-Moto,,legacy-fallback
+track,Jerez-Chicane,,legacy-fallback
+track,Kansai GP-,Kansai-56,canonical
+track,Kansai-Classic,,legacy-fallback
+track,Kansai-East,,legacy-fallback
+track,Kansai-West,,legacy-fallback
+track,Kyalami-,,legacy-fallback
+track,Kyalami-1976,,legacy-fallback
+track,Laguna Seca-,,legacy-fallback
+track,Londrina-Long,,legacy-fallback
+track,Londrina-Short,,legacy-fallback
+track,Long Beach-,Long_Beach-65,canonical
+track,Monza GP-,,legacy-fallback
+track,Monza-Junior,,legacy-fallback
+track,Monza-1991,,legacy-fallback
+track,Monza-71 Junior,,legacy-fallback
+track,Monza-1971,,legacy-fallback
+track,Monza-1971 10k,,legacy-fallback
+track,Monza-1971 10k No Chicane,,legacy-fallback
+track,Montreal 2019-,,legacy-fallback
+track,Montreal-1988,,legacy-fallback
+track,Nürburgring-Nordschleife 2020,,legacy-fallback
+track,Nürburgring-Nordschleife 24 Hour,,legacy-fallback
+track,Nürburgring-24H,,legacy-fallback
+track,Nürburgring-GP,,legacy-fallback
+track,Nürburgring-Short,,legacy-fallback
+track,Oulton Park-Classic,,legacy-fallback
+track,Oulton Park-Fosters,,legacy-fallback
+track,Oulton Park-International,,legacy-fallback
+track,Oulton Park-Island,,legacy-fallback
+track,Road America-,,legacy-fallback
+track,Road America-Bend,,legacy-fallback
+track,Santa Cruz du sol-,,legacy-fallback
+track,Salvador-,,legacy-fallback
+track,Silverstone-2019,,legacy-fallback
+track,Silverstone-(2019) National,,legacy-fallback
+track,Silverstone-(2019) International,,legacy-fallback
+track,"Silverstone-1975 ""Chicane""",,legacy-fallback
+track,"Silverstone-1975 ""No chicane""",,legacy-fallback
+track,Silverstone-1991,,legacy-fallback
+track,Silverstone-2001,,legacy-fallback
+track,Silverstone-2001 International,,legacy-fallback
+track,Silverstone-2001 National,,legacy-fallback
+track,Snetterton-100,,legacy-fallback
+track,Snetterton-200,,legacy-fallback
+track,Snetterton-300,,legacy-fallback
+track,Spa-2020,,legacy-fallback
+track,Spa-1993,,legacy-fallback
+track,Spielberg-1974,,legacy-fallback
+track,Spielberg-1977,,legacy-fallback
+track,Spielberg-GP,,legacy-fallback
+track,Spielberg-Short,,legacy-fallback
+track,Tarumã-Chicane,,legacy-fallback
+track,Tarumã-Internacional,,legacy-fallback
+track,Velo Città-,,legacy-fallback
+track,Velo Città-Club Day,,legacy-fallback
+track,Velo Città-Track Day,,legacy-fallback
+track,Velopark-,,legacy-fallback
+track,Velopark-2010,,legacy-fallback
+track,VIR-Full,,legacy-fallback
+track,VIR-Grand,,legacy-fallback
+track,VIR-North,,legacy-fallback
+track,VIR-Patriot,,legacy-fallback
+track,VIR-South,,legacy-fallback
+track,Watkins Glen-GP,,legacy-fallback
+track,Watkins Glen-GP Inner Loop,,legacy-fallback
+track,Watkins Glen-Short,,legacy-fallback
+track,Watkins Glen-Short Inner Loop,,legacy-fallback
+track,Baskerud-Long,,legacy-fallback
+track,Baskerud-Short,,legacy-fallback
+track,Granja Viana Kart-Stage 2,,legacy-fallback
+track,Granja Viana Kart-101,,legacy-fallback
+track,Granja Viana Kart-102,,legacy-fallback
+track,Granja Viana Kart-121,,legacy-fallback
+track,Interlagos-Kart One,,legacy-fallback
+track,Interlagos-Kart Two,,legacy-fallback
+track,Interlagos-Kart Three,,legacy-fallback
+track,Londrina Kart-One,,legacy-fallback
+track,Londrina Kart-Two,,legacy-fallback
+track,Ortana-Kart 1,,legacy-fallback
+track,Ortana-Kart 2,,legacy-fallback
+track,Ortana-Kart 3,,legacy-fallback
+track,Ortana-Kart 4,,legacy-fallback
+track,Speedland-1,,legacy-fallback
+track,Speedland-2,,legacy-fallback
+track,Speedland-3,,legacy-fallback
+track,Speedland-4,,legacy-fallback
+track,Termas Río Hondo-,,legacy-fallback
+track,Buenos Aires Circuito-No.6,,legacy-fallback
+track,Buenos Aires Circuito-No.6s,,legacy-fallback
+track,Buenos Aires Circuito-No.7,,legacy-fallback
+track,Buenos Aires Circuito-No.8,,legacy-fallback
+track,Buenos Aires Circuito-No.9,,legacy-fallback
+track,Buenos Aires Circuito-No.12,,legacy-fallback
+track,Buenos Aires Circuito-No.15,,legacy-fallback
+track,Córdoba-TC,,legacy-fallback
+track,Córdoba-Nr.2,,legacy-fallback
+track,Córdoba-Nr.4,,legacy-fallback

@@ -1,10 +1,12 @@
 import LZString from 'lz-string';
 import { AnyAction, Middleware } from 'redux';
+import Papa from 'papaparse';
 
 import { createAction, Reducer } from '@reduxjs/toolkit';
 
 import { buildInfo } from '../buildInfo';
 import { RootState } from 'types';
+import legacyAliasesCsv from 'app/data/legacy_id_aliases.csv?raw';
 
 const storage = () => window.localStorage;
 
@@ -17,6 +19,44 @@ function saveKey(version: number | string) {
 
 // Store changelog data in a separate item, so that saving / loading a career doesn't overwrite what changelog popups get displayed.
 const CHANGELOG_SLICE_KEY = 'changelog';
+
+type LegacyAlias = { kind: string; legacy_id: string; canonical_id: string };
+const LEGACY_ID_ALIASES = new Map(
+  (Papa.parse<LegacyAlias>(legacyAliasesCsv, {
+    header: true,
+    skipEmptyLines: true,
+  }).data as LegacyAlias[])
+    .filter(row => row.legacy_id && row.canonical_id)
+    .map(row => [row.legacy_id, row.canonical_id]),
+);
+
+function canonicalId(id: string): string {
+  return LEGACY_ID_ALIASES.get(id) || id;
+}
+
+function migrateCanonicalIds(state: RootState) {
+  state.career?.raceResults.forEach(result => {
+    (result as any).carId = canonicalId(result.carId);
+    (result as any).trackId = canonicalId(result.trackId);
+  });
+  state.mainPage?.raceOptions.forEach(option => {
+    (option as any).trackId = canonicalId(option.trackId);
+  });
+  if (state.mainPage) {
+    state.mainPage.selectedCars = Object.fromEntries(
+      Object.entries(state.mainPage.selectedCars).map(([classId, carId]) => [
+        classId,
+        canonicalId(carId),
+      ]),
+    ) as typeof state.mainPage.selectedCars;
+    state.mainPage.aiAdjustment.car = Object.fromEntries(
+      Object.entries(state.mainPage.aiAdjustment.car).map(([carId, value]) => [
+        canonicalId(carId),
+        value,
+      ]),
+    ) as typeof state.mainPage.aiAdjustment.car;
+  }
+}
 
 function loadChangelog(state: RootState) {
   const data = storage().getItem(CHANGELOG_SLICE_KEY);
@@ -74,6 +114,9 @@ const MIGRATIONS = [
       }
     });
   },
+
+  // Rewrite known editorial car and track IDs to canonical game IDs.
+  migrateCanonicalIds,
 ];
 
 const LATEST = 'latest';

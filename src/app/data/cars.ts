@@ -7,6 +7,7 @@ import { getCarClass, getCarClassesByName } from './car_classes';
 import { getDiscipline } from './disciplines';
 import { getTrackIdsFor } from './tracks';
 import carsCsv from './cars.csv?raw';
+import gameCarsCsv from './game_cars.csv?raw';
 
 type Record = {
   car: string;
@@ -15,9 +16,19 @@ type Record = {
   year: string;
 };
 
-const data: Record[] = Papa.parse(carsCsv, { header: true }).data;
+type GameRecord = {
+  game_id: string;
+  'Vehicle Name': string;
+  'Vehicle Year': string;
+  'Vehicle Class': string;
+  meta_class: string;
+  has_headlights: string;
+};
 
-function recordToCars(record: Record): Car[] {
+const data: Record[] = Papa.parse(carsCsv, { header: true }).data;
+const gameData: GameRecord[] = Papa.parse(gameCarsCsv, { header: true }).data;
+
+function recordToLegacyCars(record: Record): Car[] {
   return getCarClassesByName(record.class).map(carClass => ({
     name: record.car,
     carClassId: getCarClassId(carClass),
@@ -27,12 +38,30 @@ function recordToCars(record: Record): Car[] {
   }));
 }
 
+function gameRecordToCar(record: GameRecord): Car | null {
+  const carClass = getCarClassesByName(record.meta_class)[0];
+  if (!carClass) return null;
+  return {
+    name: record['Vehicle Name'],
+    carClassId: getCarClassId(carClass),
+    year: parseInt(record['Vehicle Year'], 10) || new Date().getFullYear() - 10,
+    gameId: record.game_id,
+    gameClass: record['Vehicle Class'],
+    headlights: record.has_headlights === 'true',
+  };
+}
+
 const CARS: { [key: CarId]: Car } = Object.fromEntries(
+  gameData
+    .map(gameRecordToCar)
+    .filter((car): car is Car => Boolean(car))
+    .filter(car => getTrackIdsFor(getCarClassOfCar(car)).length > 0)
+    .map(car => [getCarId(car), car]),
+);
+
+const LEGACY_CARS: { [key: CarId]: Car } = Object.fromEntries(
   data
-    .flatMap(recordToCars)
-    .filter(
-      (car: Car) => car && getTrackIdsFor(getCarClassOfCar(car)).length > 0,
-    )
+    .flatMap(recordToLegacyCars)
     .map((car: Car) => [getCarId(car), car]),
 );
 
@@ -44,6 +73,9 @@ export function getCarsInClass(what: CarClass | CarClassId): Car[] {
 }
 
 export function canRaceAtNight(what: Car | CarClass): boolean {
+  if (what.hasOwnProperty('carClassId') && (what as Car).headlights !== undefined) {
+    return (what as Car).headlights!;
+  }
   let carClass = what.hasOwnProperty('carClassId')
     ? getCarClassOfCar(what as Car)
     : (what as CarClass);
@@ -59,10 +91,10 @@ export function getDisciplineOfCar(car: Car): Discipline {
 }
 
 export function getCar(carId: CarId): Car {
-  if (!CARS[carId]) {
+  if (!CARS[carId] && !LEGACY_CARS[carId]) {
     throw new Error(`Unknown car: ${carId}`);
   }
-  return CARS[carId];
+  return CARS[carId] || LEGACY_CARS[carId];
 }
 
 export function getAllCars(): Car[] {

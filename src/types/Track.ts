@@ -7,12 +7,16 @@ import { getTrackIdsFor } from 'app/data/tracks';
 export interface Track {
   readonly name: string;
   readonly configuration: string;
+  readonly gameId?: string;
   // readonly multiclass: boolean;
 }
 
 export type TrackId = string & { __brand: 'TrackId' };
 
 export function getTrackId(track: Track): TrackId {
+  if (track.gameId) {
+    return track.gameId as TrackId;
+  }
   return `${toAscii(track.name)}-${toAscii(track.configuration)}` as TrackId;
 }
 
