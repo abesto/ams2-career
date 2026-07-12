@@ -24,6 +24,7 @@ type GameRecord = {
   'Vehicle Year': string;
   'Vehicle Class': string;
   'AI ONLY': string;
+  aero_variant: 'standard' | 'low-drag' | 'high-downforce';
   meta_class: string;
   has_headlights: string;
   downforce_variant: 'standard' | 'low';
@@ -52,7 +53,7 @@ function gameRecordToCars(record: GameRecord): Car[] {
     gameId: `${record.canonical_id}-${getCarClassId(carClass)}`,
     gameClass: record['Vehicle Class'],
     headlights: record.has_headlights === 'true',
-    downforceVariant: record.downforce_variant,
+    downforceVariant: 'standard',
     hasDedicatedHighDownforceVariant:
       record['Vehicle Variant High Downforce Track'] !== '',
   }));

@@ -42,8 +42,12 @@ function main() {
     errors.push('mapping with undefined app meta class');
   if (trackMappings.some(row => !trackIds.has(row.game_track_id)))
     errors.push('track mapping with unknown track ID');
-  if (cars.some(row => !['standard', 'low'].includes(row.downforce_variant)))
-    errors.push('car with invalid downforce variant');
+  if (
+    cars.some(
+      row => !['standard', 'low-drag', 'high-downforce'].includes(row.aero_variant),
+    )
+  )
+    errors.push('car with invalid aero variant');
   if (tracks.some(row => !['standard', 'low'].includes(row.downforce_variant)))
     errors.push('track with invalid downforce variant');
   const mappingSources = (source: string) =>
@@ -71,7 +75,8 @@ function main() {
     `- Legacy aliases: ${aliases.length}`,
     `- Legacy aliases migrated to canonical IDs: ${aliases.filter(row => row.status === 'canonical').length}`,
     `- Legacy aliases retained through fallback: ${aliases.filter(row => row.status === 'legacy-fallback').length}`,
-    `- Low-downforce cars: ${cars.filter(row => row.downforce_variant === 'low').length}`,
+    `- AI low-drag car variants: ${cars.filter(row => row.aero_variant === 'low-drag').length}`,
+    `- AI high-downforce car variants: ${cars.filter(row => row.aero_variant === 'high-downforce').length}`,
     `- Low-downforce tracks: ${tracks.filter(row => row.downforce_variant === 'low').length}`,
     `- Explicit class aliases: ${mappingSources('explicit-alias')}`,
     `- Heuristic class families: ${mappingSources('heuristic-family')}`,

@@ -300,9 +300,11 @@ function main() {
       ...row,
       has_headlights: String(Number(classRow?.headlights ?? 0) > 0),
       headlights_source: `meta-class-default:${metaClass}`,
-      downforce_variant: /_LD(?:_|$)/i.test(row['Vehicle Class'])
-        ? 'low'
-        : 'standard',
+      aero_variant: /_LD(?:_|$)/i.test(row['Vehicle Class'])
+        ? 'low-drag'
+        : /_HD(?:_|$)/i.test(row['Vehicle Class'])
+          ? 'high-downforce'
+          : 'standard',
       meta_class: metaClass,
       discipline: disciplineFor(metaClass),
     });
