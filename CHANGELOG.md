@@ -8,18 +8,25 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ### Added
 
-- Added canonical Automobilista 2 car and track data explorers plus a compatibility matrix.
+- Added all player-selectable Automobilista 2 cars and tracks from the game data.
+- Added car and track explorers so you can browse the imported game content.
+- Added a car/track compatibility matrix for checking which combinations make
+  sense.
 
 ### Changed
 
-- Refreshed imported game metadata, class mappings, track labels, and legacy save aliases.
-- AI-only vehicles, including safety cars and aero variants, are no longer selectable.
-- Improved car/track compatibility handling for kart, rallycross, oval, and point-to-point layouts.
+- Race offers now use the imported game content and improved compatibility
+  information.
+- AI-only vehicles, such as safety cars and special aero variants, are hidden
+  from player car selection.
 
 ### Fixed
 
 - Older saves with retired cars, tracks, classes, or race offers no longer crash the app.
 - Historical logbook entries remain visible when their original car is no longer selectable.
+
+If you spot a missing car or track, an incorrect class, or another problem,
+[report it in the issue tracker](https://github.com/abesto/ams2-career/issues).
 
 ## [1.7.0] - 2026-07-11
 
