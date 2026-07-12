@@ -114,14 +114,13 @@ export function getTrackLabels(source: TrackLabelSource): TrackLabels {
     : '';
   const rawConfiguration =
     configurationFromDisplayName ||
-    (source.variation &&
-    comparable(source.variation) !== comparable(source.name)
-      ? comparable(configurationFromTrackName).endsWith(
-          comparable(source.variation),
-        )
-        ? configurationFromTrackName
-        : source.variation
-      : configurationFromTrackName);
+    (configurationFromTrackName &&
+    comparable(configurationFromTrackName) !== comparable(source.name)
+      ? configurationFromTrackName
+      : source.variation &&
+          comparable(source.variation) !== comparable(source.name)
+        ? source.variation
+        : configurationFromTrackName);
   const configuration = deduplicateConfiguration(
     formatTrackLabel(rawConfiguration),
     name,

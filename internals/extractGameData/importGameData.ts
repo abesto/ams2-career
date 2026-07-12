@@ -271,6 +271,78 @@ function disciplineFor(metaClass: string): string {
   return rows.find(row => row.class === metaClass)?.discipline ?? 'GT';
 }
 
+function trackClassesFor(
+  track: Row,
+  labels: ReturnType<typeof getTrackLabels>,
+  appTracks: Row[],
+  classRows: Row[],
+): { classes: string[]; source: string } {
+  const normalizedLabel = normalize(`${labels.name} ${labels.configuration}`);
+  const matchingApps = appTracks.filter(
+    app =>
+      normalize(`${app.name} ${app.configuration}`) === normalizedLabel ||
+      normalize(app.name) === normalize(track.TrackName),
+  );
+  if (matchingApps.length === 1) {
+    return {
+      classes: Object.entries(matchingApps[0])
+        .filter(([, value]) => value === 'x')
+        .map(([name]) => name),
+      source: 'existing-app-matrix',
+    };
+  }
+
+  const type = track['Track Type'];
+  if (type === 'Kart') {
+    return {
+      classes: classRows
+        .filter(row => /kart/i.test(row.class))
+        .map(row => row.class),
+      source: 'track-type-fallback',
+    };
+  }
+  if (type === 'Rallycross') {
+    return {
+      classes: ['Sprint Race', 'FTS', 'GT5'],
+      source: 'track-type-fallback',
+    };
+  }
+  if (type === 'Oval') {
+    return {
+      classes: classRows
+        .filter(row => /stock|copa|f-usa|super v8|montana/i.test(row.class))
+        .map(row => row.class),
+      source: 'track-type-fallback',
+    };
+  }
+  if (type === 'Point to Point') {
+    const pointToPointClasses = new Set([
+      'Street Cars A',
+      'Street Cars B',
+      'Street Cars C',
+      'Hot Cars',
+      'Ultima',
+      'GT5',
+      'Ginetta G40 Cup',
+      'Ginetta G55 Supercup',
+      'Carrera Cup',
+      'JCW',
+    ]);
+    return {
+      classes: classRows
+        .filter(row => pointToPointClasses.has(row.class))
+        .map(row => row.class),
+      source: 'track-type-fallback',
+    };
+  }
+  return {
+    classes: classRows
+      .filter(row => !/kart/i.test(row.class))
+      .map(row => row.class),
+    source: 'track-type-fallback',
+  };
+}
+
 function main() {
   const classRows = readCsv(path.join(APP_DATA_DIR, 'car_classes.csv'));
   const classByName = new Map(classRows.map(row => [row.class, row]));
@@ -354,35 +426,25 @@ function main() {
   const appTracks = readCsv(path.join(APP_DATA_DIR, 'tracks.csv'));
   const trackMappings: Row[] = [];
   for (const track of tracks) {
-    const matchingApp = appTracks.find(
-      app =>
-        normalize(app.name) === normalize(track.TrackName) ||
-        normalize(app.name) === normalize(track['Track Group']),
+    const labels = getTrackLabels({
+      name: track.TrackName,
+      shortName: track.ShortTrackName,
+      variation: track.Track_Variation,
+      category: track['Track Group'],
+    });
+    const { classes: mappedClasses, source } = trackClassesFor(
+      track,
+      labels,
+      appTracks,
+      classRows,
     );
-    const mappedClasses = matchingApp
-      ? Object.entries(matchingApp)
-          .filter(([, value]) => value === 'x')
-          .map(([name]) => name)
-      : classRows
-          .filter(row => {
-            const type = track['Track Type'];
-            if (type === 'Kart') return /kart/i.test(row.class);
-            if (type === 'Rallycross')
-              return ['Sprint Race', 'FTS', 'GT5'].includes(row.class);
-            if (type === 'Oval')
-              return /stock|copa|f-usa|super v8|montana/i.test(row.class);
-            return true;
-          })
-          .map(row => row.class);
-    for (const metaClass of mappedClasses) {
+    for (const metaClass of new Set(mappedClasses)) {
       trackMappings.push({
         game_track_id: track.game_id,
         game_track_name: track.TrackName,
         downforce_variant: track.downforce_variant,
         meta_class: metaClass,
-        mapping_source: matchingApp
-          ? 'existing-app-matrix'
-          : 'track-type-fallback',
+        mapping_source: source,
       });
     }
   }

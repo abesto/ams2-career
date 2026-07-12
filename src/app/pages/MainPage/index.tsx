@@ -38,10 +38,17 @@ export function MainPage(props: Props) {
   const [resultFeedbackOpen, setResultFeedbackOpen] = React.useState(false);
 
   React.useEffect(() => {
-    if (slice.raceOptions.length === 0) {
+    if (slice.raceOptions.length === 0 || (selectedRace && !currentCarId)) {
       dispatch(mainPageActions.generateRaces({ career }));
     }
-  });
+  }, [
+    career,
+    currentCarId,
+    dispatch,
+    mainPageActions,
+    selectedRace,
+    slice.raceOptions.length,
+  ]);
 
   function recordResult(
     carId: CarId,
@@ -109,7 +116,7 @@ export function MainPage(props: Props) {
           </Grid>
           <Grid size={{ xs: 12, xl: 6 }}>
             <Paper sx={{ height: '100%', p: 3 }}>
-              {selectedRace !== null ? (
+              {selectedRace !== null && currentCarId !== null ? (
                 <>
                   <Typography variant="h5" sx={{ mb: 0.5 }}>
                     Race setup and results
@@ -144,6 +151,21 @@ export function MainPage(props: Props) {
                     }
                   />
                 </>
+              ) : selectedRace !== null ? (
+                <Stack spacing={2}>
+                  <Typography color="text.secondary">
+                    This saved race is no longer compatible with the current car
+                    data. New race offers are being generated.
+                  </Typography>
+                  <Button
+                    variant="outlined"
+                    onClick={() =>
+                      dispatch(mainPageActions.generateRaces({ career }))
+                    }
+                  >
+                    Generate new races
+                  </Button>
+                </Stack>
               ) : (
                 <Stack
                   spacing={1.5}

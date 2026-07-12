@@ -157,7 +157,7 @@ track,Brands Hatch-Indy,BrandsHatch-8,canonical
 track,Brasília-Full,,legacy-fallback
 track,Brasília-Outer,,legacy-fallback
 track,Cadwell Park-,CadwellPark-9,canonical
-track,Campo Grande-,CampoGrande-16,canonical
+track,Campo Grande-,,legacy-fallback
 track,Cascais-,Cascais-26,canonical
 track,Cascais-Alternate,Cascais-26,canonical
 track,Cascavel-,,legacy-fallback
@@ -197,7 +197,7 @@ track,Jacarepaguá-2005 Oval,,legacy-fallback
 track,Jacarepaguá-2005 SCB,,legacy-fallback
 track,Jacarepaguá-2005 Short,,legacy-fallback
 track,Jerez-Moto,,legacy-fallback
-track,Jerez-Chicane,Jerez_2019-52,canonical
+track,Jerez-Chicane,,legacy-fallback
 track,Kansai GP-,Kansai-56,canonical
 track,Kansai-Classic,Kansai-54,canonical
 track,Kansai-East,Kansai-55,canonical

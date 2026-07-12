@@ -23,6 +23,20 @@ describe('track labels', () => {
     });
   });
 
+  it('keeps layout-specific suffixes when variation metadata is generic', () => {
+    expect(
+      getTrackLabels({
+        name: 'InterlagosKart1',
+        variation: 'GP',
+        category: 'Interlagos',
+      }),
+    ).toEqual({
+      name: 'Interlagos',
+      configuration: 'Kart 1',
+      category: 'Interlagos',
+    });
+  });
+
   it('uses the track category when the game does not provide one', () => {
     expect(getTrackLabels({ name: 'Tykki_RX', variation: 'Tykki_RX' })).toEqual(
       {

@@ -30,11 +30,16 @@ export const selectSelectedCars = createSelector(
 
 export const selectCurrentCarId = createSelector(
   [selectSelectedCars, selectSelectedRace],
-  (cars, race) =>
-    race
-      ? cars[race.carClassId] ||
-        getCarId(getCarsInClassAtTrack(race.carClassId, race.trackId)[0])
-      : null,
+  (cars, race) => {
+    if (!race) return null;
+    const selectedCarId = cars[race.carClassId];
+    if (selectedCarId) return selectedCarId;
+    const availableCar = getCarsInClassAtTrack(
+      race.carClassId,
+      race.trackId,
+    )[0];
+    return availableCar ? getCarId(availableCar) : null;
+  },
 );
 
 export const selectAIAdjustment = createSelector(

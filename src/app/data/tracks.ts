@@ -93,10 +93,6 @@ export function getTrackIdsFor(
   carClass: CarClass | CarClassId | Car,
   downforceVariant?: DownforceVariant,
 ): TrackId[] {
-  const car =
-    typeof carClass !== 'string' && 'carClassId' in carClass
-      ? carClass
-      : undefined;
   if (typeof carClass !== 'string' && 'carClassId' in carClass) {
     downforceVariant = carClass.downforceVariant;
     carClass = carClass.carClassId;
@@ -108,13 +104,7 @@ export function getTrackIdsFor(
     const track = getTrack(trackId);
     if (downforceVariant && track.downforceVariant !== downforceVariant)
       return false;
-
-    // AMS2 swaps these base cars for their dedicated high-downforce vehicle
-    // on standard tracks. Expose the vehicle the game actually runs instead.
-    return !(
-      car?.hasDedicatedHighDownforceVariant &&
-      track.downforceVariant === 'standard'
-    );
+    return true;
   });
 }
 

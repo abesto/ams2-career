@@ -349,13 +349,13 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Barcelona
+                          Virginia
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Circuit de Catalunya National No Chicane
+                        South
                       </td>
                     </tr>
                     <tr
@@ -388,7 +388,7 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Patriot
+                        Grand
                       </td>
                     </tr>
                     <tr
@@ -415,13 +415,13 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Ibarra
+                          Gateway
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Time Trial
+                        Road Course 2
                       </td>
                     </tr>
                     <tr
@@ -448,13 +448,13 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Gateway
+                          Cascais
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Road Course 1
+                        1988
                       </td>
                     </tr>
                     <tr
@@ -481,13 +481,13 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Barcelona
+                          Road America
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        GP 1999
+                        Time Trial
                       </td>
                     </tr>
                     <tr
@@ -514,13 +514,13 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Snetterton
+                          Londrina
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        200
+                        long
                       </td>
                     </tr>
                     <tr
@@ -547,14 +547,12 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Willow Springs
+                          Azure Circuit
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      >
-                        Horse Thief Mile
-                      </td>
+                      />
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -580,13 +578,13 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Barcelona
+                          Virginia
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Circuit de Catalunya National No Chicane
+                        South
                       </td>
                     </tr>
                     <tr
@@ -613,12 +611,14 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Kyalami Historic
+                          Nürburgring
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      />
+                      >
+                        Nordschleife 2025
+                      </td>
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -644,13 +644,13 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Barcelona
+                          Velo Citta
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Circuit de Catalunya GP
+                        1
                       </td>
                     </tr>
                     <tr
@@ -677,13 +677,13 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Snetterton
+                          Ibarra
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        100
+                        2
                       </td>
                     </tr>
                   </tbody>
@@ -1059,7 +1059,7 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         <p
                           class="MuiTypography-root MuiTypography-body2 css-1m5ndv6-MuiTypography-root"
                         >
-                          Gateway
+                          Cascais
                         </p>
                       </div>
                     </div>
@@ -1077,7 +1077,7 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         <p
                           class="MuiTypography-root MuiTypography-body2 css-1m5ndv6-MuiTypography-root"
                         >
-                          Road Course 1
+                          1988
                         </p>
                       </div>
                     </div>
@@ -1248,8 +1248,8 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                           <label
                             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-a8bwq5-MuiFormLabel-root-MuiInputLabel-root"
                             data-shrink="true"
-                            for="_r_2g_"
-                            id="_r_2g_-label"
+                            for="_r_2m_"
+                            id="_r_2m_-label"
                           >
                             Global
                           </label>
@@ -1259,7 +1259,7 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                             <input
                               aria-invalid="false"
                               class="MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
-                              id="_r_2g_"
+                              id="_r_2m_"
                               type="number"
                               value="0"
                             />
@@ -1291,8 +1291,8 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                           <label
                             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-a8bwq5-MuiFormLabel-root-MuiInputLabel-root"
                             data-shrink="true"
-                            for="_r_2h_"
-                            id="_r_2h_-label"
+                            for="_r_2n_"
+                            id="_r_2n_-label"
                           >
                             GT
                           </label>
@@ -1302,7 +1302,7 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                             <input
                               aria-invalid="false"
                               class="MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
-                              id="_r_2h_"
+                              id="_r_2n_"
                               type="number"
                               value="0"
                             />
@@ -1334,8 +1334,8 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                           <label
                             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-a8bwq5-MuiFormLabel-root-MuiInputLabel-root"
                             data-shrink="true"
-                            for="_r_2i_"
-                            id="_r_2i_-label"
+                            for="_r_2o_"
+                            id="_r_2o_-label"
                           >
                             Carrera Cup
                           </label>
@@ -1345,7 +1345,7 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                             <input
                               aria-invalid="false"
                               class="MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
-                              id="_r_2i_"
+                              id="_r_2o_"
                               type="number"
                               value="0"
                             />
@@ -1377,8 +1377,8 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                           <label
                             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-a8bwq5-MuiFormLabel-root-MuiInputLabel-root"
                             data-shrink="true"
-                            for="_r_2j_"
-                            id="_r_2j_-label"
+                            for="_r_2p_"
+                            id="_r_2p_-label"
                           >
                             Porsche 911 GT3 Cup 4.0
                           </label>
@@ -1388,7 +1388,7 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                             <input
                               aria-invalid="false"
                               class="MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
-                              id="_r_2j_"
+                              id="_r_2p_"
                               type="number"
                               value="0"
                             />
@@ -1453,7 +1453,7 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                           aria-hidden="true"
                           aria-invalid="false"
                           class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
-                          id="_r_2l_"
+                          id="_r_2r_"
                           tabindex="-1"
                           value="Porsche_991_GT3_2-122-carreracup-GT-3-Carrera Cup"
                         />
@@ -1491,8 +1491,8 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                         <label
                           class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-fe9wn3-MuiFormLabel-root-MuiInputLabel-root"
                           data-shrink="true"
-                          for="_r_2m_"
-                          id="_r_2m_-label"
+                          for="_r_2s_"
+                          id="_r_2s_-label"
                         >
                           Finishing position
                         </label>
@@ -1502,7 +1502,7 @@ exports[`Basic sanity: a bunch of race results > achievement 1`] = `
                           <input
                             aria-invalid="false"
                             class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                            id="_r_2m_"
+                            id="_r_2s_"
                             type="number"
                             value="1"
                           />
@@ -1942,13 +1942,13 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Pocono
+                          Taruma
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Oval
+                        Chicane
                       </td>
                     </tr>
                     <tr
@@ -1975,13 +1975,13 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Nürburgring
+                          Interlagos
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        1971 Nords
+                        1991
                       </td>
                     </tr>
                     <tr
@@ -2008,13 +2008,13 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Guapore
+                          Silverstone
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Time Trial
+                        1975
                       </td>
                     </tr>
                     <tr
@@ -2041,13 +2041,13 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Jacarepagua
+                          Goiania
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        2005
+                        Mixed
                       </td>
                     </tr>
                     <tr
@@ -2080,7 +2080,7 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        North
+                        Grand
                       </td>
                     </tr>
                     <tr
@@ -2113,7 +2113,7 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        1991
+                        GP 1999
                       </td>
                     </tr>
                     <tr
@@ -2140,13 +2140,13 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Fontana
+                          Cordoba
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Sports Car Course
+                        International
                       </td>
                     </tr>
                     <tr
@@ -2173,13 +2173,13 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Cordoba
+                          Granja Viana
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        National
+                        Copa Sao Paulo Stage 1
                       </td>
                     </tr>
                     <tr
@@ -2206,13 +2206,13 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Goiania
+                          Brasilia
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Short
+                        Outer
                       </td>
                     </tr>
                     <tr
@@ -2245,7 +2245,7 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        North
+                        Grand
                       </td>
                     </tr>
                     <tr
@@ -2272,13 +2272,13 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Barcelona
+                          Gateway
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Circuit de Catalunya GP
+                        Road Course 1
                       </td>
                     </tr>
                     <tr
@@ -2305,14 +2305,12 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Snetterton
+                          Termas Rio Hondo
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      >
-                        100
-                      </td>
+                      />
                     </tr>
                   </tbody>
                 </table>
@@ -2697,7 +2695,7 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                         <p
                           class="MuiTypography-root MuiTypography-body2 css-1m5ndv6-MuiTypography-root"
                         >
-                          Fontana
+                          Cordoba
                         </p>
                       </div>
                     </div>
@@ -2715,7 +2713,7 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                         <p
                           class="MuiTypography-root MuiTypography-body2 css-1m5ndv6-MuiTypography-root"
                         >
-                          Sports Car Course
+                          International
                         </p>
                       </div>
                     </div>
@@ -2886,8 +2884,8 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                           <label
                             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-a8bwq5-MuiFormLabel-root-MuiInputLabel-root"
                             data-shrink="true"
-                            for="_r_n_"
-                            id="_r_n_-label"
+                            for="_r_o_"
+                            id="_r_o_-label"
                           >
                             Global
                           </label>
@@ -2897,7 +2895,7 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                             <input
                               aria-invalid="false"
                               class="MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
-                              id="_r_n_"
+                              id="_r_o_"
                               type="number"
                               value="0"
                             />
@@ -2929,8 +2927,8 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                           <label
                             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-a8bwq5-MuiFormLabel-root-MuiInputLabel-root"
                             data-shrink="true"
-                            for="_r_o_"
-                            id="_r_o_-label"
+                            for="_r_p_"
+                            id="_r_p_-label"
                           >
                             GT
                           </label>
@@ -2940,7 +2938,7 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                             <input
                               aria-invalid="false"
                               class="MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
-                              id="_r_o_"
+                              id="_r_p_"
                               type="number"
                               value="0"
                             />
@@ -2972,8 +2970,8 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                           <label
                             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-a8bwq5-MuiFormLabel-root-MuiInputLabel-root"
                             data-shrink="true"
-                            for="_r_p_"
-                            id="_r_p_-label"
+                            for="_r_q_"
+                            id="_r_q_-label"
                           >
                             GT5
                           </label>
@@ -2983,7 +2981,7 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                             <input
                               aria-invalid="false"
                               class="MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
-                              id="_r_p_"
+                              id="_r_q_"
                               type="number"
                               value="0"
                             />
@@ -3015,8 +3013,8 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                           <label
                             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-a8bwq5-MuiFormLabel-root-MuiInputLabel-root"
                             data-shrink="true"
-                            for="_r_q_"
-                            id="_r_q_-label"
+                            for="_r_r_"
+                            id="_r_r_-label"
                           >
                             Puma P052
                           </label>
@@ -3026,7 +3024,7 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                             <input
                               aria-invalid="false"
                               class="MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
-                              id="_r_q_"
+                              id="_r_r_"
                               type="number"
                               value="0"
                             />
@@ -3091,7 +3089,7 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                           aria-hidden="true"
                           aria-invalid="false"
                           class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
-                          id="_r_s_"
+                          id="_r_t_"
                           tabindex="-1"
                           value="Puma_P052-95-gt5-GT-4-GT5"
                         />
@@ -3129,8 +3127,8 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                         <label
                           class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-fe9wn3-MuiFormLabel-root-MuiInputLabel-root"
                           data-shrink="true"
-                          for="_r_t_"
-                          id="_r_t_-label"
+                          for="_r_u_"
+                          id="_r_u_-label"
                         >
                           Finishing position
                         </label>
@@ -3140,7 +3138,7 @@ exports[`Basic sanity: a bunch of race results > after-class-pick 1`] = `
                           <input
                             aria-invalid="false"
                             class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                            id="_r_t_"
+                            id="_r_u_"
                             type="number"
                             value="1"
                           />
@@ -3528,13 +3526,13 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Pocono
+                          Taruma
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Oval
+                        Chicane
                       </td>
                     </tr>
                     <tr
@@ -3561,13 +3559,13 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Nürburgring
+                          Interlagos
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        1971 Nords
+                        1991
                       </td>
                     </tr>
                     <tr
@@ -3594,13 +3592,13 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Guapore
+                          Silverstone
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Time Trial
+                        1975
                       </td>
                     </tr>
                     <tr
@@ -3627,13 +3625,13 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Jacarepagua
+                          Goiania
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        2005
+                        Mixed
                       </td>
                     </tr>
                     <tr
@@ -3666,7 +3664,7 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        North
+                        Grand
                       </td>
                     </tr>
                     <tr
@@ -3699,7 +3697,7 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        1991
+                        GP 1999
                       </td>
                     </tr>
                     <tr
@@ -3726,13 +3724,13 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Fontana
+                          Cordoba
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Sports Car Course
+                        International
                       </td>
                     </tr>
                     <tr
@@ -3759,13 +3757,13 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Cordoba
+                          Granja Viana
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        National
+                        Copa Sao Paulo Stage 1
                       </td>
                     </tr>
                     <tr
@@ -3792,13 +3790,13 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Goiania
+                          Brasilia
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Short
+                        Outer
                       </td>
                     </tr>
                     <tr
@@ -3831,7 +3829,7 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        North
+                        Grand
                       </td>
                     </tr>
                     <tr
@@ -3858,13 +3856,13 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Barcelona
+                          Gateway
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Circuit de Catalunya GP
+                        Road Course 1
                       </td>
                     </tr>
                     <tr
@@ -3891,14 +3889,12 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Snetterton
+                          Termas Rio Hondo
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      >
-                        100
-                      </td>
+                      />
                     </tr>
                   </tbody>
                 </table>
@@ -4298,7 +4294,7 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                         <p
                           class="MuiTypography-root MuiTypography-body2 css-1m5ndv6-MuiTypography-root"
                         >
-                          Pocono
+                          Taruma
                         </p>
                       </div>
                     </div>
@@ -4316,7 +4312,7 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                         <p
                           class="MuiTypography-root MuiTypography-body2 css-1m5ndv6-MuiTypography-root"
                         >
-                          Oval
+                          Chicane
                         </p>
                       </div>
                     </div>
@@ -4487,8 +4483,8 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                           <label
                             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-a8bwq5-MuiFormLabel-root-MuiInputLabel-root"
                             data-shrink="true"
-                            for="_r_n_"
-                            id="_r_n_-label"
+                            for="_r_o_"
+                            id="_r_o_-label"
                           >
                             Global
                           </label>
@@ -4498,7 +4494,7 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                             <input
                               aria-invalid="false"
                               class="MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
-                              id="_r_n_"
+                              id="_r_o_"
                               type="number"
                               value="0"
                             />
@@ -4530,8 +4526,8 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                           <label
                             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-a8bwq5-MuiFormLabel-root-MuiInputLabel-root"
                             data-shrink="true"
-                            for="_r_o_"
-                            id="_r_o_-label"
+                            for="_r_p_"
+                            id="_r_p_-label"
                           >
                             Club
                           </label>
@@ -4541,7 +4537,7 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                             <input
                               aria-invalid="false"
                               class="MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
-                              id="_r_o_"
+                              id="_r_p_"
                               type="number"
                               value="0"
                             />
@@ -4573,8 +4569,8 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                           <label
                             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-a8bwq5-MuiFormLabel-root-MuiInputLabel-root"
                             data-shrink="true"
-                            for="_r_p_"
-                            id="_r_p_-label"
+                            for="_r_q_"
+                            id="_r_q_-label"
                           >
                             Copa Classic (Class: B)
                           </label>
@@ -4584,7 +4580,7 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                             <input
                               aria-invalid="false"
                               class="MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
-                              id="_r_p_"
+                              id="_r_q_"
                               type="number"
                               value="0"
                             />
@@ -4616,8 +4612,8 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                           <label
                             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-a8bwq5-MuiFormLabel-root-MuiInputLabel-root"
                             data-shrink="true"
-                            for="_r_q_"
-                            id="_r_q_-label"
+                            for="_r_r_"
+                            id="_r_r_-label"
                           >
                             Chevrolet Chevette
                           </label>
@@ -4627,7 +4623,7 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                             <input
                               aria-invalid="false"
                               class="MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
-                              id="_r_q_"
+                              id="_r_r_"
                               type="number"
                               value="0"
                             />
@@ -4692,7 +4688,7 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                           aria-hidden="true"
                           aria-invalid="false"
                           class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
-                          id="_r_s_"
+                          id="_r_t_"
                           tabindex="-1"
                           value="Chevette-12-copaclassicclassb-Club-4-Copa Classic (Class: B)"
                         />
@@ -4730,8 +4726,8 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                         <label
                           class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-fe9wn3-MuiFormLabel-root-MuiInputLabel-root"
                           data-shrink="true"
-                          for="_r_t_"
-                          id="_r_t_-label"
+                          for="_r_u_"
+                          id="_r_u_-label"
                         >
                           Finishing position
                         </label>
@@ -4741,7 +4737,7 @@ exports[`Basic sanity: a bunch of race results > after-dialogs 1`] = `
                           <input
                             aria-invalid="false"
                             class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                            id="_r_t_"
+                            id="_r_u_"
                             type="number"
                             value="1"
                           />
@@ -5168,13 +5164,13 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Pocono
+                          Taruma
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Oval
+                        Chicane
                       </td>
                     </tr>
                     <tr
@@ -5201,13 +5197,13 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Nürburgring
+                          Interlagos
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        1971 Nords
+                        1991
                       </td>
                     </tr>
                     <tr
@@ -5234,13 +5230,13 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Guapore
+                          Silverstone
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Time Trial
+                        1975
                       </td>
                     </tr>
                     <tr
@@ -5267,13 +5263,13 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Jacarepagua
+                          Goiania
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        2005
+                        Mixed
                       </td>
                     </tr>
                     <tr
@@ -5306,7 +5302,7 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        North
+                        Grand
                       </td>
                     </tr>
                     <tr
@@ -5339,7 +5335,7 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        1991
+                        GP 1999
                       </td>
                     </tr>
                     <tr
@@ -5366,13 +5362,13 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Fontana
+                          Cordoba
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Sports Car Course
+                        International
                       </td>
                     </tr>
                     <tr
@@ -5399,13 +5395,13 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Cordoba
+                          Granja Viana
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        National
+                        Copa Sao Paulo Stage 1
                       </td>
                     </tr>
                     <tr
@@ -5432,13 +5428,13 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Goiania
+                          Brasilia
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Short
+                        Outer
                       </td>
                     </tr>
                     <tr
@@ -5471,7 +5467,7 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        North
+                        Grand
                       </td>
                     </tr>
                     <tr
@@ -5498,13 +5494,13 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Barcelona
+                          Gateway
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Circuit de Catalunya GP
+                        Road Course 1
                       </td>
                     </tr>
                     <tr
@@ -5531,14 +5527,12 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Snetterton
+                          Termas Rio Hondo
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      >
-                        100
-                      </td>
+                      />
                     </tr>
                   </tbody>
                 </table>
@@ -5938,7 +5932,7 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                         <p
                           class="MuiTypography-root MuiTypography-body2 css-1m5ndv6-MuiTypography-root"
                         >
-                          Pocono
+                          Taruma
                         </p>
                       </div>
                     </div>
@@ -5956,7 +5950,7 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                         <p
                           class="MuiTypography-root MuiTypography-body2 css-1m5ndv6-MuiTypography-root"
                         >
-                          Oval
+                          Chicane
                         </p>
                       </div>
                     </div>
@@ -6127,8 +6121,8 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                           <label
                             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-a8bwq5-MuiFormLabel-root-MuiInputLabel-root"
                             data-shrink="true"
-                            for="_r_n_"
-                            id="_r_n_-label"
+                            for="_r_o_"
+                            id="_r_o_-label"
                           >
                             Global
                           </label>
@@ -6138,7 +6132,7 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                             <input
                               aria-invalid="false"
                               class="MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
-                              id="_r_n_"
+                              id="_r_o_"
                               type="number"
                               value="0"
                             />
@@ -6170,8 +6164,8 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                           <label
                             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-a8bwq5-MuiFormLabel-root-MuiInputLabel-root"
                             data-shrink="true"
-                            for="_r_o_"
-                            id="_r_o_-label"
+                            for="_r_p_"
+                            id="_r_p_-label"
                           >
                             Club
                           </label>
@@ -6181,7 +6175,7 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                             <input
                               aria-invalid="false"
                               class="MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
-                              id="_r_o_"
+                              id="_r_p_"
                               type="number"
                               value="0"
                             />
@@ -6213,8 +6207,8 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                           <label
                             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-a8bwq5-MuiFormLabel-root-MuiInputLabel-root"
                             data-shrink="true"
-                            for="_r_p_"
-                            id="_r_p_-label"
+                            for="_r_q_"
+                            id="_r_q_-label"
                           >
                             Copa Classic (Class: B)
                           </label>
@@ -6224,7 +6218,7 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                             <input
                               aria-invalid="false"
                               class="MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
-                              id="_r_p_"
+                              id="_r_q_"
                               type="number"
                               value="0"
                             />
@@ -6256,8 +6250,8 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                           <label
                             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-a8bwq5-MuiFormLabel-root-MuiInputLabel-root"
                             data-shrink="true"
-                            for="_r_q_"
-                            id="_r_q_-label"
+                            for="_r_r_"
+                            id="_r_r_-label"
                           >
                             Chevrolet Chevette
                           </label>
@@ -6267,7 +6261,7 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                             <input
                               aria-invalid="false"
                               class="MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
-                              id="_r_q_"
+                              id="_r_r_"
                               type="number"
                               value="0"
                             />
@@ -6332,7 +6326,7 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                           aria-hidden="true"
                           aria-invalid="false"
                           class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
-                          id="_r_s_"
+                          id="_r_t_"
                           tabindex="-1"
                           value="Chevette-12-copaclassicclassb-Club-4-Copa Classic (Class: B)"
                         />
@@ -6370,8 +6364,8 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                         <label
                           class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-fe9wn3-MuiFormLabel-root-MuiInputLabel-root"
                           data-shrink="true"
-                          for="_r_t_"
-                          id="_r_t_-label"
+                          for="_r_u_"
+                          id="_r_u_-label"
                         >
                           Finishing position
                         </label>
@@ -6381,7 +6375,7 @@ exports[`Basic sanity: a bunch of race results > first-load 1`] = `
                           <input
                             aria-invalid="false"
                             class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                            id="_r_t_"
+                            id="_r_u_"
                             type="number"
                             value="1"
                           />
@@ -6773,13 +6767,13 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Nürburgring
+                          Interlagos
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        1971 Nords
+                        1991
                       </td>
                     </tr>
                     <tr
@@ -6806,14 +6800,12 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Willow Springs
+                          Test Oval
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      >
-                        Horse Thief Mile
-                      </td>
+                      />
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -6839,13 +6831,13 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Goiania
+                          Brasilia
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Short
+                        Outer
                       </td>
                     </tr>
                     <tr
@@ -6872,13 +6864,13 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Silverstone
+                          Barcelona
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        1975
+                        Circuit de Catalunya National No Chicane
                       </td>
                     </tr>
                     <tr
@@ -6905,13 +6897,13 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Nürburgring
+                          Interlagos
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        GP 2020 Sprint S
+                        Historic Outer
                       </td>
                     </tr>
                     <tr
@@ -6938,13 +6930,13 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Nürburgring
+                          Granja Viana
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Nordschleife 2025
+                        Granja Viana Kart 102
                       </td>
                     </tr>
                     <tr
@@ -6971,13 +6963,13 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Adelaide
+                          Nürburgring
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Modern Time Trial
+                        1971 Beton
                       </td>
                     </tr>
                     <tr
@@ -7004,13 +6996,13 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Nürburgring
+                          Interlagos
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        1971 Nords
+                        1991
                       </td>
                     </tr>
                     <tr
@@ -7037,13 +7029,13 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Willow Springs
+                          Nürburgring
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Horse Thief Mile
+                        Sprint
                       </td>
                     </tr>
                   </tbody>
@@ -7419,7 +7411,7 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                         <p
                           class="MuiTypography-root MuiTypography-body2 css-1m5ndv6-MuiTypography-root"
                         >
-                          Silverstone
+                          Barcelona
                         </p>
                       </div>
                     </div>
@@ -7437,7 +7429,7 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                         <p
                           class="MuiTypography-root MuiTypography-body2 css-1m5ndv6-MuiTypography-root"
                         >
-                          1975
+                          Circuit de Catalunya National No Chicane
                         </p>
                       </div>
                     </div>
@@ -7608,8 +7600,8 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                           <label
                             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-a8bwq5-MuiFormLabel-root-MuiInputLabel-root"
                             data-shrink="true"
-                            for="_r_26_"
-                            id="_r_26_-label"
+                            for="_r_2b_"
+                            id="_r_2b_-label"
                           >
                             Global
                           </label>
@@ -7619,7 +7611,7 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                             <input
                               aria-invalid="false"
                               class="MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
-                              id="_r_26_"
+                              id="_r_2b_"
                               type="number"
                               value="0"
                             />
@@ -7651,8 +7643,8 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                           <label
                             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-a8bwq5-MuiFormLabel-root-MuiInputLabel-root"
                             data-shrink="true"
-                            for="_r_27_"
-                            id="_r_27_-label"
+                            for="_r_2c_"
+                            id="_r_2c_-label"
                           >
                             GT
                           </label>
@@ -7662,7 +7654,7 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                             <input
                               aria-invalid="false"
                               class="MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
-                              id="_r_27_"
+                              id="_r_2c_"
                               type="number"
                               value="0"
                             />
@@ -7694,8 +7686,8 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                           <label
                             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-a8bwq5-MuiFormLabel-root-MuiInputLabel-root"
                             data-shrink="true"
-                            for="_r_28_"
-                            id="_r_28_-label"
+                            for="_r_2d_"
+                            id="_r_2d_-label"
                           >
                             Carrera Cup
                           </label>
@@ -7705,7 +7697,7 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                             <input
                               aria-invalid="false"
                               class="MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
-                              id="_r_28_"
+                              id="_r_2d_"
                               type="number"
                               value="0"
                             />
@@ -7737,8 +7729,8 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                           <label
                             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-a8bwq5-MuiFormLabel-root-MuiInputLabel-root"
                             data-shrink="true"
-                            for="_r_29_"
-                            id="_r_29_-label"
+                            for="_r_2e_"
+                            id="_r_2e_-label"
                           >
                             Porsche 911 GT3 Cup 4.0
                           </label>
@@ -7748,7 +7740,7 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                             <input
                               aria-invalid="false"
                               class="MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
-                              id="_r_29_"
+                              id="_r_2e_"
                               type="number"
                               value="0"
                             />
@@ -7813,7 +7805,7 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                           aria-hidden="true"
                           aria-invalid="false"
                           class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
-                          id="_r_2b_"
+                          id="_r_2g_"
                           tabindex="-1"
                           value="Porsche_991_GT3_2-122-carreracup-GT-3-Carrera Cup"
                         />
@@ -7851,8 +7843,8 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                         <label
                           class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-fe9wn3-MuiFormLabel-root-MuiInputLabel-root"
                           data-shrink="true"
-                          for="_r_2c_"
-                          id="_r_2c_-label"
+                          for="_r_2h_"
+                          id="_r_2h_-label"
                         >
                           Finishing position
                         </label>
@@ -7862,7 +7854,7 @@ exports[`Basic sanity: a bunch of race results > level-up 1`] = `
                           <input
                             aria-invalid="false"
                             class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                            id="_r_2c_"
+                            id="_r_2h_"
                             type="number"
                             value="1"
                           />
@@ -8306,13 +8298,13 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Gateway
+                          Nürburgring
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Oval
+                        1971 Gesamt
                       </td>
                     </tr>
                     <tr
@@ -8339,13 +8331,13 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Pocono
+                          Taruma
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Oval
+                        Chicane
                       </td>
                     </tr>
                     <tr
@@ -8372,13 +8364,13 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Willow Springs
+                          Goiania
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Horse Thief Mile
+                        Short
                       </td>
                     </tr>
                     <tr
@@ -8405,13 +8397,13 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Guapore
+                          Silverstone
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Time Trial
+                        1975
                       </td>
                     </tr>
                     <tr
@@ -8438,13 +8430,13 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Barcelona
+                          Virginia
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Circuit de Catalunya National No Chicane
+                        South
                       </td>
                     </tr>
                     <tr
@@ -8471,13 +8463,13 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Jerez
+                          Nürburgring
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        GP 1988
+                        Nordschleife 2025
                       </td>
                     </tr>
                     <tr
@@ -8504,13 +8496,13 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Velo Citta
+                          Long Beach
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        1
+                        Time Trial
                       </td>
                     </tr>
                     <tr
@@ -8537,13 +8529,13 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Adelaide
+                          Granja Viana
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Modern Time Trial
+                        Granja Viana Kart 102
                       </td>
                     </tr>
                     <tr
@@ -8570,13 +8562,13 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Nürburgring
+                          Buskerud
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Sprint
+                        Short
                       </td>
                     </tr>
                     <tr
@@ -8603,13 +8595,13 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Speedland
+                          Interlagos
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        1
+                        Kart 1
                       </td>
                     </tr>
                     <tr
@@ -8636,13 +8628,13 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Ibarra
+                          Gateway
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
                       >
-                        Time Trial
+                        Road Course 2
                       </td>
                     </tr>
                     <tr
@@ -8669,14 +8661,12 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                         <div
                           class="MuiBox-root css-10rvbm3"
                         >
-                          Snetterton
+                          Termas Rio Hondo
                         </div>
                       </td>
                       <td
                         class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-ipjv1p-MuiTableCell-root"
-                      >
-                        100
-                      </td>
+                      />
                     </tr>
                     <tr
                       class="MuiTableRow-root MuiTableRow-hover css-1bgqqye-MuiTableRow-root"
@@ -9094,7 +9084,7 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                         <p
                           class="MuiTypography-root MuiTypography-body2 css-1m5ndv6-MuiTypography-root"
                         >
-                          Velo Citta
+                          Long Beach
                         </p>
                       </div>
                     </div>
@@ -9112,7 +9102,7 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                         <p
                           class="MuiTypography-root MuiTypography-body2 css-1m5ndv6-MuiTypography-root"
                         >
-                          1
+                          Time Trial
                         </p>
                       </div>
                     </div>
@@ -9283,8 +9273,8 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                           <label
                             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-a8bwq5-MuiFormLabel-root-MuiInputLabel-root"
                             data-shrink="true"
-                            for="_r_18_"
-                            id="_r_18_-label"
+                            for="_r_1a_"
+                            id="_r_1a_-label"
                           >
                             Global
                           </label>
@@ -9294,7 +9284,7 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                             <input
                               aria-invalid="false"
                               class="MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
-                              id="_r_18_"
+                              id="_r_1a_"
                               type="number"
                               value="0"
                             />
@@ -9326,8 +9316,8 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                           <label
                             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-a8bwq5-MuiFormLabel-root-MuiInputLabel-root"
                             data-shrink="true"
-                            for="_r_19_"
-                            id="_r_19_-label"
+                            for="_r_1b_"
+                            id="_r_1b_-label"
                           >
                             GT
                           </label>
@@ -9337,7 +9327,7 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                             <input
                               aria-invalid="false"
                               class="MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
-                              id="_r_19_"
+                              id="_r_1b_"
                               type="number"
                               value="0"
                             />
@@ -9369,8 +9359,8 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                           <label
                             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-a8bwq5-MuiFormLabel-root-MuiInputLabel-root"
                             data-shrink="true"
-                            for="_r_1a_"
-                            id="_r_1a_-label"
+                            for="_r_1c_"
+                            id="_r_1c_-label"
                           >
                             GT5
                           </label>
@@ -9380,7 +9370,7 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                             <input
                               aria-invalid="false"
                               class="MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
-                              id="_r_1a_"
+                              id="_r_1c_"
                               type="number"
                               value="0"
                             />
@@ -9412,8 +9402,8 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                           <label
                             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-a8bwq5-MuiFormLabel-root-MuiInputLabel-root"
                             data-shrink="true"
-                            for="_r_1b_"
-                            id="_r_1b_-label"
+                            for="_r_1d_"
+                            id="_r_1d_-label"
                           >
                             Puma P052
                           </label>
@@ -9423,7 +9413,7 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                             <input
                               aria-invalid="false"
                               class="MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
-                              id="_r_1b_"
+                              id="_r_1d_"
                               type="number"
                               value="0"
                             />
@@ -9488,7 +9478,7 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                           aria-hidden="true"
                           aria-invalid="false"
                           class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
-                          id="_r_1d_"
+                          id="_r_1f_"
                           tabindex="-1"
                           value="Puma_P052-95-gt5-GT-4-GT5"
                         />
@@ -9526,8 +9516,8 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                         <label
                           class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-fe9wn3-MuiFormLabel-root-MuiInputLabel-root"
                           data-shrink="true"
-                          for="_r_1e_"
-                          id="_r_1e_-label"
+                          for="_r_1g_"
+                          id="_r_1g_-label"
                         >
                           Finishing position
                         </label>
@@ -9537,7 +9527,7 @@ exports[`Basic sanity: a bunch of race results > race-result 1`] = `
                           <input
                             aria-invalid="false"
                             class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                            id="_r_1e_"
+                            id="_r_1g_"
                             type="number"
                             value="1"
                           />

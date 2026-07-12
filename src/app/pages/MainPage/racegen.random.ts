@@ -1,7 +1,6 @@
 import { Dayjs } from 'dayjs';
 
 export function randomDateBetween(start: Dayjs, end: Dayjs): Dayjs {
-  console.log('BAAD');
   const diffMs = start.diff(end);
   const diffRandom = Math.random() * diffMs;
   return start.add(diffRandom, 'millisecond');
